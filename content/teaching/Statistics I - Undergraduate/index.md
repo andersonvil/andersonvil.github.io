@@ -30,5 +30,4 @@ Le TD introduit également l’analyse des séries à deux caractères. Les étu
 
 Enfin, le cours initie les étudiant(e)s à l'ajustement par les moindres carrés, une technique de régression simple mais cruciale pour la modélisation économique. Cette introduction au modèle de régression linéaire leur permet de commencer à estimer les relations de causalité entre variables, ouvrant la voie à des analyses économétriques plus poussées dans les années suivantes. 
 
-***Course taught in Winter: 2020 (1 group) and 2021 (2 groups). Total hours: 45.***
-##
+***Course taught in Winter 2020 (1 group) and 2021 (2 groups). Total hours: 45.***
