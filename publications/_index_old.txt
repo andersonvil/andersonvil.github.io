@@ -1,0 +1,22 @@
++++
+date = 2020-07-09
+title = "Research"
+sort_by = "date"
+template = "publications.html"
+page_template = "publication-page.html"
+insert_anchor_links = "right"
+weight = 2
+extra.index_title = "Recent Work"
+extra.index_show = true
+extra.hidden_nav = false
+
+extra.publications_types = [
+  { title = "Selected work in progress", type = "journals" },
+  { title = "Thesis", type = "thesis" },
+  { title = "Conferences and workshops ", type = "conferences" }
+]
++++
+
+## Topic of interest
+
+My research interests focus on household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.
