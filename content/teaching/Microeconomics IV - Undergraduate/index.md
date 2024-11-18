@@ -11,7 +11,7 @@ publication_types = "2022-2023 academic year"
 #url_slides = "path to defense slides"
 +++
 
-This Microeconomic class examines how markets can fail to achieve economic efficiency and the role of government intervention in addressing these failures. It introduces the concept of general equilibrium, where the interactions between multiple markets are considered, and explores the conditions necessary for an economy to operate efficiently. Students learn why perfectly competitive markets tend to produce efficient outcomes and what happens when these conditions are not met. Key sources of inefficiency, such as incomplete information, externalities, and public goods, are analyzed to understand their impact on resource allocation and economic outcomes.
+This microeconomic class examines how markets can fail to achieve economic efficiency and the role of government intervention in addressing these failures. It introduces the concept of general equilibrium, where the interactions between multiple markets are considered, and explores the conditions necessary for an economy to operate efficiently. Students learn why perfectly competitive markets tend to produce efficient outcomes and what happens when these conditions are not met. Key sources of inefficiency, such as incomplete information, externalities, and public goods, are analyzed to understand their impact on resource allocation and economic outcomes.
 
 This course also delves into practical solutions to market failures, such as signaling to address information asymmetry, private bargaining for externalities, and government tools like taxes, subsidies, and tradable permits to improve efficiency. By studying these mechanisms, students develop the analytical skills to evaluate when government intervention is necessary and how policies can be designed to correct inefficiencies effectively. This class equips students with a normative perspective on economic efficiency and a deeper understanding of the trade-offs involved in public policy decisions.
 
@@ -21,5 +21,5 @@ Ce cours de microéconomie examine les raisons pour lesquelles les marchés peuv
 
 Le cours se penche également sur des solutions pratiques aux défaillances de marché, telles que le signalement pour remédier aux asymétries d'information, les négociations privées pour les externalités, ainsi que les outils gouvernementaux comme les taxes, les subventions et les permis échangeables pour améliorer l'efficacité. En étudiant ces mécanismes, les étudiants développent des compétences analytiques pour évaluer quand une intervention gouvernementale est nécessaire et comment concevoir des politiques pour corriger efficacement les inefficiences. Ce cours offre aux étudiants une perspective normative sur l'efficacité économique et une compréhension approfondie des compromis impliqués dans les décisions de politique publique. 
 
-***Course taught in Winter: 2024 (2 group). Total hours: 33.***
+***Course taught in Winter: 2024 (2 group). Total hours: 49.5.***
 
