@@ -1,10 +1,10 @@
 +++
-title = "Microeconomics I: Principles of Microeconomis"
+title = "Micoeconomics IV: Public Economics"
 date = 2024-11-14
 
 [extra]
 authors = ["Bachelor level"]
-year = 2021
+year = 2024
 type = "pastteach"
 publication_types = "2022-2023 academic year"
 #url_pdf = "path to wp"
