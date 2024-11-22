@@ -25,7 +25,7 @@ interests = [
 
 [[extra.avatar_icons]]
   icon = "github"
-  link = "https://github.com/adfaure"
+  link = "https://github.com/andersonvil"
 [[extra.avatar_icons]]
   icon = "linkedin"
   link = "https://www.linkedin.com/in/anderson-vil-anderseco/"
