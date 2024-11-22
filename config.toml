@@ -4,12 +4,13 @@ base_url = "https://andersonvil.github.io"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
-title = "Anderson VIL"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
 theme = "kodama-theme"
+
+title = "Anderson VIL"
 
 [translations]
 Biography = "Biography"
