@@ -17,4 +17,4 @@ extra.publications_types = [
 
 ## Topic of interest
 
-My research interests focus on household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.
+My research interests focus on applied microeconomics. I am interested in household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.

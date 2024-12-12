@@ -14,7 +14,7 @@ interests = [
 ]
 
 [[extra.education.courses]]
-  course = "Ph.D. Candidate in Economics"
+  course = "Ph.D. in Economics"
   institution = "CY Cergy Paris Université/ThEMA"
   year = "2019-2024"
 [[extra.education.courses]]
@@ -34,7 +34,8 @@ interests = [
 Hello everyone! Welcome to my website!
 My name is Anderson VIL, a Ph.D. Candidate in Economics and Teaching Assistant at CY Cergy Paris Université. I am also a member of [THEMA](https://thema.u-cergy.fr/), UMR CNRS 8184 . 
 
-My research interests focus on household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.
+My research interests focus on applied microeconomics. I am interested in household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.
 
-You can download my CV [here](https://drive.google.com/file/d/1Qn_uTqw5g27yHEhRmuKkSPrkyHxMEPdq/view?usp=sharing).
+
+You can download my CV [here](https://drive.google.com/file/d/1lmx2zHVcC97Cfms7oVY1xAFQ1OEqvq-N/view?usp=sharing).
 
