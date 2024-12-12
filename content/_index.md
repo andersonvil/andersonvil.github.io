@@ -32,7 +32,7 @@ interests = [
 +++
 
 Hello everyone! Welcome to my website!
-My name is Anderson VIL, a Ph.D. Candidate in Economics and Teaching Assistant at CY Cergy Paris Université. I am also a member of [THEMA](https://thema.u-cergy.fr/), UMR CNRS 8184 . 
+My name is Anderson VIL, and I hold a Ph.D. in Economics. I currently work as a Teaching Assistant at CY Cergy Paris Université. I am also a member of [THEMA](https://thema.u-cergy.fr/), UMR CNRS 8184 . 
 
 My research interests focus on applied microeconomics. I am interested in household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.
 
