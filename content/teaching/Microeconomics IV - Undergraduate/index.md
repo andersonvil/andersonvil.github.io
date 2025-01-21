@@ -23,3 +23,8 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 
 ***Course taught in Winter: 2024 (2 group). Total hours: 49.5.***
 
+## TD
+
+	- [Fichier d'exercices](/teaching/Microeconomics IV-undergraduate/BrochureTD-L2-2024.pdf) (*en français*)
+	
+
