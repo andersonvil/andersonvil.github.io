@@ -25,7 +25,7 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 
 ## TD
 
-	- [Fichier d'exercices](/teaching/Microeconomics IV-undergraduate/BrochureTD-L2-2024.pdf) (*en français*)
+	- [Fichier d'exercices](\teaching\Microeconomics IV - Undergraduate/BrochureTD-L2-2024.pdf) (*en français*)
 
 
 ## Pour aller plus loin
@@ -35,7 +35,6 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 	- [Interprétation des estimateurs MCO](/teaching/econometrics-undergraduate/OLS_interpretation.pdf) (*en anglais*)
 	- Etude de la reproduction intrafamiliale du nombre d'années d'éducation
 		- [tutoriel 1](/posts/tuto1/)
-		- [code R](/teaching/econometrics-undergraduate/htv.R)
-	
-	
+		- [code R](\teaching\Microeconomics IV - Undergraduate/htv.R)
+		
 
