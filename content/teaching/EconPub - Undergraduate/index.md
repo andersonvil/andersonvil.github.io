@@ -25,7 +25,7 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 
 ## TD
 
-	- [Fichier d'exercices](/teaching/MicroeconomicsIV-Undergraduate/BrochureTD_L2_2025.pdf) (*en français*)
+	- [Fichier d'exercices](/teaching/EconPub-Undergraduate/BrochureTD_L2_2025.pdf) (*en français*)
 
 
 ## Pour aller plus loin
