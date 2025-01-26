@@ -31,10 +31,7 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 ## Pour aller plus loin
 - Régressions linéaires par les Moindres Carrés Ordinaires (MCO) 
 	- Application des TD2 et 4 sur R
-		- [code R](/teaching/econometrics-undergraduate/td_2_4.R)
-	- [Interprétation des estimateurs MCO](/teaching/econometrics-undergraduate/OLS_interpretation.pdf) (*en anglais*)
-	- Etude de la reproduction intrafamiliale du nombre d'années d'éducation
-		- [tutoriel 1](/posts/tuto1/)
-		- [code R](\teaching\MicroeconomicsIV-Undergraduate/BrochureTD_L2_2025.pdf)
-		
+		- [code R](/teaching/EconPub-Undergraduate/td_2_4.R)
+	- [Interprétation des estimateurs MCO](/teaching/EconPub-Undergraduate/OLS_interpretation.pdf) (*en anglais*)
+			
 
