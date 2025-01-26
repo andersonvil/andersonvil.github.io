@@ -35,6 +35,6 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 	- [Interprétation des estimateurs MCO](/teaching/econometrics-undergraduate/OLS_interpretation.pdf) (*en anglais*)
 	- Etude de la reproduction intrafamiliale du nombre d'années d'éducation
 		- [tutoriel 1](/posts/tuto1/)
-		- [code R](\teaching\Microeconomics IV - Undergraduate/htv.R)
+		- [code R](\teaching\MicroeconomicsIV-Undergraduate/htv.R)
 		
 
