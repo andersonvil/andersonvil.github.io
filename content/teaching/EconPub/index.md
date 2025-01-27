@@ -25,8 +25,7 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 
 ## TD
 
-	- [Fichier d'exercices](/teaching/econometrics-undergraduate/BrochureTD.pdf) (*en français*)
-
+	- [Fichier d'exercices](/teaching/EconPub/BrochureTD.pdf) (*en français*)
 
 ## Pour aller plus loin
 - Régressions linéaires par les Moindres Carrés Ordinaires (MCO) 
