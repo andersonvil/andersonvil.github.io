@@ -25,12 +25,12 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 
 ## TD
 
-- [Fichier d'exercices](/teaching/EconPub/BrochureTD.pdf) (*en français*)
+- [Fichier d'exercices](BrochureTD.pdf) (*en français*)
 
 ## Pour aller plus loin
 - Régressions linéaires par les Moindres Carrés Ordinaires (MCO) 
 	- Application des TD2 et 4 sur R
-		- [code R](/teaching/EconPub/td_2_4.R)
-	- [Interprétation des estimateurs MCO](/teaching/EconPub/OLS_interpretation.pdf) (*en anglais*)
+		- [code R](td_2_4.R)
+	- [Interprétation des estimateurs MCO](OLS_interpretation.pdf) (*en anglais*)
 			
 
