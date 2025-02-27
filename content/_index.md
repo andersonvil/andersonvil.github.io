@@ -20,7 +20,7 @@ interests = [
 [[extra.education.courses]]
   course = "M.Sc. in Economic Analysis"
   institution = "CY Cergy Paris Université & ESSEC Business School"
-  year = "2017-2019"
+  year = "2018-2019"
 
 
 [[extra.avatar_icons]]
