@@ -29,5 +29,7 @@ Le cours se penche également sur des solutions pratiques aux défaillances de m
 
 ## Anciens controles
 - [Correction CC2024](CorrectionCC2024.pdf) (*en français*)
+- [CT2024](CT2024.pdf) (*en français*)
+
 
 
