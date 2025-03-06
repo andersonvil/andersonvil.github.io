@@ -3,7 +3,7 @@ title = "Anders"
 page_template="page.html"
 
 [extra]
-title = "Ph.D. Candidate"
+title = "Research Fellow"
 
 interests = [
   "Household Economics",
