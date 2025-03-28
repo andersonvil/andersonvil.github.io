@@ -6,7 +6,7 @@ page_template="page.html"
 title = "Research Fellow"
 
 interests = [
-  "Household Economics",
+  "jj",
   "Labor Economics",
   "Applied Microeconometrics",
   "Public Economics",
