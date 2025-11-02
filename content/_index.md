@@ -5,7 +5,7 @@ page_template="page.html"
 [extra]
 title = "Postdoctoral Fellow"
 
-interests = \[
+interests = [
 "Household Economics",
 "Labor Economics",
 "Applied Microeconometrics",
@@ -13,21 +13,21 @@ interests = \[
 "Development Economics"
 ]
 
-\[\[extra.education.courses]]
+[\[extra.education.courses]]
 course = "Ph.D. in Economics"
 institution = "CY Cergy Paris Université/ThEMA"
 year = "2019-2024"
-\[\[extra.education.courses]]
+[\[extra.education.courses]]
 course = "M.Sc. in Economic Analysis"
 institution = "CY Cergy Paris Université \& ESSEC Business School"
 year = "2018-2019"
 
 
 
-\[\[extra.avatar\_icons]]
+[\[extra.avatar\_icons]]
 icon = "github"
 link = "https://github.com/andersonvil"
-\[\[extra.avatar\_icons]]
+[\[extra.avatar\_icons]]
 icon = "linkedin"
 link = "https://www.linkedin.com/in/anderson-vil-anderseco/"
 +++
