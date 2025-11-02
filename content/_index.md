@@ -24,10 +24,10 @@ year = "2018-2019"
 
 
 
-[[extra.avatar\_icons]]
+[[extra.avatar_icons]]
 icon = "github"
 link = "https://github.com/andersonvil"
-[[extra.avatar\_icons]]
+[[extra.avatar_icons]]
 icon = "linkedin"
 link = "https://www.linkedin.com/in/anderson-vil-anderseco/"
 +++
