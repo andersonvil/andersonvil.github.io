@@ -3,7 +3,7 @@ title = "Anders"
 page\_template="page.html"
 
 \[extra]
-title = "Postdoctoral Fellow"
+title = "Postdoctor Fellow"
 
 interests = \[
 "Household Economics",
