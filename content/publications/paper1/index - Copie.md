@@ -8,6 +8,6 @@ publication_types = "Conference paper"
 featured = true
 type="journals"
 publication = "2025"
-pdf = "PSE-WorkingPaper-CostofChildren.pdf"
+pdf = "CC.pdf"
 +++
 
