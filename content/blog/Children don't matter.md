@@ -12,7 +12,7 @@ Dear readers, imagine this scenario for a moment: you’re an only child, quietl
 
 Now, this might surprise you, but your answer could very well depend on the family finances. Yep! According to a study by VIL (2024), your feelings might be influenced by the resources you could stand to lose (or not) if this new baby arrives.
 
-Let’s picture this: if you’re in a family where every euro counts, you might respond to your mother, a bit sheepishly, ``Uh… Mom, no thanks. Vil (2024) says you’ll give me less money if I get a little brother or sister.'' It might sound a little materialistic, but if resources become scarcer, it means that treats, fun, and even some essentials might need to be split up differently—and not necessarily in your favor. You might prefer to stay an only child to keep your little world intact and… well-provided for.
+Let’s picture this: if you’re in a family where every euro counts, you might respond to your mother, a bit sheepishly, ``Uh… Mom, no thanks. Vil (2025) says you’ll give me less money if I get a little brother or sister.'' It might sound a little materialistic, but if resources become scarcer, it means that treats, fun, and even some essentials might need to be split up differently—and not necessarily in your favor. You might prefer to stay an only child to keep your little world intact and… well-provided for.
 
 But now, imagine you’re in a wealthy family. Here, when your mother asks if you’d like a little brother or sister, your answer could be completely different: ``What are you waiting for, Mom? Aren’t you pregnant yet?'' If the family has enough resources, an extra child won’t affect the budget available for each kid. Basic expenses only nibble at the family’s income, so even with a new baby, the share allocated to each child doesn’t really decrease. In short, you’ll get a playmate without sacrificing any of your financial perks.
 
@@ -32,7 +32,7 @@ So, if one day your mom asks you that big question, think it through: do you wan
 
 Chers lecteurs, imaginez un instant cette scène : vous êtes fils ou fille unique, tranquillement en train de vaquer à vos occupations. Soudain, votre mère débarque, l’air un peu mystérieux, et vous lance : « Mon enfant, j’aimerais bien avoir un autre enfant. Ça te plairait pas d’avoir un petit frère ou une petite sœur ? »
 
-Bon, ça peut vous surprendre, mais votre réponse pourrait bien dépendre de l’argent qui tourne dans la famille. Eh oui ! Selon les résultats d’une étude de VIL (2024), vos sentiments pourraient être influencés par les ressources que vous pourriez perdre (ou pas) si ce fameux bébé arrivait.
+Bon, ça peut vous surprendre, mais votre réponse pourrait bien dépendre de l’argent qui tourne dans la famille. Eh oui ! Selon les résultats d’une étude de VIL (2025), vos sentiments pourraient être influencés par les ressources que vous pourriez perdre (ou pas) si ce fameux bébé arrivait.
  
 Imaginons la scène : si vous êtes dans une famille où chaque euro compte, vous pourriez bien répondre à votre mère, tout penaud : « Euh… maman, non merci. Anderson dit que tu me donneras moins d’argent si j’ai un petit frère ou une petite sœur. » Ça peut paraître un peu matérialiste, mais si les ressources deviennent plus rares, cela signifie que les petites gâteries, les loisirs, et même certains besoins peuvent être répartis différemment, et pas forcément en votre faveur. Vous pourriez alors préférer rester enfant unique, pour garder tout votre petit monde intact et… bien fourni.
 
