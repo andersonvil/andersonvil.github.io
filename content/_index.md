@@ -32,12 +32,16 @@ icon = "linkedin"
 link = "https://www.linkedin.com/in/anderson-vil-anderseco/"
 +++
 
-Hello everyone! Welcome to my website!
-My name is Anderson VIL, and I hold a Ph.D. in Economics. I currently work as a Postdoctoral Fellow in Economics at Paris School of Economics (PSE). I am also a member of [THEMA](https://thema.u-cergy.fr/), UMR CNRS 8184 .
 
-My research interests focus on applied microeconomics. I am interested in household behavior modeling, particularly on demand analysis, labor supply, and the intrahousehold distribution of resources. All of my work thus far relies on structural models and estimations to measure the cost of children, both in terms of money and time.
+Hello everyone, and welcome to my website!
+I’m Anderson VIL, a Postdoctoral Fellow in Economics at the [Paris School of Economics (PSE)](https://www.parisschoolofeconomics.eu/en/) and a member of [THEMA (UMR CNRS 8184)](https://thema.u-cergy.fr/).
+
+I obtained a Ph.D. in Economics from [Cergy Paris Université](https://www.cyu.fr/), under the supervision of [Olivier Donni](https://sites.google.com/view/olivierdonni). In 2023, I visited [KU Leuven](https://www.kuleuven.be/english/kuleuven) as a guest researcher, hosted by [Frederic Vermeulen](https://sites.google.com/site/fmpvermeulen/).
+
+My research lies in applied microeconomics, with a particular focus on **household behavior**, including **demand analysis**, **labor supply**, and the **intra-household allocation of resources**. I also explore issues related to **working from home** and its implications for **time use** and **gender roles within households**.
 
 
 
-You can download my CV [here](https://drive.google.com/file/d/1ws0BV3YvjxTboDyxzxazWmWofo1WF9Z7/view?usp=sharing).
+You can download my CV [here](https://drive.google.com/file/d/1ozT2kVT_NPHHsixCJi2NmHtUeg6blS-C/view?usp=sharing).
+
 
