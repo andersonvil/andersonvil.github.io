@@ -30,7 +30,7 @@ In short, our analysis takes this question to a new level, showing that working 
 
 <p align="center" width="100%">
 	<b>Substitution Effect vs Income Effect</b>
-	<img src="/img/incsubseffect.JPG" alt="Example GIF" width="100%">
+	<img src="/img/incsubseffect.jpg" alt="Example GIF" width="100%">
 </p>
 
 ## French version
@@ -59,7 +59,7 @@ En bref, notre analyse prend une nouvelle dimension, en montrant que bosser plus
 
 <p align="center" width="100%">
 	<b>Effet de substitution vs Effet de revenu</b>
-	<img src="/img/incsubseffect.JPG" alt="Example GIF" width="100%">
+	<img src="/img/incsubseffect.jpg" alt="Example GIF" width="100%">
 </p>
 
 
