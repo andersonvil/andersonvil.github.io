@@ -47,6 +47,6 @@ Alors, si un jour votre mère vous pose cette fameuse question, réfléchissez b
 
 <p align="center" width="100%">
 	<b>Proportion des ressources allouées aux enfants en fonction des dépenses totales du ménage</b>
-	<img src="/img/childresources.png" alt="Example GIF" width="100%">
+	<img src="/img/memfig1col1.png" alt="Example GIF" width="100%">
 </p>
 
