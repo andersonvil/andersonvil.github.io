@@ -22,10 +22,12 @@ cv_url = "/files/demo/anderson-vil-cv-preview.pdf"
 [[extra.menu]]
 name = "Home"
 url = "/"
+section = "home"
 
 [[extra.menu]]
 name = "Research"
 url = "/research/"
+section = "research"
 
 [[extra.menu]]
 name = "CV"
@@ -35,15 +37,24 @@ document = true
 [[extra.menu]]
 name = "Teaching"
 url = "/teaching/"
+section = "teaching"
 
 [[extra.menu]]
 name = "Code & Data"
 url = "/code-data/"
+section = "code-data"
 
 [[extra.menu]]
 name = "Insights"
 url = "/insights/"
+section = "insights"
+
+[[extra.menu]]
+name = "Beyond Economics"
+url = "/beyond-economics/"
+section = "beyond-economics"
 
 [[extra.menu]]
 name = "Contact"
 url = "/contact/"
+section = "contact"

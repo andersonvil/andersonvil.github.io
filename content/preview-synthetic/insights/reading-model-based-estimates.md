@@ -5,6 +5,7 @@ path = "insights/reading-model-based-estimates"
 template = "insight.html"
 
 [extra]
+insight_id = "reading-model-based-estimates"
 category = "Methods Note"
 author = "Synthetic preview content"
 synthetic = true

@@ -2,6 +2,7 @@ label = "Synthetic demonstration content — not for publication"
 synthetic = true
 placeholder = true
 publicationStatus = "blocked"
+# Reading time is ceil(article-body words / 220), minimum one minute.
 
 [[insights]]
 id = "reading-model-based-estimates"
@@ -11,6 +12,7 @@ date = "Preview edition"
 author = "Synthetic preview content"
 summary = "A practical guide to separating assumptions, identification, estimates, uncertainty, and policy interpretation."
 url = "/insights/reading-model-based-estimates/"
+reading_minutes = 3
 
 [[insights]]
 id = "household-averages"
@@ -20,6 +22,18 @@ date = "Preview edition"
 author = "Synthetic preview content"
 summary = "A classroom-oriented note on why household totals do not automatically describe each person's living standard."
 url = "/insights/what-household-averages-can-hide/"
+reading_minutes = 3
+
+[[beyond_economics]]
+id = "notes-on-attention"
+title = "Notes on Attention"
+category = "Other"
+language = "English"
+date = "Preview edition"
+author = "Synthetic preview content"
+summary = "A neutral demonstration text for testing a quieter reading layout beyond academic economics."
+url = "/beyond-economics/notes-on-attention/"
+reading_minutes = 2
 
 [[talks]]
 title = "Synthetic Seminar on Time Allocation"

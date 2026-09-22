@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Beyond Economics | Anderson Vil{% endblock title %}
+{% block description %}Poems, essays, and other work beyond academic economics.{% endblock description %}
+{% block content %}
+{% set preview = load_data(path="data/preview_synthetic.toml") %}
+<header class="page-hero beyond-hero shell"><p class="eyebrow">Beyond Economics</p><h1>Words and work beyond the discipline</h1><p class="lede">Poems, essays, and other work beyond academic economics.</p><p class="preview-label compact">{{ preview.label }} · This section remains blocked until approved work exists.</p></header>
+<section class="shell beyond-index" aria-labelledby="beyond-list-title"><div class="section-heading"><p class="eyebrow">Preview reading</p><h2 id="beyond-list-title">One layout fixture</h2></div>{% for work in preview.beyond_economics %}<article class="beyond-card" data-synthetic="true"><div><p class="meta">{{ work.category }} · {{ work.language }} · {{ work.date }} · {{ work.reading_minutes }} min read</p><h3><a href="{{ work.url }}">{{ work.title }}</a></h3><p>{{ work.summary }}</p><p class="byline">{{ work.author }}</p></div><a class="arrow-link" href="{{ work.url }}">Read the preview <span aria-hidden="true">→</span></a></article>{% endfor %}</section>
+{% endblock content %}

@@ -49,9 +49,9 @@ foreach ($file in $files) {
     if ($file.Extension -eq '.html') {
         $buttons = [regex]::Matches($content, '<button\b[^>]*>', 'IgnoreCase')
         foreach ($button in $buttons) {
-            if ($button.Value -notmatch 'data-filter=|copy-citation|file-test') {
+            if ($button.Value -notmatch 'data-filter=|copy-citation|file-test|theme-toggle|menu-toggle|abstract-toggle|copy-email') {
                 $relative = $file.FullName.Substring($resolvedRoot.Length + 1)
-                $violations.Add("Button without a recognized functional destination in $relative: $($button.Value)")
+                $violations.Add("Button without a recognized functional destination in ${relative}: $($button.Value)")
             }
         }
     }

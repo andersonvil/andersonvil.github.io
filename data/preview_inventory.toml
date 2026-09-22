@@ -90,6 +90,28 @@ removal_condition = "Every entry is verified or the route is excluded."
 status = "open"
 
 [[items]]
+id = "preview-beyond-economics"
+location = "content/preview-synthetic/beyond-economics/"
+consumer = "Beyond Economics index and detail page"
+function = "Test creative-work discovery, reading typography, themes, and route hierarchy without attributing a work to Anderson Vil."
+kind = "synthetic-editorial"
+expected_replacement = "Approved creative or personal work with verified authorship, date, language, and publication permission."
+owner = "Anderson Vil"
+removal_condition = "At least one approved work replaces the fixture, or the route is excluded from production."
+status = "open"
+
+[[items]]
+id = "preview-portrait"
+location = "static/img/VIL_Anderson-01-petit.jpg"
+consumer = "Home"
+function = "Test the portrait-led hero and responsive image crop."
+kind = "provisional-image"
+expected_replacement = "The same or another approved portrait with confirmed rights, credit, and recropping permission."
+owner = "Anderson Vil"
+removal_condition = "Image rights and credit requirements are explicitly confirmed, or the image is removed."
+status = "open"
+
+[[items]]
 id = "preview-index"
 location = "content/preview-synthetic/preview-index.md"
 consumer = "Review team"

@@ -1,14 +1,19 @@
 {% extends "base.html" %}
+{% import "macros/site-icons.html" as icons %}
 {% block title %}Contact | Anderson Vil{% endblock title %}
 {% block description %}Email and verified professional profiles for Anderson Vil.{% endblock description %}
 {% block content %}
-<header class="page-hero shell"><p class="eyebrow">Contact</p><h1>Get in touch</h1><p class="lede">For research, teaching, seminar, and professional enquiries.</p></header>
+<header class="page-hero shell"><p class="eyebrow">Contact</p><h1>Get in touch</h1><p class="lede">For research collaboration, seminar invitations, teaching enquiries, and professional correspondence.</p></header>
 <section class="shell contact-page">
-  <a class="email-card" href="mailto:{{ academic.identity.email }}"><span>Email</span><strong>{{ academic.identity.email }}</strong><span aria-hidden="true">→</span></a>
-  <div class="contact-columns">
-    <div><h2>Current appointments</h2><div class="provisional-card" data-placeholder="true" data-publication-status="blocked"><p>Research Fellow at CY Cergy Paris Université (THEMA)</p><p>Lecturer in Economics at Université Catholique de l'Ouest</p><p class="status-note">Institutional wording and dates are pending final publication review.</p></div></div>
-    <div><h2>Professional profiles</h2><ul class="profile-list">{% for profile in academic.profiles %}<li><a href="{{ profile.url }}" rel="me"><span>{{ profile.name }}</span><span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></div>
+  <div class="contact-email-block">
+    <div><p class="meta">Preferred contact</p><h2>Email Anderson Vil</h2><a class="email-address" href="mailto:{{ academic.identity.email }}">{{ academic.identity.email }}</a></div>
+    <button class="button secondary copy-email" type="button" data-email="{{ academic.identity.email }}">Copy email address</button>
   </div>
-  <p class="privacy-note">No telephone number or booking link is published in this preview.</p>
+  <p class="copy-email-status" role="status" aria-live="polite"></p>
+  <div class="contact-columns">
+    <section><p class="eyebrow">Appointments</p><h2>Current academic roles</h2><div class="provisional-card" data-placeholder="true" data-publication-status="blocked"><p class="preview-label compact">Provisional wording</p><p><strong>Research Fellow</strong><br>CY Cergy Paris Université (THEMA)</p><p><strong>Lecturer in Economics</strong><br>Université Catholique de l'Ouest</p></div></section>
+    <section><p class="eyebrow">Profiles</p><h2>Professional links</h2><ul class="profile-list icons">{% for profile in academic.profiles %}<li><a href="{{ profile.url }}" rel="me">{{ icons::icon(name=profile.name | lower) }}<span>{{ profile.name }}</span><span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></section>
+  </div>
+  <div class="contact-next"><p>Looking for current work or teaching materials?</p><div><a class="text-link" href="/research/">Explore Research</a><a class="text-link" href="/teaching/">Explore Teaching</a></div></div>
 </section>
 {% endblock content %}

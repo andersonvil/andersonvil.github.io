@@ -7,6 +7,9 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & (Join-Path $PSScriptRoot 'validate-site.ps1')
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+& (Join-Path $PSScriptRoot 'test-reading-times.ps1')
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
 $demo = Join-Path $repo 'static\files\demo\synthetic-household-project'
 python (Join-Path $demo 'analyze_demo.py') (Join-Path $demo 'synthetic_households.json')
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

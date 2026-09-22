@@ -6,6 +6,10 @@ long_positioning = "Anderson Vil studies how children and caregiving reshape con
 fields = ["Household Economics", "Labor Economics", "Applied Microeconometrics"]
 job_market = "2026–2027 Academic Job Market"
 phone_public = false
+portrait = "/img/VIL_Anderson-01-petit.jpg"
+portrait_alt = "Portrait of Anderson Vil"
+portrait_publication_status = "blocked"
+portrait_note = "Image rights and any required credit must be confirmed before publication."
 
 [[roles]]
 title = "Research Fellow"
@@ -48,6 +52,7 @@ status_label = "Editorial status pending final verification"
 url = "/research/household-demand-leisure/"
 pdf = "/files/demo/household-demand-leisure-preview.pdf"
 description = "A structural model that estimates the productive value of parental childcare time rather than assuming that it equals the market wage."
+abstract = "We propose a new approach to estimating the full cost of children—the sum of monetary and time costs—by endogenizing the price of parental time rather than assuming it equals the wage. A simplified collective model of leisure demand for working couples, estimated with 2019 PSID data, recovers the price of parental time and the full cost of children. The results indicate that childcare time combines labor-like and leisure-like components and that a substantial portion of the full cost is non-monetary."
 question = "How should parental childcare time be valued when it is partly productive and partly experienced as leisure?"
 contribution = "The paper endogenizes the price of parental childcare time using substitution between parental care and purchased childcare, then connects that price to the monetary and time components of child costs."
 methods = "Collective household model; childcare technology; full-leisure demand; recursive maximum likelihood and 3SLS; 2019 PSID dual-earner couples."
@@ -69,6 +74,7 @@ status_label = "Editorial status pending final verification"
 url = "/research/children-costs-one-adult-household/"
 pdf = "/files/demo/children-costs-one-adult-household-preview.pdf"
 description = "A collective consumption model for studying resource sharing and economies of scale in one-adult households with children."
+abstract = "This paper asks whether child-cost estimates derived from two-parent households are informative for single-parent families and whether estimated allocation patterns are consistent with benefit rules that condition support uniformly on family size. It develops a collective consumption model for one-adult households and applies it to UK expenditure surveys. The results support the couple-based benchmark for single mothers and find no systematic per-child resource dilution once estimation uncertainty is accounted for."
 question = "Can estimates derived from couple households provide useful benchmarks for single-parent families?"
 contribution = "The paper extends collective-consumption methods to one-adult households and estimates resource shares using UK expenditure surveys spanning 1978–2022."
 methods = "Assignable goods; nonlinear Engel curves; sharing rules and Barten scales; harmonized FES, EFS, and LCF expenditure data."
@@ -90,6 +96,7 @@ status_label = "Editorial status pending final verification"
 url = "/research/children-labor-supply-equations/"
 pdf = "/files/demo/children-labor-supply-equations-preview.pdf"
 description = "A framework that represents children's monetary and time channels directly in labor-supply equations."
+abstract = "We propose a method for modelling the impact of children on labor supply that jointly considers their time and monetary costs. Restrictions on childcare technology identify the total cost of children from labor-supply equations with modest data requirements. Applied to single mothers in the 2019 PSID, the model suggests that wage responsiveness is higher for women with children, while the reverse holds for exogenous income, and it recovers childcare time and total child costs."
 question = "How can children enter labor-supply models as economic mechanisms rather than as a demographic control?"
 contribution = "The paper connects equivalence scales, childcare technology, and labor supply so that monetary and time costs can be identified with modest data requirements."
 methods = "Static labor-supply model; simplified childcare technology; participation correction; 2019 PSID sample of single women."
@@ -106,7 +113,26 @@ replacement = "A final, approved canonical CV PDF with verified metadata and no 
 
 [teaching]
 publicationStatus = "blocked"
-statement = "The teaching portfolio is withheld until the course history and distribution rights are verified. The preview demonstrates the intended learning-resource structure with a fully synthetic course."
+positioning = "I teach economics by linking conceptual clarity, quantitative practice, and careful interpretation of evidence."
+statement = "Course dates, hours, and distribution rights remain under review; the broad teaching areas below are supported across the supplied CV, statement, and legacy course records."
+levels = ["Undergraduate tutorials"]
+subject_areas = ["Statistics", "Applied Econometrics", "Microeconomics", "Macroeconomics", "Public Economics"]
+tools = ["R", "SAS"]
+
+[[teaching.experience]]
+group = "Quantitative methods"
+items = ["Statistics", "Applied Econometrics"]
+note = "Tutorial teaching at CY Cergy Paris Université; dates and hours withheld pending canonical verification."
+
+[[teaching.experience]]
+group = "Microeconomics and public economics"
+items = ["Microeconomics I", "Microeconomics IV / Public Economics"]
+note = "Tutorial teaching at CY Cergy Paris Université; exact level labels, dates, and hours remain under review."
+
+[[teaching.experience]]
+group = "Macroeconomics"
+items = ["Macroeconomics II", "Macroeconomics IV"]
+note = "Tutorial teaching at CY Cergy Paris Université; dates and hours withheld pending canonical verification."
 
 [code_data]
 publicationStatus = "blocked"

@@ -1,4 +1,6 @@
+{% import "macros/site-icons.html" as icons %}
 {% set academic = load_data(path="data/academic.toml") %}
+{% set nav_path = current_path | default(value="/404.html") %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,6 +12,16 @@
   <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
   <link rel="canonical" href="{{ config.base_url }}{{ current_path | default(value='/') }}">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('av-theme');
+        const theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch (_) { document.documentElement.dataset.theme = 'light'; }
+    })();
+  </script>
   <link rel="stylesheet" href="/styles/site.css">
   <script defer src="/js/site.js"></script>
   {% block head %}{% endblock head %}
@@ -29,17 +41,21 @@
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         {% for item in config.extra.menu %}
-          <a href="{{ item.url }}"{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
+          <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
         {% endfor %}
       </nav>
-      <details class="mobile-nav">
-        <summary aria-label="Open navigation">Menu</summary>
-        <nav aria-label="Mobile navigation">
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <span class="theme-icon theme-icon-sun">{{ icons::icon(name="sun") }}</span>
+          <span class="theme-icon theme-icon-moon">{{ icons::icon(name="moon") }}</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
           {% for item in config.extra.menu %}
-            <a href="{{ item.url }}"{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
+            <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
           {% endfor %}
-        </nav>
-      </details>
+      </nav>
     </div>
   </header>
   <main id="main-content" tabindex="-1">
@@ -52,8 +68,8 @@
         <p>Household Economics · Labor Economics · Applied Microeconometrics</p>
       </div>
       <div class="footer-links" aria-label="Professional profiles">
-        <a href="mailto:{{ academic.identity.email }}">Email</a>
-        {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ profile.name }}</a>{% endfor %}
+        <a href="mailto:{{ academic.identity.email }}">{{ icons::icon(name="email") }}<span>Email</span></a>
+        {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ icons::icon(name=profile.name | lower) }}<span>{{ profile.name }}</span></a>{% endfor %}
       </div>
     </div>
     <p class="footer-note">Preview build · noindex · synthetic and provisional items are blocked from production.</p>

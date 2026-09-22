@@ -22,10 +22,11 @@
     <p class="copy-status" role="status" aria-live="polite"></p>
   </header>
   <div class="paper-layout">
-    <aside class="paper-toc" aria-label="On this page"><p class="meta">On this page</p><a href="#question">Question</a><a href="#contribution">Contribution</a><a href="#overview">Overview</a><a href="#methods">Methods and data</a><a href="#findings">Findings and limits</a></aside>
+    <aside class="paper-toc" aria-label="On this page"><p class="meta">On this page</p><a href="#question">Question</a><a href="#contribution">Contribution</a><a href="#abstract">Abstract</a><a href="#overview">Overview</a><a href="#methods">Methods and data</a><a href="#findings">Findings and limits</a></aside>
     <div class="paper-body">
       <section id="question"><p class="eyebrow">Research question</p><h2>{{ paper.question }}</h2></section>
       <section id="contribution"><h2>Contribution</h2><p>{{ paper.contribution }}</p></section>
+      <section id="abstract"><h2>Abstract</h2><p>{{ paper.abstract }}</p></section>
       <section id="overview"><h2>Non-technical overview</h2><p>{{ paper.description }} The web presentation is deliberately cautious: it separates the paper's research design from editorial status and from any results that still need author approval.</p></section>
       <section id="methods"><h2>Methods and data</h2><p>{{ paper.methods }}</p></section>
       <section id="findings"><h2>Findings and limits</h2><p>{{ paper.findings }}</p><div class="limit-box"><h3>Interpretive limits</h3><p>{{ paper.limitations }}</p></div></section>

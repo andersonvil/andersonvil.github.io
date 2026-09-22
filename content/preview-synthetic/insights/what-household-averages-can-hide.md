@@ -5,6 +5,7 @@ path = "insights/what-household-averages-can-hide"
 template = "insight.html"
 
 [extra]
+insight_id = "household-averages"
 category = "Teaching Note"
 author = "Synthetic preview content"
 synthetic = true

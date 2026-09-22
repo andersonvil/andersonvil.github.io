@@ -1,9 +1,29 @@
 {% extends "base.html" %}
 {% block title %}Teaching | Anderson Vil{% endblock title %}
-{% block description %}Teaching approach and a synthetic resource preview for Anderson Vil's future teaching portfolio.{% endblock description %}
+{% block description %}Teaching areas, experience, approach, and a synthetic resource preview for Anderson Vil.{% endblock description %}
 {% block content %}
-<header class="page-hero shell"><p class="eyebrow">Teaching</p><h1>Concept first, method second, evidence throughout</h1><p class="lede">The future teaching portfolio will connect clear learning objectives, economic intuition, technical practice, and careful interpretation. Real course history remains withheld until the canonical record and distribution rights are confirmed.</p></header>
-<section class="shell principle-grid" aria-label="Teaching approach"><article><span>01</span><h2>Clarify the core idea</h2><p>Each session should leave students with one durable concept and a way to test whether they understand it.</p></article><article><span>02</span><h2>Make assumptions visible</h2><p>Methods become useful when students can explain why they work and what changes when assumptions fail.</p></article><article><span>03</span><h2>Use evidence responsibly</h2><p>Exercises connect formal tools to real questions while separating description, identification, and interpretation.</p></article></section>
-<section class="soft-section section-space"><div class="shell"><div class="section-heading split-heading"><div><p class="eyebrow">Preview resource</p><h2>Synthetic Applied Economics Lab</h2></div><p>A complete fictional resource tests the course page, handout, code, and notebook journey without claiming a course was taught.</p></div><article class="resource-card" data-synthetic="true"><div><p class="synthetic-label">{{ config.extra.preview_label }}</p><h3><a href="/teaching/applied-economics-lab/">Interpreting associations and causal claims</a></h3><p>Level: synthetic undergraduate workshop · Institution: none · Language: English</p></div><a class="button primary" href="/teaching/applied-economics-lab/">View course materials</a></article></div></section>
-<section class="shell section-space callout"><h2>What is still required for publication</h2><p>A verified table of courses, roles, institutions, levels, dates, languages, software, and authorized materials. The provisional Teaching Statement is not linked from this preview.</p></section>
+<header class="page-hero shell"><p class="eyebrow">Teaching</p><h1>Conceptual clarity, quantitative practice</h1><p class="lede">{{ academic.teaching.positioning }}</p></header>
+
+<section class="shell teaching-overview" aria-labelledby="teaching-glance-title">
+  <div class="section-heading"><p class="eyebrow">Teaching at a glance</p><h2 id="teaching-glance-title">Economics from foundations to applied evidence</h2></div>
+  <div class="teaching-glance">
+    <article><h3>Level</h3><ul>{% for item in academic.teaching.levels %}<li>{{ item }}</li>{% endfor %}</ul></article>
+    <article><h3>Subject areas</h3><ul>{% for item in academic.teaching.subject_areas %}<li>{{ item }}</li>{% endfor %}</ul></article>
+    <article><h3>Tools</h3><ul>{% for item in academic.teaching.tools %}<li>{{ item }}</li>{% endfor %}</ul></article>
+  </div>
+</section>
+
+<section class="soft-section teaching-experience"><div class="shell"><div class="section-heading"><p class="eyebrow">Selected teaching experience</p><h2>Courses grouped by area</h2><p>{{ academic.teaching.statement }}</p></div><div class="experience-list">{% for entry in academic.teaching.experience %}<article><div><p class="meta">{{ entry.group }}</p><h3>{{ entry.items | join(sep=" · ") }}</h3></div><p>{{ entry.note }}</p></article>{% endfor %}</div></div></section>
+
+<section class="shell teaching-materials" aria-labelledby="materials-title">
+  <div class="section-heading split-heading"><div><p class="eyebrow">Teaching materials</p><h2 id="materials-title">A complete resource journey</h2></div><p>The example below is a functional layout fixture. It is not a claim about a real course, institution, or assignment.</p></div>
+  <p class="preview-label">{{ config.extra.preview_label }}</p>
+  <article class="resource-card" data-synthetic="true"><div><p class="meta">Synthetic undergraduate workshop · English · PDF, data, code, notebook</p><h3><a href="/teaching/applied-economics-lab/">Interpreting associations and causal claims</a></h3><p>A 90-minute demonstration linking a learning objective, a small dataset, executable code, and an accessible handout.</p></div><a class="button primary" href="/teaching/applied-economics-lab/">View course materials</a></article>
+</section>
+
+<section class="shell teaching-approach" aria-labelledby="approach-title"><div class="section-heading"><p class="eyebrow">Teaching approach</p><h2 id="approach-title">Three principles that structure a class</h2></div><div class="principle-grid"><article><span>01</span><h3>Clarify the core idea</h3><p>Each session begins with one durable objective and uses short formative checks to make understanding visible.</p></article><article><span>02</span><h3>Explain why before how</h3><p>Methods become transferable when students can state the assumptions, intuition, and consequences of failure.</p></article><article><span>03</span><h3>Interpret evidence responsibly</h3><p>Exercises connect formal tools to real questions while separating description, identification, and policy judgment.</p></article></div></section>
+
+<section class="soft-section teaching-code"><div class="shell split-heading"><div><p class="eyebrow">Teaching code and notebooks</p><h2>Context before download</h2></div><div><p>Teaching notebooks should state the learning objective, software requirements, source, and expected output before students open a file.</p><a class="text-link" href="/code-data/">Browse Code & Data</a></div></div></section>
+
+<section class="shell teaching-contact"><div><p class="eyebrow">Teaching enquiries</p><h2>Discuss courses, materials, or quantitative teaching</h2></div><a class="button primary" href="mailto:{{ academic.identity.email }}">Email Anderson Vil</a></section>
 {% endblock content %}
