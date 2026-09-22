@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Research | Anderson Vil{% endblock title %}
+{% block description %}Research on household resource allocation, labor supply, parental time, leisure, and the economic cost of children.{% endblock description %}
+{% block content %}
+<header class="page-hero shell"><p class="eyebrow">Research</p><h1>How families allocate money and time</h1><p class="lede">A research program in household economics, labor economics, and applied microeconometrics. The three papers recover resource shares, monetary constraints, and the value of parental time from household behavior.</p></header>
+<section class="shell research-stack">
+{% for paper in academic.papers %}
+  <article class="research-card{% if paper.job_market %} featured{% endif %}">
+    <div class="research-card-top">
+      <div>{% if paper.job_market %}<span class="badge">Job Market Paper</span>{% endif %}<p class="meta">{{ paper.status_label }} · {{ paper.series }}</p></div>
+      <span class="paper-number">0{{ loop.index }}</span>
+    </div>
+    <h2><a href="{{ paper.url }}">{{ paper.title }}</a></h2>
+    <p class="byline">{{ paper.author_line }}</p>
+    <p>{{ paper.description }}</p>
+    <dl class="paper-facts"><div><dt>Version</dt><dd>{{ paper.version }}</dd></div><div><dt>Publication</dt><dd>Blocked pending final verification</dd></div></dl>
+    <div class="button-row"><a class="button primary" href="{{ paper.url }}">View paper details</a><a class="button secondary" href="{{ paper.pdf }}">Download synthetic PDF</a></div>
+    <p class="synthetic-label">{{ config.extra.preview_label }}</p>
+  </article>
+{% endfor %}
+</section>
+<section class="shell section-space callout"><h2>Research documents</h2><p>A final Research Statement has not been approved for publication. The preview does not expose the supplied provisional statement because it identifies the wrong Job Market Paper and contains superseded results.</p><a class="text-link" href="/preview/">Review publication blockers</a></section>
+{% endblock content %}

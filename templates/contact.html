@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Contact | Anderson Vil{% endblock title %}
+{% block description %}Email and verified professional profiles for Anderson Vil.{% endblock description %}
+{% block content %}
+<header class="page-hero shell"><p class="eyebrow">Contact</p><h1>Get in touch</h1><p class="lede">For research, teaching, seminar, and professional enquiries.</p></header>
+<section class="shell contact-page">
+  <a class="email-card" href="mailto:{{ academic.identity.email }}"><span>Email</span><strong>{{ academic.identity.email }}</strong><span aria-hidden="true">→</span></a>
+  <div class="contact-columns">
+    <div><h2>Current appointments</h2><div class="provisional-card" data-placeholder="true" data-publication-status="blocked"><p>Research Fellow at CY Cergy Paris Université (THEMA)</p><p>Lecturer in Economics at Université Catholique de l'Ouest</p><p class="status-note">Institutional wording and dates are pending final publication review.</p></div></div>
+    <div><h2>Professional profiles</h2><ul class="profile-list">{% for profile in academic.profiles %}<li><a href="{{ profile.url }}" rel="me"><span>{{ profile.name }}</span><span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></div>
+  </div>
+  <p class="privacy-note">No telephone number or booking link is published in this preview.</p>
+</section>
+{% endblock content %}

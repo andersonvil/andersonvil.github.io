@@ -1,0 +1,19 @@
+{
+  "title": "Synthetic household time-allocation data",
+  "description": "Synthetic demonstration content — not for publication",
+  "synthetic": true,
+  "placeholder": true,
+  "publicationStatus": "blocked",
+  "units": {
+    "market_work_hours": "hours per week",
+    "care_hours": "hours per week"
+  },
+  "records": [
+    {"household_id": "DEMO-001", "group": "A", "market_work_hours": 32, "care_hours": 18},
+    {"household_id": "DEMO-002", "group": "A", "market_work_hours": 36, "care_hours": 15},
+    {"household_id": "DEMO-003", "group": "A", "market_work_hours": 28, "care_hours": 21},
+    {"household_id": "DEMO-004", "group": "B", "market_work_hours": 40, "care_hours": 9},
+    {"household_id": "DEMO-005", "group": "B", "market_work_hours": 38, "care_hours": 12},
+    {"household_id": "DEMO-006", "group": "B", "market_work_hours": 42, "care_hours": 6}
+  ]
+}

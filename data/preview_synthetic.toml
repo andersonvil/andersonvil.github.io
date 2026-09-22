@@ -1,0 +1,43 @@
+label = "Synthetic demonstration content — not for publication"
+synthetic = true
+placeholder = true
+publicationStatus = "blocked"
+
+[[insights]]
+id = "reading-model-based-estimates"
+title = "Reading a Model-Based Estimate Without Overclaiming"
+category = "Methods Note"
+date = "Preview edition"
+author = "Synthetic preview content"
+summary = "A practical guide to separating assumptions, identification, estimates, uncertainty, and policy interpretation."
+url = "/insights/reading-model-based-estimates/"
+
+[[insights]]
+id = "household-averages"
+title = "What Household Averages Can Hide"
+category = "Teaching Note"
+date = "Preview edition"
+author = "Synthetic preview content"
+summary = "A classroom-oriented note on why household totals do not automatically describe each person's living standard."
+url = "/insights/what-household-averages-can-hide/"
+
+[[talks]]
+title = "Synthetic Seminar on Time Allocation"
+event = "Preview Methods Colloquium (fictional)"
+location = "Demonstration Room A"
+date = "2030-02-12"
+type = "Seminar"
+
+[[talks]]
+title = "Synthetic Workshop on Resource Sharing"
+event = "North Harbor Economics Workshop (fictional)"
+location = "Demonstration Room B"
+date = "2030-04-24"
+type = "Workshop"
+
+[[talks]]
+title = "Synthetic Lecture on Applied Microeconometrics"
+event = "Example Teaching Exchange (fictional)"
+location = "Online preview"
+date = "2030-06-03"
+type = "Lecture"

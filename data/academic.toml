@@ -1,0 +1,113 @@
+[identity]
+name = "Anderson Vil"
+email = "vladerinson@gmail.com"
+short_positioning = "Household and labor economist studying how families allocate money and time."
+long_positioning = "Anderson Vil studies how children and caregiving reshape consumption, labor supply, leisure, and the allocation of resources within families. His work uses structural models and applied microeconometric methods to recover economic quantities that household surveys do not directly reveal."
+fields = ["Household Economics", "Labor Economics", "Applied Microeconometrics"]
+job_market = "2026–2027 Academic Job Market"
+phone_public = false
+
+[[roles]]
+title = "Research Fellow"
+institution = "CY Cergy Paris Université"
+unit = "THEMA"
+publicationStatus = "blocked"
+note = "Public wording and dates require final confirmation."
+
+[[roles]]
+title = "Lecturer in Economics"
+institution = "Université Catholique de l'Ouest"
+unit = ""
+publicationStatus = "blocked"
+note = "Institutional wording and dates require final confirmation."
+
+[[profiles]]
+name = "GitHub"
+url = "https://github.com/andersonvil"
+
+[[profiles]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/anderson-vil-anderseco/"
+
+[[profiles]]
+name = "ORCID"
+url = "https://orcid.org/0000-0003-1329-8099"
+
+[[papers]]
+id = "household-demand-leisure"
+title = "The Household Demand for Leisure, the Price of Time and the Full Cost of Children: A Structural Model and Evidence from the PSID"
+short_title = "The Household Demand for Leisure and the Full Cost of Children"
+authors = ["Olivier Donni", "Anderson Vil"]
+author_line = "Olivier Donni and Anderson Vil"
+card_author_line = "with Olivier Donni"
+version = "September 18, 2026"
+series = "PSE Working Paper No. 2025-38"
+job_market = true
+publicationStatus = "blocked"
+status_label = "Editorial status pending final verification"
+url = "/research/household-demand-leisure/"
+pdf = "/files/demo/household-demand-leisure-preview.pdf"
+description = "A structural model that estimates the productive value of parental childcare time rather than assuming that it equals the market wage."
+question = "How should parental childcare time be valued when it is partly productive and partly experienced as leisure?"
+contribution = "The paper endogenizes the price of parental childcare time using substitution between parental care and purchased childcare, then connects that price to the monetary and time components of child costs."
+methods = "Collective household model; childcare technology; full-leisure demand; recursive maximum likelihood and 3SLS; 2019 PSID dual-earner couples."
+findings = "The most robust contribution is methodological: the productive price of childcare time can differ materially from the wage. Monetary and full-cost estimates are more fragile and remain in the detailed manuscript rather than the preview headline."
+limitations = "The supplied version focuses on dual-earner couples with young children. Full-leisure Engel curves are comparatively flat, and the monetary component is less precisely identified."
+
+[[papers]]
+id = "children-costs-one-adult-household"
+title = "Children Costs in a One-Adult Household: Empirical Evidence from the UK"
+short_title = "Children Costs in a One-Adult Household"
+authors = ["Anderson Vil"]
+author_line = "Anderson Vil"
+card_author_line = "Anderson Vil"
+version = "January 12, 2026"
+series = "PSE Working Paper No. 2025-37"
+job_market = false
+publicationStatus = "blocked"
+status_label = "Editorial status pending final verification"
+url = "/research/children-costs-one-adult-household/"
+pdf = "/files/demo/children-costs-one-adult-household-preview.pdf"
+description = "A collective consumption model for studying resource sharing and economies of scale in one-adult households with children."
+question = "Can estimates derived from couple households provide useful benchmarks for single-parent families?"
+contribution = "The paper extends collective-consumption methods to one-adult households and estimates resource shares using UK expenditure surveys spanning 1978–2022."
+methods = "Assignable goods; nonlinear Engel curves; sharing rules and Barten scales; harmonized FES, EFS, and LCF expenditure data."
+findings = "The supplied manuscript finds that estimates for single mothers are close to a couple-based reference and does not find systematic per-child dilution once uncertainty is taken into account."
+limitations = "The preview omits internally conflicting test statistics and makes no causal claim about the UK two-child limit. Differences between mothers and fathers are not presented as statistically established."
+
+[[papers]]
+id = "children-labor-supply-equations"
+title = "How to Incorporate Children into Labor Supply Equations? An Equivalence-Scale Approach"
+short_title = "Children in Labor Supply Equations"
+authors = ["Olivier Donni", "Anderson Vil"]
+author_line = "Olivier Donni and Anderson Vil"
+card_author_line = "with Olivier Donni"
+version = "September 4, 2026"
+series = "PSE Working Paper No. 2025-40"
+job_market = false
+publicationStatus = "blocked"
+status_label = "Editorial status pending final verification"
+url = "/research/children-labor-supply-equations/"
+pdf = "/files/demo/children-labor-supply-equations-preview.pdf"
+description = "A framework that represents children's monetary and time channels directly in labor-supply equations."
+question = "How can children enter labor-supply models as economic mechanisms rather than as a demographic control?"
+contribution = "The paper connects equivalence scales, childcare technology, and labor supply so that monetary and time costs can be identified with modest data requirements."
+methods = "Static labor-supply model; simplified childcare technology; participation correction; 2019 PSID sample of single women."
+findings = "The model predicts that children can change labor-supply responses to wages and exogenous income through distinct time and monetary channels."
+limitations = "The supplied PDF contains title and metadata typographical errors. Valuing nonparticipants' time requires a reservation-wage estimate and does not imply a normative compensation level."
+
+[documents.cv]
+label = "CV preview"
+url = "/files/demo/anderson-vil-cv-preview.pdf"
+synthetic = true
+placeholder = true
+publicationStatus = "blocked"
+replacement = "A final, approved canonical CV PDF with verified metadata and no unauthorized personal data."
+
+[teaching]
+publicationStatus = "blocked"
+statement = "The teaching portfolio is withheld until the course history and distribution rights are verified. The preview demonstrates the intended learning-resource structure with a fully synthetic course."
+
+[code_data]
+publicationStatus = "blocked"
+statement = "No real replication package is claimed. The preview uses a separate, executable synthetic project to test documentation and downloads."

@@ -1,34 +1,9 @@
 {% extends "base.html" %}
-
-{% block nav %}
-  {{ macros_nav::nav(website_title=config.title, menu_items=config.extra.menu_items, active_item=section.title) }}
-{% endblock nav %}
-
+{% block title %}Teaching | Anderson Vil{% endblock title %}
+{% block description %}Teaching approach and a synthetic resource preview for Anderson Vil's future teaching portfolio.{% endblock description %}
 {% block content %}
-<div class="container max-w-3xl mx-auto px-4">
-  <div class="font-sans py-8">
-    <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>
-  </div>
-
-  <article class="prose prose-indigo prose max-w-3xl">
-    {{ section.content | safe }}
-  </article>
-
-  {% for publication_type in section.extra.publications_types -%}
-    <div class ="prose py-4">
-      <h2 class=""> {{publication_type.title}} </h2>
-    </div>
-
-    <ul>
-    {% for page in section.pages  -%}
-      {% if page.extra.type == publication_type.type -%}
-      <li class="pb-3">
-        {% set bibpath = page.path ~ "bib" -%}
-        {{ publication::summary(page=page) }}
-      </li>
-      {% endif  -%}
-    {% endfor -%}
-    </ul>
-  {% endfor -%}
-</div>
+<header class="page-hero shell"><p class="eyebrow">Teaching</p><h1>Concept first, method second, evidence throughout</h1><p class="lede">The future teaching portfolio will connect clear learning objectives, economic intuition, technical practice, and careful interpretation. Real course history remains withheld until the canonical record and distribution rights are confirmed.</p></header>
+<section class="shell principle-grid" aria-label="Teaching approach"><article><span>01</span><h2>Clarify the core idea</h2><p>Each session should leave students with one durable concept and a way to test whether they understand it.</p></article><article><span>02</span><h2>Make assumptions visible</h2><p>Methods become useful when students can explain why they work and what changes when assumptions fail.</p></article><article><span>03</span><h2>Use evidence responsibly</h2><p>Exercises connect formal tools to real questions while separating description, identification, and interpretation.</p></article></section>
+<section class="soft-section section-space"><div class="shell"><div class="section-heading split-heading"><div><p class="eyebrow">Preview resource</p><h2>Synthetic Applied Economics Lab</h2></div><p>A complete fictional resource tests the course page, handout, code, and notebook journey without claiming a course was taught.</p></div><article class="resource-card" data-synthetic="true"><div><p class="synthetic-label">{{ config.extra.preview_label }}</p><h3><a href="/teaching/applied-economics-lab/">Interpreting associations and causal claims</a></h3><p>Level: synthetic undergraduate workshop · Institution: none · Language: English</p></div><a class="button primary" href="/teaching/applied-economics-lab/">View course materials</a></article></div></section>
+<section class="shell section-space callout"><h2>What is still required for publication</h2><p>A verified table of courses, roles, institutions, levels, dates, languages, software, and authorized materials. The provisional Teaching Statement is not linked from this preview.</p></section>
 {% endblock content %}

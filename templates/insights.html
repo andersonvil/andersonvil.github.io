@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Insights | Anderson Vil{% endblock title %}
+{% block description %}Synthetic previews of future research explainers, methods notes, and teaching notes.{% endblock description %}
+{% block content %}
+{% set preview = load_data(path="data/preview_synthetic.toml") %}
+<header class="page-hero shell"><p class="eyebrow">Insights</p><h1>Research ideas, explained with care</h1><p class="lede">These two demonstration texts test long-form reading, references, and category filtering. They are not authored by Anderson Vil and state no research result as his.</p><p class="synthetic-label">{{ preview.label }}</p></header>
+<section class="shell filter-section" data-filter-root>
+  <div class="filter-bar" aria-label="Filter Insights"><button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-button" data-filter="Methods Note" aria-pressed="false">Methods Notes</button><button type="button" class="filter-button" data-filter="Teaching Note" aria-pressed="false">Teaching Notes</button></div>
+  <div class="insight-grid large">
+  {% for insight in preview.insights %}<article class="insight-card" data-filter-item="{{ insight.category }}" data-synthetic="true"><p class="meta">{{ insight.category }} · {{ insight.date }}</p><h2><a href="{{ insight.url }}">{{ insight.title }}</a></h2><p>{{ insight.summary }}</p><p class="byline">{{ insight.author }}</p><p class="synthetic-label">{{ preview.label }}</p></article>{% endfor %}
+  </div>
+</section>
+{% endblock content %}

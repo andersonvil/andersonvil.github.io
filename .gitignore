@@ -1,3 +1,8 @@
 public/
+public-preview/
+public-production/
+.sites-runtime/
+tmp/
+output/
 Blog.docx
 likedin.odt

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Code & Data | Anderson Vil{% endblock title %}
+{% block description %}Synthetic code, data, and notebook demonstrations for the future Anderson Vil research infrastructure.{% endblock description %}
+{% block content %}
+<header class="page-hero shell"><p class="eyebrow">Code & Data</p><h1>Transparent materials, documented limits</h1><p class="lede">No real replication package is claimed in this preview. The resources below form one small, independent synthetic project that tests documentation, execution, and download behavior.</p><p class="synthetic-label">{{ config.extra.preview_label }}</p></header>
+<section class="shell demo-project" data-synthetic="true" data-publication-status="blocked">
+  <div class="project-header"><div><p class="meta">Synthetic demonstration project</p><h2>Household time-allocation example</h2><p>Six fictional observations illustrate how a documented dataset, script, notebook, and README can travel together.</p></div><span class="status-pill">Standard library only</span></div>
+  <div class="resource-list">
+    <article><span class="file-type">JSON</span><div><h3>Synthetic dataset</h3><p>Fictional household identifiers, weekly market-work hours, care hours, and group labels.</p></div><a href="/files/demo/synthetic-household-project/synthetic_households.json">Download data</a></article>
+    <article><span class="file-type">PY</span><div><h3>Executable analysis</h3><p>Validates the rows and calculates group means without third-party packages.</p></div><a href="/files/demo/synthetic-household-project/analyze_demo.py">Download code</a></article>
+    <article><span class="file-type">IPYNB</span><div><h3>Minimal notebook</h3><p>Runs the same calculation in a reproducible notebook with expected output.</p></div><a href="/files/demo/synthetic-household-project/demo_notebook.ipynb">Open notebook</a></article>
+    <article><span class="file-type">MD</span><div><h3>README</h3><p>Explains the synthetic status, file layout, command, and expected result.</p></div><a href="/files/demo/synthetic-household-project/README.md">Read instructions</a></article>
+  </div>
+  <div class="run-command"><span>Run locally</span><code>python analyze_demo.py synthetic_households.json</code></div>
+</section>
+<section class="soft-section section-space"><div class="shell code-columns"><div><p class="eyebrow">Research materials</p><h2>Publication threshold</h2><p>A real item must have a verified related paper, version, documented environment, rights or license, and a clean execution test.</p></div><div><p class="eyebrow">Data access</p><h2>Describe access honestly</h2><p>Future notices may explain official access to PSID or UK expenditure surveys. The preview does not mirror data or invent licensing terms.</p></div><div><p class="eyebrow">Teaching notebooks</p><h2>Context before download</h2><p>Every notebook should name its learning objective, software requirements, source, and expected output.</p></div></div></section>
+{% endblock content %}

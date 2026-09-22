@@ -1,77 +1,49 @@
-# The URL the site will be built for
 base_url = "https://andersonvil.github.io"
-
-# Whether to automatically compile all Sass files in the sass directory
+title = "Anderson Vil"
+description = "Academic site preview for Anderson Vil, household and labor economist."
+default_language = "en"
 compile_sass = false
-
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
-
-theme = "kodama-theme"
-
-title = "Anderson VIL"
-
-[translations]
-Biography = "Biography"
-Interests = "Interests"
-Education = "Education"
-toc = "Table of Contents"
-Published = "Published"
-Abstract = "Abstract"
-volume = "volume"
-number = "number"
-pages = "pages"
-
-# Various slugification strategies, see below for details
-# Defaults to everything being a slug
-[slugify]
-paths = "on"
-taxonomies = "on"
-anchors = "on"
+build_search_index = false
+generate_feeds = false
+generate_sitemap = false
+generate_robots_txt = false
+minify_html = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
-highlight_theme = "base16-ocean-dark"
+highlight_code = true
+highlight_theme = "css"
+smart_punctuation = true
 
 [extra]
+site_mode = "preview"
+preview_label = "Synthetic demonstration content — not for publication"
+cv_url = "/files/demo/anderson-vil-cv-preview.pdf"
 
-avatar = "img/avatar.jpg"
-favicon = "img/avatar.jpg"
+[[extra.menu]]
+name = "Home"
+url = "/"
 
-# Enter your email
-email = "vladerinson[at]gmail.com" 
-contact_in_index = false
+[[extra.menu]]
+name = "Research"
+url = "/research/"
 
-# Additional menu items
-# `Name` is what it is displayed, `path` is the url
-menu_items = [
-   { path = "#", name = "Home" },
-   { path = "cv/cv.pdf", name = "CV" },
-]
+[[extra.menu]]
+name = "CV"
+url = "/files/demo/anderson-vil-cv-preview.pdf"
+document = true
 
-# Translation related extra
-#language_codes = [ "en", "fr" ]
+[[extra.menu]]
+name = "Teaching"
+url = "/teaching/"
 
-[extra.fr]
-contact_in_index = false
-menu_items = [
-  # { path = "#contacts_fr", name = "Contact" },
-   { path = "cv/cv.pdf", name = "CV" },
-]
+[[extra.menu]]
+name = "Code & Data"
+url = "/code-data/"
 
-# Your translations
-[languages.fr]
-title = "Anderson VIL"
+[[extra.menu]]
+name = "Insights"
+url = "/insights/"
 
-[languages.fr.translations]
-Biography = "Bio"
-Interests = "Interêts"
-Education = "Formation"
-Published = "Publication"
-Abstract = "Résumé"
-
-
-
+[[extra.menu]]
+name = "Contact"
+url = "/contact/"

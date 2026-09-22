@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Talks — Synthetic Preview | Anderson Vil Site Preview{% endblock title %}
+{% block description %}Synthetic demonstration content — not for publication.{% endblock description %}
+{% block content %}
+{% set preview = load_data(path="data/preview_synthetic.toml") %}
+<header class="page-hero shell"><p class="synthetic-label">{{ preview.label }}</p><p class="eyebrow">Deferred preview route</p><h1>Talks</h1><p class="lede">This page tests a future presentation archive. Every event, venue, date, and title below is fictional. Talks is absent from the primary navigation and must remain outside production until a verified inventory exists.</p></header>
+<section class="shell filter-section" data-filter-root data-synthetic="true" data-publication-status="blocked">
+  <div class="filter-bar" aria-label="Filter talks"><button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-button" data-filter="Seminar" aria-pressed="false">Seminars</button><button type="button" class="filter-button" data-filter="Workshop" aria-pressed="false">Workshops</button><button type="button" class="filter-button" data-filter="Lecture" aria-pressed="false">Lectures</button></div>
+  <div class="talk-list">{% for talk in preview.talks %}<article data-filter-item="{{ talk.type }}"><time datetime="{{ talk.date }}">{{ talk.date }}</time><div><p class="meta">{{ talk.type }}</p><h2>{{ talk.title }}</h2><p>{{ talk.event }} · {{ talk.location }}</p><p class="synthetic-label">Fictional record</p></div></article>{% endfor %}</div>
+</section>
+{% endblock content %}

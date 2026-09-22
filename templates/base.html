@@ -1,57 +1,62 @@
-{% import 'macros/head.html' as macros_head -%}
-{% import 'macros/nav.html' as macros_nav -%}
-{% import 'macros/macros.html' as macros -%}
-{% import 'macros/icons.html' as icons -%}
-{% import 'macros/blog.html' as blog -%}
-{% import 'macros/publication.html' as publication -%}
-
-<!DOCTYPE html>
-<html lang="{{ lang | default(value=config.default_language)}}">
-
+{% set academic = load_data(path="data/academic.toml") %}
+<!doctype html>
+<html lang="en">
 <head>
-  {% set favicon = resize_image(path=config.extra.favicon, format="png", width=32, height=32) %}
-  <link rel="shortcut icon" href="{{ favicon.url }}" type="image/png">
-  <link rel="icon" href="{{ favicon.url }}" type="image/png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta charset="utf-8">
-
-  <!-- Custom header for users, includes custom css or js here -->
-  {% block user_head -%}
-  {% endblock user_head -%}
-
-  <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
-
-  {% block head -%}
-    {% block css -%}
-      {{ macros_head::stylesheet() }}
-    {% endblock css -%}
-
-    {% block title -%}
-      {% set section = load_data(path=current_path ~ "_index.md", metadata_only=true, required = false)  -%}
-    {% endblock title -%}
-  {% endblock head -%}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <link rel="canonical" href="{{ config.base_url }}{{ current_path | default(value='/') }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles/site.css">
+  <script defer src="/js/site.js"></script>
+  {% block head %}{% endblock head %}
 </head>
-
-<body class="bg-white">
-  <!-- Top nav bar -->
-  {% block nav -%}
-    {{ macros_nav::nav(website_title=config.title) }}
-  {% endblock nav -%}
-  <!-- Container -->
-  {% block content -%}
-  {% endblock content -%}
-  <!-- <div class="sticky bottom-0 px-3">
-    <a href="#page-top">Back to top of page</a>
-  </div> -->
-  {% block footer -%}
-  <footer class="bg-white">
-    <div class="bg-white text-gray-400 container max-w-4xl mx-auto my-8 px-4">
-    © {{ config.title }}. Built with <a class="underline" target="_blank" href="https://getzola.org">zola</a>.
+<body class="{% block body_class %}{% endblock body_class %}">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <aside class="preview-ribbon" aria-label="Preview status">
+    <span class="preview-dot" aria-hidden="true"></span>
+    <strong>Private preview</strong>
+    <span>No content on this build is approved for publication.</span>
+  </aside>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Anderson Vil home">
+        <span class="wordmark-mark" aria-hidden="true">AV</span>
+        <span>Anderson Vil</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        {% for item in config.extra.menu %}
+          <a href="{{ item.url }}"{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation">Menu</summary>
+        <nav aria-label="Mobile navigation">
+          {% for item in config.extra.menu %}
+            <a href="{{ item.url }}"{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
+          {% endfor %}
+        </nav>
+      </details>
     </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    {% block content %}{% endblock content %}
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Anderson Vil</p>
+        <p>Household Economics · Labor Economics · Applied Microeconometrics</p>
+      </div>
+      <div class="footer-links" aria-label="Professional profiles">
+        <a href="mailto:{{ academic.identity.email }}">Email</a>
+        {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ profile.name }}</a>{% endfor %}
+      </div>
+    </div>
+    <p class="footer-note">Preview build · noindex · synthetic and provisional items are blocked from production.</p>
   </footer>
-  {% endblock footer -%}
 </body>
-
 </html>
