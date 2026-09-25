@@ -17,8 +17,9 @@
     <h1>{{ paper.title }}</h1>
     <p class="paper-authors">{{ paper.author_line }}</p>
     <p class="document-meta">{{ paper.series }} · Version {{ paper.version }}</p>
-    <div class="button-row"><a class="button primary" href="{{ paper.pdf }}">Download synthetic paper PDF</a><button class="button secondary copy-citation" type="button" data-citation="{{ paper.author_line }}. {{ paper.title }}. {{ paper.series }}, {{ paper.version }}.">Copy preview citation</button></div>
-    <p class="synthetic-label">{{ config.extra.preview_label }} · The downloadable PDF is a preview document, not the manuscript.</p>
+    <div class="button-row"><a class="button primary" href="{{ paper.pdf }}">Download paper</a><button class="button secondary copy-citation" type="button" data-citation="{{ paper.author_line }}. {{ paper.title }}. {{ paper.series }}, {{ paper.version }}.">Copy preview citation</button></div>
+    <p class="preview-label">Real manuscript · provisional private preview · publication blocked</p>
+    {% if paper.title_note %}<p class="status-note"><strong>Source-title note:</strong> {{ paper.title_note }}</p>{% endif %}
     <p class="copy-status" role="status" aria-live="polite"></p>
   </header>
   <div class="paper-layout">
@@ -30,7 +31,7 @@
       <section id="overview"><h2>Non-technical overview</h2><p>{{ paper.description }} The web presentation is deliberately cautious: it separates the paper's research design from editorial status and from any results that still need author approval.</p></section>
       <section id="methods"><h2>Methods and data</h2><p>{{ paper.methods }}</p></section>
       <section id="findings"><h2>Findings and limits</h2><p>{{ paper.findings }}</p><div class="limit-box"><h3>Interpretive limits</h3><p>{{ paper.limitations }}</p></div></section>
-      <section><h2>Documents and related resources</h2><ul class="document-list"><li><a href="{{ paper.pdf }}">Synthetic paper preview — PDF</a><span>For download-flow testing only</span></li><li><a href="/code-data/">Code & Data demonstration</a><span>Separate synthetic project; not replication material</span></li></ul></section>
+      <section><h2>Documents and related resources</h2><ul class="document-list"><li><a href="{{ paper.pdf }}">Current manuscript — PDF</a><span>Real, provisional, publication blocked</span></li><li><a href="/code-data/">Code & Data demonstration</a><span>Separate synthetic project; not replication material</span></li></ul></section>
     </div>
   </div>
 </article>

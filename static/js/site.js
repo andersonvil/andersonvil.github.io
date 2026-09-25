@@ -113,4 +113,33 @@
       if (status) status.textContent = `Available: ${button.dataset.testUrl}`;
     } catch (_) { if (status) status.textContent = `Controlled error: ${button.dataset.testUrl} is not available.`; }
   }));
+
+  document.querySelectorAll('.immersive-open').forEach((openButton) => {
+    const dialog = document.getElementById(openButton.dataset.immersiveTarget || '');
+    const sourceStanzas = [...document.querySelectorAll('.poem-text .poem-stanza')];
+    if (!dialog || !sourceStanzas.length || typeof dialog.showModal !== 'function') return;
+    const page = dialog.querySelector('.immersive-page');
+    const progress = dialog.querySelector('.immersive-progress');
+    const previous = dialog.querySelector('.immersive-prev');
+    const next = dialog.querySelector('.immersive-next');
+    const close = dialog.querySelector('.immersive-close');
+    let index = 0;
+    const renderPage = () => {
+      page.replaceChildren(sourceStanzas[index].cloneNode(true));
+      progress.textContent = `Stanza ${index + 1} of ${sourceStanzas.length}`;
+      previous.disabled = index === 0;
+      next.textContent = index === sourceStanzas.length - 1 ? 'Finish' : 'Next';
+      page.focus();
+    };
+    openButton.addEventListener('click', () => { index = 0; renderPage(); dialog.showModal(); });
+    close.addEventListener('click', () => dialog.close());
+    previous.addEventListener('click', () => { if (index > 0) { index -= 1; renderPage(); } });
+    next.addEventListener('click', () => { if (index < sourceStanzas.length - 1) { index += 1; renderPage(); } else dialog.close(); });
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', () => openButton.focus());
+    dialog.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft' && index > 0) { index -= 1; renderPage(); }
+      if (event.key === 'ArrowRight') { if (index < sourceStanzas.length - 1) { index += 1; renderPage(); } else dialog.close(); }
+    });
+  });
 })();

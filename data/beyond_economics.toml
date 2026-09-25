@@ -1,0 +1,79 @@
+publicationStatus = "blocked"
+
+[[poems]]
+id = "calligraphie-de-bonheur"
+title = "Calligraphie de bonheur"
+url = "/beyond-economics/calligraphie-de-bonheur/"
+date = "19 October 2023"
+year = 2023
+language = "French"
+reading_minutes = 1
+access = "full"
+real = true
+provisional = true
+synthetic = false
+source_file = "poésie/calligraphie_de_bonheur_revision_3_03.pdf"
+
+[[poems]]
+id = "ma-cherie"
+title = "Ma chérie"
+url = "/beyond-economics/ma-cherie/"
+date = "3 March 2023"
+year = 2023
+language = "French"
+reading_minutes = 1
+access = "first-stanza"
+real = true
+provisional = true
+synthetic = false
+source_file = "poésie/ma_cherie_revision_3_J2.pdf"
+
+[[poems]]
+id = "mes-nuits"
+title = "Mes nuits"
+url = "/beyond-economics/mes-nuits/"
+date = "4 May 2024"
+year = 2024
+language = "French"
+reading_minutes = 1
+access = "first-stanza"
+real = true
+provisional = true
+synthetic = false
+source_file = "poésie/mes_nuits_revision_3_B3.pdf"
+
+[[poems]]
+id = "on-me-l-a-interdit"
+title = "On me l'a interdit"
+url = "/beyond-economics/on-me-l-a-interdit/"
+date = "22 August 2026"
+year = 2026
+language = "French"
+reading_minutes = 1
+access = "first-stanza"
+real = true
+provisional = true
+synthetic = false
+source_file = "poésie/on_me_l_a_interdit_revision_3_E4.pdf"
+
+[media]
+id = "on-reading-preferences"
+title = "On reading preferences — podcast excerpt"
+url = "/beyond-economics/on-reading-preferences/"
+language = "French"
+duration = "5:08"
+source_file = "podcast/SugBook2.mp4"
+source_format = "MP4 (H.264 video, AAC audio)"
+source_resolution = "1920 × 1080"
+source_bytes = 25967518
+source_bitrate = "676 kb/s"
+audio = "/files/media/on-reading-preferences.m4a"
+audio_format = "M4A (AAC, 48 kHz, stereo)"
+audio_bytes = 9289323
+audio_bitrate = "242 kb/s"
+poster = "/img/podcast-reading-preferences-poster.jpg"
+transcript_status = "Transcript pending review"
+real = true
+provisional = true
+synthetic = false
+publicationStatus = "blocked"

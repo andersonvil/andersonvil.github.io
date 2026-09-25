@@ -3,6 +3,11 @@ name = "Anderson Vil"
 email = "vladerinson@gmail.com"
 short_positioning = "Household and labor economist studying how families allocate money and time."
 long_positioning = "Anderson Vil studies how children and caregiving reshape consumption, labor supply, leisure, and the allocation of resources within families. His work uses structural models and applied microeconometric methods to recover economic quantities that household surveys do not directly reveal."
+bio = [
+  "I am a household and labor economist studying how families allocate money and time, and how children and caregiving reshape consumption, labor supply, leisure, and the distribution of resources within households.",
+  "I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+  "I hold a Ph.D. in Economics from CY Cergy Paris Université, where I was supervised by Olivier Donni. In 2023, I was a visiting researcher at KU Leuven, hosted by Frederic Vermeulen."
+]
 fields = ["Household Economics", "Labor Economics", "Applied Microeconometrics"]
 job_market = "2026–2027 Academic Job Market"
 phone_public = false
@@ -16,6 +21,9 @@ title = "Research Fellow"
 institution = "CY Cergy Paris Université"
 unit = "THEMA"
 publicationStatus = "blocked"
+real = true
+provisional = true
+synthetic = false
 note = "Public wording and dates require final confirmation."
 
 [[roles]]
@@ -23,6 +31,9 @@ title = "Lecturer in Economics"
 institution = "Université Catholique de l'Ouest"
 unit = ""
 publicationStatus = "blocked"
+real = true
+provisional = true
+synthetic = false
 note = "Institutional wording and dates require final confirmation."
 
 [[profiles]]
@@ -48,11 +59,15 @@ version = "September 18, 2026"
 series = "PSE Working Paper No. 2025-38"
 job_market = true
 publicationStatus = "blocked"
+real = true
+provisional = true
+synthetic = false
 status_label = "Editorial status pending final verification"
 url = "/research/household-demand-leisure/"
-pdf = "/files/demo/household-demand-leisure-preview.pdf"
+pdf = "/files/papers/household-demand-leisure.pdf"
+source_file = "03-research/paper-3.pdf"
 description = "A structural model that estimates the productive value of parental childcare time rather than assuming that it equals the market wage."
-abstract = "We propose a new approach to estimating the full cost of children—the sum of monetary and time costs—by endogenizing the price of parental time rather than assuming it equals the wage. A simplified collective model of leisure demand for working couples, estimated with 2019 PSID data, recovers the price of parental time and the full cost of children. The results indicate that childcare time combines labor-like and leisure-like components and that a substantial portion of the full cost is non-monetary."
+abstract = "We propose a novel approach to estimating the full cost of children — the sum of monetary and time costs — by endogenizing the price of parental time rather than assuming it is equal to the parents’ wage rate. In this approach, the price of time depends on how parents perceive their time with children, whether as a leisure-like activity or more as a labor-like activity. We then develop a simplified collective model of leisure demand for working couples, incorporating individual preferences and childcare technology, and estimate it using 2019 PSID data. This allows us to recover the price of parental time and the full cost of children. We find that mothers perceive 44% of their childcare time as labor, compared to 35% for fathers. Our results also highlight that a substantial portion of the full cost of children is non-monetary."
 question = "How should parental childcare time be valued when it is partly productive and partly experienced as leisure?"
 contribution = "The paper endogenizes the price of parental childcare time using substitution between parental care and purchased childcare, then connects that price to the monetary and time components of child costs."
 methods = "Collective household model; childcare technology; full-leisure demand; recursive maximum likelihood and 3SLS; 2019 PSID dual-earner couples."
@@ -61,7 +76,7 @@ limitations = "The supplied version focuses on dual-earner couples with young ch
 
 [[papers]]
 id = "children-costs-one-adult-household"
-title = "Children Costs in a One-Adult Household: Empirical Evidence from the UK"
+title = "Children Costs in a One-Adult Household: Empirical Evidence from the UK."
 short_title = "Children Costs in a One-Adult Household"
 authors = ["Anderson Vil"]
 author_line = "Anderson Vil"
@@ -70,11 +85,15 @@ version = "January 12, 2026"
 series = "PSE Working Paper No. 2025-37"
 job_market = false
 publicationStatus = "blocked"
+real = true
+provisional = true
+synthetic = false
 status_label = "Editorial status pending final verification"
 url = "/research/children-costs-one-adult-household/"
-pdf = "/files/demo/children-costs-one-adult-household-preview.pdf"
+pdf = "/files/papers/children-costs-one-adult-household.pdf"
+source_file = "03-research/paper-1.pdf"
 description = "A collective consumption model for studying resource sharing and economies of scale in one-adult households with children."
-abstract = "This paper asks whether child-cost estimates derived from two-parent households are informative for single-parent families and whether estimated allocation patterns are consistent with benefit rules that condition support uniformly on family size. It develops a collective consumption model for one-adult households and applies it to UK expenditure surveys. The results support the couple-based benchmark for single mothers and find no systematic per-child resource dilution once estimation uncertainty is accounted for."
+abstract = "This paper addresses two central questions in family and economic policy. First, to what extent are estimates of the cost of children derived from two-parent households applicable to single-parent families? Second, are estimated patterns of intra-household resource allocation consistent with benefit rules that condition support uniformly on family size? To address these questions, I propose a collective consumption model for one-adult households, apply it to three datasets—the Family Expenditure Survey, the Expenditures and Food Survey, and the Living Costs and Food Survey in the UK—and present two key findings. First, child cost estimates derived from two-parent households remain externally valid for single-parent families, at least for single mothers. Second, the results find no evidence of per-child resource dilution by family size once estimation uncertainty is accounted for, with differences for fathers appearing only among households at the bottom of the expenditure distribution."
 question = "Can estimates derived from couple households provide useful benchmarks for single-parent families?"
 contribution = "The paper extends collective-consumption methods to one-adult households and estimates resource shares using UK expenditure surveys spanning 1978–2022."
 methods = "Assignable goods; nonlinear Engel curves; sharing rules and Barten scales; harmonized FES, EFS, and LCF expenditure data."
@@ -92,11 +111,17 @@ version = "September 4, 2026"
 series = "PSE Working Paper No. 2025-40"
 job_market = false
 publicationStatus = "blocked"
+real = true
+provisional = true
+synthetic = false
 status_label = "Editorial status pending final verification"
 url = "/research/children-labor-supply-equations/"
-pdf = "/files/demo/children-labor-supply-equations-preview.pdf"
+pdf = "/files/papers/children-labor-supply-equations.pdf"
+source_file = "03-research/paper-2.pdf"
+source_title = "How to Incorporate Childen into Labor Supply Equations? An Equivalence-Scale Approach"
+title_note = "The current PDF spells “Children” as “Childen”; the preview follows the corrected canonical title and records the source divergence."
 description = "A framework that represents children's monetary and time channels directly in labor-supply equations."
-abstract = "We propose a method for modelling the impact of children on labor supply that jointly considers their time and monetary costs. Restrictions on childcare technology identify the total cost of children from labor-supply equations with modest data requirements. Applied to single mothers in the 2019 PSID, the model suggests that wage responsiveness is higher for women with children, while the reverse holds for exogenous income, and it recovers childcare time and total child costs."
+abstract = "We propose a method for modeling the impact of children on labor supply. Building on equivalence scales and collective models, our approach jointly considers the time and monetary costs of children. By imposing restrictions on childcare technology, we identify the total cost of children from labor supply equations with modest data inputs. We apply the model to single mothers from the 2019 PSID. Results suggest labor supply responsiveness to wages is higher for women with children, while the opposite holds for exogenous incomes. We also estimate the total cost of children and the time spent on childcare."
 question = "How can children enter labor-supply models as economic mechanisms rather than as a demographic control?"
 contribution = "The paper connects equivalence scales, childcare technology, and labor supply so that monetary and time costs can be identified with modest data requirements."
 methods = "Static labor-supply model; simplified childcare technology; participation correction; 2019 PSID sample of single women."
@@ -104,12 +129,14 @@ findings = "The model predicts that children can change labor-supply responses t
 limitations = "The supplied PDF contains title and metadata typographical errors. Valuing nonparticipants' time requires a reservation-wage estimate and does not imply a normative compensation level."
 
 [documents.cv]
-label = "CV preview"
-url = "/files/demo/anderson-vil-cv-preview.pdf"
-synthetic = true
-placeholder = true
+label = "CV — provisional PDF"
+url = "/files/cv/anderson-vil-cv-provisional.pdf"
+source_file = "04-cv-teaching/cv-academic.pdf"
+real = true
+provisional = true
+synthetic = false
 publicationStatus = "blocked"
-replacement = "A final, approved canonical CV PDF with verified metadata and no unauthorized personal data."
+replacement = "The same file, or a replacement CV, after final approval and privacy review."
 
 [teaching]
 publicationStatus = "blocked"

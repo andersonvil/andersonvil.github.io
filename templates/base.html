@@ -41,7 +41,7 @@
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         {% for item in config.extra.menu %}
-          <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
+          <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — provisional PDF, not approved for publication"{% endif %}>{{ item.name }}</a>
         {% endfor %}
       </nav>
       <div class="header-actions">
@@ -53,7 +53,7 @@
       </div>
       <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
           {% for item in config.extra.menu %}
-            <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — synthetic preview PDF, not for publication"{% endif %}>{{ item.name }}</a>
+            <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — provisional PDF, not approved for publication"{% endif %}>{{ item.name }}</a>
           {% endfor %}
       </nav>
     </div>
@@ -72,7 +72,7 @@
         {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ icons::icon(name=profile.name | lower) }}<span>{{ profile.name }}</span></a>{% endfor %}
       </div>
     </div>
-    <p class="footer-note">Preview build · noindex · synthetic and provisional items are blocked from production.</p>
+    <p class="footer-note">Private preview · noindex · provisional and synthetic items are blocked from production.</p>
   </footer>
 </body>
 </html>

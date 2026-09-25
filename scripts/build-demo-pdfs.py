@@ -1,4 +1,4 @@
-"""Build the five preview-only PDF downloads for Phase 4B."""
+"""Build the remaining synthetic teaching handout for Phase 4B."""
 
 from __future__ import annotations
 
@@ -80,35 +80,6 @@ def make_doc(path: Path, title: str, subtitle: str, sections: list[tuple[str, st
 
 
 make_doc(
-    OUTPUT / "anderson-vil-cv-preview.pdf",
-    "Anderson Vil - CV Preview",
-    "This file tests the site's direct-CV download journey. It is not a canonical curriculum vitae and must not be distributed as one.",
-    [
-        ("Research fields", "Household Economics | Labor Economics | Applied Microeconometrics"),
-        ("Academic market", "2026-2027 Academic Job Market"),
-        ("Appointments under review", "Research Fellow at CY Cergy Paris Université (THEMA); Lecturer in Economics at Université Catholique de l'Ouest. Public wording and dates require final confirmation."),
-        ("Research portfolio", "Three paper titles and authors are presented on the site from the canonical project sources. Editorial statuses and manuscript files remain blocked pending final verification."),
-        ("Contact", "vladerinson@gmail.com | andersonvil.github.io"),
-    ],
-    [("Document type", "Synthetic CV preview"), ("Publication", "Blocked"), ("Replacement", "Final approved canonical CV PDF")],
-)
-
-paper_specs = [
-    ("household-demand-leisure-preview.pdf", "The Household Demand for Leisure, the Price of Time and the Full Cost of Children", "Olivier Donni and Anderson Vil", "PSE Working Paper No. 2025-38 | supplied version September 18, 2026", "The preview page describes a structural approach that estimates the productive value of parental childcare time instead of assuming that it equals the market wage."),
-    ("children-costs-one-adult-household-preview.pdf", "Children Costs in a One-Adult Household: Empirical Evidence from the UK", "Anderson Vil", "PSE Working Paper No. 2025-37 | supplied version January 12, 2026", "The preview page describes a collective-consumption model for resource sharing and economies of scale in one-adult households using UK expenditure surveys."),
-    ("children-labor-supply-equations-preview.pdf", "How to Incorporate Children into Labor Supply Equations? An Equivalence-Scale Approach", "Olivier Donni and Anderson Vil", "PSE Working Paper No. 2025-40 | supplied version September 4, 2026", "The preview page describes a framework that represents children's time and monetary channels directly in labor-supply equations."),
-]
-
-for filename, title, authors, version, overview in paper_specs:
-    make_doc(
-        OUTPUT / filename,
-        title,
-        f"Authors: {authors}",
-        [("Purpose of this file", "Test the paper-download route without copying or publishing the supplied provisional manuscript."), ("Preview overview", overview), ("What is not included", "No manuscript text, editorial-status claim, result table, figure, appendix, data, or replication material is included in this demonstration file.")],
-        [("Series and version", version), ("Document type", "Synthetic paper preview"), ("Publication", "Blocked"), ("Replacement", "Approved canonical manuscript PDF")],
-    )
-
-make_doc(
     OUTPUT / "synthetic-applied-economics-handout.pdf",
     "Applied Economics Lab: Association and Causal Claims",
     "Fictional 90-minute workshop handout for navigation and download testing.",
@@ -122,4 +93,4 @@ make_doc(
     [("Language", "English"), ("Level", "Synthetic undergraduate workshop"), ("Institution", "None"), ("Publication", "Blocked")],
 )
 
-print(f"Created 5 preview PDFs in {OUTPUT}")
+print(f"Created the remaining synthetic teaching PDF in {OUTPUT}")

@@ -16,8 +16,8 @@ smart_punctuation = true
 
 [extra]
 site_mode = "preview"
-preview_label = "Synthetic demonstration content — not for publication"
-cv_url = "/files/demo/anderson-vil-cv-preview.pdf"
+preview_label = "Private preview — provisional and synthetic content; not approved for publication"
+cv_url = "/files/cv/anderson-vil-cv-provisional.pdf"
 
 [[extra.menu]]
 name = "Home"
@@ -31,7 +31,7 @@ section = "research"
 
 [[extra.menu]]
 name = "CV"
-url = "/files/demo/anderson-vil-cv-preview.pdf"
+url = "/files/cv/anderson-vil-cv-provisional.pdf"
 document = true
 
 [[extra.menu]]

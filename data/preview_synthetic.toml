@@ -24,17 +24,6 @@ summary = "A classroom-oriented note on why household totals do not automaticall
 url = "/insights/what-household-averages-can-hide/"
 reading_minutes = 3
 
-[[beyond_economics]]
-id = "notes-on-attention"
-title = "Notes on Attention"
-category = "Other"
-language = "English"
-date = "Preview edition"
-author = "Synthetic preview content"
-summary = "A neutral demonstration text for testing a quieter reading layout beyond academic economics."
-url = "/beyond-economics/notes-on-attention/"
-reading_minutes = 2
-
 [[talks]]
 title = "Synthetic Seminar on Time Allocation"
 event = "Preview Methods Colloquium (fictional)"

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | Teaching{% endblock title %}
+{% block description %}Provisional teaching resources for {{ page.title }}.{% endblock description %}
+{% block content %}
+{% set teaching = load_data(path="data/teaching_resources.toml") %}
+{% for group in teaching.groups %}{% if group.id == page.extra.group_id %}
+<div class="shell breadcrumb"><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>{{ group.title }}</span></div>
+<article class="article-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
+  <header>
+    <p class="preview-label">Real teaching material · provisional · publication blocked</p>
+    <p class="eyebrow">{{ group.resource_type }}</p>
+    <h1>{{ group.title }}</h1>
+    <p class="lede">{{ group.summary }}</p>
+  </header>
+  <dl class="course-meta">
+    <div><dt>Institution</dt><dd>{{ group.institution }}</dd></div>
+    <div><dt>Level</dt><dd>{{ group.level }}</dd></div>
+    <div><dt>Academic year</dt><dd>{{ group.academic_year }}</dd></div>
+    <div><dt>Language</dt><dd>{{ group.language }}{% if group.language == "French" %} · <strong>French-language material</strong>{% endif %}</dd></div>
+  </dl>
+  <p class="status-note"><strong>Year evidence:</strong> {{ group.year_note }}</p>
+  <section><h2>Topics documented in the material</h2><ul>{% for topic in group.topics %}<li>{{ topic }}</li>{% endfor %}</ul></section>
+  <section>
+    <h2>Resources</h2>
+    <div class="resource-file-list">
+      {% for resource in group.resources %}<article><div><h3>{{ resource.label }}</h3><p>{{ resource.pages }} pages · PDF · {{ resource.bytes | filesizeformat }}{% if group.language == "French" %} · French-language material{% endif %}</p></div><a class="button secondary" href="{{ resource.file }}">Open PDF</a></article>{% endfor %}
+    </div>
+  </section>
+  <footer class="article-footer"><p><strong>Publication status:</strong> blocked until the academic year, distribution rights, and final metadata are approved.</p><a class="text-link" href="/teaching/">Back to Teaching</a></footer>
+</article>
+{% endif %}{% endfor %}
+{% endblock content %}

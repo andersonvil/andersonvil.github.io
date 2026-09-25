@@ -99,10 +99,11 @@ ul, ol { padding-left: 1.25rem; }
 .status-note { color: var(--muted); font-size: .86rem; }
 
 .hero { padding-block: clamp(1.5rem, 2.8vw, 2.5rem); display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(270px, .55fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
-.hero-copy { max-width: 840px; }
+.hero-copy { min-width: 0; max-width: 840px; }
 .hero h1 { margin-bottom: .15rem; }
 .hero-role { margin: 0 0 .45rem; color: var(--ink-strong); font: 500 clamp(1.25rem, 2.1vw, 1.75rem) var(--serif); }
-.hero-summary { max-width: 790px; font-size: 1.04rem; line-height: 1.65; }
+.hero-summary, .hero-bio { max-width: 790px; font-size: 1.04rem; line-height: 1.65; }
+.hero-bio p { margin-bottom: .72rem; }
 .field-list { display: flex; flex-wrap: wrap; gap: .25rem .7rem; padding: 0; margin: 0 0 .8rem; list-style: none; color: var(--muted); font-size: .86rem; font-weight: 720; }
 .field-list li:not(:last-child)::after { content: "·"; margin-left: .7rem; color: var(--rust); }
 .hero .provisional-card { max-width: 800px; }
@@ -110,6 +111,8 @@ ul, ol { padding-left: 1.25rem; }
 .portrait-card img { display: block; width: 100%; height: clamp(330px, 41vh, 390px); object-fit: cover; object-position: center 30%; }
 .portrait-card figcaption { display: flex; justify-content: space-between; gap: .8rem; align-items: center; padding: .8rem .9rem; }
 .portrait-card figcaption strong, .portrait-card figcaption span { display: block; }
+.portrait-identity { min-width: max-content; }
+.portrait-card figcaption strong { white-space: nowrap; font-size: clamp(1rem, 1.5vw, 1.25rem); }
 .portrait-card figcaption span { color: var(--muted); font-size: .7rem; }
 .profile-icons { display: flex; gap: .25rem; }
 .profile-icons a { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); }
@@ -216,6 +219,16 @@ dd { margin: .2rem 0 0; }
 .download-card, .route-grid a { display: flex; justify-content: space-between; gap: 1rem; padding: .9rem; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
 .download-card { flex-direction: column; }
 .download-card span { color: var(--muted); font-size: .8rem; }
+.teaching-groups { border-top: 2px solid var(--ink); }
+.teaching-group { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.teaching-group > div { max-width: 920px; }
+.teaching-group h3 a { color: var(--ink-strong); text-decoration: none; }
+.resource-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+.resource-tags span { padding: .2rem .45rem; background: var(--surface-alt); border: 1px solid var(--line); font-size: .72rem; font-weight: 720; }
+.resource-file-list { border-top: 2px solid var(--ink); }
+.resource-file-list article { display: flex; justify-content: space-between; gap: 1.25rem; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.resource-file-list h3 { margin-bottom: .2rem; font-size: 1.05rem; }
+.resource-file-list p { margin: 0; color: var(--muted); font-size: .82rem; }
 
 .demo-project { padding-block: 1rem 4rem; }
 .project-header { display: flex; justify-content: space-between; gap: 2rem; align-items: start; padding-block: 1.5rem; border-bottom: 2px solid var(--ink); }
@@ -245,6 +258,28 @@ dd { margin: .2rem 0 0; }
 .beyond-reading { max-width: 1120px; }
 .creative-prose { margin: 3rem auto 0; font-size: 1.13rem; line-height: 1.9; }
 .beyond-reading .article-footer { margin-inline: auto; }
+.poem-page { max-width: 1060px; }
+.poem-text { max-width: 760px; margin: 3rem auto 0; font: 500 clamp(1.08rem, 1.7vw, 1.32rem)/1.75 var(--serif); }
+.poem-stanza { margin-bottom: 2.4rem; }
+.poem-stanza p { margin: 0; }
+.access-request { max-width: 760px; margin: 2.5rem auto; padding: 1.25rem; border: 1px solid var(--line); background: var(--surface-alt); }
+.immersive-reader { width: 100vw; max-width: none; height: 100vh; max-height: none; margin: 0; padding: 0; border: 0; background: var(--brand-strong); color: var(--on-brand); }
+.immersive-reader::backdrop { background: rgba(0, 0, 0, .8); }
+.immersive-shell { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; }
+.immersive-shell > header, .immersive-shell > footer { width: min(1100px, calc(100% - 2rem)); margin-inline: auto; padding-block: 1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.immersive-shell h2 { color: var(--on-brand); margin: 0; font-size: clamp(1.4rem, 3vw, 2.3rem); }
+.immersive-page { width: min(820px, calc(100% - 2rem)); margin: auto; color: var(--on-brand); font: 500 clamp(1.35rem, 3vw, 2.25rem)/1.75 var(--serif); text-align: center; }
+.immersive-progress { margin: 0; font-weight: 760; }
+.immersive-reader button:disabled { opacity: .45; cursor: not-allowed; }
+.media-section { padding-block: clamp(2.8rem, 5vw, 5rem); }
+.media-preview { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+.media-preview img, .audio-feature img { display: block; width: 100%; border: 1px solid var(--line); background: #000; }
+.media-preview audio, .audio-feature audio { width: 100%; min-height: 54px; }
+.audio-feature { max-width: 880px; margin: 2.5rem 0; padding: 0; background: var(--surface); border: 1px solid var(--line); }
+.audio-feature figcaption { padding: 1rem; }
+.audio-feature figcaption p { margin: .5rem 0 0; color: var(--muted); font-size: .82rem; }
+.transcript { max-width: var(--reading); margin-top: 3rem; }
+.transcript-text { font-family: var(--serif); font-size: 1.05rem; line-height: 1.75; }
 
 .talk-list { border-top: 2px solid var(--ink); }
 .talk-list article { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 2rem; padding-block: 1.2rem; border-bottom: 1px solid var(--line); }
@@ -297,7 +332,7 @@ dd { margin: .2rem 0 0; }
   .mobile-nav:not([hidden]) { display: grid; }
   .mobile-nav a { padding: .72rem 1rem; border-bottom: 1px solid var(--line); min-height: 44px; }
   .mobile-nav a.nav-active { border-left: 3px solid var(--rust); background: var(--surface-alt); }
-  .hero { grid-template-columns: 1fr; gap: 2rem; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .portrait-card { max-width: 420px; }
   .hero h1 { font-size: clamp(3rem, 8vw, 4.5rem); }
   .feature-grid, .split-heading, .paper-layout, .contact-columns { grid-template-columns: 1fr; }
@@ -310,7 +345,7 @@ dd { margin: .2rem 0 0; }
   :root { --shell: min(100% - 1.25rem, 1320px); }
   .preview-ribbon span:last-child { display: none; }
   .header-inner { min-height: 3.75rem; }
-  .hero { grid-template-columns: 1fr; padding-top: 2rem; }
+  .hero { grid-template-columns: minmax(0, 1fr); padding-top: 2rem; }
   .hero h1 { font-size: clamp(3rem, 16vw, 4.5rem); }
   .portrait-card { max-width: 420px; }
   .portrait-card img { height: min(470px, 62vh); }
@@ -318,7 +353,7 @@ dd { margin: .2rem 0 0; }
   .field-list li::after { display: none; }
   .button-row > .button, .hero-actions > .text-link { width: 100%; text-align: center; justify-content: center; }
   .pathways, .insight-grid, .download-grid, .route-grid, .teaching-glance, .principle-grid { grid-template-columns: 1fr; }
-  .contact-strip > .shell, .resource-card, .project-header, .teaching-contact, .footer-grid, .beyond-card, .contact-email-block, .contact-next { align-items: stretch; flex-direction: column; }
+  .contact-strip > .shell, .resource-card, .project-header, .teaching-contact, .teaching-group, .resource-file-list article, .footer-grid, .beyond-card, .contact-email-block, .contact-next { align-items: stretch; flex-direction: column; }
   .paper-row { grid-template-columns: 1fr; gap: .6rem; }
   .resource-list article { grid-template-columns: 3.25rem minmax(0, 1fr); }
   .resource-list article > a { grid-column: 2; }
@@ -328,6 +363,8 @@ dd { margin: .2rem 0 0; }
   .footer-links { flex-direction: column; }
   .contact-next div { flex-direction: column; gap: .5rem; }
   .research-card-top { align-items: start; }
+  .media-preview { grid-template-columns: 1fr; }
+  .immersive-shell > header { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 380px) {

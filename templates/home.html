@@ -14,21 +14,21 @@
     <h1>{{ academic.identity.name }}</h1>
     <p class="hero-role">Household and labor economist</p>
     <ul class="field-list" aria-label="Research fields">{% for field in academic.identity.fields %}<li>{{ field }}</li>{% endfor %}</ul>
-    <p class="hero-summary">I study how children and caregiving reshape household decisions about consumption, labor supply, leisure, and the allocation of resources within families. Using structural models and applied microeconometric methods, I recover monetary and time costs that standard household indicators often miss.</p>
+    <div class="hero-bio">{% for paragraph in academic.identity.bio %}<p>{{ paragraph }}</p>{% endfor %}</div>
     <div class="role-block provisional-card" data-placeholder="true" data-publication-status="blocked">
       <p class="preview-label compact">Provisional appointment wording</p>
       <p><strong>Research Fellow</strong>, CY Cergy Paris Université (THEMA) · <strong>Lecturer in Economics</strong>, Université Catholique de l'Ouest</p>
     </div>
     <div class="button-row hero-actions">
-      <a class="button primary" href="{{ academic.papers[0].pdf }}">Job Market Paper <span>PDF preview</span></a>
-      <a class="button secondary" href="{{ academic.documents.cv.url }}">CV <span>PDF preview</span></a>
+      <a class="button primary" href="{{ academic.papers[0].pdf }}">Job Market Paper <span>provisional PDF</span></a>
+      <a class="button secondary" href="{{ academic.documents.cv.url }}">CV <span>provisional PDF</span></a>
       <a class="text-link" href="/research/">View research</a>
     </div>
   </div>
   <figure class="portrait-card" data-publication-status="blocked">
     <img src="{{ academic.identity.portrait }}" alt="{{ academic.identity.portrait_alt }}" width="668" height="1000" fetchpriority="high">
     <figcaption>
-      <div><strong>Anderson Vil</strong><span title="Portrait rights and credit pending confirmation">Rights pending</span></div>
+      <div class="portrait-identity"><strong>Anderson Vil</strong><span title="Portrait rights and credit pending confirmation">Rights pending</span></div>
       <div class="profile-icons" aria-label="Professional profiles">
         <a href="mailto:{{ academic.identity.email }}" aria-label="Email Anderson Vil" title="Email">{{ icons::icon(name="email") }}</a>
         {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me" aria-label="{{ profile.name }} profile" title="{{ profile.name }}">{{ icons::icon(name=profile.name | lower) }}</a>{% endfor %}
@@ -40,17 +40,17 @@
 <section class="feature-band jmp-band" aria-labelledby="jmp-title">
   <div class="shell feature-grid">
     <div><p class="eyebrow light">Job Market Paper</p><h2 id="jmp-title">{{ academic.papers[0].title }}</h2><p class="byline">{{ academic.papers[0].card_author_line }}</p></div>
-    <div class="feature-summary"><p>{{ academic.papers[0].description }}</p><p class="document-meta">{{ academic.papers[0].series }} · Version {{ academic.papers[0].version }}</p><button class="abstract-toggle light-control" type="button" aria-expanded="false" aria-controls="home-jmp-abstract">View abstract</button><div class="abstract-panel" id="home-jmp-abstract" hidden><p>{{ academic.papers[0].abstract }}</p></div><p class="preview-label compact">{{ config.extra.preview_label }}</p><div class="button-row"><a class="button light" href="{{ academic.papers[0].url }}">View paper details</a><a class="button ghost-light" href="{{ academic.papers[0].pdf }}">Download synthetic PDF</a></div></div>
+    <div class="feature-summary"><p>{{ academic.papers[0].description }}</p><p class="document-meta">{{ academic.papers[0].series }} · Version {{ academic.papers[0].version }}</p><button class="abstract-toggle light-control" type="button" aria-expanded="false" aria-controls="home-jmp-abstract">View abstract</button><div class="abstract-panel" id="home-jmp-abstract" hidden><p>{{ academic.papers[0].abstract }}</p></div><p class="preview-label compact">Real manuscript · provisional · publication blocked</p><div class="button-row"><a class="button light" href="{{ academic.papers[0].url }}">View paper details</a><a class="button ghost-light" href="{{ academic.papers[0].pdf }}">Download paper</a></div></div>
   </div>
 </section>
 
 <section class="shell section-space" aria-labelledby="research-program-title">
   <div class="section-heading split-heading"><div><p class="eyebrow">Research program</p><h2 id="research-program-title">Measuring what household totals leave unseen</h2></div><p>{{ academic.identity.long_positioning }}</p></div>
-  <div class="paper-list compact">{% for paper in academic.papers %}{% if not paper.job_market %}<article class="paper-row"><div><p class="meta">{{ paper.series }}</p><h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3><p class="byline">{{ paper.card_author_line }}</p><p>{{ paper.description }}</p><button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="home-abstract-{{ paper.id }}">View abstract</button><div class="abstract-panel" id="home-abstract-{{ paper.id }}" hidden><p>{{ paper.abstract }}</p></div></div><a class="arrow-link" href="{{ paper.url }}" aria-label="View details for {{ paper.short_title }}">Paper details <span aria-hidden="true">→</span></a></article>{% endif %}{% endfor %}</div>
+  <div class="paper-list compact">{% for paper in academic.papers %}{% if not paper.job_market %}<article class="paper-row"><div><p class="meta">{{ paper.series }}</p><h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3><p class="byline">{{ paper.card_author_line }}</p><p>{{ paper.description }}</p><button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="home-abstract-{{ paper.id }}">View abstract</button><div class="abstract-panel" id="home-abstract-{{ paper.id }}" hidden><p>{{ paper.abstract }}</p></div><div class="card-actions"><a class="text-link" href="{{ paper.url }}">View paper details</a><a class="text-link" href="{{ paper.pdf }}">Download paper</a></div></div></article>{% endif %}{% endfor %}</div>
   <p><a class="text-link" href="/research/">Explore all research</a></p>
 </section>
 
-<section class="soft-section section-space"><div class="shell pathways"><article><p class="eyebrow">Teaching</p><h2>Concept, method, evidence</h2><p>See a factually cautious overview of teaching areas, tools, experience, and a complete synthetic resource.</p><a class="text-link" href="/teaching/">Explore teaching</a></article><article><p class="eyebrow">Code & Data</p><h2>Documentation before claims</h2><p>Run a small synthetic project demonstrating how future public materials will be documented.</p><a class="text-link" href="/code-data/">Browse the demo project</a></article></div></section>
+<section class="soft-section section-space"><div class="shell pathways"><article><p class="eyebrow">Teaching</p><h2>Concept, method, evidence</h2><p>Browse provisional exercise sheets and course material for econometrics and microeconomics.</p><a class="text-link" href="/teaching/">Explore teaching</a></article><article><p class="eyebrow">Code & Data</p><h2>Documentation before claims</h2><p>Run a small synthetic project demonstrating how future public materials will be documented.</p><a class="text-link" href="/code-data/">Browse the demo project</a></article></div></section>
 
 <section class="shell section-space" aria-labelledby="insights-title"><div class="section-heading"><p class="eyebrow">Insights</p><h2 id="insights-title">Notes for careful interpretation</h2></div><div class="insight-grid">{% for insight in preview.insights %}<article class="insight-card" data-synthetic="true"><p class="meta">{{ insight.category }} · {{ insight.reading_minutes }} min read</p><h3><a href="{{ insight.url }}">{{ insight.title }}</a></h3><p>{{ insight.summary }}</p><p class="preview-label compact">{{ preview.label }}</p></article>{% endfor %}</div><p><a class="text-link" href="/insights/">View all Insights</a></p></section>
 

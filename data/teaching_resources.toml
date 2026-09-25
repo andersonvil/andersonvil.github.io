@@ -1,0 +1,119 @@
+publicationStatus = "blocked"
+real = true
+provisional = true
+synthetic = false
+
+[[groups]]
+id = "econometrics-l3"
+title = "Econometrics — Undergraduate (L3)"
+institution = "CY Cergy Paris Université"
+level = "Undergraduate (L3)"
+academic_year = "Academic year to confirm"
+year_note = "The source folder is labelled 2026–27, but the PDFs do not state an academic year."
+language = "French"
+language_label = "French-language material"
+resource_type = "Exercise sheets"
+summary = "Eight chapter-based exercise sheets for Econometrics and Statistical Evaluation, covering simple regression through functional form and specification."
+topics = ["Simple regression", "OLS properties", "Probability and sampling", "Inference", "Multiple regression", "Functional form", "Specification"]
+url = "/teaching/econometrics-l3/"
+
+[[groups.resources]]
+label = "Chapter I — Introduction and simple regression"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-01.pdf"
+pages = 3
+bytes = 95934
+[[groups.resources]]
+label = "Chapter II — Simple regression applications"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-02.pdf"
+pages = 5
+bytes = 122888
+[[groups.resources]]
+label = "Chapter III — Probability and random variables"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-03.pdf"
+pages = 5
+bytes = 114462
+[[groups.resources]]
+label = "Chapter IV — Inference in simple regression"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-04.pdf"
+pages = 4
+bytes = 109925
+[[groups.resources]]
+label = "Chapter V — Estimator properties"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-05.pdf"
+pages = 3
+bytes = 114257
+[[groups.resources]]
+label = "Chapter VI — Multiple regression applications"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-06.pdf"
+pages = 4
+bytes = 102740
+[[groups.resources]]
+label = "Chapter VII — Hypothesis tests and specification"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-07.pdf"
+pages = 5
+bytes = 109695
+[[groups.resources]]
+label = "Chapter VIII — Functional form and model comparison"
+file = "/files/teaching/cy-cergy/l3-econometrics/exercises-08.pdf"
+pages = 6
+bytes = 93486
+
+[[groups]]
+id = "econometrics-m1"
+title = "Econometrics — Master's Year 1 (M1)"
+institution = "CY Cergy Paris Université"
+level = "Master's Year 1 (M1)"
+academic_year = "Academic year to confirm"
+year_note = "The source folder is labelled 2026–27, while the filename contains 2025; the document itself is undated."
+language = "English"
+language_label = "English-language material"
+resource_type = "Exercise collection"
+summary = "An exercise collection covering regression foundations, matrix formulation, inference, heteroskedasticity, nonlinear least squares, and instrumental variables."
+topics = ["OLS", "Matrix algebra", "Statistical inference", "Heteroskedasticity", "Nonlinear least squares", "Instrumental variables"]
+url = "/teaching/econometrics-m1/"
+
+[[groups.resources]]
+label = "Econometrics exercises"
+file = "/files/teaching/cy-cergy/m1-econometrics/econometrics-exercises.pdf"
+pages = 17
+bytes = 150015
+
+[[groups]]
+id = "econometrics-m2"
+title = "Econometrics — Master's Year 2 (M2)"
+institution = "CY Cergy Paris Université"
+level = "Master's Year 2 (M2)"
+academic_year = "Academic year to confirm"
+year_note = "The source folder is labelled 2026–27, while the filename states 2025–26; no year appears in the document body."
+language = "English"
+language_label = "English-language material"
+resource_type = "Exercise collection"
+summary = "An advanced exercise collection on linear models, inference, instrumental variables, maximum likelihood, and generalized method of moments."
+topics = ["Linear models", "Asymptotic inference", "Instrumental variables", "Maximum likelihood", "GMM"]
+url = "/teaching/econometrics-m2/"
+
+[[groups.resources]]
+label = "Advanced econometrics exercises"
+file = "/files/teaching/cy-cergy/m2-econometrics/econometrics-exercises.pdf"
+pages = 19
+bytes = 162634
+
+[[groups]]
+id = "microeconomics-l1"
+title = "Microeconomics — Undergraduate (L1)"
+institution = "Sciences Po Saint-Germain-en-Laye"
+level = "Undergraduate (first year)"
+academic_year = "2026–2027"
+year_note = "Confirmed on the document title slide."
+language = "French"
+language_label = "French-language material"
+resource_type = "Course slides"
+summary = "Session 1 introduces consumers, producers, price elasticity, market efficiency, transfers, and deadweight loss."
+topics = ["Consumer surplus", "Producer surplus", "Marginal cost", "Price elasticity", "Market efficiency", "Policy incidence"]
+url = "/teaching/microeconomics-l1/"
+
+[[groups.resources]]
+label = "Session 1 — Consumers, producers, and market efficiency"
+file = "/files/teaching/sciences-po-saint-germain/microeconomics-l1/session-01.pdf"
+pages = 61
+bytes = 349358

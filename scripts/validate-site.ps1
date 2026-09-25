@@ -13,23 +13,40 @@ $requiredFiles = @(
     'research\children-costs-one-adult-household\index.html',
     'research\children-labor-supply-equations\index.html',
     'teaching\index.html',
+    'teaching\econometrics-l3\index.html',
+    'teaching\econometrics-m1\index.html',
+    'teaching\econometrics-m2\index.html',
+    'teaching\microeconomics-l1\index.html',
     'teaching\applied-economics-lab\index.html',
     'code-data\index.html',
     'insights\index.html',
     'insights\reading-model-based-estimates\index.html',
     'insights\what-household-averages-can-hide\index.html',
     'beyond-economics\index.html',
-    'beyond-economics\notes-on-attention\index.html',
+    'beyond-economics\calligraphie-de-bonheur\index.html',
+    'beyond-economics\ma-cherie\index.html',
+    'beyond-economics\mes-nuits\index.html',
+    'beyond-economics\on-me-l-a-interdit\index.html',
+    'beyond-economics\on-reading-preferences\index.html',
     'contact\index.html',
     'talks\index.html',
     'preview\index.html',
     '404.html',
     'robots.txt',
-    'files\demo\anderson-vil-cv-preview.pdf',
+    'files\cv\anderson-vil-cv-provisional.pdf',
+    'files\papers\household-demand-leisure.pdf',
+    'files\papers\children-costs-one-adult-household.pdf',
+    'files\papers\children-labor-supply-equations.pdf',
+    'files\teaching\cy-cergy\l3-econometrics\exercises-01.pdf',
+    'files\teaching\cy-cergy\m1-econometrics\econometrics-exercises.pdf',
+    'files\teaching\cy-cergy\m2-econometrics\econometrics-exercises.pdf',
+    'files\teaching\sciences-po-saint-germain\microeconomics-l1\session-01.pdf',
+    'files\media\on-reading-preferences.m4a',
     'files\demo\synthetic-household-project\synthetic_households.json',
     'files\demo\synthetic-household-project\analyze_demo.py',
     'files\demo\synthetic-household-project\demo_notebook.ipynb',
     'img\VIL_Anderson-01-petit.jpg'
+    'img\podcast-reading-preferences-poster.jpg'
 )
 
 foreach ($relative in $requiredFiles) {
@@ -77,7 +94,9 @@ $activePages = @{
     'research\household-demand-leisure\index.html' = '/research/'
     'teaching\applied-economics-lab\index.html' = '/teaching/'
     'insights\reading-model-based-estimates\index.html' = '/insights/'
-    'beyond-economics\notes-on-attention\index.html' = '/beyond-economics/'
+    'beyond-economics\calligraphie-de-bonheur\index.html' = '/beyond-economics/'
+    'beyond-economics\ma-cherie\index.html' = '/beyond-economics/'
+    'beyond-economics\on-reading-preferences\index.html' = '/beyond-economics/'
     'contact\index.html' = '/contact/'
 }
 foreach ($entry in $activePages.GetEnumerator()) {
@@ -91,6 +110,59 @@ foreach ($entry in $activePages.GetEnumerator()) {
 $researchHtml = Get-Content -LiteralPath (Join-Path $root 'research\index.html') -Raw
 if ([regex]::Matches($researchHtml, 'class=(?:"abstract-toggle"|abstract-toggle)', 'IgnoreCase').Count -ne 3) { $failures.Add('Research must expose three abstract disclosures.') }
 if ($researchHtml -notmatch 'aria-expanded=(?:"false"|false)' -or $researchHtml -notmatch 'aria-controls=') { $failures.Add('Abstract disclosures are missing required ARIA state.') }
+
+$bioParagraphs = @(
+    'I am a household and labor economist studying how families allocate money and time, and how children and caregiving reshape consumption, labor supply, leisure, and the distribution of resources within households.',
+    'I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.',
+    'I hold a Ph.D. in Economics from CY Cergy Paris Université, where I was supervised by Olivier Donni. In 2023, I was a visiting researcher at KU Leuven, hosted by Frederic Vermeulen.'
+)
+foreach ($paragraph in $bioParagraphs) {
+    if (-not $homeHtml.Contains($paragraph)) { $failures.Add("Exact biography paragraph missing: $paragraph") }
+}
+if ($homeHtml -notmatch 'portrait-identity[^>]*>\s*<strong>Anderson Vil</strong>') { $failures.Add('Portrait caption name is missing.') }
+
+foreach ($paperPath in @('research\household-demand-leisure\index.html', 'research\children-costs-one-adult-household\index.html', 'research\children-labor-supply-equations\index.html')) {
+    $paperHtml = Get-Content -LiteralPath (Join-Path $root $paperPath) -Raw
+    if ($paperHtml -notmatch 'Real manuscript.*provisional private preview.*publication blocked') { $failures.Add("Real/provisional paper status missing: $paperPath") }
+    if ($paperHtml -match 'Download synthetic paper|Synthetic paper preview') { $failures.Add("Synthetic paper label remains: $paperPath") }
+}
+$abstractEvidence = @(
+    'We find that mothers perceive 44% of their childcare time as labor, compared to 35% for fathers.',
+    'the results find no evidence of per-child resource dilution by family size once estimation uncertainty is accounted for',
+    'Results suggest labor supply responsiveness to wages is higher for women with children, while the opposite holds for exogenous incomes.'
+)
+foreach ($evidence in $abstractEvidence) {
+    if (-not $homeHtml.Contains($evidence)) { $failures.Add("Exact PDF abstract evidence missing from Home: $evidence") }
+    if (-not $researchHtml.Contains($evidence)) { $failures.Add("Exact PDF abstract evidence missing from Research: $evidence") }
+}
+if (-not $researchHtml.Contains('Olivier Donni and Anderson Vil') -or -not $researchHtml.Contains('class=byline>Anderson Vil')) { $failures.Add('Paper author order or sole-author line is missing from Research.') }
+
+$teachingHtml = Get-Content -LiteralPath (Join-Path $root 'teaching\index.html') -Raw
+foreach ($title in @('Econometrics — Undergraduate \(L3\)', "Econometrics — Master's Year 1 \(M1\)", "Econometrics — Master's Year 2 \(M2\)", 'Microeconomics — Undergraduate \(L1\)')) {
+    if ($teachingHtml -notmatch $title) { $failures.Add("Teaching group missing: $title") }
+}
+if ($teachingHtml -notmatch 'Academic year to confirm' -or $teachingHtml -notmatch '2026–2027') { $failures.Add('Teaching year conflict is not represented explicitly.') }
+
+$fullPoem = Get-Content -LiteralPath (Join-Path $root 'beyond-economics\calligraphie-de-bonheur\index.html') -Raw
+if ([regex]::Matches($fullPoem, 'class=(?:"poem-stanza"|poem-stanza)', 'IgnoreCase').Count -ne 2) { $failures.Add('Calligraphie de bonheur must contain exactly two complete stanzas.') }
+if ($fullPoem -notmatch 'Enter immersive reading' -or $fullPoem -notmatch 'immersive-reader') { $failures.Add('Immersive reading is missing for Calligraphie de bonheur.') }
+
+foreach ($slug in @('ma-cherie', 'mes-nuits', 'on-me-l-a-interdit')) {
+    $poemHtml = Get-Content -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
+    if ([regex]::Matches($poemHtml, 'class=(?:"poem-stanza"|poem-stanza)', 'IgnoreCase').Count -ne 1) { $failures.Add("Restricted poem must contain exactly one stanza: $slug") }
+    if ($poemHtml -notmatch 'The complete poem is available on request\.' -or $poemHtml -notmatch 'Request access to the full poem') { $failures.Add("Request-access path missing: $slug") }
+    if ($poemHtml -match 'href=(?:"[^\"]*(?:ma_cherie|mes_nuits|on_me_l_a_interdit)[^\"]*\.pdf|[^ >]*(?:ma_cherie|mes_nuits|on_me_l_a_interdit)[^ >]*\.pdf)') { $failures.Add("Restricted poem exposes a complete-poem PDF link: $slug") }
+    if ($poemHtml -match 'immersive-reader') { $failures.Add("Restricted poem unexpectedly contains immersive extra content: $slug") }
+}
+
+$restrictedPdfNames = @('ma_cherie_revision_3_J2.pdf', 'mes_nuits_revision_3_B3.pdf', 'on_me_l_a_interdit_revision_3_E4.pdf')
+foreach ($name in $restrictedPdfNames) {
+    if (Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object { $_.Name -eq $name }) { $failures.Add("Restricted complete PDF present in build: $name") }
+}
+
+$mediaHtml = Get-Content -LiteralPath (Join-Path $root 'beyond-economics\on-reading-preferences\index.html') -Raw
+if ($mediaHtml -notmatch '<audio\s+controls\s+preload=(?:"metadata"|metadata)' -or $mediaHtml -match '\sautoplay(?:\s|=|>)') { $failures.Add('Podcast player controls/preload/autoplay state is invalid.') }
+if ($mediaHtml -notmatch 'Transcript pending review') { $failures.Add('Podcast transcript review status is missing.') }
 
 $insightsHtml = Get-Content -LiteralPath (Join-Path $root 'insights\index.html') -Raw
 if ([regex]::Matches($insightsHtml, '\d+ min read', 'IgnoreCase').Count -lt 2) { $failures.Add('Insight cards are missing calculated reading time.') }
