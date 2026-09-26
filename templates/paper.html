@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% import "macros/context-back.html" as context_back %}
 {% import "macros/site-icons.html" as icons %}
+{% import "macros/research-visual.html" as research_visual %}
 {% block title %}{% for candidate in academic.papers %}{% if candidate.id == page.extra.paper_id %}{{ candidate.short_title }} | Anderson Vil{% endif %}{% endfor %}{% endblock title %}
 {% block description %}{% for candidate in academic.papers %}{% if candidate.id == page.extra.paper_id %}{{ candidate.description }}{% endif %}{% endfor %}{% endblock description %}
 {% block head %}
@@ -12,6 +13,7 @@
 {% endblock head %}
 {% block content %}
 {% set research_resources = load_data(path="data/research_resources.toml") %}
+{% set research_visuals = load_data(path="data/research_visuals.toml") %}
 {% for paper in academic.papers %}{% if paper.id == page.extra.paper_id %}
 <div class="shell detail-navigation">{{ context_back::bar(label="Research", url="/research/") }}<div class="breadcrumb"><a href="/research/">Research</a><span aria-hidden="true">/</span><span>{{ paper.short_title }}</span></div></div>
 <article class="paper-page shell">
@@ -26,9 +28,11 @@
     <p class="copy-status" role="status" aria-live="polite"></p>
   </header>
   <div class="paper-layout">
-    <aside class="paper-toc" aria-label="On this page">{{ context_back::toc(label="Research", url="/research/") }}<p class="meta">On this page</p><a href="#question">Question</a><a href="#contribution">Contribution</a><a href="#abstract">Abstract</a><a href="#overview">Overview</a><a href="#methods">Methods and data</a>{% if paper.job_market %}<a href="#identification">Identification</a>{% endif %}<a href="#data-sources">Data sources</a><a href="#findings">Findings and limits</a></aside>
+    <aside class="paper-toc" aria-label="On this page" data-scrollspy>{{ context_back::toc(label="Research", url="/research/") }}<p class="meta">On this page</p><div class="paper-toc-links"><a href="#question">Question</a><a href="#contribution">Contribution</a><a href="#abstract">Abstract</a><a href="#overview">Overview</a><a href="#methods">Methods and data</a>{% if paper.job_market %}<a href="#identification">Identification</a>{% endif %}<a href="#data-sources">Data sources</a><a href="#findings">Findings and limits</a></div></aside>
     <div class="paper-body">
-      <section id="question" class="research-question"><p class="eyebrow">Research question</p><h2>{{ paper.question }}</h2></section>
+      {% for paper_visuals in research_visuals.papers %}{% if paper_visuals.id == paper.id %}
+      <section id="question" class="research-question"><div><p class="eyebrow">Research question</p><h2>{{ paper.question }}</h2></div>{% for candidate in paper_visuals.candidates %}{% if candidate.number == paper_visuals.selectedCandidate %}<figure class="motivation-visual" data-visual-selection="{{ paper_visuals.researchQuestionVisual }}">{{ research_visual::visual(paper_id=paper.id, candidate=candidate.number, alt=candidate.alt) }}<figcaption>{{ candidate.label }} · provisional editorial illustration, not a result.</figcaption></figure>{% endif %}{% endfor %}</section>
+      {% endif %}{% endfor %}
       <section id="contribution"><h2>Contribution</h2><p>{{ paper.contribution }}</p></section>
       <section id="abstract"><h2>Abstract</h2><p>{{ paper.abstract }}</p></section>
       <section id="overview"><h2>Non-technical overview</h2><p>{{ paper.description }} The web presentation is deliberately cautious: it separates the paper's research design from editorial status and from any results that still need author approval.</p></section>

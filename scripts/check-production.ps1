@@ -49,7 +49,7 @@ foreach ($file in $files) {
     if ($file.Extension -eq '.html') {
         $buttons = [regex]::Matches($content, '<button\b[^>]*>', 'IgnoreCase')
         foreach ($button in $buttons) {
-            if ($button.Value -notmatch 'data-filter=|copy-citation|file-test|theme-toggle|menu-toggle|abstract-toggle|copy-email|immersive-(?:open|close|prev|next)') {
+            if ($button.Value -notmatch 'data-filter=|copy-citation|file-test|theme-toggle|menu-toggle|abstract-toggle|copy-email|audio-play-toggle|immersive-(?:open|close|prev|next)') {
                 $relative = $file.FullName.Substring($resolvedRoot.Length + 1)
                 $violations.Add("Button without a recognized functional destination in ${relative}: $($button.Value)")
             }

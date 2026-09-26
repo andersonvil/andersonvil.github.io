@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+{% import "macros/contextual-return.html" as contextual_return %}
 {% block title %}Insights | Anderson Vil{% endblock title %}
 {% block description %}Synthetic previews of future research explainers, methods notes, and teaching notes.{% endblock description %}
 {% block content %}
 {% set preview = load_data(path="data/preview_synthetic.toml") %}
+{{ contextual_return::host() }}
 <header class="page-hero shell"><p class="eyebrow">Insights</p><h1>Research ideas, explained with care</h1><p class="lede">Methods notes and teaching notes designed for careful interpretation. These two fixtures are not authored by Anderson Vil and state no research result as his.</p><p class="preview-label compact">{{ preview.label }}</p></header>
 <section class="shell filter-section" data-filter-root>
   <div class="filter-bar" aria-label="Filter Insights"><button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-button" data-filter="Methods Note" aria-pressed="false">Methods Notes</button><button type="button" class="filter-button" data-filter="Teaching Note" aria-pressed="false">Teaching Notes</button></div>

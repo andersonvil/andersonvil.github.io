@@ -58,7 +58,7 @@ Then open `http://127.0.0.1:1111/`. The preview retains `noindex, nofollow`, a r
 - **Teaching:** four evidence-based groups with institution, level, language, resource type, year status, topics, PDF page count, size, and working downloads.
 - **Beyond Economics:** short introduction followed by Poetry and Conversations only; no empty categories.
 - **Calligraphie de bonheur:** complete authorized HTML poem, French language metadata, preserved stanza/line structure, rights notice, no PDF download, plus optional silent immersive reading.
-- **Ma chérie, Mes nuits, On me l'a interdit:** first stanza only, sober availability notice, title-specific email request, rights notice, and no download.
+- **Ma chérie, Mes nuits, On me l’a interdit:** first stanza only, sober availability notice, title-specific email request, rights notice, and no download.
 - **On reading preferences:** neutral title, static authorized poster, audio-only web copy with native controls and no autoplay, and a French transcript clearly marked pending review.
 - **Preview inventory:** records provenance, consumer, real/provisional/synthetic status, intended visibility, missing right/validation, publication condition, and replacement/unblocking path.
 
@@ -115,7 +115,7 @@ All teaching resources remain blocked pending distribution-right confirmation; L
 | Calligraphie de bonheur | Full text | No | Excluded |
 | Ma chérie | First stanza only | Yes, title-specific email | Excluded |
 | Mes nuits | First stanza only | Yes, title-specific email | Excluded |
-| On me l'a interdit | First stanza only | Yes, title-specific email | Excluded |
+| On me l’a interdit | First stanza only | Yes, title-specific email | Excluded |
 
 `Calligraphie de bonheur` is dated 19 October 2023; the restricted excerpts are dated 3 March 2023, 4 May 2024, and 22 August 2026 respectively. All four are French and carry rights notices. No poem PDF is offered for download.
 
@@ -331,7 +331,7 @@ Les fichiers annoncés dans le prompt sous les noms `image(20260926-121551).png`
 | Calligraphie de bonheur | texte complet autorisé | 9 | `Anderson, 19/10/2023` |
 | Ma chérie | première strophe seulement | 7 | `Écrit par Anderson le 03 mars 2023.` |
 | Mes nuits | première strophe seulement | 6 | `Écrit par Anderson le 04 mai 2024.` |
-| On me l'a interdit | première strophe seulement | 5 | `Écrit par Anderson le 22 août 2026 à 4h30 du matin.` |
+| On me l’a interdit | première strophe seulement | 5 | `Écrit par Anderson le 22 août 2026 à 4h30 du matin.` |
 
 Chaque vers est un élément `.poem-line` en HTML réel, avec `white-space: nowrap` et débordement horizontal local si nécessaire. Les fonds issus des documents restent inchangés et la signature est placée en bas à droite. Contradiction conservée explicitement : les originaux signent `Anderson`, pas `Anderson Vil`. La signature source est reproduite exactement ; la byline canonique de page reste `By Anderson Vil`.
 
@@ -352,7 +352,7 @@ Le validateur exige 9/7/6/5 lignes et 2/1/1/1 strophes, contrôle chaque signatu
 
 1. `CY Cergy Paris Université` : `Econometrics — M2 & PhD`, puis `Econometrics — M1`, puis `Econometrics — L3`, tous avec le rôle `Tutorial`.
 2. `Sciences Po Saint-Germain-en-Laye` : microéconomie réelle, rôle `Lecture`.
-3. `Université catholique de l’Ouest — UCO Niort` : Microeconomics III, rôle `Lecture`.
+3. `Université Catholique de l’Ouest — UCO Niort` : Microeconomics III, rôle `Lecture`.
 
 Le troisième groupe est nécessaire parce que le dossier canonique et la fonction actuelle situent le cours à Niort/UCO, tandis que les slides impriment CY Cergy Paris Université / THEMA. Cette contradiction reste visible et bloque la publication ; le cours n’est pas absorbé dans un autre établissement.
 

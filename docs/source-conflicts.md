@@ -1,7 +1,8 @@
 # Source conflicts retained for publication review
 
-- The canonical facts name Université Catholique de l'Ouest but also propose “Université Catholique de Niort” as public wording. The preview uses the institution name and flags wording/dates for confirmation.
+- The canonical facts name Université Catholique de l’Ouest but also propose “Université Catholique de Niort” as public wording. The preview uses the institution name and flags wording/dates for confirmation.
 - The provisional CV describes the CY role as “Teaching & Research Fellow”; the canonical facts require “Research Fellow.” The preview follows the canonical title.
+- On 2026-09-26, the external `04-cv-teaching/cv-academic.pdf` changed after the v5 checkpoint (source SHA-256 `549504CF61DA4F6FC8AFDF1C04D4EAA70C4BC1FEE6B20247726AF06F5DF979EC`; checkpoint site copy SHA-256 `A1BE3EFAA08F7DB45669B0DA5073CB91D68A3902A32578F8625492986744A785`). Phase 4B v6 leaves the external source untouched and preserves the already integrated site copy pending an explicit CV review.
 - Older pages and documents present Paris School of Economics as a current affiliation. The preview does not.
 - The Research Statement calls paper 1 the Job Market Paper. The canonical facts and Phase 4A identify paper 3.
 - Editorial statuses are present in the canonical facts but require final verification. The preview withholds journal/status badges.

@@ -1,0 +1,3 @@
+{% macro host() %}<div class="contextual-return-host shell" data-contextual-return-host hidden></div>{% endmacro host %}
+
+{% macro cta(label, destination, origin, class="text-link") %}<a class="{{ class }}" href="{{ destination }}?from={{ origin }}" data-contextual-cta data-context-origin="{{ origin }}">{{ label }}</a>{% endmacro cta %}

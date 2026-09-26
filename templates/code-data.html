@@ -1,7 +1,9 @@
 {% extends "base.html" %}
+{% import "macros/contextual-return.html" as contextual_return %}
 {% block title %}Code & Data | Anderson Vil{% endblock title %}
 {% block description %}Synthetic code, data, and notebook demonstrations for the future Anderson Vil research infrastructure.{% endblock description %}
 {% block content %}
+{{ contextual_return::host() }}
 <header class="page-hero shell"><p class="eyebrow">Code & Data</p><h1>Transparent materials, documented limits</h1><p class="lede">No real replication package is claimed in this preview. The resources below form one small, independent synthetic project that tests documentation, execution, and download behavior.</p><p class="synthetic-label">{{ config.extra.preview_label }}</p></header>
 <section class="shell demo-project" data-synthetic="true" data-publication-status="blocked">
   <div class="project-header"><div><p class="meta">Synthetic demonstration project</p><h2>Household time-allocation example</h2><p>Six fictional observations illustrate how a documented dataset, script, notebook, and README can travel together.</p></div><span class="status-pill">Standard library only</span></div>

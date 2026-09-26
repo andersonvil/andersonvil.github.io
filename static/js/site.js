@@ -53,6 +53,75 @@
   });
   window.addEventListener('resize', () => { if (window.innerWidth > 960) closeMenu(false); });
 
+  const contextualRoutes = {
+    home: { path: '/', label: 'Home' },
+    contact: { path: '/contact/', label: 'Contact' },
+    research: { path: '/research/', label: 'Research' },
+    teaching: { path: '/teaching/', label: 'Teaching' },
+    'code-data': { path: '/code-data/', label: 'Code & Data' },
+    insights: { path: '/insights/', label: 'Insights' },
+    'beyond-economics': { path: '/beyond-economics/', label: 'Beyond Economics' }
+  };
+  const contextualParams = new URLSearchParams(window.location.search);
+  const contextualOriginKey = contextualParams.get('from');
+  const contextualOrigin = contextualRoutes[contextualOriginKey];
+  const contextualHost = document.querySelector('[data-contextual-return-host]');
+  const currentTopRoute = Object.values(contextualRoutes).find((route) => route.path === window.location.pathname);
+  if (contextualHost && contextualOrigin && currentTopRoute && contextualOrigin.path !== currentTopRoute.path) {
+    const link = document.createElement('a');
+    link.className = 'contextual-return-link';
+    link.href = contextualOrigin.path;
+    link.textContent = `← Back to ${contextualOrigin.label}`;
+    contextualHost.replaceChildren(link);
+    contextualHost.hidden = false;
+  }
+  if (contextualOrigin) {
+    const activeSection = Object.values(contextualRoutes).find((route) => window.location.pathname === route.path || (route.path !== '/' && window.location.pathname.startsWith(route.path)));
+    if (activeSection) {
+      document.querySelectorAll(`a[href^="${activeSection.path}"]`).forEach((link) => {
+        if (link.closest('.desktop-nav, .mobile-nav, .site-footer') || link.hasAttribute('download')) return;
+        const url = new URL(link.href, window.location.origin);
+        if (url.origin !== window.location.origin || !url.pathname.startsWith(activeSection.path)) return;
+        url.searchParams.set('from', contextualOriginKey);
+        link.href = `${url.pathname}${url.search}${url.hash}`;
+      });
+    }
+  }
+
+  document.querySelectorAll('[data-scrollspy]').forEach((toc) => {
+    const links = [...toc.querySelectorAll('.paper-toc-links a[href^="#"]')];
+    const sections = links.map((link) => document.getElementById(link.hash.slice(1))).filter(Boolean);
+    if (!links.length || !sections.length) return;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let activeId = '';
+    const setActive = (id) => {
+      if (!id || id === activeId) return;
+      activeId = id;
+      links.forEach((link) => {
+        if (link.hash === `#${id}`) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    const resolveActive = () => {
+      const marker = Math.min(240, window.innerHeight * 0.3);
+      let current = sections[0];
+      sections.forEach((section) => { if (section.getBoundingClientRect().top <= marker) current = section; });
+      setActive(current.id);
+    };
+    links.forEach((link) => link.addEventListener('click', (event) => {
+      const target = document.getElementById(link.hash.slice(1));
+      if (!target) return;
+      event.preventDefault();
+      target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+      history.replaceState(history.state, '', `${window.location.pathname}${window.location.search}${link.hash}`);
+      setActive(target.id);
+    }));
+    const observer = new IntersectionObserver(resolveActive, { rootMargin: '-18% 0px -66% 0px', threshold: [0, 0.05, 0.5] });
+    sections.forEach((section) => observer.observe(section));
+    window.addEventListener('scroll', resolveActive, { passive: true });
+    resolveActive();
+  });
+
   document.querySelectorAll('.abstract-toggle').forEach((button) => {
     const panel = document.getElementById(button.getAttribute('aria-controls'));
     if (!panel) return;
@@ -77,6 +146,60 @@
       items.forEach((item) => { item.hidden = filter !== 'all' && item.dataset.filterItem !== filter; });
     }));
   });
+
+  let activePoemAudio = null;
+  const allAudioElements = [...document.querySelectorAll('audio')];
+  allAudioElements.forEach((audio) => audio.addEventListener('play', () => {
+    allAudioElements.forEach((other) => { if (other !== audio && !other.paused) other.pause(); });
+  }));
+  const formatAudioTime = (seconds) => {
+    if (!Number.isFinite(seconds)) return '0:00';
+    const whole = Math.max(0, Math.floor(seconds));
+    return `${Math.floor(whole / 60)}:${String(whole % 60).padStart(2, '0')}`;
+  };
+  document.querySelectorAll('[data-poem-audio]').forEach((player) => {
+    const audio = player.querySelector('[data-audio-element]');
+    const toggle = player.querySelector('.audio-play-toggle');
+    const progress = player.querySelector('.audio-progress');
+    const time = player.querySelector('.audio-time');
+    const volume = player.querySelector('.audio-volume');
+    const status = player.querySelector('.audio-status');
+    if (!audio || !toggle || !progress || !time || !volume || !status) return;
+    audio.volume = Number(volume.value);
+    const renderTime = () => {
+      progress.max = Number.isFinite(audio.duration) ? String(audio.duration) : '0';
+      progress.value = String(audio.currentTime || 0);
+      time.textContent = `${formatAudioTime(audio.currentTime)} / ${formatAudioTime(audio.duration)}`;
+    };
+    const renderPaused = (message = 'Paused.') => {
+      toggle.textContent = 'Play music';
+      toggle.setAttribute('aria-pressed', 'false');
+      status.textContent = message;
+    };
+    toggle.addEventListener('click', async () => {
+      if (!audio.paused) { audio.pause(); return; }
+      if (activePoemAudio && activePoemAudio !== audio) activePoemAudio.pause();
+      status.textContent = 'Loading music…';
+      try { await audio.play(); }
+      catch (_) { renderPaused('Music could not be played. Check the file or browser audio permissions.'); }
+    });
+    audio.addEventListener('play', () => {
+      activePoemAudio = audio;
+      toggle.textContent = 'Pause music';
+      toggle.setAttribute('aria-pressed', 'true');
+      status.textContent = `Playing ${player.dataset.trackTitle}.`;
+    });
+    audio.addEventListener('pause', () => { if (!audio.ended) renderPaused(); });
+    audio.addEventListener('ended', () => { audio.currentTime = 0; renderTime(); renderPaused('Playback finished.'); });
+    audio.addEventListener('loadedmetadata', renderTime);
+    audio.addEventListener('timeupdate', renderTime);
+    audio.addEventListener('waiting', () => { status.textContent = 'Loading music…'; });
+    audio.addEventListener('error', () => renderPaused('Music could not be loaded.'));
+    progress.addEventListener('input', () => { audio.currentTime = Number(progress.value); renderTime(); });
+    volume.addEventListener('input', () => { audio.volume = Number(volume.value); });
+    renderTime();
+  });
+  window.addEventListener('pagehide', () => { allAudioElements.forEach((audio) => audio.pause()); });
 
   const copyText = async (text) => {
     if (navigator.clipboard?.writeText) return navigator.clipboard.writeText(text);

@@ -1,21 +1,29 @@
 {% macro visual(paper_id, candidate, alt) %}
 <svg class="research-motivation-svg" viewBox="0 0 520 360" role="img" aria-label="{{ alt }}">
   <title>{{ alt }}</title><rect class="rv-paper" x="12" y="12" width="496" height="336" rx="24"/>
-  {% if candidate == 1 %}
-    {% if paper_id == "household-demand-leisure" %}
-      <path class="rv-line" d="M66 206H458"/><circle class="rv-accent" cx="82" cy="206" r="12"/><circle class="rv-accent" cx="220" cy="206" r="12"/><circle class="rv-accent" cx="342" cy="206" r="12"/><circle class="rv-accent" cx="448" cy="206" r="12"/><text x="82" y="169">1978</text><text x="220" y="169">FES</text><text x="342" y="169">EFS</text><text x="448" y="169">2022</text><text x="260" y="272">LCF · HOUSEHOLD EXPENDITURE EVIDENCE</text>
-    {% elif paper_id == "children-costs-one-adult-household" %}
-      <text x="260" y="64">2019 PSID · N = 1,270</text><rect class="rv-person" x="58" y="112" width="304" height="70" rx="12"/><rect class="rv-accent" x="58" y="218" width="87" height="70" rx="12"/><text x="210" y="154">987 CHILDLESS SINGLE WOMEN</text><text x="101" y="260">283 MOTHERS</text>
+  {% if paper_id == "household-demand-leisure" %}
+    {% if candidate == 1 %}
+      <text x="260" y="62">2019 PSID · COUPLES</text><rect class="rv-person" x="58" y="108" width="174" height="68" rx="12"/><rect class="rv-accent" x="288" y="108" width="174" height="68" rx="12"/><text x="145" y="148">362 CHILDLESS</text><text x="375" y="148">463 WITH CHILDREN</text><path class="rv-line" d="M145 202v70M375 202v70M145 272h230"/><text x="260" y="309">VERIFIED STUDY GROUPS</text>
+    {% elif candidate == 2 %}
+      <circle class="rv-person" cx="100" cy="112" r="24"/><circle class="rv-accent" cx="145" cy="139" r="16"/><path class="rv-line" d="M70 200c8-50 70-50 79 0M125 200c6-38 52-38 59 0"/><rect class="rv-soft" x="208" y="72" width="252" height="46" rx="10"/><text x="334" y="101">A DAY · ONE CARE HOUR</text><path class="rv-line" d="M252 118v54M334 118v54M416 118v54"/><circle class="rv-accent" cx="252" cy="190" r="18"/><circle class="rv-accent" cx="334" cy="190" r="18"/><circle class="rv-accent" cx="416" cy="190" r="18"/><text x="252" y="236">PRODUCTIVE</text><text x="252" y="254">CARE</text><text x="334" y="236">LIVED</text><text x="334" y="254">TIME</text><text x="416" y="236">PAID CARE</text><text x="416" y="254">SUBSTITUTE</text>
     {% else %}
-      <text x="260" y="64">2019 PSID · N = 825</text><rect class="rv-person" x="58" y="112" width="184" height="70" rx="12"/><rect class="rv-accent" x="278" y="112" width="184" height="70" rx="12"/><text x="150" y="154">362 CHILDLESS</text><text x="370" y="154">463 WITH CHILDREN</text><path class="rv-line" d="M150 208v72M370 208v72M150 280h220"/><text x="260" y="317">COUPLE SAMPLE</text>
+      <circle class="rv-accent" cx="142" cy="180" r="63"/><text x="142" y="174">ONE CARE</text><text x="142" y="198">HOUR</text><path class="rv-line" d="M205 180h46M251 180l66-88M251 180h66M251 180l66 88"/><rect class="rv-soft" x="326" y="60" width="142" height="64" rx="12"/><rect class="rv-soft" x="326" y="148" width="142" height="64" rx="12"/><rect class="rv-soft" x="326" y="236" width="142" height="64" rx="12"/><text x="397" y="98">PRODUCTION</text><text x="397" y="186">EXPERIENCE</text><text x="397" y="274">SUBSTITUTION</text>
     {% endif %}
-  {% elif candidate == 2 %}
-    <circle class="rv-person" cx="172" cy="112" r="28"/><circle class="rv-person" cx="260" cy="112" r="28"/><circle class="rv-accent" cx="216" cy="180" r="21"/><path class="rv-line" d="M133 245c10-64 110-64 120 0M219 245c10-64 110-64 120 0"/><rect class="rv-soft" x="355" y="76" width="105" height="194" rx="10"/><path class="rv-line" d="M372 112h72M372 148h72M372 184h72M372 220h72"/><text x="216" y="298">HOUSEHOLD CONTEXT</text><text x="407" y="298">DAY</text>
-  {% else %}
-    {% if paper_id == "children-costs-one-adult-household" %}
-      <rect class="rv-soft" x="48" y="120" width="146" height="112" rx="16"/><text x="121" y="170">OBSERVED</text><text x="121" y="196">TOTAL</text><path class="rv-line" d="M194 176h74M268 176l68-72M268 176h68M268 176l68 72"/><circle class="rv-accent" cx="395" cy="104" r="40"/><circle class="rv-accent" cx="395" cy="176" r="40"/><circle class="rv-accent" cx="395" cy="248" r="40"/><text x="395" y="109">ADULT</text><text x="395" y="181">CHILD</text><text x="395" y="253">SHARED</text>
+  {% elif paper_id == "children-costs-one-adult-household" %}
+    {% if candidate == 1 %}
+      <path class="rv-line" d="M66 194H458"/><circle class="rv-accent" cx="82" cy="194" r="12"/><circle class="rv-accent" cx="220" cy="194" r="12"/><circle class="rv-accent" cx="342" cy="194" r="12"/><circle class="rv-accent" cx="448" cy="194" r="12"/><text x="82" y="158">1978</text><text x="220" y="158">FES</text><text x="342" y="158">EFS</text><text x="448" y="158">2022</text><text x="260" y="258">LCF · HOUSEHOLD EXPENDITURE</text>
+    {% elif candidate == 2 %}
+      <path class="rv-line" d="M70 246V128l94-64 94 64v118z"/><circle class="rv-person" cx="135" cy="149" r="25"/><circle class="rv-accent" cx="190" cy="166" r="18"/><path class="rv-line" d="M102 226c8-52 61-52 69 0M168 226c5-37 43-37 49 0"/><rect class="rv-soft" x="306" y="90" width="154" height="156" rx="14"/><text x="383" y="126">OBSERVED</text><text x="383" y="148">HOUSEHOLD</text><text x="383" y="170">TOTAL</text><path class="rv-line" d="M330 206h106"/><text x="383" y="232">SHARES UNSEEN</text>
     {% else %}
-      <circle class="rv-soft" cx="98" cy="112" r="49"/><circle class="rv-soft" cx="98" cy="248" r="49"/><text x="98" y="118">WAGE</text><text x="98" y="254">CARE €</text><path class="rv-line" d="M147 112h92M147 248h92M239 112l65 64M239 248l65-64"/><circle class="rv-accent" cx="347" cy="180" r="64"/><text x="347" y="174">HOUSEHOLD</text><text x="347" y="197">CHOICES</text><path class="rv-line" d="M411 180h63"/>
+      <rect class="rv-soft" x="48" y="120" width="146" height="112" rx="16"/><text x="121" y="170">OBSERVED</text><text x="121" y="196">TOTAL</text><path class="rv-line" d="M194 176h74M268 176l68-72M268 176h68M268 176l68 72"/><circle class="rv-accent" cx="395" cy="104" r="40"/><circle class="rv-accent" cx="395" cy="176" r="40"/><circle class="rv-accent" cx="395" cy="248" r="40"/><text x="395" y="109">ADULT</text><text x="395" y="181">CHILD</text><text x="395" y="253">SHARED</text>
+    {% endif %}
+  {% else %}
+    {% if candidate == 1 %}
+      <text x="260" y="62">2019 PSID · SINGLE WOMEN</text><rect class="rv-person" x="58" y="108" width="304" height="68" rx="12"/><rect class="rv-accent" x="58" y="216" width="87" height="68" rx="12"/><text x="210" y="148">987 CHILDLESS</text><text x="101" y="256">283 MOTHERS</text><text x="260" y="319">VERIFIED STUDY GROUPS</text>
+    {% elif candidate == 2 %}
+      <circle class="rv-person" cx="104" cy="120" r="25"/><circle class="rv-accent" cx="149" cy="148" r="17"/><path class="rv-line" d="M74 215c8-53 68-53 76 0M128 215c6-38 49-38 55 0"/><rect class="rv-soft" x="226" y="67" width="104" height="112" rx="12"/><text x="278" y="107">BUDGET</text><text x="278" y="133">€</text><rect class="rv-soft" x="356" y="67" width="104" height="112" rx="12"/><text x="408" y="107">CARE</text><text x="408" y="133">TIME</text><path class="rv-line" d="M278 179v76M408 179v76M278 255h130"/><text x="343" y="292">PAID WORKDAY</text>
+    {% else %}
+      <circle class="rv-person" cx="90" cy="180" r="48"/><text x="90" y="175">CHILDREN</text><text x="90" y="198">IN MODEL</text><path class="rv-line" d="M138 162h54M138 198h54"/><rect class="rv-soft" x="202" y="82" width="132" height="78" rx="14"/><rect class="rv-soft" x="202" y="200" width="132" height="78" rx="14"/><text x="268" y="116">MONETARY</text><text x="268" y="140">CHANNEL</text><text x="268" y="234">TIME</text><text x="268" y="258">CHANNEL</text><path class="rv-line" d="M334 121l62 59M334 239l62-59"/><circle class="rv-accent" cx="436" cy="180" r="51"/><text x="436" y="175">LABOR</text><text x="436" y="198">SUPPLY</text>
     {% endif %}
   {% endif %}
 </svg>

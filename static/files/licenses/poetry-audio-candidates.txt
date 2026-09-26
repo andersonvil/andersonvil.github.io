@@ -1,20 +1,40 @@
-Poetry audio candidate provenance — verified 2026-09-26
+Poetry audio provenance and rights record — verified 2026-09-26
 
-No audio file has been downloaded, copied, bundled, embedded, or selected.
-Final integration requires Anderson Vil's explicit listening approval.
-The source records expose an artist credit but do not separately identify composer and performer roles. Rights remain blocked until those role credits and the licence attached to the exact downloadable file are rechecked at selection time.
+PRIVATE PREVIEW STATUS
+Four different MP3 files are provisionally selected and self-hosted. The site remains globally blocked from production. Each selection can be disabled or replaced independently in data/poetry_audio.toml.
 
-1. Beyond (Piano Edit) — Pablo Perez — 04:26
-Source: https://freemusicarchive.org/music/pablo-perez/single/beyond-piano-edit/
-Licence shown by source: CC0 1.0 Universal
+RIGHTS BASIS
+Creator/recording credit: TRG Banks. The source does not itemize composer and performer roles separately, so the interface says so rather than inventing them.
+Licence: CC0 1.0 Universal Public Domain Dedication.
+Legal deed: https://creativecommons.org/publicdomain/zero/1.0/
+Album records: https://freemusicarchive.org/music/TRG_Banks/Dreamland and https://freemusicarchive.org/index.php/music/TRG_Banks/Return_to_Dreamland
+Creator statement: the TRG Banks Bandcamp album page states that all tracks are public domain under CC0 1.0 and that credit is appreciated but not obligatory: https://trgbanks.bandcamp.com/album/dreamland
+Composition: the credited creator's album-level CC0 statement is recorded for all four selections.
+Performance and recording: Commons file records associate the recordings with TRG Banks and label them CC0; the CC0 deed expressly covers related and neighboring rights to the extent allowed by law.
+Self-hosting/modification: permitted by CC0. No loop, edit, or excerpt has been applied to the downloaded FMA MP3 files.
+Attribution: not legally required by CC0; creator, source, and licence are nevertheless displayed.
+Commons caveat: the imported audio files carry a Commons administrative “license review needed (audio)” category. The exact FMA album licence and the creator's direct CC0 statement provide the cross-check; the overall site remains blocked pending final publication approval.
 
-2. Entering Autumn — Patrick Davies — 02:51
-Source: https://freemusicarchive.org/index.php/music/patrick-davies/single/entering-autumn/
-Licence shown by source: CC0 1.0 Universal
+1. Calligraphie de bonheur → Great Aunt Henrietta — 4:30
+Source record: https://commons.wikimedia.org/wiki/File:TRG_Banks_-_12_-_Great_Aunt_Henrietta.ogg
+Downloaded original: https://files.freemusicarchive.org/storage-freemusicarchive-org/music/Music_for_Video/TRG_Banks/Dreamland/TRG_Banks_-_12_-_Great_Aunt_Henrietta.mp3
+Local file: calligraphie-de-bonheur--great-aunt-henrietta.mp3
+SHA-256: 223CD71BF86A2427C81EDD347FBD798FFD976803A9EF834BD31EAD8CC4BFEFC6
 
-3. The Subtle Triumph — Patrick Davies — 04:47
-Source: https://freemusicarchive.org/music/patrick-davies/single/the-subtle-triumph/
-Licence shown by source: CC0 1.0 Universal
+2. Ma chérie → Castle in the cloud — 2:30
+Source record: https://commons.wikimedia.org/wiki/File:TRG_Banks_-_04_-_Castle_in_the_cloud.ogg
+Downloaded original: https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/Return_to_Dreamland/TRG_Banks_-_04_-_Castle_in_the_cloud.mp3
+Local file: ma-cherie--castle-in-the-cloud.mp3
+SHA-256: 736E5BD0CC4450BFF82AD77D7978162380E74F1B7F6C29574662BD951384FBA8
 
-CC0 1.0 legal code: https://creativecommons.org/publicdomain/zero/1.0/
-Future selected-asset checksum: pending; no local asset exists.
+3. Mes nuits → Night Sun — 2:49
+Source record: https://commons.wikimedia.org/wiki/File:TRG_Banks_-_06_-_Night_Sun.ogg
+Downloaded original: https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/Return_to_Dreamland/TRG_Banks_-_06_-_Night_Sun.mp3
+Local file: mes-nuits--night-sun.mp3
+SHA-256: 901871DACE2DC5D733E51561483351F357B34BE3DA45B478710802C83A29A6A8
+
+4. On me l'a interdit → Lost in the city — 3:09
+Source record: https://commons.wikimedia.org/wiki/File:TRG_Banks_-_07_-_Lost_in_the_city.ogg
+Downloaded original: https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/Return_to_Dreamland/TRG_Banks_-_07_-_Lost_in_the_city.mp3
+Local file: on-me-l-a-interdit--lost-in-the-city.mp3
+SHA-256: 18ED03F5FD77CA5D0227054739408CA2E496450FA15D22E5DC989949D80E8171

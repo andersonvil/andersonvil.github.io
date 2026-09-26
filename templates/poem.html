@@ -4,6 +4,7 @@
 {% block description %}{{ page.description }}{% endblock description %}
 {% block content %}
 {% set beyond = load_data(path="data/beyond_economics.toml") %}
+{% set audio_config = load_data(path="data/poetry_audio.toml") %}
 {% for poem in beyond.poems %}{% if poem.id == page.extra.work_id %}
 <div class="shell detail-navigation">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}<div class="breadcrumb"><a href="/beyond-economics/">Beyond Economics</a><span aria-hidden="true">/</span><span>{{ poem.title }}</span></div></div>
 <article class="beyond-reading poem-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
@@ -15,7 +16,16 @@
     {% if poem.access == "full" %}<button class="button primary immersive-open" type="button" data-immersive-target="immersive-poem">Enter immersive reading</button>{% endif %}
   </header>
   <div class="poem-canvas poem-{{ poem.id }} poem-font-{{ poem.selected_font }}" style="--poem-background: url('{{ poem.background }}')" data-background-source="{{ poem.background_source }}"><p class="poem-canvas-title" aria-hidden="true" lang="fr">{{ poem.title }}</p><div class="poem-text" lang="fr">{{ page.content | safe }}</div><p class="poem-signature" lang="fr">{{ poem.signature_line }}</p></div>
-  <aside class="poem-audio-placeholder" aria-label="Optional reading music unavailable until selection"><button class="button secondary" type="button" disabled aria-disabled="true">Play music · selection pending</button><label>Volume <input type="range" min="0" max="100" value="60" disabled aria-disabled="true"></label><a class="text-link" href="/preview/design-lab/poetry-audio/">About candidate recordings</a><p>No recording is loaded. Anderson Vil’s explicit selection is required before this accessible player can be activated.</p></aside>
+  {% for selection in audio_config.selections %}{% if selection.poemSlug == poem.id and selection.enabled %}{% for track in audio_config.tracks %}{% if track.slug == selection.selectedTrack %}
+  <aside class="poem-audio-player" aria-label="Music selected for this poem" data-poem-audio data-track-title="{{ track.title }}">
+    <audio preload="metadata" data-audio-element><source src="{{ track.file }}" type="audio/mpeg">Your browser does not support audio playback.</audio>
+    <div class="audio-primary"><button class="button secondary audio-play-toggle" type="button" aria-pressed="false">Play music</button><div><strong>{{ track.title }}</strong><span>{{ track.creator }} · {{ track.duration }} · no autoplay</span></div></div>
+    <label class="audio-progress-label">Progress <input class="audio-progress" type="range" min="0" max="0" value="0" step="0.1" aria-label="Music playback position"><span class="audio-time" aria-live="off">0:00 / {{ track.duration }}</span></label>
+    <label class="audio-volume-label">Volume <input class="audio-volume" type="range" min="0" max="1" value="0.6" step="0.05" aria-label="Music volume"></label>
+    <p class="audio-status" role="status" aria-live="polite">Ready to play.</p>
+    <details class="audio-about"><summary>About the music</summary><dl><div><dt>Track</dt><dd>{{ track.title }}</dd></div><div><dt>Composer</dt><dd>{{ track.composer }}</dd></div><div><dt>Performer / recording creator</dt><dd>{{ track.recordingCreator }}</dd></div><div><dt>Source</dt><dd><a href="{{ track.source }}" rel="external">Wikimedia Commons file record</a></dd></div><div><dt>Licence</dt><dd><a href="{{ track.licenseUrl }}" rel="license">{{ track.license }}</a></dd></div><div><dt>Composition status</dt><dd>{{ track.compositionStatus }}</dd></div><div><dt>Recording status</dt><dd>{{ track.recordingStatus }}</dd></div><div><dt>Attribution</dt><dd>{{ track.attribution }}</dd></div><div><dt>Why this pairing</dt><dd>{{ track.fit }}</dd></div><div><dt>Rights checked</dt><dd>{{ track.verifiedOn }} · {{ track.rightsStatus }}</dd></div></dl></details>
+  </aside>
+  {% endif %}{% endfor %}{% endif %}{% endfor %}
   {% if poem.access == "first-stanza" %}
   <aside class="access-request" aria-label="Access information"><p><strong>First stanza — full text available on request.</strong></p><a class="button primary" href="mailto:{{ academic.identity.email }}?subject=Request%20access%20to%20the%20full%20poem%20%E2%80%94%20{{ poem.title | urlencode }}">Request access to the full poem</a></aside>
   {% endif %}

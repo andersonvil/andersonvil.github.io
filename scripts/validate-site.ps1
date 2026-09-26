@@ -60,6 +60,13 @@ $requiredFiles = @(
     'img\poetry\on-me-l-a-interdit.webp'
     'img\research\identification\slide-10.svg'
     'img\research\identification\slide-11.svg'
+    'img\teaching\teaching-in-practice.avif'
+    'img\teaching\teaching-in-practice.webp'
+    'img\teaching\teaching-in-practice.jpg'
+    'files\media\poetry\calligraphie-de-bonheur--great-aunt-henrietta.mp3'
+    'files\media\poetry\ma-cherie--castle-in-the-cloud.mp3'
+    'files\media\poetry\mes-nuits--night-sun.mp3'
+    'files\media\poetry\on-me-l-a-interdit--lost-in-the-city.mp3'
     'files\licenses\poetry-audio-candidates.txt'
 )
 
@@ -134,13 +141,16 @@ foreach ($paragraph in $bioParagraphs) {
     if (-not $homeHtml.Contains($paragraph)) { $failures.Add("Exact biography paragraph missing: $paragraph") }
 }
 if ($homeHtml -notmatch 'portrait-identity[^>]*>\s*<strong>Anderson Vil</strong>') { $failures.Add('Portrait caption name is missing.') }
+if ($homeHtml -notmatch 'home-beyond' -or $homeHtml -notmatch 'Explore Beyond Economics' -or $homeHtml -notmatch 'on-reading-preferences\.m4a') { $failures.Add('Home Beyond Economics discovery section or podcast preview is missing.') }
+if ($homeHtml -match "Je t’écris au fond de mon lit|Il est déjà 2h du matin|J’aurais pu t’écrire") { $failures.Add('Restricted poem text leaked onto Home.') }
 
 foreach ($paperPath in @('research\household-demand-leisure\index.html', 'research\children-costs-one-adult-household\index.html', 'research\children-labor-supply-equations\index.html')) {
     $paperHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $paperPath) -Raw
     if ($paperHtml -notmatch 'Real manuscript.*provisional private preview.*publication blocked') { $failures.Add("Real/provisional paper status missing: $paperPath") }
     if ($paperHtml -match 'Download synthetic paper|Synthetic paper preview') { $failures.Add("Synthetic paper label remains: $paperPath") }
     if ($paperHtml -notmatch 'Data sources and access' -or $paperHtml -notmatch 'Official provider site') { $failures.Add("Structured data access section missing: $paperPath") }
-    if ($paperHtml -match 'motivation-visual|research-motivation-svg') { $failures.Add("Unapproved motivation visual appears on normal paper page: $paperPath") }
+    if ([regex]::Matches($paperHtml, 'class=(?:"research-motivation-svg"|research-motivation-svg)', 'IgnoreCase').Count -ne 1 -or $paperHtml -notmatch 'data-visual-selection=') { $failures.Add("Exactly one configured motivation visual must appear on the normal paper page: $paperPath") }
+    if ($paperHtml -notmatch 'data-scrollspy' -or $paperHtml -notmatch 'paper-toc-links') { $failures.Add("Scrollspy navigation markup missing: $paperPath") }
     if ($paperHtml -notmatch 'Back to Research') { $failures.Add("Persistent context link missing: $paperPath") }
 }
 $jmpHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\household-demand-leisure\index.html') -Raw
@@ -170,6 +180,7 @@ foreach ($title in @('Econometrics — L3', 'Econometrics — M1', 'Econometrics
     if ($teachingHtml -notmatch $title) { $failures.Add("Teaching group missing: $title") }
 }
 if ($teachingHtml -notmatch 'Academic year to confirm' -or $teachingHtml -notmatch '2026–2027') { $failures.Add('Teaching year conflict is not represented explicitly.') }
+if ($teachingHtml -notmatch 'Teaching in practice' -or $teachingHtml -notmatch 'teaching-in-practice\.avif' -or $teachingHtml -notmatch 'handheld microphone') { $failures.Add('Teaching microphone photograph block or alt text is missing.') }
 $niortHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'teaching\microeconomics-iii-niort\index.html') -Raw
 if ($niortHtml -notmatch 'institutional wording to confirm' -or $niortHtml -notmatch 'French-language material') { $failures.Add('Niort institutional conflict or language label is missing.') }
 
@@ -197,24 +208,30 @@ foreach ($slug in $restrictedPoems.Keys) {
 foreach ($slug in @('calligraphie-de-bonheur', 'ma-cherie', 'mes-nuits', 'on-me-l-a-interdit')) {
     $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
     if ($poemHtml -notmatch 'poem-canvas' -or $poemHtml -notmatch "/img/poetry/$slug.webp") { $failures.Add("Source-faithful background missing: $slug") }
-    if ($poemHtml -notmatch 'Play music · selection pending' -or $poemHtml -notmatch 'disabled' -or $poemHtml -match '<audio|<source') { $failures.Add("Unselected poem-music control state is invalid: $slug") }
+    if ($poemHtml -notmatch 'Play music' -or $poemHtml -notmatch 'About the music' -or $poemHtml -notmatch '<audio' -or $poemHtml -notmatch '<source[^>]+audio/mpeg' -or $poemHtml -match '\sautoplay(?:\s|=|>)') { $failures.Add("Functional poem-music control state is invalid: $slug") }
+    if ($poemHtml -notmatch 'Music playback position' -or $poemHtml -notmatch 'Music volume' -or $poemHtml -notmatch 'aria-live=(?:"polite"|polite)') { $failures.Add("Poem audio accessibility controls are incomplete: $slug") }
     if ($poemHtml -notmatch 'Back to Beyond Economics') { $failures.Add("Context navigation missing on poem: $slug") }
 }
+$poemAudioSources = foreach ($slug in @('calligraphie-de-bonheur', 'ma-cherie', 'mes-nuits', 'on-me-l-a-interdit')) {
+    $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
+    ([regex]::Match($poemHtml, '<source[^>]+src=(?:"(?<src>/files/media/poetry/[^\"]+\.mp3)"|(?<src>/files/media/poetry/[^ >]+\.mp3))', 'IgnoreCase')).Groups['src'].Value
+}
+if (($poemAudioSources | Sort-Object -Unique).Count -ne 4) { $failures.Add('Each poem must use a distinct local MP3 file.') }
 
 $visualLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\research-visuals\index.html') -Raw
 if ([regex]::Matches($visualLab, 'class=(?:"[^"]*candidate-card[^"]*"|[^ >]*candidate-card[^ >]*)', 'IgnoreCase').Count -ne 9) { $failures.Add('Research visual lab must contain exactly nine candidates.') }
 foreach ($direction in @('Evidence-led', 'Human context', 'Editorial concept')) { if ([regex]::Matches($visualLab, "Candidate \d · $([regex]::Escape($direction))").Count -ne 3) { $failures.Add("Research visual direction must appear once per paper: $direction") } }
-if ($visualLab -match 'selected provisionally|candidate-card selected') { $failures.Add('Research visual lab must not preselect a candidate.') }
+if ([regex]::Matches($visualLab, 'candidate-card selected', 'IgnoreCase').Count -ne 3 -or [regex]::Matches($visualLab, 'displayed now', 'IgnoreCase').Count -ne 3) { $failures.Add('Research visual lab must identify exactly one current selection per paper.') }
 if ([regex]::Matches($visualLab, 'Light · paper-column size').Count -ne 9 -or [regex]::Matches($visualLab, 'Dark · paper-column size').Count -ne 9) { $failures.Add('Research candidates must be shown at paper-column size in both themes.') }
 if ([regex]::Matches($visualLab, 'Editorial recommendation:').Count -ne 3) { $failures.Add('Research visual lab must include one non-binding recommendation per paper.') }
 $typeLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\poetry-typography\index.html') -Raw
 if ([regex]::Matches($typeLab, 'data-type-sample=', 'IgnoreCase').Count -ne 12 -or [regex]::Matches($typeLab, 'data-typography-select=', 'IgnoreCase').Count -ne 4) { $failures.Add('Poetry lab must contain three variants for each of four poems.') }
 if ($typeLab -notmatch 'no font file is bundled' -or $typeLab -notmatch 'Literary serif — recommended') { $failures.Add('Typography licensing or recommendation is missing.') }
 $audioLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\poetry-audio\index.html') -Raw
-if ([regex]::Matches($audioLab, 'class=(?:"[^"]*candidate-card[^"]*"|[^ >]*candidate-card[^ >]*)', 'IgnoreCase').Count -ne 3) { $failures.Add('Poetry audio lab must contain exactly three candidates.') }
-if ($audioLab -match '<audio|autoplay|<source') { $failures.Add('Poetry audio lab must not load or embed unapproved audio.') }
-if ($audioLab -notmatch 'CC0 1\.0 Universal' -or $audioLab -notmatch 'No track is selected') { $failures.Add('Poetry audio licensing or approval gate is missing.') }
-if ($audioLab -notmatch 'Composer credit' -or $audioLab -notmatch 'Performer credit' -or $audioLab -notmatch 'Fit by poem' -or $audioLab -notmatch 'Rights status') { $failures.Add('Poetry audio credit, fit, or rights detail is missing.') }
+if ([regex]::Matches($audioLab, 'class=(?:"[^"]*candidate-card[^"]*"|[^ >]*candidate-card[^ >]*)', 'IgnoreCase').Count -ne 4) { $failures.Add('Poetry audio lab must contain exactly four selected candidates.') }
+if ([regex]::Matches($audioLab, '<audio', 'IgnoreCase').Count -ne 4 -or $audioLab -match '\sautoplay(?:\s|=|>)') { $failures.Add('Poetry audio lab must expose four non-autoplay players.') }
+if ($audioLab -notmatch 'CC0 1\.0 Universal' -or $audioLab -notmatch 'About candidate recordings') { $failures.Add('Poetry audio licensing or candidate-recording explanation is missing.') }
+if ($audioLab -notmatch 'Composer' -or $audioLab -notmatch 'Recording creator' -or $audioLab -notmatch 'Pairing' -or $audioLab -notmatch 'Rights status') { $failures.Add('Poetry audio credit, fit, or rights detail is missing.') }
 
 $restrictedPdfNames = @('ma_cherie_revision_3_J2.pdf', 'mes_nuits_revision_3_B3.pdf', 'on_me_l_a_interdit_revision_3_E4.pdf')
 foreach ($name in $restrictedPdfNames) {
@@ -230,15 +247,22 @@ if ([regex]::Matches($insightsHtml, '\d+ min read', 'IgnoreCase').Count -lt 2) {
 
 $contactHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'contact\index.html') -Raw
 if ($contactHtml -notmatch 'class=(?:"[^"]*copy-email[^"]*"|[^ >]*copy-email[^ >]*)' -or $contactHtml -notmatch 'aria-live=(?:"polite"|polite)') { $failures.Add('Contact copy-email interaction or live feedback is missing.') }
+if ($contactHtml -notmatch '/research/\?from=contact' -or $contactHtml -notmatch '/teaching/\?from=contact') { $failures.Add('Contact cross-section CTAs do not carry validated contextual provenance.') }
+
+foreach ($htmlFile in $htmlFiles) {
+    $capitalizationHtml = Get-Content -Encoding UTF8 -LiteralPath $htmlFile.FullName -Raw
+    if ($capitalizationHtml -cmatch "Université catholique de l[’']Ouest" -or $capitalizationHtml -cmatch "Université Catholique de l'Ouest") { $failures.Add("Incorrect Université Catholique de l’Ouest capitalization or apostrophe: $($htmlFile.FullName.Substring($root.Length + 1))") }
+}
 
 $siteJs = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'js\site.js') -Raw
 $siteCss = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'styles\site.css') -Raw
-foreach ($token in @('av-theme', 'localStorage', 'abstract-toggle', 'copy-email', 'data-typography-select')) {
+foreach ($token in @('av-theme', 'localStorage', 'abstract-toggle', 'copy-email', 'data-typography-select', 'IntersectionObserver', 'aria-current', 'data-contextual-return-host', 'data-poem-audio', 'pagehide')) {
     if ($siteJs -notmatch [regex]::Escape($token)) { $failures.Add("Required JavaScript behavior missing: $token") }
 }
 if ($homeHtml -notmatch 'prefers-color-scheme') { $failures.Add('Operating-system theme preference bootstrap is missing.') }
 if ($siteCss -notmatch ':root\[data-theme="dark"\]' -or $siteCss -notmatch 'prefers-reduced-motion') { $failures.Add('Dark-theme tokens or reduced-motion support are missing.') }
 if ($siteCss -notmatch '\.poem-line[^\{]*\{[^\}]*white-space:\s*nowrap' -or $siteCss -notmatch 'overflow-x:\s*auto') { $failures.Add('Poetry anti-wrap and local-overflow rules are missing.') }
+if ($siteCss -notmatch '\[aria-current="location"\]' -or $siteCss -notmatch '\.button:active' -or $siteCss -notmatch ':focus-visible') { $failures.Add('Required current, active, or focus-visible interaction states are missing.') }
 
 $talks = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'talks\index.html') -Raw
 if ($homeHtml -match 'href=(?:"/talks/"|/talks/)') { $failures.Add('Talks appears in the Home primary navigation or content.') }

@@ -1,7 +1,9 @@
 {% extends "base.html" %}
+{% import "macros/contextual-return.html" as contextual_return %}
 {% block title %}Research | Anderson Vil{% endblock title %}
 {% block description %}Research on household resource allocation, labor supply, parental time, leisure, and the economic cost of children.{% endblock description %}
 {% block content %}
+{{ contextual_return::host() }}
 <header class="page-hero shell"><p class="eyebrow">Research</p><h1>How families allocate money and time</h1><p class="lede">A research program in household economics, labor economics, and applied microeconometrics, recovering resource shares, monetary constraints, and the value of parental time from household behavior.</p></header>
 <section class="shell research-stack">
 {% for paper in academic.papers %}

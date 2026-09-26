@@ -4,16 +4,16 @@
 {% block description %}Private comparison of provisional research-motivation visuals.{% endblock description %}
 {% block content %}
 {% set visuals = load_data(path="data/research_visuals.toml") %}
-<header class="page-hero shell"><p class="synthetic-label">Private design lab · noindex</p><p class="eyebrow">Research motivation</p><h1>Research visual candidates</h1><p class="lede">Three deliberately different directions are compared for each paper. None is selected, none appears on a normal paper page, and publication remains blocked pending Anderson Vil’s choice.</p></header>
+<header class="page-hero shell"><p class="synthetic-label">Private design lab · noindex</p><p class="eyebrow">Research motivation</p><h1>Research visual candidates</h1><p class="lede">Three deliberately different directions are compared for each paper at the real column size. One reversible provisional choice is displayed on each normal paper page; publication remains blocked.</p></header>
 <main class="shell design-lab" data-publication-status="blocked">
 {% for paper_visuals in visuals.papers %}{% for paper in academic.papers %}{% if paper.id == paper_visuals.id %}
 <section>
-  <div class="lab-heading"><div><p class="eyebrow">{{ paper.short_title }}</p><h2>{{ paper.question }}</h2></div><span class="status-pill">Awaiting Anderson’s selection</span></div>
+  <div class="lab-heading"><div><p class="eyebrow">{{ paper.short_title }}</p><h2>{{ paper.question }}</h2></div><span class="status-pill">Current: {{ paper_visuals.researchQuestionVisual }}</span></div>
   <p class="provisional-card"><strong>Editorial recommendation:</strong> {{ paper_visuals.recommendation }}</p>
   <div class="candidate-grid">
   {% for candidate in paper_visuals.candidates %}
-    <article class="candidate-card">
-      <p class="candidate-number">Candidate {{ candidate.number }} · {{ candidate.category }}</p><h3>{{ candidate.label }}</h3>
+    <article class="candidate-card{% if candidate.number == paper_visuals.selectedCandidate %} selected{% endif %}">
+      <p class="candidate-number">Candidate {{ candidate.number }} · {{ candidate.category }}{% if candidate.number == paper_visuals.selectedCandidate %} · displayed now{% endif %}</p><h3>{{ candidate.label }}</h3>
       <div class="candidate-theme-pair"><div class="candidate-preview light-preview"><span>Light · paper-column size</span>{{ research_visual::visual(paper_id=paper.id, candidate=candidate.number, alt=candidate.alt) }}</div><div class="candidate-preview dark-preview"><span>Dark · paper-column size</span>{{ research_visual::visual(paper_id=paper.id, candidate=candidate.number, alt=candidate.alt) }}</div></div>
       <dl><div><dt>Intent</dt><dd>{{ candidate.intent }}</dd></div><div><dt>Factual source</dt><dd>{{ candidate.factual_source }}</dd></div><div><dt>Provenance</dt><dd>{{ candidate.provenance }}</dd></div><div><dt>Method</dt><dd>{{ candidate.method }}</dd></div><div><dt>Rights</dt><dd>{{ candidate.rights }}</dd></div><div><dt>Proposed alt text</dt><dd>{{ candidate.alt }}</dd></div><div><dt>Advantages</dt><dd>{{ candidate.advantages }}</dd></div><div><dt>Limits</dt><dd>{{ candidate.limits }}</dd></div></dl>
     </article>

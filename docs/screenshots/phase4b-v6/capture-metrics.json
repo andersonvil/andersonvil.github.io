@@ -1,0 +1,119 @@
+[
+  {
+    "name": "teaching-practice-desktop.png",
+    "route": "/teaching/",
+    "selector": ".teaching-practice",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "teaching-practice-mobile.png",
+    "route": "/teaching/",
+    "selector": ".teaching-practice",
+    "theme": "light",
+    "width": 375,
+    "scrollWidth": 375,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "home-beyond-desktop.png",
+    "route": "/",
+    "selector": ".home-beyond",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "home-beyond-mobile.png",
+    "route": "/",
+    "selector": ".home-beyond",
+    "theme": "light",
+    "width": 375,
+    "scrollWidth": 375,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "research-question-jmp-desktop.png",
+    "route": "/research/household-demand-leisure/",
+    "selector": "#question",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "research-question-one-adult-desktop.png",
+    "route": "/research/children-costs-one-adult-household/",
+    "selector": "#question",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "research-question-labor-desktop.png",
+    "route": "/research/children-labor-supply-equations/",
+    "selector": "#question",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "research-question-jmp-mobile-dark.png",
+    "route": "/research/household-demand-leisure/",
+    "selector": "#question",
+    "theme": "dark",
+    "width": 375,
+    "scrollWidth": 375,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "context-return-contact-desktop.png",
+    "route": "/research/?from=contact",
+    "selector": "[data-contextual-return-host]",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "audio-player-desktop.png",
+    "route": "/beyond-economics/calligraphie-de-bonheur/",
+    "selector": ".poem-audio-player",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "audio-player-mobile.png",
+    "route": "/beyond-economics/ma-cherie/",
+    "selector": ".poem-audio-player",
+    "theme": "light",
+    "width": 375,
+    "scrollWidth": 375,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "research-visuals-lab-desktop.png",
+    "route": "/preview/design-lab/research-visuals/",
+    "selector": ".design-lab",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  },
+  {
+    "name": "poetry-audio-lab-desktop.png",
+    "route": "/preview/design-lab/poetry-audio/",
+    "selector": ".audio-lab",
+    "theme": "light",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "noindex": "noindex, nofollow, noarchive"
+  }
+]

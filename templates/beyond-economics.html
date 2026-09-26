@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+{% import "macros/contextual-return.html" as contextual_return %}
 {% block title %}Beyond Economics | Anderson Vil{% endblock title %}
 {% block description %}Poetry and a conversation about reading by Anderson Vil.{% endblock description %}
 {% block content %}
 {% set beyond = load_data(path="data/beyond_economics.toml") %}
+{{ contextual_return::host() }}
 <header class="page-hero beyond-hero shell"><p class="eyebrow">Beyond Economics</p><h1>Words and conversations beyond the discipline</h1><p class="lede">A separate space for poetry and media. French works remain in their original language; access limits are enforced by excluding restricted text from the site.</p><p class="preview-label compact">Real work · provisional private preview · publication blocked</p></header>
 
 <section class="shell beyond-index" aria-labelledby="poetry-title"><div class="section-heading"><p class="eyebrow">Poetry</p><h2 id="poetry-title">Four poems, two levels of access</h2></div>
