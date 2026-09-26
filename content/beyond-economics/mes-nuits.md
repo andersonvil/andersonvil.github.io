@@ -10,11 +10,11 @@ category = "Poetry"
 access = "first-stanza"
 +++
 
-<div class="poem-stanza" lang="fr">
-<p>Il est déjà 2h du matin,<br>
-je reste cloué dans mon lit,<br>
-me battre contre l’ennui<br>
-et je m’embrouille.<br>
-Je sens l’ennui me gagner<br>
-et le vide m’entourer.</p>
+<div class="poem-stanza" lang="fr" role="group" aria-label="Première strophe">
+<span class="poem-line">Il est déjà 2h du matin,</span>
+<span class="poem-line">je reste cloué dans mon lit,</span>
+<span class="poem-line">me battre contre l’ennui</span>
+<span class="poem-line">et je m’embrouille.</span>
+<span class="poem-line">Je sens l’ennui me gagner</span>
+<span class="poem-line">et le vide m’entourer.</span>
 </div>

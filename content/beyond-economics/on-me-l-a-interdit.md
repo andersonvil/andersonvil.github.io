@@ -10,10 +10,10 @@ category = "Poetry"
 access = "first-stanza"
 +++
 
-<div class="poem-stanza" lang="fr">
-<p>J’aurais pu t’écrire un, deux, trois matins,<br>
-ne serait-ce que pour prendre de tes nouvelles,<br>
-savoir si t’avais bien dormi,<br>
-si ta nuit avait été plus légère que d’habitude<br>
-ou moins lourde qu'avant.</p>
+<div class="poem-stanza" lang="fr" role="group" aria-label="Première strophe">
+<span class="poem-line">J’aurais pu t’écrire un, deux, trois matins,</span>
+<span class="poem-line">ne serait-ce que pour prendre de tes nouvelles,</span>
+<span class="poem-line">savoir si t’avais bien dormi,</span>
+<span class="poem-line">si ta nuit avait été plus légère que d’habitude</span>
+<span class="poem-line">ou moins lourde qu'avant.</span>
 </div>

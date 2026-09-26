@@ -281,3 +281,134 @@ Private lab: `/preview/design-lab/poetry-typography/`. For each poem it shows on
 - The preview remains `noindex`; design labs are absent from public navigation and live under `content/preview-synthetic`, so the production gate blocks them.
 - Light/dark and desktop/mobile review is recorded in the v4 screenshot set after the final visual pass.
 - No source in `C:\dev\andersonvil-academic-os-sources` was modified or moved. No push, pull request, merge, deployment, or `main` change occurred.
+
+# Correctif v5 — densité, navigation, Teaching, poésie et identification (2026-09-26)
+
+## 1. Branche, hash et restauration
+
+- Branche de travail : `codex/phase-4b-provisional-content-v3`.
+- Commit de départ v5 : `800d5e603efed54e9fa3a81fd92f35cc04ca22c3`.
+- Point de restauration local : branche `archive/phase-4b-v4-before-v5`, exactement sur le même hash `800d5e603efed54e9fa3a81fd92f35cc04ca22c3`.
+- L’arbre de travail était propre avant cette itération. Aucun changement tiers non commité n’a donc dû être isolé.
+
+## 2. Fichiers modifiés ou ajoutés
+
+Les modifications v5 couvrent :
+
+- contenu : les quatre pages de poèmes et les trois pages Econometrics ;
+- données : `academic.toml`, `beyond_economics.toml`, `teaching_resources.toml`, `research_visuals.toml`, et le nouveau `poetry_audio.toml` ;
+- gabarits : papier, poème, Teaching, Insights, média, Beyond Economics, index privé, laboratoire de visuels, laboratoire audio, macros d’icônes et de retour contextuel ;
+- présentation et tests : `static/styles/site.css`, `scripts/validate-site.ps1`, `scripts/capture-phase4b-v5.js` ;
+- actifs : deux SVG d’identification, notice locale des licences candidates, captures v5 ;
+- route privée : `content/preview-synthetic/poetry-audio/index.md` ;
+- ce rapport.
+
+## 3. Tokens et espacements — avant/après
+
+| Élément | Avant v5 | Après v5 |
+|---|---:|---:|
+| Échelle commune | valeurs dispersées | `8 · 12 · 16 · 24 · 32 · 48 · 64 px` via `--space-1` à `--space-7` |
+| Décalage des en-têtes | `clamp(2.4rem, 5vw, 4.8rem)` | `--page-header-offset: clamp(2rem, 3vw, 3rem)` ; `1.5rem` mobile |
+| Sections génériques | jusqu’à `5.5rem` | `clamp(2.4rem, 4vw, 4rem)` |
+| Sections Teaching | jusqu’à `5rem` | `clamp(2rem, 3.5vw, 3.5rem)` |
+| Pages détaillées | jusqu’à `4rem` | `clamp(1.5rem, 3vw, 3rem)` |
+| Début du corps d’un papier | `2.8rem` | `2rem` |
+| Sections d’un papier | `1.2rem 2rem` | `1rem 1.5rem` |
+| Beyond Economics | `2.5rem 5rem` | `2rem 3rem` |
+
+Les largeurs de lecture, l’interlignage long et les cibles de 44 px restent inchangés. `Anderson Vil` est maintenu sur une ligne à 375, 768, 1024, 1440 et 1920 px par réduction fluide, sans débordement.
+
+## 4. Captures avant/après
+
+`docs/screenshots/phase4b-v5/` contient les paires à 1440 × 900 pour Home, Research, Teaching, Beyond Economics et le JMP : `before-*.png` et `after-*.png`. Il contient aussi les vues après de l’identification, du poème, des deux laboratoires, ainsi que les contrôles responsifs Home/JMP/poème à 375, 768, 1024 et 1920 px. La vérification 1440 px est couverte par les captures `after-*`; les métriques sont archivées dans `responsive-metrics.json`.
+
+Les fichiers annoncés dans le prompt sous les noms `image(20260926-121551).png`, `image(20260926-121608).png` et `pr1.png` à `pr5.png` n’étaient présents ni dans les racines de sources ni dans le dossier de travail transmis. La comparaison fidèle a donc utilisé directement le PDF fourni, son TeX et les rendus PDF des pages 10–11, sans inventer de capture manquante.
+
+## 5. Inventaire poésie
+
+| Titre exact | Portée autorisée | Vers HTML explicites | Signature/date de la source |
+|---|---|---:|---|
+| Calligraphie de bonheur | texte complet autorisé | 9 | `Anderson, 19/10/2023` |
+| Ma chérie | première strophe seulement | 7 | `Écrit par Anderson le 03 mars 2023.` |
+| Mes nuits | première strophe seulement | 6 | `Écrit par Anderson le 04 mai 2024.` |
+| On me l'a interdit | première strophe seulement | 5 | `Écrit par Anderson le 22 août 2026 à 4h30 du matin.` |
+
+Chaque vers est un élément `.poem-line` en HTML réel, avec `white-space: nowrap` et débordement horizontal local si nécessaire. Les fonds issus des documents restent inchangés et la signature est placée en bas à droite. Contradiction conservée explicitement : les originaux signent `Anderson`, pas `Anderson Vil`. La signature source est reproduite exactement ; la byline canonique de page reste `By Anderson Vil`.
+
+## 6. Test anti-fuite
+
+Le validateur exige 9/7/6/5 lignes et 2/1/1/1 strophes, contrôle chaque signature, interdit les PDF complets restreints, interdit un payload immersif sur les trois extraits et vérifie l’absence de balise audio/source. `SOURCE COPY VALIDATION` confirme 18 copies provisoires byte-identiques et l’absence des trois PDF de poèmes restreints. Aucun texte au-delà de la première strophe n’a été ajouté au HTML, aux données, aux tests, aux commentaires, aux captures ou aux actifs statiques.
+
+## 7. Laboratoire audio et preuves de licence
+
+- URL locale : `http://127.0.0.1:1112/preview/design-lab/poetry-audio/`.
+- Trois candidats maximum : `Beyond (Piano Edit)` — Pablo Perez ; `Entering Autumn` — Patrick Davies ; `The Subtle Triumph` — Patrick Davies.
+- Les pages individuelles FMA et la mention exacte `CC0 1.0 Universal` ont été vérifiées le 26 septembre 2026 ; les URL, durées, adéquation par poème, limites et lien CC0 sont centralisés dans `data/poetry_audio.toml` et archivés dans `/files/licenses/poetry-audio-candidates.txt`.
+- Les rôles de compositeur et d’interprète ne sont pas séparément exposés par les pages consultées. Ils restent donc marqués à confirmer et `rightsStatus` reste bloqué.
+- Aucun fichier audio n’est téléchargé : aucun hash n’existe avant sélection. Sur les pages normales, le contrôle musique/volume est accessible mais désactivé, sans `<audio>`, sans autoplay, sans tracking et sans requête tierce.
+- Recommandation de première écoute seulement : `Beyond (Piano Edit)`, pour sa retenue. Ce n’est ni une sélection ni une intégration.
+
+## 8. Structure Teaching
+
+1. `CY Cergy Paris Université` : `Econometrics — M2 & PhD`, puis `Econometrics — M1`, puis `Econometrics — L3`, tous avec le rôle `Tutorial`.
+2. `Sciences Po Saint-Germain-en-Laye` : microéconomie réelle, rôle `Lecture`.
+3. `Université catholique de l’Ouest — UCO Niort` : Microeconomics III, rôle `Lecture`.
+
+Le troisième groupe est nécessaire parce que le dossier canonique et la fonction actuelle situent le cours à Niort/UCO, tandis que les slides impriment CY Cergy Paris Université / THEMA. Cette contradiction reste visible et bloque la publication ; le cours n’est pas absorbé dans un autre établissement.
+
+## 9. Retour contextuel
+
+La macro réutilisable `context-back.html` couvre :
+
+- les trois pages papier → Research ;
+- toutes les pages de ressources pédagogiques réelles et la démonstration fonctionnelle → Teaching ;
+- les notes détaillées → Insights ;
+- les quatre poèmes, le média/podcast et la création synthétique détaillée → Beyond Economics.
+
+Le lien sémantique figure près du breadcrumb, reste sticky durant le scroll, apparaît dans le sommaire sticky du JMP et revient statiquement en fin de contenu. Il ne dépend jamais de `history.back()`.
+
+## 10. Correspondance des slides
+
+| Slide originale | Frame TeX | Export | Composant web |
+|---|---|---|---|
+| slide affichée 10 / page PDF 10 | `Identification of the time cost of children`, `EEA_17-08-26.tex` lignes 493–576 | `/img/research/identification/slide-10.svg` | première figure `.source-slide` + transcription/MathML |
+| slide affichée 11 / page PDF 11 | `Identification of the monetary cost of children`, lignes 580–643 | `/img/research/identification/slide-11.svg` | seconde figure `.source-slide` + transcription/MathML |
+
+Le PDF source a été exporté en SVG responsive avec `viewBox`. Les seules zones recouvertes sont les trois contrôles de navigation demandés et les numéros de page ; les compositions scientifiques ne sont pas recolorées.
+
+## 11. Checklist de fidélité des slides 10–11
+
+- slide 10 : titre, triptyque bleu/violet/rouge, icônes, substitution circulaire, séparateurs, variables, deux encadrés verts, accolades et équations conservés ;
+- slide 11 : deux courbes et libellés de couples, axes, verticale `Y*`, points, flèche verte, équation colorée, hypothèses A.2/A.3, panneau et principe de Rothbarth conservés ;
+- les trois contrôles de diaporama ne sont pas visibles dans la version web ;
+- lampe SVG conservée dans la slide et répétée dans le callout textuel accessible ;
+- surface toujours claire en thème sombre, SVG non recadré, ouverture plein format disponible sur mobile ;
+- deux équivalents textuels et MathML séparés sont exposés aux technologies d’assistance.
+
+## 12. Laboratoire des visuels de motivation
+
+URL locale : `http://127.0.0.1:1112/preview/design-lab/research-visuals/`.
+
+Chaque papier propose exactement trois directions : `Evidence-led`, `Human context`, `Editorial concept`. Chaque carte documente intention, source factuelle, provenance, méthode, droits, texte alternatif, forces et limites, puis montre le visuel à la taille de colonne dans les thèmes clair et sombre.
+
+## 13. Options sans intégration définitive
+
+Aucun candidat n’est sélectionné dans les données et aucun visuel de motivation n’apparaît sur une page normale. Les anciennes illustrations génériques ont été retirées. La direction `Evidence-led` est la recommandation éditoriale de départ lorsque les faits sont les plus spécifiques ; le choix final reste à Anderson Vil. De même, aucune piste musicale n’est intégrée sans validation explicite.
+
+## 14. Vérification finale
+
+- build Zola : 42 pages, 7 sections ;
+- validation du site : 49 fichiers HTML, pass ;
+- liens internes, `noindex`, navigation active, CTA, données, Teaching, slides, structure de vers, restrictions poésie, audio non chargé, labs et thèmes : pass ;
+- reading times : pass ;
+- 18 copies PDF provisoires byte-identiques : pass ;
+- notebook et script synthétiques : pass ;
+- test négatif de production : bloqué comme prévu ; fixture production propre : pass ;
+- responsive : aucun débordement horizontal sur Home, JMP et poème à 375, 768, 1024, 1440 et 1920 px ; titre Home sur une ligne aux cinq largeurs ;
+- thèmes clair/sombre : tokens et SVG de laboratoires contrôlés ; slides conservées sur fond clair ;
+- clavier/focus : vrais liens, cibles 44 px, `:focus-visible`, retour contextuel et contrôles désactivés sémantiques ;
+- lecteur d’écran : titres/`alt`, liens d’agrandissement, MathML, transcriptions, labels des contrôles et icônes décoratives `aria-hidden`.
+
+## 15. Confidentialité et intégrité des sources
+
+`C:\dev\andersonvil-academic-os-sources` est resté strictement en lecture seule. Aucun fichier source n’a été modifié, déplacé ou renommé. Le site et ses laboratoires restent `noindex`, `publicationStatus = "blocked"`, exclus de la production et accessibles uniquement en local. Aucun push, pull request, merge, déploiement, changement de `main` ni URL publique n’a été créé.

@@ -1,5 +1,5 @@
 +++
-title = "Econometrics — Master's Year 2 (M2)"
+title = "Econometrics — M2 & PhD"
 path = "teaching/econometrics-m2"
 template = "teaching-detail.html"
 

@@ -1,0 +1,9 @@
+{% macro bar(label, url) %}
+<nav class="context-back-bar" aria-label="Context navigation">
+  <a href="{{ url }}"><span aria-hidden="true">←</span> Back to {{ label }}</a>
+</nav>
+{% endmacro bar %}
+
+{% macro toc(label, url) %}
+<a class="context-back-toc" href="{{ url }}"><span aria-hidden="true">←</span> Back to {{ label }}</a>
+{% endmacro toc %}

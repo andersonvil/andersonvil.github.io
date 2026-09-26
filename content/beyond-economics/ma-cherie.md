@@ -10,12 +10,12 @@ category = "Poetry"
 access = "first-stanza"
 +++
 
-<div class="poem-stanza" lang="fr">
-<p>Je t’écris au fond de mon lit,<br>
-entouré de ton esprit qui m’habite.<br>
-Les lumières sont éteintes,<br>
-mais dans ma chambre,<br>
-les ténèbres n’arrivent pas à valser&nbsp;;<br>
-je laisse dégager mon rideau<br>
-pour que quelque lueur puisse y pénétrer.</p>
+<div class="poem-stanza" lang="fr" role="group" aria-label="Première strophe">
+<span class="poem-line">Je t’écris au fond de mon lit,</span>
+<span class="poem-line">entouré de ton esprit qui m’habite.</span>
+<span class="poem-line">Les lumières sont éteintes,</span>
+<span class="poem-line">mais dans ma chambre,</span>
+<span class="poem-line">les ténèbres n’arrivent pas à valser&nbsp;;</span>
+<span class="poem-line">je laisse dégager mon rideau</span>
+<span class="poem-line">pour que quelque lueur puisse y pénétrer.</span>
 </div>

@@ -1,13 +1,15 @@
 {% extends "base.html" %}
+{% import "macros/context-back.html" as context_back %}
 {% block title %}Synthetic Applied Economics Lab | Teaching{% endblock title %}
 {% block description %}Synthetic teaching-resource preview for layout and download testing.{% endblock description %}
 {% block content %}
-<div class="shell breadcrumb"><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>Applied Economics Lab</span></div>
+<div class="shell detail-navigation">{{ context_back::bar(label="Teaching", url="/teaching/") }}<div class="breadcrumb"><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>Applied Economics Lab</span></div></div>
 <article class="article-page shell" data-synthetic="true" data-placeholder="true" data-publication-status="blocked">
   <header><p class="synthetic-label">{{ config.extra.preview_label }}</p><p class="eyebrow">Synthetic course resource</p><h1>Interpreting associations and causal claims</h1><p class="lede">A fictional 90-minute workshop that tests how a teaching resource can combine a learning objective, a short dataset, executable code, and an accessible handout.</p></header>
   <dl class="course-meta"><div><dt>Level</dt><dd>Synthetic undergraduate workshop</dd></div><div><dt>Institution</dt><dd>None — demonstration only</dd></div><div><dt>Language</dt><dd>English</dd></div><div><dt>Software</dt><dd>Python 3, standard library only</dd></div></dl>
   <section><h2>Learning objectives</h2><ul><li>Distinguish a descriptive association from a causal estimate.</li><li>Identify the assumptions needed to interpret a coefficient.</li><li>Reproduce a small grouped-average calculation from synthetic data.</li></ul></section>
   <section><h2>Session sequence</h2><ol><li>Read the data-generating story and identify the unit of observation.</li><li>Compute group averages by hand and with the demonstration script.</li><li>List alternative explanations for the observed difference.</li><li>Rewrite an overconfident conclusion using appropriately limited language.</li></ol></section>
   <section><h2>Downloads</h2><div class="download-grid"><a class="download-card" href="/files/demo/synthetic-applied-economics-handout.pdf"><strong>Workshop handout</strong><span>PDF · synthetic preview</span></a><a class="download-card" href="/files/demo/synthetic-household-project/synthetic_households.json"><strong>Practice data</strong><span>JSON · synthetic</span></a><a class="download-card" href="/files/demo/synthetic-household-project/analyze_demo.py"><strong>Analysis script</strong><span>Python · executable</span></a><a class="download-card" href="/files/demo/synthetic-household-project/demo_notebook.ipynb"><strong>Notebook</strong><span>Jupyter · executable</span></a></div></section>
+  <footer class="article-footer">{{ context_back::bar(label="Teaching", url="/teaching/") }}</footer>
 </article>
 {% endblock content %}

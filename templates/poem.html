@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% import "macros/context-back.html" as context_back %}
 {% block title %}{{ page.title }} | Beyond Economics{% endblock title %}
 {% block description %}{{ page.description }}{% endblock description %}
 {% block content %}
 {% set beyond = load_data(path="data/beyond_economics.toml") %}
 {% for poem in beyond.poems %}{% if poem.id == page.extra.work_id %}
-<div class="shell breadcrumb"><a href="/beyond-economics/">Beyond Economics</a><span aria-hidden="true">/</span><span>{{ poem.title }}</span></div>
+<div class="shell detail-navigation">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}<div class="breadcrumb"><a href="/beyond-economics/">Beyond Economics</a><span aria-hidden="true">/</span><span>{{ poem.title }}</span></div></div>
 <article class="beyond-reading poem-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
   <header>
     <p class="preview-label">Real work · provisional private preview · publication blocked</p>
@@ -13,11 +14,12 @@
     <p class="byline">By Anderson Vil · {{ poem.language }} · {{ poem.date }} · {{ poem.reading_minutes }} min read</p>
     {% if poem.access == "full" %}<button class="button primary immersive-open" type="button" data-immersive-target="immersive-poem">Enter immersive reading</button>{% endif %}
   </header>
-  <div class="poem-canvas poem-{{ poem.id }} poem-font-{{ poem.selected_font }}" style="--poem-background: url('{{ poem.background }}')" data-background-source="{{ poem.background_source }}"><div class="poem-text" lang="fr">{{ page.content | safe }}</div></div>
+  <div class="poem-canvas poem-{{ poem.id }} poem-font-{{ poem.selected_font }}" style="--poem-background: url('{{ poem.background }}')" data-background-source="{{ poem.background_source }}"><p class="poem-canvas-title" aria-hidden="true" lang="fr">{{ poem.title }}</p><div class="poem-text" lang="fr">{{ page.content | safe }}</div><p class="poem-signature" lang="fr">{{ poem.signature_line }}</p></div>
+  <aside class="poem-audio-placeholder" aria-label="Optional reading music unavailable until selection"><button class="button secondary" type="button" disabled aria-disabled="true">Play music · selection pending</button><label>Volume <input type="range" min="0" max="100" value="60" disabled aria-disabled="true"></label><a class="text-link" href="/preview/design-lab/poetry-audio/">About candidate recordings</a><p>No recording is loaded. Anderson Vil’s explicit selection is required before this accessible player can be activated.</p></aside>
   {% if poem.access == "first-stanza" %}
-  <aside class="access-request" aria-label="Access information"><p>The complete poem is available on request.</p><a class="button primary" href="mailto:{{ academic.identity.email }}?subject=Request%20access%20to%20the%20full%20poem%20%E2%80%94%20{{ poem.title | urlencode }}">Request access to the full poem</a></aside>
+  <aside class="access-request" aria-label="Access information"><p><strong>First stanza — full text available on request.</strong></p><a class="button primary" href="mailto:{{ academic.identity.email }}?subject=Request%20access%20to%20the%20full%20poem%20%E2%80%94%20{{ poem.title | urlencode }}">Request access to the full poem</a></aside>
   {% endif %}
-  <footer class="article-footer"><p>© Anderson Vil, {{ poem.year }}. All rights reserved.</p>{% if poem.access == "first-stanza" %}<p>Only the first stanza is included in this page and build. The complete PDF is intentionally excluded.</p>{% else %}<p>The complete text is presented in accessible HTML; the source PDF is not offered for download.</p>{% endif %}<a class="text-link" href="/beyond-economics/">Back to Beyond Economics</a></footer>
+  <footer class="article-footer"><p>© Anderson Vil, {{ poem.year }}. All rights reserved.</p>{% if poem.access == "first-stanza" %}<p>Only the first stanza is included in this page and build. The complete PDF is intentionally excluded.</p>{% else %}<p>The complete text is presented in accessible HTML; the source PDF is not offered for download.</p>{% endif %}{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}</footer>
 </article>
 {% if poem.access == "full" %}
 <dialog class="immersive-reader" id="immersive-poem" aria-labelledby="immersive-title">

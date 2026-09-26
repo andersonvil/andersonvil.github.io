@@ -1,0 +1,20 @@
+Poetry audio candidate provenance — verified 2026-09-26
+
+No audio file has been downloaded, copied, bundled, embedded, or selected.
+Final integration requires Anderson Vil's explicit listening approval.
+The source records expose an artist credit but do not separately identify composer and performer roles. Rights remain blocked until those role credits and the licence attached to the exact downloadable file are rechecked at selection time.
+
+1. Beyond (Piano Edit) — Pablo Perez — 04:26
+Source: https://freemusicarchive.org/music/pablo-perez/single/beyond-piano-edit/
+Licence shown by source: CC0 1.0 Universal
+
+2. Entering Autumn — Patrick Davies — 02:51
+Source: https://freemusicarchive.org/index.php/music/patrick-davies/single/entering-autumn/
+Licence shown by source: CC0 1.0 Universal
+
+3. The Subtle Triumph — Patrick Davies — 04:47
+Source: https://freemusicarchive.org/music/patrick-davies/single/the-subtle-triumph/
+Licence shown by source: CC0 1.0 Universal
+
+CC0 1.0 legal code: https://creativecommons.org/publicdomain/zero/1.0/
+Future selected-asset checksum: pending; no local asset exists.

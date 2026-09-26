@@ -83,7 +83,7 @@ question = "How should parental childcare time be valued when it is partly produ
 contribution = "The paper endogenizes the price of parental childcare time using substitution between parental care and purchased childcare, then connects that price to the monetary and time components of child costs."
 methods = "Collective household model; childcare technology; full-leisure demand; recursive maximum likelihood and 3SLS; 2019 PSID dual-earner couples."
 findings = "The most robust contribution is methodological: the productive price of childcare time can differ materially from the wage. Monetary and full-cost estimates are more fragile and remain in the detailed manuscript rather than the preview headline."
-limitations = "The supplied version focuses on dual-earner couples with young children. Full-leisure Engel curves are comparatively flat, and the monetary component is less precisely identified."
+limitations = "The supplied version focuses on dual-earner couples with young children. Full-leisure demand curves are comparatively flat, and the monetary component is less precisely identified."
 
 [[papers]]
 id = "children-costs-one-adult-household"

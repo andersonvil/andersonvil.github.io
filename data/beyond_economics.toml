@@ -19,6 +19,9 @@ background_source = "Extracted from the embedded background image in the supplie
 background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
 original_font = "Segoe Script"
 selected_font = "literary-serif"
+authorized_lines = 9
+signature_line = "Anderson, 19/10/2023"
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
 sample_lines = ["Mon visage arbore toujours le sourire,", "est-ce une toile délicate qui dissimule ma tristesse,", "une mélodie silencieuse dans l’orchestre de mes émotions ?"]
 
 [[poems]]
@@ -40,6 +43,9 @@ background_source = "Extracted from the embedded background image in the supplie
 background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
 original_font = "Gabriola"
 selected_font = "literary-serif"
+authorized_lines = 7
+signature_line = "Écrit par Anderson le 03 mars 2023."
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
 sample_lines = ["Je t’écris au fond de mon lit,", "entouré de ton esprit qui m’habite.", "Les lumières sont éteintes,"]
 
 [[poems]]
@@ -61,6 +67,9 @@ background_source = "Extracted from the embedded background image in the supplie
 background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
 original_font = "Garamond"
 selected_font = "literary-serif"
+authorized_lines = 6
+signature_line = "Écrit par Anderson le 04 mai 2024."
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
 sample_lines = ["Il est déjà 2h du matin,", "je reste cloué dans mon lit,", "me battre contre l’ennui"]
 
 [[poems]]
@@ -82,6 +91,9 @@ background_source = "Extracted from the embedded background image in the supplie
 background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
 original_font = "Perpetua"
 selected_font = "literary-serif"
+authorized_lines = 5
+signature_line = "Écrit par Anderson le 22 août 2026 à 4h30 du matin."
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
 sample_lines = ["J’aurais pu t’écrire un, deux, trois matins,", "ne serait-ce que pour prendre de tes nouvelles,", "savoir si t’avais bien dormi,"]
 
 [media]

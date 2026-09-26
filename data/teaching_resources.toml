@@ -5,8 +5,10 @@ synthetic = false
 
 [[groups]]
 id = "econometrics-l3"
-title = "Econometrics — Undergraduate (L3)"
+title = "Econometrics — L3"
 institution = "CY Cergy Paris Université"
+institution_id = "cy"
+role = "Tutorial"
 level = "Undergraduate (L3)"
 academic_year = "Academic year to confirm"
 year_note = "The source folder is labelled 2026–27, but the PDFs do not state an academic year."
@@ -60,8 +62,10 @@ bytes = 93486
 
 [[groups]]
 id = "econometrics-m1"
-title = "Econometrics — Master's Year 1 (M1)"
+title = "Econometrics — M1"
 institution = "CY Cergy Paris Université"
+institution_id = "cy"
+role = "Tutorial"
 level = "Master's Year 1 (M1)"
 academic_year = "Academic year to confirm"
 year_note = "The source folder is labelled 2026–27, while the filename contains 2025; the document itself is undated."
@@ -80,9 +84,11 @@ bytes = 150015
 
 [[groups]]
 id = "econometrics-m2"
-title = "Econometrics — Master's Year 2 (M2)"
+title = "Econometrics — M2 & PhD"
 institution = "CY Cergy Paris Université"
-level = "Master's Year 2 (M2)"
+institution_id = "cy"
+role = "Tutorial"
+level = "Master's Year 2 and PhD"
 academic_year = "Academic year to confirm"
 year_note = "The source folder is labelled 2026–27, while the filename states 2025–26; no year appears in the document body."
 language = "English"
@@ -102,6 +108,8 @@ bytes = 162634
 id = "microeconomics-l1"
 title = "Microeconomics — Undergraduate (L1)"
 institution = "Sciences Po Saint-Germain-en-Laye"
+institution_id = "sciences-po"
+role = "Lecture"
 level = "Undergraduate (first year)"
 academic_year = "2026–2027"
 year_note = "Confirmed on the document title slide."
@@ -121,7 +129,10 @@ bytes = 349358
 [[groups]]
 id = "microeconomics-iii-niort"
 title = "Microeconomics III — Undergraduate (L3), Niort"
-institution = "CY Cergy Paris Université (as printed in the supplied slides)"
+institution = "Université catholique de l’Ouest — UCO Niort"
+institution_id = "uco-niort"
+role = "Lecture"
+source_institution = "CY Cergy Paris Université / THEMA (as printed in the supplied slides)"
 location = "Niort"
 level = "Licence 3 — Economics"
 academic_year = "2026–2027"

@@ -1,0 +1,56 @@
+publicationStatus = "blocked"
+selectionStatus = "No track selected. No audio file is downloaded or integrated; Anderson Vil's explicit approval is required."
+verifiedOn = "2026-09-26"
+licenseNotice = "/files/licenses/poetry-audio-candidates.txt"
+recommendation = "Recommended for Anderson Vil's first listening review: Beyond (Piano Edit), because its restrained piano texture is least likely to compete with the verse. This is not a selection or integration decision."
+
+[[candidates]]
+number = 1
+title = "Beyond (Piano Edit)"
+artist = "Pablo Perez"
+composer = "Not separately identified on the source record"
+performer = "Not separately identified on the source record"
+duration = "04:26"
+source = "https://freemusicarchive.org/music/pablo-perez/single/beyond-piano-edit/"
+license = "CC0 1.0 Universal"
+licenseUrl = "https://creativecommons.org/publicdomain/zero/1.0/"
+mood = "Intimate, restrained piano"
+fit = "A quiet option for the most reflective poems; it leaves room for the spoken rhythm of the text."
+poemFit = ["Calligraphie de bonheur — strong", "Ma chérie — strong", "Mes nuits — moderate", "On me l'a interdit — moderate"]
+limit = "The title may over-direct interpretation; musical fit still requires Anderson's listening review."
+assetStatus = "Candidate only; not downloaded; hash pending final selection."
+rightsStatus = "blocked pending role-credit and file-level licence recheck at selection"
+
+[[candidates]]
+number = 2
+title = "Entering Autumn"
+artist = "Patrick Davies"
+composer = "Not separately identified on the source record"
+performer = "Not separately identified on the source record"
+duration = "02:51"
+source = "https://freemusicarchive.org/index.php/music/patrick-davies/single/entering-autumn/"
+license = "CC0 1.0 Universal"
+licenseUrl = "https://creativecommons.org/publicdomain/zero/1.0/"
+mood = "Warm, seasonal, contemplative"
+fit = "Shorter and lighter; potentially compatible with a single-stanza reading without dominating it."
+poemFit = ["Calligraphie de bonheur — moderate", "Ma chérie — moderate", "Mes nuits — strong", "On me l'a interdit — limited"]
+limit = "Its seasonal association may not suit every poem."
+assetStatus = "Candidate only; not downloaded; hash pending final selection."
+rightsStatus = "blocked pending role-credit and file-level licence recheck at selection"
+
+[[candidates]]
+number = 3
+title = "The Subtle Triumph"
+artist = "Patrick Davies"
+composer = "Not separately identified on the source record"
+performer = "Not separately identified on the source record"
+duration = "04:47"
+source = "https://freemusicarchive.org/music/patrick-davies/single/the-subtle-triumph/"
+license = "CC0 1.0 Universal"
+licenseUrl = "https://creativecommons.org/publicdomain/zero/1.0/"
+mood = "Measured, gently affirmative"
+fit = "A possible closing atmosphere for the complete poem, subject to author approval."
+poemFit = ["Calligraphie de bonheur — strong", "Ma chérie — limited", "Mes nuits — moderate", "On me l'a interdit — moderate"]
+limit = "Its affirmative arc could conflict with more ambiguous texts."
+assetStatus = "Candidate only; not downloaded; hash pending final selection."
+rightsStatus = "blocked pending role-credit and file-level licence recheck at selection"
