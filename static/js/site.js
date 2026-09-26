@@ -114,6 +114,13 @@
     } catch (_) { if (status) status.textContent = `Controlled error: ${button.dataset.testUrl} is not available.`; }
   }));
 
+  document.querySelectorAll('[data-typography-select]').forEach((select) => {
+    const samples = [...document.querySelectorAll(`#type-samples-${select.dataset.typographySelect} [data-type-sample]`)];
+    const updateSample = () => samples.forEach((sample) => { sample.hidden = sample.dataset.typeSample !== select.value; });
+    select.addEventListener('change', updateSample);
+    updateSample();
+  });
+
   document.querySelectorAll('.immersive-open').forEach((openButton) => {
     const dialog = document.getElementById(openButton.dataset.immersiveTarget || '');
     const sourceStanzas = [...document.querySelectorAll('.poem-text .poem-stanza')];

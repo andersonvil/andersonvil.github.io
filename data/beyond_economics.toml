@@ -13,6 +13,13 @@ real = true
 provisional = true
 synthetic = false
 source_file = "poésie/calligraphie_de_bonheur_revision_3_03.pdf"
+tex_source = "poésie/calligraphie_de_bonheur_revision_3_03.tex"
+background = "/img/poetry/calligraphie-de-bonheur.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
+original_font = "Segoe Script"
+selected_font = "literary-serif"
+sample_lines = ["Mon visage arbore toujours le sourire,", "est-ce une toile délicate qui dissimule ma tristesse,", "une mélodie silencieuse dans l’orchestre de mes émotions ?"]
 
 [[poems]]
 id = "ma-cherie"
@@ -27,6 +34,13 @@ real = true
 provisional = true
 synthetic = false
 source_file = "poésie/ma_cherie_revision_3_J2.pdf"
+tex_source = "poésie/ma_cherie_revision_3_J2.tex"
+background = "/img/poetry/ma-cherie.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
+original_font = "Gabriola"
+selected_font = "literary-serif"
+sample_lines = ["Je t’écris au fond de mon lit,", "entouré de ton esprit qui m’habite.", "Les lumières sont éteintes,"]
 
 [[poems]]
 id = "mes-nuits"
@@ -41,6 +55,13 @@ real = true
 provisional = true
 synthetic = false
 source_file = "poésie/mes_nuits_revision_3_B3.pdf"
+tex_source = "poésie/mes_nuits_revision_3_B3.tex"
+background = "/img/poetry/mes-nuits.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
+original_font = "Garamond"
+selected_font = "literary-serif"
+sample_lines = ["Il est déjà 2h du matin,", "je reste cloué dans mon lit,", "me battre contre l’ennui"]
 
 [[poems]]
 id = "on-me-l-a-interdit"
@@ -55,6 +76,13 @@ real = true
 provisional = true
 synthetic = false
 source_file = "poésie/on_me_l_a_interdit_revision_3_E4.pdf"
+tex_source = "poésie/on_me_l_a_interdit_revision_3_E4.tex"
+background = "/img/poetry/on-me-l-a-interdit.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Source-supplied original design; public reuse remains blocked pending author confirmation."
+original_font = "Perpetua"
+selected_font = "literary-serif"
+sample_lines = ["J’aurais pu t’écrire un, deux, trois matins,", "ne serait-ce que pour prendre de tes nouvelles,", "savoir si t’avais bien dormi,"]
 
 [media]
 id = "on-reading-preferences"

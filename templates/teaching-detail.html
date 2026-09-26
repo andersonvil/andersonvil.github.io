@@ -19,6 +19,7 @@
     <div><dt>Language</dt><dd>{{ group.language }}{% if group.language == "French" %} · <strong>French-language material</strong>{% endif %}</dd></div>
   </dl>
   <p class="status-note"><strong>Year evidence:</strong> {{ group.year_note }}</p>
+  {% if group.institutionalWordingToConfirm %}<p class="status-note warning"><strong>Institutional wording to confirm:</strong> the source folder identifies Niort, while the title slides print CY Cergy Paris Université and THEMA. This preview preserves both pieces of evidence and does not resolve the conflict.</p>{% endif %}
   <section><h2>Topics documented in the material</h2><ul>{% for topic in group.topics %}<li>{{ topic }}</li>{% endfor %}</ul></section>
   <section>
     <h2>Resources</h2>

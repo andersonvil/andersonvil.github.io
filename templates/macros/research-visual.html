@@ -1,0 +1,31 @@
+{% macro visual(paper_id, candidate, alt) %}
+<svg class="research-motivation-svg" viewBox="0 0 520 360" role="img" aria-label="{{ alt }}">
+  <title>{{ alt }}</title>
+  <rect class="rv-paper" x="12" y="12" width="496" height="336" rx="28"/>
+  {% if paper_id == "household-demand-leisure" %}
+    {% if candidate == 1 %}
+      <circle class="rv-soft" cx="176" cy="174" r="104"/><circle class="rv-line" cx="176" cy="174" r="72"/><path class="rv-line" d="M176 174V118M176 174l45 28"/><circle class="rv-accent" cx="176" cy="174" r="8"/><path class="rv-line" d="M310 122h138M324 122l-42 92h84zM434 122l-42 92h84z"/><text x="120" y="304">CARE · WORK · LEISURE</text><text x="292" y="254">TIME ↔ MONEY</text>
+    {% elif candidate == 2 %}
+      <circle class="rv-person" cx="120" cy="126" r="28"/><circle class="rv-person" cx="205" cy="126" r="28"/><circle class="rv-accent" cx="163" cy="188" r="22"/><path class="rv-line" d="M86 242c8-62 112-62 120 0M169 242c8-62 112-62 120 0"/><rect class="rv-soft" x="306" y="74" width="154" height="188" rx="12"/><path class="rv-line" d="M326 112h114M326 146h114M326 180h114M326 214h114M364 94v148M402 94v148"/><text x="110" y="298">SHARED CARE</text><text x="332" y="298">WEEK</text>
+    {% else %}
+      <circle class="rv-accent" cx="260" cy="178" r="54"/><text x="234" y="184">TIME</text><circle class="rv-soft" cx="112" cy="92" r="48"/><circle class="rv-soft" cx="408" cy="92" r="48"/><circle class="rv-soft" cx="112" cy="270" r="48"/><circle class="rv-soft" cx="408" cy="270" r="48"/><path class="rv-line" d="M151 119l66 37M369 119l-66 37M151 250l66-48M369 250l-66-48"/><text x="91" y="98">WAGE</text><text x="386" y="98">CARE</text><text x="85" y="276">LEISURE</text><text x="382" y="276">PAID</text>
+    {% endif %}
+  {% elif paper_id == "children-costs-one-adult-household" %}
+    {% if candidate == 1 %}
+      <path class="rv-soft" d="M70 132h254l-28 154H98z"/><path class="rv-line" d="M104 132l58-62M290 132l-58-62"/><circle class="rv-person" cx="392" cy="112" r="30"/><circle class="rv-accent" cx="356" cy="190" r="21"/><circle class="rv-accent" cx="430" cy="190" r="21"/><path class="rv-line" d="M392 144v112M356 212v56M430 212v56"/><text x="112" y="210">SHARED</text><text x="117" y="238">BUDGET</text><text x="337" y="306">WHO RECEIVES WHAT?</text>
+    {% elif candidate == 2 %}
+      <circle class="rv-person" cx="260" cy="106" r="34"/><circle class="rv-accent" cx="202" cy="184" r="24"/><circle class="rv-accent" cx="318" cy="184" r="24"/><path class="rv-line" d="M260 142v126M202 210v58M318 210v58"/><path class="rv-soft" d="M52 70h86v76H52zM382 70h86v76h-86zM52 232h86v60H52zM382 232h86v60h-86z"/><text x="67" y="113">HOME</text><text x="394" y="113">FOOD</text><text x="63" y="268">CARE</text><text x="394" y="268">CLOTHES</text>
+    {% else %}
+      <rect class="rv-soft" x="52" y="118" width="142" height="118" rx="18"/><text x="81" y="169">OBSERVED</text><text x="96" y="197">TOTAL</text><path class="rv-line" d="M194 177h84M278 177l66-82M278 177l66 0M278 177l66 82"/><circle class="rv-accent" cx="402" cy="95" r="45"/><circle class="rv-accent" cx="402" cy="177" r="45"/><circle class="rv-accent" cx="402" cy="259" r="45"/><text x="366" y="100">ADULT</text><text x="368" y="182">CHILD 1</text><text x="368" y="264">CHILD 2</text>
+    {% endif %}
+  {% else %}
+    {% if candidate == 1 %}
+      <circle class="rv-accent" cx="110" cy="178" r="54"/><text x="78" y="184">CHILD</text><path class="rv-line" d="M164 178h74M238 178l62-82M238 178l62 82"/><circle class="rv-soft" cx="350" cy="96" r="58"/><circle class="rv-soft" cx="350" cy="260" r="58"/><path class="rv-line" d="M408 96h58M408 260h58M466 96v164"/><text x="325" y="101">TIME</text><text x="320" y="265">MONEY</text><text x="422" y="178" transform="rotate(90 422 178)">LABOR SUPPLY</text>
+    {% elif candidate == 2 %}
+      <rect class="rv-soft" x="64" y="62" width="392" height="236" rx="18"/><path class="rv-line" d="M64 116h392M142 62v236M220 62v236M298 62v236M376 62v236"/><rect class="rv-accent" x="80" y="136" width="126" height="46" rx="10"/><rect class="rv-person" x="236" y="136" width="126" height="46" rx="10"/><rect class="rv-accent" x="314" y="206" width="126" height="46" rx="10"/><text x="104" y="165">PAID WORK</text><text x="256" y="165">PARENTAL CARE</text><text x="330" y="235">PAID CARE</text>
+    {% else %}
+      <circle class="rv-soft" cx="92" cy="92" r="48"/><circle class="rv-soft" cx="92" cy="178" r="48"/><circle class="rv-soft" cx="92" cy="264" r="48"/><path class="rv-line" d="M140 92h118M140 178h118M140 264h118M258 92l90 86M258 178h90M258 264l90-86"/><path class="rv-line" d="M350 266c24-96 62-146 116-172"/><text x="67" y="98">HOURS</text><text x="70" y="184">WAGE</text><text x="68" y="270">CARE €</text><text x="352" y="298">LABOR SUPPLY</text>
+    {% endif %}
+  {% endif %}
+</svg>
+{% endmacro visual %}

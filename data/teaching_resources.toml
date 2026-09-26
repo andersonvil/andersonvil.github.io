@@ -117,3 +117,30 @@ label = "Session 1 — Consumers, producers, and market efficiency"
 file = "/files/teaching/sciences-po-saint-germain/microeconomics-l1/session-01.pdf"
 pages = 61
 bytes = 349358
+
+[[groups]]
+id = "microeconomics-iii-niort"
+title = "Microeconomics III — Undergraduate (L3), Niort"
+institution = "CY Cergy Paris Université (as printed in the supplied slides)"
+location = "Niort"
+level = "Licence 3 — Economics"
+academic_year = "2026–2027"
+year_note = "Confirmed on both title slides. The Niort folder location conflicts with the printed CY Cergy Paris Université / THEMA affiliation and the existing Université Catholique de l’Ouest role; institutional wording must be confirmed before publication."
+institutionalWordingToConfirm = true
+language = "French"
+language_label = "French-language material"
+resource_type = "Course slides"
+summary = "An introduction to microeconomic reasoning followed by strategic decisions and Nash equilibrium in game theory."
+topics = ["Competitive model and strategic decisions", "Decision-making under risk", "Private information", "Consumer, producer, and market foundations", "Normal-form games", "Dominant and dominated strategies", "Pure and mixed Nash equilibrium", "Maximin and repeated games", "Game trees and backward induction"]
+url = "/teaching/microeconomics-iii-niort/"
+
+[[groups.resources]]
+label = "Séance 1 — Introduction générale"
+file = "/files/teaching/niort/microeconomics-iii/session-01.pdf"
+pages = 59
+bytes = 533669
+[[groups.resources]]
+label = "Séances II à IV — Théorie des jeux : décisions stratégiques et équilibre de Nash"
+file = "/files/teaching/niort/microeconomics-iii/sessions-02-04.pdf"
+pages = 109
+bytes = 637333

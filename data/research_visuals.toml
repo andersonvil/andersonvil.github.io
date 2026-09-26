@@ -1,0 +1,95 @@
+publicationStatus = "blocked"
+provenance = "Original inline SVG illustrations created for the private Phase 4B preview; no external image or identifiable person is used."
+
+[[papers]]
+id = "household-demand-leisure"
+selected = 1
+[[papers.candidates]]
+number = 1
+label = "Editorial time balance"
+intent = "A family week balances paid work, childcare, leisure, and the price attached to time."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A clock divided between paid work, parental care and leisure, beside a time-and-money balance."
+advantages = "Immediate and neutral; expresses the central trade-off without implying an estimate."
+limits = "Conceptual rather than contextual."
+[[papers.candidates]]
+number = 2
+label = "Shared family schedule"
+intent = "Two neutral adult figures and a child sit beside a shared weekly schedule."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "Two caregivers and a child beside a schedule linking work, care and leisure."
+advantages = "More human while avoiding a gendered division of care."
+limits = "Less explicit about the monetary price of time."
+[[papers.candidates]]
+number = 3
+label = "Time-price channels"
+intent = "An abstract network shows wage, parental time, purchased care and leisure as connected channels."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A diagram connecting wages, parental time, paid childcare and leisure."
+advantages = "Close to the model's mechanisms and compact at small sizes."
+limits = "More technical and less emotionally immediate."
+
+[[papers]]
+id = "children-costs-one-adult-household"
+selected = 1
+[[papers.candidates]]
+number = 1
+label = "Resources within the household"
+intent = "A household budget is divided into shared needs and resources reaching adult and children."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A household budget basket dividing resources among one adult, children and shared needs."
+advantages = "Makes the difference between household totals and individual resources intuitive."
+limits = "Does not depict survey measurement directly."
+[[papers.candidates]]
+number = 2
+label = "One-adult household context"
+intent = "One neutral adult and two children are surrounded by housing, food and clothing resources."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "One adult and two children with icons for housing, food and clothing resources."
+advantages = "Human and legible without using identifiable people."
+limits = "Could be read as descriptive rather than methodological."
+[[papers.candidates]]
+number = 3
+label = "Observed total, hidden shares"
+intent = "A single observed household total opens into several unobserved individual shares."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "One observed household total branching into hidden individual resource shares."
+advantages = "Precisely conveys the measurement problem."
+limits = "Abstract and closer to a diagram than an editorial illustration."
+
+[[papers]]
+id = "children-labor-supply-equations"
+selected = 1
+[[papers.candidates]]
+number = 1
+label = "Two channels of child costs"
+intent = "A child changes labor supply through a time channel and a monetary channel."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A child-cost node splitting into time and money channels that meet labor supply."
+advantages = "Explains the paper's distinctive contribution at a glance."
+limits = "Diagrammatic rather than narrative."
+[[papers.candidates]]
+number = 2
+label = "Care and paid work calendar"
+intent = "A neutral caregiver's day alternates paid work, childcare and purchased care."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A daily calendar combining paid work, parental care and purchased childcare."
+advantages = "Human-scale and easy to read."
+limits = "The monetary channel is secondary."
+[[papers.candidates]]
+number = 3
+label = "Equation inputs"
+intent = "Calendar hours, wages and childcare spending feed a stylized labor-supply curve."
+method = "Original semantic inline SVG."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "Calendar, wage and childcare spending symbols feeding a labor-supply relationship."
+advantages = "Connects inputs directly to the modeling objective."
+limits = "May feel more technical than motivational."

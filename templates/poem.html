@@ -13,7 +13,7 @@
     <p class="byline">By Anderson Vil · {{ poem.language }} · {{ poem.date }} · {{ poem.reading_minutes }} min read</p>
     {% if poem.access == "full" %}<button class="button primary immersive-open" type="button" data-immersive-target="immersive-poem">Enter immersive reading</button>{% endif %}
   </header>
-  <div class="poem-text" lang="fr">{{ page.content | safe }}</div>
+  <div class="poem-canvas poem-{{ poem.id }} poem-font-{{ poem.selected_font }}" style="--poem-background: url('{{ poem.background }}')" data-background-source="{{ poem.background_source }}"><div class="poem-text" lang="fr">{{ page.content | safe }}</div></div>
   {% if poem.access == "first-stanza" %}
   <aside class="access-request" aria-label="Access information"><p>The complete poem is available on request.</p><a class="button primary" href="mailto:{{ academic.identity.email }}?subject=Request%20access%20to%20the%20full%20poem%20%E2%80%94%20{{ poem.title | urlencode }}">Request access to the full poem</a></aside>
   {% endif %}

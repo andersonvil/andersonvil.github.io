@@ -225,3 +225,59 @@ The remaining synthetic Insights, Code & Data project, teaching-function fixture
 11. Final replacement or removal of all remaining synthetic fixtures and preview-only routes/assets before production.
 
 These open items are deliberately represented as `publicationStatus = "blocked"`; they do not prevent private local review but do prevent production release.
+# Complement v4 — research data, slides, Niort, and poetry design (2026-09-26)
+
+## 1. JMP slides: inventory and compilation
+
+- Source PDF: `03-research/EEA_17-08-26.pdf`; source entry point: `03-research/EEA_17-08-26.tex`.
+- No included TeX files and no bibliography dependency were found. The deck is a 42-page, 16:9 PDF (634,638 bytes), dated August 17, 2026 for the 41st Annual Congress of the European Economic Association.
+- A clean temporary `pdflatex -interaction=nonstopmode -halt-on-error` run reached the figure section and stopped because `MoneyCostNkde.pdf` is absent. `TimeCostNkde.pdf` and `website.png` are also referenced but absent. The supplied PDF therefore could not be reproduced byte-for-byte from the available source bundle.
+- Only the supplied, real PDF was copied to `/files/slides/household-demand-leisure-eea-2026.pdf`. Metadata are centralized in `data/academic.toml`; `real = true`, `provisional = true`, and `publicationStatus = "blocked"` are preserved.
+
+Displayed slide 10 is physical PDF page 10 and the frame `Identification of the time cost of children` in `EEA_17-08-26.tex` lines 493–576. Displayed slide 11 is physical PDF page 11 and the frame `Identification of the monetary cost of children` at lines 580–643. Neither frame has an active overlay. Both are native TikZ/text/equation compositions and require no missing external figure.
+
+The web version uses selectable HTML, inline SVG, and MathML. It preserves observed inputs, wage-substitution logic, shadow prices, childcare technology, time-cost equation, full-leisure Engel curves, the monetary-cost equation, assumptions A.2/A.3, and the Rothbarth principle. Spacing and responsive hierarchy were adapted; scientific notation and sequence were not changed.
+
+## 2. Research visuals
+
+Private lab: `/preview/design-lab/research-visuals/`.
+
+Each paper has three original inline-SVG candidates: (1) sober editorial concept, (2) human/contextual option with neutral figures, and (3) abstract diagram. Source, rights status, alt text, advantages, and limits are shown beside every candidate. Candidate 1 is provisionally selected for all three papers because it is clearest at card and page scale without suggesting an empirical result. The choice is centralized in `data/research_visuals.toml`; candidate numbers do not appear on normal paper pages.
+
+## 3. Data sources and access matrix
+
+| Paper | Main dataset | Provider | Exact wave/studies/files | Official access URL | Conditions | Supplementary source |
+|---|---|---|---|---|---|---|
+| Children Costs in a One-Adult Household | Harmonized FES/EFS/LCF, 1978–2022 | ONS / UK Data Service | Manuscript confirms series and period; annual study numbers and construction cannot be recovered because no programs were supplied | `https://datacatalogue.ukdataservice.ac.uk/series/series/200016` and LCF series `2000028` | Registration/licence; annual studies, not one raw file | None established |
+| How to Incorporate Children into Labor Supply Equations? | 2019 PSID | University of Michigan ISR / PSID | 1,270 single women/single mothers; variables described in manuscript, exact IDs and file join not recoverable without programs | `https://simba.isr.umich.edu/data/data.aspx` | Registration and customized variable basket | 2019 IPUMS ATUS as external benchmark, not estimation data |
+| Household Demand for Leisure (JMP) | 2019 PSID | University of Michigan ISR / PSID | 825 dual-earner couples from the 9,569-household Family File universe; exact IDs/join not recoverable without programs | `https://simba.isr.umich.edu/data/data.aspx` | Registration and customized variable basket | 2017 PSID robustness; ATUS published/microdata benchmark. Manuscript period/table citation conflict is disclosed |
+
+The site links only to official provider, catalogue, Data Center, and documentation pages. It redistributes no raw data and never labels a registration-dependent extract as a direct download.
+
+CTA sets are now exact: JMP — `Download paper`, `Download slides`, `Data sources`, `Copy citation`; papers 1–2 — `Download paper`, `Data sources`, `Copy citation`. No non-JMP slides placeholder exists.
+
+## 4. Niort teaching source
+
+The new group is `Microeconomics III — Undergraduate (L3), Niort`, French-language material, academic year 2026–2027. It contains `Séance 1 — Introduction générale` (59 PDF pages) and `Séances II à IV — Théorie des jeux : décisions stratégiques et équilibre de Nash` (109 pages). Topics cover competitive and strategic decisions, risk, private information, market foundations, normal-form and repeated games, pure/mixed Nash equilibrium, and backward induction.
+
+Both title slides print Anderson Vil, THEMA, and CY Cergy Paris Université, while the folder says Niort and current role metadata mentions Université Catholique de l’Ouest. The preview therefore stores `institutionalWordingToConfirm = true`, states the conflict, and makes no silent attribution decision. Only the two supplied course PDFs are exposed; no correction, student data, or internal material is included.
+
+## 5. Source organization audit
+
+The full diagnosis, target tree, path mapping, naming/version rules, ambiguities, and staged migration plan are in `docs/source-organization-v4.md`. The principal risks are flat research storage, teaching roots split by inconsistent institution/location labels, absent declared TeX assets, opaque revision suffixes, and ambiguous short dates. This was a read-only audit; no source move or rename occurred.
+
+## 6. Poetry backgrounds and typography
+
+All four TeX sources compile with XeLaTeX until the missing `../assets/...` background reference. Missing assets are exactly `calligraphie_03_encre.png`, `cherie_J.png`, `cherie_B.png`, and `sarah_E.png`. The PDFs embed one 1055×1491 RGB background each and separately embed text using Segoe Script, Gabriola, Garamond, and Perpetua respectively.
+
+The web backgrounds were extracted from the embedded PDF image objects—without poem text—then optimized to WebP. Real HTML text is overlaid in source-informed positions. No proprietary font file is bundled. Normal pages provisionally use the centralized `literary-serif` choice (Georgia/system-serif fallback) for readability and consistency.
+
+Private lab: `/preview/design-lab/poetry-typography/`. For each poem it shows one selectable variant at a time: original local system face, literary serif (recommended), and contemporary system sans. Family, weight, line-height, rights/licence implications, and cost are documented. Calligraphie uses one representative stanza in the lab; the three restricted poems use only a subset of their already authorized first stanza. Normal restricted pages still expose exactly one stanza and no full PDF.
+
+## 7. Verification and safety
+
+- Preview build, internal-link validation, exact CTA assertions, nine research candidates, four × three typography samples, slide and Niort downloads, MathML/SVG identification, data sections, poem backgrounds, restricted-content rules, audio behavior, theme behavior, reading-time tests, synthetic Python script, and notebook execution pass.
+- Eighteen real PDFs are byte-identical to their read-only sources. The four poetry WebPs are derived background-only assets, not full-page poem captures.
+- The preview remains `noindex`; design labs are absent from public navigation and live under `content/preview-synthetic`, so the production gate blocks them.
+- Light/dark and desktop/mobile review is recorded in the v4 screenshot set after the final visual pass.
+- No source in `C:\dev\andersonvil-academic-os-sources` was modified or moved. No push, pull request, merge, deployment, or `main` change occurred.
