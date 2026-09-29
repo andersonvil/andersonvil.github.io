@@ -2,7 +2,7 @@
 name = "Anderson Vil"
 email = "vladerinson@gmail.com"
 short_positioning = "Household and labor economist studying how families allocate money and time."
-long_positioning = "Anderson Vil studies how children and caregiving reshape consumption, labor supply, leisure, and the allocation of resources within families. His work uses structural models and applied microeconometric methods to recover economic quantities that household surveys do not directly reveal."
+long_positioning = "I study how observed choices can identify latent economic quantities: individual resource shares, the value of parental time, and the monetary and time costs of children. My work combines applied microeconometrics with structural models of household behavior. Current projects extend this program to remote work, care for elderly parents, and post-divorce resource allocation."
 bio = [
   "I am a household and labor economist studying how families allocate money and time, and how children and caregiving reshape consumption, labor supply, leisure, and the distribution of resources within households.",
   "I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
@@ -81,9 +81,23 @@ description = "A structural model that estimates the productive value of parenta
 abstract = "We propose a novel approach to estimating the full cost of children — the sum of monetary and time costs — by endogenizing the price of parental time rather than assuming it is equal to the parents’ wage rate. In this approach, the price of time depends on how parents perceive their time with children, whether as a leisure-like activity or more as a labor-like activity. We then develop a simplified collective model of leisure demand for working couples, incorporating individual preferences and childcare technology, and estimate it using 2019 PSID data. This allows us to recover the price of parental time and the full cost of children. We find that mothers perceive 44% of their childcare time as labor, compared to 35% for fathers. Our results also highlight that a substantial portion of the full cost of children is non-monetary."
 question = "How should parental childcare time be valued when it is partly productive and partly experienced as leisure?"
 contribution = "The paper endogenizes the price of parental childcare time using substitution between parental care and purchased childcare, then connects that price to the monetary and time components of child costs."
-methods = "Collective household model; childcare technology; full-leisure demand; recursive maximum likelihood and 3SLS; 2019 PSID dual-earner couples."
-findings = "The most robust contribution is methodological: the productive price of childcare time can differ materially from the wage. Monetary and full-cost estimates are more fragile and remain in the detailed manuscript rather than the preview headline."
-limitations = "The supplied version focuses on dual-earner couples with young children. Full-leisure demand curves are comparatively flat, and the monetary component is less precisely identified."
+nontechnical = "Parents’ childcare time has two faces. It helps produce care, but part of it may also be experienced as meaningful time with a child. Valuing every hour at the parent’s wage therefore risks overstating the economic cost. This paper uses the way couples substitute between parental care and purchased childcare to estimate a productive price of parental time instead. It then combines that time price with spending on children to measure monetary, time, and full costs. The application follows 825 dual-earner couples in the 2019 PSID, including 463 couples with young children. Reported childcare hours are adjusted toward external time-use benchmarks because the survey measure is unusually broad. The benchmark estimates place the productive share below one half for both parents, but they are imprecise. Monetary costs are still more fragile. The central result is consequently methodological: parental time should be priced from observed behavior, with uncertainty shown, rather than automatically valued at the market wage."
+economic_model = "A collective model of dual-earner couples combines individual preferences with a childcare production technology. Full leisure adds leisure to the experienced component of parental care. The productive component is priced at a fraction of the wage, while purchased childcare and parental time can substitute in producing care. Full child cost is the sum of monetary expenditure and the productive value of both parents’ time."
+identification_text = "Variation in wages and purchased childcare, together with parental time, identifies substitution in childcare production and the productive time-price parameters. A Rothbarth-style comparison of adult full leisure between couples with and without children identifies monetary cost under preference stability and sharing-rule invariance. The paper also studies an alternative demographic-shift restriction and nonlinear marginal responses."
+econometric_model = "The empirical strategy is recursive: mixed linear/Tobit childcare equations are estimated for couples with children, then full-leisure demand is estimated by 3SLS for the full sample. Predicted time costs and nonlabor income provide the relevant variation. A softplus transformation keeps monetary costs positive, while ridge regularization stabilizes the weakly identified monetary component."
+data_summary = "The analysis uses the 2019 PSID. From 9,569 households, the estimation sample keeps 825 dual-earner, heterosexual, nonstudent couples aged 22–50: 362 without children and 463 with at most two children, the youngest aged six or under. Childcare spending refers to the prior calendar year, while time refers to a typical interview-week measure."
+data_table_caption = "Selected descriptive statistics, 2019 PSID (manuscript Table 2)."
+data_table_headers = ["Measure", "No children", "With children"]
+data_table_rows = [
+  ["Father full leisure, hours/week", "77.03", "66.46"],
+  ["Mother full leisure, hours/week", "82.49", "67.19"],
+  ["Father wage, $/hour", "30.71", "31.97"],
+  ["Mother wage, $/hour", "24.36", "29.48"],
+  ["Full expenditure, $000", "5.52", "6.31"],
+  ["Couples", "362", "463"]
+]
+findings = "In the benchmark specification, the productive share of childcare time is 0.44 for mothers (standard error 0.26) and 0.35 for fathers (0.21). The median time cost for one child is about $230 per week, compared with roughly $350 under wage valuation. Monetary and total-cost estimates are substantially less stable, so the manuscript’s specification-specific total above $800 is not treated as a headline estimate."
+limitations = "The sample is selected on dual employment and young children, excludes long-run career effects, and relies on broad retrospective childcare reports. The smooth time adjustment changes the distribution, childcare spending and time refer to different periods, and formal-care rationing or fixed costs may bias the productive share downward. Monetary identification is weak and regularized; 2017 robustness estimates are sensitive."
 
 [[papers]]
 id = "children-costs-one-adult-household"
@@ -107,9 +121,22 @@ description = "A collective consumption model for studying resource sharing and 
 abstract = "This paper addresses two central questions in family and economic policy. First, to what extent are estimates of the cost of children derived from two-parent households applicable to single-parent families? Second, are estimated patterns of intra-household resource allocation consistent with benefit rules that condition support uniformly on family size? To address these questions, I propose a collective consumption model for one-adult households, apply it to three datasets—the Family Expenditure Survey, the Expenditures and Food Survey, and the Living Costs and Food Survey in the UK—and present two key findings. First, child cost estimates derived from two-parent households remain externally valid for single-parent families, at least for single mothers. Second, the results find no evidence of per-child resource dilution by family size once estimation uncertainty is accounted for, with differences for fathers appearing only among households at the bottom of the expenditure distribution."
 question = "Can estimates derived from couple households provide useful benchmarks for single-parent families?"
 contribution = "The paper extends collective-consumption methods to one-adult households and estimates resource shares using UK expenditure surveys spanning 1978–2022."
-methods = "Assignable goods; nonlinear Engel curves; sharing rules and Barten scales; harmonized FES, EFS, and LCF expenditure data."
-findings = "The supplied manuscript finds that estimates for single mothers are close to a couple-based reference and does not find systematic per-child dilution once uncertainty is taken into account."
-limitations = "The preview omits internally conflicting test statistics and makes no causal claim about the UK two-child limit. Differences between mothers and fathers are not presented as statistically established."
+nontechnical = "Household expenditure surveys record what a family spends, not how much of its resources are available to each person. That distinction matters when child-cost estimates from couples are used to assess single-parent families. This paper develops a model for one-adult households in which adult, child, and shared consumption remain distinct. Adult clothing acts as an assignable good: changes in that spending, together with prices, time, region, and total expenditure, help trace the adult’s resource share. The evidence combines UK expenditure surveys from 1978 to 2022 and compares single mothers and fathers with childless adults and a couple-based benchmark. For a representative household with one child, the estimated child share is close for single mothers and the couple benchmark; the estimate for fathers is higher but less precise. Once uncertainty is respected, the paper does not find systematic evidence that resources per child fall with family size. Small father samples and model assumptions make caution essential."
+economic_model = "A static one-adult collective-consumption model combines Beckerian altruism, a Barten-style consumption technology, and a sharing rule. The observed household budget is separated into adult, child, and shared components; adult clothing is treated as an assignable good whose Engel curve helps recover latent resource shares."
+identification_text = "Identification requires stable adult preferences across parental status and exclusion restrictions that shift household resources without directly shifting adult clothing demand. Price, time, and regional variation trace the sharing rule and consumption scales. Matching and alternative specifications test sensitivity, but fertility selection remains a maintained concern."
+econometric_model = "The paper estimates a simultaneous system of nonlinear demand equations for childless adults and single parents. Two-stage least squares uses the documented exclusion restrictions as instruments. The analysis also checks alternative matching and functional-form choices rather than treating one specification as decisive."
+data_summary = "The harmonized Family Expenditure Survey, Expenditure and Food Survey, and Living Costs and Food Survey cover 1978–2022. The final analytical sample contains 40,403 one-adult households: 14,070 single men, 10,911 single women, 1,579 single fathers, and 13,843 single mothers. Monetary values in the descriptive table are expressed in 1987 pounds."
+data_table_caption = "Selected means from the harmonized UK sample (manuscript Table 2; 1987 pounds)."
+data_table_headers = ["Measure", "Childless women", "Mothers, 1 child", "Fathers, 1 child"]
+data_table_rows = [
+  ["Adult clothing, £/week", "9.46", "7.53", "4.34"],
+  ["Total expenditure, £/week", "117.31", "136.44", "158.68"],
+  ["Labor-market participation", "0.71", "0.50", "0.55"],
+  ["Age", "39.25", "34.96", "38.63"],
+  ["Observations", "10,924", "7,084", "910"]
+]
+findings = "For a representative one-child household, the estimated child resource share is 14.7% for single mothers (standard error 6.1 percentage points), 22.2% for single fathers (8.5 points), and 14.2% in the couple reference. The mother–father difference is not statistically established. The analysis finds no systematic per-child dilution once estimation uncertainty is included, although low-expenditure father households warrant separate attention."
+limitations = "Results depend on preference stability, the assignable-good structure, and exclusion restrictions; fertility selection is not eliminated. Clothing expenditure contains many zeros, father samples are small, and policy interpretations are not causal. The OECD one-child scale implies a 23% share, but that comparison is a benchmark, not a welfare prescription."
 
 [[papers]]
 id = "children-labor-supply-equations"
@@ -133,11 +160,26 @@ source_title = "How to Incorporate Childen into Labor Supply Equations? An Equiv
 title_note = "The current PDF spells “Children” as “Childen”; the preview follows the corrected canonical title and records the source divergence."
 description = "A framework that represents children's monetary and time channels directly in labor-supply equations."
 abstract = "We propose a method for modeling the impact of children on labor supply. Building on equivalence scales and collective models, our approach jointly considers the time and monetary costs of children. By imposing restrictions on childcare technology, we identify the total cost of children from labor supply equations with modest data inputs. We apply the model to single mothers from the 2019 PSID. Results suggest labor supply responsiveness to wages is higher for women with children, while the opposite holds for exogenous incomes. We also estimate the total cost of children and the time spent on childcare."
-question = "How can children enter labor-supply models as economic mechanisms rather than as a demographic control?"
+question = "How can children enter labor-supply models as economic mechanisms rather than as demographic controls?"
 contribution = "The paper connects equivalence scales, childcare technology, and labor supply so that monetary and time costs can be identified with modest data requirements."
-methods = "Static labor-supply model; simplified childcare technology; participation correction; 2019 PSID sample of single women."
-findings = "The model predicts that children can change labor-supply responses to wages and exogenous income through distinct time and monetary channels."
-limitations = "The supplied PDF contains title and metadata typographical errors. Valuing nonparticipants' time requires a reservation-wage estimate and does not imply a normative compensation level."
+nontechnical = "Children are often inserted into labor-supply equations as demographic indicators. This paper instead represents the economic mechanisms behind them: money spent on children and time required for care. In the model, care time reduces the hours a parent can allocate between work and leisure, while monetary cost reduces effective household resources. Those channels need not move work in the same direction. Less available time tends to reduce work, whereas lower effective resources can increase work through an income effect when leisure is normal. The framework shows when total child cost can be recovered from observed hours, wages, income, and family composition without direct time-use or detailed consumption data. An application to 1,270 single women in the 2019 PSID finds higher wage responsiveness and lower exogenous-income responsiveness among mothers. Estimated cost and childcare hours are informative model-based quantities, not compensation recommendations, and the small mother sample and reservation-wage assumptions call for restraint."
+economic_model = "A static model gives a single woman adult consumption, child consumption, leisure, paid work, and childcare time. Under the tractable specification, children shift labor supply through a time term and an effective-resource term: h(y,w,n) = F(w, y − a(n) − b_t(n)w − b_m(n)y) − b_t(n). The time shift reduces available hours; the resource shift creates an income effect when leisure is normal."
+identification_text = "With a nonlinear baseline labor-supply function and linearity of monetary child cost, derivatives of observed hours identify total cost for participants. A linear baseline gives partial rather than point identification. A parametric extension incorporates nonparticipants through reservation wages, making the extra assumptions visible instead of treating zero hours as ordinary observations."
+econometric_model = "The 2019 PSID application uses a quadratic Brown–Levin–Ulph baseline, a control-function maximum-likelihood estimator, and participation censoring. A wage equation uses education as an instrument; net total expenditure is instrumented with income sources. Simulation integrates the error terms and recovers cost distributions."
+data_summary = "The sample includes 1,270 single women aged 20–60: 987 without children and 283 mothers with at most two children, the youngest aged six or under. The application uses annual hours, hourly wages, net total expenditure, education, age, and participation from the 2019 PSID."
+data_table_caption = "Selected means, 2019 PSID (manuscript Table 1)."
+data_table_headers = ["Measure", "All", "Childless", "Mothers"]
+data_table_rows = [
+  ["Labor-market participation", "0.85", "0.83", "0.90"],
+  ["Annual hours", "1,634.41", "1,638.58", "1,619.86"],
+  ["Hourly wage, $", "17.54", "18.78", "13.22"],
+  ["Net total expenditure, $000", "−0.23", "−3.01", "9.47"],
+  ["Age", "40.24", "42.19", "33.44"],
+  ["Education, years", "13.64", "13.85", "12.90"],
+  ["Observations", "1,270", "987", "283"]
+]
+findings = "Mothers are estimated to respond more to wages and less to exogenous income than childless women, as the model predicts. A one-child benchmark implies about 497 childcare hours per year, compared with 389 in the ATUS benchmark. Median total cost is about $21,000 for working mothers and $31,000 for nonworking mothers; across mothers, the median is $25,700, with model-based time and goods/services components around $12,200 and $14,200."
+limitations = "The application concerns single women with young children and only 283 mothers. The two-child case is mechanically scaled by the square root of two. Valuing nonparticipants uses an estimated reservation wage, the decomposition is more assumption-dependent than total cost, and none of the estimates is a normative compensation amount."
 
 [documents.cv]
 label = "CV — provisional PDF"
@@ -152,10 +194,10 @@ replacement = "The same file, or a replacement CV, after final approval and priv
 [teaching]
 publicationStatus = "blocked"
 positioning = "I teach economics by linking conceptual clarity, quantitative practice, and careful interpretation of evidence."
-statement = "Course dates, hours, and distribution rights remain under review; the broad teaching areas below are supported across the supplied CV, statement, and legacy course records."
+statement = "Current course labels are grounded in the supplied CV and course folders; public distribution rights and some institutional wording remain under review."
 levels = ["Undergraduate tutorials"]
 subject_areas = ["Statistics", "Applied Econometrics", "Microeconomics", "Macroeconomics", "Public Economics"]
-tools = ["R", "SAS"]
+tools = ["Python", "R", "Stata", "SAS"]
 
 [[teaching.experience]]
 group = "Quantitative methods"
@@ -174,4 +216,4 @@ note = "Tutorial teaching at CY Cergy Paris Université; dates and hours withhel
 
 [code_data]
 publicationStatus = "blocked"
-statement = "No real replication package is claimed. The preview uses a separate, executable synthetic project to test documentation and downloads."
+statement = "Real teaching code, data, notebooks, and simulators are documented separately from the executable synthetic demonstration. No research replication package is claimed."

@@ -14,6 +14,7 @@ $pairs = @(
     @('03-research\paper-2.pdf', 'static\files\papers\children-labor-supply-equations.pdf'),
     @('03-research\paper-3.pdf', 'static\files\papers\household-demand-leisure.pdf'),
     @('03-research\EEA_17-08-26.pdf', 'static\files\slides\household-demand-leisure-eea-2026.pdf'),
+    @('04-cv-teaching\cv-academic.pdf', 'static\files\cv\anderson-vil-cv-provisional.pdf'),
     @('CY-Cergy-Paris-Université\2026-27\L3-Econometrics\Exercices_1.pdf', 'static\files\teaching\cy-cergy\l3-econometrics\exercises-01.pdf'),
     @('CY-Cergy-Paris-Université\2026-27\L3-Econometrics\Exercices_2.pdf', 'static\files\teaching\cy-cergy\l3-econometrics\exercises-02.pdf'),
     @('CY-Cergy-Paris-Université\2026-27\L3-Econometrics\Exercices_3.pdf', 'static\files\teaching\cy-cergy\l3-econometrics\exercises-03.pdf'),
@@ -26,12 +27,21 @@ $pairs = @(
     @('CY-Cergy-Paris-Université\2026-27\M2-Econometrics\Exercises_M2_2025-26.pdf', 'static\files\teaching\cy-cergy\m2-econometrics\econometrics-exercises.pdf'),
     @('Saint-Germain-en-Laye\2026-27\Conférence-de-Méthode-Micro\seance1_microeconomie_st-Germain.pdf', 'static\files\teaching\sciences-po-saint-germain\microeconomics-l1\session-01.pdf'),
     @('Niort\2026-27\Microéconomie III\Séance I.pdf', 'static\files\teaching\niort\microeconomics-iii\session-01.pdf'),
-    @('Niort\2026-27\Microéconomie III\Séances II-IV.pdf', 'static\files\teaching\niort\microeconomics-iii\sessions-02-04.pdf')
+    @('Niort\2026-27\Microéconomie III\Séances II-IV.pdf', 'static\files\teaching\niort\microeconomics-iii\sessions-02-04.pdf'),
+    @('Niort\2026-27\Econométrie\seance01.pdf', 'static\files\teaching\niort\econometrics\session-01\seance01.pdf'),
+    @('Niort\2026-27\Econométrie\serie01.pdf', 'static\files\teaching\niort\econometrics\session-01\serie01.pdf'),
+    @('Niort\2026-27\Econométrie\code\seance01.py', 'static\files\teaching\niort\econometrics\session-01\code\seance01.py'),
+    @('Niort\2026-27\Econométrie\code\seance01.R', 'static\files\teaching\niort\econometrics\session-01\code\seance01.R'),
+    @('Niort\2026-27\Econométrie\code\seance01.do', 'static\files\teaching\niort\econometrics\session-01\code\seance01.do'),
+    @('Niort\2026-27\Econométrie\code\seance01_python.ipynb', 'static\files\teaching\niort\econometrics\session-01\notebooks\seance01_python.ipynb'),
+    @('CY-Cergy-Paris-Université\2026-27\L3-Data Analysis\TD #1\td01-indice-prix.ipynb', 'static\files\teaching\cy-cergy\l3-data-analysis\td-01\td01-indice-prix.ipynb'),
+    @('CY-Cergy-Paris-Université\2026-27\L3-Data Analysis\TD #2\td02-chomage.ipynb', 'static\files\teaching\cy-cergy\l3-data-analysis\td-02\td02-chomage.ipynb'),
+    @('CY-Cergy-Paris-Université\2026-27\L3-Data Analysis\TD #3\td03-nettoyage.ipynb', 'static\files\teaching\cy-cergy\l3-data-analysis\td-03\td03-nettoyage.ipynb'),
+    @('CY-Cergy-Paris-Université\2026-27\L3-Data Analysis\TD #3\cm03-dictionnaire.pdf', 'static\files\teaching\cy-cergy\l3-data-analysis\td-03\cm03-dictionnaire.pdf'),
+    @('CY-Cergy-Paris-Université\2026-27\L3-Data Analysis\TD #3\cm03-salaires.csv', 'static\files\teaching\cy-cergy\l3-data-analysis\td-03\cm03-salaires.csv')
 )
 
-$preservedCopies = @{
-    'static\files\cv\anderson-vil-cv-provisional.pdf' = 'A1BE3EFAA08F7DB45669B0DA5073CB91D68A3902A32578F8625492986744A785'
-}
+$preservedCopies = @{}
 
 $failures = [System.Collections.Generic.List[string]]::new()
 foreach ($pair in $pairs) {

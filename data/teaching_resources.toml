@@ -129,8 +129,8 @@ bytes = 349358
 [[groups]]
 id = "microeconomics-iii-niort"
 title = "Microeconomics III — Undergraduate (L3), Niort"
-institution = "Université Catholique de l’Ouest — UCO Niort"
-institution_id = "uco-niort"
+institution = "Université Catholique de l’Ouest"
+institution_id = "uco"
 role = "Lecture"
 source_institution = "CY Cergy Paris Université / THEMA (as printed in the supplied slides)"
 location = "Niort"
@@ -155,3 +155,121 @@ label = "Séances II à IV — Théorie des jeux : décisions stratégiques et �
 file = "/files/teaching/niort/microeconomics-iii/sessions-02-04.pdf"
 pages = 109
 bytes = 637333
+[[groups.resources]]
+label = "Simulateur — Jeux répétés"
+file = "/files/teaching/niort/microeconomics-iii/jeux-repetes-simulateur.html"
+format = "Interactive HTML"
+bytes = 27722
+[[groups.resources]]
+label = "Simulateur — Pile ou face"
+file = "/files/teaching/niort/microeconomics-iii/pile-ou-face-simulateur.html"
+format = "Interactive HTML"
+bytes = 19382
+
+[[groups]]
+id = "econometrics-niort"
+title = "Econometrics — Session 1"
+institution = "Université Catholique de l’Ouest"
+institution_id = "uco"
+role = "Lecture"
+location = "Niort"
+level = "Undergraduate"
+academic_year = "2026–2027"
+year_note = "Confirmed by the source-folder year and the current CV; publication wording remains provisional."
+language = "French"
+language_label = "French-language material"
+resource_type = "Course, exercises, code, data, and notebooks"
+summary = "A multilingual introduction to covariance, correlation, simple regression, and empirical workflows in Python, R, and Stata, with seven Wooldridge datasets."
+topics = ["Covariance and correlation", "Simple regression", "Data loading", "Descriptive statistics", "Python", "R", "Stata"]
+url = "/teaching/econometrics-niort/"
+[[groups.resources]]
+label = "Séance 1 — Course"
+file = "/files/teaching/niort/econometrics/session-01/seance01.pdf"
+format = "PDF"
+pages = 142
+bytes = 1083444
+[[groups.resources]]
+label = "Série 1 — Exercises"
+file = "/files/teaching/niort/econometrics/session-01/serie01.pdf"
+format = "PDF"
+pages = 6
+bytes = 250608
+[[groups.resources]]
+label = "Practical README"
+file = "/files/teaching/niort/econometrics/session-01/README.md"
+format = "Markdown"
+[[groups.resources]]
+label = "Python notebook — Session 1"
+file = "/files/teaching/niort/econometrics/session-01/notebooks/seance01_python.ipynb"
+format = "Jupyter notebook"
+bytes = 27952
+[[groups.resources]]
+label = "R notebook — Session 1"
+file = "/files/teaching/niort/econometrics/session-01/notebooks/seance01_R.ipynb"
+format = "Jupyter notebook"
+bytes = 21268
+[[groups.resources]]
+label = "Interactive covariance simulator"
+file = "/files/teaching/niort/econometrics/session-01/code/covariance_interactive.html"
+format = "Interactive HTML"
+bytes = 7133
+
+[[groups]]
+id = "data-analysis-l3"
+title = "Data Analysis with Python — L3"
+institution = "CY Cergy Paris Université"
+institution_id = "cy"
+role = "Tutorial"
+level = "Undergraduate (L3)"
+academic_year = "2026–2027"
+year_note = "Confirmed by the source-folder year and the current CV; distribution rights remain provisional."
+language = "French"
+language_label = "French-language material"
+resource_type = "Exercises, notebooks, and data"
+summary = "Three applied sessions on consumer-price indices, unemployment microdata, and wage-data cleaning, with documented external data sources."
+topics = ["Eurostat HICP", "INSEE Labour Force Survey", "Data cleaning", "Missing values", "Pandas", "Parquet", "Reproducible notebooks"]
+url = "/teaching/data-analysis-l3/"
+[[groups.resources]]
+label = "TD 1 — Price indices: instructions"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf"
+format = "PDF"
+pages = 2
+bytes = 100840
+[[groups.resources]]
+label = "TD 1 — Price indices: notebook"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-indice-prix.ipynb"
+format = "Jupyter notebook"
+bytes = 7918
+[[groups.resources]]
+label = "TD 2 — Unemployment: instructions"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-enonce.pdf"
+format = "PDF"
+pages = 1
+bytes = 58736
+[[groups.resources]]
+label = "TD 2 — Unemployment: notebook"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-chomage.ipynb"
+format = "Jupyter notebook"
+bytes = 9262
+[[groups.resources]]
+label = "TD 3 — Wage data: instructions"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-enonce.pdf"
+format = "PDF"
+pages = 1
+bytes = 49359
+[[groups.resources]]
+label = "TD 3 — Wage data: notebook"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-nettoyage.ipynb"
+format = "Jupyter notebook"
+bytes = 8873
+[[groups.resources]]
+label = "TD 3 — Wage data: CSV"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-salaires.csv"
+format = "CSV"
+bytes = 395328
+[[groups.resources]]
+label = "TD 3 — Wage data: dictionary"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-dictionnaire.pdf"
+format = "PDF"
+pages = 4
+bytes = 97899

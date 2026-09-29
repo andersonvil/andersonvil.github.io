@@ -1,5 +1,5 @@
 publicationStatus = "blocked"
-selectionStatus = "Four distinct, independently reversible provisional selections are enabled in the private preview."
+selectionStatus = "Only the author-approved Calligraphie de bonheur pairing is enabled; the other provisional pairings are retained as disabled candidates."
 verifiedOn = "2026-09-26"
 licenseNotice = "/files/licenses/poetry-audio-candidates.txt"
 recommendation = "Listen to each complete pairing before publication. Each selection can be replaced or disabled in this data file without changing another poem or the player component."
@@ -13,19 +13,19 @@ rightsStatus = "verified"
 [[selections]]
 poemSlug = "ma-cherie"
 selectedTrack = "castle-in-the-cloud"
-enabled = true
+enabled = false
 rightsStatus = "verified"
 
 [[selections]]
 poemSlug = "mes-nuits"
 selectedTrack = "night-sun"
-enabled = true
+enabled = false
 rightsStatus = "verified"
 
 [[selections]]
 poemSlug = "on-me-l-a-interdit"
 selectedTrack = "lost-in-the-city"
-enabled = true
+enabled = false
 rightsStatus = "verified"
 
 [[tracks]]

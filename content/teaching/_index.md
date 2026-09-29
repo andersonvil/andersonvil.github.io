@@ -1,5 +1,5 @@
 +++
 title = "Teaching"
-template = "teaching.html"
+template = "teaching-v7.html"
 sort_by = "none"
 +++

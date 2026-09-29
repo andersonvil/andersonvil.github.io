@@ -26,7 +26,7 @@
   <section>
     <h2>Resources</h2>
     <div class="resource-file-list">
-      {% for resource in group.resources %}<article><div><h3>{{ resource.label }}</h3><p>{{ resource.pages }} pages · PDF · {{ resource.bytes | filesizeformat }}{% if group.language == "French" %} · French-language material{% endif %}</p></div><a class="button secondary" href="{{ resource.file }}">Open PDF</a></article>{% endfor %}
+      {% for resource in group.resources %}<article><div><h3>{{ resource.label }}</h3><p>{% if resource.pages %}{{ resource.pages }} pages · {% endif %}{{ resource.format | default(value="PDF") }}{% if resource.bytes %} · {{ resource.bytes | filesizeformat }}{% endif %}{% if group.language == "French" %} · French-language material{% endif %}</p></div><a class="button secondary" href="{{ resource.file }}">Open resource</a></article>{% endfor %}
     </div>
   </section>
   <footer class="article-footer"><p><strong>Publication status:</strong> blocked until the academic year, distribution rights, and final metadata are approved.</p>{{ context_back::bar(label="Teaching", url="/teaching/") }}</footer>

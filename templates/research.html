@@ -4,8 +4,8 @@
 {% block description %}Research on household resource allocation, labor supply, parental time, leisure, and the economic cost of children.{% endblock description %}
 {% block content %}
 {{ contextual_return::host() }}
-<header class="page-hero shell"><p class="eyebrow">Research</p><h1>How families allocate money and time</h1><p class="lede">A research program in household economics, labor economics, and applied microeconometrics, recovering resource shares, monetary constraints, and the value of parental time from household behavior.</p></header>
-<section class="shell research-stack">
+<header class="page-hero shell"><p class="eyebrow">Research</p><h1>Observed choices, latent economic quantities</h1><p class="lede">I use applied microeconometrics and structural models to recover resource shares, the value of time, and the full cost of children from household behavior. Current work extends this agenda to remote work, elder care, and post-divorce allocation.</p><p class="research-jump"><a class="button primary" href="#papers">Go to papers</a></p></header>
+<section class="shell research-stack" id="papers">
 {% for paper in academic.papers %}
   <article class="research-card{% if paper.job_market %} featured{% endif %}">
     <div class="research-card-top"><div>{% if paper.job_market %}<span class="badge">Job Market Paper</span>{% endif %}<p class="meta">{{ paper.series }} · Version {{ paper.version }}</p></div><span class="status-pill">Status pending verification</span></div>

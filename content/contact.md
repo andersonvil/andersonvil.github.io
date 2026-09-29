@@ -1,5 +1,5 @@
 +++
 title = "Contact"
 path = "contact"
-template = "contact.html"
+template = "contact-v7.html"
 +++

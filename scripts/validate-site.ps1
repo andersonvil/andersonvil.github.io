@@ -18,6 +18,8 @@ $requiredFiles = @(
     'teaching\econometrics-m2\index.html',
     'teaching\microeconomics-l1\index.html',
     'teaching\microeconomics-iii-niort\index.html',
+    'teaching\econometrics-niort\index.html',
+    'teaching\data-analysis-l3\index.html',
     'teaching\applied-economics-lab\index.html',
     'code-data\index.html',
     'insights\index.html',
@@ -48,6 +50,13 @@ $requiredFiles = @(
     'files\teaching\sciences-po-saint-germain\microeconomics-l1\session-01.pdf',
     'files\teaching\niort\microeconomics-iii\session-01.pdf',
     'files\teaching\niort\microeconomics-iii\sessions-02-04.pdf',
+    'files\teaching\niort\econometrics\session-01\README.md',
+    'files\teaching\niort\econometrics\session-01\code\seance01.py',
+    'files\teaching\niort\econometrics\session-01\code\seance01.R',
+    'files\teaching\niort\econometrics\session-01\code\seance01.do',
+    'files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html',
+    'files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html',
+    'files\teaching\cy-cergy\l3-data-analysis\td-01\td01-indice-prix.ipynb',
     'files\media\on-reading-preferences.m4a',
     'files\demo\synthetic-household-project\synthetic_households.json',
     'files\demo\synthetic-household-project\analyze_demo.py',
@@ -88,8 +97,8 @@ foreach ($file in $htmlFiles) {
     if ($html -notmatch 'name=(?:"robots"|robots)' -or $html -notmatch 'noindex,\s*nofollow') {
         $failures.Add("Noindex metadata missing: $($file.FullName.Substring($root.Length + 1))")
     }
-    if ($html -notmatch '<html[^>]+lang=(?:"en"|en)') {
-        $failures.Add("Non-English page language: $($file.FullName.Substring($root.Length + 1))")
+    if ($html -notmatch '<html[^>]+lang=(?:"(?:en|fr)"|(?:en|fr))') {
+        $failures.Add("Missing supported page language: $($file.FullName.Substring($root.Length + 1))")
     }
     $h1Count = [regex]::Matches($html, '<h1(?:\s|>)', 'IgnoreCase').Count
     if ($h1Count -ne 1) { $failures.Add("Expected exactly one h1 in $($file.FullName.Substring($root.Length + 1)); found $h1Count") }
@@ -148,13 +157,13 @@ foreach ($paperPath in @('research\household-demand-leisure\index.html', 'resear
     $paperHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $paperPath) -Raw
     if ($paperHtml -notmatch 'Real manuscript.*provisional private preview.*publication blocked') { $failures.Add("Real/provisional paper status missing: $paperPath") }
     if ($paperHtml -match 'Download synthetic paper|Synthetic paper preview') { $failures.Add("Synthetic paper label remains: $paperPath") }
-    if ($paperHtml -notmatch 'Data sources and access' -or $paperHtml -notmatch 'Official provider site') { $failures.Add("Structured data access section missing: $paperPath") }
+    if ($paperHtml -notmatch 'Data (?:&amp;|&) sources' -or $paperHtml -notmatch 'Official provider site') { $failures.Add("Structured data access section missing: $paperPath") }
     if ([regex]::Matches($paperHtml, 'class=(?:"research-motivation-svg"|research-motivation-svg)', 'IgnoreCase').Count -ne 1 -or $paperHtml -notmatch 'data-visual-selection=') { $failures.Add("Exactly one configured motivation visual must appear on the normal paper page: $paperPath") }
     if ($paperHtml -notmatch 'data-scrollspy' -or $paperHtml -notmatch 'paper-toc-links') { $failures.Add("Scrollspy navigation markup missing: $paperPath") }
     if ($paperHtml -notmatch 'Back to Research') { $failures.Add("Persistent context link missing: $paperPath") }
 }
 $jmpHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\household-demand-leisure\index.html') -Raw
-foreach ($token in @('Download slides', 'How the model is identified', 'slide-10.svg', 'slide-11.svg', 'Accessible text equivalent: time cost', 'Accessible text equivalent: monetary cost', '<math', 'ER66001–ER71570')) {
+foreach ($token in @('Download slides', 'What variation does the work', 'slide-10.svg', 'slide-11.svg', 'tanh', '35.12', '18.97')) {
     if ($jmpHtml -notmatch [regex]::Escape($token)) { $failures.Add("JMP complement content missing: $token") }
 }
 foreach ($forbiddenLabel in @('Proposition 3', 'Further', 'Engel curve')) {
@@ -205,7 +214,7 @@ foreach ($slug in $restrictedPoems.Keys) {
     if ($poemHtml -match 'immersive-reader') { $failures.Add("Restricted poem unexpectedly contains immersive extra content: $slug") }
 }
 
-foreach ($slug in @('calligraphie-de-bonheur', 'ma-cherie', 'mes-nuits', 'on-me-l-a-interdit')) {
+foreach ($slug in @('calligraphie-de-bonheur')) {
     $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
     if ($poemHtml -notmatch 'poem-canvas' -or $poemHtml -notmatch "/img/poetry/$slug.webp") { $failures.Add("Source-faithful background missing: $slug") }
     if ($poemHtml -notmatch 'Play music' -or $poemHtml -notmatch 'About the music' -or $poemHtml -notmatch '<audio' -or $poemHtml -notmatch '<source[^>]+audio/mpeg' -or $poemHtml -match '\sautoplay(?:\s|=|>)') { $failures.Add("Functional poem-music control state is invalid: $slug") }
@@ -216,7 +225,7 @@ $poemAudioSources = foreach ($slug in @('calligraphie-de-bonheur', 'ma-cherie', 
     $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
     ([regex]::Match($poemHtml, '<source[^>]+src=(?:"(?<src>/files/media/poetry/[^\"]+\.mp3)"|(?<src>/files/media/poetry/[^ >]+\.mp3))', 'IgnoreCase')).Groups['src'].Value
 }
-if (($poemAudioSources | Sort-Object -Unique).Count -ne 4) { $failures.Add('Each poem must use a distinct local MP3 file.') }
+if (($poemAudioSources | Where-Object { $_ } | Sort-Object -Unique).Count -ne 1) { $failures.Add('Exactly one author-approved local poem track must be enabled.') }
 
 $visualLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\research-visuals\index.html') -Raw
 if ([regex]::Matches($visualLab, 'class=(?:"[^"]*candidate-card[^"]*"|[^ >]*candidate-card[^ >]*)', 'IgnoreCase').Count -ne 9) { $failures.Add('Research visual lab must contain exactly nine candidates.') }
@@ -247,7 +256,7 @@ if ([regex]::Matches($insightsHtml, '\d+ min read', 'IgnoreCase').Count -lt 2) {
 
 $contactHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'contact\index.html') -Raw
 if ($contactHtml -notmatch 'class=(?:"[^"]*copy-email[^"]*"|[^ >]*copy-email[^ >]*)' -or $contactHtml -notmatch 'aria-live=(?:"polite"|polite)') { $failures.Add('Contact copy-email interaction or live feedback is missing.') }
-if ($contactHtml -notmatch '/research/\?from=contact' -or $contactHtml -notmatch '/teaching/\?from=contact') { $failures.Add('Contact cross-section CTAs do not carry validated contextual provenance.') }
+if ($contactHtml -notmatch 'data-meeting-demo' -or $contactHtml -notmatch 'no appointment or calendar connection') { $failures.Add('Contact scheduling demo or explicit non-booking label is missing.') }
 
 foreach ($htmlFile in $htmlFiles) {
     $capitalizationHtml = Get-Content -Encoding UTF8 -LiteralPath $htmlFile.FullName -Raw
