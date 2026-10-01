@@ -142,15 +142,17 @@ if ([regex]::Matches($researchHtml, 'class=(?:"abstract-toggle"|abstract-toggle)
 if ($researchHtml -notmatch 'aria-expanded=(?:"false"|false)' -or $researchHtml -notmatch 'aria-controls=') { $failures.Add('Abstract disclosures are missing required ARIA state.') }
 
 $bioParagraphs = @(
-    'I am a household and labor economist studying how families allocate money and time, and how children and caregiving reshape consumption, labor supply, leisure, and the distribution of resources within households.',
-    'I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.',
-    'I hold a Ph.D. in Economics from CY Cergy Paris Université, where I was supervised by Olivier Donni. In 2023, I was a visiting researcher at KU Leuven, hosted by Frederic Vermeulen.'
+    "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+    "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal."
 )
 foreach ($paragraph in $bioParagraphs) {
     if (-not $homeHtml.Contains($paragraph)) { $failures.Add("Exact biography paragraph missing: $paragraph") }
 }
 if ($homeHtml -notmatch 'portrait-identity[^>]*>\s*<strong>Anderson Vil</strong>') { $failures.Add('Portrait caption name is missing.') }
-if ($homeHtml -notmatch 'home-beyond' -or $homeHtml -notmatch 'Explore Beyond Economics' -or $homeHtml -notmatch 'on-reading-preferences\.m4a') { $failures.Add('Home Beyond Economics discovery section or podcast preview is missing.') }
+foreach ($pathway in @('Explore Research', 'Explore Teaching', 'Explore Code (?:&amp;|&) Data', 'Explore Insights', 'Explore Beyond Economics', 'Explore Contact')) {
+    if ($homeHtml -notmatch $pathway) { $failures.Add("Compact Home pathway missing: $pathway") }
+}
+if ($homeHtml -match 'Research program|From observed choices to latent economic quantities|hero-role') { $failures.Add('Replaced Home research-program or role content remains visible.') }
 if ($homeHtml -match "Je t’écris au fond de mon lit|Il est déjà 2h du matin|J’aurais pu t’écrire") { $failures.Add('Restricted poem text leaked onto Home.') }
 
 foreach ($paperPath in @('research\household-demand-leisure\index.html', 'research\children-costs-one-adult-household\index.html', 'research\children-labor-supply-equations\index.html')) {
@@ -160,13 +162,16 @@ foreach ($paperPath in @('research\household-demand-leisure\index.html', 'resear
     if ($paperHtml -notmatch 'Data (?:&amp;|&) sources' -or $paperHtml -notmatch 'Official provider site') { $failures.Add("Structured data access section missing: $paperPath") }
     if ([regex]::Matches($paperHtml, 'class=(?:"research-motivation-svg"|research-motivation-svg)', 'IgnoreCase').Count -ne 1 -or $paperHtml -notmatch 'data-visual-selection=') { $failures.Add("Exactly one configured motivation visual must appear on the normal paper page: $paperPath") }
     if ($paperHtml -notmatch 'data-scrollspy' -or $paperHtml -notmatch 'paper-toc-links') { $failures.Add("Scrollspy navigation markup missing: $paperPath") }
-    if ($paperHtml -notmatch 'Back to Research') { $failures.Add("Persistent context link missing: $paperPath") }
+    if ($paperHtml -notmatch 'class=(?:"breadcrumb"|breadcrumb)' -or $paperHtml -notmatch 'href=(?:"/research/"|/research/)') { $failures.Add("Research breadcrumb missing: $paperPath") }
+    if ($paperHtml -notmatch 'Econometric model (?:&amp;|&) methods' -or $paperHtml -notmatch 'symbol-definitions') { $failures.Add("Econometric-method label or symbol definitions missing: $paperPath") }
+    if ($paperHtml -match '>Econometrics<') { $failures.Add("Legacy Econometrics label remains: $paperPath") }
+    if ($paperHtml -notmatch 'table-source-link' -or $paperHtml -notmatch '#page=') { $failures.Add("Page-targeted manuscript table link missing: $paperPath") }
 }
 $jmpHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\household-demand-leisure\index.html') -Raw
-foreach ($token in @('Download slides', 'What variation does the work', 'slide-10.svg', 'slide-11.svg', 'tanh', '35.12', '18.97')) {
+foreach ($token in @('Download slides', 'Separate identification of time and monetary costs', 'slide-10.svg', 'slide-11.svg', 'tanh', '35.12', '18.97', 'adjusted PSID hours', 'quadratic full-leisure demands')) {
     if ($jmpHtml -notmatch [regex]::Escape($token)) { $failures.Add("JMP complement content missing: $token") }
 }
-foreach ($forbiddenLabel in @('Proposition 3', 'Further', 'Engel curve')) {
+foreach ($forbiddenLabel in @('Proposition 3', 'What variation does the work', 'From the model to estimates')) {
     if ($jmpHtml -match [regex]::Escape($forbiddenLabel)) { $failures.Add("Removed slide-control label remains visible in JMP HTML: $forbiddenLabel") }
 }
 foreach ($nonJmp in @('research\children-costs-one-adult-household\index.html', 'research\children-labor-supply-equations\index.html')) {

@@ -1,0 +1,771 @@
+{
+  "generatedAt": "2026-10-01T03:02:41.559Z",
+  "base": "http://127.0.0.1:1112",
+  "routes": [
+    {
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "40px",
+      "body": "16px",
+      "title": "Anderson Vil | Household and Labor Economist"
+    },
+    {
+      "width": 1440,
+      "route": "/research/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Research | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/teaching/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Teaching | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/code-data/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Code & Data | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/insights/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Insights | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/beyond-economics/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Beyond Economics | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/contact/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Contact | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/talks/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Talks — Synthetic Preview | Anderson Vil Site Preview"
+    },
+    {
+      "width": 1440,
+      "route": "/research/household-demand-leisure/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "The Household Demand for Leisure and the Full Cost of Children | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/research/children-costs-one-adult-household/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Children Costs in a One-Adult Household | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/research/children-labor-supply-equations/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Children in Labor Supply Equations | Anderson Vil"
+    },
+    {
+      "width": 1440,
+      "route": "/preview/",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Preview Index — Not for Publication"
+    },
+    {
+      "width": 1440,
+      "route": "/404.html",
+      "status": 200,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "h1": "36px",
+      "body": "16px",
+      "title": "Page Not Found | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "38.4px",
+      "body": "16px",
+      "title": "Anderson Vil | Household and Labor Economist"
+    },
+    {
+      "width": 1280,
+      "route": "/research/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Research | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/teaching/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Teaching | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/code-data/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Code & Data | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/insights/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Insights | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/beyond-economics/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Beyond Economics | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/contact/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Contact | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/talks/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Talks — Synthetic Preview | Anderson Vil Site Preview"
+    },
+    {
+      "width": 1280,
+      "route": "/research/household-demand-leisure/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "The Household Demand for Leisure and the Full Cost of Children | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/research/children-costs-one-adult-household/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Children Costs in a One-Adult Household | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/research/children-labor-supply-equations/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Children in Labor Supply Equations | Anderson Vil"
+    },
+    {
+      "width": 1280,
+      "route": "/preview/",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Preview Index — Not for Publication"
+    },
+    {
+      "width": 1280,
+      "route": "/404.html",
+      "status": 200,
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "h1": "33.28px",
+      "body": "16px",
+      "title": "Page Not Found | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "38.4px",
+      "body": "16px",
+      "title": "Anderson Vil | Household and Labor Economist"
+    },
+    {
+      "width": 768,
+      "route": "/research/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Research | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/teaching/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Teaching | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/code-data/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Code & Data | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/insights/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Insights | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/beyond-economics/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Beyond Economics | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/contact/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Contact | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/talks/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Talks — Synthetic Preview | Anderson Vil Site Preview"
+    },
+    {
+      "width": 768,
+      "route": "/research/household-demand-leisure/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "The Household Demand for Leisure and the Full Cost of Children | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/research/children-costs-one-adult-household/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Children Costs in a One-Adult Household | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/research/children-labor-supply-equations/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Children in Labor Supply Equations | Anderson Vil"
+    },
+    {
+      "width": 768,
+      "route": "/preview/",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Preview Index — Not for Publication"
+    },
+    {
+      "width": 768,
+      "route": "/404.html",
+      "status": 200,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "h1": "30px",
+      "body": "16px",
+      "title": "Page Not Found | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "31.2px",
+      "body": "16px",
+      "title": "Anderson Vil | Household and Labor Economist"
+    },
+    {
+      "width": 390,
+      "route": "/research/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Research | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/teaching/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Teaching | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/code-data/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Code & Data | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/insights/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Insights | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/beyond-economics/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Beyond Economics | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/contact/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Contact | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/talks/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Talks — Synthetic Preview | Anderson Vil Site Preview"
+    },
+    {
+      "width": 390,
+      "route": "/research/household-demand-leisure/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "The Household Demand for Leisure and the Full Cost of Children | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/research/children-costs-one-adult-household/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Children Costs in a One-Adult Household | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/research/children-labor-supply-equations/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Children in Labor Supply Equations | Anderson Vil"
+    },
+    {
+      "width": 390,
+      "route": "/preview/",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Preview Index — Not for Publication"
+    },
+    {
+      "width": 390,
+      "route": "/404.html",
+      "status": 200,
+      "viewport": 390,
+      "scrollWidth": 390,
+      "h1": "27.3px",
+      "body": "16px",
+      "title": "Page Not Found | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "28.8px",
+      "body": "16px",
+      "title": "Anderson Vil | Household and Labor Economist"
+    },
+    {
+      "width": 360,
+      "route": "/research/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Research | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/teaching/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Teaching | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/code-data/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Code & Data | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/insights/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Insights | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/beyond-economics/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Beyond Economics | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/contact/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Contact | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/talks/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Talks — Synthetic Preview | Anderson Vil Site Preview"
+    },
+    {
+      "width": 360,
+      "route": "/research/household-demand-leisure/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "The Household Demand for Leisure and the Full Cost of Children | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/research/children-costs-one-adult-household/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Children Costs in a One-Adult Household | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/research/children-labor-supply-equations/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Children in Labor Supply Equations | Anderson Vil"
+    },
+    {
+      "width": 360,
+      "route": "/preview/",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Preview Index — Not for Publication"
+    },
+    {
+      "width": 360,
+      "route": "/404.html",
+      "status": 200,
+      "viewport": 360,
+      "scrollWidth": 360,
+      "h1": "25.2px",
+      "body": "16px",
+      "title": "Page Not Found | Anderson Vil"
+    }
+  ],
+  "typography": {
+    "desktop": {
+      "homeName": "40px",
+      "pageTitle": "36px",
+      "sectionSubtitle": "23.04px",
+      "eyebrow": "11.84px",
+      "body": "16px",
+      "paperTitle": "36px",
+      "paperSubtitle": "24px"
+    },
+    "mobile": {
+      "homeName": "31.2px",
+      "sectionSubtitle": "20px",
+      "eyebrow": "11.84px",
+      "body": "16px"
+    }
+  },
+  "homePathways": {
+    "desktop": {
+      "labels": [
+        "Research",
+        "Teaching",
+        "Code & Data",
+        "Insights",
+        "Beyond Economics",
+        "Contact"
+      ],
+      "columns": [
+        {
+          "left": 61,
+          "width": 1318
+        },
+        {
+          "left": 61,
+          "width": 659
+        },
+        {
+          "left": 721,
+          "width": 659
+        },
+        {
+          "left": 61,
+          "width": 659
+        },
+        {
+          "left": 721,
+          "width": 659
+        },
+        {
+          "left": 61,
+          "width": 1318
+        }
+      ],
+      "childElementCounts": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "mobile": {
+      "labels": [
+        "Research",
+        "Teaching",
+        "Code & Data",
+        "Insights",
+        "Beyond Economics",
+        "Contact"
+      ],
+      "columns": [
+        11,
+        11,
+        11,
+        11,
+        11,
+        11
+      ]
+    }
+  },
+  "interactions": {
+    "symbolDisclosure": true,
+    "symbolDisclosureOpened": true,
+    "tableLinks": [
+      "/files/papers/household-demand-leisure.pdf#page=26",
+      "/files/papers/household-demand-leisure.pdf#page=27"
+    ],
+    "teachingOrder": [
+      "Econometrics — M2 & PhD",
+      "Econometrics — M1",
+      "Econometrics — L3",
+      "Data Analysis with Python — L3",
+      "Microeconomics — Undergraduate (L1)",
+      "Econometrics — Session 1",
+      "Microeconomics III — Undergraduate (L3), Niort"
+    ],
+    "podcastImage": {
+      "natural": "960x540",
+      "rendered": "370x209",
+      "objectFit": "contain"
+    },
+    "audioAutoplay": [
+      {
+        "autoplay": false,
+        "paused": true
+      }
+    ]
+  },
+  "theme": {
+    "persisted": "light",
+    "afterToggle": "dark",
+    "saved": "dark"
+  },
+  "consoleErrors": []
+}

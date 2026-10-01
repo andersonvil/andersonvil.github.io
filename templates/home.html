@@ -8,19 +8,12 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Anderson Vil","url":"{{ config.base_url }}","email":"mailto:{{ academic.identity.email }}","knowsAbout":["Household Economics","Labor Economics","Applied Microeconometrics"]}</script>
 {% endblock head %}
 {% block content %}
-{% set preview = load_data(path="data/preview_synthetic.toml") %}
-{% set beyond = load_data(path="data/beyond_economics.toml") %}
 <section class="hero shell">
   <div class="hero-copy">
     <p class="eyebrow">{{ academic.identity.job_market }}</p>
     <h1>{{ academic.identity.name }}</h1>
-    <p class="hero-role">Household and labor economist</p>
     <ul class="field-list" aria-label="Research fields">{% for field in academic.identity.fields %}<li>{{ field }}</li>{% endfor %}</ul>
     <div class="hero-bio">{% for paragraph in academic.identity.bio %}<p>{{ paragraph }}</p>{% endfor %}</div>
-    <div class="role-block provisional-card" data-placeholder="true" data-publication-status="blocked">
-      <p class="preview-label compact">Provisional appointment wording</p>
-      <p><strong>Research Fellow</strong>, CY Cergy Paris Université (THEMA) · <strong>Lecturer in Economics</strong>, Université Catholique de l’Ouest</p>
-    </div>
     <div class="button-row hero-actions">
       <a class="button primary" href="{{ academic.papers[0].pdf }}">Job Market Paper <span>provisional PDF</span></a>
       <a class="button secondary" href="{{ academic.documents.cv.url }}">CV <span>provisional PDF</span></a>
@@ -47,17 +40,15 @@
   </div>
 </section>
 
-<section class="shell section-space" aria-labelledby="research-program-title">
-  <div class="section-heading split-heading"><div><p class="eyebrow">Research program</p><h2 id="research-program-title">From observed choices to latent economic quantities</h2></div><p>{{ academic.identity.long_positioning }}</p></div>
+<section class="shell section-space" aria-labelledby="featured-work-title">
+  <div class="section-heading"><p class="eyebrow">Selected research</p><h2 id="featured-work-title">Further papers</h2></div>
   <div class="paper-list compact">{% for paper in academic.papers %}{% if not paper.job_market %}<article class="paper-row"><div><p class="meta">{{ paper.series }}</p><h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3><p class="byline">{{ paper.card_author_line }}</p><p>{{ paper.description }}</p><button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="home-abstract-{{ paper.id }}">View abstract</button><div class="abstract-panel" id="home-abstract-{{ paper.id }}" hidden><p>{{ paper.abstract }}</p></div><div class="card-actions"><a class="text-link" href="{{ paper.url }}">View paper details</a><a class="text-link" href="{{ paper.pdf }}">Download paper</a></div></div></article>{% endif %}{% endfor %}</div>
-  <p>{{ contextual_return::cta(label="Explore all research", destination="/research/", origin="home") }}</p>
 </section>
 
-<section class="soft-section section-space"><div class="shell pathways"><article><p class="eyebrow">Teaching</p><h2>Concept, method, evidence</h2><p>Browse course material, code, notebooks, and exercises in econometrics, data analysis, and microeconomics.</p>{{ contextual_return::cta(label="Explore Teaching", destination="/teaching/", origin="home") }}</article><article><p class="eyebrow">Code & Data</p><h2>Reusable teaching code</h2><p>Open documented Python, R, and Stata resources alongside a clearly separated synthetic demonstration.</p>{{ contextual_return::cta(label="Explore Code & Data", destination="/code-data/", origin="home") }}</article></div></section>
-
-<section class="shell section-space" aria-labelledby="insights-title"><div class="section-heading"><p class="eyebrow">Insights</p><h2 id="insights-title">Notes for careful interpretation</h2></div><div class="insight-grid">{% for insight in preview.insights %}<article class="insight-card" data-synthetic="true"><p class="meta">{{ insight.category }} · {{ insight.reading_minutes }} min read</p><h3><a href="{{ insight.url }}">{{ insight.title }}</a></h3><p>{{ insight.summary }}</p><p class="preview-label compact">{{ preview.label }}</p></article>{% endfor %}</div><p>{{ contextual_return::cta(label="Explore Insights", destination="/insights/", origin="home") }}</p></section>
-
-<section class="home-beyond section-space" aria-labelledby="home-beyond-title"><div class="shell"><div class="section-heading split-heading"><div><p class="eyebrow light">Beyond Economics</p><h2 id="home-beyond-title">Poetry and conversations beyond research</h2></div><p>Creative writing and recorded conversation offer another register for attention and reflection. Access limits remain explicit, and restricted poems are not reproduced here.</p></div><div class="home-beyond-grid"><article><p class="meta">Poetry · four works</p><h3>Read in the language of the originals</h3><p>One complete poem and three first-stanza previews are available in the private review.</p><a class="light-link" href="{{ beyond.poems[0].url }}">Preview <span lang="fr">{{ beyond.poems[0].title }}</span></a></article><article><p class="meta">Conversations · French · {{ beyond.media.duration }}</p><h3>{{ beyond.media.title }}</h3><audio controls preload="metadata" aria-label="Podcast excerpt: {{ beyond.media.title }}"><source src="{{ beyond.media.audio }}" type="audio/mp4">Your browser does not support the audio element.</audio><p class="home-beyond-note">No autoplay · republication rights remain provisional.</p></article></div><p class="home-beyond-cta">{{ contextual_return::cta(label="Explore Beyond Economics", destination="/beyond-economics/", origin="home", class="button light") }}</p></div></section>
-
-<section class="contact-strip"><div class="shell"><div><p class="eyebrow light">Contact</p><h2>Research collaboration, teaching, or seminar enquiries</h2></div><a class="button light" href="mailto:{{ academic.identity.email }}">Email Anderson Vil</a></div></section>
+<section class="soft-section home-pathways-section section-space" aria-label="Explore the site"><div class="shell home-pathways">
+  <article class="pathway-wide"><p class="eyebrow">Research</p><h2>Measuring latent economic quantities from observed choices</h2>{{ contextual_return::cta(label="Explore Research", destination="/research/", origin="home") }}</article>
+  <div class="pathway-pair"><article><p class="eyebrow">Teaching</p><h2>Economic intuition, methods, and evidence</h2>{{ contextual_return::cta(label="Explore Teaching", destination="/teaching/", origin="home") }}</article><article><p class="eyebrow">Code &amp; Data</p><h2>Teaching code, notebooks, and data</h2>{{ contextual_return::cta(label="Explore Code & Data", destination="/code-data/", origin="home") }}</article></div>
+  <div class="pathway-pair"><article><p class="eyebrow">Insights</p><h2>Notes on economic methods and teaching</h2>{{ contextual_return::cta(label="Explore Insights", destination="/insights/", origin="home") }}</article><article><p class="eyebrow">Beyond Economics</p><h2>Poetry and conversations</h2>{{ contextual_return::cta(label="Explore Beyond Economics", destination="/beyond-economics/", origin="home") }}</article></div>
+  <article class="pathway-wide"><p class="eyebrow">Contact</p><h2>Discuss research, teaching, or collaboration</h2>{{ contextual_return::cta(label="Explore Contact", destination="/contact/", origin="home") }}</article>
+</div></section>
 {% endblock content %}
