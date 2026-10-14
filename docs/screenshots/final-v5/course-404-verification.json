@@ -1,0 +1,93 @@
+{
+  "courses": [
+    {
+      "theme": "light",
+      "title": "Econometrics — M2 & PhD",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "light",
+      "title": "Econometrics — M1",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "light",
+      "title": "Econometrics — L3",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "light",
+      "title": "Data Analysis with Python — L3",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "light",
+      "title": "Microeconomics — Undergraduate (L1)",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "light",
+      "title": "Econometrics — Session 1",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "light",
+      "title": "Microeconomics III — Undergraduate (L3), Niort",
+      "before": "rgb(10, 32, 49)",
+      "after": "rgb(118, 50, 25)"
+    },
+    {
+      "theme": "dark",
+      "title": "Econometrics — M2 & PhD",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    },
+    {
+      "theme": "dark",
+      "title": "Econometrics — M1",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    },
+    {
+      "theme": "dark",
+      "title": "Econometrics — L3",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    },
+    {
+      "theme": "dark",
+      "title": "Data Analysis with Python — L3",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    },
+    {
+      "theme": "dark",
+      "title": "Microeconomics — Undergraduate (L1)",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    },
+    {
+      "theme": "dark",
+      "title": "Econometrics — Session 1",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    },
+    {
+      "theme": "dark",
+      "title": "Microeconomics III — Undergraduate (L3), Niort",
+      "before": "rgb(247, 250, 251)",
+      "after": "rgb(255, 176, 142)"
+    }
+  ],
+  "notFound": {
+    "status": 404,
+    "title": "The page you requested is not here.",
+    "robots": "noindex, nofollow, noarchive"
+  }
+}

@@ -679,6 +679,7 @@ input[type="range"]:hover, input[type="range"]:focus-visible { accent-color:var(
 .profile-list a:hover, .profile-list a:focus-visible, .footer-links a:hover, .footer-links a:focus-visible { color:var(--rust-strong); }
 .footer-links a:hover, .footer-links a:focus-visible { color:#ffb08e; }
 .desktop-nav a.nav-active:hover, .desktop-nav a.nav-active:focus-visible, .mobile-nav a.nav-active:hover, .mobile-nav a.nav-active:focus-visible { color:var(--teal); background:var(--surface-alt); }
+.teaching-group h3 a:hover, .teaching-group h3 a:focus-visible { color:var(--rust-strong); text-decoration:underline; }
 .button.light:hover, .button.light:focus-visible { color:#071827; background:#ffd4c1; border-color:#ffd4c1; }
 .button.ghost-light:hover, .button.ghost-light:focus-visible { color:#ffd4c1; background:#173c4c; border-color:#ffd4c1; }
 @media (max-width:960px) { .hero { padding-block:1.2rem; } .provenance-table { grid-template-columns:1fr; gap:0; } }

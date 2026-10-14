@@ -14,6 +14,8 @@ Préparé le 14 octobre 2026. Cette livraison permet l’examen privé ; aucune 
 
 Le serveur doit rester lancé pour l’accès par URL. Pour le relancer après fermeture, utiliser les commandes du README. La preview ne repose pas sur `noindex` comme contrôle d’accès : elle n’est pas hébergée publiquement.
 
+Le serveur local dédié répond avec la page 404 du site et un statut HTTP 404 lorsqu’une route inconnue est demandée. Il reste lié à `127.0.0.1` et sert uniquement le dossier de build.
+
 Pour revenir à l’état sauvegardé, après avoir conservé tout travail ultérieur :
 
 ```powershell
@@ -56,7 +58,7 @@ Preuves : `screenshots/final-v5/before-home-1908-light.png`, `final-home-1908-li
 | 2. Branche, préservation et preview récupérable | Réalisé / vérifié | Branche dédiée, référence, bundle et deux archives ; pas de push ni publication. |
 | Menu anglais exact, CV PDF, routes, secondaires et 404 | Réalisé / vérifié | Menu conservé ; 58 HTML contrôlés par le validateur, 59 avec l’audit des assets ; CV direct, Talks hors menu et 404 accessibles. |
 | Thème mémorisé et sombre initial | Réalisé / vérifié | Test navigateur sans préférence puis persistance après rechargement. |
-| Couleurs au survol et focus | Réalisé / vérifié | 116 contrôles de styles interactifs dans deux thèmes, tous positifs après corrections ; focus du lien d’évitement visible avec contour 3 px. Contrôles natifs préservés. |
+| Couleurs au survol et focus | Réalisé / vérifié | 116 contrôles de styles interactifs et 14 contrôles supplémentaires des titres de cours dans deux thèmes, tous positifs après corrections ; focus du lien d’évitement visible avec contour 3 px. Contrôles natifs préservés. |
 | Section active, accordéons, copies, menus | Réalisé / vérifié | Scrollspy actif sur les trois articles ; symboles ouverts au clavier ; copies de citations/email ; menu mobile ; abstract Home. |
 | Prose justifiée, langue et césure | Réalisé / vérifié | Prose ciblée, dernière ligne à gauche, hyphens auto, note/langue française explicite ; contrôle visuel desktop et mobile. Titres, métadonnées, équations et tableaux exclus. |
 | Compacité Home et portrait | Réalisé / vérifié | Gain mesuré de 122,77 px jusqu’aux actions, pas de zoom réduit ni bio tronquée. |
@@ -101,7 +103,7 @@ Preuves : `screenshots/final-v5/before-home-1908-light.png`, `final-home-1908-li
 - `audit-final-v5.py` : 1409 références locales de liens/assets, 59 pages HTML, zéro cible ou ancre cassée ; trois abstracts et empreintes PDF conservés ; syntaxe des scripts/notebooks Python et structure des notebooks contrôlées.
 - `validate-source-copies.ps1` : 29 copies existantes byte-identiques aux sources, PDFs complets des poèmes restreints absents.
 - `test-reading-times.ps1`, fixture de code synthétique et son notebook : PASS. La note réelle française affiche huit minutes sans date inventée.
-- Chrome/Playwright : 170 cas de responsive, 19 blocs d’articles capturés, contrôles des disclosures/clavier/scrollspy/copies/menu/audio/redirect, focus d’évitement et 116 contrôles de survol. En complément, 10 contrôles de la dernière version Code & Data et 24 contrôles des encadrés d’hypothèses dans les deux thèmes ont passé. Les défauts constatés ont été corrigés puis les contrôles concernés relancés.
+- Chrome/Playwright : 170 cas de responsive, 19 blocs d’articles capturés, contrôles des disclosures/clavier/scrollspy/copies/menu/audio/redirect, focus d’évitement et 116 contrôles de survol. En complément, 10 contrôles de la dernière version Code & Data, 24 contrôles des encadrés d’hypothèses et 14 contrôles de survol des titres de cours dans les deux thèmes ont passé. La route inconnue retourne la page personnalisée avec HTTP 404 et l’en-tête noindex. Les défauts constatés ont été corrigés puis les contrôles concernés relancés.
 - Python UCO : `seance01.py` et `td01.py`, inchangés, exécutés avec Python 3.13 et backend Agg, codes 0 ; dix graphiques PDF générés dans le dossier de travail temporaire. Journaux dans `final-v5-teaching-execution`.
 - Garde de production : rejet attendu du dépôt preview ; acceptation de la fixture propre. Aucun build/deploiement public effectué. Le nouveau step GitHub n’a pas été exécuté sur un runner distant.
 
@@ -116,6 +118,7 @@ R et Stata n’ont pas été exécutés dans cette révision. Les tests antérie
 - `final-v5-static-audit.json`, `final-v5-notebook-audit.json` : audits locaux et notebooks.
 - `screenshots/final-v5/verification.json` : mesures, responsive et interactions.
 - `screenshots/final-v5/source-viewer-verification.json` : tests de la visionneuse, PDF et overflow local.
+- `screenshots/final-v5/course-404-verification.json` : 14 survols de titres de cours et réponse 404 personnalisée du serveur local.
 - `screenshots/final-v5/math-sheet-*.png` : revue visuelle des 19 blocs.
 - `screenshots/final-v5/monogram-reference-result.png` : référence à gauche, tracé vectoriel à droite.
 - `docs/editorial-sources` : originaux éditoriaux et guide général Data Analysis non exposé.

@@ -12,7 +12,7 @@ Requirements: Zola, Node.js, PowerShell; Python for a simple local HTTP server.
 ```powershell
 npm ci
 & .\scripts\build-preview.ps1
-python -m http.server 1114 --bind 127.0.0.1 --directory public-preview
+python scripts/serve-preview.py --port 1114
 ```
 
 Open `http://127.0.0.1:1114/`. On Windows, stop the HTTP server before rebuilding to avoid open-file locks, then start it again.
