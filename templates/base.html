@@ -16,27 +16,28 @@
     (() => {
       try {
         const saved = localStorage.getItem('av-theme');
-        const theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
         document.documentElement.dataset.theme = theme;
         document.documentElement.style.colorScheme = theme;
-      } catch (_) { document.documentElement.dataset.theme = 'light'; }
+      } catch (_) { document.documentElement.dataset.theme = 'dark'; document.documentElement.style.colorScheme = 'dark'; }
     })();
   </script>
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
   <link rel="stylesheet" href="/styles/site.css">
   <script defer src="/js/site.js"></script>
   {% block head %}{% endblock head %}
 </head>
 <body class="{% block body_class %}{% endblock body_class %}">
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <aside class="preview-ribbon" aria-label="Preview status">
+  {% if config.extra.site_mode == "preview" %}<aside class="preview-ribbon" aria-label="Preview status">
     <span class="preview-dot" aria-hidden="true"></span>
     <strong>Private preview</strong>
     <span>No content on this build is approved for publication.</span>
-  </aside>
+  </aside>{% endif %}
   <header class="site-header">
     <div class="header-inner">
       <a class="wordmark" href="/" aria-label="Anderson Vil home">
-        <span class="wordmark-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="29"/><text x="13" y="43">A</text><text x="29" y="43">V</text></svg></span>
+        <span class="wordmark-mark" aria-hidden="true">{% include "macros/monogram.html" %}</span>
         <span>Anderson Vil</span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">

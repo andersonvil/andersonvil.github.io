@@ -1,0 +1,134 @@
+[
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table 1",
+    "pdf_page": 25,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table 2",
+    "pdf_page": 26,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table 4",
+    "pdf_page": 34,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table 5",
+    "pdf_page": 38,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table 6",
+    "pdf_page": 40,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table A.1",
+    "pdf_page": 53,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table A.2",
+    "pdf_page": 54,
+    "caption_on_target": true
+  },
+  {
+    "paper": "household-demand-leisure",
+    "label": "Table A.3",
+    "pdf_page": 55,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 1",
+    "pdf_page": 12,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 2",
+    "pdf_page": 14,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 3",
+    "pdf_page": 16,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 4",
+    "pdf_page": 18,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 5",
+    "pdf_page": 19,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 12",
+    "pdf_page": 36,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Table 13",
+    "pdf_page": 37,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Figure 1",
+    "pdf_page": 17,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-costs-one-adult-household",
+    "label": "Figure 8",
+    "pdf_page": 39,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-labor-supply-equations",
+    "label": "Table 1",
+    "pdf_page": 14,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-labor-supply-equations",
+    "label": "Table 2",
+    "pdf_page": 20,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-labor-supply-equations",
+    "label": "Table 3",
+    "pdf_page": 21,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-labor-supply-equations",
+    "label": "Table 4",
+    "pdf_page": 23,
+    "caption_on_target": true
+  },
+  {
+    "paper": "children-labor-supply-equations",
+    "label": "Table 5",
+    "pdf_page": 24,
+    "caption_on_target": true
+  }
+]

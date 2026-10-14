@@ -1,6 +1,6 @@
 # Économétrie — séance 1 (Niort, 2026–2027)
 
-Ce dossier accompagne la première séance et la série d’exercices. Il rassemble les supports, les scripts équivalents en Python, R et Stata, quatre notebooks, un simulateur HTML et sept jeux de données. Il s’agit de matériel pédagogique, pas d’un package de réplication d’article.
+Ce dossier accompagne la première séance et la série d’exercices de 2026/2027. Il rassemble les supports, les scripts parallèles en Python, R et Stata, quatre notebooks, un simulateur HTML et sept jeux de données. Il s’agit de matériel pédagogique, pas d’un package de réplication d’article. La séance 2 annoncée n’est pas dans les fichiers fournis pour cette révision.
 
 ## Inventaire exact
 
@@ -16,7 +16,7 @@ Ce dossier accompagne la première séance et la série d’exercices. Il rassem
 
 ## Origine et chargement des données
 
-Les sept jeux de données proviennent du paquet pédagogique `wooldridge`, correspondant aux exemples de *Introductory Econometrics* de Jeffrey M. Wooldridge. Le script `generer_dta.py` charge chaque table depuis le paquet Python puis l’exporte au format Stata 114. Les scripts cherchent les `.dta` dans `data/` ; lancez-les depuis la racine de ce dossier ou adaptez le chemin de travail indiqué en tête de fichier.
+Les sept jeux de données proviennent du paquet pédagogique `wooldridge`, correspondant aux exemples de *Introductory Econometrics* de Jeffrey M. Wooldridge. Le script `generer_dta.py` charge chaque table depuis le paquet Python puis l’exporte au format Stata 114. Les exemples Python chargent les données avec `wooldridge.data`; les exemples R les chargent depuis le paquet R. Les scripts Stata utilisent les noms simples des `.dta` : leur dossier de travail doit donc être `data/`.
 
 ## Dépendances
 
@@ -36,9 +36,11 @@ Stata : les fichiers `.dta` sont enregistrés au format 114, lisible par Stata 1
 2. Ouvrez un terminal dans le dossier `session-01`.
 3. Python : exécutez `python code/seance01.py`, puis `python code/td01.py`.
 4. R : exécutez `Rscript code/seance01.R`, puis `Rscript code/td01.R`.
-5. Stata : définissez le dossier courant sur `session-01`, puis lancez `do code/seance01.do` et `do code/td01.do`.
+5. Stata : définissez le dossier courant sur `session-01/data`, puis lancez `do "../code/seance01.do"` et `do "../code/td01.do"`. Les graphiques seront écrits dans ce dossier de travail. Cette procédure a été contrôlée dans le code, mais n’a pas été exécutée faute de Stata.
 
-Les trois versions suivent la même séquence pédagogique : chargement, statistiques descriptives, covariance/corrélation, visualisations et régressions simples. L’auteur du cours indique les avoir exécutées dans les trois logiciels avec les mêmes conclusions pédagogiques. Le rapport technique livré avec les sources vérifiait séparément les blocs Python et R, mais ne disposait pas de Stata et n’avait pas pu lancer les notebooks R faute de noyau ; cette limite de vérification est conservée ici.
+Les trois versions suivent la même séquence pédagogique : chargement, statistiques descriptives, covariance/corrélation, visualisations et régressions simples. Le rapport fourni par l’auteur documente des tests Python et R, mais aucun test Stata et aucun lancement du notebook R faute de noyau. Ce sont des vérifications fournies avec les sources, distinctes de celles de la présente révision.
+
+Le 14 octobre 2026, `seance01.py` et `td01.py` ont été exécutés sans modification dans un environnement temporaire Python 3.13, avec `wooldridge==0.4.5`, pandas 3.0.5 et le backend graphique `Agg`. Les deux processus ont terminé avec le code 0. Les journaux et graphiques ont été conservés dans le dossier de vérification. Exemples contrôlés : la régression de la note sur `colgpa` donne 32,306 + 14,316 × `colgpa`, R² = 0,329 et n = 856; la somme des résidus est 0,0 et SCT = 153 539,3. R, Stata et les notebooks UCO n’ont pas été exécutés lors de cette révision. Aucune équivalence numérique entre langages n’est revendiquée.
 
 ## Sorties attendues
 

@@ -1,5 +1,5 @@
-publicationStatus = "blocked"
-selectionStatus = "Only the author-approved Calligraphie de bonheur pairing is enabled; the other provisional pairings are retained as disabled candidates."
+publicationStatus = "author-rights-confirmed"
+selectionStatus = "The author-approved Calligraphie de bonheur pairing is enabled; the other pairings remain disabled candidates."
 verifiedOn = "2026-09-26"
 licenseNotice = "/files/licenses/poetry-audio-candidates.txt"
 recommendation = "Listen to each complete pairing before publication. Each selection can be replaced or disabled in this data file without changing another poem or the player component."
@@ -47,7 +47,7 @@ recordingStatus = "The FMA file and Commons record identify TRG Banks and CC0 1.
 selfHostingStatus = "Downloading, copying, modification, distribution, and performance are permitted by CC0 1.0."
 attribution = "Not required by CC0; creator and source are credited for transparency."
 mood = "Luminous, warm, and contemplative"
-fit = "Selected provisionally for the complete poem's reflective but open atmosphere; the title is not used to interpret the poem."
+fit = "Selected by the author for the complete poem's reflective but open atmosphere; the title is not used to interpret the poem."
 verifiedOn = "2026-09-26"
 rightsStatus = "verified"
 

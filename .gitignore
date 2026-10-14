@@ -6,3 +6,6 @@ tmp/
 output/
 Blog.docx
 likedin.odt
+
+node_modules/
+public-preview-final/

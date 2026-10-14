@@ -227,26 +227,6 @@
     catch (_) { if (status) status.textContent = 'Copying was unavailable. Select the email address manually.'; }
   }));
 
-  document.querySelectorAll('[data-meeting-demo]').forEach((demo) => {
-    const topicButtons = [...demo.querySelectorAll('[data-meeting-topic]')];
-    const slotButtons = [...demo.querySelectorAll('[data-meeting-slot]')];
-    const zone = demo.querySelector('[data-meeting-timezone]');
-    const review = demo.querySelector('[data-meeting-review]');
-    const confirm = demo.querySelector('[data-meeting-confirm]');
-    const status = demo.querySelector('.meeting-status');
-    let topic = '';
-    let slot = '';
-    try { zone.textContent = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Paris'; } catch (_) { /* Keep the documented default. */ }
-    const render = () => {
-      review.textContent = topic && slot ? `${topic} · ${slot} · ${zone.textContent}` : 'Choose a purpose and sample time.';
-    };
-    topicButtons.forEach((button) => button.addEventListener('click', () => { topic = button.dataset.meetingTopic; topicButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button))); render(); }));
-    slotButtons.forEach((button) => button.addEventListener('click', () => { slot = button.dataset.meetingSlot; slotButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button))); render(); }));
-    confirm?.addEventListener('click', () => {
-      status.textContent = topic && slot ? 'Demo complete. No appointment was created and no calendar was contacted.' : 'Select both a purpose and a sample time to complete the demo.';
-    });
-  });
-
   document.querySelectorAll('.file-test').forEach((button) => button.addEventListener('click', async () => {
     const status = document.querySelector('.file-test-status');
     if (status) status.textContent = 'Checking…';

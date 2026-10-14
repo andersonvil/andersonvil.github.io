@@ -7,7 +7,8 @@ build_search_index = false
 generate_feeds = false
 generate_sitemap = false
 generate_robots_txt = false
-minify_html = true
+# Keep KaTeX MathML and embedded equation SVG intact; the HTML minifier corrupts them.
+minify_html = false
 
 [markdown]
 highlight_code = true

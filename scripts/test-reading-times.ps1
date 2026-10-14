@@ -2,7 +2,6 @@ $ErrorActionPreference = 'Stop'
 $repo = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $model = Get-Content -LiteralPath (Join-Path $repo 'data\preview_synthetic.toml') -Raw
 $fixtures = @(
-    @{ Id = 'reading-model-based-estimates'; Path = 'content\preview-synthetic\insights\reading-model-based-estimates.md' },
     @{ Id = 'household-averages'; Path = 'content\preview-synthetic\insights\what-household-averages-can-hide.md' }
 )
 

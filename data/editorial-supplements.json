@@ -1,0 +1,96 @@
+{
+  "papers": [
+    {
+      "id": "household-demand-leisure",
+      "source": "paper_jmp.md",
+      "pdf": "/files/papers/household-demand-leisure.pdf",
+      "symbols": "<dl><dt>$I,J\\in\\{H,W\\}$</dt><dd>Spouse indices; H = husband/father, W = wife/mother; J is the other spouse. $n$ = number of children.</dd><dt>$l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I$</dt><dd>Own leisure, childcare time, full leisure, reported/adjusted PSID care and calibration constant, all in hours per week. $h_I$ = weekly market hours. $L_I=l_I+(1-\\theta_I)t_I$ under the linear process-benefit specification.</dd><dt>$w_I,w_I^*,\\theta_I$</dt><dd>Market wage and productive shadow price in dollars per hour; $w_I^*=\\theta_Iw_I$. The dimensionless productive share $\\theta_I$ is estimated; a hat denotes its estimate.</dd><dt>$m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R$</dt><dd>Observed/latent purchased care, own/children’s consumption, time/monetary/full child cost and full/remaining expenditure, in dollars per week. $e_M=c_K$, $e=e_T+e_M$, $Y_R=Y-e_T-e_M$. The estimation rescales expenditure in thousands of dollars as documented in the manuscript.</dd><dt>$U_I,g,F_I,F_I^{-1},\\varphi_I$</dt><dd>Preferences; minimum purchased childcare given parental hours; full-leisure demand and its local inverse in remaining expenditure; linear process-benefit function. $g$ is measured in dollars per week.</dd><dt>$\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I$</dt><dd>Stage-1 coefficients, control vectors and errors. Controls contain a constant, spouses’ ages and education, child number and an indicator for a child under three. Errors $(u,v_W,v_H)$ are jointly normal, mean zero, unrestricted covariance. Starred coefficients define the theoretical cost function; observed covariates and errors replace them in the estimated equations.</dd><dt>$a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I$</dt><dd>Stage-2 coefficients, controls and full-leisure errors; the coefficient $e_I$ is distinct from a child cost $e_T$ or $e_M$. Controls contain a constant, spouses’ ages and education. Errors have zero mean and unrestricted covariance across spouses.</dd><dt>$\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)$</dt><dd>Monetary-cost coefficients; $\\delta(n)=\\mathbf{1}\\{n>0\\}$ is the parent indicator in the demographic-shift equations, not the square-root factor $\\sqrt n$ in monetary cost. Primed coefficients multiply this indicator.</dd></dl>",
+      "references": {
+        "Table 1": 25,
+        "Table 2": 26,
+        "Table 4": 34,
+        "Table 5": 38,
+        "Table 6": 40,
+        "Table A.1": 53,
+        "Table A.2": 54,
+        "Table A.3": 55
+      },
+      "replacements": [
+        {
+          "before": "- own leisure $l_I$,\n- childcare time $t_I$,\n- own consumption $c_I$,\n- children's consumption $c_K$.",
+          "after": "<div class=\"model-objects\">\n\n- own leisure $l_I$,\n- childcare time $t_I$,\n- own consumption $c_I$,\n- children's consumption $c_K$.\n\n</div>"
+        },
+        {
+          "before": "With $\\varphi_I$ linear (Assumption A.1)",
+          "after": "\n\n$$\n\\begin{aligned}L_I&=l_I+(1-\\theta_I)t_I,\\\\ e_T&=\\theta_Hw_Ht_H+\\theta_Ww_Wt_W+m,\\\\ e_M&=c_K,\\\\ e&=e_M+e_T.\\end{aligned}\n$$\n\nWith $\\varphi_I$ linear (Assumption A.1)"
+        },
+        {
+          "before": "**Step 2: the monetary cost (Proposition 6).**",
+          "after": "\n\n<figure class=\"source-slide\"><a href=\"/img/research/identification/slide-10.svg\" target=\"_blank\" rel=\"noopener\" aria-label=\"Enlarge identification figure: Step 1: identification of the time cost of children. Original EEA slide 10, August 17, 2026.\"><img src=\"/img/research/identification/slide-10.svg\" alt=\"Step 1: identification of the time cost of children. Original EEA slide 10, August 17, 2026.\" loading=\"lazy\"></a><figcaption>Step 1: identification of the time cost of children. Original EEA slide 10, August 17, 2026. <a href=\"/img/research/identification/slide-10.svg\" target=\"_blank\" rel=\"noopener\">Open larger figure</a></figcaption></figure>\n\nThe slide uses $\\omega_I$ for the wage $w_I$, and $c_T,c_M$ for $e_T,e_M$.\n\n**Step 2: the monetary cost (Proposition 6).**"
+        },
+        {
+          "before": "identification rests instead on the curvature of $\\partial F_I / \\partial Y_R$.",
+          "after": "identification rests instead on the curvature of $\\partial F_I / \\partial Y_R$.\n\n<figure class=\"source-slide\"><a href=\"/img/research/identification/slide-11.svg\" target=\"_blank\" rel=\"noopener\" aria-label=\"Enlarge identification figure: Step 2: identification of the monetary cost of children. Original EEA slide 11, August 17, 2026.\"><img src=\"/img/research/identification/slide-11.svg\" alt=\"Step 2: identification of the monetary cost of children. Original EEA slide 11, August 17, 2026.\" loading=\"lazy\"></a><figcaption>Step 2: identification of the monetary cost of children. Original EEA slide 11, August 17, 2026. <a href=\"/img/research/identification/slide-11.svg\" target=\"_blank\" rel=\"noopener\">Open larger figure</a></figcaption></figure>\n\nThe slide uses $\\omega_I$ for the wage $w_I$, and $c_T,c_M$ for $e_T,e_M$. The utility-profit terms $\\pi_H,\\pi_W$ in this general-model diagram are zero under the linear process-benefit specification used for estimation.\n\n"
+        },
+        {
+          "before": "- The errors are jointly normal, and $\\theta_W, \\theta_H$ are estimated as free parameters.",
+          "after": "- The errors are jointly normal, and $\\theta_W, \\theta_H$ are estimated as free parameters.\n\n$$\n\\begin{aligned}\nt_H&=\\beta_H z^{T,H}+\\frac{\\gamma_H}{\\sqrt{\\theta_H w_H}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_W w_W}{\\theta_H w_H}}+v_H,\\\\[.4em]\nt_W&=\\beta_W z^{T,W}+\\frac{\\gamma_W}{\\sqrt{\\theta_W w_W}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_H w_H}{\\theta_W w_W}}+v_W,\\\\[.4em]\nm^*&=\\alpha z^T+\\gamma_W\\sqrt{\\theta_W w_W}+\\gamma_H\\sqrt{\\theta_H w_H}+u,\\\\\nm&=\\begin{cases}m^*,&m^*\\ge0,\\\\0,&m^*<0.\\end{cases}\n\\end{aligned}\n$$\n\nThe estimated system is equations (9)–(12), manuscript PDF page 29; the two time equations are uncensored and purchased care is Tobit-censored. The theoretical corner switches shadow prices by a common multiplier, but this regime switch is omitted from the time equations in estimation (PDF page 32). [View equations and estimation discussion](/research/household-demand-leisure/sources/#pdf-page-29).\n"
+        },
+        {
+          "before": "- Instruments are the stage-1 predicted time cost and, for full expenditure, non-labor income and its square.",
+          "after": "- Instruments are the stage-1 predicted time cost and, for full expenditure, non-labor income and its square.\n\n**Without SAT — preference stability (equations 15–16).**\n\n$$\n\\begin{aligned}\nL_H&=a_Hz^{L,H}+b_Hw_H+c_Hw_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_Wz^{L,W}+b_Ww_W+c_Ww_H+d_WY_R+e_WY_R^2+\\varepsilon_W.\n\\end{aligned}\n$$\n\n**With SAT — Similarity Across Types (equations 17–18).** SAT leaves the slope of each full-leisure Engel curve invariant across parental status while permitting demographic level shifts. This is A.2′ in the October 4 manuscript, not an acronym inferred from an earlier version.\n\n$$\n\\begin{aligned}\nL_H&=a_H(n)z^{L,H}+b_H(n)w_H+c_H(n)w_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_W(n)z^{L,W}+b_W(n)w_W+c_W(n)w_H+d_WY_R+e_WY_R^2+\\varepsilon_W,\\\\[.4em]\na_I(n)&=a_I+a'_I\\delta(n),\\quad b_I(n)=b_I+b'_I\\delta(n),\\\\\nc_I(n)&=c_I+c'_I\\delta(n),\\quad\\delta(n)=\\mathbf{1}\\{n>0\\},\\\\[.4em]\nY_R&=Y-e_T-e_M,\\\\\ne_M&=\\log\\!\\left(1+\\exp(\\kappa_0+\\kappa_Hw_H+\\kappa_Ww_W+\\kappa_YY)\\right)\\sqrt n.\n\\end{aligned}\n$$\n\n[View Stage 2 specifications](/research/household-demand-leisure/sources/#pdf-page-30).\n"
+        },
+        {
+          "before": "- Parental childcare is valued at about 30–50% of the wage.",
+          "after": "- Parental childcare is valued at about 30–50% of the wage.\n\n[View exclusion tests and median-wage uncertainty, PDF page 39](/research/household-demand-leisure/sources/#pdf-page-39)."
+        }
+      ]
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "source": "paper_solo.md",
+      "pdf": "/files/papers/children-costs-one-adult-household.pdf",
+      "symbols": "<dl><dt>$i\\in\\{f,m\\}$</dt><dd>Adult sex index; f = woman, m = man. Demand systems are estimated separately by sex.</dd><dt>$\\omega_i,y_i,p_i$</dt><dd>Adult clothing budget share; weekly nondurable expenditure in 1987 pounds; relative clothing price (index).</dd><dt>$\\varphi_i,\\pi_i,g$</dt><dd>Dimensionless adult resource share, Barten price scale, and childless clothing-demand function. Children receive $1-\\varphi_i$.</dd><dt>$z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i$</dt><dd>Demand/sharing covariates, vector of child characteristics, and number of children. Demand controls include a constant, education, age and its square, participation, ownership, decades and region; sharing controls exclude decades.</dd><dt>$\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i$</dt><dd>Clothing-demand coefficients and residual; $\\psi_i$ is the logistic index; $\\theta_z,\\theta_y,\\theta_p,\\theta_n$ are sharing-rule coefficients. $\\kappa_i$ is the scale coefficient; $\\rho$ the family-size exponent in the alternative restriction.</dd><dt>$D_i,A_i$</dt><dd>Parent indicator and its nonlinear adjustment in the unified estimating equation; $D_i=1$ for a parent and zero otherwise.</dd></dl>",
+      "references": {
+        "Table 1": 12,
+        "Table 2": 14,
+        "Table 3": 16,
+        "Table 4": 18,
+        "Table 5": 19,
+        "Table 12": 36,
+        "Table 13": 37,
+        "Figure 1": 17,
+        "Figure 8": 39
+      },
+      "replacements": [
+        {
+          "before": "Estimation is by nonlinear iterated",
+          "after": "\n\n**Parent demand (equation 15).**\n\n$$\n\\frac{\\omega_i}{\\varphi_i}=\\alpha_i z_i^\\omega+\\beta_i\\ln\\!\\frac{p_i}{\\pi_i}+\\gamma_i\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}+\\eta_i\\left(\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}\\right)^2+\\epsilon_i.\n$$\n\n**Sharing rule (equation 16) and alternative family-size restriction (17).**\n\n$$\n\\begin{aligned}\\varphi_i&=\\frac{\\exp(\\psi_i)}{1+\\exp(\\psi_i)},\\\\\\psi_i&=(z_i^\\varphi)'\\theta_z+\\theta_y\\ln y_i+\\theta_p\\ln p_i+\\boldsymbol n_i'\\theta_n,\\\\\\varphi_i^{\\mathrm{alt}}&=\\frac{\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}{1+\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}\\,n^{-\\rho}.\\end{aligned}\n$$\n\n**Economies of scale (equation 18).**\n\n$$\n\\pi_i(p,y,n)=\\kappa_i\\ln(y_i)\\sqrt{n_i}.\n$$\n\n**Unified estimating equation (19).**\n\n$$\n\\begin{aligned}\\omega_i&=\\alpha_i z_i^\\omega+\\beta_i\\ln p_i+\\gamma_i\\ln y_i+\\eta_i(\\ln y_i)^2+D_iA_i+\\epsilon_i,\\\\A_i&=\\beta_i\\ln\\!\\frac1{\\pi_i}+\\ln\\!\\frac{\\varphi_i}{\\pi_i}\\left[\\gamma_i+\\eta_i\\ln\\!\\frac{y_i^2\\varphi_i}{\\pi_i}\\right]-\\omega_i\\frac{1-\\varphi_i}{\\varphi_i}.\\end{aligned}\n$$\n\n[View specifications, PDF pages 10–13](/research/children-costs-one-adult-household/sources/#pdf-page-11).\n\nEstimation is by nonlinear iterated"
+        }
+      ]
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "source": "paper_2.md",
+      "pdf": "/files/papers/children-labor-supply-equations.pdf",
+      "symbols": "<dl><dt>$h,w,y,n,\\delta(n)$</dt><dd>Annual market hours (thousands), hourly wage in dollars, annual net expenditure in thousands of dollars, number of children, and $\\delta(n)=\\sqrt n$ with $\\delta(0)=0$ and $\\delta(1)=1$.</dd><dt>$t,k,c,m,T_c,f,\\lambda,u_f,u_c$</dt><dd>Childcare hours, purchased care, own and children’s consumption, required care, childcare technology, altruism weight, and mother’s/child’s preferences.</dd><dt>$e_t,e_m,e,a_t,a_m,a,b_t,b_m$</dt><dd>Time, monetary and composite child costs; fixed cost components with $a=a_t+a_m$; childcare time per child (thousands of hours); dimensionless marginal share of nonlabor income spent on children.</dd><dt>$F,F'_1,F'_2$</dt><dd>Childless labor-supply function and wage/resource derivatives; preference stability keeps this reference behavior across parental status.</dd><dt>$\\alpha_0,\\ldots,\\alpha_5,z^h$</dt><dd>Baseline coefficients; hours controls contain a constant, age, age squared, Black and Hispanic indicators. Starred coefficients are the translated linear specification.</dd><dt>$z^w,z^y,\\beta_w,\\beta_y,\\sigma_\\nu,\\sigma_\\mu,\\nu,\\mu$</dt><dd>Wage/resource controls and coefficients, error scales, and standardized errors. Wage controls add education; resource instruments add asset, welfare, transfer and other incomes and their squares.</dd><dt>$u,\\rho_\\mu,\\rho_\\nu,\\sigma_\\epsilon,\\epsilon,\\widehat\\mu,h_0,w_0$</dt><dd>Hours disturbance and control-function coefficients; standardized hours error; estimated resource residual; deterministic hours/wage components. $\\nu$ and $\\epsilon$ are normally distributed; the hat indicates an estimate.</dd></dl><p>$q$ denotes remaining resources after child costs in the quadratic specification.</p>",
+      "references": {
+        "Table 1": 14,
+        "Table 2": 20,
+        "Table 3": 21,
+        "Table 4": 23,
+        "Table 5": 24
+      },
+      "replacements": [
+        {
+          "before": "&(19)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2\\big[y - a\\,\\delta(n) - b_t\\,\\delta(n)\\,w - b_m\\,\\delta(n)\\,y\\big] - b_t\\,\\delta(n) + u \\quad \\text{(linear baseline)}",
+          "after": "&(19)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2\\big[y - a\\,\\delta(n) - b_t\\,\\delta(n)\\,w\\\\\n&\\qquad{}- b_m\\,\\delta(n)\\,y\\big] - b_t\\,\\delta(n) + u \\quad \\text{(linear baseline)}"
+        },
+        {
+          "before": "**Symbols, units and indices.**",
+          "after": "\n\n**Quadratic specification translated by children, with control functions and participation (equations 16–18, 22–25).** The linear baseline (19) above is the nested special case.\n\n$$\n\\begin{aligned}\nq&=y-a\\delta(n)-b_t\\delta(n)w-b_m\\delta(n)y,\\\\\nh_0(w)&=\\alpha_0 z^h+\\alpha_1w+\\alpha_2q+\\alpha_3w^2+\\alpha_4q^2+\\alpha_5qw-b_t\\delta(n),\\\\\nw_0&=\\beta_w z^w,\\qquad w=w_0+\\sigma_\\nu\\nu,\\\\\ny&=\\beta_y z^y+\\sigma_\\mu\\mu,\\\\\nu&=\\rho_\\mu\\widehat\\mu+\\rho_\\nu\\nu+\\sigma_\\epsilon\\epsilon,\\\\\nh&=\\begin{cases}\nh_0(w)+\\rho_\\mu\\widehat\\mu+\\rho_\\nu(w-w_0)/\\sigma_\\nu+\\sigma_\\epsilon\\epsilon,&\\text{if this expression is positive},\\\\\n0,&\\text{otherwise}.\n\\end{cases}\n\\end{aligned}\n$$\n\nHere $q$ is shorthand for the translated resource argument, not a separately observed quantity. Working women contribute the hours density; non-participants contribute the probability of zero hours integrated over their latent wage. [View estimated specification and participation](/research/children-labor-supply-equations/sources/#pdf-page-17).\n**Symbols, units and indices.**"
+        }
+      ]
+    }
+  ]
+}

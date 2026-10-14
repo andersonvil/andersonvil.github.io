@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% import "macros/contextual-return.html" as contextual_return %}
 {% block title %}Insights | Anderson Vil{% endblock title %}
-{% block description %}Synthetic previews of future research explainers, methods notes, and teaching notes.{% endblock description %}
+{% block description %}Economic methods and teaching notes, including Qu’est-ce qu’un modèle ? by Anderson Vil.{% endblock description %}
 {% block content %}
 {% set preview = load_data(path="data/preview_synthetic.toml") %}
 {{ contextual_return::host() }}
-<header class="page-hero shell"><p class="eyebrow">Insights</p><h1>Notes on economic methods and teaching</h1><p class="lede">Methods Notes and Teaching Notes will translate methods, evidence, and teaching choices for a wider audience. The two pages below are functional synthetic demonstrations: they are not authored by Anderson Vil and do not present his research as published work.</p><p class="preview-label compact">{{ preview.label }}</p></header>
+<header class="page-hero shell"><p class="eyebrow">Insights</p><h1>Notes on economic methods and teaching</h1><p class="lede">Notes on economic methods and teaching. “Qu’est-ce qu’un modèle ?” examines what a model is; the Teaching Note remains a preview demonstration.</p></header>
 <section class="shell filter-section">
   <div class="insight-grid large">
-  {% for insight in preview.insights %}<article class="insight-card" data-synthetic="true"><p class="eyebrow">{% if insight.category == "Methods Note" %}Methods Notes{% else %}Teaching Notes{% endif %}</p><p class="meta">{{ insight.date }} · {{ insight.reading_minutes }} min read</p><h2><a href="{{ insight.url }}">{{ insight.title }}</a></h2><p>{{ insight.summary }}</p><p class="preview-label compact">Synthetic demonstration · not a publication</p></article>{% endfor %}
+  <article class="insight-card" data-real="true"><p class="eyebrow">Methods Note</p><p class="meta">French · 8 min read</p><h2 lang="fr"><a href="/insights/quest-ce-quun-modele/">Qu’est-ce qu’un modèle ?</a></h2><p>A note by Anderson Vil on models, assumptions, information, and prediction.</p><a class="text-link" href="/insights/quest-ce-quun-modele/">Read the note</a></article>
+  {% for insight in preview.insights %}{% if insight.category == "Teaching Note" %}<article class="insight-card" data-synthetic="true"><p class="eyebrow">{% if insight.category == "Methods Note" %}Methods Notes{% else %}Teaching Notes{% endif %}</p><p class="meta">{{ insight.date }} · {{ insight.reading_minutes }} min read</p><h2><a href="{{ insight.url }}">{{ insight.title }}</a></h2><p>{{ insight.summary }}</p><p class="preview-label compact">Synthetic demonstration · not a publication</p></article>{% endif %}{% endfor %}
   </div>
 </section>
 {% endblock content %}

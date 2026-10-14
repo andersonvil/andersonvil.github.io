@@ -54,7 +54,7 @@ short_title = "The Household Demand for Leisure and the Full Cost of Children"
 authors = ["Olivier Donni", "Anderson Vil"]
 author_line = "Olivier Donni and Anderson Vil"
 card_author_line = "with Olivier Donni"
-version = "September 18, 2026"
+version = "October 4, 2026"
 series = "PSE Working Paper No. 2025-38"
 job_market = true
 publicationStatus = "blocked"
@@ -76,7 +76,7 @@ slides_bytes = 634638
 slides_real = true
 slides_provisional = true
 slides_publicationStatus = "blocked"
-description = "A structural model that estimates the productive value of parental childcare time rather than assuming that it equals the market wage."
+description = "A structural model that estimates the productive value of parental childcare time, rather than equating it with the market wage, and uses that value to compute the full cost of children."
 abstract = "We propose a novel approach to estimating the full cost of children — the sum of monetary and time costs — by endogenizing the price of parental time rather than assuming it is equal to the parents’ wage rate. In this approach, the price of time depends on how parents perceive their time with children, whether as a leisure-like activity or more as a labor-like activity. We then develop a simplified collective model of leisure demand for working couples, incorporating individual preferences and childcare technology, and estimate it using 2019 PSID data. This allows us to recover the price of parental time and the full cost of children. We find that mothers perceive 44% of their childcare time as labor, compared to 35% for fathers. Our results also highlight that a substantial portion of the full cost of children is non-monetary."
 question = "How should parental childcare time be valued when it is partly productive and partly experienced as leisure?"
 contribution = "The paper first defines and estimates the productive price of parental childcare time from substitution between parental care and purchased childcare, then connects that price to the monetary and time components of child costs to compute the full cost of children."
@@ -93,8 +93,8 @@ data_table_rows = [
   ["Childcare expenditure, $/week", "0.00 (0.00)", "99.91 (127.46)"],
   ["Number of children", "0.00 (0.00)", "1.56 (0.50)"],
   ["Child under 3", "0.00 (0.00)", "0.74 (0.44)"],
-  ["Father leisure, hours/week", "77.03 (12.28)", "66.46 (22.32)"],
-  ["Mother leisure, hours/week", "82.49 (12.30)", "67.19 (28.62)"],
+  ["Father leisure, hours/week", "125.33 (12.28)", "114.76 (22.32)"],
+  ["Mother leisure, hours/week", "130.79 (12.30)", "115.49 (28.62)"],
   ["Father wage, $/hour", "30.71 (44.51)", "31.97 (25.89)"],
   ["Mother wage, $/hour", "24.36 (16.36)", "29.48 (26.25)"],
   ["Full expenditure, $000", "5.52 (4.15)", "6.31 (4.25)"],

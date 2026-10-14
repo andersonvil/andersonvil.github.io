@@ -1,0 +1,19 @@
+{
+  "local_links_and_assets": 1409,
+  "html_pages": 59,
+  "broken": [],
+  "teaching_python_scripts_syntax": 3,
+  "notebooks_structure_and_python_syntax": [
+    "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-01\\td01-indice-prix.ipynb",
+    "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-02\\td02-chomage.ipynb",
+    "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-03\\td03-nettoyage.ipynb",
+    "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-04\\td04-fusion.ipynb",
+    "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-05\\td05-distribution.ipynb",
+    "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\seance01_python.ipynb",
+    "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\seance01_R.ipynb",
+    "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\td01_python.ipynb",
+    "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\td01_R.ipynb"
+  ],
+  "preserved_abstracts": 3,
+  "canonical_pdf_hashes": 3
+}

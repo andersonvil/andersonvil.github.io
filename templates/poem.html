@@ -7,9 +7,9 @@
 {% set audio_config = load_data(path="data/poetry_audio.toml") %}
 {% for poem in beyond.poems %}{% if poem.id == page.extra.work_id %}
 <div class="shell detail-navigation">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}<div class="breadcrumb"><a href="/beyond-economics/">Beyond Economics</a><span aria-hidden="true">/</span><span>{{ poem.title }}</span></div></div>
-<article class="beyond-reading poem-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
+<article class="beyond-reading poem-page shell" data-real="true" data-provisional="false" data-publication-status="author-rights-confirmed">
   <header>
-    <p class="preview-label">Real work · provisional private preview · publication blocked</p>
+
     <p class="eyebrow">Poetry</p>
     <h1 lang="fr">{{ poem.title }}</h1>
     <p class="byline">By Anderson Vil · {{ poem.language }} · {{ poem.date }} · {{ poem.reading_minutes }} min read</p>

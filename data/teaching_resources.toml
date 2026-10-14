@@ -10,8 +10,8 @@ institution = "CY Cergy Paris Université"
 institution_id = "cy"
 role = "Tutorial"
 level = "Undergraduate (L3)"
-academic_year = "Academic year to confirm"
-year_note = "The source folder is labelled 2026–27, but the PDFs do not state an academic year."
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 language = "French"
 language_label = "French-language material"
 resource_type = "Exercise sheets"
@@ -66,9 +66,9 @@ title = "Econometrics — M1"
 institution = "CY Cergy Paris Université"
 institution_id = "cy"
 role = "Tutorial"
-level = "Master's Year 1 (M1)"
-academic_year = "Academic year to confirm"
-year_note = "The source folder is labelled 2026–27, while the filename contains 2025; the document itself is undated."
+level = "Graduate (M1)"
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 language = "English"
 language_label = "English-language material"
 resource_type = "Exercise collection"
@@ -88,9 +88,9 @@ title = "Econometrics — M2 & PhD"
 institution = "CY Cergy Paris Université"
 institution_id = "cy"
 role = "Tutorial"
-level = "Master's Year 2 and PhD"
-academic_year = "Academic year to confirm"
-year_note = "The source folder is labelled 2026–27, while the filename states 2025–26; no year appears in the document body."
+level = "Graduate (M2 & PhD)"
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 language = "English"
 language_label = "English-language material"
 resource_type = "Exercise collection"
@@ -110,9 +110,9 @@ title = "Microeconomics — Undergraduate (L1)"
 institution = "Sciences Po Saint-Germain-en-Laye"
 institution_id = "sciences-po"
 role = "Lecture"
-level = "Undergraduate (first year)"
-academic_year = "2026–2027"
-year_note = "Confirmed on the document title slide."
+level = "Undergraduate (L1)"
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 language = "French"
 language_label = "French-language material"
 resource_type = "Course slides"
@@ -131,12 +131,12 @@ id = "microeconomics-iii-niort"
 title = "Microeconomics III — Undergraduate (L3), Niort"
 institution = "Université Catholique de l’Ouest"
 institution_id = "uco"
-role = "Lecture"
+role = "Lecture & Tutorial"
 source_institution = "CY Cergy Paris Université / THEMA (as printed in the supplied slides)"
 location = "Niort"
-level = "Licence 3 — Economics"
-academic_year = "2026–2027"
-year_note = "Confirmed on both title slides. The Niort folder location conflicts with the printed CY Cergy Paris Université / THEMA affiliation and the existing Université Catholique de l’Ouest role; institutional wording must be confirmed before publication."
+level = "Undergraduate (L3)"
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 institutionalWordingToConfirm = true
 language = "French"
 language_label = "French-language material"
@@ -171,15 +171,15 @@ id = "econometrics-niort"
 title = "Econometrics — Session 1"
 institution = "Université Catholique de l’Ouest"
 institution_id = "uco"
-role = "Lecture"
+role = "Lecture & Tutorial"
 location = "Niort"
-level = "Undergraduate"
-academic_year = "2026–2027"
-year_note = "Confirmed by the source-folder year and the current CV; publication wording remains provisional."
+level = "Undergraduate (L3)"
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 language = "French"
 language_label = "French-language material"
 resource_type = "Course, exercises, code, data, and notebooks"
-summary = "A multilingual introduction to covariance, correlation, simple regression, and empirical workflows in Python, R, and Stata, with seven Wooldridge datasets."
+summary = "An introduction to covariance, correlation, simple regression, and empirical workflows in Python, R, and Stata, with seven Wooldridge datasets."
 topics = ["Covariance and correlation", "Simple regression", "Data loading", "Descriptive statistics", "Python", "R", "Stata"]
 url = "/teaching/econometrics-niort/"
 [[groups.resources]]
@@ -221,55 +221,85 @@ institution = "CY Cergy Paris Université"
 institution_id = "cy"
 role = "Tutorial"
 level = "Undergraduate (L3)"
-academic_year = "2026–2027"
-year_note = "Confirmed by the source-folder year and the current CV; distribution rights remain provisional."
+academic_year = "2026/2027"
+year_note = "Course year 2026/2027 confirmed by the author in the final revision prompt. Historical dates inside the original documents are preserved."
 language = "French"
 language_label = "French-language material"
 resource_type = "Exercises, notebooks, and data"
-summary = "Three applied sessions on consumer-price indices, unemployment microdata, and wage-data cleaning, with documented external data sources."
+summary = "Five applied sessions on price indices, unemployment, data cleaning, dataset merges, and income distributions, with source data and reproducible Python notebooks."
 topics = ["Eurostat HICP", "INSEE Labour Force Survey", "Data cleaning", "Missing values", "Pandas", "Parquet", "Reproducible notebooks"]
 url = "/teaching/data-analysis-l3/"
 [[groups.resources]]
-label = "TD 1 — Price indices: instructions"
+label = "TD01 — Price indices: instructions"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf"
 format = "PDF"
 pages = 2
 bytes = 100840
 [[groups.resources]]
-label = "TD 1 — Price indices: notebook"
+label = "TD01 — Price indices: notebook"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-indice-prix.ipynb"
 format = "Jupyter notebook"
 bytes = 7918
 [[groups.resources]]
-label = "TD 2 — Unemployment: instructions"
+label = "TD02 — Unemployment: instructions"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-enonce.pdf"
 format = "PDF"
 pages = 1
 bytes = 58736
 [[groups.resources]]
-label = "TD 2 — Unemployment: notebook"
+label = "TD02 — Unemployment: notebook"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-chomage.ipynb"
 format = "Jupyter notebook"
 bytes = 9262
 [[groups.resources]]
-label = "TD 3 — Wage data: instructions"
+label = "TD03 — Wage data: instructions"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-enonce.pdf"
 format = "PDF"
 pages = 1
 bytes = 49359
 [[groups.resources]]
-label = "TD 3 — Wage data: notebook"
+label = "TD03 — Wage data: notebook"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-nettoyage.ipynb"
 format = "Jupyter notebook"
 bytes = 8873
 [[groups.resources]]
-label = "TD 3 — Wage data: CSV"
+label = "TD03 — Wage data: CSV"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-salaires.csv"
 format = "CSV"
 bytes = 395328
 [[groups.resources]]
-label = "TD 3 — Wage data: dictionary"
+label = "TD03 — Wage data: dictionary"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-dictionnaire.pdf"
 format = "PDF"
 pages = 4
 bytes = 97899
+
+[[groups.resources]]
+label = "TD04 — Dataset merges: instructions"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-enonce.pdf"
+format = "PDF"
+bytes = 52774
+
+[[groups.resources]]
+label = "TD04 — Dataset merges: notebook"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-fusion.ipynb"
+format = "Jupyter notebook"
+bytes = 6933
+
+[[groups.resources]]
+label = "TD04 — Presentation slides"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04_presentation.pdf"
+format = "PDF"
+bytes = 1050671
+
+[[groups.resources]]
+label = "TD05 — Income distributions: notebook"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-distribution.ipynb"
+format = "Jupyter notebook"
+bytes = 6865
+
+[[groups.resources]]
+label = "TD05 — Income distributions: instructions"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-enonce.pdf"
+format = "PDF"
+bytes = 58393

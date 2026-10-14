@@ -1,7 +1,7 @@
 +++
 title = "How to Incorporate Children into Labor Supply Equations?"
 path = "research/children-labor-supply-equations"
-template = "paper-v7.html"
+template = "paper-final.html"
 
 [extra]
 paper_id = "children-labor-supply-equations"

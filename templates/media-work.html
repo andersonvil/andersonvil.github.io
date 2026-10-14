@@ -5,8 +5,8 @@
 {% block content %}
 {% set beyond = load_data(path="data/beyond_economics.toml") %}{% set media = beyond.media %}
 <div class="shell detail-navigation">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}<div class="breadcrumb"><a href="/beyond-economics/">Beyond Economics</a><span aria-hidden="true">/</span><span>{{ media.title }}</span></div></div>
-<article class="beyond-reading media-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
-  <header><p class="preview-label">Real media · provisional private preview · republication permission pending</p><p class="eyebrow">Conversations</p><h1>{{ media.title }}</h1><p class="lede">A French-language excerpt about three books that connect philosophy, love, rupture, exile, and money.</p><p class="byline">French · {{ media.duration }}</p></header>
+<article class="beyond-reading media-page shell" data-real="true" data-provisional="false" data-publication-status="author-rights-confirmed">
+  <header><p class="eyebrow">Conversations</p><h1>{{ media.title }}</h1><p class="lede">A French-language excerpt about three books that connect philosophy, love, rupture, exile, and money.</p><p class="byline">French · {{ media.duration }}</p></header>
   <figure class="audio-feature"><img src="{{ media.poster }}" alt="Black-and-white portrait of Anderson Vil used in the podcast excerpt" width="960" height="540"><figcaption><audio controls preload="metadata"><source src="{{ media.audio }}" type="audio/mp4">Your browser does not support the audio element. <a href="{{ media.audio }}">Open the audio file</a>.</audio><p>No autoplay. Native controls include play, pause, mute, and volume.</p></figcaption></figure>
   <section class="transcript" aria-labelledby="transcript-title"><p class="preview-label">{{ media.transcript_status }}</p><h2 id="transcript-title">Machine-generated transcript</h2><p class="status-note">This French transcript was generated locally and has not been reviewed by Anderson Vil. Uncertain names and phrases are marked rather than silently inferred.</p>
     <div lang="fr" class="transcript-text">
@@ -19,6 +19,6 @@
       <p>Certains objecteront, peut-être à juste titre, qu’il n’y a pas que l’amour dans la vie&nbsp;: il y a l’argent aussi. Ma troisième lecture serait <cite>Philosophie de l’argent</cite>, de Georg Simmel, philosophe et sociologue allemand. Dans ce livre, l’auteur appréhende l’argent comme un fait social total. Ce travail s’inscrit à la croisée des travaux de Karl Marx et de Max Weber. Voilà mes trois suggestions.</p>
     </div>
   </section>
-  <footer class="article-footer"><p><strong>Publication status:</strong> blocked until Anderson Vil confirms republication permission and reviews the transcript.</p>{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}</footer>
+  <footer class="article-footer"><p><strong>Rights:</strong> confirmed by Anderson Vil. The machine-generated transcript still awaits his review.</p>{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}</footer>
 </article>
 {% endblock content %}

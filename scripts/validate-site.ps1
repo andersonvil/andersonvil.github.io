@@ -93,7 +93,7 @@ foreach ($forbidden in @('about\index.html', 'job-market\index.html', 'fr\_index
 
 $htmlFiles = Get-ChildItem -LiteralPath $root -Recurse -Filter *.html -File | Where-Object { $_.Name -notlike 'google*.html' }
 foreach ($file in $htmlFiles) {
-    $html = Get-Content -Encoding UTF8 -LiteralPath $file.FullName -Raw
+    $html = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath $file.FullName -Raw))
     if ($html -notmatch 'name=(?:"robots"|robots)' -or $html -notmatch 'noindex,\s*nofollow') {
         $failures.Add("Noindex metadata missing: $($file.FullName.Substring($root.Length + 1))")
     }
@@ -114,8 +114,8 @@ foreach ($file in $htmlFiles) {
     }
 }
 
-$homeHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'index.html') -Raw
-$menuPattern = 'Home.*Research.*CV.*Teaching.*Code (?:&amp;|&) Data.*Insights.*Beyond Economics.*Contact'
+$homeHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'index.html') -Raw))
+$menuPattern = '(?s)Home.*Research.*CV.*Teaching.*Code (?:&amp;|&) Data.*Insights.*Beyond Economics.*Contact'
 if ($homeHtml -notmatch $menuPattern) { $failures.Add('The primary navigation does not contain the exact eight entries in order.') }
 
 $activePages = @{
@@ -123,21 +123,21 @@ $activePages = @{
     'research\index.html' = '/research/'
     'research\household-demand-leisure\index.html' = '/research/'
     'teaching\applied-economics-lab\index.html' = '/teaching/'
-    'insights\reading-model-based-estimates\index.html' = '/insights/'
+    'insights\quest-ce-quun-modele\index.html' = '/insights/'
     'beyond-economics\calligraphie-de-bonheur\index.html' = '/beyond-economics/'
     'beyond-economics\ma-cherie\index.html' = '/beyond-economics/'
     'beyond-economics\on-reading-preferences\index.html' = '/beyond-economics/'
     'contact\index.html' = '/contact/'
 }
 foreach ($entry in $activePages.GetEnumerator()) {
-    $html = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $entry.Key) -Raw
+    $html = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $entry.Key) -Raw))
     $escaped = [regex]::Escape($entry.Value)
-    if ($html -notmatch "aria-current=(?:`"page`"|page)[^>]+href=(?:`"$escaped`"|$escaped)") {
+    if ($html -notmatch "aria-current=(?:`"page`"|page)[^>]+href=(?:`"$escaped`"|$escaped)" -and $html -notmatch "href=(?:`"$escaped`"|$escaped)[^>]+aria-current=(?:`"page`"|page)") {
         $failures.Add("Active navigation state missing in $($entry.Key) for $($entry.Value)")
     }
 }
 
-$researchHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\index.html') -Raw
+$researchHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\index.html') -Raw))
 if ([regex]::Matches($researchHtml, 'class=(?:"abstract-toggle"|abstract-toggle)', 'IgnoreCase').Count -ne 3) { $failures.Add('Research must expose three abstract disclosures.') }
 if ($researchHtml -notmatch 'aria-expanded=(?:"false"|false)' -or $researchHtml -notmatch 'aria-controls=') { $failures.Add('Abstract disclosures are missing required ARIA state.') }
 
@@ -156,7 +156,7 @@ if ($homeHtml -match 'Research program|From observed choices to latent economic 
 if ($homeHtml -match "Je t’écris au fond de mon lit|Il est déjà 2h du matin|J’aurais pu t’écrire") { $failures.Add('Restricted poem text leaked onto Home.') }
 
 foreach ($paperPath in @('research\household-demand-leisure\index.html', 'research\children-costs-one-adult-household\index.html', 'research\children-labor-supply-equations\index.html')) {
-    $paperHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $paperPath) -Raw
+    $paperHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $paperPath) -Raw))
     if ($paperHtml -notmatch 'Real manuscript.*provisional private preview.*publication blocked') { $failures.Add("Real/provisional paper status missing: $paperPath") }
     if ($paperHtml -match 'Download synthetic paper|Synthetic paper preview') { $failures.Add("Synthetic paper label remains: $paperPath") }
     if ($paperHtml -notmatch 'Data (?:&amp;|&) sources' -or $paperHtml -notmatch 'Official provider site') { $failures.Add("Structured data access section missing: $paperPath") }
@@ -167,15 +167,15 @@ foreach ($paperPath in @('research\household-demand-leisure\index.html', 'resear
     if ($paperHtml -match '>Econometrics<') { $failures.Add("Legacy Econometrics label remains: $paperPath") }
     if ($paperHtml -notmatch 'table-source-link' -or $paperHtml -notmatch '#page=') { $failures.Add("Page-targeted manuscript table link missing: $paperPath") }
 }
-$jmpHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\household-demand-leisure\index.html') -Raw
-foreach ($token in @('Download slides', 'Separate identification of time and monetary costs', 'slide-10.svg', 'slide-11.svg', 'tanh', '35.12', '18.97', 'adjusted PSID hours', 'quadratic full-leisure demands')) {
+$jmpHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'research\household-demand-leisure\index.html') -Raw))
+foreach ($token in @('Download slides', 'Prices from substitution with paid care', 'slide-10.svg', 'slide-11.svg', 'tanh', '35.12', '18.97', 'Without SAT', 'With SAT', 'katex-mathml')) {
     if ($jmpHtml -notmatch [regex]::Escape($token)) { $failures.Add("JMP complement content missing: $token") }
 }
 foreach ($forbiddenLabel in @('Proposition 3', 'What variation does the work', 'From the model to estimates')) {
     if ($jmpHtml -match [regex]::Escape($forbiddenLabel)) { $failures.Add("Removed slide-control label remains visible in JMP HTML: $forbiddenLabel") }
 }
 foreach ($nonJmp in @('research\children-costs-one-adult-household\index.html', 'research\children-labor-supply-equations\index.html')) {
-    $nonJmpHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $nonJmp) -Raw
+    $nonJmpHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root $nonJmp) -Raw))
     if ($nonJmpHtml -match 'Download slides') { $failures.Add("Slides CTA must not appear on $nonJmp") }
 }
 $abstractEvidence = @(
@@ -187,18 +187,18 @@ foreach ($evidence in $abstractEvidence) {
     if (-not $homeHtml.Contains($evidence)) { $failures.Add("Exact PDF abstract evidence missing from Home: $evidence") }
     if (-not $researchHtml.Contains($evidence)) { $failures.Add("Exact PDF abstract evidence missing from Research: $evidence") }
 }
-if (-not $researchHtml.Contains('Olivier Donni and Anderson Vil') -or -not $researchHtml.Contains('class=byline>Anderson Vil')) { $failures.Add('Paper author order or sole-author line is missing from Research.') }
+if (-not $researchHtml.Contains('Olivier Donni and Anderson Vil') -or $researchHtml -notmatch 'class=(?:"byline"|byline)>Anderson Vil') { $failures.Add('Paper author order or sole-author line is missing from Research.') }
 
-$teachingHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'teaching\index.html') -Raw
+$teachingHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'teaching\index.html') -Raw))
 foreach ($title in @('Econometrics — L3', 'Econometrics — M1', 'Econometrics — M2 & PhD', 'Microeconomics — Undergraduate \(L1\)', 'Microeconomics III — Undergraduate \(L3\), Niort')) {
     if ($teachingHtml -notmatch $title) { $failures.Add("Teaching group missing: $title") }
 }
-if ($teachingHtml -notmatch 'Academic year to confirm' -or $teachingHtml -notmatch '2026–2027') { $failures.Add('Teaching year conflict is not represented explicitly.') }
+if ($teachingHtml -match 'Academic year to confirm' -or $teachingHtml -notmatch '2026/2027') { $failures.Add('Confirmed Teaching year 2026/2027 is missing.') }
 if ($teachingHtml -notmatch 'Teaching in practice' -or $teachingHtml -notmatch 'teaching-in-practice\.avif' -or $teachingHtml -notmatch 'handheld microphone') { $failures.Add('Teaching microphone photograph block or alt text is missing.') }
-$niortHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'teaching\microeconomics-iii-niort\index.html') -Raw
+$niortHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'teaching\microeconomics-iii-niort\index.html') -Raw))
 if ($niortHtml -notmatch 'institutional wording to confirm' -or $niortHtml -notmatch 'French-language material') { $failures.Add('Niort institutional conflict or language label is missing.') }
 
-$fullPoem = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'beyond-economics\calligraphie-de-bonheur\index.html') -Raw
+$fullPoem = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'beyond-economics\calligraphie-de-bonheur\index.html') -Raw))
 if ([regex]::Matches($fullPoem, 'class=(?:"poem-stanza"|poem-stanza)', 'IgnoreCase').Count -ne 2) { $failures.Add('Calligraphie de bonheur must contain exactly two complete stanzas.') }
 if ([regex]::Matches($fullPoem, 'class=(?:"poem-line"|poem-line)', 'IgnoreCase').Count -ne 9) { $failures.Add('Calligraphie de bonheur must contain exactly nine explicit verse lines.') }
 if ($fullPoem -notmatch 'Anderson, 19/10/2023') { $failures.Add('Calligraphie de bonheur source signature is missing.') }
@@ -210,7 +210,7 @@ $restrictedPoems = @{
     'on-me-l-a-interdit' = @{ Lines = 5; Signature = 'Écrit par Anderson le 22 août 2026 à 4h30 du matin\.' }
 }
 foreach ($slug in $restrictedPoems.Keys) {
-    $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
+    $poemHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw))
     if ([regex]::Matches($poemHtml, 'class=(?:"poem-stanza"|poem-stanza)', 'IgnoreCase').Count -ne 1) { $failures.Add("Restricted poem must contain exactly one stanza: $slug") }
     if ([regex]::Matches($poemHtml, 'class=(?:"poem-line"|poem-line)', 'IgnoreCase').Count -ne $restrictedPoems[$slug].Lines) { $failures.Add("Restricted poem has incorrect explicit verse-line count: $slug") }
     if ($poemHtml -notmatch $restrictedPoems[$slug].Signature) { $failures.Add("Source signature missing: $slug") }
@@ -220,28 +220,28 @@ foreach ($slug in $restrictedPoems.Keys) {
 }
 
 foreach ($slug in @('calligraphie-de-bonheur')) {
-    $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
+    $poemHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw))
     if ($poemHtml -notmatch 'poem-canvas' -or $poemHtml -notmatch "/img/poetry/$slug.webp") { $failures.Add("Source-faithful background missing: $slug") }
     if ($poemHtml -notmatch 'Play music' -or $poemHtml -notmatch 'About the music' -or $poemHtml -notmatch '<audio' -or $poemHtml -notmatch '<source[^>]+audio/mpeg' -or $poemHtml -match '\sautoplay(?:\s|=|>)') { $failures.Add("Functional poem-music control state is invalid: $slug") }
     if ($poemHtml -notmatch 'Music playback position' -or $poemHtml -notmatch 'Music volume' -or $poemHtml -notmatch 'aria-live=(?:"polite"|polite)') { $failures.Add("Poem audio accessibility controls are incomplete: $slug") }
     if ($poemHtml -notmatch 'Back to Beyond Economics') { $failures.Add("Context navigation missing on poem: $slug") }
 }
 $poemAudioSources = foreach ($slug in @('calligraphie-de-bonheur', 'ma-cherie', 'mes-nuits', 'on-me-l-a-interdit')) {
-    $poemHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw
+    $poemHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root "beyond-economics\$slug\index.html") -Raw))
     ([regex]::Match($poemHtml, '<source[^>]+src=(?:"(?<src>/files/media/poetry/[^\"]+\.mp3)"|(?<src>/files/media/poetry/[^ >]+\.mp3))', 'IgnoreCase')).Groups['src'].Value
 }
 if (($poemAudioSources | Where-Object { $_ } | Sort-Object -Unique).Count -ne 1) { $failures.Add('Exactly one author-approved local poem track must be enabled.') }
 
-$visualLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\research-visuals\index.html') -Raw
+$visualLab = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\research-visuals\index.html') -Raw))
 if ([regex]::Matches($visualLab, 'class=(?:"[^"]*candidate-card[^"]*"|[^ >]*candidate-card[^ >]*)', 'IgnoreCase').Count -ne 9) { $failures.Add('Research visual lab must contain exactly nine candidates.') }
 foreach ($direction in @('Evidence-led', 'Human context', 'Editorial concept')) { if ([regex]::Matches($visualLab, "Candidate \d · $([regex]::Escape($direction))").Count -ne 3) { $failures.Add("Research visual direction must appear once per paper: $direction") } }
 if ([regex]::Matches($visualLab, 'candidate-card selected', 'IgnoreCase').Count -ne 3 -or [regex]::Matches($visualLab, 'displayed now', 'IgnoreCase').Count -ne 3) { $failures.Add('Research visual lab must identify exactly one current selection per paper.') }
 if ([regex]::Matches($visualLab, 'Light · paper-column size').Count -ne 9 -or [regex]::Matches($visualLab, 'Dark · paper-column size').Count -ne 9) { $failures.Add('Research candidates must be shown at paper-column size in both themes.') }
 if ([regex]::Matches($visualLab, 'Editorial recommendation:').Count -ne 3) { $failures.Add('Research visual lab must include one non-binding recommendation per paper.') }
-$typeLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\poetry-typography\index.html') -Raw
+$typeLab = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\poetry-typography\index.html') -Raw))
 if ([regex]::Matches($typeLab, 'data-type-sample=', 'IgnoreCase').Count -ne 12 -or [regex]::Matches($typeLab, 'data-typography-select=', 'IgnoreCase').Count -ne 4) { $failures.Add('Poetry lab must contain three variants for each of four poems.') }
 if ($typeLab -notmatch 'no font file is bundled' -or $typeLab -notmatch 'Literary serif — recommended') { $failures.Add('Typography licensing or recommendation is missing.') }
-$audioLab = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\poetry-audio\index.html') -Raw
+$audioLab = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'preview\design-lab\poetry-audio\index.html') -Raw))
 if ([regex]::Matches($audioLab, 'class=(?:"[^"]*candidate-card[^"]*"|[^ >]*candidate-card[^ >]*)', 'IgnoreCase').Count -ne 4) { $failures.Add('Poetry audio lab must contain exactly four selected candidates.') }
 if ([regex]::Matches($audioLab, '<audio', 'IgnoreCase').Count -ne 4 -or $audioLab -match '\sautoplay(?:\s|=|>)') { $failures.Add('Poetry audio lab must expose four non-autoplay players.') }
 if ($audioLab -notmatch 'CC0 1\.0 Universal' -or $audioLab -notmatch 'About candidate recordings') { $failures.Add('Poetry audio licensing or candidate-recording explanation is missing.') }
@@ -252,37 +252,37 @@ foreach ($name in $restrictedPdfNames) {
     if (Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object { $_.Name -eq $name }) { $failures.Add("Restricted complete PDF present in build: $name") }
 }
 
-$mediaHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'beyond-economics\on-reading-preferences\index.html') -Raw
+$mediaHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'beyond-economics\on-reading-preferences\index.html') -Raw))
 if ($mediaHtml -notmatch '<audio\s+controls\s+preload=(?:"metadata"|metadata)' -or $mediaHtml -match '\sautoplay(?:\s|=|>)') { $failures.Add('Podcast player controls/preload/autoplay state is invalid.') }
 if ($mediaHtml -notmatch 'Transcript pending review') { $failures.Add('Podcast transcript review status is missing.') }
 
-$insightsHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'insights\index.html') -Raw
+$insightsHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'insights\index.html') -Raw))
 if ([regex]::Matches($insightsHtml, '\d+ min read', 'IgnoreCase').Count -lt 2) { $failures.Add('Insight cards are missing calculated reading time.') }
 
-$contactHtml = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'contact\index.html') -Raw
+$contactHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'contact\index.html') -Raw))
 if ($contactHtml -notmatch 'class=(?:"[^"]*copy-email[^"]*"|[^ >]*copy-email[^ >]*)' -or $contactHtml -notmatch 'aria-live=(?:"polite"|polite)') { $failures.Add('Contact copy-email interaction or live feedback is missing.') }
-if ($contactHtml -notmatch 'data-meeting-demo' -or $contactHtml -notmatch 'no appointment or calendar connection') { $failures.Add('Contact scheduling demo or explicit non-booking label is missing.') }
+if ($contactHtml -match 'data-meeting-demo' -or $contactHtml -notmatch 'Request a meeting' -or $contactHtml -notmatch 'mailto:vladerinson@gmail.com\?subject=Research') { $failures.Add('Honest email meeting request is missing or a simulation remains.') }
 
 foreach ($htmlFile in $htmlFiles) {
-    $capitalizationHtml = Get-Content -Encoding UTF8 -LiteralPath $htmlFile.FullName -Raw
+    $capitalizationHtml = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath $htmlFile.FullName -Raw))
     if ($capitalizationHtml -cmatch "Université catholique de l[’']Ouest" -or $capitalizationHtml -cmatch "Université Catholique de l'Ouest") { $failures.Add("Incorrect Université Catholique de l’Ouest capitalization or apostrophe: $($htmlFile.FullName.Substring($root.Length + 1))") }
 }
 
-$siteJs = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'js\site.js') -Raw
-$siteCss = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'styles\site.css') -Raw
+$siteJs = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'js\site.js') -Raw))
+$siteCss = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'styles\site.css') -Raw))
 foreach ($token in @('av-theme', 'localStorage', 'abstract-toggle', 'copy-email', 'data-typography-select', 'IntersectionObserver', 'aria-current', 'data-contextual-return-host', 'data-poem-audio', 'pagehide')) {
     if ($siteJs -notmatch [regex]::Escape($token)) { $failures.Add("Required JavaScript behavior missing: $token") }
 }
-if ($homeHtml -notmatch 'prefers-color-scheme') { $failures.Add('Operating-system theme preference bootstrap is missing.') }
+if ($homeHtml -notmatch 'av-theme' -or $homeHtml -notmatch 'colorScheme') { $failures.Add('Theme bootstrap is missing (default and persistence are verified in the browser suite).') }
 if ($siteCss -notmatch ':root\[data-theme="dark"\]' -or $siteCss -notmatch 'prefers-reduced-motion') { $failures.Add('Dark-theme tokens or reduced-motion support are missing.') }
 if ($siteCss -notmatch '\.poem-line[^\{]*\{[^\}]*white-space:\s*nowrap' -or $siteCss -notmatch 'overflow-x:\s*auto') { $failures.Add('Poetry anti-wrap and local-overflow rules are missing.') }
 if ($siteCss -notmatch '\[aria-current="location"\]' -or $siteCss -notmatch '\.button:active' -or $siteCss -notmatch ':focus-visible') { $failures.Add('Required current, active, or focus-visible interaction states are missing.') }
 
-$talks = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'talks\index.html') -Raw
+$talks = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'talks\index.html') -Raw))
 if ($homeHtml -match 'href=(?:"/talks/"|/talks/)') { $failures.Add('Talks appears in the Home primary navigation or content.') }
 if ($talks -notmatch 'Synthetic demonstration content') { $failures.Add('Talks is not visibly labeled synthetic.') }
 
-$robots = Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'robots.txt') -Raw
+$robots = [System.Net.WebUtility]::HtmlDecode((Get-Content -Encoding UTF8 -LiteralPath (Join-Path $root 'robots.txt') -Raw))
 if ($robots -notmatch 'Disallow:\s*/') { $failures.Add('robots.txt does not block the entire preview.') }
 
 if ($failures.Count -gt 0) {

@@ -23,7 +23,7 @@
   <figure class="portrait-card" data-publication-status="blocked">
     <img src="{{ academic.identity.portrait }}" alt="{{ academic.identity.portrait_alt }}" width="668" height="1000" fetchpriority="high">
     <figcaption>
-      <div class="portrait-identity"><strong>Anderson Vil</strong><span title="Portrait rights and credit pending confirmation">Rights pending</span></div>
+      <div class="portrait-identity"><strong>Anderson Vil</strong></div>
       <div class="profile-icons" aria-label="Professional profiles">
         <a href="mailto:{{ academic.identity.email }}" aria-label="Email Anderson Vil" title="Email">{{ icons::icon(name="email") }}</a>
         {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me" aria-label="{{ profile.name }} profile" title="{{ profile.name }}">{{ icons::icon(name=profile.name | lower) }}</a>{% endfor %}
@@ -35,7 +35,7 @@
 
 <section class="feature-band jmp-band" aria-labelledby="jmp-title">
   <div class="shell feature-grid">
-    <div><p class="eyebrow light">Job Market Paper</p><h2 id="jmp-title">{{ academic.papers[0].title }}</h2><p class="byline">{{ academic.papers[0].card_author_line }}</p></div>
+    <div><p class="eyebrow light">Job Market Paper</p><h2 id="jmp-title"><a href="{{ academic.papers[0].url }}">{{ academic.papers[0].title }}</a></h2><p class="byline">{{ academic.papers[0].card_author_line }}</p></div>
     <div class="feature-summary"><p>{{ academic.papers[0].description }}</p><p class="document-meta">{{ academic.papers[0].series }} · Version {{ academic.papers[0].version }}</p><button class="abstract-toggle light-control" type="button" aria-expanded="false" aria-controls="home-jmp-abstract">View abstract</button><div class="abstract-panel" id="home-jmp-abstract" hidden><p>{{ academic.papers[0].abstract }}</p></div><p class="preview-label compact">Real manuscript · provisional · publication blocked</p><div class="button-row"><a class="button light" href="{{ academic.papers[0].url }}">View paper details</a><a class="button ghost-light" href="{{ academic.papers[0].pdf }}">Download paper</a></div></div>
   </div>
 </section>
@@ -46,9 +46,11 @@
 </section>
 
 <section class="soft-section home-pathways-section section-space" aria-label="Explore the site"><div class="shell home-pathways">
-  <article class="pathway-wide"><p class="eyebrow">Research</p><h2>Measuring latent economic quantities from observed choices</h2>{{ contextual_return::cta(label="Explore Research", destination="/research/", origin="home") }}</article>
-  <div class="pathway-pair"><article><p class="eyebrow">Teaching</p><h2>Economic intuition, methods, and evidence</h2>{{ contextual_return::cta(label="Explore Teaching", destination="/teaching/", origin="home") }}</article><article><p class="eyebrow">Code &amp; Data</p><h2>Teaching code, notebooks, and data</h2>{{ contextual_return::cta(label="Explore Code & Data", destination="/code-data/", origin="home") }}</article></div>
-  <div class="pathway-pair"><article><p class="eyebrow">Insights</p><h2>Notes on economic methods and teaching</h2>{{ contextual_return::cta(label="Explore Insights", destination="/insights/", origin="home") }}</article><article><p class="eyebrow">Beyond Economics</p><h2>Poetry and conversations</h2>{{ contextual_return::cta(label="Explore Beyond Economics", destination="/beyond-economics/", origin="home") }}</article></div>
-  <article class="pathway-wide"><p class="eyebrow">Contact</p><h2>Discuss research, teaching, or collaboration</h2>{{ contextual_return::cta(label="Explore Contact", destination="/contact/", origin="home") }}</article>
+<article><p class="eyebrow">Research</p><h2>Measuring latent economic quantities from observed choices</h2>{{ contextual_return::cta(label="Explore Research", destination="/research/", origin="home") }}</article>
+<article><p class="eyebrow">Teaching</p><h2>Courses and teaching materials</h2>{{ contextual_return::cta(label="Explore Teaching", destination="/teaching/", origin="home") }}</article>
+<article><p class="eyebrow">Code &amp; Data</p><h2>Scripts, notebooks, datasets, and simulators</h2>{{ contextual_return::cta(label="Explore Code & Data", destination="/code-data/", origin="home") }}</article>
+<article><p class="eyebrow">Insights</p><h2>Methods Notes and Teaching Notes</h2>{{ contextual_return::cta(label="Explore Insights", destination="/insights/", origin="home") }}</article>
+<article><p class="eyebrow">Beyond Economics</p><h2>Poetry and conversations</h2>{{ contextual_return::cta(label="Explore Beyond Economics", destination="/beyond-economics/", origin="home") }}</article>
+<article><p class="eyebrow">Contact</p><h2>Research discussions and collaboration</h2>{{ contextual_return::cta(label="Explore Contact", destination="/contact/", origin="home") }}</article>
 </div></section>
 {% endblock content %}
