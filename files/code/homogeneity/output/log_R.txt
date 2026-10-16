@@ -1,0 +1,25 @@
+R version 4.3.3 (2024-02-29); ggplot2 available: FALSE (base graphics used)
+
+=== Part A: R's own simulated sample (n = 500) ===
+[own H0] theta = -0.010718 (se 0.041820), t = -0.256293, F = 0.065686, t^2 = 0.065686, p = 0.797831, CI [-0.0929, 0.0714]
+[own H0] W = 0.0663, LR = 0.0663, numeraire invariance max diff = 3.1e-14
+[own H1] theta = 0.089282 (se 0.041820), t = 2.134916, F = 4.557865, t^2 = 4.557865, p = 0.033258, CI [0.0071, 0.1714]
+[own H1] W = 4.6039, LR = 4.5828, numeraire invariance max diff = 3.8e-14
+
+[size] 2000 reps: rejection rate = 0.0565 (MC s.e. 0.0049)
+[power] n = 500: power at theta = 0.10 -> 0.593; at theta = 0 -> 0.060
+[power] n = 2000: power at theta = 0.10 -> 0.983; at theta = 0 -> 0.045
+[fig4:no_inflation] H0 sd U = 0.0595, sd R = 0.0495, ratio = 0.831; H1 mean U = -0.6014, mean R = -0.6312, mean(R-U) = -0.0298
+[fig4:strong_inflation] H0 sd U = 0.0485, sd R = 0.0482, ratio = 0.995; H1 mean U = -0.6007, mean R = -0.6310, mean(R-U) = -0.0304
+
+=== Part B: data/sim_data.csv (written by Python) ===
+[csv H0] theta = -0.032263 (se 0.049505), t = -0.651709, F = 0.424725, t^2 = 0.424725, p = 0.514891, CI [-0.1295, 0.0650]
+[csv H0] W = 0.4290, LR = 0.4288, numeraire invariance max diff = 6.0e-15
+[csv H1] theta = 0.067737 (se 0.049505), t = 1.368302, F = 1.872252, t^2 = 1.872252, p = 0.171838, CI [-0.0295, 0.1650]
+[csv H1] W = 1.8912, LR = 1.8876, numeraire invariance max diff = 3.6e-15
+Cross-check on 58 quantities (coefficients, s.e., theta, t, F, p, SSR, W, LR): max |R - Python| = 2.85e-13 -> PASS (tolerance 1e-6)
+MC size: R 0.0565 vs Python 0.0500; z of the difference = 0.94
+MC power at theta = 0.10, n = 500: R 0.593 vs Python 0.597; z = -0.18
+MC power at theta = 0.10, n = 2000: R 0.983 vs Python 0.984; z = -0.18
+Fig 4 [no_inflation]: sd ratio H0 R 0.831 vs Python 0.831; shift R-U under H1 R -0.0298 vs Python -0.0295
+Fig 4 [strong_inflation]: sd ratio H0 R 0.995 vs Python 0.997; shift R-U under H1 R -0.0304 vs Python -0.0309

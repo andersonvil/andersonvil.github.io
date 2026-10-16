@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Jeux répétés — Simulateur</title>
+<meta name="description" content="Simulation interactive de jeux répétés : donnant-donnant, déclenchement permanent, horizon fini vs infini, et le seuil de coopération du grim trigger.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #f2f3ef;
+    --surface: #ffffff;
+    --surface-2: #e9ebe5;
+    --ink: #1b1f23;
+    --ink-muted: #5b6570;
+    --ink-faint: #8a939c;
+    --line: #d7dad2;
+    --accent-a: #2e6f6b;
+    --accent-a-soft: #dceeec;
+    --accent-b: #a8475f;
+    --accent-b-soft: #f6e3e7;
+    --good: #2f7d46;
+    --good-soft: #e1f1e5;
+    --bad: #b23b3b;
+    --bad-soft: #fbe7e7;
+    --font-display: 'Source Serif 4', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+      --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+      --accent-a: #55b3ad; --accent-a-soft: #1c3634;
+      --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+      --good: #4cae6d; --good-soft: #1c3323;
+      --bad: #e07373; --bad-soft: #3a2222;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+    --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+    --accent-a: #55b3ad; --accent-a-soft: #1c3634;
+    --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+    --good: #4cae6d; --good-soft: #1c3323;
+    --bad: #e07373; --bad-soft: #3a2222;
+  }
+
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); padding: 28px 16px 48px; line-height: 1.5; }
+  .wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+
+  header h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(24px, 5vw, 32px); margin: 0 0 6px; text-wrap: balance; }
+  header p { color: var(--ink-muted); margin: 0; max-width: 62ch; font-size: 15px; }
+  code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h2 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin: 0 0 14px; }
+  .card h3 { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin: 18px 0 8px; }
+
+  .spec-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px; font-size: 13.5px; color: var(--ink-muted); }
+  .spec-list li::marker { color: var(--ink-faint); }
+  .spec-list strong { color: var(--ink); }
+
+  .matrix-wrap { display: flex; align-items: center; gap: 14px; margin-top: 4px; flex-wrap: wrap; }
+  table.matrix { border-collapse: collapse; font-family: var(--font-mono); font-size: 13px; }
+  table.matrix th, table.matrix td { border: 1px solid var(--line); padding: 7px 12px; text-align: center; }
+  table.matrix th { background: var(--surface-2); font-family: var(--font-body); font-weight: 600; font-size: 12px; }
+
+  .players-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 560px) { .players-grid { grid-template-columns: 1fr; } }
+  .player-box { border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+  .player-box.a { background: var(--accent-a-soft); }
+  .player-box.b { background: var(--accent-b-soft); }
+  .player-box .who { font-weight: 600; font-size: 13.5px; }
+  .player-box.a .who { color: var(--accent-a); }
+  .player-box.b .who { color: var(--accent-b); }
+
+  select, input[type="number"], button {
+    font-family: var(--font-body); font-size: 13.5px; border-radius: 9px; border: 1px solid var(--line);
+    padding: 8px 11px; background: var(--surface); color: var(--ink); width: 100%;
+  }
+  button { cursor: pointer; font-weight: 600; width: auto; transition: transform .1s ease; }
+  button:active { transform: scale(.97); }
+  button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .k-input { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-muted); }
+  .k-input input { width: 64px; }
+
+  .horizon-toggle { display: flex; gap: 8px; margin-top: 4px; }
+  .horizon-toggle button { flex: 1; background: var(--surface-2); font-weight: 500; }
+  .horizon-toggle button.active { background: var(--ink); color: var(--bg); }
+
+  .slider-row { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+  .slider-row .label-line { display: flex; justify-content: space-between; font-size: 13.5px; }
+  .slider-row .label-line .val { font-family: var(--font-mono); color: var(--ink-muted); }
+  input[type="range"] { -webkit-appearance: none; width: 100%; height: 6px; border-radius: 3px; background: var(--surface-2); outline: none; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--ink); border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line); cursor: pointer; }
+  input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--ink); border: 2px solid var(--surface); cursor: pointer; }
+
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .presets button { background: transparent; font-weight: 500; font-size: 12.5px; }
+
+  .run-row { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
+  .stat { border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .stat.a { background: var(--accent-a-soft); }
+  .stat.b { background: var(--accent-b-soft); }
+  .stat .who { font-size: 12.5px; font-weight: 600; }
+  .stat.a .who { color: var(--accent-a); }
+  .stat.b .who { color: var(--accent-b); }
+  .stat .big { font-family: var(--font-mono); font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat .sub { font-size: 12px; color: var(--ink-muted); font-family: var(--font-mono); }
+
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .legend { display: flex; gap: 16px; font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+  .log-scroll { max-height: 300px; overflow-y: auto; border-radius: 10px; margin-top: 10px; }
+  table.log { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12px; }
+  table.log th, table.log td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  table.log th:first-child, table.log td:first-child { text-align: left; }
+  table.log th { color: var(--ink-muted); font-weight: 500; font-family: var(--font-body); font-size: 10.5px; text-transform: uppercase; letter-spacing: .03em; background: var(--surface); position: sticky; top: 0; }
+  td.h { color: var(--good); font-weight: 600; }
+  td.l { color: var(--bad); }
+
+  .note { font-size: 13px; color: var(--ink-muted); background: var(--surface-2); border-radius: 10px; padding: 12px 14px; margin-top: 14px; }
+  .note strong { color: var(--ink); }
+  .note.warn { background: var(--bad-soft); }
+  .note.warn strong { color: var(--bad); }
+  .note.ok { background: var(--good-soft); }
+  .note.ok strong { color: var(--good); }
+
+  .threshold-readout { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; }
+  .threshold-readout .item { display: flex; flex-direction: column; gap: 2px; }
+  .threshold-readout .item .label { font-size: 12px; color: var(--ink-muted); }
+  .threshold-readout .item .value { font-family: var(--font-mono); font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>Jeux répétés — donnant-donnant, déclenchement, horizon fini ou infini</h1>
+    <p>Choisissez une stratégie pour chaque firme, un horizon, et regardez la partie tarifaire se dérouler tour par tour — avec, en bas de page, un calculateur séparé pour le seuil δ ≥ 5/9 du grim trigger.</p>
+  </header>
+
+  <div class="card">
+    <h2>Ce que fait ce simulateur</h2>
+    <ul class="spec-list">
+      <li><strong>Le jeu de base.</strong> Le jeu de tarification du cours (deux firmes, prix bas ou élevé), rejoué à chaque période. Deux acteurs simulés : Firme 1 (<span style="color:var(--accent-a)">teal</span>) et Firme 2 (<span style="color:var(--accent-b)">rose</span>) — aucun troisième agent.</li>
+      <li><strong>Les stratégies ne sont pas "intelligentes".</strong> Ce sont des règles mécaniques (donnant-donnant, déclenchement…) qui réagissent à l'historique observé, pas des joueurs qui font le raisonnement d'induction à rebours. C'est important pour la suite — voir la note sous le tableau des résultats.</li>
+      <li><strong>Horizon fini</strong> = nombre de périodes N fixé et connu à l'avance. <strong>Horizon infini/incertain</strong> = la partie continue indéfiniment, pondérée par un facteur d'actualisation δ (les gains futurs comptent moins que les gains présents).</li>
+      <li><strong>Aucun aléa</strong> dans le déroulement des tours : à stratégies et horizon fixés, la partie est entièrement déterministe — vous pouvez la relancer, le résultat est identique.</li>
+    </ul>
+
+    <h3>Le jeu de base (Table 13.8 / slide)</h3>
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <tr><th></th><th>Firme 2 : Bas</th><th>Firme 2 : Élevé</th></tr>
+        <tr><th>Firme 1 : Bas</th><td>10 ; 10</td><td>100 ; −50</td></tr>
+        <tr><th>Firme 1 : Élevé</th><td>−50 ; 100</td><td>50 ; 50</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Réglages</h2>
+    <div class="players-grid">
+      <div class="player-box a">
+        <span class="who">Firme 1</span>
+        <select id="stratA">
+          <option value="coop">Toujours Prix Élevé (coopère)</option>
+          <option value="defect">Toujours Prix Bas (trahit)</option>
+          <option value="tft" selected>Donnant-donnant (tit-for-tat)</option>
+          <option value="grim">Déclenchement permanent (grim trigger)</option>
+          <option value="deviate">Coopère, dévie une fois au tour k, puis revient</option>
+        </select>
+        <div class="k-input" id="kRowA" hidden>Dévie au tour <input type="number" id="kA" min="1" value="3"></div>
+      </div>
+      <div class="player-box b">
+        <span class="who">Firme 2</span>
+        <select id="stratB">
+          <option value="coop">Toujours Prix Élevé (coopère)</option>
+          <option value="defect">Toujours Prix Bas (trahit)</option>
+          <option value="tft">Donnant-donnant (tit-for-tat)</option>
+          <option value="grim">Déclenchement permanent (grim trigger)</option>
+          <option value="deviate" selected>Coopère, dévie une fois au tour k, puis revient</option>
+        </select>
+        <div class="k-input" id="kRowB">Dévie au tour <input type="number" id="kB" min="1" value="3"></div>
+      </div>
+    </div>
+
+    <h3>Horizon</h3>
+    <div class="horizon-toggle">
+      <button id="btnFini" class="active">Fini (N périodes connues)</button>
+      <button id="btnInfini">Infini / incertain (facteur δ)</button>
+    </div>
+    <div class="slider-row" id="rowN">
+      <div class="label-line"><span>Nombre de périodes N</span><span class="val" id="nVal">5</span></div>
+      <input type="range" id="nSlider" min="2" max="15" value="5" step="1">
+    </div>
+    <div class="slider-row" id="rowDelta" hidden>
+      <div class="label-line"><span>Facteur d'actualisation δ</span><span class="val" id="deltaSimVal">0,90</span></div>
+      <input type="range" id="deltaSimSlider" min="0" max="99" value="90" step="1">
+    </div>
+
+    <div class="presets">
+      <button data-preset="book">Exemple du livre : donnant-donnant vs déviation au mois 3</button>
+      <button data-preset="finiteTft">Horizon fini connu : donnant-donnant vs donnant-donnant</button>
+      <button data-preset="grimInfinite">Déclenchement vs déviation ponctuelle (horizon infini, δ=0,9)</button>
+      <button data-preset="unraveling">Trahison mutuelle dès le départ (Nash du jeu de base)</button>
+    </div>
+
+    <div class="run-row">
+      <button class="primary" id="runBtn">Lancer la partie</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Résultat</h2>
+    <div class="stats">
+      <div class="stat a">
+        <span class="who">Firme 1 — total cumulé</span>
+        <span class="big" id="totalA">—</span>
+        <span class="sub" id="totalADisc">actualisé : —</span>
+      </div>
+      <div class="stat b">
+        <span class="who">Firme 2 — total cumulé</span>
+        <span class="big" id="totalB">—</span>
+        <span class="sub" id="totalBDisc">actualisé : —</span>
+      </div>
+    </div>
+
+    <svg id="chart" viewBox="0 0 720 240" preserveAspectRatio="xMidYMid meet" style="margin-top:18px"></svg>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--accent-a)"></span>gain cumulé Firme 1</span>
+      <span><span class="swatch" style="background:var(--accent-b)"></span>gain cumulé Firme 2</span>
+    </div>
+
+    <div class="log-scroll">
+      <table class="log">
+        <thead><tr><th>Période</th><th>Firme 1</th><th>Firme 2</th><th>Gain F1</th><th>Gain F2</th><th>Cumul F1</th><th>Cumul F2</th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+
+    <div class="note" id="verdict">Lancez une partie pour voir le déroulement tour par tour.</div>
+  </div>
+
+  <div class="card">
+    <h2>Calculateur : le seuil de coopération du grim trigger</h2>
+    <p style="font-size:13.5px;color:var(--ink-muted);margin:0 0 4px">Indépendant de la partie simulée ci-dessus. Reprend le calcul du cours : deux firmes coopèrent (prix élevé, gain 50 chacune) tant qu'aucune n'a dévié ; après une déviation, elles jouent grim trigger — prix bas pour toujours (gain 10 chacune).</p>
+    <div class="slider-row">
+      <div class="label-line"><span>Facteur d'actualisation δ</span><span class="val" id="deltaCalcVal">0,50</span></div>
+      <input type="range" id="deltaCalcSlider" min="0" max="99" value="50" step="1">
+    </div>
+    <div class="threshold-readout">
+      <div class="item"><span class="label">Valeur de la coopération VC = 50 / (1 − δ)</span><span class="value" id="vcVal">—</span></div>
+      <div class="item"><span class="label">Valeur de la déviation VT = 100 + 10δ / (1 − δ)</span><span class="value" id="vtVal">—</span></div>
+    </div>
+    <div class="note" id="calcVerdict" style="margin-top:12px">Déplacez le curseur pour voir si la coopération est soutenable.</div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const PAYOFF = {
+    'Bas,Bas': [10, 10],
+    'Bas,Élevé': [100, -50],
+    'Élevé,Bas': [-50, 100],
+    'Élevé,Élevé': [50, 50],
+  };
+
+  const stratA = document.getElementById('stratA');
+  const stratB = document.getElementById('stratB');
+  const kRowA = document.getElementById('kRowA');
+  const kRowB = document.getElementById('kRowB');
+  const kA = document.getElementById('kA');
+  const kB = document.getElementById('kB');
+  const btnFini = document.getElementById('btnFini');
+  const btnInfini = document.getElementById('btnInfini');
+  const rowN = document.getElementById('rowN');
+  const rowDelta = document.getElementById('rowDelta');
+  const nSlider = document.getElementById('nSlider');
+  const nVal = document.getElementById('nVal');
+  const deltaSimSlider = document.getElementById('deltaSimSlider');
+  const deltaSimVal = document.getElementById('deltaSimVal');
+  const runBtn = document.getElementById('runBtn');
+  const totalA = document.getElementById('totalA');
+  const totalB = document.getElementById('totalB');
+  const totalADisc = document.getElementById('totalADisc');
+  const totalBDisc = document.getElementById('totalBDisc');
+  const logBody = document.getElementById('logBody');
+  const chart = document.getElementById('chart');
+  const verdict = document.getElementById('verdict');
+
+  let horizonMode = 'fini';
+
+  function toggleStratK(select, row) {
+    row.hidden = select.value !== 'deviate';
+  }
+  stratA.addEventListener('change', () => toggleStratK(stratA, kRowA));
+  stratB.addEventListener('change', () => toggleStratK(stratB, kRowB));
+  toggleStratK(stratA, kRowA);
+  toggleStratK(stratB, kRowB);
+
+  btnFini.addEventListener('click', () => {
+    horizonMode = 'fini'; btnFini.classList.add('active'); btnInfini.classList.remove('active');
+    rowN.hidden = false; rowDelta.hidden = true;
+  });
+  btnInfini.addEventListener('click', () => {
+    horizonMode = 'infini'; btnInfini.classList.add('active'); btnFini.classList.remove('active');
+    rowN.hidden = true; rowDelta.hidden = false;
+  });
+
+  nSlider.addEventListener('input', () => { nVal.textContent = nSlider.value; });
+  deltaSimSlider.addEventListener('input', () => { deltaSimVal.textContent = (deltaSimSlider.value / 100).toFixed(2).replace('.', ','); });
+
+  function nextAction(strategy, ownHist, oppHist, t, k) {
+    switch (strategy) {
+      case 'coop': return 'Élevé';
+      case 'defect': return 'Bas';
+      case 'tft': return t === 1 ? 'Élevé' : oppHist[t - 2];
+      case 'grim': return oppHist.includes('Bas') ? 'Bas' : 'Élevé';
+      case 'deviate': return t === k ? 'Bas' : 'Élevé';
+      default: return 'Élevé';
+    }
+  }
+
+  function drawChart(pointsA, pointsB) {
+    const W = 720, H = 240, padL = 50, padR = 14, padT = 14, padB = 28;
+    const innerW = W - padL - padR, innerH = H - padT - padB;
+    const all = pointsA.concat(pointsB);
+    let yMin = Math.min(0, ...all), yMax = Math.max(0, ...all);
+    if (yMin === yMax) { yMin -= 1; yMax += 1; }
+    const pad = (yMax - yMin) * 0.08;
+    yMin -= pad; yMax += pad;
+    const xN = Math.max(1, pointsA.length - 1);
+
+    function xPix(i) { return padL + (i / xN) * innerW; }
+    function yPix(v) { return padT + (1 - (v - yMin) / (yMax - yMin)) * innerH; }
+
+    let svg = '';
+    const ticks = 4;
+    for (let i = 0; i <= ticks; i++) {
+      const v = yMin + (i / ticks) * (yMax - yMin);
+      const y = yPix(v);
+      svg += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="var(--line)" stroke-width="1" />`;
+      svg += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${Math.round(v)}</text>`;
+    }
+    const zeroY = yPix(0);
+    svg += `<line x1="${padL}" y1="${zeroY}" x2="${W - padR}" y2="${zeroY}" stroke="var(--ink-faint)" stroke-width="1.2" />`;
+
+    function pathFor(points, color) {
+      let d = '';
+      points.forEach((v, i) => {
+        const x = xPix(i), y = yPix(v);
+        d += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+      });
+      let out = `<path d="${d}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />`;
+      const lastX = xPix(points.length - 1), lastY = yPix(points[points.length - 1]);
+      out += `<circle cx="${lastX}" cy="${lastY}" r="4" fill="${color}" />`;
+      return out;
+    }
+    svg += pathFor(pointsA, 'var(--accent-a)');
+    svg += pathFor(pointsB, 'var(--accent-b)');
+
+    svg += `<text x="${padL}" y="${H - 6}" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">période 1</text>`;
+    svg += `<text x="${W - padR}" y="${H - 6}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">période ${xN + 1}</text>`;
+    chart.innerHTML = svg;
+  }
+
+  function fmt(x) { return (x >= 0 ? '' : '') + Math.round(x * 100) / 100; }
+
+  function run() {
+    const sA = stratA.value, sB = stratB.value;
+    const rounds = horizonMode === 'fini' ? parseInt(nSlider.value, 10) : 30;
+    const delta = horizonMode === 'fini' ? 1 : deltaSimSlider.value / 100;
+    const k1 = parseInt(kA.value || '3', 10), k2 = parseInt(kB.value || '3', 10);
+
+    const histA = [], histB = [];
+    const payA = [], payB = [];
+    let cumA = 0, cumB = 0, discA = 0, discB = 0;
+    const seriesA = [], seriesB = [];
+    logBody.innerHTML = '';
+
+    for (let t = 1; t <= rounds; t++) {
+      const aAction = nextAction(sA, histA, histB, t, k1);
+      const bAction = nextAction(sB, histB, histA, t, k2);
+      const [gA, gB] = PAYOFF[aAction + ',' + bAction];
+      histA.push(aAction); histB.push(bAction);
+      payA.push(gA); payB.push(gB);
+      cumA += gA; cumB += gB;
+      const w = Math.pow(delta, t - 1);
+      discA += gA * w; discB += gB * w;
+      seriesA.push(cumA); seriesB.push(cumB);
+
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${t}</td><td class="${aAction === 'Élevé' ? 'h' : 'l'}">${aAction}</td><td class="${bAction === 'Élevé' ? 'h' : 'l'}">${bAction}</td><td>${gA}</td><td>${gB}</td><td>${cumA}</td><td>${cumB}</td>`;
+      logBody.appendChild(row);
+    }
+
+    drawChart(seriesA, seriesB);
+    totalA.textContent = cumA;
+    totalB.textContent = cumB;
+    if (horizonMode === 'infini') {
+      totalADisc.textContent = 'actualisé (30 périodes) : ' + fmt(discA);
+      totalBDisc.textContent = 'actualisé (30 périodes) : ' + fmt(discB);
+    } else {
+      totalADisc.textContent = 'pas d’actualisation en horizon fini';
+      totalBDisc.textContent = 'pas d’actualisation en horizon fini';
+    }
+
+    let msg, cls = 'note';
+    const bothDefectAlways = sA === 'defect' && sB === 'defect';
+    const mechanicalCoopHolds = (sA === 'tft' || sA === 'grim') && (sB === 'tft' || sB === 'grim') && histA.every(a => a === 'Élevé') && histB.every(b => b === 'Élevé');
+    if (horizonMode === 'fini' && mechanicalCoopHolds) {
+      msg = `<strong>La coopération tient du début à la fin, malgré l'horizon fini.</strong> Ne confondez pas ceci avec le résultat théorique du cours : le détricotage par induction à rebours suppose des joueurs parfaitement rationnels qui raisonnent "à la dernière période, aucune représaille n'est possible, donc je dévie — et je le sais dès la première période". Les stratégies mécaniques simulées ici (donnant-donnant, déclenchement) ne font pas ce raisonnement : elles réagissent seulement à ce qui s'est passé, pas à ce qui va se passer. D'où la coopération observée, qui n'invalide pas la théorie — elle répond simplement à une question différente.`;
+      cls += ' note ok';
+    } else if (bothDefectAlways) {
+      msg = `<strong>C'est l'issue prédite par le détricotage à rebours.</strong> Prix bas est la stratégie dominante du jeu de base ; des joueurs parfaitement rationnels, à horizon fini connu, aboutissent à cette issue dès la période 1 — exactement ce que vous obtenez ici en figeant les deux firmes sur "toujours Prix Bas".`;
+      cls += ' note ok';
+    } else if (sA === 'grim' && histB.includes('Bas')) {
+      const firstDefect = histB.indexOf('Bas') + 1;
+      msg = `<strong>Punition permanente enclenchée.</strong> Dès que Firme 2 a joué Bas au tour ${firstDefect}, le grim trigger de Firme 1 est irréversible : elle joue Bas pour toujours ensuite, même si Firme 2 revient au prix élevé. Comparez le gain cumulé de Firme 2 avant et après le tour ${firstDefect} pour voir le coût de cette déviation unique.`;
+      cls += ' note warn';
+    } else if (sA === 'tft' && histB.includes('Bas')) {
+      const firstDefect = histB.indexOf('Bas') + 1;
+      msg = `<strong>Représailles puis pardon.</strong> Le donnant-donnant de Firme 1 répond à la déviation de Firme 2 au tour ${firstDefect} en jouant Bas au tour ${firstDefect + 1} — mais si Firme 2 revient au prix élevé, Firme 1 pardonne immédiatement au tour suivant. Comparez avec le grim trigger (preset ci-dessus) : la punition y est permanente, pas temporaire.`;
+      cls += ' note';
+    } else {
+      msg = `Total cumulé après ${rounds} périodes : Firme 1 = ${cumA}, Firme 2 = ${cumB}.`;
+    }
+    verdict.className = cls;
+    verdict.innerHTML = msg;
+  }
+
+  runBtn.addEventListener('click', run);
+
+  document.querySelectorAll('.presets button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = btn.dataset.preset;
+      if (p === 'book') {
+        stratA.value = 'tft'; stratB.value = 'deviate'; kB.value = 3;
+        horizonMode = 'fini'; btnFini.classList.add('active'); btnInfini.classList.remove('active');
+        rowN.hidden = false; rowDelta.hidden = true; nSlider.value = 5; nVal.textContent = '5';
+      } else if (p === 'finiteTft') {
+        stratA.value = 'tft'; stratB.value = 'tft';
+        horizonMode = 'fini'; btnFini.classList.add('active'); btnInfini.classList.remove('active');
+        rowN.hidden = false; rowDelta.hidden = true; nSlider.value = 5; nVal.textContent = '5';
+      } else if (p === 'grimInfinite') {
+        stratA.value = 'grim'; stratB.value = 'deviate'; kB.value = 3;
+        horizonMode = 'infini'; btnInfini.classList.add('active'); btnFini.classList.remove('active');
+        rowN.hidden = true; rowDelta.hidden = false; deltaSimSlider.value = 90; deltaSimVal.textContent = '0,90';
+      } else if (p === 'unraveling') {
+        stratA.value = 'defect'; stratB.value = 'defect';
+        horizonMode = 'fini'; btnFini.classList.add('active'); btnInfini.classList.remove('active');
+        rowN.hidden = false; rowDelta.hidden = true; nSlider.value = 5; nVal.textContent = '5';
+      }
+      toggleStratK(stratA, kRowA); toggleStratK(stratB, kRowB);
+      run();
+    });
+  });
+
+  // --- Grim trigger threshold calculator ---
+  const deltaCalcSlider = document.getElementById('deltaCalcSlider');
+  const deltaCalcVal = document.getElementById('deltaCalcVal');
+  const vcVal = document.getElementById('vcVal');
+  const vtVal = document.getElementById('vtVal');
+  const calcVerdict = document.getElementById('calcVerdict');
+  const THRESHOLD = 5 / 9;
+
+  function updateCalc() {
+    const d = deltaCalcSlider.value / 100;
+    deltaCalcVal.textContent = d.toFixed(2).replace('.', ',');
+    if (d >= 0.999) {
+      vcVal.textContent = '→ ∞'; vtVal.textContent = '→ ∞';
+      calcVerdict.className = 'note ok';
+      calcVerdict.innerHTML = '<strong>δ → 1 :</strong> l’avenir compte presque autant que le présent, la coopération est très largement soutenable.';
+      return;
+    }
+    const vc = 50 / (1 - d);
+    const vt = 100 + (10 * d) / (1 - d);
+    vcVal.textContent = fmt(vc);
+    vtVal.textContent = fmt(vt);
+    if (vc >= vt) {
+      calcVerdict.className = 'note ok';
+      calcVerdict.innerHTML = `<strong>Coopération soutenable</strong> (VC ≥ VT). δ = ${d.toFixed(2)} dépasse le seuil 5/9 ≈ 0,556 : la perte de profits futurs causée par la punition dépasse le gain immédiat d’une déviation.`;
+    } else {
+      calcVerdict.className = 'note warn';
+      calcVerdict.innerHTML = `<strong>Coopération non soutenable</strong> (VT > VC). δ = ${d.toFixed(2)} est sous le seuil 5/9 ≈ 0,556 : l’avenir compte trop peu, le gain immédiat de la déviation l’emporte sur la punition à venir.`;
+    }
+  }
+  deltaCalcSlider.addEventListener('input', updateCalc);
+  updateCalc();
+
+  // initial run
+  run();
+})();
+</script>
+</body>
+</html>

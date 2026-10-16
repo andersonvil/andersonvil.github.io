@@ -1,0 +1,23 @@
+        0,06  sec1.tex
+        0,09  annexes_explications.tex, sec2.tex
+       0,357  corrige02.tex
+       0,510  corrige02.tex
+        1,25  corrige02.tex
+       1,412  corrige02.tex
+       2,333  corrige02.tex
+         2,5  corrige02.tex, sec5.tex, serie02.tex
+         4,3  sec3.tex
+        4,45  sec5.tex
+         4,8  seance02.tex, sec6.tex
+         5,5  seance02.tex, sec5.tex
+      7,8166  corrige02.tex
+        10,8  corrige02.tex, serie02.tex
+        11,2  corrige02.tex, serie02.tex
+       15,70  sec6.tex
+       17,81  sec4.tex, sec5.tex
+       32,31  seance02.tex, sec4.tex, sec6.tex
+       71,24  sec5.tex
+      120,65  annexes_explications.tex, seance02.tex, sec6.tex
+      169,11  seance02.tex
+     1113,30  corrige02.tex
+22 valeurs à vérifier à part

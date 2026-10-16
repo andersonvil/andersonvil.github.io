@@ -1,0 +1,27 @@
+py     ex1                identique
+py     ex1-simul          identique
+py     ex2                identique
+py     ex3                identique
+py     ex5-abil           identique
+py     ex5-depart         identique
+py     ex5-mco            identique aux blancs internes près
+py     ex5-residus        identique
+py     ex5-simul          identique
+r      ex1                identique aux blancs internes près
+r      ex1-simul          identique aux blancs internes près
+r      ex2                identique aux blancs internes près
+r      ex3                identique
+r      ex5-abil           identique aux blancs internes près
+r      ex5-depart         identique
+r      ex5-mco            identique
+r      ex5-residus        identique
+r      ex5-simul          identique
+stata  ex1                identique aux blancs internes près
+stata  ex1-simul          identique aux blancs internes près
+stata  ex2                identique aux blancs internes près
+stata  ex3                identique
+stata  ex5-abil           identique aux blancs internes près
+stata  ex5-depart         identique aux blancs internes près
+stata  ex5-mco            identique
+stata  ex5-residus        identique aux blancs internes près
+stata  ex5-simul          identique aux blancs internes près

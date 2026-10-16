@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Pile ou Face — Équilibre</title>
+<meta name="description" content="Simulation interactive de Matching Pennies : vérifiez empiriquement pourquoi p = q = 1/2 est le seul équilibre en stratégies mixtes.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #f2f3ef;
+    --surface: #ffffff;
+    --surface-2: #e9ebe5;
+    --ink: #1b1f23;
+    --ink-muted: #5b6570;
+    --ink-faint: #8a939c;
+    --line: #d7dad2;
+    --accent-a: #2e6f6b;
+    --accent-a-soft: #dceeec;
+    --accent-b: #a8475f;
+    --accent-b-soft: #f6e3e7;
+    --good: #2f7d46;
+    --bad: #b23b3b;
+    --font-display: 'Source Serif 4', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a;
+      --surface: #1a1e24;
+      --surface-2: #20252c;
+      --ink: #e8eaed;
+      --ink-muted: #9aa4af;
+      --ink-faint: #6b7480;
+      --line: #2b3038;
+      --accent-a: #55b3ad;
+      --accent-a-soft: #1c3634;
+      --accent-b: #e08ca0;
+      --accent-b-soft: #3a2229;
+      --good: #4cae6d;
+      --bad: #e07373;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a;
+    --surface: #1a1e24;
+    --surface-2: #20252c;
+    --ink: #e8eaed;
+    --ink-muted: #9aa4af;
+    --ink-faint: #6b7480;
+    --line: #2b3038;
+    --accent-a: #55b3ad;
+    --accent-a-soft: #1c3634;
+    --accent-b: #e08ca0;
+    --accent-b-soft: #3a2229;
+    --good: #4cae6d;
+    --bad: #e07373;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 28px 16px 48px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+
+  header h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(26px, 5vw, 34px);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  header p {
+    color: var(--ink-muted);
+    margin: 0;
+    max-width: 60ch;
+    font-size: 15px;
+  }
+  header p code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .card h2 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+
+  .sliders { display: flex; flex-direction: column; gap: 16px; }
+  .slider-row { display: flex; flex-direction: column; gap: 6px; }
+  .slider-row .label-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; }
+  .slider-row .label-line .who { font-weight: 600; }
+  .slider-row .label-line .val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-muted); font-size: 13px; }
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--surface-2);
+    outline: none;
+  }
+  input[type="range"].a::-webkit-slider-thumb { background: var(--accent-a); }
+  input[type="range"].b::-webkit-slider-thumb { background: var(--accent-b); }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--surface);
+    box-shadow: 0 0 0 1px var(--line);
+    cursor: pointer;
+  }
+  input[type="range"].a::-moz-range-thumb { background: var(--accent-a); width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--surface); cursor: pointer; }
+  input[type="range"].b::-moz-range-thumb { background: var(--accent-b); width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--surface); cursor: pointer; }
+
+  .controls-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+  select, button {
+    font-family: var(--font-body);
+    font-size: 14px;
+    border-radius: 9px;
+    border: 1px solid var(--line);
+    padding: 9px 13px;
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+  button { cursor: pointer; font-weight: 600; transition: transform .1s ease; }
+  button:active { transform: scale(.97); }
+  button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  button.primary:disabled { opacity: .5; cursor: default; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .presets button { background: transparent; font-weight: 500; font-size: 13px; }
+
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
+  .stat {
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .stat.a { background: var(--accent-a-soft); }
+  .stat.b { background: var(--accent-b-soft); }
+  .stat .who { font-size: 13px; font-weight: 600; }
+  .stat.a .who { color: var(--accent-a); }
+  .stat.b .who { color: var(--accent-b); }
+  .stat .big { font-family: var(--font-mono); font-size: 26px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat .sub { font-size: 12.5px; color: var(--ink-muted); font-family: var(--font-mono); }
+
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart-caption { font-size: 12.5px; color: var(--ink-muted); margin-top: 8px; }
+  .legend { display: flex; gap: 16px; font-size: 12.5px; color: var(--ink-muted); margin-top: 4px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12.5px; }
+  th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--ink-muted); font-weight: 500; font-family: var(--font-body); font-size: 11.5px; text-transform: uppercase; letter-spacing: .03em; }
+  .match-yes { color: var(--good); font-weight: 600; }
+  .match-no { color: var(--bad); }
+  .log-scroll { max-height: 260px; overflow-y: auto; border-radius: 10px; }
+
+  .note {
+    font-size: 13.5px;
+    color: var(--ink-muted);
+    background: var(--surface-2);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 14px;
+  }
+  .note strong { color: var(--ink); }
+
+  .spec-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: var(--ink-muted); }
+  .spec-list li::marker { color: var(--ink-faint); }
+  .spec-list strong { color: var(--ink); }
+  .spec-list code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>Pile ou Face — vérifier l'équilibre par la simulation</h1>
+    <p>Réglez <code>p</code> (probabilité que A joue Pile) et <code>q</code> (probabilité que B joue Pile), lancez des milliers de tirages réels, et comparez le gain moyen empirique de A à sa valeur théorique <code>E[A] = 2(pq + (1−p)(1−q)) − 1</code>. À p = q = 1/2, ce gain doit osciller autour de 0. Ailleurs, il ne le fera pas — la preuve que ce n'est pas un équilibre.</p>
+  </header>
+
+  <div class="card">
+    <h2>Ce que fait ce simulateur</h2>
+    <ul class="spec-list">
+      <li><strong>Le jeu.</strong> "Pile ou Face" (<em>Matching Pennies</em>) : deux joueurs, A et B, choisissent chacun Pile ou Face en secret. Si les deux pièces coïncident, A gagne 1 (payé par B) ; sinon, B gagne 1 (payé par A). C'est un jeu à somme nulle, sans équilibre en stratégies pures.</li>
+      <li><strong>Les acteurs simulés.</strong> Exactement 2 : le joueur A (courbe et cases teintées en <span style="color:var(--accent-a)">teal</span>) et le joueur B (<span style="color:var(--accent-b)">rose</span>). Aucun autre agent n'intervient — pas d'ordinateur "intelligent" en face, juste deux générateurs de nombres aléatoires réglés sur les probabilités p et q que vous choisissez.</li>
+      <li><strong>Le tirage aléatoire.</strong> À chaque tirage, le navigateur appelle <code>Math.random()</code> pour décider, indépendamment pour A et pour B, s'il joue Pile (avec probabilité p, resp. q) ou Face. C'est un vrai tirage pseudo-aléatoire à chaque clic sur "Lancer" — pas une valeur pré-calculée.</li>
+      <li><strong>L'échantillon.</strong> Vous choisissez la taille : 500, 2 000, 10 000 ou 50 000 tirages indépendants. Plus l'échantillon est grand, plus le gain moyen empirique se rapproche de la valeur théorique (loi des grands nombres) — c'est pour ça que la courbe se stabilise progressivement au lieu de sauter dans tous les sens.</li>
+      <li><strong>Ce qui est affiché.</strong> Le gain moyen cumulé de A après chaque tranche de tirages (courbe), sa valeur finale comparée au calcul théorique, et le détail des 25 derniers tirages un par un (carnet en bas de page).</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Réglages</h2>
+    <div class="sliders">
+      <div class="slider-row">
+        <div class="label-line"><span class="who" style="color:var(--accent-a)">A joue Pile avec probabilité p</span><span class="val" id="pVal">50 %</span></div>
+        <input type="range" class="a" id="pSlider" min="0" max="100" value="50" step="1">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who" style="color:var(--accent-b)">B joue Pile avec probabilité q</span><span class="val" id="qVal">50 %</span></div>
+        <input type="range" class="b" id="qSlider" min="0" max="100" value="50" step="1">
+      </div>
+    </div>
+    <div class="controls-row">
+      <select id="roundsSelect">
+        <option value="500">500 tirages</option>
+        <option value="2000" selected>2 000 tirages</option>
+        <option value="10000">10 000 tirages</option>
+        <option value="50000">50 000 tirages</option>
+      </select>
+      <button class="primary" id="runBtn">Lancer la simulation</button>
+      <button id="resetBtn">Réinitialiser</button>
+    </div>
+    <div class="presets">
+      <button data-p="50" data-q="50">Équilibre théorique (p=50 %, q=50 %)</button>
+      <button data-p="50" data-q="70">B prévisible, A ne réagit pas (p=50 %, q=70 %)</button>
+      <button data-p="100" data-q="70">A exploite la prévisibilité de B (p=100 %, q=70 %)</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Résultat de la simulation</h2>
+    <div class="stats">
+      <div class="stat a">
+        <span class="who">Gain moyen empirique — A</span>
+        <span class="big" id="empA">—</span>
+        <span class="sub" id="theoA">théorie : —</span>
+      </div>
+      <div class="stat b">
+        <span class="who">Gain moyen empirique — B</span>
+        <span class="big" id="empB">—</span>
+        <span class="sub" id="theoB">théorie : —</span>
+      </div>
+    </div>
+
+    <div style="margin-top:20px">
+      <svg id="chart" viewBox="0 0 680 240" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--accent-a)"></span>gain moyen cumulé de A</span>
+        <span><span class="swatch" style="background:var(--ink-faint)"></span>valeur théorique E[A]</span>
+      </div>
+      <p class="chart-caption">Convergence du gain moyen de A au fil des tirages (loi des grands nombres). Si la courbe se stabilise sur la ligne théorique, la simulation confirme le calcul ; si p=q=1/2, cette ligne est à 0.</p>
+    </div>
+
+    <div class="note" id="verdict">Lancez une simulation pour voir si A a intérêt à dévier de p, étant donné q.</div>
+  </div>
+
+  <div class="card">
+    <h2>Carnet des derniers tirages</h2>
+    <div class="log-scroll">
+      <table>
+        <thead><tr><th>#</th><th>A</th><th>B</th><th>Résultat</th><th>Gain A cumulé</th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const pSlider = document.getElementById('pSlider');
+  const qSlider = document.getElementById('qSlider');
+  const pVal = document.getElementById('pVal');
+  const qVal = document.getElementById('qVal');
+  const roundsSelect = document.getElementById('roundsSelect');
+  const runBtn = document.getElementById('runBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const empA = document.getElementById('empA');
+  const empB = document.getElementById('empB');
+  const theoA = document.getElementById('theoA');
+  const theoB = document.getElementById('theoB');
+  const verdict = document.getElementById('verdict');
+  const logBody = document.getElementById('logBody');
+  const chart = document.getElementById('chart');
+
+  function updateLabels() {
+    pVal.textContent = pSlider.value + ' %';
+    qVal.textContent = qSlider.value + ' %';
+  }
+  pSlider.addEventListener('input', updateLabels);
+  qSlider.addEventListener('input', updateLabels);
+  updateLabels();
+
+  document.querySelectorAll('.presets button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      pSlider.value = btn.dataset.p;
+      qSlider.value = btn.dataset.q;
+      updateLabels();
+    });
+  });
+
+  function theoreticalEA(p, q) {
+    const match = p * q + (1 - p) * (1 - q);
+    return 2 * match - 1;
+  }
+
+  function fmt(x) {
+    return (x >= 0 ? '+' : '') + x.toFixed(3);
+  }
+
+  function drawChart(points, theoLine) {
+    const W = 680, H = 240, padL = 44, padR = 14, padT = 14, padB = 28;
+    const innerW = W - padL - padR, innerH = H - padT - padB;
+    const yMin = -1, yMax = 1;
+    const xN = Math.max(1, points.length - 1);
+
+    function xPix(i) { return padL + (i / xN) * innerW; }
+    function yPix(v) { return padT + (1 - (v - yMin) / (yMax - yMin)) * innerH; }
+
+    let svg = '';
+    // grid + axis labels
+    [-1, -0.5, 0, 0.5, 1].forEach(v => {
+      const y = yPix(v);
+      svg += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="var(--line)" stroke-width="1" />`;
+      svg += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${v}</text>`;
+    });
+    // theoretical reference line
+    const ty = yPix(theoLine);
+    svg += `<line x1="${padL}" y1="${ty}" x2="${W - padR}" y2="${ty}" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="5,4" />`;
+
+    // data line
+    if (points.length > 1) {
+      let d = '';
+      points.forEach((v, i) => {
+        const x = xPix(i), y = yPix(Math.max(-1, Math.min(1, v)));
+        d += (i === 0 ? 'M' : 'L') + x.toFixed(1) + ',' + y.toFixed(1) + ' ';
+      });
+      svg += `<path d="${d}" fill="none" stroke="var(--accent-a)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />`;
+      const lastX = xPix(points.length - 1), lastY = yPix(Math.max(-1, Math.min(1, points[points.length - 1])));
+      svg += `<circle cx="${lastX}" cy="${lastY}" r="4" fill="var(--accent-a)" />`;
+    }
+    svg += `<text x="${padL}" y="${H - 6}" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">tirage 1</text>`;
+    svg += `<text x="${W - padR}" y="${H - 6}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">tirage ${xN + 1}</text>`;
+
+    chart.innerHTML = svg;
+  }
+
+  let running = false;
+
+  function run() {
+    if (running) return;
+    running = true;
+    runBtn.disabled = true;
+    runBtn.textContent = 'Simulation en cours…';
+
+    const p = pSlider.value / 100;
+    const q = qSlider.value / 100;
+    const rounds = parseInt(roundsSelect.value, 10);
+    const eA = theoreticalEA(p, q);
+    const eB = -eA;
+    theoA.textContent = 'théorie : ' + fmt(eA);
+    theoB.textContent = 'théorie : ' + fmt(eB);
+
+    const checkpointCount = Math.min(180, rounds);
+    const step = Math.max(1, Math.floor(rounds / checkpointCount));
+    const points = [];
+    const logRows = [];
+
+    let sumA = 0;
+    let i = 0;
+    const perFrame = Math.max(50, Math.floor(rounds / 120));
+
+    function frame() {
+      const end = Math.min(rounds, i + perFrame);
+      for (; i < end; i++) {
+        const aPile = Math.random() < p;
+        const bPile = Math.random() < q;
+        const match = aPile === bPile;
+        const gainA = match ? 1 : -1;
+        sumA += gainA;
+        if (i % step === 0 || i === rounds - 1) points.push(sumA / (i + 1));
+        if (i >= rounds - 25) {
+          logRows.push({ n: i + 1, a: aPile ? 'Pile' : 'Face', b: bPile ? 'Pile' : 'Face', match, cum: sumA / (i + 1) });
+        }
+      }
+      drawChart(points, eA);
+      const curA = sumA / i;
+      empA.textContent = fmt(curA);
+      empB.textContent = fmt(-curA);
+
+      if (i < rounds) {
+        requestAnimationFrame(frame);
+      } else {
+        logBody.innerHTML = logRows.slice(-25).map(r =>
+          `<tr><td>${r.n}</td><td>${r.a}</td><td>${r.b}</td><td class="${r.match ? 'match-yes' : 'match-no'}">${r.match ? 'coïncidence → A gagne' : 'pas de coïncidence → B gagne'}</td><td>${fmt(r.cum)}</td></tr>`
+        ).join('');
+
+        const gap = Math.abs(curA - eA);
+        let msg;
+        if (Math.abs(p - 0.5) < 0.02 && Math.abs(q - 0.5) < 0.02) {
+          msg = `<strong>p et q sont proches de 1/2</strong> : le gain moyen de A (${fmt(curA)}) reste collé à 0, quelle que soit la valeur exacte de p. C'est la signature de l'indifférence — A n'a aucune raison de préférer Pile ou Face.`;
+        } else if (Math.abs(q - 0.5) > 0.02 && Math.abs(p - 1) < 0.02) {
+          msg = `<strong>A exploite B.</strong> Puisque q = ${(q*100).toFixed(0)} % ≠ 50 %, A a intérêt à jouer une stratégie pure plutôt qu'à mélanger : ici p = 100 % lui donne un gain moyen de ${fmt(curA)}, nettement au‑dessus de 0. C'est la preuve empirique que q = ${(q*100).toFixed(0)} % n'est pas un équilibre : B est exploitable.`;
+        } else if (Math.abs(q - 0.5) > 0.02) {
+          msg = `<strong>q = ${(q*100).toFixed(0)} % n'est pas 50 %</strong>, donc A devrait normalement dévier vers une stratégie pure. Avec p = ${(p*100).toFixed(0)} %, A ne joue pas encore sa meilleure réponse — essayez le bouton « A exploite » pour voir le gain moyen décoller.`;
+        } else {
+          msg = `Gain moyen empirique de A : ${fmt(curA)} — à comparer à la théorie (${fmt(eA)}). Écart : ${gap.toFixed(3)} (se réduit avec plus de tirages, loi des grands nombres).`;
+        }
+        verdict.innerHTML = msg;
+
+        running = false;
+        runBtn.disabled = false;
+        runBtn.textContent = 'Lancer la simulation';
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  runBtn.addEventListener('click', run);
+  resetBtn.addEventListener('click', () => {
+    pSlider.value = 50; qSlider.value = 50; updateLabels();
+    empA.textContent = '—'; empB.textContent = '—';
+    theoA.textContent = 'théorie : —'; theoB.textContent = 'théorie : —';
+    verdict.textContent = 'Lancez une simulation pour voir si A a intérêt à dévier de p, étant donné q.';
+    logBody.innerHTML = '';
+    chart.innerHTML = '';
+  });
+})();
+</script>
+</body>
+</html>

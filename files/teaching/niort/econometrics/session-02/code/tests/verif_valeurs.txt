@@ -1,0 +1,30 @@
+OK  écart entre moyenne des 1 000 pentes et 14,32                calculé      0.06000  texte 0.06
+OK  écart-type de la moyenne de 1 000 pentes, 3,19/racine(1000)  calculé      0.10088  texte 0.1
+OK  borne de Tchebychev, Var(Y)/(n eps^2), n = 2 000, eps = 1    calculé      0.08968  texte 0.09
+OK  constante des MCO, ECONMATH                                  calculé     32.30607  texte 32.31
+OK  SCR, ECONMATH                                                calculé 103036.64953  texte 103036.6
+OK  sigma chapeau carré = SCR/854                                calculé    120.65181  texte 120.65
+OK  racine de SCT_x                                              calculé     15.69819  texte 15.7
+OK  SCT_x des 50 premiers colgpa                                 calculé     17.81080  texte 17.81
+OK  4 SCT_x (chaque x répété 4 fois)                             calculé     71.24322  texte 71.24
+OK  SCT_x / 4 (dispersion divisée par 2)                         calculé      4.45270  texte 4.45
+OK  121 x 2 / 50                                                 calculé      4.84000  texte 4.8
+OK  sigma divisé par 2                                           calculé      5.50000  texte 5.5
+OK  1/n somme x^2 = moyenne^2 + SCT_x/n                          calculé      8.21035  texte 8.21
+OK  RLS.1, écart de la classe la plus basse                      calculé      2.68702  texte 2.7
+OK  RLS.1, écart de la deuxième classe                           calculé      4.29114  texte 4.3
+OK  RLS.1, effectif des deux classes inférieures                 calculé     55.00000  texte 55
+OK  RLS.1, plus grand écart des autres classes                   calculé      1.27652  texte 1.3
+OK  éventail, sd théorique à gauche                              calculé      0.18420  texte 0.18
+OK  éventail, sd théorique à droite                              calculé      0.73679  texte 0.74
+OK  quiz 6, moyenne pondérée                                     calculé     10.80000  texte 10.8
+OK  quiz 6, poids inversés                                       calculé     11.20000  texte 11.2
+OK  ex. 1, accroissement de E(y|x) pour 2 heures                 calculé      2.33333  texte 2.333
+OK  ex. 2, rapport des variances 40/32                           calculé      1.25000  texte 1.25
+OK  ex. 3, (sigma chapeau / se) au carré                         calculé   9323.07636  texte 9323
+OK  ex. 3, s_x                                                   calculé      5.89808  texte 5.9
+OK  ex. 3, SCT_points exact                                      calculé   9331.19088  texte 9331
+OK  ex. 3, 111,33 x 10                                           calculé   1113.30000  texte 1113.3
+OK  ex. 3, prévision pour 10 points                              calculé   1400.40000  texte 1400.4
+OK  ex. 3, prévision pour 20 points                              calculé   2513.70000  texte 2513.7
+29 contrôles réussis sur 29

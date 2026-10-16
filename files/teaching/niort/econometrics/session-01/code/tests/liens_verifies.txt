@@ -1,0 +1,249 @@
+p.  6  [e1                                      ] -> ann-relation           p.67  « Annexe 1. Les relations économiques des quatre exemples »
+p.  6  [e2 .                                    ] -> ann-experience         p.68  « Annexe 2. Expérience contrôlée »
+p.  6  [Partie 3, données expérimentales et obse] -> f-exp                  p.20  « Données expérimentales et données observationnelles »
+p.  7  [Code                                    ] -> code-etude-py          p.74  « Code Python, heures d’étude et note »
+p. 13  [Code                                    ] -> code-outils-py         p.77  « Code Python, charger des données de Wooldridge »
+p. 15  [Code                                    ] -> code-ext-ct-py         p.80  « Code Python, coupe transversale »
+p. 16  [Code                                    ] -> code-ext-st-py         p.83  « Code Python, série temporelle »
+p. 17  [Code                                    ] -> code-ext-cte-py        p.86  « Code Python, coupes transversales empilées »
+p. 18  [Code                                    ] -> code-ext-panel-py      p.89  « Code Python, données de panel »
+p. 20  [Code                                    ] -> code-jtrain-py         p.92  « Code Python, données expérimentales »
+p. 20  [Retour à « À quoi sert l’économétrie ? »] -> f-usages               p.6  « À quoi sert l’économétrie ? »
+p. 23  [l3                                      ] -> ann-causal             p.70  « Annexe 3. Qu’est-ce qu’un effet causal ? »
+p. 24  [Code                                    ] -> code-travail-py        p.95  « Code Python, travailler 15 heures ou plus »
+p. 35  [Code                                    ] -> code-variance-py       p.98  « Code Python, construire la variance »
+p. 37  [Code                                    ] -> code-quadrants-py      p.101  « Code Python, signe de la covariance »
+p. 38  [Code                                    ] -> code-deplacer-py       p.104  « Code Python, déplacer des points »
+p. 39  [Code                                    ] -> code-deplacer-py       p.104  « Code Python, déplacer des points »
+p. 40  [Code                                    ] -> code-deplacer-py       p.104  « Code Python, déplacer des points »
+p. 41  [Code                                    ] -> code-jouet-stats-py    p.107  « Code Python, exemple jouet, statistiques descriptives »
+p. 43  [Code                                    ] -> code-nuage-py          p.110  « Code Python, nuage de points du fil rouge »
+p. 47  [Code                                    ] -> code-mco-illus-py      p.113  « Code Python, quelle droite choisir »
+p. 47  [Retour à l’exemple à la main            ] -> f-jouet-mco            p.52  « Retour à l’exemple à la main »
+p. 48  [Code                                    ] -> code-carres-py         p.116  « Code Python, trois critères »
+p. 49  [e4 .                                    ] -> ann-minimum            p.72  « Annexe 4. Les MCO donnent bien le minimum, et il est unique »
+p. 52  [« Quelle                                ] -> f-quelle-droite        p.47  « Quelle droite choisir ? »
+p. 52  [droite choisir ? ».                     ] -> f-quelle-droite        p.47  « Quelle droite choisir ? »
+p. 52  [Code                                    ] -> code-jouet-mco-py      p.119  « Code Python, exemple jouet, estimateurs des MCO »
+p. 54  [Code                                    ] -> code-jouet-proprietes-py p.122  « Code Python, exemple jouet, propriétés algébriques »
+p. 55  [Code                                    ] -> code-decomp-py         p.125  « Code Python, décomposition d’une observation »
+p. 57  [Code                                    ] -> code-jouet-r2-py       p.128  « Code Python, exemple jouet, SCT, SCE, SCR et R2 »
+p. 58  [Code                                    ] -> code-jtrain-r2-py      p.131  « Code Python, un R2 faible dans une expérience »
+p. 59  [Code                                    ] -> code-reg-table-py      p.134  « Code Python, première estimation »
+p. 61  [Code                                    ] -> code-droite-py         p.137  « Code Python, droite des MCO sur le nuage »
+p. 62  [Code                                    ] -> code-residus-py        p.140  « Code Python, valeurs prédites et résidus »
+p. 67  [Retour                                  ] -> src-relation           p.6  « À quoi sert l’économétrie ? »
+p. 68  [Retour                                  ] -> src-experience         p.6  « À quoi sert l’économétrie ? »
+p. 68  [Partie 3, données expérimentales        ] -> f-exp                  p.20  « Données expérimentales et données observationnelles »
+p. 69  [Retour                                  ] -> src-experience         p.6  « À quoi sert l’économétrie ? »
+p. 70  [Retour                                  ] -> src-causal             p.23  « Raisonner par contrefactuel »
+p. 71  [Retour                                  ] -> src-causal             p.23  « Raisonner par contrefactuel »
+p. 72  [Retour                                  ] -> src-minimum            p.49  « Le problème de minimisation »
+p. 74  [R                                       ] -> code-etude-r           p.75  « Code R, heures d’étude et note »
+p. 74  [Stata                                   ] -> code-etude-stata       p.76  « Code Stata, heures d’étude et note »
+p. 74  [Retour                                  ] -> f-correlation          p.7  « Corrélation et causalité »
+p. 75  [Python                                  ] -> code-etude-py          p.74  « Code Python, heures d’étude et note »
+p. 75  [Stata                                   ] -> code-etude-stata       p.76  « Code Stata, heures d’étude et note »
+p. 75  [Retour                                  ] -> f-correlation          p.7  « Corrélation et causalité »
+p. 76  [Python                                  ] -> code-etude-py          p.74  « Code Python, heures d’étude et note »
+p. 76  [R                                       ] -> code-etude-r           p.75  « Code R, heures d’étude et note »
+p. 76  [Retour                                  ] -> f-correlation          p.7  « Corrélation et causalité »
+p. 77  [R                                       ] -> code-outils-r          p.78  « Code R, charger des données de Wooldridge »
+p. 77  [Stata                                   ] -> code-outils-stata      p.79  « Code Stata, charger des données de Wooldridge »
+p. 77  [Retour                                  ] -> f-outils               p.13  « Les outils du cours »
+p. 78  [Python                                  ] -> code-outils-py         p.77  « Code Python, charger des données de Wooldridge »
+p. 78  [Stata                                   ] -> code-outils-stata      p.79  « Code Stata, charger des données de Wooldridge »
+p. 78  [Retour                                  ] -> f-outils               p.13  « Les outils du cours »
+p. 79  [Python                                  ] -> code-outils-py         p.77  « Code Python, charger des données de Wooldridge »
+p. 79  [R                                       ] -> code-outils-r          p.78  « Code R, charger des données de Wooldridge »
+p. 79  [Retour                                  ] -> f-outils               p.13  « Les outils du cours »
+p. 80  [R                                       ] -> code-ext-ct-r          p.81  « Code R, coupe transversale »
+p. 80  [Stata                                   ] -> code-ext-ct-stata      p.82  « Code Stata, coupe transversale »
+p. 80  [Retour                                  ] -> f-ct                   p.15  « Coupe transversale »
+p. 81  [Python                                  ] -> code-ext-ct-py         p.80  « Code Python, coupe transversale »
+p. 81  [Stata                                   ] -> code-ext-ct-stata      p.82  « Code Stata, coupe transversale »
+p. 81  [Retour                                  ] -> f-ct                   p.15  « Coupe transversale »
+p. 82  [Python                                  ] -> code-ext-ct-py         p.80  « Code Python, coupe transversale »
+p. 82  [R                                       ] -> code-ext-ct-r          p.81  « Code R, coupe transversale »
+p. 82  [Retour                                  ] -> f-ct                   p.15  « Coupe transversale »
+p. 83  [R                                       ] -> code-ext-st-r          p.84  « Code R, série temporelle »
+p. 83  [Stata                                   ] -> code-ext-st-stata      p.85  « Code Stata, série temporelle »
+p. 83  [Retour                                  ] -> f-st                   p.16  « Série temporelle »
+p. 84  [Python                                  ] -> code-ext-st-py         p.83  « Code Python, série temporelle »
+p. 84  [Stata                                   ] -> code-ext-st-stata      p.85  « Code Stata, série temporelle »
+p. 84  [Retour                                  ] -> f-st                   p.16  « Série temporelle »
+p. 85  [Python                                  ] -> code-ext-st-py         p.83  « Code Python, série temporelle »
+p. 85  [R                                       ] -> code-ext-st-r          p.84  « Code R, série temporelle »
+p. 85  [Retour                                  ] -> f-st                   p.16  « Série temporelle »
+p. 86  [R                                       ] -> code-ext-cte-r         p.87  « Code R, coupes transversales empilées »
+p. 86  [Stata                                   ] -> code-ext-cte-stata     p.88  « Code Stata, coupes transversales empilées »
+p. 86  [Retour                                  ] -> f-cte                  p.17  « Coupes transversales empilées »
+p. 87  [Python                                  ] -> code-ext-cte-py        p.86  « Code Python, coupes transversales empilées »
+p. 87  [Stata                                   ] -> code-ext-cte-stata     p.88  « Code Stata, coupes transversales empilées »
+p. 87  [Retour                                  ] -> f-cte                  p.17  « Coupes transversales empilées »
+p. 88  [Python                                  ] -> code-ext-cte-py        p.86  « Code Python, coupes transversales empilées »
+p. 88  [R                                       ] -> code-ext-cte-r         p.87  « Code R, coupes transversales empilées »
+p. 88  [Retour                                  ] -> f-cte                  p.17  « Coupes transversales empilées »
+p. 89  [R                                       ] -> code-ext-panel-r       p.90  « Code R, données de panel »
+p. 89  [Stata                                   ] -> code-ext-panel-stata   p.91  « Code Stata, données de panel »
+p. 89  [Retour                                  ] -> f-panel                p.18  « Données de panel »
+p. 90  [Python                                  ] -> code-ext-panel-py      p.89  « Code Python, données de panel »
+p. 90  [Stata                                   ] -> code-ext-panel-stata   p.91  « Code Stata, données de panel »
+p. 90  [Retour                                  ] -> f-panel                p.18  « Données de panel »
+p. 91  [Python                                  ] -> code-ext-panel-py      p.89  « Code Python, données de panel »
+p. 91  [R                                       ] -> code-ext-panel-r       p.90  « Code R, données de panel »
+p. 91  [Retour                                  ] -> f-panel                p.18  « Données de panel »
+p. 92  [R                                       ] -> code-jtrain-r          p.93  « Code R, données expérimentales »
+p. 92  [Stata                                   ] -> code-jtrain-stata      p.94  « Code Stata, données expérimentales »
+p. 92  [Retour                                  ] -> f-exp                  p.20  « Données expérimentales et données observationnelles »
+p. 93  [Python                                  ] -> code-jtrain-py         p.92  « Code Python, données expérimentales »
+p. 93  [Stata                                   ] -> code-jtrain-stata      p.94  « Code Stata, données expérimentales »
+p. 93  [Retour                                  ] -> f-exp                  p.20  « Données expérimentales et données observationnelles »
+p. 94  [Python                                  ] -> code-jtrain-py         p.92  « Code Python, données expérimentales »
+p. 94  [R                                       ] -> code-jtrain-r          p.93  « Code R, données expérimentales »
+p. 94  [Retour                                  ] -> f-exp                  p.20  « Données expérimentales et données observationnelles »
+p. 95  [R                                       ] -> code-travail-r         p.96  « Code R, travailler 15 heures ou plus »
+p. 95  [Stata                                   ] -> code-travail-stata     p.97  « Code Stata, travailler 15 heures ou plus »
+p. 95  [Retour                                  ] -> f-travail              p.24  « Ce que montrent les données »
+p. 96  [Python                                  ] -> code-travail-py        p.95  « Code Python, travailler 15 heures ou plus »
+p. 96  [Stata                                   ] -> code-travail-stata     p.97  « Code Stata, travailler 15 heures ou plus »
+p. 96  [Retour                                  ] -> f-travail              p.24  « Ce que montrent les données »
+p. 97  [Python                                  ] -> code-travail-py        p.95  « Code Python, travailler 15 heures ou plus »
+p. 97  [R                                       ] -> code-travail-r         p.96  « Code R, travailler 15 heures ou plus »
+p. 97  [Retour                                  ] -> f-travail              p.24  « Ce que montrent les données »
+p. 98  [R                                       ] -> code-variance-r        p.99  « Code R, construire la variance »
+p. 98  [Stata                                   ] -> code-variance-stata    p.100  « Code Stata, construire la variance »
+p. 98  [Retour                                  ] -> f-variance             p.35  « Construire une mesure de dispersion »
+p. 99  [Python                                  ] -> code-variance-py       p.98  « Code Python, construire la variance »
+p. 99  [Stata                                   ] -> code-variance-stata    p.100  « Code Stata, construire la variance »
+p. 99  [Retour                                  ] -> f-variance             p.35  « Construire une mesure de dispersion »
+p.100  [Python                                  ] -> code-variance-py       p.98  « Code Python, construire la variance »
+p.100  [R                                       ] -> code-variance-r        p.99  « Code R, construire la variance »
+p.100  [Retour                                  ] -> f-variance             p.35  « Construire une mesure de dispersion »
+p.101  [R                                       ] -> code-quadrants-r       p.102  « Code R, signe de la covariance »
+p.101  [Stata                                   ] -> code-quadrants-stata   p.103  « Code Stata, signe de la covariance »
+p.101  [Retour                                  ] -> f-covariance           p.37  « Covariance et corrélation empiriques »
+p.102  [Python                                  ] -> code-quadrants-py      p.101  « Code Python, signe de la covariance »
+p.102  [Stata                                   ] -> code-quadrants-stata   p.103  « Code Stata, signe de la covariance »
+p.102  [Retour                                  ] -> f-covariance           p.37  « Covariance et corrélation empiriques »
+p.103  [Python                                  ] -> code-quadrants-py      p.101  « Code Python, signe de la covariance »
+p.103  [R                                       ] -> code-quadrants-r       p.102  « Code R, signe de la covariance »
+p.103  [Retour                                  ] -> f-covariance           p.37  « Covariance et corrélation empiriques »
+p.104  [R                                       ] -> code-deplacer-r        p.105  « Code R, déplacer des points »
+p.104  [Stata                                   ] -> code-deplacer-stata    p.106  « Code Stata, déplacer des points »
+p.104  [Retour                                  ] -> f-deplacer             p.38  « Déplacer des points change le signe »
+p.105  [Python                                  ] -> code-deplacer-py       p.104  « Code Python, déplacer des points »
+p.105  [Stata                                   ] -> code-deplacer-stata    p.106  « Code Stata, déplacer des points »
+p.105  [Retour                                  ] -> f-deplacer             p.38  « Déplacer des points change le signe »
+p.106  [Python                                  ] -> code-deplacer-py       p.104  « Code Python, déplacer des points »
+p.106  [R                                       ] -> code-deplacer-r        p.105  « Code R, déplacer des points »
+p.106  [Retour                                  ] -> f-deplacer             p.38  « Déplacer des points change le signe »
+p.107  [R                                       ] -> code-jouet-stats-r     p.108  « Code R, exemple jouet, statistiques descriptives »
+p.107  [Stata                                   ] -> code-jouet-stats-stata p.109  « Code Stata, exemple jouet, statistiques descriptives »
+p.107  [Retour                                  ] -> f-jouet-stats          p.41  « Un exemple à la main »
+p.108  [Python                                  ] -> code-jouet-stats-py    p.107  « Code Python, exemple jouet, statistiques descriptives »
+p.108  [Stata                                   ] -> code-jouet-stats-stata p.109  « Code Stata, exemple jouet, statistiques descriptives »
+p.108  [Retour                                  ] -> f-jouet-stats          p.41  « Un exemple à la main »
+p.109  [Python                                  ] -> code-jouet-stats-py    p.107  « Code Python, exemple jouet, statistiques descriptives »
+p.109  [R                                       ] -> code-jouet-stats-r     p.108  « Code R, exemple jouet, statistiques descriptives »
+p.109  [Retour                                  ] -> f-jouet-stats          p.41  « Un exemple à la main »
+p.110  [R                                       ] -> code-nuage-r           p.111  « Code R, nuage de points du fil rouge »
+p.110  [Stata                                   ] -> code-nuage-stata       p.112  « Code Stata, nuage de points du fil rouge »
+p.110  [Retour                                  ] -> f-question             p.43  « La question du fil rouge »
+p.111  [Python                                  ] -> code-nuage-py          p.110  « Code Python, nuage de points du fil rouge »
+p.111  [Stata                                   ] -> code-nuage-stata       p.112  « Code Stata, nuage de points du fil rouge »
+p.111  [Retour                                  ] -> f-question             p.43  « La question du fil rouge »
+p.112  [Python                                  ] -> code-nuage-py          p.110  « Code Python, nuage de points du fil rouge »
+p.112  [R                                       ] -> code-nuage-r           p.111  « Code R, nuage de points du fil rouge »
+p.112  [Retour                                  ] -> f-question             p.43  « La question du fil rouge »
+p.113  [R                                       ] -> code-mco-illus-r       p.114  « Code R, quelle droite choisir »
+p.113  [Stata                                   ] -> code-mco-illus-stata   p.115  « Code Stata, quelle droite choisir »
+p.113  [Retour                                  ] -> f-quelle-droite        p.47  « Quelle droite choisir ? »
+p.114  [Python                                  ] -> code-mco-illus-py      p.113  « Code Python, quelle droite choisir »
+p.114  [Stata                                   ] -> code-mco-illus-stata   p.115  « Code Stata, quelle droite choisir »
+p.114  [Retour                                  ] -> f-quelle-droite        p.47  « Quelle droite choisir ? »
+p.115  [Python                                  ] -> code-mco-illus-py      p.113  « Code Python, quelle droite choisir »
+p.115  [R                                       ] -> code-mco-illus-r       p.114  « Code R, quelle droite choisir »
+p.115  [Retour                                  ] -> f-quelle-droite        p.47  « Quelle droite choisir ? »
+p.116  [R                                       ] -> code-carres-r          p.117  « Code R, trois critères »
+p.116  [Stata                                   ] -> code-carres-stata      p.118  « Code Stata, trois critères »
+p.116  [Retour                                  ] -> f-carres               p.48  « y (note sur 20) »
+p.117  [Python                                  ] -> code-carres-py         p.116  « Code Python, trois critères »
+p.117  [Stata                                   ] -> code-carres-stata      p.118  « Code Stata, trois critères »
+p.117  [Retour                                  ] -> f-carres               p.48  « y (note sur 20) »
+p.118  [Python                                  ] -> code-carres-py         p.116  « Code Python, trois critères »
+p.118  [R                                       ] -> code-carres-r          p.117  « Code R, trois critères »
+p.118  [Retour                                  ] -> f-carres               p.48  « y (note sur 20) »
+p.119  [R                                       ] -> code-jouet-mco-r       p.120  « Code R, exemple jouet, estimateurs des MCO »
+p.119  [Stata                                   ] -> code-jouet-mco-stata   p.121  « Code Stata, exemple jouet, estimateurs des MCO »
+p.119  [Retour                                  ] -> f-jouet-mco            p.52  « Retour à l’exemple à la main »
+p.120  [Python                                  ] -> code-jouet-mco-py      p.119  « Code Python, exemple jouet, estimateurs des MCO »
+p.120  [Stata                                   ] -> code-jouet-mco-stata   p.121  « Code Stata, exemple jouet, estimateurs des MCO »
+p.120  [Retour                                  ] -> f-jouet-mco            p.52  « Retour à l’exemple à la main »
+p.121  [Python                                  ] -> code-jouet-mco-py      p.119  « Code Python, exemple jouet, estimateurs des MCO »
+p.121  [R                                       ] -> code-jouet-mco-r       p.120  « Code R, exemple jouet, estimateurs des MCO »
+p.121  [Retour                                  ] -> f-jouet-mco            p.52  « Retour à l’exemple à la main »
+p.122  [R                                       ] -> code-jouet-proprietes-r p.123  « Code R, exemple jouet, propriétés algébriques »
+p.122  [Stata                                   ] -> code-jouet-proprietes-stata p.124  « Code Stata, exemple jouet, propriétés algébriques »
+p.122  [Retour                                  ] -> f-proprietes           p.54  « Trois propriétés algébriques »
+p.123  [Python                                  ] -> code-jouet-proprietes-py p.122  « Code Python, exemple jouet, propriétés algébriques »
+p.123  [Stata                                   ] -> code-jouet-proprietes-stata p.124  « Code Stata, exemple jouet, propriétés algébriques »
+p.123  [Retour                                  ] -> f-proprietes           p.54  « Trois propriétés algébriques »
+p.124  [Python                                  ] -> code-jouet-proprietes-py p.122  « Code Python, exemple jouet, propriétés algébriques »
+p.124  [R                                       ] -> code-jouet-proprietes-r p.123  « Code R, exemple jouet, propriétés algébriques »
+p.124  [Retour                                  ] -> f-proprietes           p.54  « Trois propriétés algébriques »
+p.125  [R                                       ] -> code-decomp-r          p.126  « Code R, décomposition d’une observation »
+p.125  [Stata                                   ] -> code-decomp-stata      p.127  « Code Stata, décomposition d’une observation »
+p.125  [Retour                                  ] -> f-decomp               p.55  « Décomposer la variation de y »
+p.126  [Python                                  ] -> code-decomp-py         p.125  « Code Python, décomposition d’une observation »
+p.126  [Stata                                   ] -> code-decomp-stata      p.127  « Code Stata, décomposition d’une observation »
+p.126  [Retour                                  ] -> f-decomp               p.55  « Décomposer la variation de y »
+p.127  [Python                                  ] -> code-decomp-py         p.125  « Code Python, décomposition d’une observation »
+p.127  [R                                       ] -> code-decomp-r          p.126  « Code R, décomposition d’une observation »
+p.127  [Retour                                  ] -> f-decomp               p.55  « Décomposer la variation de y »
+p.128  [R                                       ] -> code-jouet-r2-r        p.129  « Code R, exemple jouet, SCT, SCE, SCR et R2 »
+p.128  [Stata                                   ] -> code-jouet-r2-stata    p.130  « Code Stata, exemple jouet, SCT, SCE, SCR et R2 »
+p.128  [Retour                                  ] -> f-r2                   p.57  « Le coefficient de détermination »
+p.129  [Python                                  ] -> code-jouet-r2-py       p.128  « Code Python, exemple jouet, SCT, SCE, SCR et R2 »
+p.129  [Stata                                   ] -> code-jouet-r2-stata    p.130  « Code Stata, exemple jouet, SCT, SCE, SCR et R2 »
+p.129  [Retour                                  ] -> f-r2                   p.57  « Le coefficient de détermination »
+p.130  [Python                                  ] -> code-jouet-r2-py       p.128  « Code Python, exemple jouet, SCT, SCE, SCR et R2 »
+p.130  [R                                       ] -> code-jouet-r2-r        p.129  « Code R, exemple jouet, SCT, SCE, SCR et R2 »
+p.130  [Retour                                  ] -> f-r2                   p.57  « Le coefficient de détermination »
+p.131  [R                                       ] -> code-jtrain-r2-r       p.132  « Code R, un R2 faible dans une expérience »
+p.131  [Stata                                   ] -> code-jtrain-r2-stata   p.133  « Code Stata, un R2 faible dans une expérience »
+p.131  [Retour                                  ] -> f-r2-limites           p.58  « Ce que le R 2 mesure, et ce qu’il ne mesure pas »
+p.132  [Python                                  ] -> code-jtrain-r2-py      p.131  « Code Python, un R2 faible dans une expérience »
+p.132  [Stata                                   ] -> code-jtrain-r2-stata   p.133  « Code Stata, un R2 faible dans une expérience »
+p.132  [Retour                                  ] -> f-r2-limites           p.58  « Ce que le R 2 mesure, et ce qu’il ne mesure pas »
+p.133  [Python                                  ] -> code-jtrain-r2-py      p.131  « Code Python, un R2 faible dans une expérience »
+p.133  [R                                       ] -> code-jtrain-r2-r       p.132  « Code R, un R2 faible dans une expérience »
+p.133  [Retour                                  ] -> f-r2-limites           p.58  « Ce que le R 2 mesure, et ce qu’il ne mesure pas »
+p.134  [R                                       ] -> code-reg-table-r       p.135  « Code R, première estimation »
+p.134  [Stata                                   ] -> code-reg-table-stata   p.136  « Code Stata, première estimation »
+p.134  [Retour                                  ] -> f-table                p.59  « Une première estimation »
+p.135  [Python                                  ] -> code-reg-table-py      p.134  « Code Python, première estimation »
+p.135  [Stata                                   ] -> code-reg-table-stata   p.136  « Code Stata, première estimation »
+p.135  [Retour                                  ] -> f-table                p.59  « Une première estimation »
+p.136  [Python                                  ] -> code-reg-table-py      p.134  « Code Python, première estimation »
+p.136  [R                                       ] -> code-reg-table-r       p.135  « Code R, première estimation »
+p.136  [Retour                                  ] -> f-table                p.59  « Une première estimation »
+p.137  [R                                       ] -> code-droite-r          p.138  « Code R, droite des MCO sur le nuage »
+p.137  [Stata                                   ] -> code-droite-stata      p.139  « Code Stata, droite des MCO sur le nuage »
+p.137  [Retour                                  ] -> f-droite               p.61  « La droite des MCO sur le nuage »
+p.138  [Python                                  ] -> code-droite-py         p.137  « Code Python, droite des MCO sur le nuage »
+p.138  [Stata                                   ] -> code-droite-stata      p.139  « Code Stata, droite des MCO sur le nuage »
+p.138  [Retour                                  ] -> f-droite               p.61  « La droite des MCO sur le nuage »
+p.139  [Python                                  ] -> code-droite-py         p.137  « Code Python, droite des MCO sur le nuage »
+p.139  [R                                       ] -> code-droite-r          p.138  « Code R, droite des MCO sur le nuage »
+p.139  [Retour                                  ] -> f-droite               p.61  « La droite des MCO sur le nuage »
+p.140  [R                                       ] -> code-residus-r         p.141  « Code R, valeurs prédites et résidus »
+p.140  [Stata                                   ] -> code-residus-stata     p.142  « Code Stata, valeurs prédites et résidus »
+p.140  [Retour                                  ] -> f-residus              p.62  « Valeurs prédites et résidus dans les données »
+p.141  [Python                                  ] -> code-residus-py        p.140  « Code Python, valeurs prédites et résidus »
+p.141  [Stata                                   ] -> code-residus-stata     p.142  « Code Stata, valeurs prédites et résidus »
+p.141  [Retour                                  ] -> f-residus              p.62  « Valeurs prédites et résidus dans les données »
+p.142  [Python                                  ] -> code-residus-py        p.140  « Code Python, valeurs prédites et résidus »
+p.142  [R                                       ] -> code-residus-r         p.141  « Code R, valeurs prédites et résidus »
+p.142  [Retour                                  ] -> f-residus              p.62  « Valeurs prédites et résidus dans les données »
+248 liens, 0 sans destination

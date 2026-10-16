@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cascade informationnelle</title>
+<meta name="description" content="Simulation de cascades informationnelles dans des files de décideurs rationnels. Microéconomie III, Partie III, séance VIII.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  :root {
+    --bg: #f2f3ef; --surface: #ffffff; --surface-2: #e9ebe5;
+    --ink: #1b1f23; --ink-muted: #5b6570; --ink-faint: #8a939c; --line: #d7dad2;
+    --accent-a: #2e6f6b; --accent-a-soft: #dceeec; --accent-b: #a8475f; --accent-b-soft: #f6e3e7;
+    --good: #2f7d46; --good-soft: #e1f1e5; --bad: #b23b3b; --bad-soft: #fbe7e7;
+    --font-display: 'Source Serif 4', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+      --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+      --accent-a: #55b3ad; --accent-a-soft: #1c3634; --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+      --good: #4cae6d; --good-soft: #1c3323; --bad: #e07373; --bad-soft: #3a2222;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+    --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+    --accent-a: #55b3ad; --accent-a-soft: #1c3634; --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+    --good: #4cae6d; --good-soft: #1c3323; --bad: #e07373; --bad-soft: #3a2222;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); padding: 28px 16px 48px; line-height: 1.5; margin: 0; }
+  .wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+  header h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(24px, 5vw, 32px); margin: 0 0 6px; text-wrap: balance; }
+  header p { color: var(--ink-muted); margin: 0; max-width: 62ch; font-size: 15px; }
+  code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h2 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin: 0 0 14px; }
+  .spec-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px; font-size: 14px; color: var(--ink-muted); }
+  .spec-list li::marker { color: var(--ink-faint); }
+  .spec-list strong { color: var(--ink); }
+  .sliders { display: flex; flex-direction: column; gap: 16px; }
+  .slider-row { display: flex; flex-direction: column; gap: 6px; }
+  .slider-row .label-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; gap: 10px; }
+  .slider-row .label-line .who { font-weight: 600; }
+  .slider-row .label-line .val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-muted); font-size: 13px; white-space: nowrap; }
+  input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 3px; background: var(--surface-2); outline: none; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--accent-a); border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line); cursor: pointer; }
+  input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--accent-a); border: 2px solid var(--surface); cursor: pointer; }
+  .controls-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+  select, button { font-family: var(--font-body); font-size: 14px; border-radius: 9px; border: 1px solid var(--line); padding: 9px 13px; background: var(--surface-2); color: var(--ink); }
+  button { cursor: pointer; font-weight: 600; transition: transform .1s ease; }
+  button:active { transform: scale(.97); }
+  button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  button.primary:disabled { opacity: .5; cursor: default; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .presets button { background: transparent; font-weight: 500; font-size: 13px; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } }
+  .stat { border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .stat.a { background: var(--accent-a-soft); }
+  .stat.b { background: var(--accent-b-soft); }
+  .stat .who { font-size: 13px; font-weight: 600; }
+  .stat.a .who { color: var(--accent-a); }
+  .stat.b .who { color: var(--accent-b); }
+  .stat .big { font-family: var(--font-mono); font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat .sub { font-size: 12.5px; color: var(--ink-muted); font-family: var(--font-mono); }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart-caption { font-size: 12.5px; color: var(--ink-muted); margin-top: 8px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12.5px; }
+  th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--ink-muted); font-weight: 500; font-family: var(--font-body); font-size: 11.5px; text-transform: uppercase; letter-spacing: .03em; }
+  .log-scroll { max-height: 280px; overflow-y: auto; border-radius: 10px; }
+  .note { font-size: 13.5px; color: var(--ink-muted); background: var(--surface-2); border-radius: 10px; padding: 12px 14px; margin-top: 14px; }
+  .note strong { color: var(--ink); }
+  .note.ok { background: var(--good-soft); } .note.ok strong { color: var(--good); }
+  .note.warn { background: var(--bad-soft); } .note.warn strong { color: var(--bad); }
+  .hi { color: var(--good); font-weight: 600; } .lo { color: var(--bad); }
+  /* Signature du cours, identique sur tous les documents */
+  body { padding-bottom: 64px; }
+  .signature { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--bg); color: #A8A8A8;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
+    padding: 5px 0; margin: 0 16px; border-top: 0.5px solid #DBDBDB; font-family: var(--font-body); font-size: 11px; }
+  .signature span:nth-child(2) { text-align: center; }
+  .signature span:last-child { text-align: right; }
+  @media (max-width: 520px) { .signature { font-size: 10.5px; gap: 6px; } }
+</style>
+<style>
+  .file { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .pers { width: 30px; height: 44px; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 12px; border: 1px solid var(--line); }
+  .pers .sig { font-size: 10px; color: var(--ink-muted); }
+  .pers.A { background: var(--accent-a-soft); color: var(--accent-a); font-weight: 600; }
+  .pers.B { background: var(--accent-b-soft); color: var(--accent-b); font-weight: 600; }
+  .pers.imite { outline: 2px dashed var(--ink-faint); outline-offset: 1px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>La cascade informationnelle</h1>
+    <p>Des personnes choisissent l'une après l'autre entre A et B. A est le bon choix, personne ne le sait. Chacune a un signal privé et voit les choix précédents. Combien de files finissent sur le mauvais choix, alors que chacun raisonne correctement ? Le cours prévoit <code>(1 − q)² / (q² + (1 − q)²)</code>.</p>
+  </header>
+
+  <div class="card">
+    <h2>Ce que fait ce simulateur</h2>
+    <ul class="spec-list">
+      <li><strong>Le signal.</strong> Chaque personne reçoit un signal privé, juste, c'est-à-dire en faveur de A, avec probabilité <code>q</code>.</li>
+      <li><strong>La règle de décision.</strong> Celle du cours. Tant que les choix révélés sont équilibrés à un près, chacun suit son signal, et son choix révèle ce signal. Dès qu'un choix a deux voix d'avance, chacun imite, quel que soit son signal, et plus rien n'est révélé.</li>
+      <li><strong>Le tirage.</strong> Les signaux sont tirés par <code>Math.random()</code>, de nouveaux à chaque lancement.</li>
+      <li><strong>La valeur théorique.</strong> Pour une file assez longue, la probabilité de cascade erronée vaut <code>(1 − q)² / (q² + (1 − q)²)</code>, soit 0,155 avec <code>q = 0,7</code>. Dans une file courte, quelques files n'ont pas encore basculé, leur part est affichée.</li>
+      <li><strong>Ce qui est affiché.</strong> Une file personne par personne, la fréquence des files qui finissent sur B comparée à la formule, sa convergence au fil des files simulées, et le détail de la dernière file.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Réglages</h2>
+    <div class="sliders">
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Précision du signal privé q</span><span class="val" id="qVal"></span></div>
+        <input type="range" id="qSlider" min="51" max="95" value="70" step="1">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Nombre de personnes par file</span><span class="val" id="nVal"></span></div>
+        <input type="range" id="nSlider" min="4" max="50" value="20" step="1">
+      </div>
+    </div>
+    <div class="controls-row">
+      <select id="filesSelect">
+        <option value="100">100 files</option>
+        <option value="1000">1 000 files</option>
+        <option value="10000" selected>10 000 files</option>
+      </select>
+      <button class="primary" id="runBtn">Lancer la simulation</button>
+      <button id="resetBtn">Réinitialiser</button>
+    </div>
+    <div class="presets">
+      <button data-q="70" data-n="20">Le cours, q = 0,7</button>
+      <button data-q="55" data-n="20">Signal faible, q = 0,55</button>
+      <button data-q="90" data-n="20">Signal fort, q = 0,9</button>
+      <button data-q="70" data-n="6">File très courte, 6 personnes</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Résultat de la simulation</h2>
+    <div class="stats">
+      <div class="stat b">
+        <span class="who">Files qui finissent sur le mauvais choix B</span>
+        <span class="big" id="empWrong">—</span>
+        <span class="sub" id="theoWrong">théorie —</span>
+      </div>
+      <div class="stat a">
+        <span class="who">Files encore sans cascade à la fin</span>
+        <span class="big" id="empNone">—</span>
+        <span class="sub" id="theoNone">théorie —</span>
+      </div>
+    </div>
+    <h2 style="margin-top:20px;font-size:15px">Une file tirée au hasard</h2>
+    <div class="file" id="file"></div>
+    <p class="chart-caption">Lettre en gras, choix de la personne. Petite lettre, son signal privé. Cadre en pointillés, la personne imite au lieu de suivre son signal.</p>
+    <div style="margin-top:18px">
+      <svg id="conv" viewBox="0 0 680 220" preserveAspectRatio="xMidYMid meet" aria-label="Convergence de la fréquence de cascades erronées"></svg>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--accent-b)"></span>fréquence cumulée des files qui finissent sur B</span>
+        <span><span class="swatch" style="background:var(--ink-faint)"></span>valeur théorique</span>
+      </div>
+    </div>
+    <div class="note" id="verdict">Lancez une simulation.</div>
+  </div>
+
+  <div class="card">
+    <h2>Carnet de la file affichée</h2>
+    <div class="log-scroll">
+      <table>
+        <thead><tr><th>Personne</th><th>Signal</th><th>Avance de A révélée</th><th>Choix</th><th>Raison</th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="signature"><span>Anderson VIL, Dr en Économie</span><span>Microéconomie III</span><span>Année universitaire 2026-2027</span></footer>
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const nb = (x, d = 3) => x.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const Q = () => $('qSlider').value / 100, NP = () => +$('nSlider').value;
+  const theoFaux = q => (1 - q) ** 2 / (q * q + (1 - q) ** 2);
+  const theoSans = (q, n) => (2 * q * (1 - q)) ** Math.floor(n / 2);
+  function labels() {
+    $('qVal').textContent = 'q = ' + nb(Q(), 2); $('nVal').textContent = NP() + ' personnes';
+    $('theoWrong').textContent = 'théorie, file longue ' + nb(theoFaux(Q()));
+    $('theoNone').textContent = 'théorie ' + nb(theoSans(Q(), NP()), 4);
+  }
+  ['qSlider', 'nSlider'].forEach(id => $(id).addEventListener('input', labels));
+
+  function uneFile(q, n, garder) {
+    let d = 0, dernier = null; const det = [];
+    for (let i = 0; i < n; i++) {
+      const sig = Math.random() < q ? 'A' : 'B';
+      let choix, raison;
+      if (d >= 2) { choix = 'A'; raison = sig === 'A' ? 'imite, comme son signal' : 'imite contre son signal'; }
+      else if (d <= -2) { choix = 'B'; raison = sig === 'B' ? 'imite, comme son signal' : 'imite contre son signal'; }
+      else { choix = sig; raison = 'suit son signal'; }
+      if (garder) det.push({ i: i + 1, sig, d, choix, raison, imite: Math.abs(d) >= 2 });
+      if (Math.abs(d) < 2) d += sig === 'A' ? 1 : -1;
+      dernier = choix;
+    }
+    return { fin: dernier, d, det };
+  }
+
+  function drawConv(serie, th) {
+    const W = 680, H = 220, L = 52, R = 14, T = 12, B = 26, iw = W - L - R, ih = H - T - B, n = serie.length;
+    const ymax = Math.max(0.1, Math.min(1, 1.6 * Math.max(th, ...serie.slice(Math.floor(n / 10)))));
+    const x = i => L + i / Math.max(1, n - 1) * iw, y = v => T + (1 - Math.min(v, ymax) / ymax) * ih;
+    let s = '';
+    for (let k = 0; k <= 4; k++) { const v = ymax * k / 4; s += `<line x1="${L}" y1="${y(v)}" x2="${W - R}" y2="${y(v)}" stroke="var(--line)"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${nb(v, 2)}</text>`; }
+    s += `<line x1="${L}" y1="${y(th)}" x2="${W - R}" y2="${y(th)}" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="5,4"/>`;
+    const pas = Math.max(1, Math.floor(n / 300)); let d = '';
+    for (let i = 0; i < n; i += pas) d += (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(serie[i]).toFixed(1);
+    s += `<path d="${d}" fill="none" stroke="var(--accent-b)" stroke-width="2.2"/>`;
+    s += `<text x="${L}" y="${H - 6}" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">file 1</text><text x="${W - R}" y="${H - 6}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">file ${n.toLocaleString('fr-FR')}</text>`;
+    $('conv').innerHTML = s;
+  }
+
+  function run() {
+    const q = Q(), n = NP(), F = parseInt($('filesSelect').value, 10);
+    let faux = 0, sans = 0; const serie = [];
+    for (let f = 0; f < F; f++) {
+      const r = uneFile(q, n, false);
+      if (Math.abs(r.d) < 2) sans++;
+      if (r.fin === 'B') faux++;
+      serie.push(faux / (f + 1));
+    }
+    const ex = uneFile(q, n, true);
+    $('file').innerHTML = ex.det.map(p => `<div class="pers ${p.choix}${p.imite ? ' imite' : ''}" title="personne ${p.i}"><span>${p.choix}</span><span class="sig">${p.sig.toLowerCase()}</span></div>`).join('');
+    $('logBody').innerHTML = ex.det.map(p => `<tr><td>${p.i}</td><td>${p.sig}</td><td>${p.d > 0 ? '+' : ''}${p.d}</td><td>${p.choix}</td><td>${p.raison}</td></tr>`).join('');
+    const fw = faux / F, fs = sans / F, th = theoFaux(q);
+    $('empWrong').textContent = nb(fw); $('empNone').textContent = nb(fs, 4);
+    drawConv(serie, th);
+    const v = $('verdict');
+    v.className = fw > 0.1 ? 'note warn' : 'note';
+    v.innerHTML = `<strong>${nb(100 * fw, 1)} % des files finissent sur le mauvais choix</strong>, pour ${nb(100 * th, 1)} % prévus par le cours. ` +
+      (F < 1000 ? `Avec peu de files, la fréquence fluctue encore. Passez à 10 000 files. ` :
+        (theoSans(q, n) > 0.01 ? `La file est courte. ${nb(100 * fs, 1)} % des files n'ont pas encore basculé et leur dernière personne suit son signal, d'où l'écart avec la formule, valable pour une file longue. ` : `La fréquence simulée s'est stabilisée près de la valeur théorique. `)) +
+      `Chacun raisonne correctement à partir de ce qu'il voit. L'erreur vient de ce que, une fois la cascade lancée, les signaux privés des suivants ne sont plus révélés.`;
+  }
+
+  $('runBtn').addEventListener('click', run);
+  $('resetBtn').addEventListener('click', () => {
+    $('qSlider').value = 70; $('nSlider').value = 20; labels();
+    ['empWrong', 'empNone'].forEach(id => $(id).textContent = '—'); $('file').innerHTML = ''; $('conv').innerHTML = ''; $('logBody').innerHTML = '';
+    $('verdict').className = 'note'; $('verdict').textContent = 'Lancez une simulation.';
+  });
+  document.querySelectorAll('.presets button').forEach(b => b.addEventListener('click', () => {
+    $('qSlider').value = b.dataset.q; $('nSlider').value = b.dataset.n; labels(); run();
+  }));
+  labels();
+})();
+</script>
+</body>
+</html>

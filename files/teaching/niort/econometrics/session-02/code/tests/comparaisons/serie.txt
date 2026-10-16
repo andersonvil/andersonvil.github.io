@@ -1,0 +1,3 @@
+py     ex5-depart         identique
+r      ex5-depart         identique
+stata  ex5-depart         identique

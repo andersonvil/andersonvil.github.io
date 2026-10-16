@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choix de portefeuille</title>
+<meta name="description" content="Simulation du choix entre actif sûr et actif risqué selon l'aversion au risque. Microéconomie III, Partie III, séance VII.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  :root {
+    --bg: #f2f3ef; --surface: #ffffff; --surface-2: #e9ebe5;
+    --ink: #1b1f23; --ink-muted: #5b6570; --ink-faint: #8a939c; --line: #d7dad2;
+    --accent-a: #2e6f6b; --accent-a-soft: #dceeec; --accent-b: #a8475f; --accent-b-soft: #f6e3e7;
+    --good: #2f7d46; --good-soft: #e1f1e5; --bad: #b23b3b; --bad-soft: #fbe7e7;
+    --font-display: 'Source Serif 4', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+      --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+      --accent-a: #55b3ad; --accent-a-soft: #1c3634; --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+      --good: #4cae6d; --good-soft: #1c3323; --bad: #e07373; --bad-soft: #3a2222;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+    --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+    --accent-a: #55b3ad; --accent-a-soft: #1c3634; --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+    --good: #4cae6d; --good-soft: #1c3323; --bad: #e07373; --bad-soft: #3a2222;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); padding: 28px 16px 48px; line-height: 1.5; margin: 0; }
+  .wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+  header h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(24px, 5vw, 32px); margin: 0 0 6px; text-wrap: balance; }
+  header p { color: var(--ink-muted); margin: 0; max-width: 62ch; font-size: 15px; }
+  code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h2 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin: 0 0 14px; }
+  .spec-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px; font-size: 14px; color: var(--ink-muted); }
+  .spec-list li::marker { color: var(--ink-faint); }
+  .spec-list strong { color: var(--ink); }
+  .sliders { display: flex; flex-direction: column; gap: 16px; }
+  .slider-row { display: flex; flex-direction: column; gap: 6px; }
+  .slider-row .label-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; gap: 10px; }
+  .slider-row .label-line .who { font-weight: 600; }
+  .slider-row .label-line .val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-muted); font-size: 13px; white-space: nowrap; }
+  input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 3px; background: var(--surface-2); outline: none; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--accent-a); border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line); cursor: pointer; }
+  input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--accent-a); border: 2px solid var(--surface); cursor: pointer; }
+  .controls-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+  select, button { font-family: var(--font-body); font-size: 14px; border-radius: 9px; border: 1px solid var(--line); padding: 9px 13px; background: var(--surface-2); color: var(--ink); }
+  button { cursor: pointer; font-weight: 600; transition: transform .1s ease; }
+  button:active { transform: scale(.97); }
+  button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  button.primary:disabled { opacity: .5; cursor: default; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .presets button { background: transparent; font-weight: 500; font-size: 13px; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } }
+  .stat { border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .stat.a { background: var(--accent-a-soft); }
+  .stat.b { background: var(--accent-b-soft); }
+  .stat .who { font-size: 13px; font-weight: 600; }
+  .stat.a .who { color: var(--accent-a); }
+  .stat.b .who { color: var(--accent-b); }
+  .stat .big { font-family: var(--font-mono); font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat .sub { font-size: 12.5px; color: var(--ink-muted); font-family: var(--font-mono); }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart-caption { font-size: 12.5px; color: var(--ink-muted); margin-top: 8px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12.5px; }
+  th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--ink-muted); font-weight: 500; font-family: var(--font-body); font-size: 11.5px; text-transform: uppercase; letter-spacing: .03em; }
+  .log-scroll { max-height: 280px; overflow-y: auto; border-radius: 10px; }
+  .note { font-size: 13.5px; color: var(--ink-muted); background: var(--surface-2); border-radius: 10px; padding: 12px 14px; margin-top: 14px; }
+  .note strong { color: var(--ink); }
+  .note.ok { background: var(--good-soft); } .note.ok strong { color: var(--good); }
+  .note.warn { background: var(--bad-soft); } .note.warn strong { color: var(--bad); }
+  .hi { color: var(--good); font-weight: 600; } .lo { color: var(--bad); }
+  /* Signature du cours, identique sur tous les documents */
+  body { padding-bottom: 64px; }
+  .signature { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--bg); color: #A8A8A8;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
+    padding: 5px 0; margin: 0 16px; border-top: 0.5px solid #DBDBDB; font-family: var(--font-body); font-size: 11px; }
+  .signature span:nth-child(2) { text-align: center; }
+  .signature span:last-child { text-align: right; }
+  @media (max-width: 520px) { .signature { font-size: 10.5px; gap: 6px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Le choix de portefeuille</h1>
+    <p>Un investisseur partage son épargne entre un actif sûr et un fonds d'actions. Réglez les rendements, le risque et l'aversion au risque. Le simulateur calcule la part optimale du cours, <code>x* = (r_m − r_f) / (a σ_m²)</code>, puis fait vivre ce portefeuille année après année.</p>
+  </header>
+
+  <div class="card">
+    <h2>Ce que fait ce simulateur</h2>
+    <ul class="spec-list">
+      <li><strong>Les deux actifs.</strong> L'actif sûr rapporte <code>r_f</code> chaque année. Le fonds d'actions rapporte un rendement aléatoire d'espérance <code>r_m</code> et d'écart-type <code>σ_m</code>.</li>
+      <li><strong>L'investisseur.</strong> Son utilité est celle du cours, <code>U = μ − (a/2) σ²</code>. Il place la part <code>x*</code> dans le fonds. Si <code>x* > 1</code>, il emprunte au taux <code>r_f</code> pour acheter sur marge.</li>
+      <li><strong>Les valeurs théoriques.</strong> <code>r_x = r_f + x*(r_m − r_f)</code> et <code>σ_x = x* σ_m</code>, comme sur la droite budgétaire, dont la pente est le prix du risque <code>p = (r_m − r_f)/σ_m</code>.</li>
+      <li><strong>Le tirage.</strong> Chaque année, le rendement du fonds est tiré dans une loi normale, à partir de <code>Math.random()</code>. Ce choix de loi est propre au simulateur, le cours n'utilise que l'espérance et l'écart-type.</li>
+      <li><strong>Ce qui est affiché.</strong> Le plan (écart-type, rendement espéré) avec la droite budgétaire et le point choisi, les rendements simulés du portefeuille, leur moyenne et leur écart-type comparés à la théorie, et le détail des dernières années.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Réglages</h2>
+    <div class="sliders">
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Rendement de l'actif sûr r_f</span><span class="val" id="rfVal"></span></div>
+        <input type="range" id="rfSlider" min="0" max="60" value="40" step="5">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Rendement espéré du fonds r_m</span><span class="val" id="rmVal"></span></div>
+        <input type="range" id="rmSlider" min="20" max="160" value="120" step="5">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Écart-type du fonds σ_m</span><span class="val" id="smVal"></span></div>
+        <input type="range" id="smSlider" min="50" max="400" value="200" step="10">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Aversion au risque a</span><span class="val" id="aVal"></span></div>
+        <input type="range" id="aSlider" min="5" max="100" value="40" step="5">
+      </div>
+    </div>
+    <div class="controls-row">
+      <select id="yearsSelect">
+        <option value="10">10 années</option>
+        <option value="40" selected>40 années</option>
+        <option value="1000">1 000 années</option>
+        <option value="100000">100 000 années</option>
+      </select>
+      <button class="primary" id="runBtn">Lancer la simulation</button>
+      <button id="resetBtn">Réinitialiser</button>
+    </div>
+    <div class="presets">
+      <button data-rf="40" data-rm="120" data-sm="200" data-a="40">Investisseur A du cours, a = 4</button>
+      <button data-rf="40" data-rm="120" data-sm="200" data-a="10">Investisseuse B, a = 1, achat sur marge</button>
+      <button data-rf="30" data-rm="80" data-sm="150" data-a="50">Livret et fonds indiciel, a = 5</button>
+      <button data-rf="40" data-rm="120" data-sm="200" data-a="100">Très averse, a = 10</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Résultat de la simulation</h2>
+    <div class="stats">
+      <div class="stat a">
+        <span class="who">Part optimale dans le fonds x*</span>
+        <span class="big" id="xStar">—</span>
+        <span class="sub" id="prixRisque">prix du risque —</span>
+      </div>
+      <div class="stat b">
+        <span class="who">Pire année simulée</span>
+        <span class="big" id="worst">—</span>
+        <span class="sub" id="best">meilleure année —</span>
+      </div>
+      <div class="stat a">
+        <span class="who">Rendement moyen simulé du portefeuille</span>
+        <span class="big" id="empMean">—</span>
+        <span class="sub" id="theoMean">théorie —</span>
+      </div>
+      <div class="stat b">
+        <span class="who">Écart-type simulé du portefeuille</span>
+        <span class="big" id="empSd">—</span>
+        <span class="sub" id="theoSd">théorie —</span>
+      </div>
+    </div>
+    <div style="margin-top:20px">
+      <svg id="plane" viewBox="0 0 680 260" preserveAspectRatio="xMidYMid meet" aria-label="Plan écart-type et rendement espéré"></svg>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--ink-faint)"></span>droite budgétaire</span>
+        <span><span class="swatch" style="background:var(--accent-b)"></span>courbe d'indifférence tangente</span>
+        <span><span class="swatch" style="background:var(--accent-a)"></span>point choisi et point simulé</span>
+      </div>
+    </div>
+    <div style="margin-top:18px">
+      <svg id="years" viewBox="0 0 680 200" preserveAspectRatio="xMidYMid meet" aria-label="Rendements annuels simulés"></svg>
+      <p class="chart-caption">Rendement du portefeuille, année par année (barres, 200 dernières années au plus) et moyenne cumulée (trait). Le pointillé est le rendement espéré théorique.</p>
+    </div>
+    <div class="note" id="verdict">Lancez une simulation.</div>
+  </div>
+
+  <div class="card">
+    <h2>Carnet des dernières années</h2>
+    <div class="log-scroll">
+      <table>
+        <thead><tr><th>Année</th><th>Rendement du fonds</th><th>Rendement du portefeuille</th><th>Moyenne cumulée</th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="signature"><span>Anderson VIL, Dr en Économie</span><span>Microéconomie III</span><span>Année universitaire 2026-2027</span></footer>
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const nb = (x, d = 1) => x.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const pc = (x, d = 1) => nb(100 * x, d) + ' %';
+  const par = () => ({ rf: $('rfSlider').value / 1000, rm: $('rmSlider').value / 1000, sm: $('smSlider').value / 1000, a: $('aSlider').value / 10 });
+  function theorie() {
+    const { rf, rm, sm, a } = par();
+    const x = (rm - rf) / (a * sm * sm);
+    return { x, r: rf + x * (rm - rf), s: x * sm, p: (rm - rf) / sm, U: rf + x * (rm - rf) - a / 2 * x * x * sm * sm };
+  }
+  function labels() {
+    const { rf, rm, sm, a } = par();
+    $('rfVal').textContent = pc(rf); $('rmVal').textContent = pc(rm); $('smVal').textContent = pc(sm, 0); $('aVal').textContent = nb(a, 1);
+    const t = theorie();
+    $('xStar').textContent = t.x > 0 ? nb(t.x, 2) : '0';
+    $('prixRisque').textContent = 'prix du risque p = ' + nb(t.p, 2) + (t.x > 1 ? ', achat sur marge' : '');
+    $('theoMean').textContent = 'théorie ' + pc(t.r); $('theoSd').textContent = 'théorie ' + pc(t.s);
+    drawPlane(null);
+  }
+  ['rfSlider', 'rmSlider', 'smSlider', 'aSlider'].forEach(id => $(id).addEventListener('input', labels));
+
+  function drawPlane(sim) {
+    const { rf, rm, sm, a } = par(), t = theorie();
+    const W = 680, H = 260, L = 52, R = 14, T = 12, B = 34, iw = W - L - R, ih = H - T - B;
+    const smax = Math.max(0.5, 1.15 * Math.max(t.s, sm)), rmax = Math.max(0.3, rf + t.p * smax);
+    const x = v => L + v / smax * iw, y = v => T + (1 - v / rmax) * ih;
+    let s = '';
+    for (let i = 0; i <= 4; i++) {
+      const v = rmax * i / 4, u = smax * i / 4;
+      s += `<line x1="${L}" y1="${y(v)}" x2="${W - R}" y2="${y(v)}" stroke="var(--line)"/>`;
+      s += `<text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${nb(100 * v, 0)}</text>`;
+      s += `<text x="${x(u)}" y="${H - 16}" text-anchor="middle" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${nb(100 * u, 0)}</text>`;
+    }
+    s += `<text x="${(L + W - R) / 2}" y="${H - 1}" text-anchor="middle" font-size="11.5" fill="var(--ink-muted)">écart-type (%)</text>`;
+    s += `<text x="12" y="${T + ih / 2}" transform="rotate(-90 12 ${T + ih / 2})" text-anchor="middle" font-size="11.5" fill="var(--ink-muted)">rendement espéré (%)</text>`;
+    s += `<line x1="${x(0)}" y1="${y(rf)}" x2="${x(smax)}" y2="${y(rf + t.p * smax)}" stroke="var(--ink-faint)" stroke-width="2"/>`;
+    if (t.x > 0) {
+      let d = ''; for (let i = 0; i <= 120; i++) { const u = smax * i / 120, v = t.U + a / 2 * u * u; if (v > rmax * 1.05) break; d += (i ? 'L' : 'M') + x(u).toFixed(1) + ',' + y(v).toFixed(1); }
+      s += `<path d="${d}" fill="none" stroke="var(--accent-b)" stroke-width="2"/>`;
+    }
+    s += `<rect x="${x(sm) - 4}" y="${y(rm) - 4}" width="8" height="8" fill="var(--ink-faint)"/><text x="${x(sm) + 8}" y="${y(rm) + 4}" font-size="11" fill="var(--ink-muted)">fonds seul</text>`;
+    const xs = Math.max(0, t.x);
+    s += `<circle cx="${x(xs * sm)}" cy="${y(rf + xs * (rm - rf))}" r="5" fill="none" stroke="var(--accent-a)" stroke-width="2"/>`;
+    if (sim) s += `<circle cx="${x(Math.min(sim.s, smax))}" cy="${y(Math.max(0, Math.min(sim.m, rmax)))}" r="4.5" fill="var(--accent-a)"/>`;
+    $('plane').innerHTML = s;
+  }
+
+  function drawYears(rets, cum, rTheo) {
+    const W = 680, H = 200, L = 52, R = 14, T = 10, B = 22, iw = W - L - R, ih = H - T - B;
+    const n = rets.length, k0 = Math.max(0, n - 200), seg = rets.slice(k0), segc = cum.slice(k0);
+    const lim = Math.max(0.1, ...seg.map(Math.abs));
+    const x = i => L + (i + 0.5) / seg.length * iw, y = v => T + (1 - (v + lim) / (2 * lim)) * ih;
+    let s = `<line x1="${L}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="var(--line)"/>`;
+    [-lim, -lim / 2, lim / 2, lim].forEach(v => s += `<text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${nb(100 * v, 0)} %</text>`);
+    const bw = Math.max(1, iw / seg.length - 1);
+    seg.forEach((v, i) => s += `<rect x="${x(i) - bw / 2}" y="${Math.min(y(v), y(0))}" width="${bw}" height="${Math.abs(y(v) - y(0))}" fill="${v >= 0 ? 'var(--accent-a)' : 'var(--accent-b)'}" opacity="0.7"/>`);
+    s += `<line x1="${L}" y1="${y(rTheo)}" x2="${W - R}" y2="${y(rTheo)}" stroke="var(--ink-faint)" stroke-dasharray="5,4" stroke-width="1.5"/>`;
+    let d = ''; segc.forEach((v, i) => d += (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(v).toFixed(1));
+    s += `<path d="${d}" fill="none" stroke="var(--ink)" stroke-width="2"/>`;
+    $('years').innerHTML = s;
+  }
+
+  function normale() {                         // Box-Muller
+    let u = 0; while (u === 0) u = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * Math.random());
+  }
+
+  function run() {
+    const { rf, rm, sm } = par(), t = theorie(), x = Math.max(0, t.x), n = parseInt($('yearsSelect').value, 10);
+    const rets = new Array(n), cum = new Array(n), log = []; let s1 = 0, s2 = 0, worst = Infinity, best = -Infinity;
+    for (let i = 0; i < n; i++) {
+      const rmk = rm + sm * normale(), rp = rf + x * (rmk - rf);
+      rets[i] = rp; s1 += rp; s2 += rp * rp; cum[i] = s1 / (i + 1);
+      worst = Math.min(worst, rp); best = Math.max(best, rp);
+      if (i >= n - 15) log.push({ i: i + 1, rmk, rp, c: cum[i] });
+    }
+    const m = s1 / n, sd = Math.sqrt(Math.max(0, s2 / n - m * m));
+    $('empMean').textContent = pc(m); $('empSd').textContent = pc(sd);
+    $('worst').textContent = pc(worst); $('best').textContent = 'meilleure année ' + pc(best);
+    drawPlane({ m, s: sd }); drawYears(rets, cum, t.r);
+    $('logBody').innerHTML = log.map(l => `<tr><td>${l.i}</td><td>${pc(l.rmk)}</td><td>${pc(l.rp)}</td><td>${pc(l.c)}</td></tr>`).join('');
+    const v = $('verdict');
+    if (t.x <= 0) { v.className = 'note'; v.innerHTML = `<strong>Aucun placement risqué.</strong> Le fonds ne rapporte pas plus que l'actif sûr en espérance. L'investisseur garde tout en actif sûr.`; return; }
+    let msg = t.x > 1
+      ? `<strong>Achat sur marge.</strong> L'investisseur place ${nb(100 * t.x, 0)} % de son épargne dans le fonds, en empruntant la différence. `
+      : `<strong>Portefeuille mixte.</strong> L'investisseur place ${nb(100 * t.x, 0)} % de son épargne dans le fonds. `;
+    msg += `Sur ${nb(n, 0)} années, rendement moyen ${pc(m)} pour ${pc(t.r)} attendu, écart-type ${pc(sd)} pour ${pc(t.s)} attendu. `;
+    msg += n <= 40 ? `Sur une période aussi courte, la moyenne simulée peut s'éloigner nettement de l'espérance. Relancez pour voir.` : `Avec autant d'années, la moyenne et l'écart-type simulés collent à la théorie.`;
+    if (worst < -0.4) msg += ` La pire année fait perdre plus de 40 % du capital.`;
+    v.className = t.x > 1 ? 'note warn' : 'note ok'; v.innerHTML = msg;
+  }
+
+  $('runBtn').addEventListener('click', run);
+  $('resetBtn').addEventListener('click', () => {
+    $('rfSlider').value = 40; $('rmSlider').value = 120; $('smSlider').value = 200; $('aSlider').value = 40; labels();
+    ['empMean', 'empSd', 'worst'].forEach(id => $(id).textContent = '—'); $('best').textContent = 'meilleure année —';
+    $('years').innerHTML = ''; $('logBody').innerHTML = ''; $('verdict').className = 'note'; $('verdict').textContent = 'Lancez une simulation.';
+  });
+  document.querySelectorAll('.presets button').forEach(b => b.addEventListener('click', () => {
+    $('rfSlider').value = b.dataset.rf; $('rmSlider').value = b.dataset.rm; $('smSlider').value = b.dataset.sm; $('aSlider').value = b.dataset.a;
+    labels(); run();
+  }));
+  labels();
+})();
+</script>
+</body>
+</html>

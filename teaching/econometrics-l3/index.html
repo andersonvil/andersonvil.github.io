@@ -1,0 +1,337 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Econometrics — L3 | Teaching</title>
+  <meta name="description" content="Teaching resources for Econometrics — L3.">
+  <link rel="canonical" href="https:&#x2F;&#x2F;andersonvil.github.io&#x2F;teaching&#x2F;econometrics-l3&#x2F;">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Anderson Vil">
+  <meta property="og:title" content="Econometrics — L3">
+  <meta property="og:description" content="Academic site for Anderson Vil, household and labor economist.">
+  <meta property="og:url" content="https:&#x2F;&#x2F;andersonvil.github.io&#x2F;teaching&#x2F;econometrics-l3&#x2F;">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('av-theme');
+        const theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch (_) { document.documentElement.dataset.theme = 'dark'; document.documentElement.style.colorScheme = 'dark'; }
+    })();
+  </script>
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="/styles/site.css">
+  <script defer src="/js/site.js"></script>
+  
+</head>
+<body class="">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Anderson Vil home">
+        <span class="wordmark-mark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 273" focusable="false" aria-hidden="true"><circle cx="136.5" cy="136.5" r="133.2" fill="none" stroke="currentColor" stroke-width="3.8"/><path fill="currentColor" fill-rule="evenodd" d="M 152.480 96.700 L 152.480 96.700 Q 153 98 153.520 99.300 L 174.536 151.839 Q 175 153 175.750 154.000 L 177.250 156.000 Q 178 157 178.395 158.186 L 184.000 175.000 Q 184 175 184.000 175.000 L 186.000 175.000 Q 186 175 186.000 175.000 L 219.495 88.306 Q 220 87 219.873 85.606 L 219.113 77.245 Q 219 76 218.000 75.250 L 216.000 73.750 Q 215 73 213.760 72.845 L 207.000 72.000 Q 207 72 207.000 72.000 L 207.000 70.000 Q 207 70 207.000 70.000 L 239.000 70.000 Q 239 70 239.000 70.000 L 239.000 72.000 Q 239 72 239.000 72.000 L 231.328 74.557 Q 230 75 229.104 76.076 L 225.896 79.924 Q 225 81 224.494 82.305 L 206.506 128.695 Q 206 130 205.496 131.306 L 179.000 200.000 Q 179 200 179.000 200.000 L 175.000 200.000 Q 175 200 175.000 200.000 L 127.524 82.298 Q 127 81 126.186 79.861 L 122.814 75.139 Q 122 74 120.633 73.696 L 113.000 72.000 Q 113 72 113.000 72.000 L 113.000 70.000 Q 113 70 113.000 70.000 L 159.000 70.000 Q 159 70 159.000 70.000 L 160.000 72.000 Q 160 72 160.000 72.000 L 149.704 72.936 Q 149 73 148.500 73.500 L 147.500 74.500 Q 147 75 147.000 75.707 L 147.000 81.600 Q 147 83 147.520 84.300 Z M 85.443 100.672 L 85.443 100.672 Q 85 102 84.486 103.302 L 53.514 181.698 Q 53 183 53.127 184.394 L 54.000 194.000 Q 54 194 54.000 194.000 L 57.800 196.280 Q 59 197 60.400 197.000 L 66.000 197.000 Q 66 197 66.000 197.000 L 66.000 199.000 Q 66 199 66.000 199.000 L 34.000 199.000 Q 34 199 34.000 199.000 L 34.000 197.000 Q 34 197 34.000 197.000 L 40.642 195.340 Q 42 195 42.875 193.907 L 49.125 186.093 Q 50 185 50.506 183.695 L 95.000 69.000 Q 95 69 95.000 69.000 L 97.250 69.750 Q 98 70 98.304 70.730 L 102.462 80.708 Q 103 82 103.512 83.303 L 144.488 187.697 Q 145 189 145.777 190.165 L 148.500 194.250 Q 149 195 149.750 195.500 L 151.250 196.500 Q 152 197 152.901 197.000 L 160.000 197.000 Q 160 197 160.000 197.000 L 160.000 199.000 Q 160 199 160.000 199.000 L 112.000 199.000 Q 112 199 112.000 199.000 L 113.000 197.000 Q 113 197 113.000 197.000 L 124.000 196.000 Q 124 196 124.000 196.000 L 125.615 190.346 Q 126 189 125.482 187.699 L 89.000 96.000 Q 89 96 89.000 96.000 L 87.000 96.000 Q 87 96 87.000 96.000 Z"/><path d="M68 148.5 L109 148.5" fill="none" stroke="currentColor" stroke-opacity=".13" stroke-width="1"/></svg></span>
+        <span>Anderson Vil</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        
+          <a href="&#x2F;">Home</a>
+        
+          <a href="&#x2F;research&#x2F;">Research</a>
+        
+          <a href="&#x2F;files&#x2F;cv&#x2F;anderson-vil-cv-provisional.pdf" aria-label="CV — PDF">CV</a>
+        
+          <a href="&#x2F;teaching&#x2F;" class="nav-active" aria-current="page">Teaching</a>
+        
+          <a href="&#x2F;code-data&#x2F;">Code &amp; Data</a>
+        
+          <a href="&#x2F;insights&#x2F;">Insights</a>
+        
+          <a href="&#x2F;beyond-economics&#x2F;">Beyond Economics</a>
+        
+          <a href="&#x2F;contact&#x2F;">Contact</a>
+        
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <span class="theme-icon theme-icon-sun">
+<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</span>
+          <span class="theme-icon theme-icon-moon">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.6 8.6 0 0 1 8.8 3.6 8.7 8.7 0 1 0 20.4 15.2Z"></path></svg>
+</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
+          
+            <a href="&#x2F;">Home</a>
+          
+            <a href="&#x2F;research&#x2F;">Research</a>
+          
+            <a href="&#x2F;files&#x2F;cv&#x2F;anderson-vil-cv-provisional.pdf" aria-label="CV — PDF">CV</a>
+          
+            <a href="&#x2F;teaching&#x2F;" class="nav-active" aria-current="page">Teaching</a>
+          
+            <a href="&#x2F;code-data&#x2F;">Code &amp; Data</a>
+          
+            <a href="&#x2F;insights&#x2F;">Insights</a>
+          
+            <a href="&#x2F;beyond-economics&#x2F;">Beyond Economics</a>
+          
+            <a href="&#x2F;contact&#x2F;">Contact</a>
+          
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    
+
+
+<div class="shell detail-navigation">
+<nav class="context-back-bar" aria-label="Context navigation">
+  <a href="&#x2F;teaching&#x2F;"><span aria-hidden="true">←</span> Back to Teaching</a>
+</nav>
+<div class="breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>Econometrics — L3</span></div></div>
+<article class="article-page shell" data-real="true" data-provisional="false" data-publication-status="approved">
+  <header>
+
+    <p class="eyebrow">Exercise sheets</p>
+    <h1>Econometrics — L3</h1>
+    <p class="lede">Chapter-based exercises, teaching datasets, and previous continuous assessments with supplied answer keys.</p>
+  </header>
+  <dl class="course-meta">
+    <div><dt>Institution</dt><dd>CY Cergy Paris Université</dd></div>
+    <div><dt>Role</dt><dd>Tutorial</dd></div>
+    <div><dt>Level</dt><dd>Undergraduate (L3)</dd></div>
+    <div><dt>Academic year</dt><dd>2026&#x2F;2027</dd></div>
+    <div><dt>Language</dt><dd>French · <strong>French-language material</strong></dd></div>
+  </dl>
+  <section><h2>Topics documented in the material</h2><ul><li>Simple regression</li><li>OLS properties</li><li>Probability and sampling</li><li>Inference</li><li>Multiple regression</li><li>Functional form</li><li>Specification</li></ul></section>
+  <section>
+    <h2>Resources</h2>
+    
+
+<section class="resource-part"><h3>Chapter exercises</h3>
+<div class="resource-file-list">
+
+<article><div><h4>Chapter I — Introduction and simple regression</h4><p class="meta">PDF · 3 pages · 93.69 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-01.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter II — Simple regression applications</h4><p class="meta">PDF · 5 pages · 120.01 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-02.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter III — Probability and random variables</h4><p class="meta">PDF · 5 pages · 111.78 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-03.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter IV — Inference in simple regression</h4><p class="meta">PDF · 4 pages · 107.35 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-04.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter V — Estimator properties</h4><p class="meta">PDF · 3 pages · 111.58 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-05.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter VI — Multiple regression applications</h4><p class="meta">PDF · 4 pages · 100.33 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-06.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter VII — Hypothesis tests and specification</h4><p class="meta">PDF · 5 pages · 107.12 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-07.pdf">Open resource</a></article>
+
+<article><div><h4>Chapter VIII — Functional form and model comparison</h4><p class="meta">PDF · 6 pages · 91.29 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;exercises-08.pdf">Open resource</a></article>
+
+</div>
+</section>
+
+<section class="resource-part"><h3>Teaching datasets</h3>
+<div class="resource-file-list">
+
+<article><div><h4>Teaching dataset collection — original formats and dictionaries</h4><p class="meta">ZIP · 1.87 MB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset.zip">Open resource</a></article>
+
+<article><div><h4>BWGHT — bwght.csv</h4><p class="meta">CSV · 78.24 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;BWGHT&#x2F;bwght.csv">Open resource</a></article>
+
+<article><div><h4>BWGHT — BWGHT.DES</h4><p class="meta">DES · 917 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;BWGHT&#x2F;BWGHT.DES">Open resource</a></article>
+
+<article><div><h4>BWGHT — BWGHT.raw</h4><p class="meta">RAW · 201.96 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;BWGHT&#x2F;BWGHT.raw">Open resource</a></article>
+
+<article><div><h4>BWGHT — bwght.sas7bdat</h4><p class="meta">SAS7BDAT · 320 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;BWGHT&#x2F;bwght.sas7bdat">Open resource</a></article>
+
+<article><div><h4>BWGHT — bwght.xls</h4><p class="meta">XLS · 220 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;BWGHT&#x2F;bwght.xls">Open resource</a></article>
+
+<article><div><h4>CAMPUS — campus.des</h4><p class="meta">DES · 452 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;CAMPUS&#x2F;campus.des">Open resource</a></article>
+
+<article><div><h4>CAMPUS — campus.raw</h4><p class="meta">RAW · 7.48 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;CAMPUS&#x2F;campus.raw">Open resource</a></article>
+
+<article><div><h4>CAMPUS — campus.xls</h4><p class="meta">XLS · 22 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;CAMPUS&#x2F;campus.xls">Open resource</a></article>
+
+<article><div><h4>CEOSAL1 — CEOSAL1.DES</h4><p class="meta">DES · 827 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;CEOSAL1&#x2F;CEOSAL1.DES">Open resource</a></article>
+
+<article><div><h4>CEOSAL1 — CEOSAL1.raw</h4><p class="meta">RAW · 27.35 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;CEOSAL1&#x2F;CEOSAL1.raw">Open resource</a></article>
+
+<article><div><h4>CEOSAL1 — ceosal1.xls</h4><p class="meta">XLS · 52.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;CEOSAL1&#x2F;ceosal1.xls">Open resource</a></article>
+
+<article><div><h4>GPA1 — GPA1.DES</h4><p class="meta">DES · 1.79 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA1&#x2F;GPA1.DES">Open resource</a></article>
+
+<article><div><h4>GPA1 — GPA1.raw</h4><p class="meta">RAW · 44.20 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA1&#x2F;GPA1.raw">Open resource</a></article>
+
+<article><div><h4>GPA1 — gpa1.xls</h4><p class="meta">XLS · 40 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA1&#x2F;gpa1.xls">Open resource</a></article>
+
+<article><div><h4>GPA2 — gpa2.csv</h4><p class="meta">CSV · 210.26 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA2&#x2F;gpa2.csv">Open resource</a></article>
+
+<article><div><h4>GPA2 — GPA2.DES</h4><p class="meta">DES · 769 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA2&#x2F;GPA2.DES">Open resource</a></article>
+
+<article><div><h4>GPA2 — gpa2.raw</h4><p class="meta">RAW · 553.49 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA2&#x2F;gpa2.raw">Open resource</a></article>
+
+<article><div><h4>GPA2 — gpa2.sas7bdat</h4><p class="meta">SAS7BDAT · 512 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA2&#x2F;gpa2.sas7bdat">Open resource</a></article>
+
+<article><div><h4>GPA2 — gpa2.xls</h4><p class="meta">XLS · 628.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;GPA2&#x2F;gpa2.xls">Open resource</a></article>
+
+<article><div><h4>HPRICE1 — hprice1.csv</h4><p class="meta">CSV · 5.21 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE1&#x2F;hprice1.csv">Open resource</a></article>
+
+<article><div><h4>HPRICE1 — HPRICE1.DES</h4><p class="meta">DES · 641 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE1&#x2F;HPRICE1.DES">Open resource</a></article>
+
+<article><div><h4>HPRICE1 — hprice1.raw</h4><p class="meta">RAW · 9.62 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE1&#x2F;hprice1.raw">Open resource</a></article>
+
+<article><div><h4>HPRICE1 — hprice1.sas7bdat</h4><p class="meta">SAS7BDAT · 128 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE1&#x2F;hprice1.sas7bdat">Open resource</a></article>
+
+<article><div><h4>HPRICE1 — hprice1.xls</h4><p class="meta">XLS · 23.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE1&#x2F;hprice1.xls">Open resource</a></article>
+
+<article><div><h4>HPRICE2 — hprice2.csv</h4><p class="meta">CSV · 35.17 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE2&#x2F;hprice2.csv">Open resource</a></article>
+
+<article><div><h4>HPRICE2 — HPRICE2.DES</h4><p class="meta">DES · 831 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE2&#x2F;HPRICE2.DES">Open resource</a></article>
+
+<article><div><h4>HPRICE2 — HPRICE2.raw</h4><p class="meta">RAW · 66.21 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE2&#x2F;HPRICE2.raw">Open resource</a></article>
+
+<article><div><h4>HPRICE2 — hprice2.sas7bdat</h4><p class="meta">SAS7BDAT · 128 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE2&#x2F;hprice2.sas7bdat">Open resource</a></article>
+
+<article><div><h4>HPRICE2 — hprice2.xls</h4><p class="meta">XLS · 89 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HPRICE2&#x2F;hprice2.xls">Open resource</a></article>
+
+<article><div><h4>HTV — htv.csv</h4><p class="meta">CSV · 108.14 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HTV&#x2F;htv.csv">Open resource</a></article>
+
+<article><div><h4>HTV — htv.des</h4><p class="meta">DES · 1.63 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HTV&#x2F;htv.des">Open resource</a></article>
+
+<article><div><h4>HTV — htv.raw</h4><p class="meta">RAW · 306.30 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HTV&#x2F;htv.raw">Open resource</a></article>
+
+<article><div><h4>HTV — htv.sas7bdat</h4><p class="meta">SAS7BDAT · 320 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HTV&#x2F;htv.sas7bdat">Open resource</a></article>
+
+<article><div><h4>HTV — htv.xls</h4><p class="meta">XLS · 319.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;HTV&#x2F;htv.xls">Open resource</a></article>
+
+<article><div><h4>JTRAIN — JTRAIN.DES</h4><p class="meta">DES · 1.82 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;JTRAIN&#x2F;JTRAIN.DES">Open resource</a></article>
+
+<article><div><h4>JTRAIN — JTRAIN.raw</h4><p class="meta">RAW · 152.71 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;JTRAIN&#x2F;JTRAIN.raw">Open resource</a></article>
+
+<article><div><h4>JTRAIN — jtrain.xls</h4><p class="meta">XLS · 195 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;JTRAIN&#x2F;jtrain.xls">Open resource</a></article>
+
+<article><div><h4>MEAP93 — meap01.des</h4><p class="meta">DES · 772 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;MEAP93&#x2F;meap01.des">Open resource</a></article>
+
+<article><div><h4>MEAP93 — meap01.raw</h4><p class="meta">RAW · 218.97 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;MEAP93&#x2F;meap01.raw">Open resource</a></article>
+
+<article><div><h4>MEAP93 — meap01.xls</h4><p class="meta">XLS · 273 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;MEAP93&#x2F;meap01.xls">Open resource</a></article>
+
+<article><div><h4>MEAP93 — MEAP93.DES</h4><p class="meta">DES · 1.07 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;MEAP93&#x2F;MEAP93.DES">Open resource</a></article>
+
+<article><div><h4>MEAP93 — MEAP93.raw</h4><p class="meta">RAW · 75.30 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;MEAP93&#x2F;MEAP93.raw">Open resource</a></article>
+
+<article><div><h4>MEAP93 — meap93.xls</h4><p class="meta">XLS · 94 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;MEAP93&#x2F;meap93.xls">Open resource</a></article>
+
+<article><div><h4>NBASAL — nbasal.csv</h4><p class="meta">CSV · 16.57 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;NBASAL&#x2F;nbasal.csv">Open resource</a></article>
+
+<article><div><h4>NBASAL — nbasal.des</h4><p class="meta">DES · 1.44 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;NBASAL&#x2F;nbasal.des">Open resource</a></article>
+
+<article><div><h4>NBASAL — nbasal.raw</h4><p class="meta">RAW · 64.10 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;NBASAL&#x2F;nbasal.raw">Open resource</a></article>
+
+<article><div><h4>NBASAL — nbasal.sas7bdat</h4><p class="meta">SAS7BDAT · 128 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;NBASAL&#x2F;nbasal.sas7bdat">Open resource</a></article>
+
+<article><div><h4>NBASAL — nbasal.xls</h4><p class="meta">XLS · 55 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;NBASAL&#x2F;nbasal.xls">Open resource</a></article>
+
+<article><div><h4>RDCHEM — rdchem.csv</h4><p class="meta">CSV · 1.64 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RDCHEM&#x2F;rdchem.csv">Open resource</a></article>
+
+<article><div><h4>RDCHEM — RDCHEM.DES</h4><p class="meta">DES · 509 B</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RDCHEM&#x2F;RDCHEM.DES">Open resource</a></article>
+
+<article><div><h4>RDCHEM — RDCHEM.raw</h4><p class="meta">RAW · 2.52 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RDCHEM&#x2F;RDCHEM.raw">Open resource</a></article>
+
+<article><div><h4>RDCHEM — rdchem.sas7bdat</h4><p class="meta">SAS7BDAT · 128 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RDCHEM&#x2F;rdchem.sas7bdat">Open resource</a></article>
+
+<article><div><h4>RDCHEM — rdchem.xls</h4><p class="meta">XLS · 14.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RDCHEM&#x2F;rdchem.xls">Open resource</a></article>
+
+<article><div><h4>RENTAL — rental.csv</h4><p class="meta">CSV · 18.29 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RENTAL&#x2F;rental.csv">Open resource</a></article>
+
+<article><div><h4>RENTAL — RENTAL.DES</h4><p class="meta">DES · 1.34 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RENTAL&#x2F;RENTAL.DES">Open resource</a></article>
+
+<article><div><h4>RENTAL — RENTAL.raw</h4><p class="meta">RAW · 31.88 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RENTAL&#x2F;RENTAL.raw">Open resource</a></article>
+
+<article><div><h4>RENTAL — rental.sas7bdat</h4><p class="meta">SAS7BDAT · 128 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RENTAL&#x2F;rental.sas7bdat">Open resource</a></article>
+
+<article><div><h4>RENTAL — rental.xls</h4><p class="meta">XLS · 52.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;RENTAL&#x2F;rental.xls">Open resource</a></article>
+
+<article><div><h4>TWOYEAR — twoyear.des</h4><p class="meta">DES · 1.63 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;TWOYEAR&#x2F;twoyear.des">Open resource</a></article>
+
+<article><div><h4>TWOYEAR — twoyear.raw</h4><p class="meta">RAW · 1.54 MB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;TWOYEAR&#x2F;twoyear.raw">Open resource</a></article>
+
+<article><div><h4>TWOYEAR — twoyear.xls</h4><p class="meta">XLS · 1.41 MB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;TWOYEAR&#x2F;twoyear.xls">Open resource</a></article>
+
+<article><div><h4>WAGE1 — WAGE1.DES</h4><p class="meta">DES · 1.54 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;WAGE1&#x2F;WAGE1.DES">Open resource</a></article>
+
+<article><div><h4>WAGE1 — WAGE1.raw</h4><p class="meta">RAW · 125.85 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;WAGE1&#x2F;WAGE1.raw">Open resource</a></article>
+
+<article><div><h4>WAGE1 — wage1.xls</h4><p class="meta">XLS · 179 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;data&#x2F;Dataset&#x2F;WAGE1&#x2F;wage1.xls">Open resource</a></article>
+
+</div>
+</section>
+
+<section class="resource-part"><h3>Previous continuous assessments (CC)</h3>
+<div class="resource-file-list">
+
+<article><div><h4>CC 2017-18 — Question paper</h4><p class="meta">PDF · 551.86 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2017-18.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2018-19 — Question paper</h4><p class="meta">PDF · 127.91 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2018-19.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2019-20 — Question paper</h4><p class="meta">PDF · 110.50 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2019-20.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2021-22 — Question paper</h4><p class="meta">PDF · 108.23 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2021-22.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2022-23 — Question paper</h4><p class="meta">PDF · 128.13 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2022-23.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2022-23 — Answer key</h4><p class="meta">PDF · 11.66 MB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2022-23Rep.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2023-24 — Question paper</h4><p class="meta">PDF · 130.51 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2023-24.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2024-25 — Question paper</h4><p class="meta">PDF · 144.02 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2024-25.pdf">Open resource</a></article>
+
+<article><div><h4>CC 2024-25 — Answer key</h4><p class="meta">PDF · 157.30 kB</p></div><a class="button secondary" href="&#x2F;files&#x2F;teaching&#x2F;cy-cergy&#x2F;l3-econometrics&#x2F;previous-cc&#x2F;CC2024-25Rep.pdf">Open resource</a></article>
+
+</div>
+</section>
+
+
+    
+  </section>
+  <footer class="article-footer">
+<nav class="context-back-bar" aria-label="Context navigation">
+  <a href="&#x2F;teaching&#x2F;"><span aria-hidden="true">←</span> Back to Teaching</a>
+</nav>
+</footer>
+</article>
+
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Anderson Vil</p>
+        <p>Household Economics · Labor Economics · Applied Microeconometrics</p>
+      </div>
+      <div class="footer-links" aria-label="Professional profiles">
+        <a href="mailto:vladerinson@gmail.com">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></svg>
+<span>Email</span></a>
+        <a href="https:&#x2F;&#x2F;github.com&#x2F;andersonvil" rel="me">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.3 9.3 0 0 0-2.9 18.1c.5.1.6-.2.6-.5v-1.8c-2.7.6-3.3-1.1-3.3-1.1-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.2-4.5-1.1-4.5-4.6 0-1 .4-1.9 1-2.5-.1-.3-.4-1.3.1-2.5 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.2 2.6-1 2.6-1 .5 1.2.2 2.2.1 2.5.7.7 1 1.5 1 2.5 0 3.6-2.3 4.4-4.5 4.6.4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.3 9.3 0 0 0 12 2.7Z"></path></svg>
+<span>GitHub</span></a><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;anderson-vil-anderseco&#x2F;" rel="me">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 10v7M7 7v.01M11 17v-4a3 3 0 0 1 6 0v4M11 10v7"></path></svg>
+<span>LinkedIn</span></a><a href="https:&#x2F;&#x2F;orcid.org&#x2F;0000-0003-1329-8099" rel="me">
+<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8.2 8.3v7.4M10.7 8.3h2.1a3.7 3.7 0 1 1 0 7.4h-2.1"></path></svg>
+<span>ORCID</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
