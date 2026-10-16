@@ -23,7 +23,7 @@ Le serveur sert `public-preview-final/`, uniquement sur `127.0.0.1`. Les ancienn
 - Data Analysis L3 : compléments et dossiers complets TD01–TD05. Microéconomie L1 Saint-Germain : lectures accompagnant la séance.
 - Homogeneity : quatre scripts Python, deux scripts R, requirements, données de simulation, sorties, figures et README HTML. Le ZIP de calcul exclut les sources de la note. Le README distingue la procédure de reproduction numérique des commandes de compilation documentaire figurant dans le README original.
 
-Les **148 copies directes** de l'intégration et les **64 fichiers extraits** de Dataset.zip sont vérifiés octet pour octet. L'inventaire source → URL → empreinte est dans `docs/final-v7-resource-manifest.json`. Le catalogue compte les fichiers actuellement exposés, sans reprendre les anciens résumés de séance 1.
+Les **148 copies directes** de l'intégration et les **64 fichiers extraits** de Dataset.zip sont vérifiés octet pour octet. Les 212 copies sont aussi vérifiées dans l'index Git (`docs/final-v7-git-audit.json`). L'inventaire source → URL → empreinte est dans `docs/final-v7-resource-manifest.json`. Le catalogue compte les fichiers actuellement exposés, sans reprendre les anciens résumés de séance 1.
 
 ## Vérifications réellement effectuées
 

@@ -4,6 +4,8 @@ public-production/
 .sites-runtime/
 tmp/
 output/
+!static/files/code/homogeneity/output/
+!static/files/code/homogeneity/output/**
 Blog.docx
 likedin.odt
 

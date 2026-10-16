@@ -104,7 +104,7 @@ python scripts\audit-final-v7.py
 
 La suite complète locale (build, audit et tests du verrou de publication) se lance avec `powershell -ExecutionPolicy Bypass -File scripts\run-tests.ps1`.
 
-Ce contrôle utilise `beautifulsoup4`, installé dans le Python utilisateur de cet ordinateur. Les rendus PDF utilisent le Python du runtime ci-dessus. Les journaux de vérification sont dans `docs/final-v7-*.json` ; ils ne remplacent pas la lecture visuelle des pages sur desktop et mobile, en clair et sombre.
+Ce contrôle utilise `beautifulsoup4`, installé dans le Python utilisateur de cet ordinateur. Les rendus PDF utilisent le Python du runtime ci-dessus. Les sorties Homogeneity sont explicitement conservées par une exception dans `.gitignore` ; ne pas retirer cette exception. Les journaux de vérification sont dans `docs/final-v7-*.json` ; ils ne remplacent pas la lecture visuelle des pages sur desktop et mobile, en clair et sombre.
 
 ## Sources et fichiers générés
 

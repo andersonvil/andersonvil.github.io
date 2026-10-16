@@ -1,0 +1,23 @@
+Python 3.13.16, numpy 2.5.3, scipy 1.18.1, statsmodels 0.15.0, pandas 3.0.5, matplotlib 3.11.2
+n = 500, K = 5, seed = 20261015
+Correlation of (log p1, log p2, log p3, log Y):
+[[1.    0.523 0.508 0.306]
+ [0.523 1.    0.42  0.344]
+ [0.508 0.42  1.    0.341]
+ [0.306 0.344 0.341 1.   ]]
+
+[H0] theta = -0.032263 (se 0.049505), t = -0.651709, F = 0.424725, t^2 = 0.424725, |F - t^2| = 7.93e-14, p = 0.514891
+[H0] 95% CI for theta: [-0.129528, 0.065003];  W = 0.4290, LR = 0.4288, LM = 0.4286
+[H0] numeraire invariance: max |coef diff| = 5.22e-15, max |SSR diff| = 3.55e-15
+[H0] rho(b1_U, theta_hat) = 0.2493, delta = -0.2504
+
+[H1] theta = 0.067737 (se 0.049505), t = 1.368302, F = 1.872252, t^2 = 1.872252, |F - t^2| = 2.25e-13, p = 0.171838
+[H1] 95% CI for theta: [-0.029528, 0.165003];  W = 1.8912, LR = 1.8876, LM = 1.8840
+[H1] numeraire invariance: max |coef diff| = 5.55e-15, max |SSR diff| = 7.11e-15
+[H1] rho(b1_U, theta_hat) = 0.2493, delta = -0.2504
+
+[size] 2000 reps: rejection rate at 5% = 0.0500 (MC s.e. 0.0049); Wald(chi2) rejection = 0.0520; KS p-value vs F(1,495) = 0.534
+[power] n = 500: power at theta = 0.10 -> 0.597; at theta = 0 -> 0.042
+[power] n = 2000: power at theta = 0.10 -> 0.984; at theta = 0 -> 0.054
+[fig4:no_inflation] sigma_pi=0.0: corr(log p1, log p2) = 0.001; H0 sd U = 0.0592, sd R = 0.0492, ratio = 0.831 (formula 0.832); H1 bias R = -0.0302 (formula -0.0305), mean U = -0.6008, mean(R - U) = -0.0295, sd(theta_hat) = 0.1064
+[fig4:strong_inflation] sigma_pi=1.0: corr(log p1, log p2) = 0.967; H0 sd U = 0.0500, sd R = 0.0499, ratio = 0.997 (formula 0.998); H1 bias R = -0.0332 (formula -0.0309), mean U = -0.6023, mean(R - U) = -0.0309, sd(theta_hat) = 0.0105
