@@ -29,6 +29,8 @@ jobs:
           BUILD_ONLY: 'true'
       - name: Check built public files
         run: python scripts/audit-production.py --build-dir public
+      - name: Restore runner ownership of Docker build output
+        run: sudo chown -R "$(id -u):$(id -g)" public
       - name: Record source commit
         run: echo "$GITHUB_SHA" > public/deployment-commit.txt
       - uses: actions/checkout@v4
