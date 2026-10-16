@@ -6,11 +6,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <meta name="robots" content="{% if nav_path == '/404.html' %}noindex, follow{% else %}index, follow{% endif %}">
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
-  <link rel="canonical" href="{{ config.base_url }}{{ current_path | default(value='/') }}">
+  <link rel="canonical" href="{{ config.base_url }}{{ nav_path }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Anderson Vil">
+  <meta property="og:title" content="{% if page is defined %}{{ page.title }}{% elif section is defined %}{{ section.title }}{% else %}{{ config.title }}{% endif %}">
+  <meta property="og:description" content="{% if page is defined and page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}">
+  <meta property="og:url" content="{{ config.base_url }}{{ nav_path }}">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script>
     (() => {
@@ -73,7 +78,6 @@
         {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ icons::icon(name=profile.name | lower) }}<span>{{ profile.name }}</span></a>{% endfor %}
       </div>
     </div>
-    <p class="footer-note">Private preview</p>
   </footer>
 </body>
 </html>

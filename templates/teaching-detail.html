@@ -7,7 +7,7 @@
 {% set teaching = load_data(path="data/teaching_resources.toml") %}
 {% for group in teaching.groups %}{% if group.id == page.extra.group_id %}
 <div class="shell detail-navigation">{{ context_back::bar(label="Teaching", url="/teaching/") }}<div class="breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>{{ group.title }}</span></div></div>
-<article class="article-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
+<article class="article-page shell" data-real="true" data-provisional="false" data-publication-status="approved">
   <header>
 
     <p class="eyebrow">{{ group.resource_type }}</p>

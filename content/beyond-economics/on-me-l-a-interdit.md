@@ -1,6 +1,6 @@
 +++
 title = "On me l’a interdit"
-description = "The authorized first-stanza preview of a French-language poem by Anderson Vil."
+description = "The authorized first-stanza excerpt of a French-language poem by Anderson Vil."
 path = "beyond-economics/on-me-l-a-interdit"
 template = "poem.html"
 

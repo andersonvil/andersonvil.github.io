@@ -1,12 +1,13 @@
 base_url = "https://andersonvil.github.io"
 title = "Anderson Vil"
-description = "Academic site preview for Anderson Vil, household and labor economist."
+description = "Academic site for Anderson Vil, household and labor economist."
 default_language = "en"
 compile_sass = false
 build_search_index = false
 generate_feeds = false
-generate_sitemap = false
+generate_sitemap = true
 generate_robots_txt = false
+ignored_content = ["preview-synthetic/**"]
 # Keep KaTeX MathML and embedded equation SVG intact; the HTML minifier corrupts them.
 minify_html = false
 
@@ -16,8 +17,7 @@ highlight_theme = "css"
 smart_punctuation = true
 
 [extra]
-site_mode = "preview"
-preview_label = "Private preview"
+site_mode = "production"
 cv_url = "/files/cv/anderson-vil-cv-provisional.pdf"
 
 [[extra.menu]]

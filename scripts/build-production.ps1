@@ -8,5 +8,7 @@ if ($LASTEXITCODE -ne 0) {
     Write-Host 'Production build was not started.' -ForegroundColor Yellow
     exit $LASTEXITCODE
 }
-zola build --force --output-dir $OutputDirectory
+& (Join-Path $PSScriptRoot 'build-preview.ps1') -OutputDirectory $OutputDirectory
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+& (Join-Path $PSScriptRoot 'check-production.ps1') -BuildDirectory $OutputDirectory
 exit $LASTEXITCODE

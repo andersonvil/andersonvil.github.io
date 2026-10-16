@@ -1,0 +1,283 @@
+{
+  "html_files": 64,
+  "local_links_and_assets": 1861,
+  "verified_copies": 148,
+  "verified_extracted_dataset_files": 64,
+  "historical_cc": 9,
+  "answer_keys": 2,
+  "python_syntax": 35,
+  "notebooks_structure": 17,
+  "scientific": [
+    {
+      "paper": "household-demand-leisure",
+      "equations": 9,
+      "references": [
+        {
+          "label": "Table 2",
+          "href": "/files/papers/household-demand-leisure.pdf#page=26"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/household-demand-leisure.pdf#page=34"
+        },
+        {
+          "label": "Table 6",
+          "href": "/files/papers/household-demand-leisure.pdf#page=40"
+        },
+        {
+          "label": "Proposition 1",
+          "href": "/files/papers/household-demand-leisure.pdf#page=10"
+        },
+        {
+          "label": "Assumption A.1",
+          "href": "/files/papers/household-demand-leisure.pdf#page=14"
+        },
+        {
+          "label": "Propositions 2",
+          "href": "/files/papers/household-demand-leisure.pdf#page=13"
+        },
+        {
+          "label": "3",
+          "href": "/files/papers/household-demand-leisure.pdf#page=14"
+        },
+        {
+          "label": "Corollary 4",
+          "href": "/files/papers/household-demand-leisure.pdf#page=15"
+        },
+        {
+          "label": "A.1",
+          "href": "/files/papers/household-demand-leisure.pdf#page=14"
+        },
+        {
+          "label": "Proposition 6",
+          "href": "/files/papers/household-demand-leisure.pdf#page=22"
+        },
+        {
+          "label": "A.2",
+          "href": "/files/papers/household-demand-leisure.pdf#page=16"
+        },
+        {
+          "label": "A.3",
+          "href": "/files/papers/household-demand-leisure.pdf#page=19"
+        },
+        {
+          "label": "A.2′",
+          "href": "/files/papers/household-demand-leisure.pdf#page=17"
+        },
+        {
+          "label": "equations (9)–(12)",
+          "href": "/files/papers/household-demand-leisure.pdf#page=29"
+        },
+        {
+          "label": "equations 15–16",
+          "href": "/files/papers/household-demand-leisure.pdf#page=30"
+        },
+        {
+          "label": "equations 17–18",
+          "href": "/files/papers/household-demand-leisure.pdf#page=31"
+        },
+        {
+          "label": "Table 2",
+          "href": "/files/papers/household-demand-leisure.pdf#page=26"
+        },
+        {
+          "label": "Table 1",
+          "href": "/files/papers/household-demand-leisure.pdf#page=25"
+        },
+        {
+          "label": "Table 1",
+          "href": "/files/papers/household-demand-leisure.pdf#page=25"
+        },
+        {
+          "label": "Tables A.1",
+          "href": "/files/papers/household-demand-leisure.pdf#page=53"
+        },
+        {
+          "label": "A.3",
+          "href": "/files/papers/household-demand-leisure.pdf#page=55"
+        },
+        {
+          "label": "Open manuscript",
+          "href": "/files/papers/household-demand-leisure.pdf#page=25"
+        },
+        {
+          "label": "Open manuscript",
+          "href": "/files/papers/household-demand-leisure.pdf#page=26"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/household-demand-leisure.pdf#page=34"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/household-demand-leisure.pdf#page=34"
+        },
+        {
+          "label": "Table 6",
+          "href": "/files/papers/household-demand-leisure.pdf#page=40"
+        },
+        {
+          "label": "Table 6",
+          "href": "/files/papers/household-demand-leisure.pdf#page=40"
+        },
+        {
+          "label": "Table 6",
+          "href": "/files/papers/household-demand-leisure.pdf#page=40"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/household-demand-leisure.pdf#page=34"
+        },
+        {
+          "label": "Table A.3",
+          "href": "/files/papers/household-demand-leisure.pdf#page=55"
+        },
+        {
+          "label": "Table 5",
+          "href": "/files/papers/household-demand-leisure.pdf#page=38"
+        }
+      ]
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equations": 6,
+      "references": [
+        {
+          "label": "Table 2",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=14"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=18"
+        },
+        {
+          "label": "Proposition 1",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=8"
+        },
+        {
+          "label": "Table 1",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=12"
+        },
+        {
+          "label": "equation 14",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=11"
+        },
+        {
+          "label": "equation 15",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=11"
+        },
+        {
+          "label": "equation 16",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=11"
+        },
+        {
+          "label": "(17)",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=11"
+        },
+        {
+          "label": "equation 18",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=11"
+        },
+        {
+          "label": "equation (19)",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=13"
+        },
+        {
+          "label": "Tables 3",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=16"
+        },
+        {
+          "label": "4",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=18"
+        },
+        {
+          "label": "Figure 8",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=39"
+        },
+        {
+          "label": "Table 2",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=14"
+        },
+        {
+          "label": "Open manuscript",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=14"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=18"
+        },
+        {
+          "label": "Table 12",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=36"
+        },
+        {
+          "label": "Figure 1",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=17"
+        },
+        {
+          "label": "Tables 5",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=19"
+        },
+        {
+          "label": "13",
+          "href": "/files/papers/children-costs-one-adult-household.pdf#page=37"
+        }
+      ]
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equations": 4,
+      "references": [
+        {
+          "label": "Table 4",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=23"
+        },
+        {
+          "label": "Proposition",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=8"
+        },
+        {
+          "label": "equations 16",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=15"
+        },
+        {
+          "label": "18",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=16"
+        },
+        {
+          "label": "equations 22",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=17"
+        },
+        {
+          "label": "25",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=18"
+        },
+        {
+          "label": "Table 1",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=14"
+        },
+        {
+          "label": "Open manuscript",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=14"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=23"
+        },
+        {
+          "label": "Table 3",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=21"
+        },
+        {
+          "label": "Table 5",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=24"
+        },
+        {
+          "label": "Table 4",
+          "href": "/files/papers/children-labor-supply-equations.pdf#page=23"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

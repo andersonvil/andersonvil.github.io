@@ -1,9 +1,8 @@
-# Anderson Vil — private academic preview
+# Anderson Vil — academic site
 
-This checkout is a Zola site. The final private revision is on `codex/final-private-v5`.
-No push, merge, or public deployment is part of this task.
+This Zola site is published at https://andersonvil.github.io/. The approved editorial version is `ad690757b16cf724453cc072c40989b8e4b2cb4d`; production changes are integrated into `main`.
 
-The review report, coverage matrix, source decisions, remaining inputs and recovery procedure are in [docs/final-v5-review-report.md](docs/final-v5-review-report.md).
+Current maintenance, publishing and rollback instructions are in [guide-site.md](guide-site.md). Historical private review reports remain in `docs/` and are not served.
 
 ## Build and local preview
 
@@ -11,12 +10,12 @@ Requirements: Zola, Node.js, PowerShell; Python for a simple local HTTP server.
 
 ```powershell
 npm ci
-& .\scripts\build-preview.ps1
-python scripts/serve-preview.py --port 1114
+& .\scripts\build-production.ps1
+python scripts/serve-preview.py --directory public-production --port 1114
 ```
 
 Open `http://127.0.0.1:1114/`. On Windows, stop the HTTP server before rebuilding to avoid open-file locks, then start it again.
-The server binds to loopback; noindex metadata and robots.txt supplement this private local delivery.
+The server binds to loopback and adds a local noindex HTTP header. Production HTML is indexable, and robots.txt permits crawling.
 
 The build renders the exact author Markdown retained in `docs/editorial-sources`, plus manuscript-verified supplements in `data/editorial-supplements.json`, with pinned KaTeX 0.16.22. Generated HTML+MathML, local fonts and CSS are committed. Zola still owns the site, routes and templates. HTML minification is disabled because its optimizer corrupted the KaTeX MathML/SVG markup.
 
@@ -26,6 +25,6 @@ The build renders the exact author Markdown retained in `docs/editorial-sources`
 & .\scripts\run-tests.ps1
 ```
 
-Browser checks use Playwright from the desktop runtime, Chrome, and the local preview. Set `CODEX_NODE_MODULES` to the package directory returned by the workspace dependency tool, then run `node scripts/verify-final-v5.js`. The source viewer and local formula scrolling have a separate check in `scripts/verify-sources-final-v5.js`.
+Browser checks use Playwright from the desktop runtime, Chrome, and the local server. Set `CODEX_NODE_MODULES` to the runtime package directory, then run `node scripts/verify-production.js http://127.0.0.1:1114`. Public checks accept the HTTPS site URL and expected full source SHA as arguments. Reports and screenshots are written under `tmp/publication-qa/`.
 
-Production remains blocked by `scripts/check-production.ps1`. The GitHub workflow runs only on `main` and now runs that guard before its deployment step. Publishing requires a distinct authorized task to remove demonstrations and review the remaining metadata and rights.
+Pushes to `main` and manual workflow runs build with Node.js 22 and Zola 0.19.2, check the generated artifact, then commit only its files to `gh-pages` without force-push. Pages retains its existing legacy branch source, `gh-pages:/`, with HTTPS. `deployment-commit.txt` identifies the served source commit. Private preview fixtures, internal documents and source files are excluded from the served output. The local backup and exact normal-commit rollback procedure are documented in `guide-site.md`.

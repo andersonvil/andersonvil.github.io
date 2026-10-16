@@ -23,8 +23,8 @@ for p,soup in docs.items():
         if url.fragment and target.suffix=='.html' and target in docs and not docs[target].find(id=unquote(url.fragment)):
             fail.append(f'Missing anchor: {p.relative_to(BUILD)} → {href}')
     if soup.select_one('.site-header'):
-        assert soup.select_one('meta[name=robots]')['content']=='noindex, nofollow, noarchive'
-        assert soup.select_one('.preview-ribbon').get_text(' ',strip=True)=='Private preview'
+        assert soup.select_one('meta[name=robots]')['content'] in ('index, follow','noindex, follow')
+        assert not soup.select_one('.preview-ribbon')
         for n in soup.select('annotation,script,style,code,pre,.katex-mathml,.katex-html'):n.decompose()
         text=soup.get_text(' ',strip=True)
         if re.search(r'\$[^$\n]*\\[a-zA-Z]',text):fail.append('Raw LaTeX: '+str(p.relative_to(BUILD)))
@@ -89,6 +89,6 @@ for p in (ROOT/'static/files').rglob('*'):
     if p.suffix=='.ipynb':
         nb=json.loads(p.read_text(encoding='utf-8'));assert 'cells' in nb and 'metadata' in nb;notebooks+=1
 report={'html_files':len(docs),'local_links_and_assets':links,'verified_copies':len(manifest['files']),'verified_extracted_dataset_files':dataset_files,'historical_cc':len(cc),'answer_keys':2,'python_syntax':scripts,'notebooks_structure':notebooks,'scientific':scientific,'failures':fail}
-(ROOT/'docs/final-v7-static-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+(ROOT/'docs/production-static-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in report.items() if k!='scientific'},ensure_ascii=False))
 if fail:raise SystemExit(1)

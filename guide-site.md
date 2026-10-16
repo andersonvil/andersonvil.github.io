@@ -2,7 +2,47 @@
 
 Le dépôt du site est **`C:\dev\andersonvil.github.io`**. Tous les chemins ci-dessous sont relatifs à cette racine, sauf mention contraire. Les documents originaux se trouvent dans **`C:\dev\andersonvil-academic-os-sources`**. Le site utilise **Zola**, des templates **Tera**, des données **TOML/JSON**, du Markdown et un rendu mathématique **KaTeX à la construction**. Il n'y a pas de serveur applicatif ni de base de données.
 
-Cette livraison est sur `codex/final-private-v7`. Le point de retour antérieur est `codex/backup-before-final-v7`, commit `79d0288`. Les commandes ci-dessous construisent une version locale, sans fusion ni publication.
+La version éditoriale approuvée est `codex/final-private-v7`, commit `ad690757b16cf724453cc072c40989b8e4b2cb4d`. Sa mise en production est préparée sur `codex/publish-final-v7`, puis intégrée dans `main`. Les contenus approuvés et les restrictions par extrait des poèmes sont conservés.
+
+## Publication et futures mises à jour
+
+Le site public est **https://andersonvil.github.io/**. GitHub Pages utilise toujours **`gh-pages`, dossier `/`**, en mode de construction historique (`legacy`), avec HTTPS obligatoire. Le dépôt reste public ; aucun changement d'hébergement ou de visibilité n'est nécessaire.
+
+La source est `main`. À chaque push sur `main` (ou lancement manuel de **Build and deploy GH Pages**), `.github/workflows/main.yml` effectue `npm ci`, `npm run editorial`, contrôle la configuration, construit avec **Zola 0.19.2** et vérifie les fichiers construits. Node.js 22 et Ubuntu sont utilisés dans GitHub Actions. L'action Zola est épinglée à `960304368c31a93d6991d64ae962df0786b905f1` et s'exécute uniquement en mode build.
+
+Seul le contenu de `public/` est copié vers `gh-pages`, avec `.nojekyll` et `deployment-commit.txt` qui identifie le commit source réellement servi. Le workflow crée un commit normal, pousse sans force et demande explicitement un build Pages. Les guides, archives de travail, sources éditoriales, scripts et configurations ne sont pas copiés. Les archives ZIP pédagogiques et les programmes proposés au téléchargement restent publics.
+
+Les routes de test `content/preview-synthetic/**` sont exclues par `ignored_content`. La redirection utile `reading-model-based-estimates` a été déplacée dans `content/redirects`. Les pages courantes portent `index, follow`, les redirections et la page 404 conservent un `noindex` technique ; `robots.txt` autorise l'indexation et annonce le sitemap. Les URL canoniques et Open Graph utilisent l'adresse HTTPS définitive.
+
+Pour une mise à jour : modifier la source indiquée dans ce guide, exécuter `npm ci` si nécessaire, puis `powershell -ExecutionPolicy Bypass -File scripts/build-production.ps1` et `python scripts/audit-final-v7.py --build-dir public-production`. Le second audit compare aussi les fichiers aux originaux présents sur cet ordinateur ; il n'est pas requis sur le runner GitHub. Le contrôle portable `scripts/audit-production.py` est exécuté localement et en CI. Faire un commit, intégrer dans `main` et pousser avec `git push origin main`. Suivre **les deux étapes** : workflow de construction, puis build/déploiement Pages. Enfin comparer `https://andersonvil.github.io/deployment-commit.txt` avec `git rev-parse main` et ouvrir le site public.
+
+Contrôles Chrome reproductibles : définir `CODEX_NODE_MODULES` sur le répertoire de paquets du runtime local, servir `public-production` avec `scripts/serve-preview.py --directory public-production --port 1119`, puis exécuter `node scripts/verify-production.js http://127.0.0.1:1119`. Pour contrôler la version publique : `node scripts/verify-production.js https://andersonvil.github.io COMMIT_SOURCE_COMPLET`. Les rapports et captures sont écrits dans `tmp/publication-qa/`, hors publication.
+
+## Sauvegarde de l'ancien site et retour arrière
+
+La sauvegarde privée locale complète est **`C:\dev\andersonvil-academic-os-sources\site-backups\2026-10-16-before-publication`**. Elle contient `old-site-gh-pages.zip` (62 fichiers, ressources comprises), `old-source-main.zip`, `recovery.bundle` et `site/`. La copie consultable utilise des chemins locaux pour les liens et ressources du même domaine ; le ZIP conserve les octets originaux. Elle n'est pas servie par le site public.
+
+Pour la consulter :
+
+```powershell
+python -m http.server 1120 --bind 127.0.0.1 --directory 'C:\dev\andersonvil-academic-os-sources\site-backups\2026-10-16-before-publication\site'
+```
+
+Ouvrir `http://127.0.0.1:1120/`, puis Ctrl+C pour arrêter. Références récupérables : ancien site **`a55c31ce72bb389ed8746593b0899634a6dde9ef`** (`archive/public-site-before-20261016`), ancienne source **`1e8f05a78127e1441927f1652876c28b3d4049a1`** (`archive/main-before-publication-20261016`). Le bundle conserve ces références et la version approuvée ; `git bundle verify CHEMIN\recovery.bundle` permet de vérifier son intégrité.
+
+Pour rétablir exactement l'ancien site, sans force-push ni effacement d'historique, utiliser un nouveau clone propre **hors de l'arborescence publiée** :
+
+```powershell
+git clone --single-branch --branch gh-pages https://github.com/andersonvil/andersonvil.github.io.git C:\dev\andersonvil-academic-os-sources\site-backups\rollback-gh-pages
+Set-Location C:\dev\andersonvil-academic-os-sources\site-backups\rollback-gh-pages
+git restore --source=a55c31ce72bb389ed8746593b0899634a6dde9ef --staged --worktree -- .
+git commit -m 'Restore public site before 2026-10-16 publication'
+git push origin HEAD:gh-pages
+gh api --method POST repos/andersonvil/andersonvil.github.io/pages/builds
+gh api repos/andersonvil/andersonvil.github.io/pages/builds/latest
+```
+
+Attendre `status: built`, puis vérifier le site public. Ce retour restaure les fichiers de publication par un nouveau commit et conserve la source moderne sur `main` pour correction. Éviter tout nouveau push sur `main` tant que la correction n'est pas prête, puisqu'il republierait cette source. Ne pas réactiver l'ancien workflow de la sauvegarde : son action utilisait un force-push.
 
 ## Trouver le texte à modifier
 
@@ -88,21 +128,21 @@ zola --version
 Les dépendances Node sont épinglées dans `package-lock.json`. Si `node_modules` manque, exécuter `npm ci` une seule fois. Le build local normal est :
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts\build-preview.ps1 -OutputDirectory public-preview-final
-python scripts\serve-preview.py --directory public-preview-final --port 1117
+powershell -ExecutionPolicy Bypass -File scripts\build-production.ps1
+python scripts\serve-preview.py --directory public-production --port 1117
 ```
 
-Ouvrir **`http://127.0.0.1:1117/`**. Garder le terminal du serveur ouvert ; Ctrl+C l'arrête. Si le serveur tourne déjà, ne pas en lancer un deuxième : reconstruire puis actualiser l'onglet. Choisir un autre port libre si nécessaire. `127.0.0.1` limite la preview à cet ordinateur. Le build garde `noindex`, `nofollow`, `noarchive`, le bandeau Private preview et les en-têtes du serveur ; aucune de ces commandes ne publie le site.
+Ouvrir **`http://127.0.0.1:1117/`**. Garder le terminal du serveur ouvert ; Ctrl+C l'arrête. Si le serveur tourne déjà, ne pas en lancer un deuxième : reconstruire puis actualiser l'onglet. Choisir un autre port libre si nécessaire. `127.0.0.1` limite le serveur à cet ordinateur. Le HTML construit est celui de production, indexable et sans bandeau privé ; seul le serveur local ajoute un en-tête `X-Robots-Tag` de précaution. Ces commandes locales ne publient pas le site.
 
 Le script efface **uniquement son dossier généré** avant reconstruction, avec contrôle de son emplacement. Ne pas y ranger des fichiers de travail ou des sauvegardes. Les textes et archives restent dans les dossiers sources.
 
 Pour contrôler les liens, ancres, copies et intégrations après construction :
 
 ```powershell
-python scripts\audit-final-v7.py
+python scripts\audit-final-v7.py --build-dir public-production
 ```
 
-La suite complète locale (build, audit et tests du verrou de publication) se lance avec `powershell -ExecutionPolicy Bypass -File scripts\run-tests.ps1`.
+La suite locale (build et audits de production) se lance avec `powershell -ExecutionPolicy Bypass -File scripts\run-tests.ps1`.
 
 Ce contrôle utilise `beautifulsoup4`, installé dans le Python utilisateur de cet ordinateur. Les rendus PDF utilisent le Python du runtime ci-dessus. Les sorties Homogeneity sont explicitement conservées par une exception dans `.gitignore` ; ne pas retirer cette exception. Les journaux de vérification sont dans `docs/final-v7-*.json` ; ils ne remplacent pas la lecture visuelle des pages sur desktop et mobile, en clair et sombre.
 
@@ -142,4 +182,4 @@ Les redirections gardent les anciens liens utilisables. Leur cible est dans `[ex
 | `/teaching/microeconomics-i-undergraduate/` | `content/redirects/teaching-micro.md` | `/teaching/` |
 | `/teaching/statistics-i-undergraduate/` | `content/redirects/teaching-stats.md` | `/teaching/` |
 | `/publications/thesis/` | `content/redirects/thesis.md` | Page retirée, liens vers les rubriques actuelles |
-| `/insights/reading-model-based-estimates/` | `content/preview-synthetic/insights/reading-model-based-estimates.md` | `/insights/quest-ce-quun-modele/` |
+| `/insights/reading-model-based-estimates/` | `content/redirects/reading-model-based-estimates.md` | `/insights/quest-ce-quun-modele/` |
