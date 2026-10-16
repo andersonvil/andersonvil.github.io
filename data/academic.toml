@@ -5,7 +5,7 @@ short_positioning = "Household and labor economist studying how families allocat
 long_positioning = "I study how observed choices can identify latent economic quantities: individual resource shares, the value of parental time, and the monetary and time costs of children. My work combines applied microeconometrics with structural models of household behavior. Current projects extend this program to remote work, care for elderly parents, and post-divorce resource allocation."
 bio = [
   "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
-  "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal."
+  "My research examines how households allocate money and time, and how children, caregiving, and work arrangements shape consumption, labor supply, leisure, and the distribution of resources within families. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal. I also study how commodity taxation and trade costs affect firm location, skilled wages, and welfare."
 ]
 fields = ["Household Economics", "Labor Economics", "Applied Microeconometrics"]
 job_market = "2026–2027 Academic Job Market"
@@ -229,3 +229,23 @@ note = "Tutorial teaching at CY Cergy Paris Université; dates and hours withhel
 [code_data]
 publicationStatus = "blocked"
 statement = "Real teaching code, data, notebooks, and simulators are documented separately from the executable synthetic demonstration. No research replication package is claimed."
+
+[[work_in_progress]]
+title = "Bargaining over Children: A Model of Post-Divorce Resource Allocation"
+author_line = "Anderson Vil, Nicolas Djob and Thierry Nana Noumi"
+description = "A dynamic model of child support and spending on children after divorce, in which parents learn about each other and revise their cooperation. The project examines how beliefs, strategic behavior, and court orders shape transfers and children’s material well-being."
+
+[[work_in_progress]]
+title = "A Model of Work from Home"
+author_line = "Anderson Vil and Olivier Donni"
+description = "A structural model of couples’ employment choices incorporating remote work, on-site costs, and household production. The project seeks to distinguish preferences for working from home from constraints on access to hybrid jobs, and examines their implications for work and time allocation."
+
+[[work_in_progress]]
+title = "Estimating the Cost of Caring for Elderly Parents"
+author_line = "Anderson Vil and Arnaud Daymard"
+description = "A family model for measuring the money and time devoted to elderly parents and how these costs are shared among adult siblings. It examines how paid care, satisfaction from caregiving, and constraints on working hours affect the value of caregivers’ time."
+
+[[work_in_progress]]
+title = "Commodity Tax Principles, Iceberg Trade Costs, and Skilled-Wage Incidence"
+author_line = "Anderson Vil, Nicolas Djob and Usama Jamal"
+description = "The project compares origin- and destination-based commodity taxation when trade is costly, firms are mobile, and skilled wages adjust. It examines how firm location, wages, and tax competition jointly shape welfare, beyond the effects of relocation alone."

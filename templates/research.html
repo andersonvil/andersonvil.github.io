@@ -4,12 +4,13 @@
 {% block description %}Research on household resource allocation, labor supply, parental time, leisure, and the economic cost of children.{% endblock description %}
 {% block content %}
 {{ contextual_return::host() }}
-<header class="page-hero shell"><p class="eyebrow">Research</p><h1>Measuring latent economic quantities from observed choices</h1><p class="lede">How much of a household’s resources reaches each member, and how should the parent's time devoted to care be valued? My work addresses these questions through models that connect observed consumption, labor supply, and time allocation to individual resource shares and the value of parental time. The papers below study resource allocation in one-adult households, the incorporation of children into labor-supply models, and the full cost of children. Current projects extend this agenda to remote work, care for older parents, and post-divorce resource allocation.</p><p class="research-jump"><a class="button primary" href="#papers">Go to papers</a></p></header>
-<section class="shell research-stack" id="papers">
+<header class="page-hero shell"><p class="eyebrow">Research</p><h1>Measuring latent economic quantities from observed choices</h1><p class="lede">How much of a household’s resources reaches each member, and how should time devoted to care be valued? My work addresses these questions through models that connect observed consumption, labor supply, and time allocation to individual resource shares and the value of caregiving time. The papers below study resource allocation in one-adult households, the incorporation of children into labor-supply models, and the full cost of children. Current projects extend this agenda to remote work, care for older parents, and post-divorce resource allocation. A further project examines how commodity taxation and trade costs shape firm location, skilled wages, and welfare.</p><p class="research-jump"><a class="button primary" href="#papers">Go to papers</a></p></header>
+<section class="shell research-stack" id="papers" aria-labelledby="working-papers-title">
+<div class="section-heading"><h2 id="working-papers-title">Working papers</h2></div>
 {% for paper in academic.papers %}
   <article class="research-card{% if paper.job_market %} featured{% endif %}">
     <div class="research-card-top"><div>{% if paper.job_market %}<span class="badge">Job Market Paper</span>{% endif %}<p class="meta">{{ paper.series }} · Version {{ paper.version }}</p></div><span class="status-pill">Working paper</span></div>
-    <h2><a href="{{ paper.url }}">{{ paper.title }}</a></h2>
+    <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
     <p class="byline">{{ paper.author_line }}</p>
     <p class="paper-summary">{{ paper.description }}</p>
     <button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="research-abstract-{{ paper.id }}">View Abstract</button>
@@ -19,5 +20,14 @@
   </article>
 {% endfor %}
 </section>
-
+<section class="shell research-stack" id="work-in-progress" aria-labelledby="work-in-progress-title">
+<div class="section-heading"><h2 id="work-in-progress-title">Work in progress</h2></div>
+{% for project in academic.work_in_progress %}
+  <article class="research-card">
+    <h3>{{ project.title }}</h3>
+    <p class="byline">{{ project.author_line }}</p>
+    <p class="paper-summary">{{ project.description }}</p>
+  </article>
+{% endfor %}
+</section>
 {% endblock content %}

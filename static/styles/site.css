@@ -163,8 +163,8 @@ ul, ol { padding-left: 1.25rem; }
 .paper-list { border-top: 1px solid var(--line); }
 .paper-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; align-items: start; padding-block: 1.6rem; border-bottom: 1px solid var(--line); }
 .paper-row h3 { max-width: 900px; }
-.paper-row h3 a, .insight-card h2 a, .insight-card h3 a, .research-card h2 a, .beyond-card h3 a { color: var(--ink-strong); text-decoration: none; }
-.paper-row h3 a:hover, .paper-row h3 a:focus-visible, .insight-card h2 a:hover, .insight-card h2 a:focus-visible, .insight-card h3 a:hover, .insight-card h3 a:focus-visible, .research-card h2 a:hover, .research-card h2 a:focus-visible, .beyond-card h3 a:hover, .beyond-card h3 a:focus-visible { color: var(--rust-strong); text-decoration: underline; }
+.paper-row h3 a, .insight-card h2 a, .insight-card h3 a, .research-card h3 a, .beyond-card h3 a { color: var(--ink-strong); text-decoration: none; }
+.paper-row h3 a:hover, .paper-row h3 a:focus-visible, .insight-card h2 a:hover, .insight-card h2 a:focus-visible, .insight-card h3 a:hover, .insight-card h3 a:focus-visible, .research-card h3 a:hover, .research-card h3 a:focus-visible, .beyond-card h3 a:hover, .beyond-card h3 a:focus-visible { color: var(--rust-strong); text-decoration: underline; }
 .paper-row p { max-width: 780px; }
 .arrow-link { white-space: nowrap; font-weight: 760; }
 .soft-section { background: var(--surface-alt); border-block: 1px solid var(--line); }
@@ -186,7 +186,7 @@ ul, ol { padding-left: 1.25rem; }
 .research-stack { padding-block: 1.2rem 2.5rem; }
 .research-card { padding: 1.6rem 0; border-bottom: 1px solid var(--line); }
 .research-card.featured { padding: 1.6rem; border: 1px solid var(--ink); background: var(--surface); box-shadow: var(--shadow); margin: .8rem 0; }
-.research-card h2 { max-width: 1080px; font-size: clamp(1.5rem, 2vw, 2rem); }
+.research-card h3 { max-width: 1080px; font-size: clamp(1.5rem, 2vw, 2rem); }
 .research-card-top { display: flex; justify-content: space-between; gap: 1rem; align-items: center; }
 .research-card-top .meta { margin: .45rem 0 0; }
 .paper-summary { max-width: 850px; }
