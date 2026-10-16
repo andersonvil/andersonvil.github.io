@@ -1,0 +1,84 @@
+py     cond-cov           identique
+py     cov-pop            identique
+py     ech-distrib        identique aux blancs internes près
+py     ech-quatre         identique aux blancs internes près
+py     equilibre          identique aux blancs internes près
+py     erreur-type        identique
+py     esp-cond           identique
+py     esp-prop           identique
+py     eventail           identique aux blancs internes près
+py     independance       identique
+py     iterees            identique
+py     jouet-b0           identique
+py     jouet-bruit        identique
+py     lgn                identique aux blancs internes près
+py     mc-biais           identique aux blancs internes près
+py     mc-hetero          identique
+py     mc-sansbiais       identique aux blancs internes près
+py     mc-se              identique aux blancs internes près
+py     mc-sigma           identique aux blancs internes près
+py     mc-variance        identique
+py     rls1               identique
+py     rls3               identique
+py     rls5               identique
+py     va                 identique
+py     var-cond           identique aux blancs internes près
+py     var-moyenne        identique aux blancs internes près
+py     variance           identique
+r      cond-cov           identique
+r      cov-pop            identique
+r      ech-distrib        identique aux blancs internes près
+r      ech-quatre         identique aux blancs internes près
+r      equilibre          identique aux blancs internes près
+r      erreur-type        identique aux blancs internes près
+r      esp-cond           identique aux blancs internes près
+r      esp-prop           identique
+r      eventail           identique aux blancs internes près
+r      independance       identique
+r      iterees            identique
+r      jouet-b0           identique
+r      jouet-bruit        identique
+r      lgn                identique
+r      mc-biais           identique
+r      mc-hetero          identique
+r      mc-sansbiais       identique
+r      mc-se              identique
+r      mc-sigma           identique
+r      mc-variance        DIFFÉRENT
+    ligne 6
+    source : '              x_resserre = list(mean(x50) + 0.5 * (x50 - mean(x50)), 11), sigma5.5 = list(x50, 5.5))'
+    extrait: '               x_resserre = list(mean(x50) + 0.5 * (x50 - mean(x50)), 11), sigma5.5 = list(x50, 5.5))'
+r      rls1               identique
+r      rls3               identique
+r      rls5               identique
+r      va                 identique
+r      var-cond           identique
+r      var-moyenne        identique aux blancs internes près
+r      variance           identique
+stata  cond-cov           identique aux blancs internes près
+stata  cov-pop            identique
+stata  ech-distrib        identique
+stata  ech-quatre         identique aux blancs internes près
+stata  equilibre          identique aux blancs internes près
+stata  erreur-type        identique
+stata  esp-cond           identique aux blancs internes près
+stata  esp-prop           identique
+stata  eventail           identique
+stata  independance       identique
+stata  iterees            identique
+stata  jouet-b0           identique aux blancs internes près
+stata  jouet-bruit        identique aux blancs internes près
+stata  lgn                identique aux blancs internes près
+stata  mc-biais           identique aux blancs internes près
+stata  mc-hetero          identique
+stata  mc-sansbiais       identique
+stata  mc-se              identique
+stata  mc-sigma           identique
+stata  mc-variance        identique aux blancs internes près
+stata  rls1               identique
+stata  rls3               identique
+stata  rls5               identique
+stata  va                 identique
+stata  var-cond           identique
+stata  var-moyenne        identique
+stata  variance           identique

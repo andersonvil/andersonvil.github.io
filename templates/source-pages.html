@@ -3,7 +3,8 @@
 {% block content %}
 {% set sources = load_data(path="data/scientific-pages.json") %}
 {% for paper in sources.papers %}{% if paper.id == page.extra.paper_id %}
-<header class="page-hero shell"><p class="eyebrow">Scientific sources</p><h1>Tables, figures and equations</h1><p class="lede">{{ paper.title }} · {{ paper.version }}. These are exact renders of physical PDF pages. Use them when a PDF reader ignores page fragments.</p><a class="text-link" href="/research/{{ paper.id }}/">Back to paper details</a></header>
+<div class="shell detail-navigation"><a class="text-link" href="/research/{{ paper.id }}/">← Back to paper details</a><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/research/">Research</a><span>/</span><a href="/research/{{ paper.id }}/">Paper details</a><span>/</span><span>Sources</span></nav></div>
+<header class="page-hero shell"><p class="eyebrow">Scientific sources</p><h1>Tables, figures and equations</h1><p class="lede">{{ paper.title }} · {{ paper.version }}. These are exact renders of physical PDF pages. Use them when a PDF does not display or a reader ignores page fragments.</p></header>
 <div class="source-page-viewer shell"><nav aria-label="Source pages">{% for item in paper.pages %}<a href="#pdf-page-{{ item.number }}">PDF page {{ item.number }}</a>{% endfor %}</nav>{% for item in paper.pages %}<figure id="pdf-page-{{ item.number }}"><figcaption>PDF page {{ item.number }} · <a href="{{ paper.pdf }}#page={{ item.number }}">Open PDF</a> · <a href="{{ item.image }}" target="_blank" rel="noopener">Enlarge page</a></figcaption><a href="{{ item.image }}" target="_blank" rel="noopener" aria-label="Enlarge PDF page {{ item.number }}"><img src="{{ item.image }}" width="1600" height="2263" loading="lazy" alt="Manuscript PDF page {{ item.number }}: {{ item.labels }}"></a></figure>{% endfor %}</div>
 {% endif %}{% endfor %}
 {% endblock content %}

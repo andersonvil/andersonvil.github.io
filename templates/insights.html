@@ -5,11 +5,11 @@
 {% block content %}
 {% set preview = load_data(path="data/preview_synthetic.toml") %}
 {{ contextual_return::host() }}
-<header class="page-hero shell"><p class="eyebrow">Insights</p><h1>Notes on economic methods and teaching</h1><p class="lede">Notes on economic methods and teaching. “Qu’est-ce qu’un modèle ?” examines what a model is; the Teaching Note remains a preview demonstration.</p></header>
+<header class="page-hero shell"><p class="eyebrow">Insights</p><h1>Notes on economic methods and teaching</h1><p class="lede">Two notes on economic methods and teaching: what models reveal, and how to impose and test homogeneity in demand.</p></header>
 <section class="shell filter-section">
   <div class="insight-grid large">
   <article class="insight-card" data-real="true"><p class="eyebrow">Methods Note</p><p class="meta">French · 8 min read</p><h2 lang="fr"><a href="/insights/quest-ce-quun-modele/">Qu’est-ce qu’un modèle ?</a></h2><p>A note by Anderson Vil on models, assumptions, information, and prediction.</p><a class="text-link" href="/insights/quest-ce-quun-modele/">Read the note</a></article>
-  {% for insight in preview.insights %}{% if insight.category == "Teaching Note" %}<article class="insight-card" data-synthetic="true"><p class="eyebrow">{% if insight.category == "Methods Note" %}Methods Notes{% else %}Teaching Notes{% endif %}</p><p class="meta">{{ insight.date }} · {{ insight.reading_minutes }} min read</p><h2><a href="{{ insight.url }}">{{ insight.title }}</a></h2><p>{{ insight.summary }}</p><p class="preview-label compact">Synthetic demonstration · not a publication</p></article>{% endif %}{% endfor %}
+  <article class="insight-card"><p class="eyebrow">Teaching Note</p><p class="meta">October 2021 · English</p><h2><a href="/insights/homogeneity/">Imposing and Testing Zero-Degree Homogeneity in Demand</a></h2><p>Intuition, derivations, tests and simulations, with Python and R replication code.</p><a class="text-link" href="/insights/homogeneity/">Read the note</a></article>
   </div>
 </section>
 {% endblock content %}

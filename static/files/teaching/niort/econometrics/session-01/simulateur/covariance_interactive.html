@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Covariance interactive</title>
+<style>
+  :root { --bleu:#1F4E79; --orange:#C0502B; --gris:#6E6E6E; --fond:#ffffff; --texte:#222; --clair:#EEF2F7; }
+  body { margin:0; background:var(--fond); color:var(--texte); font:16px/1.45 Helvetica, Arial, sans-serif; }
+  main { max-width:900px; margin:0 auto; padding:16px; }
+  h1 { color:var(--bleu); font-size:1.3rem; margin:0 0 .3rem; }
+  p { margin:.3rem 0 .8rem; }
+  .grille { display:grid; grid-template-columns: minmax(0,1fr) 230px; gap:16px; align-items:start; }
+  @media (max-width:700px){ .grille { grid-template-columns: 1fr; } }
+  svg { width:100%; height:auto; touch-action:none; background:#fff; border:1px solid #ddd; }
+  .point { fill:var(--bleu); cursor:grab; }
+  .point.actif { fill:var(--orange); cursor:grabbing; }
+  .valeurs { background:var(--clair); padding:12px 14px; }
+  .valeurs div { margin:.25rem 0; }
+  .grand { font-size:1.35rem; font-weight:bold; color:var(--orange); }
+  button { font:inherit; margin:4px 6px 4px 0; padding:4px 10px; border:1px solid var(--bleu); background:#fff; color:var(--bleu); cursor:pointer; }
+  button:hover { background:var(--clair); }
+  .note { color:var(--gris); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Déplacer des points change le signe de la covariance</h1>
+<p>Faites glisser les points. Chaque produit (x<sub>i</sub> − x̄)(y<sub>i</sub> − ȳ) est positif dans les quadrants +, négatif dans les quadrants −. La covariance est leur somme divisée par n − 1.</p>
+<div class="grille">
+  <svg id="graphe" viewBox="0 0 520 400" aria-label="Nuage de points déplaçables"></svg>
+  <div>
+    <div class="valeurs">
+      <div>x̄ = <span id="mx"></span> &nbsp; ȳ = <span id="my"></span></div>
+      <div>Somme des produits positifs <span id="sp"></span></div>
+      <div>Somme des produits négatifs <span id="sn"></span></div>
+      <div>s<sub>xy</sub> = <span class="grand" id="sxy"></span></div>
+      <div>r<sub>xy</sub> = <span class="grand" id="rxy"></span></div>
+    </div>
+    <p>
+      <button data-cas="A">Départ</button><button data-cas="B">2 points déplacés</button><button data-cas="C">6 points déplacés</button>
+    </p>
+    <p class="note">Les trois boutons reproduisent les nuages de la slide. Les deux droites en pointillé passent par les moyennes et délimitent les quadrants.</p>
+  </div>
+</div>
+</main>
+<script>
+const CAS = {
+  A: [2,4,3,5,4,6,5,7,6,8],
+  B: [7,4,3,5,4,6,5,7,6,3],
+  C: [7,8,6,5,4,6,5,4,2,3]
+};
+const X0 = 0, X1 = 11, Y0 = 0, Y1 = 10;              // domaine affiché
+const G = {g:50, d:500, h:20, b:360};                 // marges du tracé en pixels
+const svg = document.getElementById("graphe");
+const NS = "http://www.w3.org/2000/svg";
+let pts = [];
+
+const px = x => G.g + (x - X0) / (X1 - X0) * (G.d - G.g);
+const py = y => G.b - (y - Y0) / (Y1 - Y0) * (G.b - G.h);
+const vx = p => X0 + (p - G.g) / (G.d - G.g) * (X1 - X0);
+const vy = p => Y0 + (G.b - p) / (G.b - G.h) * (Y1 - Y0);
+const fr = (v, d) => { const s = (Math.abs(v) < 5e-10 ? 0 : v).toFixed(d); return s.replace(".", ",").replace("-", "−"); };
+
+function el(nom, attrs, parent) {
+  const e = document.createElementNS(NS, nom);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  (parent || svg).appendChild(e); return e;
+}
+
+// fond fixe : axes et graduations
+const fond = el("g", {});
+const quad = el("g", {});
+const lignes = el("g", {});
+const couche = el("g", {});
+el("line", {x1:G.g, y1:G.b, x2:G.d, y2:G.b, stroke:"#444"}, fond);
+el("line", {x1:G.g, y1:G.b, x2:G.g, y2:G.h, stroke:"#444"}, fond);
+for (let x = 0; x <= 11; x++) {
+  el("line", {x1:px(x), y1:G.b, x2:px(x), y2:G.b + 5, stroke:"#444"}, fond);
+  el("text", {x:px(x), y:G.b + 20, "text-anchor":"middle", "font-size":12, fill:"#444"}, fond).textContent = x;
+}
+for (let y = 0; y <= 10; y += 2) {
+  el("line", {x1:G.g - 5, y1:py(y), x2:G.g, y2:py(y), stroke:"#444"}, fond);
+  el("text", {x:G.g - 9, y:py(y) + 4, "text-anchor":"end", "font-size":12, fill:"#444"}, fond).textContent = y;
+}
+el("text", {x:G.d, y:G.b + 36, "text-anchor":"end", "font-size":13, fill:"#444"}, fond).textContent = "x";
+el("text", {x:G.g + 8, y:G.h + 6, "font-size":13, fill:"#444"}, fond).textContent = "y";
+
+function charger(cas) {
+  pts = CAS[cas].map((y, i) => ({x: i + 1, y: y}));
+  dessiner();
+}
+
+function dessiner() {
+  const n = pts.length;
+  const mx = pts.reduce((s, p) => s + p.x, 0) / n;
+  const my = pts.reduce((s, p) => s + p.y, 0) / n;
+  let sp = 0, sn = 0, sxx = 0, syy = 0;
+  pts.forEach(p => {
+    const pr = (p.x - mx) * (p.y - my);
+    if (pr > 0) sp += pr; else sn += pr;
+    sxx += (p.x - mx) ** 2; syy += (p.y - my) ** 2;
+  });
+  const sxy = (sp + sn) / (n - 1);
+  const r = (sxx > 0 && syy > 0) ? (sp + sn) / Math.sqrt(sxx * syy) : NaN;
+
+  quad.innerHTML = ""; lignes.innerHTML = ""; couche.innerHTML = "";
+  const X = px(mx), Y = py(my);
+  const teinte = (a, b, c, d, s) => el("rect", {x:a, y:b, width:c - a, height:d - b, fill: s > 0 ? "#1F4E79" : "#C0502B", opacity:0.06}, quad);
+  teinte(X, G.h, G.d, Y, 1); teinte(G.g, Y, X, G.b, 1); teinte(G.g, G.h, X, Y, -1); teinte(X, Y, G.d, G.b, -1);
+  const signe = (x, y, t) => el("text", {x:x, y:y, "text-anchor":"middle", "font-size":26, fill:"#C0502B"}, quad).textContent = t;
+  signe((X + G.d) / 2, G.h + 32, "+"); signe((G.g + X) / 2, G.b - 12, "+");
+  signe((G.g + X) / 2, G.h + 32, "−"); signe((X + G.d) / 2, G.b - 12, "−");
+  el("line", {x1:X, y1:G.h, x2:X, y2:G.b, stroke:"#8C8C8C", "stroke-dasharray":"5 4"}, lignes);
+  el("line", {x1:G.g, y1:Y, x2:G.d, y2:Y, stroke:"#8C8C8C", "stroke-dasharray":"5 4"}, lignes);
+
+  pts.forEach((p, i) => {
+    const c = el("circle", {cx:px(p.x), cy:py(p.y), r:9, class:"point" + (i === actif ? " actif" : "")}, couche);
+    c.addEventListener("pointerdown", e => { actif = i; svg.setPointerCapture(e.pointerId); dessiner(); });
+  });
+
+  document.getElementById("mx").textContent = fr(mx, 2);
+  document.getElementById("my").textContent = fr(my, 2);
+  document.getElementById("sp").textContent = fr(sp, 2);
+  document.getElementById("sn").textContent = fr(sn, 2);
+  document.getElementById("sxy").textContent = fr(sxy, 2);
+  document.getElementById("rxy").textContent = isNaN(r) ? "non défini" : fr(r, 2);
+}
+
+let actif = null;
+function position(e) {
+  const m = svg.getScreenCTM().inverse();
+  const q = new DOMPoint(e.clientX, e.clientY).matrixTransform(m);
+  return {x: Math.min(X1 - 0.2, Math.max(X0 + 0.2, vx(q.x))), y: Math.min(Y1 - 0.2, Math.max(Y0 + 0.2, vy(q.y)))};
+}
+svg.addEventListener("pointermove", e => {
+  if (actif === null) return;
+  const q = position(e);
+  pts[actif].x = Math.round(q.x * 10) / 10; pts[actif].y = Math.round(q.y * 10) / 10;
+  dessiner();
+});
+const lacher = () => { if (actif !== null) { actif = null; dessiner(); } };
+svg.addEventListener("pointerup", lacher);
+svg.addEventListener("pointercancel", lacher);
+document.querySelectorAll("button[data-cas]").forEach(b => b.addEventListener("click", () => charger(b.dataset.cas)));
+charger("A");
+</script>
+</body>
+</html>

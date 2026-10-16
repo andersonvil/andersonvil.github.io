@@ -3,6 +3,6 @@
 {% block description %}A French methods note by Anderson Vil on models, assumptions, information and prediction.{% endblock description %}
 {% block content %}
 {% set editorial = load_data(path="data/paper-editorial.json") %}
-<div class="shell detail-navigation"><div class="breadcrumb"><a href="/insights/">Insights</a><span aria-hidden="true">/</span><span>Methods Note</span></div></div>
-<article class="article-page shell" lang="fr" data-real="true"><header><p class="eyebrow" lang="en">Methods Note</p><h1>{{ page.title }}</h1><p class="byline" lang="en">By Anderson Vil · French · {{ page.extra.reading_minutes }} min read</p></header><div class="prose">{{ editorial.note | markdown | safe }}</div><footer class="article-footer" lang="en"><a class="text-link" href="/insights/">Back to Insights</a></footer></article>
+<div class="shell detail-navigation"><div class="breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/insights/">Insights</a><span aria-hidden="true">/</span><span>Methods Note</span></div></div>
+<article class="article-page shell" lang="fr" data-real="true"><header><p class="eyebrow" lang="en">Methods Note</p><h1>{{ page.title }}<sup><a id="model-ref-1" href="#model-note-1" aria-label="Note de bas de page 1">1</a></sup></h1><p class="byline" lang="en">By Anderson Vil Â· French Â· {{ page.extra.reading_minutes }} min read</p></header><div class="prose">{{ editorial.note | markdown | safe }}</div><footer class="article-footer" lang="en"><a class="text-link" href="/insights/">Back to Insights</a></footer></article>
 {% endblock content %}

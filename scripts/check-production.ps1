@@ -5,6 +5,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $resolvedRoot = (Resolve-Path -LiteralPath $RootPath).Path
+$configPath = Join-Path $resolvedRoot 'config.toml'
+if ((Test-Path -LiteralPath $configPath) -and ((Get-Content -LiteralPath $configPath -Raw) -match 'site_mode\s*=\s*"preview"')) {
+    Write-Host 'PRODUCTION CHECK: BLOCKED - Private preview; publication requires explicit authorization.' -ForegroundColor Yellow
+    exit 1
+}
 $violations = [System.Collections.Generic.List[string]]::new()
 
 $blockedDirectories = @(

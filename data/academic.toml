@@ -85,7 +85,7 @@ economic_model = "A collective model of dual-earner couples combines individual 
 identification_text = "The price of parental time is identified from how parental childcare hours and purchased childcare change with both spouses’ wages, including the corner with zero paid care. The monetary component is identified separately through full-leisure demand: under preference stability and the relevant sharing-rule restriction, the remaining full expenditure that restores adult full leisure provides a Rothbarth-style child-cost measure. The first step therefore identifies productive time prices; the second uses the resulting time cost and nonlinear full-leisure Engel curves to identify monetary and full cost."
 econometric_model = "Estimation is recursive. For couples with children, equations (9)–(12) form a three-equation childcare system: parental-time equations are treated as uncensored and paid childcare is censored at zero, so the mixed linear/Tobit system is estimated by maximum likelihood. For the full sample, the quadratic full-leisure demands in equations (15)–(18) are estimated by 3SLS using predicted time cost and predicted full expenditure; nonlabor income and its square are excluded instruments for full expenditure. Monetary cost follows the positive softplus specification in equation (14). Ridge regularization stabilizes its weakly identified slopes, so conventional inference for that component is treated cautiously."
 data_summary = "The analysis uses the 2019 PSID. From 9,569 households, the estimation sample keeps 825 dual-earner, heterosexual, nonstudent couples aged 22–50: 362 without children and 463 with at most two children, the youngest aged six or under. Childcare spending refers to the prior calendar year, while time refers to a typical interview-week measure."
-data_table_caption = "Benchmark sample — mean (standard deviation), 2019 PSID (manuscript Table 2)."
+data_table_caption = "Benchmark sample, mean (standard deviation), PSID 2019 (hours/week; dollars; education and age in years)"
 data_table_headers = ["Variables", "Without children", "With children"]
 data_table_rows = [
   ["Father adjusted childcare, hours/week", "0.00 (0.00)", "9.66 (20.65)"],
@@ -134,7 +134,7 @@ economic_model = "A static one-adult collective-consumption model combines Becke
 identification_text = "Allocation is recoverable from four positive sources of information: stable preferences for the assignable good across comparable childless adults and parents; observed adult clothing; Engel curves that are nonlinear in log expenditure; and restrictions that separate the sharing rule from the Barten consumption scale. The benchmark uses decade indicators that predict clothing demand as excluded shifters from the sharing rule, with alternative restrictions used as robustness checks. Childless adults anchor the demand function; parental status, prices, expenditure and observed demographics then trace the latent resource share and scale."
 econometric_model = "Equations (13)–(19) form gender-specific budget-share systems quadratic in log expenditure. Childless adults identify the reference clothing-demand parameters; for parents, the same preferences are evaluated at expenditure scaled by the sharing rule and prices scaled by the Barten factor. A logistic sharing rule and a parametric shadow-price equation are estimated jointly for childless adults and parents, separately by sex. Iterated nonlinear 2SLS instruments total expenditure with total income and adds interactions of parental status with second-order polynomials in exogenous variables; the cross-equation covariance matrix initializes the iterative weighting matrix."
 data_summary = "The harmonized Family Expenditure Survey, Expenditure and Food Survey, and Living Costs and Food Survey cover 1978–2022. The final analytical sample contains 40,403 one-adult households: 14,070 single men, 10,911 single women, 1,579 single fathers, and 13,843 single mothers. Monetary values in the descriptive table are expressed in 1987 pounds."
-data_table_caption = "Selected means from the harmonized UK sample (manuscript Table 2; 1987 pounds)."
+data_table_caption = "Selected means from the harmonized UK sample (1987 pounds/week)"
 data_table_headers = ["Variables", "Women", "Men", "Mothers · 1", "Mothers · 2", "Mothers · 3", "Fathers · 1", "Fathers · 2", "Fathers · 3"]
 data_table_rows = [
   ["Adult clothing, £/week", "9.46 (18.44)", "5.34 (15.60)", "7.53 (15.07)", "6.29 (13.51)", "5.15 (11.27)", "4.34 (11.97)", "3.56 (10.28)", "2.02 (6.90)"],
@@ -155,7 +155,7 @@ short_title = "Children in Labor Supply Equations"
 authors = ["Olivier Donni", "Anderson Vil"]
 author_line = "Olivier Donni and Anderson Vil"
 card_author_line = "with Olivier Donni"
-version = "September 4, 2026"
+version = "October 16, 2026"
 series = "PSE Working Paper No. 2025-40"
 job_market = false
 publicationStatus = "blocked"
@@ -167,7 +167,6 @@ url = "/research/children-labor-supply-equations/"
 pdf = "/files/papers/children-labor-supply-equations.pdf"
 source_file = "03-research/paper-2.pdf"
 source_title = "How to Incorporate Childen into Labor Supply Equations? An Equivalence-Scale Approach"
-title_note = "The current PDF spells “Children” as “Childen”; the preview follows the corrected canonical title and records the source divergence."
 description = "A framework that represents children's monetary and time channels directly in labor-supply equations."
 abstract = "We propose a method for modeling the impact of children on labor supply. Building on equivalence scales and collective models, our approach jointly considers the time and monetary costs of children. By imposing restrictions on childcare technology, we identify the total cost of children from labor supply equations with modest data inputs. We apply the model to single mothers from the 2019 PSID. Results suggest labor supply responsiveness to wages is higher for women with children, while the opposite holds for exogenous incomes. We also estimate the total cost of children and the time spent on childcare."
 question = "How can children enter labor-supply models as economic mechanisms rather than as demographic controls?"
@@ -177,7 +176,7 @@ economic_model = "A static model gives a single woman adult consumption, child c
 identification_text = "Why can child cost be recovered without observing every child-specific purchase or childcare hour? Labor supply for women without children identifies the reference function F. Under Assumption L, monetary child expenditure is linear in exogenous income. For participating women, curvature and derivatives of observed labor supply then reveal the resource displacement caused by children: with nonzero first and second income derivatives, total cost is point identified under regularity conditions; in the general linear case only the income-proportional component is identified. The later parametric model is more restrictive: its linear baseline imposes enough structure to identify total cost, so this is not a contradiction of the general result. Nonparticipants require still stronger assumptions and a reservation wage because no observed market wage supplies their price of time. Total cost is identified more robustly than its primitive monetary/time decomposition, although the value of parental time and the residual value of goods and services can be recovered."
 econometric_model = "The reference equation is the quadratic Brown–Levin–Ulph labor supply h = α₀zʰ + α₁w + α₂y + α₃w² + α₄y² + α₅yw + u. Equations (17)–(21) insert the time cost (aₜ + bₜw)δ(n), the monetary cost (aₘ + bₘy)δ(n), and the resulting child-specific shifts; only a = aₜ + aₘ is separately identified. A control-function likelihood jointly handles participation and endogenous wages/resources. The wage equation (22) uses education among its shifters; the resource equation (23) uses income sources. Maximum likelihood integrates the latent wage for nonparticipants, and reservation wages obtained by inverting labor supply provide their price of time."
 data_summary = "The sample includes 1,270 single women aged 20–60: 987 without children and 283 mothers with at most two children, the youngest aged six or under. The application uses annual hours, hourly wages, net total expenditure, education, age, and participation from the 2019 PSID."
-data_table_caption = "Selected means, 2019 PSID (manuscript Table 1)."
+data_table_caption = "Selected means, PSID 2019 (annual hours; dollars/hour; net expenditure in $000/year)"
 data_table_headers = ["Variables", "All women", "Nonworking", "Working", "Childless", "Single mothers"]
 data_table_rows = [
   ["Labor-market participation", "0.85 (0.36)", "0.00 (0.00)", "1.00 (0.00)", "0.83 (0.38)", "0.90 (0.30)"],
@@ -195,7 +194,7 @@ findings = "In the quadratic benchmark, a $10 higher hourly wage raises annual h
 limitations = "The general identification result requires curvature and precise second derivatives, which are difficult to estimate in standard microdata; the manuscript finds resource responses only moderately nonlinear. Functional-form restrictions therefore do substantial work in the application. For nonparticipants, the price of time comes from an estimated reservation wage and can be sensitive to the inversion. The primitive time and monetary cost functions are not separately identified even when total cost and economically meaningful decompositions can be recovered."
 
 [documents.cv]
-label = "CV — provisional PDF"
+label = "CV — PDF"
 url = "/files/cv/anderson-vil-cv-provisional.pdf"
 source_file = "04-cv-teaching/cv-academic.pdf"
 real = true

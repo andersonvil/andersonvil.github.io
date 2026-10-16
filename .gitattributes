@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Supplied downloads and archives must retain their original bytes and spacing.
+static/files/** -text -whitespace
+docs/archive/** -text -whitespace

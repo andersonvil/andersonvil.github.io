@@ -1,4 +1,5 @@
 +++
+render = false
 title = "Talks"
 description = "Synthetic preview of a deferred talks archive."
 path = "talks"

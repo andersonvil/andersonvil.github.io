@@ -15,8 +15,8 @@
     <ul class="field-list" aria-label="Research fields">{% for field in academic.identity.fields %}<li>{{ field }}</li>{% endfor %}</ul>
     <div class="hero-bio">{% for paragraph in academic.identity.bio %}<p>{{ paragraph }}</p>{% endfor %}</div>
     <div class="button-row hero-actions">
-      <a class="button primary" href="{{ academic.papers[0].pdf }}">Job Market Paper <span>provisional PDF</span></a>
-      <a class="button secondary" href="{{ academic.documents.cv.url }}">CV <span>provisional PDF</span></a>
+      <a class="button primary" href="{{ academic.papers[0].pdf }}">Job Market Paper <span>PDF</span></a>
+      <a class="button secondary" href="{{ academic.documents.cv.url }}">CV <span>PDF</span></a>
       {{ contextual_return::cta(label="View research", destination="/research/", origin="home") }}
     </div>
   </div>
@@ -36,13 +36,13 @@
 <section class="feature-band jmp-band" aria-labelledby="jmp-title">
   <div class="shell feature-grid">
     <div><p class="eyebrow light">Job Market Paper</p><h2 id="jmp-title"><a href="{{ academic.papers[0].url }}">{{ academic.papers[0].title }}</a></h2><p class="byline">{{ academic.papers[0].card_author_line }}</p></div>
-    <div class="feature-summary"><p>{{ academic.papers[0].description }}</p><p class="document-meta">{{ academic.papers[0].series }} · Version {{ academic.papers[0].version }}</p><button class="abstract-toggle light-control" type="button" aria-expanded="false" aria-controls="home-jmp-abstract">View abstract</button><div class="abstract-panel" id="home-jmp-abstract" hidden><p>{{ academic.papers[0].abstract }}</p></div><p class="preview-label compact">Real manuscript · provisional · publication blocked</p><div class="button-row"><a class="button light" href="{{ academic.papers[0].url }}">View paper details</a><a class="button ghost-light" href="{{ academic.papers[0].pdf }}">Download paper</a></div></div>
+    <div class="feature-summary"><p>{{ academic.papers[0].description }}</p><p class="document-meta">{{ academic.papers[0].series }} · Version {{ academic.papers[0].version }}</p><button class="abstract-toggle light-control" type="button" aria-expanded="false" aria-controls="home-jmp-abstract">View Abstract</button><div class="abstract-panel" id="home-jmp-abstract" hidden><p>{{ academic.papers[0].abstract }}</p></div><div class="button-row"><a class="button light" href="{{ academic.papers[0].url }}">View paper details</a><a class="button ghost-light" href="{{ academic.papers[0].pdf }}">Download paper</a></div></div>
   </div>
 </section>
 
 <section class="shell section-space" aria-labelledby="featured-work-title">
-  <div class="section-heading"><p class="eyebrow">Selected research</p><h2 id="featured-work-title">Further papers</h2></div>
-  <div class="paper-list compact">{% for paper in academic.papers %}{% if not paper.job_market %}<article class="paper-row"><div><p class="meta">{{ paper.series }}</p><h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3><p class="byline">{{ paper.card_author_line }}</p><p>{{ paper.description }}</p><button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="home-abstract-{{ paper.id }}">View abstract</button><div class="abstract-panel" id="home-abstract-{{ paper.id }}" hidden><p>{{ paper.abstract }}</p></div><div class="card-actions"><a class="text-link" href="{{ paper.url }}">View paper details</a><a class="text-link" href="{{ paper.pdf }}">Download paper</a></div></div></article>{% endif %}{% endfor %}</div>
+  <div class="section-heading"><p class="eyebrow">Research</p><h2 id="featured-work-title">Further papers</h2></div>
+  <div class="paper-list compact">{% for paper in academic.papers %}{% if not paper.job_market %}<article class="paper-row"><div><p class="meta">{{ paper.series }}</p><h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3><p class="byline">{{ paper.card_author_line }}</p><p>{{ paper.description }}</p><button class="abstract-toggle" type="button" aria-expanded="false" aria-controls="home-abstract-{{ paper.id }}">View Abstract</button><div class="abstract-panel" id="home-abstract-{{ paper.id }}" hidden><p>{{ paper.abstract }}</p></div><div class="card-actions"><a class="text-link" href="{{ paper.url }}">View paper details</a><a class="text-link" href="{{ paper.pdf }}">Download paper</a></div></div></article>{% endif %}{% endfor %}</div>
 </section>
 
 <section class="soft-section home-pathways-section section-space" aria-label="Explore the site"><div class="shell home-pathways">

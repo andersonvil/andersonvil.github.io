@@ -2,14 +2,49 @@
   "papers": [
     {
       "id": "household-demand-leisure",
-      "title": "Household Demand Leisure",
+      "title": "The Household Demand for Leisure, the Price of Time and the Full Cost of Children: A Structural Model and Evidence from the PSID",
       "version": "October 4, 2026",
       "pdf": "/files/papers/household-demand-leisure.pdf",
       "pages": [
         {
+          "number": 10,
+          "image": "/img/research/sources/household-demand-leisure/page-10.png",
+          "labels": "Proposition 1"
+        },
+        {
+          "number": 13,
+          "image": "/img/research/sources/household-demand-leisure/page-13.png",
+          "labels": "Proposition 2"
+        },
+        {
+          "number": 14,
+          "image": "/img/research/sources/household-demand-leisure/page-14.png",
+          "labels": "Proposition 3, Assumption A.1, A.1"
+        },
+        {
+          "number": 15,
+          "image": "/img/research/sources/household-demand-leisure/page-15.png",
+          "labels": "Corollary 4"
+        },
+        {
+          "number": 16,
+          "image": "/img/research/sources/household-demand-leisure/page-16.png",
+          "labels": "A.2"
+        },
+        {
           "number": 17,
           "image": "/img/research/sources/household-demand-leisure/page-17.png",
-          "labels": "Economic and econometric specification"
+          "labels": "A.2\u2032"
+        },
+        {
+          "number": 19,
+          "image": "/img/research/sources/household-demand-leisure/page-19.png",
+          "labels": "Proposition 5, A.3"
+        },
+        {
+          "number": 22,
+          "image": "/img/research/sources/household-demand-leisure/page-22.png",
+          "labels": "Proposition 6"
         },
         {
           "number": 24,
@@ -85,10 +120,15 @@
     },
     {
       "id": "children-costs-one-adult-household",
-      "title": "Children Costs One Adult Household",
+      "title": "Children Costs in a One-Adult Household: Empirical Evidence from the UK",
       "version": "January 12, 2026",
       "pdf": "/files/papers/children-costs-one-adult-household.pdf",
       "pages": [
+        {
+          "number": 8,
+          "image": "/img/research/sources/children-costs-one-adult-household/page-8.png",
+          "labels": "Proposition 1"
+        },
         {
           "number": 10,
           "image": "/img/research/sources/children-costs-one-adult-household/page-10.png",
@@ -153,10 +193,15 @@
     },
     {
       "id": "children-labor-supply-equations",
-      "title": "Children Labor Supply Equations",
-      "version": "September 4, 2026",
+      "title": "How to Incorporate Children into Labor Supply Equations? An Equivalence-Scale Approach",
+      "version": "October 16, 2026",
       "pdf": "/files/papers/children-labor-supply-equations.pdf",
       "pages": [
+        {
+          "number": 8,
+          "image": "/img/research/sources/children-labor-supply-equations/page-8.png",
+          "labels": "Proposition, Assumption L"
+        },
         {
           "number": 14,
           "image": "/img/research/sources/children-labor-supply-equations/page-14.png",

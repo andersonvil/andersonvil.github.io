@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | Anderson Vil{% endblock title %}
+{% block content %}
+<div class="shell detail-navigation"><a class="text-link" href="{% if page.extra.homogeneity | default(value=false) %}/code-data/#homogeneity{% else %}/teaching/{% endif %}">← Back to {% if page.extra.homogeneity | default(value=false) %}Code &amp; Data{% else %}Teaching{% endif %}</a><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span>{% if page.extra.homogeneity | default(value=false) %}<a href="/code-data/">Code &amp; Data</a>{% else %}<a href="/teaching/">Teaching</a>{% endif %}<span>/</span><span>Practical README</span></nav></div>
+<article class="article-page shell" lang="{{ page.extra.lang | default(value='en') }}"><header><p class="eyebrow">Practical README</p><h1>{{ page.title }}</h1></header><div class="prose">{{ page.content | safe }}</div></article>
+{% endblock content %}

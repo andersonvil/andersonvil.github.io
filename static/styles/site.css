@@ -684,3 +684,63 @@ input[type="range"]:hover, input[type="range"]:focus-visible { accent-color:var(
 .button.ghost-light:hover, .button.ghost-light:focus-visible { color:#ffd4c1; background:#173c4c; border-color:#ffd4c1; }
 @media (max-width:960px) { .hero { padding-block:1.2rem; } .provenance-table { grid-template-columns:1fr; gap:0; } }
 @media (max-width:720px) { .home-pathways { grid-template-columns:1fr; } .hero-bio { line-height:1.7; } .home-pathways article { padding:1rem; } .equation-card { padding:.8rem; } }
+
+/* Final v7: natural heading width, shared grid sizing and local math scrolling. */
+.home-pathways { align-items:stretch; grid-auto-rows:1fr; }
+.home-pathways article { align-self:stretch; display:grid; grid-template-rows:auto 1fr auto; }
+.home-pathways article h2 { max-width:none; text-wrap:wrap; }
+.paper-body section { max-width:none; }
+.paper-body h2, .paper-body h3, .article-page h2, .article-page h3 { text-wrap:wrap; width:100%; max-width:none; }
+.research-question { align-items:start; }
+.research-question > .section-title { grid-column:1 / -1; }
+.research-question h2 { margin-bottom:.5rem; }
+.research-question .editorial-prose > p:first-child { margin-top:0; }
+.paper-body .section-title { margin-bottom:1rem; }
+.research-question { row-gap:.75rem; }
+.main-findings { margin-top:1.8rem; padding-top:1.2rem; border-top:1px solid var(--line); }
+.equation-card { overflow:visible; min-width:0; text-align:left; }
+.equation-scroll { overflow-x:auto; padding:.3rem 0 .65rem; max-width:100%; scrollbar-width:thin; }
+.equation-card .katex-display { min-width:0; width:max-content; max-width:none; margin:.25rem 0; text-align:left; }
+.equation-card .katex-display > .katex { display:block; text-align:left; margin:0; }
+.equation-card .symbol-definitions { margin:.6rem 0 0; padding:.5rem .7rem; }
+.symbol-definitions summary { cursor:pointer; font-weight:700; }
+.symbol-definitions div { line-height:1.65; margin-top:.65rem; }
+.table-wrap { overflow-x:auto; max-width:100%; }
+.editorial-prose td:not(:first-child) { white-space:nowrap; }
+.table-wrap th, .table-wrap td { vertical-align:top; }
+.prose table { width:100%; border-collapse:collapse; }
+.prose th, .prose td { padding:.65rem; border-bottom:1px solid var(--line); text-align:left; }
+.presentation-photo { max-width:800px; margin:0; }
+.presentation-photo img { display:block; width:100%; height:auto; }
+.presentation-photo figcaption { margin-top:.75rem; }
+.contextual-return-host { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; padding-top:1rem; }
+.breadcrumb { flex-wrap:wrap; }
+.resource-part { margin:1.2rem 0; }
+details.resource-part > summary { cursor:pointer; font-size:1.1rem; font-weight:700; padding:.7rem 0; }
+.resource-file-list h4 { margin:0 0 .3rem; font:650 1rem/1.4 var(--sans); }
+.resource-file-list article { min-width:0; }
+.resource-file-list article > div { min-width:0; overflow-wrap:anywhere; }
+.course-code { border-bottom:1px solid var(--line); }
+.note-toc { display:flex; flex-wrap:wrap; gap:.6rem 1.1rem; margin:1.5rem 0; }
+.homogeneity-note { max-width:1100px; }
+.prose figure { margin:2rem 0; }
+.prose figure img { display:block; max-width:100%; height:auto; background:white; }
+.prose figcaption { font-size:.9rem; line-height:1.6; margin-top:.65rem; }
+.prose pre { max-width:100%; overflow:auto; padding:1rem; }
+.prose h2[id], .prose h3[id], .prose figure[id], .prose [id^="equation-"], .footnotes [id], h1 sup a[id], .table-caption, .course-code, #homogeneity { scroll-margin-top:9rem; }
+.footnotes { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--line); font-size:.9rem; }
+.source-reader-note { font-size:.85rem; color:var(--muted); }
+.opening-quotation { margin:0 0 1.5rem; border-left:3px solid var(--teal); padding:.3rem 0 .3rem 1.25rem; }
+.opening-quotation p { font-family:var(--serif); font-size:1.1rem; line-height:1.6; }
+.opening-quotation footer { font-size:.85rem; color:var(--muted); }
+.media-section .media-preview { margin-block:1.5rem 2.5rem; }
+.media-preview img, .audio-feature img { object-fit:contain; height:auto; }
+.audio-feature { max-width:850px; }
+@media (max-width:720px) {
+  .home-pathways { grid-auto-rows:auto; }
+  .home-pathways article { grid-template-rows:auto auto auto; }
+  .resource-file-list article { flex-direction:column; align-items:stretch; }
+  .document-list li { flex-direction:column; }
+  .presentation-photo { max-width:100%; }
+  .research-question > .section-title { grid-column:auto; }
+}

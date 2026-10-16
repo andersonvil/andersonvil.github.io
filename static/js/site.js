@@ -67,7 +67,7 @@
   const contextualOrigin = contextualRoutes[contextualOriginKey];
   const contextualHost = document.querySelector('[data-contextual-return-host]');
   const currentTopRoute = Object.values(contextualRoutes).find((route) => route.path === window.location.pathname);
-  if (contextualHost && contextualOrigin && currentTopRoute && contextualOrigin.path !== currentTopRoute.path) {
+  if (contextualHost && contextualHost.hasAttribute('data-contextual-return-host') && contextualOrigin && currentTopRoute && contextualOrigin.path !== currentTopRoute.path) {
     const link = document.createElement('a');
     link.className = 'contextual-return-link';
     link.href = contextualOrigin.path;
@@ -122,13 +122,24 @@
     resolveActive();
   });
 
+  document.querySelectorAll('.abstract-details, .symbol-definitions').forEach((details) => {
+    const summary = details.querySelector('summary');
+    const abstract = details.classList.contains('abstract-details');
+    const update = () => { summary.textContent = details.open ? (abstract ? 'Hide Abstract' : 'Hide details') : (abstract ? 'View Abstract' : 'View details'); };
+    details.addEventListener('toggle', update); update();
+  });
+  // Markdown tables scroll within the reading column on small screens.
+  document.querySelectorAll('.editorial-prose > table, .prose > table').forEach(table => {
+    const wrap=document.createElement('div'); wrap.className='table-wrap'; wrap.tabIndex=0;
+    table.before(wrap); wrap.append(table);
+  });
   document.querySelectorAll('.abstract-toggle').forEach((button) => {
     const panel = document.getElementById(button.getAttribute('aria-controls'));
     if (!panel) return;
     button.addEventListener('click', () => {
       const expanded = button.getAttribute('aria-expanded') === 'true';
       button.setAttribute('aria-expanded', String(!expanded));
-      button.textContent = expanded ? 'View abstract' : 'Hide abstract';
+      button.textContent = expanded ? 'View Abstract' : 'Hide Abstract';
       panel.hidden = expanded;
     });
   });

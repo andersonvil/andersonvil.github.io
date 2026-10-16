@@ -1,4 +1,5 @@
 +++
+render = false
 title = "Poetry audio lab"
 path = "preview/design-lab/poetry-audio"
 template = "poetry-audio-lab.html"

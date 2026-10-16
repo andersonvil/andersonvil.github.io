@@ -1,0 +1,88 @@
+========== [ex1] exercice 1, calculs à la main
+[1]  5 10
+[1] -42  28  70
+[1]  5.6 14.0 -8.4
+[1] -0.9487
+[1] 17.5 -1.5
+[1] 14.5 13.0 11.5  8.5  7.0  5.5
+[1] -0.5 -1.0  1.5  0.5  1.0 -1.5
+[1] 0 0
+[1] 70.0 63.0  7.0  0.9
+[1] 10 -5
+(Intercept)  I(100 * x) 
+     17.500      -0.015
+
+========== [ex2] exercice 2, les deux droites de régression
+[1] -1.5 -0.6
+[1] 0.9 0.9
+[1] -1.6667
+
+========== [ex3] exercice 3, table de régression
+[1]  22.7299   0.1209   0.8769   0.0328 680.0000   0.0196
+[1]  17.7067   3.1640   0.8169   0.3090 680.0000   0.1339
+[1]  15.0806   4.2781   0.9192   0.3477 680.0000   0.1825
+[1]  2 32
+      1       2 
+26.5988 24.6644 
+      1 
+27.9149 
+(Intercept)     atndrte             
+    22.7299      0.0387      0.0196
+
+========== [ex4] exercice 4, résultats potentiels
+[1] 3 2 3 2 1 2 1 2
+[1] 2
+[1] 2.5
+[1] -2.5  2.5 -5.0
+[1] 2
+
+========== [ex4-tirages] exercice 4, les 70 tirages possibles
+[1] 70.0  2.0 -2.5  6.5
+
+========== [ex5-depart] exercice 5, charger les données
+        country alcohol deaths heart liver
+1     Australia     2.5    785   211  15.3
+2       Austria     3.9    863   167  45.6
+3      Belg/Lux     2.9    883   131  20.7
+4        Canada     2.4    793   191  16.4
+5       Denmark     2.9    971   220  23.9
+6       Finland     0.8    970   297  19.0
+7        France     9.1    751    71  37.9
+8       Iceland     0.8    743   211  11.2
+9       Ireland     0.7   1000   300   6.5
+10       Israel     0.6    834   183  13.7
+11        Italy     7.9    775   107  42.2
+12        Japan     1.5    680    36  23.2
+13  Netherlands     1.8    773   167   9.2
+14  New Zealand     1.9    916   266   7.7
+15       Norway     0.8    806   227  12.2
+16        Spain     6.5    724    86  36.4
+17       Sweden     1.6    743   207  11.2
+18  Switzerland     5.8    693   115  20.3
+19           UK     1.3    941   285  10.3
+20           US     1.2    926   199  22.1
+21 West Germany     2.7    861   172  36.7
+
+========== [ex5-mco] exercice 5, statistiques et MCO
+    alcohol          heart      
+ Min.   :0.600   Min.   : 36.0  
+ 1st Qu.:1.200   1st Qu.:131.0  
+ Median :1.900   Median :191.0  
+ Mean   :2.838   Mean   :183.3  
+ 3rd Qu.:2.900   3rd Qu.:220.0  
+ Max.   :9.100   Max.   :300.0  
+[1]  2.458 73.159
+[1] -118.9314   -0.6613
+(Intercept)     alcohol                         
+   239.1467    -19.6826      0.4374     21.0000 
+   country alcohol heart     prevu     residu
+7   France     9.1    71  60.03537   10.96463
+12   Japan     1.5    36 209.62286 -173.62286
+[1]      0.00 107044.29  46817.51  60226.77
+(Intercept)     alcohol             
+    10.8548      3.5864      0.5435 
+(Intercept)     alcohol             
+   876.2050    -16.2635      0.1716
+
+========== [ex5-figure] exercice 5, nuage de points et droite
+

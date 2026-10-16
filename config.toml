@@ -17,7 +17,7 @@ smart_punctuation = true
 
 [extra]
 site_mode = "preview"
-preview_label = "Private preview — provisional and synthetic content; not approved for publication"
+preview_label = "Private preview"
 cv_url = "/files/cv/anderson-vil-cv-provisional.pdf"
 
 [[extra.menu]]

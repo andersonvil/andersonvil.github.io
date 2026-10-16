@@ -21,11 +21,11 @@ The paper asks how both components, and their sum (the full cost of children), c
 
 Pricing a childcare hour at the wage presumes two things: the parent can freely trade that hour against paid work, and the hour is pure work, neither more nor less pleasant than a job.
 
-The paper drops the second presumption. Following Reid's criterion, the productive part of childcare is the part a nanny or a daycare could supply instead. Couples' choices reveal what that part is worth: when wages change, couples shift between their own care hours and purchased care, and the rate at which one parental hour replaces paid care is its productive value. Whatever remains of the wage is the value of the hour as leisure.
+The paper drops the second presumption. Following Reid's criterion, the productive part of childcare is the part a nanny or a daycare could supply instead. Couples’ choices reveal what that part is worth. When wages change, couples shift between their own care hours and purchased care, and the rate at which one parental hour replaces paid care is its productive value. Whatever remains of the wage is the value of the hour as leisure.
 
-Children's consumption, which is never observed, is then recovered Rothbarth-style. Parents' full leisure is compared with that of childless couples who have the same remaining resources.
+The paper then infers how much of the family’s spending goes to children by comparing parents’ leisure—including the part of childcare they experience as leisure—with that of comparable childless couples. This comparison assumes that parenthood changes neither adults’ preferences for leisure nor how they share the resources left for themselves. Differences in leisure can then reveal resources devoted to children, rather than changes in tastes or redistribution between spouses. After accounting for the time cost of childcare, the model recovers the monetary cost of children.
 
-**Example.** A mother in the sample earns $29.48 an hour on average (Table 2). The benchmark estimate $\hat\theta_W = 0.44$ prices the productive part of her childcare hour at about **$13**. The remaining **$16.50** is leisure-like value (Table 4, col. A). Across couples with one child, the median weekly time cost is **$230**. Pricing every hour at the wage would give **$350**, about 50% more (Table 6, rows A and A\*).
+**Example.** A mother in the sample earns $29.48 an hour on average (Table 2). The benchmark estimate $\hat{\theta}_W = 0.44$ prices the productive part of her childcare hour at about **$13**. The remaining **$16.50** is leisure-like value (Table 4, col. A). Across couples with one child, the median weekly time cost is **$230**. Pricing every hour at the wage would give **$350**, about 50% more (Table 6, rows A and A\*).
 
 ## Abstract
 
@@ -41,7 +41,7 @@ A mettre tel quel
 - own consumption $c_I$,
 - children's consumption $c_K$.
 
-Decisions are Pareto-efficient (collective model, with the unitary model as a special case).
+Decisions are Pareto-efficient.
 
 **Childcare technology.** The function $g(t_W, t_H, n)$ is the minimum purchased care needed, given parental hours, to meet the childcare requirement, so that $m \ge g(t_W, t_H, n)$ and $m \ge 0$. It does not describe the production of child quality. It describes only how far parental time substitutes for market care.
 
@@ -101,7 +101,7 @@ $$
 - The errors are jointly normal, and $\theta_W, \theta_H$ are estimated as free parameters.
 
 **Stage 2: all couples, three-stage least squares.**
-- Full leisure is built as $L_I = l_I + (1-\hat\theta_I)t_I$.
+- Full leisure is built as $L_I = l_I + (1-\hat{\theta}_I)t_I$.
 - Each spouse's full leisure is quadratic in remaining full expenditure $Y_R = Y - e_M - e_T$, with or without demographic shifts (SAT).
 - The monetary cost is specified as $e_M = \log\!\big(1+\exp(\kappa_0 + \kappa_H w_H + \kappa_W w_W + \kappa_Y Y)\big)\sqrt{n}$.
 - Instruments are the stage-1 predicted time cost and, for full expenditure, non-labor income and its square.
@@ -129,16 +129,18 @@ Mean childcare falls from 35.1 to 9.7 h/week for fathers and from 53.7 to 19.0 h
 
 | PSID 2019 | Benchmark | Range across specifications |
 |---|---|---|
-| Labor-like share of mothers' childcare, $\hat\theta_W$ (Table 4) | 0.44 (s.e. 0.26) | 0.30–0.44 |
-| Labor-like share of fathers' childcare, $\hat\theta_H$ (Table 4) | 0.35 (s.e. 0.21) | 0.20–0.35 |
+| Labor-like share of mothers' childcare, $\hat{\theta}_W$ (Table 4) | 0.44 (0.26) | 0.30–0.44 |
+| Labor-like share of fathers' childcare, $\hat{\theta}_H$ (Table 4) | 0.35 (0.21) | 0.20–0.35 |
 | Time cost, one child, $/week: median / mean (Table 6) | 230 / 430 | 170–570 / 290–810 |
 | … same, with time priced at the wage (Table 6, A\*) | 350 / 930 | — |
 | Monetary cost, one child, $/week: median / mean (Table 6) | 480 / 770 | 430–890 / 770–1,210 |
 
+Standard errors are reported in parentheses.
+
 **Main findings.**
 - Between 56% and 70% of mothers' childcare time, and between 65% and 80% of fathers', is leisure-like (Table 4).
-- The 2017 wave also yields $\hat\theta_I < 1$, with $\hat\theta_W = 0.66$ and $\hat\theta_H = 0.18$ (Table A.3).
-- Parental time inputs are complements ($\hat\gamma_{WH} = -3.26$).
+- The 2017 wave also yields $\hat{\theta}_I < 1$, with $\hat{\theta}_W = 0.66$ and $\hat{\theta}_H = 0.18$ (Table A.3).
+- Parental time inputs are complements ($\hat{\gamma}_{WH} = -3.26$).
 - Full leisure rises by 3.2 hours (men) and 4.4 hours (women) per extra $1,000 of weekly full expenditure (Table 5).
 - The model's exclusion restrictions are not rejected: non-labor income can be excluded from the full-leisure equations (p = 0.98), and the monetary-cost parameters are equal across spouses (p = 0.98).
 - Parental childcare is valued at about 30–50% of the wage.
@@ -146,6 +148,6 @@ Mean childcare falls from 35.1 to 9.7 h/week for fathers and from 53.7 to 19.0 h
 **Limits acknowledged by the authors.**
 - Results apply to dual-earner couples with young children and capture short-run costs only; career costs are excluded.
 - The PSID childcare measure includes passive care. The ATUS rescaling reshapes its distribution, and the time cost is sensitive to it (row E).
-- Rationing of formal care or unobserved fixed costs may bias $\hat\theta_I$ downward.
+- Rationing of formal care or unobserved fixed costs may bias $\hat{\theta}_I$ downward.
 - Full leisure responds weakly to resources, so the monetary cost is imprecise. At median wages it is $566 (s.e. 286), against $344 (s.e. 120) for the time cost.
 - The Generalized Leontief cost function is not globally consistent, and the zero-paid-care regime is not modelled in estimation.

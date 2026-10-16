@@ -32,7 +32,7 @@
   {% if config.extra.site_mode == "preview" %}<aside class="preview-ribbon" aria-label="Preview status">
     <span class="preview-dot" aria-hidden="true"></span>
     <strong>Private preview</strong>
-    <span>No content on this build is approved for publication.</span>
+
   </aside>{% endif %}
   <header class="site-header">
     <div class="header-inner">
@@ -42,7 +42,7 @@
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         {% for item in config.extra.menu %}
-          <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — provisional PDF, not approved for publication"{% endif %}>{{ item.name }}</a>
+          <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — PDF"{% endif %}>{{ item.name }}</a>
         {% endfor %}
       </nav>
       <div class="header-actions">
@@ -54,7 +54,7 @@
       </div>
       <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
           {% for item in config.extra.menu %}
-            <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — provisional PDF, not approved for publication"{% endif %}>{{ item.name }}</a>
+            <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — PDF"{% endif %}>{{ item.name }}</a>
           {% endfor %}
       </nav>
     </div>
@@ -73,7 +73,7 @@
         {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ icons::icon(name=profile.name | lower) }}<span>{{ profile.name }}</span></a>{% endfor %}
       </div>
     </div>
-    <p class="footer-note">Private preview · noindex · provisional and synthetic items are blocked from production.</p>
+    <p class="footer-note">Private preview</p>
   </footer>
 </body>
 </html>

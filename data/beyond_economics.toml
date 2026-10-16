@@ -98,7 +98,7 @@ sample_lines = ["J’aurais pu t’écrire un, deux, trois matins,", "ne serait-
 
 [media]
 id = "on-reading-preferences"
-title = "On reading preferences — podcast excerpt"
+title = "Suggested Books"
 url = "/beyond-economics/on-reading-preferences/"
 language = "French"
 duration = "5:08"
@@ -117,3 +117,30 @@ real = true
 provisional = false
 synthetic = false
 publicationStatus = "author-rights-confirmed"
+
+[[audios]]
+id = "on-reading-preferences"
+title = "Suggested Books"
+url = "/beyond-economics/on-reading-preferences/"
+description = "A French-language excerpt about three books that connect philosophy, love, rupture, exile, and money."
+audio = "/files/media/on-reading-preferences.m4a"
+poster = "/img/podcast-reading-preferences-poster.jpg"
+language = "French"
+
+[[audios]]
+id = "if-i-had-24-hours-left"
+title = "If I Had 24 Hours Left"
+url = "/beyond-economics/if-i-had-24-hours-left/"
+description = "Three things I would choose to do if I had only twenty-four hours left."
+audio = "/files/media/if-i-had-24-hours-left.m4a"
+poster = "/img/if-i-had-24-hours-left-poster.jpg"
+language = "French"
+
+[[audios]]
+id = "echoes-of-childhood"
+title = "Echoes of Childhood"
+url = "/beyond-economics/echoes-of-childhood/"
+description = "Childhood memories that have stayed with me."
+audio = "/files/media/echoes-of-childhood.m4a"
+poster = "/img/echoes-of-childhood-poster.jpg"
+language = "French"

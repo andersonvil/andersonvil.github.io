@@ -1,4 +1,5 @@
 +++
+render = false
 title = "What Household Averages Can Hide"
 description = "A classroom-oriented note on why household totals do not automatically describe each person's living standard."
 path = "insights/what-household-averages-can-hide"

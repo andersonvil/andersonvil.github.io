@@ -1,0 +1,27 @@
+OK  ECONMATH s_xy                                           calculé      4.12611  texte 4.13
+OK  ECONMATH r_xy                                           calculé      0.57352  texte 0.5735
+OK  ECONMATH s_y / s_x                                      calculé     24.96090  texte 24.96
+OK  ECONMATH r s_y / s_x = pente                            calculé     14.31554  texte 14.32
+OK  ECONMATH s_xy avec la note sur 20                       calculé      0.82522  texte 0.83
+OK  ECONMATH r_xy avec la note sur 20                       calculé      0.57352  texte 0.57
+OK  ECONMATH minimum de colgpa                              calculé      0.87500  texte 0.875
+OK  ECONMATH moyenne de colgpa                              calculé      2.81469  texte 2.815
+OK  ECONMATH moyenne de score                               calculé     72.59981  texte 72.6
+OK  n/(n-1) - 1 en %, n = 856                               calculé      0.11696  texte 0.12
+OK  n/(n-1) - 1 en %, n = 5                                 calculé     25.00000  texte 25
+OK  écart absolu moyen de A                                 calculé      2.40000  texte 2.4
+OK  écart absolu moyen de B                                 calculé      1.20000  texte 1.2
+OK  r entre x et x au carré                                 calculé      0.00000  texte 0
+OK  somme des résidus de 17 - x                             calculé      0.00000  texte 0
+OK  somme |résidus| de 5 + x                                calculé      4.00000  texte 4
+OK  somme |résidus| de 8 + 0,5 x                            calculé      4.00000  texte 4
+OK  somme |résidus| de 6,5 + 0,75 x                         calculé      4.00000  texte 4
+OK  minimum de la somme |résidus| (droites par 2 points)    calculé      4.00000  texte 4
+OK  SCR de 4 + 1,2 x                                        calculé     11.00000  texte 11.0
+OK  somme des d_i au carré                                  calculé      6.60000  texte 6.6
+OK  0,924 x racine(7,5/10)                                  calculé      0.80003  texte 0.8
+OK  JTRAIN2 revenu moyen des formés                         calculé      6.34915  texte 6.349
+OK  JTRAIN2 revenu moyen des non formés                     calculé      4.55480  texte 4.555
+OK  JTRAIN2 écart                                           calculé      1.79434  texte 1.79
+OK  WAGEPAN personnes x années                              calculé   4360.00000  texte 4360
+26 contrôles réussis sur 26

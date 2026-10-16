@@ -1,5 +1,5 @@
 +++
-title = "Econometrics — Session 1"
+title = "Econometrics — L3"
 path = "teaching/econometrics-niort"
 template = "teaching-detail.html"
 

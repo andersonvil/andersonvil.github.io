@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% import "macros/context-back.html" as context_back %}
+{% import "macros/course-resources.html" as resources %}
 {% block title %}{{ page.title }} | Teaching{% endblock title %}
-{% block description %}Provisional teaching resources for {{ page.title }}.{% endblock description %}
+{% block description %}Teaching resources for {{ page.title }}.{% endblock description %}
 {% block content %}
 {% set teaching = load_data(path="data/teaching_resources.toml") %}
 {% for group in teaching.groups %}{% if group.id == page.extra.group_id %}
-<div class="shell detail-navigation">{{ context_back::bar(label="Teaching", url="/teaching/") }}<div class="breadcrumb"><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>{{ group.title }}</span></div></div>
+<div class="shell detail-navigation">{{ context_back::bar(label="Teaching", url="/teaching/") }}<div class="breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/teaching/">Teaching</a><span aria-hidden="true">/</span><span>{{ group.title }}</span></div></div>
 <article class="article-page shell" data-real="true" data-provisional="true" data-publication-status="blocked">
   <header>
-    <p class="preview-label">Real teaching material · provisional · publication blocked</p>
+
     <p class="eyebrow">{{ group.resource_type }}</p>
     <h1>{{ group.title }}</h1>
     <p class="lede">{{ group.summary }}</p>
@@ -20,17 +21,13 @@
     <div><dt>Academic year</dt><dd>{{ group.academic_year }}</dd></div>
     <div><dt>Language</dt><dd>{{ group.language }}{% if group.language == "French" %} · <strong>French-language material</strong>{% endif %}</dd></div>
   </dl>
-  <p class="status-note"><strong>Academic year:</strong> {{ group.year_note }}</p>
-  {% if group.institutionalWordingToConfirm %}<p class="status-note warning"><strong>Institutional wording to confirm:</strong> the course is grouped under UCO Niort from the supplied folder context, while the title slides print {{ group.source_institution }}. This preview preserves both pieces of evidence and does not resolve the conflict.</p>{% endif %}
   <section><h2>Topics documented in the material</h2><ul>{% for topic in group.topics %}<li>{{ topic }}</li>{% endfor %}</ul></section>
   <section>
     <h2>Resources</h2>
-    <div class="resource-file-list">
-      {% for resource in group.resources %}<article><div><h3>{{ resource.label }}</h3><p>{% if resource.pages %}{{ resource.pages }} pages · {% endif %}{{ resource.format | default(value="PDF") }}{% if resource.bytes %} · {{ resource.bytes | filesizeformat }}{% endif %}{% if group.language == "French" %} · French-language material{% endif %}</p></div><a class="button secondary" href="{{ resource.file }}">Open resource</a></article>{% endfor %}
-    </div>
+    {{ resources::list(group=group) }}
     {% if group.id == "data-analysis-l3" %}<div class="forthcoming-slides"><p>TD01 · Presentation slides forthcoming</p><p>TD02 · Presentation slides forthcoming</p><p>TD03 · Presentation slides forthcoming</p><p>TD05 · Presentation slides forthcoming</p></div>{% endif %}
   </section>
-  <footer class="article-footer"><p><strong>Publication status:</strong> private preview; distribution rights and final resource metadata remain subject to publication review.</p>{{ context_back::bar(label="Teaching", url="/teaching/") }}</footer>
+  <footer class="article-footer">{{ context_back::bar(label="Teaching", url="/teaching/") }}</footer>
 </article>
 {% endif %}{% endfor %}
 {% endblock content %}

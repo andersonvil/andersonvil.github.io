@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | Anderson Vil{% endblock title %}
+{% block content %}
+{% set note = load_data(path="data/homogeneity.json") %}
+<div class="shell detail-navigation"><a class="text-link" href="/insights/">← Back to Insights</a><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/insights/">Insights</a><span>/</span><span>Teaching Note</span></nav></div>
+<article class="article-page shell homogeneity-note"><header><p class="eyebrow">Teaching Note</p><h1>{{ page.title }}<sup><a id="homogeneity-ref-1" href="#homogeneity-note-1" aria-label="Editorial note">1</a></sup></h1><p class="byline">By Anderson Vil · October 2021 · English</p><p><a class="text-link" href="/code-data/#homogeneity">Python and R replication code</a> · <a class="text-link" href="/code-data/homogeneity-readme/">Practical README</a></p></header>
+<nav class="note-toc" aria-label="Contents"><a href="#section-1">1. Intuition</a><a href="#section-2">2. From utility to demand</a><a href="#section-3">3. Imposing the restriction</a><a href="#section-4">4. Testing</a><a href="#section-5">5. Simulation</a><a href="#references">References</a><a href="#appendix">Appendix</a></nav>
+<div class="prose">{{ note.body | markdown | safe }}</div>
+<section class="footnotes" aria-label="Editorial note"><ol><li id="homogeneity-note-1">This note draws on working documents and calculations I prepared during my PhD to understand these concepts. I sometimes use these materials in my econometrics courses and share them here for teaching and learning. <a href="#homogeneity-ref-1" aria-label="Back to editorial note reference">↩</a></li></ol></section>
+<footer class="article-footer"><a href="/insights/">Back to Insights</a> · <a href="/code-data/#homogeneity">Python and R replication code</a></footer></article>
+{% endblock content %}

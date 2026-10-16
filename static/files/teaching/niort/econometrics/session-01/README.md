@@ -1,63 +1,122 @@
-# Économétrie — séance 1 (Niort, 2026–2027)
+# Utiliser les matériaux pédagogiques
 
-Ce dossier accompagne la première séance et la série d’exercices de 2026/2027. Il rassemble les supports, les scripts parallèles en Python, R et Stata, quatre notebooks, un simulateur HTML et sept jeux de données. Il s’agit de matériel pédagogique, pas d’un package de réplication d’article. La séance 2 annoncée n’est pas dans les fichiers fournis pour cette révision.
+Ce dossier accompagne les cours et les TD. Les supports présentent le raisonnement ; les exercices permettent de l'appliquer ; les données, scripts et notebooks permettent de retrouver les calculs et les graphiques. Les simulateurs HTML permettent de faire varier une hypothèse directement dans le navigateur.
 
-## Inventaire exact
+## Trouver le bon ensemble
 
-- `seance01.pdf` : cours (142 pages).
-- `serie01.pdf` : série d’exercices (6 pages).
-- `code/seance01.py`, `code/seance01.R`, `code/seance01.do` : exemples du cours.
-- `code/td01.py`, `code/td01.R`, `code/td01.do` : solutions et applications de la série.
-- `notebooks/seance01_python.ipynb`, `notebooks/td01_python.ipynb` : versions Jupyter/Colab Python.
-- `notebooks/seance01_R.ipynb`, `notebooks/td01_R.ipynb` : versions Jupyter R.
-- `code/covariance_interactive.html` : simulateur autonome de covariance.
-- `code/generer_dta.py` : script documentant la génération des fichiers Stata depuis `wooldridge`.
-- `data/attend.dta`, `cps78_85.dta`, `econmath.dta`, `jtrain2.dta`, `phillips.dta`, `wagepan.dta`, `wine.dta` : données utilisées.
+Commencez par la [page Teaching](/teaching/), choisissez le cours puis sa séance ou sa partie. La page [Code & Data](/code-data/) reprend les mêmes fichiers et le même classement. Téléchargez le dossier complet de la séance pour conserver les chemins relatifs ; les liens individuels permettent de ne récupérer qu'un support ou un programme.
 
-## Origine et chargement des données
+| Élément | Rôle et correspondance |
+|---|---|
+| `support/` | Cours auquel se rapportent les figures et les calculs des programmes. |
+| `td/` | Série d'exercices ; les scripts dont le nom commence par `td` correspondent au corrigé et aux applications. |
+| `donnees/` | Fichiers Stata utilisés par les exemples ; à conserver ensemble. |
+| `code/` | Scripts Python, R, Stata et notebooks du cours et des exercices. Les notebooks se reconnaissent à l'extension `.ipynb`. |
+| `simulateur/` ou `simulateurs/` | Applications HTML autonomes, à ouvrir dans un navigateur. |
+| `code/tests/` dans les dossiers complets | Contrôles et comptes rendus accompagnant les matériaux fournis. |
 
-Les sept jeux de données proviennent du paquet pédagogique `wooldridge`, correspondant aux exemples de *Introductory Econometrics* de Jeffrey M. Wooldridge. Le script `generer_dta.py` charge chaque table depuis le paquet Python puis l’exporte au format Stata 114. Les exemples Python chargent les données avec `wooldridge.data`; les exemples R les chargent depuis le paquet R. Les scripts Stata utilisent les noms simples des `.dta` : leur dossier de travail doit donc être `data/`.
+Le dossier s'enrichit progressivement : les nouvelles séances reprennent cette organisation, sans changer la correspondance entre support, exercices, données et programmes.
 
-## Dépendances
+## Parcours conseillé
 
-Python 3.10+ : `numpy`, `pandas`, `matplotlib`, `statsmodels` et `wooldridge`. Installation typique :
+1. Lire le support et repérer le nom ou l'identifiant du calcul.
+2. Essayer l'exercice avant d'ouvrir le script de TD associé.
+3. Extraire le dossier complet, puis ouvrir un terminal à sa racine.
+4. Installer les dépendances du langage retenu et exécuter les blocs dans leur ordre.
+5. Comparer les statistiques, coefficients et graphiques au support. Vérifier l'échantillon et les variables avant de comparer les dernières décimales.
 
-```text
-python -m pip install numpy pandas matplotlib statsmodels wooldridge
+## Économétrie L3 — UCO Niort
+
+La [page du cours](/teaching/econometrics-niort/) distingue les séances. La séance 1 porte sur la covariance, la corrélation et la régression simple ; la séance 2 développe l'échantillonnage, les probabilités et l'inférence. Chaque dossier contient le support, la série, les versions Python/R/Stata, leurs notebooks et un simulateur.
+
+- [Dossier complet de la séance 1](/files/teaching/niort/econometrics/session-01.zip)
+- [Dossier complet de la séance 2](/files/teaching/niort/econometrics/session-02.zip)
+
+### Python
+
+Utilisez Python 3.10 ou plus récent. Depuis un environnement de travail, installez :
+
+```
+python -m pip install numpy pandas matplotlib scipy statsmodels wooldridge jupyterlab
 ```
 
-R : une version récente de R et le paquet `wooldridge` (`install.packages("wooldridge")`). Pour les notebooks, installez aussi un noyau Jupyter R tel que `IRkernel`.
+À la racine de la séance 1 :
 
-Stata : les fichiers `.dta` sont enregistrés au format 114, lisible par Stata 10 ou version ultérieure. Aucun module utilisateur n’est requis par les scripts fournis.
+```
+python code/seance01.py
+python code/td01.py
+jupyter lab
+```
 
-## Exécution par langage
+À la racine de la séance 2 :
 
-1. Décompressez ou conservez l’arborescence complète.
-2. Ouvrez un terminal dans le dossier `session-01`.
-3. Python : exécutez `python code/seance01.py`, puis `python code/td01.py`.
-4. R : exécutez `Rscript code/seance01.R`, puis `Rscript code/td01.R`.
-5. Stata : définissez le dossier courant sur `session-01/data`, puis lancez `do "../code/seance01.do"` et `do "../code/td01.do"`. Les graphiques seront écrits dans ce dossier de travail. Cette procédure a été contrôlée dans le code, mais n’a pas été exécutée faute de Stata.
+```
+python code/seance02.py
+python code/td02.py
+```
 
-Les trois versions suivent la même séquence pédagogique : chargement, statistiques descriptives, covariance/corrélation, visualisations et régressions simples. Le rapport fourni par l’auteur documente des tests Python et R, mais aucun test Stata et aucun lancement du notebook R faute de noyau. Ce sont des vérifications fournies avec les sources, distinctes de celles de la présente révision.
+Les blocs Python du cours sont autonomes et peuvent aussi être exécutés dans Spyder ou Colab. Les scripts chargent les jeux pédagogiques via `wooldridge`. Les fichiers `.dta` fournis permettent de travailler avec Stata et de consulter les mêmes bases. Les utilitaires `generer_dta.py` et `generer_annexes.py` servent respectivement à exporter les données et à produire les annexes.
 
-Le 14 octobre 2026, `seance01.py` et `td01.py` ont été exécutés sans modification dans un environnement temporaire Python 3.13, avec `wooldridge==0.4.5`, pandas 3.0.5 et le backend graphique `Agg`. Les deux processus ont terminé avec le code 0. Les journaux et graphiques ont été conservés dans le dossier de vérification. Exemples contrôlés : la régression de la note sur `colgpa` donne 32,306 + 14,316 × `colgpa`, R² = 0,329 et n = 856; la somme des résidus est 0,0 et SCT = 153 539,3. R, Stata et les notebooks UCO n’ont pas été exécutés lors de cette révision. Aucune équivalence numérique entre langages n’est revendiquée.
+### R et notebooks
 
-## Sorties attendues
+Installez les paquets utilisés par les scripts :
 
-Les scripts affichent des dimensions et statistiques descriptives, des coefficients de covariance/corrélation et des résumés de régression. Ils produisent également des graphiques PDF ou PNG selon le langage et le script, notamment autour de la courbe de Phillips, des salaires et de l’éducation. Les valeurs exactes doivent être comparées entre langages à tolérance numérique raisonnable, pas par égalité de mise en page.
+```r
+install.packages(c("wooldridge", "ggplot2", "IRkernel"))
+IRkernel::installspec()
+```
 
-## Notebooks et Colab
+Puis, depuis la racine de la séance :
 
-- Python : importez un notebook dans Google Colab, téléversez les fichiers `.dta` si nécessaire, puis exécutez les cellules dans l’ordre. Les cellules d’installation peuvent installer `wooldridge` et `statsmodels`.
-- R : ouvrez le notebook dans un environnement Jupyter muni d’un noyau R. Dans Colab, choisissez un environnement R si l’interface le propose ; un notebook R ne doit pas être exécuté avec le noyau Python par défaut.
-- Localement : lancez `jupyter lab` depuis `session-01` afin que les chemins relatifs restent valides.
+```
+Rscript code/seance01.R
+Rscript code/td01.R
+```
 
-## Erreurs fréquentes et réutilisation
+Pour la séance 2, remplacez `01` par `02`. Ouvrez les notebooks `_python.ipynb` avec un noyau Python, et les notebooks `_R.ipynb` avec un noyau R. Exécutez les cellules dans l'ordre. Dans Colab, utilisez un environnement adapté au langage du notebook.
 
-- « fichier introuvable » : vérifiez le dossier courant et la présence de `data/`.
-- « module/package introuvable » : installez la dépendance correspondant au langage.
-- notebook R sans noyau : installez et enregistrez `IRkernel`, puis sélectionnez ce noyau.
-- graphique non créé : vérifiez les droits d’écriture dans le dossier courant.
-- résultats différents : contrôlez le jeu de données chargé, les valeurs manquantes et la définition de l’échantillon.
+### Stata
 
-Pour réutiliser les exemples avec une autre base, gardez les noms de variables attendus ou modifiez explicitement les formules. Citez la source des nouvelles données, documentez les transformations et ne diffusez aucune donnée restreinte.
+Les scripts utilisent les noms simples des fichiers `.dta`. Définissez le dossier courant sur `donnees/`, puis appelez les scripts :
+
+```
+cd "chemin/vers/la/seance/donnees"
+do "../code/seance01.do"
+do "../code/td01.do"
+```
+
+Remplacez `01` par `02` pour la séance 2. Stata doit pouvoir écrire dans le dossier courant pour créer ses fichiers et graphiques. Les versions Stata utilisent les données locales et n'exigent pas le paquet Python.
+
+### Résultats et écarts entre langages
+
+Les scripts affichent des statistiques descriptives, covariances, corrélations, estimations et tests, puis produisent les figures indiquées dans les commentaires de chaque bloc. Certains blocs ouvrent des fenêtres graphiques : fermez-les pour poursuivre. Les simulations fixent une graine, mais Python, R et Stata utilisent des générateurs différents ; les tirages et les dernières décimales peuvent donc différer. Comparez les résultats déterministes à une tolérance numérique raisonnable.
+
+## Microéconomie III — Niort {#microeconomics}
+
+La [page du cours](/teaching/microeconomics-iii-niort/) classe les documents en trois parties. Les simulateurs de la partie II concernent les jeux répétés et le jeu de pile ou face. La partie III associe le cours des séances V à VIII aux séries 5 à 8, aux suppléments, aux programmes Python/R et aux simulateurs de risque, de diversification, de portefeuille et d'information.
+
+Après extraction du [dossier de la partie III](/files/teaching/niort/microeconomics-iii/part-3.zip) :
+
+```
+python -m pip install numpy pandas scipy matplotlib
+python code/partie3.py
+Rscript code/partie3.R
+```
+
+Les commentaires identifient chaque bloc et le calcul correspondant au support. Les figures sont écrites dans le dossier courant. Les simulateurs s'ouvrent directement dans le navigateur.
+
+## Autres cours
+
+- [Économétrie L3 à Cergy](/teaching/econometrics-l3/) : exercices par chapitre, collection de données avec dictionnaires et formats d'origine, puis anciens CC classés par année. Les documents « Answer key » sont les corrigés fournis ; leurs dates historiques restent celles de l'épreuve.
+- [Data Analysis with Python](/teaching/data-analysis-l3/) : ouvrir le dossier du TD concerné, lire l'énoncé, puis exécuter son notebook dans l'ordre. Les imports et cellules d'installation précisent les dépendances et les modalités d'accès aux données propres au TD. Conserver les CSV et dictionnaires à leur place.
+- [Homogeneity](/code-data/#homogeneity) : utiliser les [instructions Python/R propres à la note](/code-data/homogeneity-readme/), ainsi que les données de simulation et sorties associées.
+
+## Résoudre les erreurs habituelles
+
+- **Fichier introuvable** : vérifier le dossier courant et l'arborescence extraite.
+- **Module absent** : installer le paquet dans le même environnement que celui qui exécute le programme ou le notebook.
+- **Notebook R dans un noyau Python** : sélectionner le noyau R enregistré avec `IRkernel`.
+- **Graphique non enregistré** : vérifier les droits d'écriture et le chemin de sortie indiqué dans le script.
+- **Résultat différent** : vérifier les valeurs manquantes, l'échantillon, les unités, la version de la base et le caractère simulé du calcul.
+
+Les exemples peuvent être adaptés à une autre base en modifiant explicitement les noms de variables, les formules et les chemins. Conservez une copie du programme et des données d'origine avant de modifier un exercice.

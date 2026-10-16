@@ -2,9 +2,11 @@
 
 ### How can children enter labor supply models as an economic mechanism rather than as a demographic control?
 
-In empirical labor supply equations, the number of children usually enters as one more regressor next to age or education. Demand analysis has long done better. Equivalence scales say how household composition transforms behavior (Browning, 1992; Lewbel, 1999). The paper asks what the labor supply counterpart should be. It looks for a structure in which children act through what they cost the parent, in money and in time, and which can be estimated on a standard labor force survey without observing childcare time or spending on children. The cost of children should then come out of the estimation rather than be assumed.
+In empirical labor supply equations, the number of children usually enters as one more regressor next to age or education. Demand analysis has long done better. Equivalence scales say how household composition transforms behavior (Browning, 1992; Lewbel, 1999).
 
-*Illustration caption.* **Two channels into labor supply.** Children cost the mother money and time. Both costs lower the resources she keeps, which raises her hours if leisure is normal; the hours of care displace market work, which lowers them. Her preferences are those of a childless woman. Explanatory diagram, not an empirical result.
+The paper asks what the labor supply counterpart should be. It looks for a structure in which children act through what they cost the parent, in money and in time, and which can be estimated on a standard labor force survey without observing childcare time or spending on children. The cost of children should then come out of the estimation rather than be assumed.
+
+
 
 ---
 
@@ -30,7 +32,7 @@ Picture a single mother as a childless woman with the same tastes and two extra 
 
 What does tell them apart is how her responses differ from a childless woman's. Care hours are valued at the wage, so a raise also raises the cost of care and makes her poorer, and she increases her hours by more. Part of each extra dollar of non-labor income goes to the child, so it reduces her hours by less. These slope differences, more than level differences, carry the cost of children.
 
-In the 2019 PSID, at the median, a $1 raise adds 27 hours of work a year for a childless working woman and 40 hours for a working mother; $1,000 of extra resources removes 28 and 25 hours respectively (Table 4).
+**Example.** In the 2019 PSID, at the median, a $1 raise adds 27 hours of work a year for a childless working woman and 40 hours for a working mother; $1,000 of extra resources removes 28 and 25 hours respectively (Table 4).
 
 ---
 
@@ -44,7 +46,7 @@ A mettre tel quel
 
 ### Two fixed costs and a time shift on the labor supply of a childless woman
 
-A single mother chooses market hours $h$, childcare time $t$, purchased care $k$, her consumption $c$ and her children's consumption $m$. Her preferences are $u_f(h+t,\,c) + \lambda(n)\,u_c(m)$: she is altruistic toward a representative child, and market work and childcare enter her utility as perfect substitutes. This last assumption is the keystone of the model. Every hour of care is priced at the wage, and the problem becomes recursive. She first meets the childcare requirement $f(t,n) + k \ge T_c(n)$ at minimum cost, which defines the time cost $e_t(w,n) = \min_{t,k}\,(tw + k)$. She then sets spending on the children, $e_m(y,w,n)$. She finally supplies labor as a childless woman would, with fewer resources.
+A single mother chooses market hours $h$, childcare time $t$, purchased care $k$, her consumption $c$ and her children's consumption $m$. Her preferences are $u_f(h+t,c)+\lambda(n)u_c(m)$. She is altruistic toward a representative child, and market work and childcare enter her utility as perfect substitutes. This last assumption is the keystone of the model. Every hour of care is priced at the wage, and the problem becomes recursive. She first meets the childcare requirement $f(t,n) + k \ge T_c(n)$ at minimum cost, which defines the time cost $e_t(w,n) = \min_{t,k}\,(tw + k)$. She then sets spending on the children, $e_m(y,w,n)$. She finally supplies labor as a childless woman would with fewer resources.
 
 **Equation block**
 
@@ -84,7 +86,7 @@ Even with a linear $F$, they are read off three shifts relative to childless wom
 
 ## Econometric model & methods
 
-### A Brown–Levin–Ulph labor supply with participation, translated by children
+### A Brown–Levin–Ulph labor supply with participation translated by children
 
 Annual hours are quadratic in the wage and in net total expenditures (Brown, Levin & Ulph, 1976), a form that nests Hausman's (1980) linear specification. Child costs scale with $\delta(n) = \sqrt{n}$. Net total expenditures (household expenditures minus labor income) stand in for non-labor income. They are corrected for endogeneity with a control function built on asset, welfare, transfer and other incomes. A wage equation, with education as the excluded variable, handles endogenous wages and the unobserved wages of non-participants. The likelihood is of the Tobit type: the density of hours for workers, and for non-workers the probability of not participating, integrated over the latent wage.
 
@@ -104,7 +106,7 @@ $$
 \end{aligned}
 $$
 
-**Symbols, units and indices.** $h$: annual market hours (thousands). $w$: hourly wage ($). $y$: net total expenditures ($ thousands). $n$: number of children; $\delta(n) = \sqrt{n}$, $\delta(1) = 1$. $a$: fixed cost, time and money combined. $b_t$: childcare time per child (thousands of hours). $b_m$: share of non-labor income spent on the child. $z^h$: age, age², Black, Hispanic. $z^w$: $z^h$ and years of education. $z^y$: $z^w$, asset, welfare, transfer and other incomes and their squares.
+<!-- QUADRATIC-SPECIFICATION -->
 
 ---
 
@@ -112,9 +114,9 @@ $$
 
 ### PSID 2019: labor supply, wages and expenditures for single women
 
-The 2019 wave is the first in which the PSID records detailed household expenditures, which makes net total expenditures computable. The sample covers single women aged 20–60. Mothers have at most two children, the youngest aged six or under, the age range in which childcare matters most. The sample has 1,270 women: 987 childless women and 283 mothers. Single women fit the model's single decision-maker, and despite their exposure to poverty they are rarely the subject of structural labor supply analysis.
+The 2019 wave is the first in which the PSID records detailed household expenditures, which makes net total expenditures computable. The sample covers single women aged 20–60. Mothers have at most two children, the youngest aged six or under, the age range in which childcare matters most. The sample has 1,270 women, of whom 987 are childless women and 283 are mothers. Single women fit the model's single decision-maker, and despite their exposure to poverty they are rarely the subject of structural labor supply analysis.
 
-Table 1 shows why a control variable will not do. Mothers participate more than childless women (0.90 against 0.83) and earn less ($13.22 against $18.78), yet work slightly fewer hours (1,620 against 1,639). Net total expenditures are positive for mothers ($9,470) and negative for childless women (−$3,010): mothers' earnings fall short of household spending. Among women in couples, by contrast, participation falls with children.
+Table 1 shows why a control variable will not do. Mothers participate more than childless women (0.90 against 0.83) and earn less ($13.22 against $18.78), yet work slightly fewer hours (1,620 against 1,639). Net total expenditures are positive for mothers ($9,470) and negative for childless women (−$3,010), reflecting the fact that mothers’ earnings fall short of household spending. Among women in couples, by contrast, participation falls with children.
 
 *[Table 1 and the Provider / Access / Exact data used blocks as on the current page.]*
 
@@ -122,18 +124,18 @@ Table 1 shows why a control variable will not do. Mothers participate more than 
 
 ## Results & limits
 
-### Children steepen the wage response and flatten the income response; one child costs a working mother about $21,000 a year
+### Children steepen the wage response and flatten the income response. One child costs a working mother about $21,000 a year.
 
 The estimates satisfy the testable restriction. At the median, a $1 raise adds 27 hours of work a year for a childless working woman and 40 hours for a working mother. $1,000 of extra resources removes 28 and 25 hours respectively (Table 4).
 
-The child-cost equation gives $\hat b_t = 0.497$ (s.e. 0.178), about 500 hours of care per child per year. The 2019 ATUS reports 389 hours for comparable single mothers. The income share $\hat b_m = 0.089$ (s.e. 0.084) is imprecise (Table 3).
+The child-cost equation gives $\hat{b}_t = 0.497$ (s.e. 0.178), about 500 hours of care per child per year. The 2019 ATUS reports 389 hours for comparable single mothers. The income share $\hat{b}_m = 0.089$ (s.e. 0.084) is imprecise (Table 3).
 
-The median annual cost of one child is $21,000 for working mothers and $31,000 for non-working mothers (Table 5). The gap comes from the price of time: for non-working mothers the median reservation wage is $36.5, about twice their market wage of $18.4 (Table 4). At the median across all mothers, the mother's time is worth about $12,200 a year and goods and services about $14,200. The second figure is close to the USDA estimate for a single parent (Lino et al., 2017).
+The median annual cost of one child is $21,000 for working mothers and $31,000 for non-working mothers (Table 5). The gap comes from the price of time. For non-working mothers the median reservation wage is $36.5, about twice their market wage of $18.4 (Table 4). At the median across all mothers, the mother's time is worth about $12,200 a year and goods and services about $14,200. The second figure is close to the USDA estimate for a single parent (Lino et al., 2017).
 
 These costs answer Browning's (1992) positive question, how children change behavior. They are costs as perceived by parents, not amounts that ought to be compensated.
 
 **Limits documented by the manuscript (callout)**
 - **Identification in practice.** The general result needs precise second income derivatives. Income effects are only mildly nonlinear in the data, so the estimates rest on the tractable parametric model.
-- **Keystone assumptions.** Work and childcare are perfect substitutes in preferences, so care is priced at the wage (the companion paper relaxes this). Childcare time does not respond to the wage. Preferences are stable across parental status.
+- **Keystone assumptions.** Work and childcare are perfect substitutes in preferences, so care is priced at the wage ([my job market paper relaxes this](/research/household-demand-leisure/)). Childcare time does not respond to the wage. Preferences are stable across parental status.
 - **Non-participants.** Their costs rely on parametric extrapolation and on a reservation wage whose normative meaning is open.
-- **Scope.** The model is static and the sample covers single women with young children. Couples are only sketched, and identification fails if the husband's hours are constrained. Childcare time is sensitive to the sample: 190 hours in the trimmed sample.
+- **Scope.** The model is static and the sample covers single women with young children. Couples are only sketched, and identification fails if the husband's hours are constrained. Childcare time is sensitive to the sample, reaching 190 hours in the trimmed sample.

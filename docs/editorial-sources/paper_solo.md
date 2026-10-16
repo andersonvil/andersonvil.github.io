@@ -19,7 +19,7 @@ The paper asks whether couple-based estimates of the child's resource share rema
 
 ### A parent's own wardrobe reveals how much of the budget goes to the child
 
-Surveys record spending by household, not by person, so what a single parent spends on a child is never observed. Adult clothing is the exception: it is recorded for the person who wears it.
+Surveys record spending by household, not by person, so what a single parent spends on a child is never observed. Adult clothing is the exception as it is recorded for the person who wears it.
 
 If having a child changes a parent's budget but not his or her taste for clothing, childless single adults with the same characteristics show how clothing spending varies with the resources one has for oneself. A single parent's clothing then reveals the resources the parent keeps. The rest is the child's share.
 
@@ -49,16 +49,18 @@ where $\omega$ is the clothing budget share, $p$ the price of clothing and $g$ t
 
 Three ingredients recover $\varphi$ and $\pi$ from household-level data:
 - clothing preferences are the same for childless adults and parents with the same characteristics (preference stability);
-- clothing is observed by wearer, and one such good suffices;
+- adult clothing expenditure is separately recorded, providing the single assignable good needed;
 - Engel curves are nonlinear in expenditure.
 
-One difficulty remains: $\varphi$ and $\pi$ enter the same demand equation. Proposition 1 gives sufficient conditions to separate them. The benchmark uses an exclusion restriction: decade indicators shift clothing demand, through fashion, norms and relative prices, without affecting the sharing rule or scale economies. They are relevant shifters in the data (joint tests, $p = 0.034$ for women and $p = 0.011$ for men; Table 1). Independence from expenditure, independence from prices and a multiplicative effect of family size serve as alternative restrictions.
+One difficulty remains because $\varphi$ and $\pi$ enter the same demand equation. Proposition 1 gives sufficient conditions to distinguish them. The benchmark uses decade indicators to shift adult clothing demand through fashion, norms, and relative prices, while excluding these indicators from the sharing rule and the scale-economies equation. These indicators are relevant in the data, with joint tests yielding $p=0.034$ for women and $p=0.011$ for men (Table 1). Alternative specifications impose independence from expenditure, independence from prices, or a multiplicative effect of family size.
 
 ## 6. Econometric model & methods
 
 ### Quadratic Engel curves, a logistic sharing rule, and nonlinear iterated 2SLS
 
 The clothing budget share is quadratic in log expenditure, estimated separately for men and women and jointly on childless adults and single parents:
+
+**Single adult demand (equation 14).**
 
 $$
 \omega = \alpha z^{\omega} + \beta \ln p + \gamma \ln y + \eta (\ln y)^2 + \epsilon .
@@ -83,9 +85,11 @@ Estimation is by nonlinear iterated two-stage least squares, with total income i
 
 | Children's resource share (Table 4, col. I) | One child | Two children | Three children |
 |---|---|---|---|
-| Single mothers | 0.147 (s.e. 0.061) | 0.256 (0.076) | 0.357 (0.083) |
+| Single mothers | 0.147 (0.061) | 0.256 (0.076) | 0.357 (0.083) |
 | Single fathers | 0.222 (0.085) | 0.383 (0.079) | 0.533 (0.097) |
 | Couples (Bargain, Donni & Hentati, 2022) | 0.142 | | |
+
+Standard errors are reported in parentheses.
 
 **Main findings.**
 - **External validity.** For single mothers, the child's share (14.7%) is close to the couple benchmark (14.2%).

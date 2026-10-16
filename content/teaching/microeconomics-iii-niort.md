@@ -1,5 +1,5 @@
 +++
-title = "Microeconomics III — Undergraduate (L3), Niort"
+title = "Microeconomics III — L3"
 path = "teaching/microeconomics-iii-niort"
 template = "teaching-detail.html"
 
