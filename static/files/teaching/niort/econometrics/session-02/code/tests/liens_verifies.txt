@@ -1,0 +1,289 @@
+p.  4  [e1 ,                                    ] -> ann-remise             p.52  « Annexe 1. Tirer avec ou sans remise »
+p.  4  [Code                                    ] -> code-ech-quatre-py     p.61  « Code Python, quatre échantillons, quatre droites »
+p.  5  [Code                                    ] -> code-ech-distrib-py    p.64  « Code Python, la distribution des pentes »
+p.  8  [e2 .                                    ] -> ann-continue           p.53  « Annexe 2. Variables aléatoires continues »
+p.  8  [Code                                    ] -> code-va-py             p.67  « Code Python, un étudiant tiré au hasard »
+p.  9  [s3 )                                    ] -> ann-lgn                p.54  « Annexe 3. La loi des grands nombres »
+p.  9  [Code                                    ] -> code-lgn-py            p.70  « Code Python, la loi des grands nombres »
+p. 10  [Code                                    ] -> code-esp-prop-py       p.73  « Code Python, calculer avec l’espérance »
+p. 11  [Code                                    ] -> code-variance-py       p.76  « Code Python, variance et écart-type »
+p. 12  [Code                                    ] -> code-cov-pop-py        p.79  « Code Python, covariance et corrélation »
+p. 13  [Code                                    ] -> code-independance-py   p.82  « Code Python, covariance nulle sans indépendance »
+p. 14  [Code                                    ] -> code-var-moyenne-py    p.85  « Code Python, la variance d’une moyenne »
+p. 15  [Code                                    ] -> code-esp-cond-py       p.88  « Code Python, espérance conditionnelle »
+p. 16  [s4 .                                    ] -> ann-iterees            p.55  « Annexe 4. La loi des espérances itérées »
+p. 16  [Code                                    ] -> code-iterees-py        p.91  « Code Python, les espérances itérées »
+p. 17  [Code                                    ] -> code-cond-cov-py       p.94  « Code Python, covariance nulle et espérance conditionnelle »
+p. 18  [Code                                    ] -> code-var-cond-py       p.97  « Code Python, variance conditionnelle »
+p. 21  [Code                                    ] -> code-rls1-py           p.100  « Code Python, moyennes par classe et droite des MCO »
+p. 23  [Code                                    ] -> code-rls3-py           p.103  « Code Python, variation de x »
+p. 24  [e5                                      ] -> ann-normalisation      p.56  « Annexe 5. Pourquoi E(u) = 0 ne coûte rien »
+p. 26  [Code                                    ] -> code-equilibre-py      p.106  « Code Python, comparer les groupes »
+p. 27  [Code                                    ] -> code-rls5-py           p.109  « Code Python, résidus et dispersion »
+p. 27  [Retour à « D’où vient le (0,70) »       ] -> f-table2               p.47  « D’où vient le (0,70) de la séance 1 »
+p. 32  [Code                                    ] -> code-jouet-bruit-py    p.112  « Code Python, la vérité plus du bruit »
+p. 34  [s6 .                                    ] -> ann-conditionner       p.57  « Annexe 6. Pourquoi raisonner à x1 , . . . ,xn donnés »
+p. 35  [Code                                    ] -> code-jouet-b0-py       p.115  « Code Python, la constante de l’exemple à la main »
+p. 36  [Code                                    ] -> code-mc-sansbiais-py   p.118  « Code Python, simulation, absence de biais »
+p. 37  [Code                                    ] -> code-mc-biais-py       p.121  « Code Python, simulation, un biais »
+p. 39  [e7 .                                    ] -> ann-varbeta0           p.58  « Annexe 7. La variance de β̂0 »
+p. 40  [Code                                    ] -> code-mc-variance-py    p.124  « Code Python, simulation, leviers de précision »
+p. 41  [Code                                    ] -> code-eventail-py       p.127  « Code Python, la dispersion de x »
+p. 42  [Code                                    ] -> code-mc-hetero-py      p.130  « Code Python, simulation, hétéroscédasticité »
+p. 44  [e8 .                                    ] -> ann-sigma2             p.59  « Annexe 8. σ̂ 2 est sans biais »
+p. 45  [Code                                    ] -> code-mc-sigma-py       p.133  « Code Python, simulation, estimer sigma au carré »
+p. 46  [Code                                    ] -> code-mc-se-py          p.136  « Code Python, simulation, l’erreur-type »
+p. 47  [« RLS.5, homoscédasticité »             ] -> f-rls5                 p.27  « RLS.5, homoscédasticité »
+p. 47  [Code                                    ] -> code-erreur-type-py    p.139  « Code Python, les erreurs-types de la table »
+p. 52  [Retour                                  ] -> src-remise             p.4  « Un autre échantillon, une autre droite »
+p. 53  [Retour                                  ] -> src-continue           p.8  « Variable aléatoire »
+p. 54  [Retour                                  ] -> src-lgn                p.9  « Espérance »
+p. 55  [Retour                                  ] -> src-iterees            p.16  « Calculer avec l’espérance conditionnelle »
+p. 56  [Retour                                  ] -> src-normalisation      p.24  « RLS.4, espérance conditionnelle nulle »
+p. 57  [Retour                                  ] -> src-conditionner       p.34  « Démonstration pour β̂1 »
+p. 58  [Retour                                  ] -> src-varbeta0           p.39  « La variance de β̂1 et de β̂0 »
+p. 59  [Retour                                  ] -> src-sigma2             p.44  « Estimer la variance de l’erreur »
+p. 61  [R                                       ] -> code-ech-quatre-r      p.62  « Code R, quatre échantillons, quatre droites »
+p. 61  [Stata                                   ] -> code-ech-quatre-stata  p.63  « Code Stata, quatre échantillons, quatre droites »
+p. 61  [Retour                                  ] -> f-quatre               p.4  « Un autre échantillon, une autre droite »
+p. 62  [Python                                  ] -> code-ech-quatre-py     p.61  « Code Python, quatre échantillons, quatre droites »
+p. 62  [Stata                                   ] -> code-ech-quatre-stata  p.63  « Code Stata, quatre échantillons, quatre droites »
+p. 62  [Retour                                  ] -> f-quatre               p.4  « Un autre échantillon, une autre droite »
+p. 63  [Python                                  ] -> code-ech-quatre-py     p.61  « Code Python, quatre échantillons, quatre droites »
+p. 63  [R                                       ] -> code-ech-quatre-r      p.62  « Code R, quatre échantillons, quatre droites »
+p. 63  [Retour                                  ] -> f-quatre               p.4  « Un autre échantillon, une autre droite »
+p. 64  [R                                       ] -> code-ech-distrib-r     p.65  « Code R, la distribution des pentes »
+p. 64  [Stata                                   ] -> code-ech-distrib-stata p.66  « Code Stata, la distribution des pentes »
+p. 64  [Retour                                  ] -> f-distrib              p.5  « La distribution d’échantillonnage »
+p. 65  [Python                                  ] -> code-ech-distrib-py    p.64  « Code Python, la distribution des pentes »
+p. 65  [Stata                                   ] -> code-ech-distrib-stata p.66  « Code Stata, la distribution des pentes »
+p. 65  [Retour                                  ] -> f-distrib              p.5  « La distribution d’échantillonnage »
+p. 66  [Python                                  ] -> code-ech-distrib-py    p.64  « Code Python, la distribution des pentes »
+p. 66  [R                                       ] -> code-ech-distrib-r     p.65  « Code R, la distribution des pentes »
+p. 66  [Retour                                  ] -> f-distrib              p.5  « La distribution d’échantillonnage »
+p. 67  [R                                       ] -> code-va-r              p.68  « Code R, un étudiant tiré au hasard »
+p. 67  [Stata                                   ] -> code-va-stata          p.69  « Code Stata, un étudiant tiré au hasard »
+p. 67  [Retour                                  ] -> f-va                   p.8  « Variable aléatoire »
+p. 68  [Python                                  ] -> code-va-py             p.67  « Code Python, un étudiant tiré au hasard »
+p. 68  [Stata                                   ] -> code-va-stata          p.69  « Code Stata, un étudiant tiré au hasard »
+p. 68  [Retour                                  ] -> f-va                   p.8  « Variable aléatoire »
+p. 69  [Python                                  ] -> code-va-py             p.67  « Code Python, un étudiant tiré au hasard »
+p. 69  [R                                       ] -> code-va-r              p.68  « Code R, un étudiant tiré au hasard »
+p. 69  [Retour                                  ] -> f-va                   p.8  « Variable aléatoire »
+p. 70  [R                                       ] -> code-lgn-r             p.71  « Code R, la loi des grands nombres »
+p. 70  [Stata                                   ] -> code-lgn-stata         p.72  « Code Stata, la loi des grands nombres »
+p. 70  [Retour                                  ] -> f-esperance            p.9  « Espérance »
+p. 71  [Python                                  ] -> code-lgn-py            p.70  « Code Python, la loi des grands nombres »
+p. 71  [Stata                                   ] -> code-lgn-stata         p.72  « Code Stata, la loi des grands nombres »
+p. 71  [Retour                                  ] -> f-esperance            p.9  « Espérance »
+p. 72  [Python                                  ] -> code-lgn-py            p.70  « Code Python, la loi des grands nombres »
+p. 72  [R                                       ] -> code-lgn-r             p.71  « Code R, la loi des grands nombres »
+p. 72  [Retour                                  ] -> f-esperance            p.9  « Espérance »
+p. 73  [R                                       ] -> code-esp-prop-r        p.74  « Code R, calculer avec l’espérance »
+p. 73  [Stata                                   ] -> code-esp-prop-stata    p.75  « Code Stata, calculer avec l’espérance »
+p. 73  [Retour                                  ] -> f-prop-esp             p.10  « Calculer avec l’espérance »
+p. 74  [Python                                  ] -> code-esp-prop-py       p.73  « Code Python, calculer avec l’espérance »
+p. 74  [Stata                                   ] -> code-esp-prop-stata    p.75  « Code Stata, calculer avec l’espérance »
+p. 74  [Retour                                  ] -> f-prop-esp             p.10  « Calculer avec l’espérance »
+p. 75  [Python                                  ] -> code-esp-prop-py       p.73  « Code Python, calculer avec l’espérance »
+p. 75  [R                                       ] -> code-esp-prop-r        p.74  « Code R, calculer avec l’espérance »
+p. 75  [Retour                                  ] -> f-prop-esp             p.10  « Calculer avec l’espérance »
+p. 76  [R                                       ] -> code-variance-r        p.77  « Code R, variance et écart-type »
+p. 76  [Stata                                   ] -> code-variance-stata    p.78  « Code Stata, variance et écart-type »
+p. 76  [Retour                                  ] -> f-variance             p.11  « Variance et écart-type »
+p. 77  [Python                                  ] -> code-variance-py       p.76  « Code Python, variance et écart-type »
+p. 77  [Stata                                   ] -> code-variance-stata    p.78  « Code Stata, variance et écart-type »
+p. 77  [Retour                                  ] -> f-variance             p.11  « Variance et écart-type »
+p. 78  [Python                                  ] -> code-variance-py       p.76  « Code Python, variance et écart-type »
+p. 78  [R                                       ] -> code-variance-r        p.77  « Code R, variance et écart-type »
+p. 78  [Retour                                  ] -> f-variance             p.11  « Variance et écart-type »
+p. 79  [R                                       ] -> code-cov-pop-r         p.80  « Code R, covariance et corrélation »
+p. 79  [Stata                                   ] -> code-cov-pop-stata     p.81  « Code Stata, covariance et corrélation »
+p. 79  [Retour                                  ] -> f-cov                  p.12  « Covariance et corrélation »
+p. 80  [Python                                  ] -> code-cov-pop-py        p.79  « Code Python, covariance et corrélation »
+p. 80  [Stata                                   ] -> code-cov-pop-stata     p.81  « Code Stata, covariance et corrélation »
+p. 80  [Retour                                  ] -> f-cov                  p.12  « Covariance et corrélation »
+p. 81  [Python                                  ] -> code-cov-pop-py        p.79  « Code Python, covariance et corrélation »
+p. 81  [R                                       ] -> code-cov-pop-r         p.80  « Code R, covariance et corrélation »
+p. 81  [Retour                                  ] -> f-cov                  p.12  « Covariance et corrélation »
+p. 82  [R                                       ] -> code-independance-r    p.83  « Code R, covariance nulle sans indépendance »
+p. 82  [Stata                                   ] -> code-independance-stata p.84  « Code Stata, covariance nulle sans indépendance »
+p. 82  [Retour                                  ] -> f-indep                p.13  « Indépendance et covariance nulle »
+p. 83  [Python                                  ] -> code-independance-py   p.82  « Code Python, covariance nulle sans indépendance »
+p. 83  [Stata                                   ] -> code-independance-stata p.84  « Code Stata, covariance nulle sans indépendance »
+p. 83  [Retour                                  ] -> f-indep                p.13  « Indépendance et covariance nulle »
+p. 84  [Python                                  ] -> code-independance-py   p.82  « Code Python, covariance nulle sans indépendance »
+p. 84  [R                                       ] -> code-independance-r    p.83  « Code R, covariance nulle sans indépendance »
+p. 84  [Retour                                  ] -> f-indep                p.13  « Indépendance et covariance nulle »
+p. 85  [R                                       ] -> code-var-moyenne-r     p.86  « Code R, la variance d’une moyenne »
+p. 85  [Stata                                   ] -> code-var-moyenne-stata p.87  « Code Stata, la variance d’une moyenne »
+p. 85  [Retour                                  ] -> f-varsomme             p.14  « La variance d’une somme »
+p. 86  [Python                                  ] -> code-var-moyenne-py    p.85  « Code Python, la variance d’une moyenne »
+p. 86  [Stata                                   ] -> code-var-moyenne-stata p.87  « Code Stata, la variance d’une moyenne »
+p. 86  [Retour                                  ] -> f-varsomme             p.14  « La variance d’une somme »
+p. 87  [Python                                  ] -> code-var-moyenne-py    p.85  « Code Python, la variance d’une moyenne »
+p. 87  [R                                       ] -> code-var-moyenne-r     p.86  « Code R, la variance d’une moyenne »
+p. 87  [Retour                                  ] -> f-varsomme             p.14  « La variance d’une somme »
+p. 88  [R                                       ] -> code-esp-cond-r        p.89  « Code R, espérance conditionnelle »
+p. 88  [Stata                                   ] -> code-esp-cond-stata    p.90  « Code Stata, espérance conditionnelle »
+p. 88  [Retour                                  ] -> f-espcond              p.15  « Espérance conditionnelle »
+p. 89  [Python                                  ] -> code-esp-cond-py       p.88  « Code Python, espérance conditionnelle »
+p. 89  [Stata                                   ] -> code-esp-cond-stata    p.90  « Code Stata, espérance conditionnelle »
+p. 89  [Retour                                  ] -> f-espcond              p.15  « Espérance conditionnelle »
+p. 90  [Python                                  ] -> code-esp-cond-py       p.88  « Code Python, espérance conditionnelle »
+p. 90  [R                                       ] -> code-esp-cond-r        p.89  « Code R, espérance conditionnelle »
+p. 90  [Retour                                  ] -> f-espcond              p.15  « Espérance conditionnelle »
+p. 91  [R                                       ] -> code-iterees-r         p.92  « Code R, les espérances itérées »
+p. 91  [Stata                                   ] -> code-iterees-stata     p.93  « Code Stata, les espérances itérées »
+p. 91  [Retour                                  ] -> f-prop-cond            p.16  « Calculer avec l’espérance conditionnelle »
+p. 92  [Python                                  ] -> code-iterees-py        p.91  « Code Python, les espérances itérées »
+p. 92  [Stata                                   ] -> code-iterees-stata     p.93  « Code Stata, les espérances itérées »
+p. 92  [Retour                                  ] -> f-prop-cond            p.16  « Calculer avec l’espérance conditionnelle »
+p. 93  [Python                                  ] -> code-iterees-py        p.91  « Code Python, les espérances itérées »
+p. 93  [R                                       ] -> code-iterees-r         p.92  « Code R, les espérances itérées »
+p. 93  [Retour                                  ] -> f-prop-cond            p.16  « Calculer avec l’espérance conditionnelle »
+p. 94  [R                                       ] -> code-cond-cov-r        p.95  « Code R, covariance nulle et espérance conditionnelle »
+p. 94  [Stata                                   ] -> code-cond-cov-stata    p.96  « Code Stata, covariance nulle et espérance conditionnelle »
+p. 94  [Retour                                  ] -> f-cond-cov             p.17  « De l’espérance conditionnelle à la covariance »
+p. 95  [Python                                  ] -> code-cond-cov-py       p.94  « Code Python, covariance nulle et espérance conditionnelle »
+p. 95  [Stata                                   ] -> code-cond-cov-stata    p.96  « Code Stata, covariance nulle et espérance conditionnelle »
+p. 95  [Retour                                  ] -> f-cond-cov             p.17  « De l’espérance conditionnelle à la covariance »
+p. 96  [Python                                  ] -> code-cond-cov-py       p.94  « Code Python, covariance nulle et espérance conditionnelle »
+p. 96  [R                                       ] -> code-cond-cov-r        p.95  « Code R, covariance nulle et espérance conditionnelle »
+p. 96  [Retour                                  ] -> f-cond-cov             p.17  « De l’espérance conditionnelle à la covariance »
+p. 97  [R                                       ] -> code-var-cond-r        p.98  « Code R, variance conditionnelle »
+p. 97  [Stata                                   ] -> code-var-cond-stata    p.99  « Code Stata, variance conditionnelle »
+p. 97  [Retour                                  ] -> f-varcond              p.18  « Variance conditionnelle »
+p. 98  [Python                                  ] -> code-var-cond-py       p.97  « Code Python, variance conditionnelle »
+p. 98  [Stata                                   ] -> code-var-cond-stata    p.99  « Code Stata, variance conditionnelle »
+p. 98  [Retour                                  ] -> f-varcond              p.18  « Variance conditionnelle »
+p. 99  [Python                                  ] -> code-var-cond-py       p.97  « Code Python, variance conditionnelle »
+p. 99  [R                                       ] -> code-var-cond-r        p.98  « Code R, variance conditionnelle »
+p. 99  [Retour                                  ] -> f-varcond              p.18  « Variance conditionnelle »
+p.100  [R                                       ] -> code-rls1-r            p.101  « Code R, moyennes par classe et droite des MCO »
+p.100  [Stata                                   ] -> code-rls1-stata        p.102  « Code Stata, moyennes par classe et droite des MCO »
+p.100  [Retour                                  ] -> f-rls1                 p.21  « RLS.1, linéarité dans les paramètres »
+p.101  [Python                                  ] -> code-rls1-py           p.100  « Code Python, moyennes par classe et droite des MCO »
+p.101  [Stata                                   ] -> code-rls1-stata        p.102  « Code Stata, moyennes par classe et droite des MCO »
+p.101  [Retour                                  ] -> f-rls1                 p.21  « RLS.1, linéarité dans les paramètres »
+p.102  [Python                                  ] -> code-rls1-py           p.100  « Code Python, moyennes par classe et droite des MCO »
+p.102  [R                                       ] -> code-rls1-r            p.101  « Code R, moyennes par classe et droite des MCO »
+p.102  [Retour                                  ] -> f-rls1                 p.21  « RLS.1, linéarité dans les paramètres »
+p.103  [R                                       ] -> code-rls3-r            p.104  « Code R, variation de x »
+p.103  [Stata                                   ] -> code-rls3-stata        p.105  « Code Stata, variation de x »
+p.103  [Retour                                  ] -> f-rls3                 p.23  « RLS.3, variation de x dans l’échantillon »
+p.104  [Python                                  ] -> code-rls3-py           p.103  « Code Python, variation de x »
+p.104  [Stata                                   ] -> code-rls3-stata        p.105  « Code Stata, variation de x »
+p.104  [Retour                                  ] -> f-rls3                 p.23  « RLS.3, variation de x dans l’échantillon »
+p.105  [Python                                  ] -> code-rls3-py           p.103  « Code Python, variation de x »
+p.105  [R                                       ] -> code-rls3-r            p.104  « Code R, variation de x »
+p.105  [Retour                                  ] -> f-rls3                 p.23  « RLS.3, variation de x dans l’échantillon »
+p.106  [R                                       ] -> code-equilibre-r       p.107  « Code R, comparer les groupes »
+p.106  [Stata                                   ] -> code-equilibre-stata   p.108  « Code Stata, comparer les groupes »
+p.106  [Retour                                  ] -> f-rls4-examiner        p.26  « RLS.4, comment l’examiner »
+p.107  [Python                                  ] -> code-equilibre-py      p.106  « Code Python, comparer les groupes »
+p.107  [Stata                                   ] -> code-equilibre-stata   p.108  « Code Stata, comparer les groupes »
+p.107  [Retour                                  ] -> f-rls4-examiner        p.26  « RLS.4, comment l’examiner »
+p.108  [Python                                  ] -> code-equilibre-py      p.106  « Code Python, comparer les groupes »
+p.108  [R                                       ] -> code-equilibre-r       p.107  « Code R, comparer les groupes »
+p.108  [Retour                                  ] -> f-rls4-examiner        p.26  « RLS.4, comment l’examiner »
+p.109  [R                                       ] -> code-rls5-r            p.110  « Code R, résidus et dispersion »
+p.109  [Stata                                   ] -> code-rls5-stata        p.111  « Code Stata, résidus et dispersion »
+p.109  [Retour                                  ] -> f-rls5                 p.27  « RLS.5, homoscédasticité »
+p.110  [Python                                  ] -> code-rls5-py           p.109  « Code Python, résidus et dispersion »
+p.110  [Stata                                   ] -> code-rls5-stata        p.111  « Code Stata, résidus et dispersion »
+p.110  [Retour                                  ] -> f-rls5                 p.27  « RLS.5, homoscédasticité »
+p.111  [Python                                  ] -> code-rls5-py           p.109  « Code Python, résidus et dispersion »
+p.111  [R                                       ] -> code-rls5-r            p.110  « Code R, résidus et dispersion »
+p.111  [Retour                                  ] -> f-rls5                 p.27  « RLS.5, homoscédasticité »
+p.112  [R                                       ] -> code-jouet-bruit-r     p.113  « Code R, la vérité plus du bruit »
+p.112  [Stata                                   ] -> code-jouet-bruit-stata p.114  « Code Stata, la vérité plus du bruit »
+p.112  [Retour                                  ] -> f-jouet-bruit          p.32  « Retour à l’exemple à la main »
+p.113  [Python                                  ] -> code-jouet-bruit-py    p.112  « Code Python, la vérité plus du bruit »
+p.113  [Stata                                   ] -> code-jouet-bruit-stata p.114  « Code Stata, la vérité plus du bruit »
+p.113  [Retour                                  ] -> f-jouet-bruit          p.32  « Retour à l’exemple à la main »
+p.114  [Python                                  ] -> code-jouet-bruit-py    p.112  « Code Python, la vérité plus du bruit »
+p.114  [R                                       ] -> code-jouet-bruit-r     p.113  « Code R, la vérité plus du bruit »
+p.114  [Retour                                  ] -> f-jouet-bruit          p.32  « Retour à l’exemple à la main »
+p.115  [R                                       ] -> code-jouet-b0-r        p.116  « Code R, la constante de l’exemple à la main »
+p.115  [Stata                                   ] -> code-jouet-b0-stata    p.117  « Code Stata, la constante de l’exemple à la main »
+p.115  [Retour                                  ] -> f-preuve-b0            p.35  « Démonstration pour β̂0 »
+p.116  [Python                                  ] -> code-jouet-b0-py       p.115  « Code Python, la constante de l’exemple à la main »
+p.116  [Stata                                   ] -> code-jouet-b0-stata    p.117  « Code Stata, la constante de l’exemple à la main »
+p.116  [Retour                                  ] -> f-preuve-b0            p.35  « Démonstration pour β̂0 »
+p.117  [Python                                  ] -> code-jouet-b0-py       p.115  « Code Python, la constante de l’exemple à la main »
+p.117  [R                                       ] -> code-jouet-b0-r        p.116  « Code R, la constante de l’exemple à la main »
+p.117  [Retour                                  ] -> f-preuve-b0            p.35  « Démonstration pour β̂0 »
+p.118  [R                                       ] -> code-mc-sansbiais-r    p.119  « Code R, simulation, absence de biais »
+p.118  [Stata                                   ] -> code-mc-sansbiais-stata p.120  « Code Stata, simulation, absence de biais »
+p.118  [Retour                                  ] -> f-mc-sansbiais         p.36  « Nombre d'échantillons »
+p.119  [Python                                  ] -> code-mc-sansbiais-py   p.118  « Code Python, simulation, absence de biais »
+p.119  [Stata                                   ] -> code-mc-sansbiais-stata p.120  « Code Stata, simulation, absence de biais »
+p.119  [Retour                                  ] -> f-mc-sansbiais         p.36  « Nombre d'échantillons »
+p.120  [Python                                  ] -> code-mc-sansbiais-py   p.118  « Code Python, simulation, absence de biais »
+p.120  [R                                       ] -> code-mc-sansbiais-r    p.119  « Code R, simulation, absence de biais »
+p.120  [Retour                                  ] -> f-mc-sansbiais         p.36  « Nombre d'échantillons »
+p.121  [R                                       ] -> code-mc-biais-r        p.122  « Code R, simulation, un biais »
+p.121  [Stata                                   ] -> code-mc-biais-stata    p.123  « Code Stata, simulation, un biais »
+p.121  [Retour                                  ] -> f-mc-biais             p.37  « Quand RLS.4 échoue »
+p.122  [Python                                  ] -> code-mc-biais-py       p.121  « Code Python, simulation, un biais »
+p.122  [Stata                                   ] -> code-mc-biais-stata    p.123  « Code Stata, simulation, un biais »
+p.122  [Retour                                  ] -> f-mc-biais             p.37  « Quand RLS.4 échoue »
+p.123  [Python                                  ] -> code-mc-biais-py       p.121  « Code Python, simulation, un biais »
+p.123  [R                                       ] -> code-mc-biais-r        p.122  « Code R, simulation, un biais »
+p.123  [Retour                                  ] -> f-mc-biais             p.37  « Quand RLS.4 échoue »
+p.124  [R                                       ] -> code-mc-variance-r     p.125  « Code R, simulation, leviers de précision »
+p.124  [Stata                                   ] -> code-mc-variance-stata p.126  « Code Stata, simulation, leviers de précision »
+p.124  [Retour                                  ] -> f-leviers              p.40  « Trois leviers de précision »
+p.125  [Python                                  ] -> code-mc-variance-py    p.124  « Code Python, simulation, leviers de précision »
+p.125  [Stata                                   ] -> code-mc-variance-stata p.126  « Code Stata, simulation, leviers de précision »
+p.125  [Retour                                  ] -> f-leviers              p.40  « Trois leviers de précision »
+p.126  [Python                                  ] -> code-mc-variance-py    p.124  « Code Python, simulation, leviers de précision »
+p.126  [R                                       ] -> code-mc-variance-r     p.125  « Code R, simulation, leviers de précision »
+p.126  [Retour                                  ] -> f-leviers              p.40  « Trois leviers de précision »
+p.127  [R                                       ] -> code-eventail-r        p.128  « Code R, la dispersion de x »
+p.127  [Stata                                   ] -> code-eventail-stata    p.129  « Code Stata, la dispersion de x »
+p.127  [Retour                                  ] -> f-eventail             p.41  « Pourquoi la dispersion de x aide »
+p.128  [Python                                  ] -> code-eventail-py       p.127  « Code Python, la dispersion de x »
+p.128  [Stata                                   ] -> code-eventail-stata    p.129  « Code Stata, la dispersion de x »
+p.128  [Retour                                  ] -> f-eventail             p.41  « Pourquoi la dispersion de x aide »
+p.129  [Python                                  ] -> code-eventail-py       p.127  « Code Python, la dispersion de x »
+p.129  [R                                       ] -> code-eventail-r        p.128  « Code R, la dispersion de x »
+p.129  [Retour                                  ] -> f-eventail             p.41  « Pourquoi la dispersion de x aide »
+p.130  [R                                       ] -> code-mc-hetero-r       p.131  « Code R, simulation, hétéroscédasticité »
+p.130  [Stata                                   ] -> code-mc-hetero-stata   p.132  « Code Stata, simulation, hétéroscédasticité »
+p.130  [Retour                                  ] -> f-mc-hetero            p.42  « Quand RLS.5 échoue »
+p.131  [Python                                  ] -> code-mc-hetero-py      p.130  « Code Python, simulation, hétéroscédasticité »
+p.131  [Stata                                   ] -> code-mc-hetero-stata   p.132  « Code Stata, simulation, hétéroscédasticité »
+p.131  [Retour                                  ] -> f-mc-hetero            p.42  « Quand RLS.5 échoue »
+p.132  [Python                                  ] -> code-mc-hetero-py      p.130  « Code Python, simulation, hétéroscédasticité »
+p.132  [R                                       ] -> code-mc-hetero-r       p.131  « Code R, simulation, hétéroscédasticité »
+p.132  [Retour                                  ] -> f-mc-hetero            p.42  « Quand RLS.5 échoue »
+p.133  [R                                       ] -> code-mc-sigma-r        p.134  « Code R, simulation, estimer sigma au carré »
+p.133  [Stata                                   ] -> code-mc-sigma-stata    p.135  « Code Stata, simulation, estimer sigma au carré »
+p.133  [Retour                                  ] -> f-mc-sigma             p.45  « Voir le rôle de n − 2 »
+p.134  [Python                                  ] -> code-mc-sigma-py       p.133  « Code Python, simulation, estimer sigma au carré »
+p.134  [Stata                                   ] -> code-mc-sigma-stata    p.135  « Code Stata, simulation, estimer sigma au carré »
+p.134  [Retour                                  ] -> f-mc-sigma             p.45  « Voir le rôle de n − 2 »
+p.135  [Python                                  ] -> code-mc-sigma-py       p.133  « Code Python, simulation, estimer sigma au carré »
+p.135  [R                                       ] -> code-mc-sigma-r        p.134  « Code R, simulation, estimer sigma au carré »
+p.135  [Retour                                  ] -> f-mc-sigma             p.45  « Voir le rôle de n − 2 »
+p.136  [R                                       ] -> code-mc-se-r           p.137  « Code R, simulation, l’erreur-type »
+p.136  [Stata                                   ] -> code-mc-se-stata       p.138  « Code Stata, simulation, l’erreur-type »
+p.136  [Retour                                  ] -> f-erreur-type          p.46  « L’erreur-type »
+p.137  [Python                                  ] -> code-mc-se-py          p.136  « Code Python, simulation, l’erreur-type »
+p.137  [Stata                                   ] -> code-mc-se-stata       p.138  « Code Stata, simulation, l’erreur-type »
+p.137  [Retour                                  ] -> f-erreur-type          p.46  « L’erreur-type »
+p.138  [Python                                  ] -> code-mc-se-py          p.136  « Code Python, simulation, l’erreur-type »
+p.138  [R                                       ] -> code-mc-se-r           p.137  « Code R, simulation, l’erreur-type »
+p.138  [Retour                                  ] -> f-erreur-type          p.46  « L’erreur-type »
+p.139  [R                                       ] -> code-erreur-type-r     p.140  « Code R, les erreurs-types de la table »
+p.139  [Stata                                   ] -> code-erreur-type-stata p.141  « Code Stata, les erreurs-types de la table »
+p.139  [Retour                                  ] -> f-table2               p.47  « D’où vient le (0,70) de la séance 1 »
+p.140  [Python                                  ] -> code-erreur-type-py    p.139  « Code Python, les erreurs-types de la table »
+p.140  [Stata                                   ] -> code-erreur-type-stata p.141  « Code Stata, les erreurs-types de la table »
+p.140  [Retour                                  ] -> f-table2               p.47  « D’où vient le (0,70) de la séance 1 »
+p.141  [Python                                  ] -> code-erreur-type-py    p.139  « Code Python, les erreurs-types de la table »
+p.141  [R                                       ] -> code-erreur-type-r     p.140  « Code R, les erreurs-types de la table »
+p.141  [Retour                                  ] -> f-table2               p.47  « D’où vient le (0,70) de la séance 1 »
+288 liens, 0 sans destination

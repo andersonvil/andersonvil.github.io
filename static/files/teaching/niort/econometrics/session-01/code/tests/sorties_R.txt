@@ -1,0 +1,161 @@
+========== [etude] heures d'étude et note
+[1] 0.009
+
+========== [outils] charger des données de Wooldridge
+[1] 856  17
+  age work study econhs colgpa hsgpa acteng actmth act mathscr male calculus
+1  23   15  10.0      0 3.4909 3.355     24     26  27      10    1        1
+2  23    0  22.5      1 2.1000 3.219     23     20  24       9    1        0
+3  21   25  12.0      0 3.0851 3.306     21     24  21       8    1        1
+4  22   30  40.0      0 2.6805 3.977     31     28  31      10    0        1
+5  22   25  15.0      1 3.7454 3.890     28     31  32       8    1        1
+6  22    0  30.0      0 3.0555 3.500     25     30  28      10    1        1
+  attexc attgood fathcoll mothcoll score
+1      0       0        1        1 84.43
+2      0       0        0        1 57.38
+3      1       0        0        1 66.39
+4      0       1        1        1 81.15
+5      0       1        0        1 95.90
+6      1       0        0        1 83.61
+
+========== [ext-ct] coupe transversale
+  score colgpa work study econhs
+1 84.43 3.4909   15  10.0      0
+2 57.38 2.1000    0  22.5      1
+3 66.39 3.0851   25  12.0      0
+4 81.15 2.6805   30  40.0      0
+5 95.90 3.7454   25  15.0      1
+[1] 856
+
+========== [ext-st] série temporelle
+  year unem  inf
+1 1948  3.8  8.1
+2 1949  5.9 -1.2
+3 1950  5.3  1.3
+   year unem inf
+55 2002  5.8 1.6
+56 2003  6.0 2.3
+
+========== [ext-cte] coupes transversales empilées
+  year educ exper female  lwage
+1   78   12     8      0 1.2150
+2   78   12    30      1 1.6094
+    year educ exper female  lwage
+551   85   10    27      0 2.1972
+552   85   12    20      0 1.7047
+
+ 78  85 
+550 534
+
+========== [ext-panel] données de panel
+   nr year educ exper hours    lwage
+1  13 1980   14     1  2672 1.197540
+2  13 1981   14     2  2320 1.853060
+9  17 1980   13     4  2484 1.675962
+10 17 1981   13     5  2804 1.518398
+[1] 545
+[1] 8
+
+========== [jtrain] données expérimentales
+  train re78  educ   age
+1     0 4.55 10.09 25.05
+2     1 6.35 10.35 25.82
+
+  0   1 
+260 185
+
+========== [travail] travailler 15 heures ou plus
+  w15 score colgpa mothcoll
+1   0 73.95   2.86     0.66
+2   1 69.17   2.70     0.54
+
+  0   1 
+615 241
+
+========== [variance] construire la variance
+[1] -4 -2  0  2  4
+[1] 0
+[1] 16  4  0  4 16
+[1] 10
+[1] 4 1 0 1 4
+[1] 2.5
+
+========== [quadrants] signe de la covariance
+[1] 4.126
+[1] 0.574
+
+========== [deplacer] déplacer des points
+[1]  0.905  0.000 -0.864
+[1]  5.000  0.000 -4.778
+
+========== [jouet-stats] exemple jouet, statistiques descriptives
+[1]  6 11
+[1] 10.0  7.5
+[1] 8
+[1] 0.9238
+
+========== [nuage] nuage de points du fil rouge
+
+
+========== [mco-illus] quelle droite choisir
+[1] 11.0  4.4
+
+========== [carres] trois critères
+[1] 0 0
+[1] 4 4
+[1] 4.4
+
+========== [jouet-mco] exemple jouet, estimateurs des MCO
+[1] 6.2 0.8
+(Intercept)           x 
+        6.2         0.8
+
+========== [jouet-proprietes] exemple jouet, propriétés algébriques
+     [,1] [,2] [,3] [,4] [,5]
+yhat  7.8  9.4   11 12.6 14.2
+uhat -0.8  0.6    0  1.4 -1.2
+[1] 0
+[1] 0
+[1] 11 11
+
+========== [decomp] décomposition d'une observation
+
+
+========== [jouet-r2] exemple jouet, SCT, SCE, SCR et R2
+[1] 30.0 25.6  4.4
+    R2     r2 
+0.8533 0.8533
+
+========== [jtrain-r2] un R2 faible dans une expérience
+(Intercept)       train 
+       4.55        1.79 
+[1] 0.018
+
+========== [reg-table] première estimation
+            Estimate Std. Error
+(Intercept)   32.306      2.005
+colgpa        14.316      0.700
+[1] 0.329
+[1] 856
+            Estimate Std. Error
+(Intercept)   39.212      2.656
+actmth         1.439      0.113
+[1] 0.167
+[1] 814
+    1 
+75.25 
+[1] 0.875 4.000
+
+========== [droite] droite des MCO sur le nuage
+[1]  2.815 72.600
+
+========== [residus] valeurs prédites et résidus
+  colgpa score score_chap u_chap
+1   3.49 84.43      82.28   2.15
+2   2.10 57.38      62.37  -4.99
+3   3.09 66.39      76.47 -10.08
+4   2.68 81.15      70.68  10.47
+5   3.75 95.90      85.92   9.98
+[1] 0
+     SCT      SCE      SCR 
+153539.3  50502.7 103036.6

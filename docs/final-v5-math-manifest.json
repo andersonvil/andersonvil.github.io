@@ -1,0 +1,2435 @@
+{
+  "engine": "KaTeX 0.16.22",
+  "formulas": [
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I = 1"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_W = 0.44"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "w_I \\;=\\; \\underbrace{\\theta_I\\, w_I}_{\\text{productive: substitutes for paid care}} \\;+\\; \\underbrace{(1-\\theta_I)\\, w_I}_{\\text{process benefit}} ."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "e_T \\;=\\; \\min_{t_W,\\,t_H}\\; \\theta_W w_W\\, t_W + \\theta_H w_H\\, t_H + g(t_W, t_H, n),"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}L_I&=l_I+(1-\\theta_I)t_I,\\\\ e_T&=\\theta_Hw_Ht_H+\\theta_Ww_Wt_W+m,\\\\ e_M&=c_K,\\\\ e&=e_M+e_T.\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I \\in \\{W, H\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I(l_I, t_I, c_I, c_K, n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g(t_W, t_H, n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m \\ge g(t_W, t_H, n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m \\ge 0"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M = c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T + e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I = l_I + (1-\\theta_I)\\,t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "e_M \\;=\\; Y - e_T - F_I^{-1}\\!\\left(w_H, w_W, L_I\\right)."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m^* > 0"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(m^*, t_W^*, t_H^*)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I w_I = -\\partial g/\\partial t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m^* = 0"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_W w_W / \\theta_H w_H"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\omega_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_T,c_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T,e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I = F_I(w_H, w_W, Y_R)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "F_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\partial F_I / \\partial Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\omega_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_T,c_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T,e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\pi_H,\\pi_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "e_T = \\alpha^* + \\textstyle\\sum_I \\beta_I^* w_I^* + 2\\sum_I \\gamma_I \\sqrt{w_I^*} + 2\\gamma_{WH}\\sqrt{w_W^* w_H^*}."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nt_H&=\\beta_H z^{T,H}+\\frac{\\gamma_H}{\\sqrt{\\theta_H w_H}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_W w_W}{\\theta_H w_H}}+v_H,\\\\[.4em]\nt_W&=\\beta_W z^{T,W}+\\frac{\\gamma_W}{\\sqrt{\\theta_W w_W}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_H w_H}{\\theta_W w_W}}+v_W,\\\\[.4em]\nm^*&=\\alpha z^T+\\gamma_W\\sqrt{\\theta_W w_W}+\\gamma_H\\sqrt{\\theta_H w_H}+u,\\\\\nm&=\\begin{cases}m^*,&m^*\\ge0,\\\\0,&m^*<0.\\end{cases}\n\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nL_H&=a_Hz^{L,H}+b_Hw_H+c_Hw_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_Wz^{L,W}+b_Ww_W+c_Ww_H+d_WY_R+e_WY_R^2+\\varepsilon_W.\n\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nL_H&=a_H(n)z^{L,H}+b_H(n)w_H+c_H(n)w_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_W(n)z^{L,W}+b_W(n)w_W+c_W(n)w_H+d_WY_R+e_WY_R^2+\\varepsilon_W,\\\\[.4em]\na_I(n)&=a_I+a'_I\\delta(n),\\quad b_I(n)=b_I+b'_I\\delta(n),\\\\\nc_I(n)&=c_I+c'_I\\delta(n),\\quad\\delta(n)=\\mathbf{1}\\{n>0\\},\\\\[.4em]\nY_R&=Y-e_T-e_M,\\\\\ne_M&=\\log\\!\\left(1+\\exp(\\kappa_0+\\kappa_Hw_H+\\kappa_Ww_W+\\kappa_YY)\\right)\\sqrt n.\n\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^* = \\theta_I w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_W, \\theta_H"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I = l_I + (1-\\hat\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R = Y - e_M - e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M = \\log\\!\\big(1+\\exp(\\kappa_0 + \\kappa_H w_H + \\kappa_W w_W + \\kappa_Y Y)\\big)\\sqrt{n}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "t_I^{adj} = t_I^{psid} - k_I \\tanh\\!\\left(t_I^{psid}/k_I\\right)."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I,J\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I,t_I^{psid},t_I^{adj},k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "h_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\theta_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I,w_I^*,\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m,m^*,c_I,c_K,e_T,e_M,e,Y,Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M=c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e=e_T+e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I,g,F_I,F_I^{-1},\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH},z^{T,I},z^T,u,v_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I,z^{L,I},\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y,\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I = 168 - h_I - t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_H"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_I < 1"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_W = 0.66"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_H = 0.18"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\gamma_{WH} = -3.26"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat\\theta_I"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\frac{\\omega}{\\varphi} \\;=\\; g\\!\\left(\\frac{p}{\\pi},\\; \\frac{\\varphi\\, y}{\\pi}\\right),"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i,y_i,p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i,\\pi_i,g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i,A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p = 0.034"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p = 0.011"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\omega = \\alpha z^{\\omega} + \\beta \\ln p + \\gamma \\ln y + \\eta (\\ln y)^2 + \\epsilon ."
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\frac{\\omega_i}{\\varphi_i}=\\alpha_i z_i^\\omega+\\beta_i\\ln\\!\\frac{p_i}{\\pi_i}+\\gamma_i\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}+\\eta_i\\left(\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}\\right)^2+\\epsilon_i."
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\\varphi_i&=\\frac{\\exp(\\psi_i)}{1+\\exp(\\psi_i)},\\\\\\psi_i&=(z_i^\\varphi)'\\theta_z+\\theta_y\\ln y_i+\\theta_p\\ln p_i+\\boldsymbol n_i'\\theta_n,\\\\\\varphi_i^{\\mathrm{alt}}&=\\frac{\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}{1+\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}\\,n^{-\\rho}.\\end{aligned}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\pi_i(p,y,n)=\\kappa_i\\ln(y_i)\\sqrt{n_i}."
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\\omega_i&=\\alpha_i z_i^\\omega+\\beta_i\\ln p_i+\\gamma_i\\ln y_i+\\eta_i(\\ln y_i)^2+D_iA_i+\\epsilon_i,\\\\A_i&=\\beta_i\\ln\\!\\frac1{\\pi_i}+\\ln\\!\\frac{\\varphi_i}{\\pi_i}\\left[\\gamma_i+\\eta_i\\ln\\!\\frac{y_i^2\\varphi_i}{\\pi_i}\\right]-\\omega_i\\frac{1-\\varphi_i}{\\varphi_i}.\\end{aligned}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i,y_i,p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i,\\pi_i,g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i,A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega/\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p/\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi y/\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\sqrt{n}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i,y_i,p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i,\\pi_i,g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i,A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i,y_i,p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i,\\pi_i,g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i,A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i,y_i,p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i,\\pi_i,g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i,A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i,y_i,p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i,\\pi_i,g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega,z_i^\\varphi,\\boldsymbol n_i,n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i,\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i,A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "h(y,w,n) \\;=\\; F\\big(w,\\; y - e_t(w,n) - e_m(y,w,n)\\big) \\;-\\; t(w,n), \\qquad h(y,w,0) \\;=\\; F(w,y)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "k"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u_f(h+t,\\,c) + \\lambda(n)\\,u_c(m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "f(t,n) + k \\ge T_c(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t(w,n) = \\min_{t,k}\\,(tw + k)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m(y,w,n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h,w,y,n,\\delta(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\sqrt n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(0)=0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(1)=1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t,k,c,m,T_c,f,\\lambda,u_f,u_c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t,e_m,e,a_t,a_m,a,b_t,b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F,F'_1,F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_0,\\ldots,\\alpha_5,z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w,z^y,\\beta_w,\\beta_y,\\sigma_\\nu,\\sigma_\\mu,\\nu,\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u,\\rho_\\mu,\\rho_\\nu,\\sigma_\\epsilon,\\epsilon,\\widehat\\mu,h_0,w_0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2 < 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "h(y,w,n) \\;=\\; F\\big(w,\\; y - a(n) - b_t(n)\\,w - b_m(n)\\,y\\big) \\;-\\; b_t(n), \\qquad a = a_t + a_m ."
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m = a_m(w,n) + b_m(w,n)\\,y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "0 < b_m < 1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\partial h / \\partial y = F'_2 \\cdot (1 - b_m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e = e_t + e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "(w,n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w\\,t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e - w\\,t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "(e_t, e_m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t = b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t = a_t + b_t w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m = a_m + b_m y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h,w,y,n,\\delta(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\sqrt n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(0)=0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(1)=1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t,k,c,m,T_c,f,\\lambda,u_f,u_c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t,e_m,e,a_t,a_m,a,b_t,b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F,F'_1,F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_0,\\ldots,\\alpha_5,z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w,z^y,\\beta_w,\\beta_y,\\sigma_\\nu,\\sigma_\\mu,\\nu,\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u,\\rho_\\mu,\\rho_\\nu,\\sigma_\\epsilon,\\epsilon,\\widehat\\mu,h_0,w_0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_1 - \\alpha_2 b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_2(1-b_m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_1 > 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2 < 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n&(16)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2 y + \\alpha_3 w^2 + \\alpha_4 y^2 + \\alpha_5 y w + u\\\\\n&(17)\\quad e_t(w,n) = (a_t + b_t w)\\,\\delta(n)\\\\\n&(18)\\quad e_m(y,n) = (a_m + b_m y)\\,\\delta(n)\\\\\n&(19)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2\\big[y - a\\,\\delta(n) - b_t\\,\\delta(n)\\,w\\\\\n&\\qquad{}- b_m\\,\\delta(n)\\,y\\big] - b_t\\,\\delta(n) + u \\quad \\text{(linear baseline)}\\\\\n&(21)\\quad \\alpha_1^*(n) = \\alpha_1 - \\alpha_2 b_t\\,\\delta(n), \\qquad \\alpha_2^*(n) = \\alpha_2\\big(1 - b_m\\,\\delta(n)\\big)\\\\\n&(22)\\quad w = \\beta_w z^w + \\sigma_\\nu \\nu \\\\\n&(23)\\quad y = \\beta_y z^y + \\sigma_\\mu \\mu\n\\end{aligned}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nq&=y-a\\delta(n)-b_t\\delta(n)w-b_m\\delta(n)y,\\\\\nh_0(w)&=\\alpha_0 z^h+\\alpha_1w+\\alpha_2q+\\alpha_3w^2+\\alpha_4q^2+\\alpha_5qw-b_t\\delta(n),\\\\\nw_0&=\\beta_w z^w,\\qquad w=w_0+\\sigma_\\nu\\nu,\\\\\ny&=\\beta_y z^y+\\sigma_\\mu\\mu,\\\\\nu&=\\rho_\\mu\\widehat\\mu+\\rho_\\nu\\nu+\\sigma_\\epsilon\\epsilon,\\\\\nh&=\\begin{cases}\nh_0(w)+\\rho_\\mu\\widehat\\mu+\\rho_\\nu(w-w_0)/\\sigma_\\nu+\\sigma_\\epsilon\\epsilon,&\\text{if this expression is positive},\\\\\n0,&\\text{otherwise}.\n\\end{cases}\n\\end{aligned}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n) = \\sqrt{n}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h = 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h,w,y,n,\\delta(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\sqrt n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(0)=0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(1)=1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t,k,c,m,T_c,f,\\lambda,u_f,u_c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t,e_m,e,a_t,a_m,a,b_t,b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F,F'_1,F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_0,\\ldots,\\alpha_5,z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w,z^y,\\beta_w,\\beta_y,\\sigma_\\nu,\\sigma_\\mu,\\nu,\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u,\\rho_\\mu,\\rho_\\nu,\\sigma_\\epsilon,\\epsilon,\\widehat\\mu,h_0,w_0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h,w,y,n,\\delta(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\sqrt n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(0)=0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(1)=1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t,k,c,m,T_c,f,\\lambda,u_f,u_c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t,e_m,e,a_t,a_m,a,b_t,b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F,F'_1,F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_0,\\ldots,\\alpha_5,z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w,z^y,\\beta_w,\\beta_y,\\sigma_\\nu,\\sigma_\\mu,\\nu,\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u,\\rho_\\mu,\\rho_\\nu,\\sigma_\\epsilon,\\epsilon,\\widehat\\mu,h_0,w_0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n) = \\sqrt{n}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(1) = 1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\hat b_t = 0.497"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\hat b_m = 0.089"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": true,
+      "tex": "b \\longrightarrow \\beta + \\gamma\\delta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\beta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\gamma"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\beta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\delta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\gamma"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\delta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\gamma"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\delta"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "codeData": [
+    {
+      "width": 1908,
+      "theme": "light",
+      "scroll": 1908,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 1908,
+      "theme": "dark",
+      "scroll": 1908,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "scroll": 1440,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "scroll": 1440,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "scroll": 768,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "scroll": 768,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "scroll": 390,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "scroll": 390,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "files": [
+        "/files/teaching/niort/econometrics/session-01/data/attend.dta",
+        "/files/teaching/niort/econometrics/session-01/data/cps78_85.dta",
+        "/files/teaching/niort/econometrics/session-01/data/econmath.dta",
+        "/files/teaching/niort/econometrics/session-01/data/jtrain2.dta",
+        "/files/teaching/niort/econometrics/session-01/data/phillips.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wagepan.dta",
+        "/files/teaching/niort/econometrics/session-01/data/wine.dta"
+      ]
+    }
+  ],
+  "home": {
+    "actionsBottom": 817.734375,
+    "scale": 1
+  },
+  "skipLink": {
+    "visible": true,
+    "outline": "3px"
+  },
+  "lowerWindow": {
+    "width": 1908,
+    "height": 768,
+    "actionsBottom": 775.46875,
+    "scale": 1
+  },
+  "paperAssumptions": [
+    {
+      "id": "household-demand-leisure",
+      "width": 1440,
+      "theme": "light",
+      "scroll": 1440,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 1440,
+      "theme": "dark",
+      "scroll": 1440,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 768,
+      "theme": "light",
+      "scroll": 768,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 768,
+      "theme": "dark",
+      "scroll": 768,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 390,
+      "theme": "light",
+      "scroll": 390,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 390,
+      "theme": "dark",
+      "scroll": 390,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "household-demand-leisure",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 1440,
+      "theme": "light",
+      "scroll": 1440,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 1440,
+      "theme": "dark",
+      "scroll": 1440,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 768,
+      "theme": "light",
+      "scroll": 768,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 768,
+      "theme": "dark",
+      "scroll": 768,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 390,
+      "theme": "light",
+      "scroll": 390,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 390,
+      "theme": "dark",
+      "scroll": 390,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 1440,
+      "theme": "light",
+      "scroll": 1440,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 1440,
+      "theme": "dark",
+      "scroll": 1440,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 768,
+      "theme": "light",
+      "scroll": 768,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 768,
+      "theme": "dark",
+      "scroll": 768,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 390,
+      "theme": "light",
+      "scroll": 390,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 390,
+      "theme": "dark",
+      "scroll": 390,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 360,
+      "theme": "light",
+      "scroll": 360,
+      "assumptionBlocks": 1
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "width": 360,
+      "theme": "dark",
+      "scroll": 360,
+      "assumptionBlocks": 1
+    }
+  ]
+}

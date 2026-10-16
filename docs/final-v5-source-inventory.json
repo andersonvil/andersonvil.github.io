@@ -1,0 +1,926 @@
+[
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\01-governance\\academic_os_canonical_facts_provisional_v1.md",
+    "bytes": 8389,
+    "sha256": "04db58f4106530392336531c7fd05d8fee1d67399de1cb0c374757924d5397bb",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\01-governance\\academic_os_master_prompt.md",
+    "bytes": 13539,
+    "sha256": "3620c49d254a01ba41443094882058b5fe6bbe93ffa5f8ce0dbcf7cb7421f57a",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\02-phases\\21-Phase-4A-Architecture-UX-et-sp-cific.md",
+    "bytes": 89683,
+    "sha256": "429c4752d11a0518f688b9d1ed574f6483c0461eb686582f2ee672508ed4caa0",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\02-phases\\Phase 1 — Audit complet.md",
+    "bytes": 29442,
+    "sha256": "3dd9ad8f81f25000ff28e930e61ca326957ce78cb891003a85cbcb672adf84e4",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\02-phases\\Phase 2 — Benchmark des présences numé.md",
+    "bytes": 26898,
+    "sha256": "f3e88c08a585840a9b6850d6e6bf2d9512360c208807be1efaacc2741f3b4b8e",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\02-phases\\Phase 3 — Positionnement intellectuel et professionnel.md",
+    "bytes": 39672,
+    "sha256": "194516372336182e378f12b55701c62bd395cc7977a210fce0f79341bf6508f1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\EEA_17-08-26.pdf",
+    "bytes": 634638,
+    "sha256": "300a0d7d6b5218c4c2fbc21b3c070c212fc9727e32bcc74e25a70ae174e724d4",
+    "pages": 42,
+    "opening": "The Household Demand for Leisure, the Price of Time and theFull Cost of Children: A Structural Model and Evidence from\n                                       the PSID\n\n\n                                       Anderson VIL\n                                    Paris School of Economics\n\n\n                                          jointly with\n                                      Olivier DONNI\n                                CY Cergy Paris Universit´e, THEMA\n\n\n             41st Annual Congress of the European Economic Association\n                                        August, 17 2026",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "JMP conference slides / associated LaTeX source",
+    "version": "August 17, 2026"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\EEA_17-08-26.tex",
+    "bytes": 88310,
+    "sha256": "cff9aaa250d3a43f205be7a8bac411b5c5ceddb11ccdd5592eaebd827cee0e27",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "JMP conference slides / associated LaTeX source",
+    "version": "August 17, 2026"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\note_modele.md",
+    "bytes": 10853,
+    "sha256": "399f63eaf305b0fae2340f20b278ca543dc05bc97e2442ce295ea4a5ac0bc48c",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Author-supplied French Methods Note",
+    "version": "Undated; no publication date invented"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\paper-1.pdf",
+    "bytes": 1540936,
+    "sha256": "d993ae7f70ef33f325cc5519973baaedcd100a5574eba17e997cedc842d403b7",
+    "pages": 39,
+    "opening": "          Children Costs in a One-Adult Household:\n                     Empirical Evidence from the UK.\n\n                                                      Anderson VIL*\n                                               Paris School of Economics\n\n                                          [Latest version, January 12, 2026]\n\n\n\n\n                                                          Abstract\n           This paper addresses two central questions in family and economic policy.  First, to what\n       extent are estimates of the cost of children derived from two-parent households applicable to\n       single-parent families?  Second, are estimated patterns of intra-household resource allocation\n       consistent with benefit rules that condition support uniformly on family size? To address these\n       questions, I propose a collective consumption model for one-adult households, apply it to three\n       datasets—the Family Expenditure Survey, the Expenditures and Food Survey, and the Living\n       Costs and Food Survey in the UK—and present two key findings.  First, child cost estimates\n       derived from two-parent households remain externally valid for single-parent families, at least\n       for single mothers. Second, the results find no evidence of per-child resource dilution by family\n       size once estimation uncertainty is accounted for, with differences for fathers appearing only\n       among households at the bottom of the expenditure distribution.\n\nKeywords: Collective Model, Shadow price, Economies of scale, Identification, Resource sharing\nJEL Classification: C30,",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "One-adult household UK manuscript",
+    "version": "January 12, 2026, printed title page"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\paper-2.pdf",
+    "bytes": 415872,
+    "sha256": "b717a970398ebf2f14f5323199c319c9cad5d92543719646f8dd84d32846a04c",
+    "pages": 33,
+    "opening": "          How to Incorporate Childen into Labor Supply\n             Equations? An Equivalence-Scale Approach∗\n\n\n                             OlivierDonni      AndersonVil\n\n                                        September4,2026\n\n\n                                                Abstract\n\n          Weproposeamethodformodelingtheimpactofchildrenonlaborsupply. Building\n      onequivalencescalesandcollectivemodels,ourapproachjointlyconsidersthetimeand\n      monetarycostsofchildren.Byimposingrestrictionsonchildcaretechnology,weidentify\n      thetotalcostofchildrenfromlaborsupplyequationswithmodestdatainputs. We\n      applythemodeltosinglemothersfromthe2019PSID.Resultssuggestlaborsupply\n      responsivenesstowagesishigherforwomenwithchildren,whiletheoppositeholdsfor\n      exogenousincomes. Wealsoestimatethetotalcostofchildrenandthetimespenton\n      childcare.\n      JELClassication:I30,I31,J21,J22,J31\n      Keywords:LaborSupply,CollectiveModel,Priceoftime,Equivalencescales,Identifica-\n      tion,Resourcesharing.\n\n   ∗Affiliations:OlivierDonni—THEMA,CYCergyParisUniversité,email:olivier.donni@cyu.fr;Anderson\n\nVil—ParisSchoolofEconomics,email:vladerinson@gmail.com.WethankOlivierBargain,LaurensCherchye,\nMarionGoussé,ElenaStancanelli,andAlexandrosTheloudisforhelpfulcomments.\nThedatathatsupportthefindingsofthisstudyarepubliclyavailablefromthePanelStudyofIncomeDynamics\n(PSID)athttps://psidonline.isr.umich.edu/.Noproprietaryorrestricted-accessdatawereused.\nDisclosureStatement:FinancialsupportforthisresearchwasprovidedbyANRWHIN(ANR-21-ESRE-0034).\nTheauthorsdeclarenorelevantfinancialornon-fi",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Labor supply manuscript",
+    "version": "September 4, 2026, printed title page"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\paper-3.pdf",
+    "bytes": 546916,
+    "sha256": "af6a6a13d4c881060cb7541d500ff164a728ab129699440e3b6d62ea818bb747",
+    "pages": 60,
+    "opening": "The Household Demand for Leisure, the Price of Time and\n      the Full Cost of Children: A Structural Model and\n                             Evidence from the PSID∗\n\n                            OlivierDonni      AndersonVil\n\n                                        October4,2026\n\n\n\n                                             Abstract\n         Weproposeanovelapproachtoestimatingthefullcostofchildren—thesumof\n      monetaryandtimecosts—byendogenizingthepriceofparentaltimeratherthanassuming\n      itisequaltotheparents’wagerate. Inthisapproach,thepriceoftimedependsonhow\n      parentsperceivetheirtimewithchildren, whetherasaleisure-likeactivityormoreas\n      alabor-likeactivity. Wethendevelopasimplifiedcollectivemodelofleisuredemand\n      forworkingcouples,incorporatingindividualpreferencesandchildcaretechnology,and\n      estimateitusing2019PSIDdata. Thisallowsustorecoverthepriceofparentaltime\n      andthefullcostofchildren.Wefindthatmothersperceive44%oftheirchildcaretimeas\n      labor,comparedto35%forfathers. Ourresultsalsohighlightthatasubstantialportion\n      ofthefullcostofchildrenisnon-monetary.\n      JELClassification:I30,I31,J21,J22,J31\n      Keywords:LaborSupply,LeisureDemand,CollectiveModel,Priceoftime,Identification,\n      Resourcesharing,Costofchildren.\n\n   ∗Affiliations: OlivierDonni—THEMA,CYCergyParisUniversité;AndersonVil—ParisSchoolofEco-\nnomics. WethankOlivierBargain,LaurensCherchye,MarionGoussé,ElenaStancanelli,andAlexandrosTh-\neloudisforhelpfulcomments.FinancialsupportfromANRWHIN(ANR-21-ESRE-0034)isgratefullyacknowl-\nedged.\n\n                                    ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Canonical current JMP manuscript",
+    "version": "October 4, 2026, printed title page"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\paper_2.md",
+    "bytes": 13257,
+    "sha256": "c4ff87145238e76c6e4a08309b46365ab1aa042f70d2c703b7cd319ee1374e8a",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Author-supplied article editorial copy",
+    "version": "Current supplied final-revision text, undated"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\paper_jmp.md",
+    "bytes": 10943,
+    "sha256": "daecc92acfd75008f0f37792b1cf66729a2bcfade6eedaabb8316ac0eb2401df",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Author-supplied article editorial copy",
+    "version": "Current supplied final-revision text, undated"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\paper_solo.md",
+    "bytes": 8367,
+    "sha256": "444dd061f7c9b6244e2c32b7649b2bebc69915a2d19c4c089996bd00150526b5",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Author-supplied article editorial copy",
+    "version": "Current supplied final-revision text, undated"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\03-research\\Research-Statement.pdf",
+    "bytes": 150109,
+    "sha256": "82049342f6a3203444ce6b39856d749763d76524c70efd31034fe97db42ab19c",
+    "pages": 3,
+    "opening": "Anderson VIL                                                               vladerinson@gmail.com\nParisSchoolofEconomics(PSE)                                                      Personalwebpage\n\n\n\n                                  RESEARCH STATEMENT\n\n\nMyresearchcentersonhouseholdbehaviormodeling,particularlyondemandanalysis,labor\nsupply,andintrahouseholdresourcedistribution.Ihavedevelopedstructuralmodelsandesti-\nmationtechniquestoquantifykeyfactorssuchasthetotalcostofchildren,thepriceoftime,\nandindividualwelfare,providingvaluableinsightsintohouseholdresponsestopolicychanges.\nDuringmyPh.D.,Idevelopedaconsistentresearchprogramonequivalencescales,addressing\nboththeoreticalandempiricalperspectives.Icurrentlyexploreissuesrelatedtoworkingfrom\nhomeanditsimplicationsforlaborsupply,timeuse,andgenderdynamicswithinhouseholds.\nMyfutureresearchwillexpandonthisbyincorporatingthecostofchildrenintoadynamic\nmodel. Whilemycurrentapproacheffectivelycapturesstaticlaborsupplydecisionsandtheir\nassociatedcosts,integratinglong-termconsequences—suchaspotentialhumancapitaldepreci-\nation—wouldprovideamorecomprehensiveunderstandingofthetotalcostofraisingchildren.\n\nRecent researchInmyjobmarketpapertitled“ChildrenCostsinaOne-AdultHousehold:\nEmpiricalEvidencefromtheUK”,Iinvestigatetowhatextentchildcostestimatesderivedfrom\ncouplehouseholdsaregeneralizabletosingle-parenthouseholds. Ialsostudytheeffectiveness\nofthe“two-childlimit”policyintheUnitedKingdom,whichrestrictssocialbenefitstothe\nfirsttwochildreninfamilies. Toaddressthesequestions,Iproposeastructuralconsumption\nmodeltoexaminehowchangesintheparentand",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\04-cv-teaching\\cv-academic.pdf",
+    "bytes": 247043,
+    "sha256": "c5a83838d53962feb9e4dd3b33a43a0746c9c1b432a87569b0fcad2af5831afd",
+    "pages": 4,
+    "opening": "                                     AndersonVil\n                      THEMA,CYCergyParisUniversité·Cergy,France\n                         anderson.vil@psemail.eu·andersonvil.github.io\n\nFields\nPrimary:Householdeconomics;laboreconomics;remotework;appliedmicroeconometrics\nSecondary:Publiceconomics;optimaltaxation\nPositions\nTeachingandResearchFellow,THEMA,CYCergyParisUniversité   Sept2026–Present\nPostdoctoralResearchFellow,ParisSchoolofEconomics         Sept2025–Aug2026\nTeachingandResearchFellow,THEMA,CYCergyParisUniversité   Sept2022–Aug2025\nEducationandQualification\nQualificationforMaîtredeconférences,CNUSection05,Economics             2026\nPh.D.inEconomics,CYCergyParisUniversité                           2019–2024\nThesis:“ThreeEssaysonMeasuringtheCostofChildren”;thethreeessayscorrespondtoworking\npapers1–3below.\nSupervisor:OlivierDonni(CYCergyParisUniversité)\nCommittee:LaurensCherchye(KULeuven),OlivierBargain(UniversitédeBordeaux),ElenaStancanelli\n(ParisSchoolofEconomics),AlexandrosTheloudis(TilburgUniversity),MarionGoussé(ENSAI–CREST)\nDefended:December10,2024\nVisitingScholar,KULeuven                                            Spring2023\nHost:FredericVermeulen\nM.Sc.inEconomicAnalysis,CYCergyParisUniversité/ESSECBusiness                              2017–2019\nSchool\nB.Sc.inEconomics,Universitéd’Étatd’Haïti                             2011–2015\nB.A.inSocialWork,Universitéd’Étatd’Haïti                            2011–2015\nResearch\n\nWORKINGPAPERS\n 1. Job market paper.TheHouseholdDemandforLeisure,thePriceofTimeand\n    theFullCostofChildren: AStructuralModelandEvidencefromthePSID\n ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Retained provisional CV",
+    "version": "Existing selected PDF, byte-identical"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\04-cv-teaching\\Teaching-Statement.pdf",
+    "bytes": 133963,
+    "sha256": "0827f531bf5a6b508c77f249206e71f1d3007a341ff4459398cb4c0988754437",
+    "pages": 3,
+    "opening": "                               Teaching Statement\n\nMy goal as a professor is to help students develop critical thinking skills by providing them\nwith a solid technical foundation and guiding them to understand the social, institutional, and\neconomic implications of the tools they use. I aim to train students who can understand, analyze,\nand apply economic concepts not merely as theoretical constructs, but as instruments for\ninterpreting and questioning real-world phenomena.\n\nMy teaching approach has developed gradually: first during high school, when I provided\nprivate tutoring; later as an undergraduate, when I regularly supported my peers in their\ncoursework;  and  more  recently  through  my  university  teaching  experiences.  Frequent\nexchanges with a colleague specializing in digital pedagogy have further enriched my reflection\non contemporary learning practices.\n\nTeaching Philosophy\n\nWhen preparing a course or a class session, I consistently return to three guiding questions:\n\n    1.   What is the essential idea I want students to retain?\n    2.   How can abstract concepts be made intelligible by grounding them in real                         -world\n         situations?\n    3.   Am I creating a learning environment in which every student can thrive?\n\nThese questions form the pedagogical foundation of my teaching practice.\n\n1. Pedagogical foundation of my teaching practice\n\n1.1. Clarifying the Core Objective of Each Session\n\nBefore each class, I identify a central message — the key idea or concept I want students to\nwalk away with. To ensure that this essential point ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\Links.txt",
+    "bytes": 287,
+    "sha256": "5236bb238e77833041d7672221661b4d56dde5ee16bceef8856d999d8ff6390f",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\photo1.jpeg",
+    "bytes": 159347,
+    "sha256": "bd876c0860cb98366ad8d13ed8f78a66c2f83c93e3ce2d1f157da04964f17f19",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\photo2.jpg",
+    "bytes": 1592563,
+    "sha256": "51c4cbe76f71eeafbbc1dcc2412ba6324133337c0a42e90b5ddb6d02a1ef5ead",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\photo3.jpg",
+    "bytes": 1686855,
+    "sha256": "650e0e715c4e81beb577bf2e6169e4ca9dba74ba3133fe065a13fc31d05dbb05",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\photo4.jpg",
+    "bytes": 901112,
+    "sha256": "c25981ce5b8c977e02d9c1e401b97f15eab00737bb58f046b40a75161bf7b8e5",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\photo5.jpg",
+    "bytes": 904458,
+    "sha256": "184a4c586e47048e16b688b930b830349f418fe9b49fb1a97ad45bd5822614f1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\05-media-links\\VIL_Anderson-01-petit.jpg",
+    "bytes": 443587,
+    "sha256": "9fa6a9b60ab6b085b7763c90c6024bb38dd4748057a25a071b52ffc59bc3fbee",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\A corriger.odt",
+    "bytes": 10926,
+    "sha256": "5453f857842e08fd1af10d777b1f06fd38a0bbf8eed40ef3a455b8c58ac54e93",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\ChatGPT Image Sep 30, 2026, 07_24_39 PM.png",
+    "bytes": 1452237,
+    "sha256": "3eb218914e68b0143758fc75818df547c4da8c7564142b11d63af415eca38896",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Monogram source, variant 4 Editorial",
+    "version": "September 30, 2026 in supplied filename"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #1\\td01-enonce.pdf",
+    "bytes": 100840,
+    "sha256": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4",
+    "pages": 2,
+    "opening": "                                                                                                                                                                                                                                                                                                                                                                                                          TD            1                         L'indice            des            prix            à            la            consommation\n                                                                                                                                                                                                                                                                                    Analyse             des             données                           L3             Économie                           CY             Cergy             Paris             Université\n\n\n\nLa            question            de            la            séance.                                                                                                                                                                                                                                                                                                                                                                                                                                          De           combien           les           prix           ont-ils           augmenté           en           France   ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #1\\td01-indice-prix.ipynb",
+    "bytes": 7918,
+    "sha256": "144b9ee8fcce60823d5d9a8e3f05330fe5282bd129e463af19ad1a37ffaf98f2",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #1.zip",
+    "bytes": 187375,
+    "sha256": "7fcd8be195f3ac2576938679d872874c609887c7250fbf1a1faadf833a87ef86",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #2\\td02-chomage.ipynb",
+    "bytes": 9262,
+    "sha256": "979f79073318523180acdc7ce62ce03ee0d1ffa87614ef7a9909a7c81bc6cf6f",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #2\\td02-enonce.pdf",
+    "bytes": 58736,
+    "sha256": "c0ae633b3e7dccb1b922003588ab953c5e47fa49d32038c8de32a693799a3b45",
+    "pages": 1,
+    "opening": "                                                   TD 2 — Le taux de chômage\n                                Analyse des données — L3 Économie — CY Cergy Paris Université\n                                          stefaniamarcassa.github.io/analyse_des_donnees\n\nLes données. L’Enquête Emploi en continu 2024 de l’INSEE : 353420 personnes interrogées, 83 variables.\nC’est la seule source permettant de mesurer le chômage au sens du BIT, et le fichier se chargeen une ligne.\nLa page du fichier, à ouvrir dès maintenant :                 www.insee.fr/fr/statistiques/8632441                                                             — vous y trouverez le\nfichier, le « Dictionnaire des codes 2024 », le questionnaire et les définitions officielles du chômage et du halo.\nCommencez par le dictionnaire, comme en cours — mais cette fois sur un vrai document de l’INSEE, une\ntrentaine de pages au lieu d’une.\nVousyretrouverezlesrubriquesvuesenséance:nom,libellé,type,modalités,champ,codagedelanon-réponse.Les\ndeux dernières font les résultats faux.\n1.Charger et inspecter\n    Format Parquet : plus compact que le CSV, et il conserve le type de chaque colonne. Ni séparateur ni\nencodage à déclarer.\nQuestion 1.  Combien de lignes, combien de colonnes? De quoi une ligne est-elle la description?\nQuestion 2.  Cherchez               ACTEU          dans le dictionnaire. Trois choses y sont écrites : ses modalités, la variable de\npondération à utiliser, et sonchamp.\nQuel est ce champ? Vérifiez-le sur les données en croisant           ACTEU         avec           AGE6       .\n2.Le taux de chômage\n\n        ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #2.zip",
+    "bytes": 147530,
+    "sha256": "921615c25ca598b58b68066706f599bbec8f8f19302d883193cd731d74219718",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #3\\cm03-dictionnaire.pdf",
+    "bytes": 97899,
+    "sha256": "e4dc2f29f3d453e7ab30d1caf373c2aa6c1bc9dd8e6e46fcda36217598ec06c4",
+    "pages": 4,
+    "opening": "Dictionnaire         des         variables\ncm03-salaires.csv\n\nAnalyse             des             données                           L3             Économie                           CY             Cergy             Paris             Université\n\n\nAvertissement\n\nCes              données              sont              fabriquées              p our              l'enseignement.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Les             ordres             de             grandeur,             les             co dages             et             les\nconventions           d'écriture           repro duisent           ceux           d'un            chier           de           di usion           de           la           statistique           publique         ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #3\\cm03-salaires.csv",
+    "bytes": 395328,
+    "sha256": "693cff7efd558dd869db5ab3f5f90e4f70ac87745c944f67a8c4d2c94c190580",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #3\\td03-enonce.pdf",
+    "bytes": 49359,
+    "sha256": "27f3682500cb2b2954eb09eac5ffc3230c30f535d11d2eadc1d1dfe42ea839d4",
+    "pages": 1,
+    "opening": "                                                        TD3—Lesalairemoyen\n                                  Analyse des données — L3 Économie — CY Cergy Paris Université\n                                            stefaniamarcassa.github.io/analyse_des_donnees\n\n\nLe point de départ. Le salaire moyen de           cm03-salaires.csv                               vaut 67745 euros par mois. Personne ne l’a mal\ncalculé.\nVotre travail : trouver pourquoi, et dire ce qu’il vaut réellement.\nOuvrez le dictionnaire des variables dans un onglet à côté, comme au TD précédent. Aucune question ne se\nrépond sans lui.\n1.Lepointdedépart\n    Chargez le fichier; les montants sont écrits en texte, convertissez-les en nombres. Puis ouvrez un journal :\nun tableau où vous noterez, après chaque correction, le nombre de lignes et le salairemoyen.\nQuestion1.  Combien de lignes le fichier contient-il? Quel est le salaire moyen avant toute correction?\nQuestion 2.  Cherchez le salaire net mensuel moyen en France, publié par l’INSEE. Votre chiffre est combien de\nfois plus élevé?\n2.Trouverlacause\nQuestion3.  Combien de valeurs manquantes           isna()           signale-t-il sur           SALAIRE_NET                    ?\nQuestion 4.  Affichez les cinq valeurs les plus fréquentes de               SALAIRE_NET                   . L’une d’elles revient 525 fois et ne\npeut pas être un salaire : laquelle?\nQuestion5.  Cherchez cette valeur dans le dictionnaire. Que signifie-t-elle?\nQuestion6. Écrivezunefonctionquiremplacecettevaleurparunevaleurmanquante,etappliquez-laà        SALAIRE_NET\npuis à           PRIME ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #3\\td03-nettoyage.ipynb",
+    "bytes": 8873,
+    "sha256": "feed3da335e3d0f6c21b4cfb34cc4851344dbd766a52b8b9aa54a0ba9f89190d",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #3.zip",
+    "bytes": 627060,
+    "sha256": "9682a719a03fcf8975bb3d12be0b32759e668e01af7bf91c49d77d779cc05024",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #4\\td04-enonce.pdf",
+    "bytes": 52774,
+    "sha256": "bfaaa67274a98b0fb2d88084d285e71118af3adeed701d19b50cf1c9ca9367b4",
+    "pages": 1,
+    "opening": "                                                       TD4—Communesetdépartements\n                                        Analyse des données — L3 Économie — CY Cergy Paris Université\n                                                   stefaniamarcassa.github.io/analyse_des_donnees\n\nLes données. Les populations de référence 2023 de l’INSEE : un classeur Excel qui donne la population de\nchaquecommune,dechaquedépartement,dechaquerégion.Pagedufichier:          www.insee.fr/fr/statistiques/8680726                                                           .\nLa question. Quelle part de la population de son département chaque commune représente-t-elle? Pour la cal-\nculer, il fautrapprocherdeuxtableaux— c’est l’objet de ce TD.\n Fusionnerdeuxtableaux.            pd.merge               associe les lignes de deux tableaux qui partagent uneclé.\n    f                         =                         gauche.merge(droite,                         on=\"cle\",                         how=\"left\",                         indicator=True)\n how=\"left\"                   gardetoutesleslignesdegauche,qu’ellestrouventunpartenaireounon.indicator=True                          ajouteunecolonne\n _merge            qui dit, pour chaque ligne, si elle s’est appariée (both       ) ou non (left_only                ). Comptez toujours les lignes avant\n etaprès.\n1.Charger\n     Lesdeuxfeuilless’appellentCommunes               et           Départements                     .Ouvrezd’abordlefichierdansuntableurpourvoirà\nquoi il ressemble.\nQuestion1.  Chargez les deux feuilles avec           header=7              . Pou",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD04 exercise / notebook / presentation",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #4\\td04-fusion.ipynb",
+    "bytes": 6933,
+    "sha256": "00205a0f31cadece58f2be654a2800e4a6f294d49a55e37d57a319711b309524",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD04 exercise / notebook / presentation",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #4\\td04-notes-td.pdf",
+    "bytes": 49098,
+    "sha256": "c798212d1131a752d80ccc5c3607c8da295b8e0128475d0ce5a70657cdc370da",
+    "pages": 2,
+    "opening": "                                              TD4—NotespourlechargédeTD\n                                     Analyse des données — L3 Économie — document interne\n\n\nCeTDremplaceuncours.Lafusiondetableauxneserapasprésentéeencoursmagistral.C’estvousqui\nl’introduisez,envingtminutes,avantquelesétudiantsneselancent.Ledéroulementci-dessousleprévoit.\nLesdonnéessontréelles:lespopulationsderéférence2023del’INSEE,unseulclasseurExcel,chargépar\nson adresse. Tous les chiffres ci-dessous ont été vérifiés sur le fichier.\n\n1.Leschiffresàconnaître\n\n                            Communes (feuille           Communes              )                                                 34904\n                            Départements (feuille           Départements                     )                                         100\n                            Codes           CODGEO           à 5 caractères                                                 34788\n                            Codes à 6 caractères (outre-mer)                                                116\n                            Lignes avant et après la fusion                                                34904\n                            Communes appariées                                                             34900\n                            Communes sans département                                                        4\n                            Commune la plus lourde : Ajaccio          45,3 % de la Corse-du-Sud\n\n2.Déroulement\n\n Durée    Contenu\n 15 min    Retour sur le TD 3. Insister sur le journal et sur le piège de        ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD04 internal instructor notes, not student download",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #4\\td04_presentation.pdf",
+    "bytes": 1050671,
+    "sha256": "21bf6caf8537880c8fc1bfb54fe1fd1d2f1799630400efe525d6adb15c891b80",
+    "pages": 87,
+    "opening": "TD04:Communes\netdépartements\nFusionner, contrôler et interpréter\n\n\nAndersonVIL|L3Économie|90minutes\nAnalysedesdonnées|CYCergyParisUniversité\nAnnéeuniversitaire2026–2027",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD04 exercise / notebook / presentation",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #5\\index.html",
+    "bytes": 29098,
+    "sha256": "b91cb651b07901c39e513cc9a686577ffd8cdbb1537fa6c1c344eafca9143200",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD05 course-wide programme/teaching guide, retained internally because configured files are missing",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #5\\td05-distribution.ipynb",
+    "bytes": 6865,
+    "sha256": "cb62022275fd927cd434ce6dfdef31b1c1d877a77ccee10011249e0b7ea2d346",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD05 exercise / notebook",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #5\\td05-enonce.pdf",
+    "bytes": 58393,
+    "sha256": "3171404bbf485a51e393bc4564008e9d5306f1c2b5dda1b7049236aca61c407e",
+    "pages": 1,
+    "opening": "                                               TD 5 — La distribution des salaires\n                                 Analyse des données — L3 Économie — CY Cergy Paris Université\n                                           stefaniamarcassa.github.io/analyse_des_donnees\n\nLefichierestceluiduTD3,          cm03-salaires.csv                              ,aveclesmêmestraitements:montantsconvertisennombres,\ncode           999                      999           en manquant, salaires nuls écartés. Le notebook les applique pour vous.\nLa question.Les salaires sont-ils inégalement répartis, et que vaut l’écart entre hommes etfemmes?\n1.Décrire la distribution\nQuestion 1.  Calculez les déciles du salaire. Que valentD1,D5 etD9?\nQuestion 2.  Calculez le rapport interdécileD9/D1. Interprétez-le en une phrase.\nQuestion 3.  Quelle part de la masse salariale totale revient aux 10 % les mieux payés? Aux 10 % les moins\npayés?\n2.Un seul chiffre : l’indice de Gini\n    L’indice de Gini résume la distribution : 0 si tout le monde gagne la même chose, 1 si une seule personne\nperçoit tout. La fonction vous est fournie dans le notebook.\nQuestion 4.  Que vaut l’indice de Gini de ce fichier?\nQuestion 5.  Recalculez-le en écartant les salaires au plafond de 10 000 euros. L’indicebaisse. Les inégalités\nont-elles diminué?\nQuestion 6.  Votre indice est-il une estimation juste, une borne haute ou une borne basse de l’inégalité réelle?\nJustifiez en une phrase.\n3.Croiser deux variables qualitatives\nQuestion7. Croisez         SEXE       et         TEMPS        ,enproportionsparligne,aprèsavoirécartélanon-réponse.Q",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Data Analysis TD05 exercise / notebook",
+    "version": "2026/2027 course; original content/date retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_1.pdf",
+    "bytes": 95934,
+    "sha256": "80d319ddb28a978cad2aa0d33606bc2e5b4bfce32922ac8d02229851a95a4807",
+    "pages": 3,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. I).\n\nIntroduction – Mod`ele de r´egression simple\n\nExercice 1.Montrez que\n                 NX                      NX\n                    (x i−   x)   2   =       x2i−N    x2\n                i=1                     i=1\n                  NX                     NX\n                     (y i−  y)  2   =        y2i −N   y2\n                 i=1                    i=1\n        NX                               NX\n            (y i−  y)(x     i−x)   =         yixi−N     yx.\n        i=1                             i=1\n\nExercice 2.Prouvez que\n        NX\n            (x i−  x) = 0\n        i=1\net\n        NX                               NX\n            (x i−  x)(y      i−y)   =       (x i−   x)y    i\n        i=1                             i=1\n        NX                               NX\n            (x i−  x)(y      i−y)   =        xi(y i−  y)\n        i=1                             i=1\nConcluez que:PN                                PN                      PN\n       bβ1 =      i=1 (x i−PNx)(y      i−y)    PNi=1 (x i−   x)y    i  PNi=1 (y i−   y)x   i\n\n                      i=1 (x i−  x)   2      =    i=1 (x i−   x)   2  =    i=1 (x i−  x)   2 .\n\nExercice 3.Soit les conditions de premier ordre du probl`eme de minimisation des\ncarr´es des r´esidus:\n                NX\n          −2       (y i−bβ0−bβ1xi)   =   0,\n               i=1\n             NX\n       −2       xi(y i−bβ0−bβ1xi)   =   0.\n            i=1\n\n                                                       1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_2.pdf",
+    "bytes": 122888,
+    "sha256": "334e92aacdb21e65e46f7a11b1c56d4e8179ad642dc1510b19f939b378d31563",
+    "pages": 5,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. II).\n\nInterpr´etation des MCO – Mod`ele de r´egression multiple\n\nExercice 1.Soit un mod`ele de r´egression simple estim´eer sur un ´echantillon de\ncouplesetpermettantd’expliquerlenombred’enfants(nbchild)parfemmeenfonction\ndu niveau d’´education de la m`ere (motheduc) mesur´e en ann´ees:\n\n       nbchild =β    0+β    1 ·motheduc+u.\n\n   1. Selon vous, quelles sont les variables qui sont contenues dans le terme d’erreur?\n       Pensez-vous que ces variables sont corr´el´ees avec la variable motheduc?\n\n   2. Si ces variables sont corr´el´ees avec motheduc, quelles seront les cons´equences en\n       termes de biais des estimateurs? Soyez pr´ecis: caract´erisez le signe plausible du\n       biais pour une ou deux des variables que vous avez consid´er´ees.\n\n   3. Si les estimateurs sont biais´es, que sugg´erez comme solution pour corriger ce\n       biais?\n\nExercice 2.Soit l’´equation de consommation suivante:\n\n       totexp =β    0+β    1 ·income+u.\n\no`u totexp est la d´epense totale d’une m´enage sur une ann´ee et income son revenu total\nannuel. La propensit´e marginale `a consommer est´egale `a la penteβ    1. En utilisant des\nobservations pour 100 m´enages sur la d´epense annuelle totale et sur le revenu total\nannuel (les deux mesur´es en euros), l’´equation suivante est obtenue:\n       totexp =−124\\.84+0.853·income\n\n   1. Interpr´etez la constante de cette ´equation et commentez son signe et son ampli-\n       tude.\n\n   2. Quel est le niveau de d´epense totale pr´edit si le revenu du m´enage est de 30.000\n    ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_3.pdf",
+    "bytes": 114462,
+    "sha256": "a9fdb06e50ec9adb8dcca39f0ccdc51e5970e874b59641fb492147ec854f4bcc",
+    "pages": 5,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. III).\n\n\nQuelques rappels: Variable al´eatoire discr`ete – Variable al´eatoire continue\n– Dictionnaire des propri´et´es\n\nExercice1.Soitlesvariablesal´eatoiresx                        1,x2,...,xN etlesconstantesa       0,a1,a2,...,aN.\nSachant queE(x            i) = 0, queVar(x          i) = 1 et queCov(x                i,xj) = 0 pouri,j= 1,...,N,\ncalculez la valeur des expressions suivantes en pr´ecisant `a chaque fois les propri´et´es\nque vous utilisez:\n\n   1.\n                            NX       !\n               E    a0+         aixi    ,\n                           i=1\n\n   2.\n                               NX       !\n               Var     a0+         aixi    ,\n                              i=1\n\n   3.\n                             NX       \f\f\f\f\fx1 =x    ∗1,x2 =x    ∗2,...,xN =x    ∗N!\n               E     a0+        aixi                                               ,\n                            i=1\n       o`ux   ∗1,x∗2,...,x∗N sontdesvaleursparticuli`eresquepeuventprendrex        1,x2,...,xN,\n\n   4.\n                               NX       \f\f\f\f\fx1 =x    ∗1,x2 =x    ∗2,...,xN =x    ∗N!\n               Var     a0+         aixi                                               .\n                              i=1\n\n\n\n\n\n\n                                                         1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_4.pdf",
+    "bytes": 109925,
+    "sha256": "ff5c6216ba4c38f2ff5ee2c924cdd088d9fdc897a3f61bfa06bb93cb761838ef",
+    "pages": 4,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. IV).\n\n\nPropri´et´es statistiques des MCO I: Esp´erance des estimateurs des MCO –\nVariance des estimateurs des MCO\n\nExercice 1.Soit le mod`ele de r´egression simple:\n\n       y=β       0+β    1x+u.\n\nDans ce cas, l’estimateur des MCO du param`etre de la pente est:\n              PN            x)y    i\n       bβ1 =  PNi=1 (x i −\n                  i=1 (x i −x)   2 .\n\nEn pr´ecisant toutes les propri´et´es utilis´ees, prouvez que\n                    PN            x)u    i\n       bβ1 =β    1+  PNi=1 (x i −\n                        i=1 (x i − x)   2 .\n\n[Indice: La solution se trouve dans: Wooldridge, Jeffrey M., Introductory Economet-\nrics: A Modern Approach, 5th Edition. South-Western College Pub (2013)].\n\nExercice 2.Supposez que, dans une firme, la productivit´e moyenne des travailleurs\n(avgprod) d´epend de deux facteurs, `a savoir, les heures moyennes de formation de ces\ntravailleurs (avgtrain) et les habilet´es moyennes de ces travailleurs (avgabil):\n\n       avgprod =β    0+β    1 ·avgtrain+β      2 ·avgabil+u\n\nSupposez que cette ´equation satisfait les hypoth`eses de Gauss-Markov.  Si les firmes\nqui engagent des travailleurs dont les habilet´es sont inf´erieures `a la moyenne re¸coivent\nune subvention pour la formation des travailleurs, si bien que avgtrain et avgabil sont\nn´egativement corr´el´es, quel est le biais probable dans l’estimateur deβ     1 si l’on estime:\n\n       avgprod =β    0+β    1 ·avgtrain+u\n\n                                                     1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_5.pdf",
+    "bytes": 114257,
+    "sha256": "bad9b600b310fe8c496244bd5e055b13a02f8d4886d74827eb61dcb980ab4675",
+    "pages": 3,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. V).\n\n\nPropri´et´es statistiques des MCO II: Quelques exemples – Efficacit´e et nor-\nmalit´e\n\nExercice 1.Consid´erez une r´egression dans laquelle il n’y a qu’une constante et\naucune variables explicatives.   ´Etant donn´e un ´echantillon{y            i  :i= 1,...,N}, le\nprobl`eme de minimisation est:\n\n              NX\n       mina0     (y i−a    0)2\n             i=1\n   1. Soitbα             0 la solution de cette minimisation. Montrez que\n\n                           NX\n               bα   0 =  1N    yi,\n                          i=1\n       c’est-`a-dire que la moyenne de l’´echantillon minimise la somme des carr´es des\n       r´esidus.\n\n   2. Notez quey      i =α    0 +u   i et supposez que les hypoth`eses H2-H5 sont satisfaites\n       (dont l’homosc´edasticit´e). Calculez la variance debα         0.\n\n   3. D´efinissez les r´esidusbu              i =y   i−y. Montrez que ces r´esidus somment sur z´ero.\n\n   4. Utilisez ce r´esultat avec le Th´eor`eme 2 pour donner une interpr´etation `a la\n       variance de l’estimateur du param`etre de pente dans la mod`ele de r´egression\n       simple:\n\n               yi =β    0+β    1xi+u   i,\n\n       est ´egal `a\n\n               Var(bβ1|x 1,...,xN) =          σ2PN        x)   2.\n                                               i=1 (x i−\n\n                                                        1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_6.pdf",
+    "bytes": 102740,
+    "sha256": "76132da9dc18c25f305cc2ff0e3c1ffcf44815e20a227af13f27b17881280985",
+    "pages": 4,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. VI).\n\n\nInf´erence I: Test de Student\n\nExercice 1.Les loyers sont-ils influenc´es par la population ´etudiante dans une ville\nuniversitaire?  Soit rent le loyer mensuel moyen pay´e sur les logements locatifs dans\nune ville universitaire aux ´Etats-Unis. La population totale de la ville est d´esign´ee par\npop, et le revenu moyen de la ville par avginc, et la population ´etudiante par pctstu\nen pourcentage de la population totale. Un mod`ele `a estimer est le suivant:\n\n       log(rent) =β    0+β    1log(pop)+β    2log(avginc)+β    3log(pctstu)+u\n\n   1.  ´Enoncez l’hypoth`ese nulle selon laquelle la population´etudiante par rapport `a la\n       populationtotaledelavillen’apasd’effetceterisparibussurlesloyersmensuels.\n       ´Enoncez l’hypoth`ese alternative selon laquelle il y a un effet.\n\n   2. Quels signes attendez-vous pourβ        1 etβ     2?\n\n   3. Soit les donn´ees RENTAL.xls pour 64 villes universitaires. Les r´esultats de\n       l’estimation sont:\n\n                    log(rent)   =    0,043\\         +    0,066       log(pop)\n                                        (0,844)          (0,039)\n                                          +    0,507       log(avginc)   +   0,006         log(pctstu)\n                                               (0,081)                            0,002\n                   N = 64,R       2 = 0,458.\n\n       A l’aide du t-test, testez l’hypoth`ese ´enonc´ee dans la partie (a) au seuil de\n       signification de 1%.\n\n\n\n\n\n                                                      1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_7.pdf",
+    "bytes": 109695,
+    "sha256": "39188d5c317a061dcd7316a3111b326a80fb2182cdcc8029d3b880fc25aca6e8",
+    "pages": 5,
+    "opening": "Exercices pour le cours Econom´etrie et ´evaluations statistiques (Ch. VII).\n\n\nInf´erenceII:Intervalledeconfianceetprobabilit´ecritique–TestdeFischer\n\nExercice 1.Une r´egression peut ˆetre utilis´ee pour tester si le march´e utilise effi-\ncacement toutes les informations dans la valorisation des actifs financiers. Soit return\nle taux de rendement d’un actif sur une p´eriode de 4 ans, de la fin de l’ann´ee 1990\n`a la fin de l’ann´ee 1994. L’hypoth`ese de march´es efficients dit que les rendements ne\ndoivent pas ˆetre syst´ematiquement li´es aux informations connues en 1990. Si les car-\nact´eristiques de l’entreprise connues au d´ebut de la p´eriode permettaient de pr´edire\nles rendements des actifs, alors il serait possible d’utiliser ces informations pour in-\nvestir dans certains actifs et faire des profits anormalement ´elev´es.  Soit dkr le ratio\nd’endettement sur fonds propres d’une entreprise en 1990, eps son r´esultat par action,\nnetinc son r´esultat net, et salary la r´emun´eration totale de son PDG. Les r´esultats de\nl’estimation sont les suivants:\n             return   =− 14,37\\              +    0,321       dkr   +    0,043        eps\n                                  (6,89)          (0,201)                 (0,078)\n                                                    − 0,005          netinc   +    0,003         salary\n                                                         (0,005)                     (0,002)\n             N= 142,  R           2 = 0,039\n\n   1. V´erifiez si les variables explicatives sont conjointement significatives au seuil de\n       5%. Est-ce que ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\L3-Econometrics\\Exercices_8.pdf",
+    "bytes": 93486,
+    "sha256": "988c404b15fab0abb83595feb27a0c4a42ee04bd5edaa594bed20b9a1294352a",
+    "pages": 6,
+    "opening": "Exercices pour le cours Econom´etrie et´evaluations statistiques (Ch. VIII).\n\nPr´ediction – R-carr´e ajust´e – Quelques exemples\n\n\nExercice1.Les´equationssuivantesont´et´eestim´ees`al’aidedesdonn´eesdeBWGHT.xls:\n         log(bwght)   =    4,66\\          − 0,004          cigs   +    0,009        log(faminc)\n                               (0,22)          (0,001)                  (0,006)\n                               +    0,016       parity   +    0,027         male   +    0,055         white\n                                    (0,006)                     (0,010)                   (0,013)\n         N= 1,388   R        2 = 0,047\n\net\n         log(bwght)   =    4,65\\          − 0,005          cigs   +    0,011        log(faminc)\n                               (0,38)          (0,001)                  (0,008)\n                               +    0,017       parity   +    0,034         male   +    0,045         white\n                                    (0,006)                     (0,011)                   (0,015)\n                               − 0,003          motheduc   +    0,003            fatheduc\n                                    (0,003)                          (0,003)\n         N= 1,191   R        2 = 0,049\n\no`u bwght d´esigne le poids `a la naissance en livres d’un enfant, cigs le nombre moyen\nde cigarettes que la m`ere a fum´ees par jour pendant la grossesse, parity l’ordre de\nnaissance de l’enfant, faminc le revenu familial annuel, motheduc l’´education de la\nm`ere en ann´ees, fatheduc l’´education du p`ere en ann´ees, male une variable binaire qui\nest ´egale `a 1 si l’enf",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\M1-Econometrics\\Exercises_M1_2025.pdf",
+    "bytes": 150015,
+    "sha256": "5f76723858d39e7f9b882ae622a2df81171e02eedf71cfbc8d75c45ad7335a0c",
+    "pages": 17,
+    "opening": "Exercises for the course of Econometrics\n\n\nIntroduction\n\n 1.1 A researcher is using data for a sample of 30 observations to investigate the\n      relationship between some dependent variableyi and independent variablexi.\n      Preliminary analysis of the sample data produces the following information:\n\n\n                   NX                NX                NX                  NX\n                      yi = 7            xi = 1             y2i  = 55           x2i  = 3\n                  i=1               i=1                i=1                 i=1\n                   NX\n                      xiyi = 11;\n                  i=1\n\n      withN  = 30.  Use the above sample information to answer all the following\n      questions. Show explicitly all formulas and calculations.\n\n       (a) Compute the OLS estimates of the intercept parameter\f1 and the slope\n            parameter\f2:\n\n       (b) Compute the value of the R-squared, the coe¢ cient of determination for\n            the estimated OLS sample regression equation. Briey interpret what the\n            calculated value of this R-squared means.\n\n        (c) Calculate the estimation of the variance and the standard error of the esti-\n            mators of\f1 and\f2.\n\n 1.2 Letchildren denote the number of children ever born to a woman, and let\n      education denote years of education for the mother.  A simple model relating\n      fertility to years of education is\n\n             children =\f1+\f2\u0001education+u;\n\n      whereu is the unobserved error term.\n\n\n                                                 1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\CY-Cergy-Paris-Université\\2026-27\\M2-Econometrics\\Exercises_M2_2025-26.pdf",
+    "bytes": 162634,
+    "sha256": "97cd70b414cb0ee2a0463fb85db42be63925e8145fb6ccec8caf690026da1807",
+    "pages": 19,
+    "opening": "Exercises for the course of Econometrics\n\n\nChapter 1\n\n 1.1 Prove that X0X is positive denite if X is of full column rank.\n\n 1.2 Dene the projection matrix as P =X(X0X)\u00001X0 and the anihilator matrix as\n      M =I\u0000X(X0X)\u00001X0. Show the following.\n\n       (a) P and M are symmetric and idempotent.\n\n       (b) Idempotent matrix (di¤erent from I) are singular.\n       (c) PX =X, MX =0:\n\n       (d) ^y =Py, ^u =My =Mu:\n\n       (e) ^u0^u =u0Mu:\n            Notealsothatthetraceofanidempotentmatrix thesumoftheelements\n            on its main diagonal   equals the rank of the matrix and thus is always\n            an integer.\n\n 1.3 Prove that the R-squared is the square of the simple correlation coe¢ cient be-\n      tween y andby, whereby =X(X0X)\u00001X0y.\n\n 1.4 Provethatifaregressionisttedwithoutaconstantterm,theresidualswillnot\n      necessarilysumtozero,andtheR-squaredifcalculatedas1\u0000PNi=1bu2i=(PNi=1y2i\u0000\n      Ny2), may be negative.\n\n 1.5 Dene uncentered sum of squares as:\n\n            USST=XNi=1y2i;       USSE=XNi=1 ^y2i;       USSR=XNi=1^u2i\n\n      where \"U\" stands for \"uncentered\". Then prove:\n\n            USST=USSE+USSR:\n\n                                               1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\covariance_interactive.html",
+    "bytes": 7133,
+    "sha256": "3518e6859dcdb6a5cc1873ba398b3f06b90e464dc5084b170dc3b58b7e13b55b",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\generer_annexes.py",
+    "bytes": 8621,
+    "sha256": "29845caf12ac48c4122e48be10d82c2509300e24d96c70bd6874e011fc7a8b60",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\generer_dta.py",
+    "bytes": 1490,
+    "sha256": "1334e4dc5808476445dc452dd9d37e39a76a7e93bc0158d6779ddf7074722c09",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\seance01.do",
+    "bytes": 11817,
+    "sha256": "ef7353738e4b690bcf7f674dfae06b4d038f26c4b01e72d7cab58da62dce9867",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\seance01.py",
+    "bytes": 19582,
+    "sha256": "eb10f7ae8e1d570fb407576899dd0715a81e668b1df20d4b49610905bca8a016",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\seance01.R",
+    "bytes": 14304,
+    "sha256": "952a9358f0d0e282982867bd5e46a8a0098ad8808d574c52c938a950a95d8143",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\seance01_python.ipynb",
+    "bytes": 27952,
+    "sha256": "d0f6dfc31e2629ff1f6a215688a4ac93ca53d60bb648b180638486ee390fe8e8",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\seance01_R.ipynb",
+    "bytes": 21268,
+    "sha256": "addb1d43c3ec2f91fbd3ac737065d66780e23b3145211b941bf5744a1293a1e6",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\td01.do",
+    "bytes": 4759,
+    "sha256": "f1a1e5dbe79185a3c9d1540dbb195dd104d69df4f7563eda6857026b36bc4e0e",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\td01.py",
+    "bytes": 7200,
+    "sha256": "5a4026853008a6f8bbb87cb73f74496dc860181260101247c65a4bbf9e779cb4",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\td01.R",
+    "bytes": 5644,
+    "sha256": "75d3babdb6c785858ddd94017d274147443fb39e9dde7199fcacd6d6966c3d59",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\td01_python.ipynb",
+    "bytes": 10187,
+    "sha256": "969e72227fe2c1c9fafe858fb296ab12b05dedd4cc5b3a2c3ca60c6d6beba67a",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\td01_R.ipynb",
+    "bytes": 8093,
+    "sha256": "f62e534ca170d9cfdf6c6eeb3f89d6c8016e4eaee75a2c467a83158d3a548f2e",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\extraire_article.py",
+    "bytes": 3263,
+    "sha256": "9b168534ca16ec8fe79ebedda1c4c7012c60fb2fd2f3c5194d5983ee5132cca9",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\extraire_pdf.py",
+    "bytes": 3460,
+    "sha256": "aecdff55b436106b7c84609b3dedc7b11c0d1cb00ac504961d0c5f48e69b48c1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\liens_verifies.txt",
+    "bytes": 31010,
+    "sha256": "cfb0bb49b0068b97e19139bee6f801c8d34169b1b4a0444c27b787bf66a79439",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\rapport_tests.md",
+    "bytes": 6880,
+    "sha256": "5219faa2dd72562854ba690f71b79e3258ddcd337ee85b3cb0c88fd04e73e49d",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\sorties_python.txt",
+    "bytes": 5320,
+    "sha256": "b90b129f850877e0a63f8bb03b26c54617216fcd126f92ed87c37886dd0237ec",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\sorties_R.txt",
+    "bytes": 3976,
+    "sha256": "0606156a4845966397ef942ac96c699c43525522fcc953d4133d1e57899e90da",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\sorties_td01_python.txt",
+    "bytes": 3548,
+    "sha256": "d88d7b46703915f21ecf3c2376cc60add16b071f7e66e2c80c995954f4e9fe65",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\sorties_td01_R.txt",
+    "bytes": 2758,
+    "sha256": "5436f5594a7e72f7790900a83f8a1d996e1f4902412cbb568232a779efd09ddf",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\tester_blocs.py",
+    "bytes": 2788,
+    "sha256": "aacb18dac55193bc2789b0e6454d38899d85c8ac2a4bb372a29a0f99e4cea543",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\verif_polycopie.txt",
+    "bytes": 2471,
+    "sha256": "eccceb88e9c36c4b7a325b170e82ef49af8890fc2f904b05eac1eb226e3f7e06",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\verifier_liens.py",
+    "bytes": 1902,
+    "sha256": "084a4a8e261b5d4381b21613d732ce6a391351b7e767e99dbd114f8641a21be1",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\code\\tests\\verifier_polycopie.py",
+    "bytes": 3069,
+    "sha256": "2a3475f8ecef8d90d94d416f6a60c1846b81758a337fad217a121ed82f86b904",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\attend.dta",
+    "bytes": 45825,
+    "sha256": "794d7518a6b02cf949a3418438871ac65c4872dcda325a34778a2665712d7f60",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\cps78_85.dta",
+    "bytes": 72477,
+    "sha256": "9b4e973ad60aec7fd434020468f6986fabc545679deec2178fa8bfcdb5ae7e46",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\econmath.dta",
+    "bytes": 89099,
+    "sha256": "e54c801410ddbddb8f03b27665ad1b9cb8fda44b1ae2677cf5850f7f7fce43e9",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\jtrain2.dta",
+    "bytes": 48397,
+    "sha256": "0944aaff822e9b5d6baba6b4996a0244e450a5fe2362fad1cf913b40feca44e6",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\phillips.dta",
+    "bytes": 4421,
+    "sha256": "91cec06f3ece316e214714684c7bdee7df433ce45bf29e9f6c4a8e48f39e0d86",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\wagepan.dta",
+    "bytes": 793672,
+    "sha256": "d3eede3d84d9754d2a94d4e7db8a03099408ac2df7b143105b5fb7092c42f848",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\donnees\\wine.dta",
+    "bytes": 1867,
+    "sha256": "27d48e59bdc570fd1b00463e4279fa4ea345c22036709494ef1180519b681a43",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\seance01.pdf",
+    "bytes": 1083444,
+    "sha256": "cda5001699d8aac21fab3056bbfd2d79c7c8a37e40456fe6ed3bdd9e5cee2f64",
+    "pages": 142,
+    "opening": "Économétrie\nSéance 1 — Introduction et régression linéaire simple\nLicence 3 — Économie\n\n\nAnderson VIL                                                          THEMA\nvladerinson@gmail.com                               CY Cergy Paris Université\n                                               Année universitaire 2026–2027",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Econométrie\\serie01.pdf",
+    "bytes": 250608,
+    "sha256": "e0484b0e2c6c668280f0ee07c20ef84cd77637e66d782ab8e9f76e0d0898a355",
+    "pages": 6,
+    "opening": "                                                      Économétrie\n                                          Séance 1 — Série d’exercices\n                            Licence 3 Économie     ·    Année universitaire 2026–2027\n\nLes exercices portent sur les notions de la séance 1. Les calculs se font à la main, avec une\ncalculatrice, sauf à l’exercice 5.\n\n                              Contenu                                                  Durée estimée        Organisation\n              Quiz             10 questions                                                  10 min                       TD\n              Exercice 1    calcul à la main des MCO et duR      2           20 min                       TD\n              Exercice 2    démonstration                                              15 min           travail personnel\n              Exercice 3    lecture d’une table de régression               15 min                       TD\n              Exercice 4    raisonnement causal                                    15 min                       TD\n              Exercice 5    données réelles et code                               25 min           travail personnel\n              Total                                                                                     100 min             60 min en TD\n\n\nQuiz\n\nUne seule réponse est correcte par question.\n\nQuestion1.Onestime   yi =β    0 +β    1xi +u    i parlesMCO.Quellegrandeurpeut-oncalculeràpartir\ndes données?\n\n   a)u    i, l’erreur de l’observationi\n\n   b)  ˆui, le résidu de l’observationi\n   c)β    1, la pente de la population\n   d)u ",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Microéconomie III\\jeux-repetes-simulateur.html",
+    "bytes": 27722,
+    "sha256": "40c3c9977638865e5bbf1c88cfd6be1bd9892c61020537c7f649bf43666e4f57",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Microéconomie III\\pile-ou-face-simulateur.html",
+    "bytes": 19382,
+    "sha256": "640eb142ae00f3eaac859f30c070f953487a03de10155725fc34d2599b2f2e79",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Microéconomie III\\Séance I.pdf",
+    "bytes": 533669,
+    "sha256": "39c174e5644d2fd95cf50e039920cc9c36808a01c341bcbbaa4050eb5699fcfe",
+    "pages": 59,
+    "opening": "Microéconomie III\nSéance 1 — Introduction générale\n\nLicence 3 — Économie\n\n\n\nAnderson VIL                                                                 THEMA\nvladerinson@gmail.com                                       CY Cergy Paris Université\n\n                                                        Année universitaire 2026–2027",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Niort\\2026-27\\Microéconomie III\\Séances II-IV.pdf",
+    "bytes": 637333,
+    "sha256": "f733d7f17bc8ceafb1f739eb2e1a7a710e912d80002301897e08559dc124e3f8",
+    "pages": 109,
+    "opening": "                                      Séances II à IV\n                                      Théorie des jeux\n                                      Décisions stratégiques et équilibre de Nash\n\n\n\n\nMicroéconomie III                     Anderson VIL\nLicence 3 – Économie                  vladerinson@gmail.com\n\n                                      THEMA\n                                      CY Cergy Paris Université\n\n                                      Année universitaire 2026–2027",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\podcast\\SugBook2.mp4",
+    "bytes": 25967518,
+    "sha256": "816334967f4fc2c0cb850aa0173284b55be6557cbc2df6fd4888e763902b8666",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original conversation recording",
+    "version": "No recording date supplied"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\calligraphie_de_bonheur_revision_3_03.pdf",
+    "bytes": 2056537,
+    "sha256": "779e58ffe145c667ed6574b4af24b87a5b46b64e93cf65786b7fcaae0c7d23c6",
+    "pages": 1,
+    "opening": "CɪɸʙiʔrʋɿʕȲɏ ȫɏ bʝɻȱʑʦɠ\n\n\n\n\n\n\n\n\n\n\n\n\nMʝɚʧisaȰɏʋʁbʝȾɏtʝʦjʝʦrɡȵɏsʝʦʢʖȾɏ,\nesɢ-ȪɏʦȸɏtʝɵȵɏȫϔʙicaɀɏʡʦɔʏisʣʖʛʅȵɏmɈʤʢisɀeʽɏ,\nʦȸɏȷϔloʏȲɏʣɵȵʑnʎȲʑuȿɏdʋnɡɗ'ʝrɭȱesʤȾɏȫɏȷeɡ͕əԪiʝnɡ ?\nSɔȿʑʅȵʑȷʑnɢȵeɡȰʑnɡpʝʦvʋȲʑnɢʑnʤȾʑvʝʖɠmɈdʝʅȵʑʦɠʡɤԪiʏȲʑʜȸɏ,\nɵlɡcʝʛʠȾʑnʏrʋȲʑnɢɪlʝrɡʡɂɏȳɏʣʦiɡ\nɗ'hʝʛȷɏʋɤcʞʦɠȵɏɿʙuɡlʝʦrɍʏɤmʝnȫɏ,\nȵɏvʝyaȰʑʦɠȵɏɿʙuɡsɼʙitʋʖȾɏȫɏɗ'͊ȷɏ,\nȵɏpȹèɀɏȫeɡtʝʦʢȷʑntɡ\néʎʢʖvʋnɢȫeɡɃʑrɡɍ'agʝʜȲɏdʋnɡȵɏʣɵȵʑnȪɏȫɏmʝɚmʝnȫɏ.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                           Anȫʑrsʝɚ, 19/10/2023",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\calligraphie_de_bonheur_revision_3_03.tex",
+    "bytes": 2906,
+    "sha256": "1e0def1db4d60e7021a9bdc76a54564d60e322edb10713438f04b10c7f081805",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\ma_cherie_revision_3_J2.pdf",
+    "bytes": 1429523,
+    "sha256": "b77023f6cf727934a170a01900579360600fff94ab41069810c33a5a6d367000",
+    "pages": 1,
+    "opening": "            Ma  chérie\n\n\n\n\n\n\n\n\n        Je t’écris au fond de mon lit,\n    entouré de ton esprit qui m’habite.\n         Les lumières sont éteintes,\n           mais dans ma chambre,\n    les ténèbres n’ar¢ivent pas à valser ;\n        je laisse dégager mon rideau\npour que quelque lueur puisse y pénét¢er.\n        Ton souffle y est bien vivant\n et ne saurait me laisser dans l’obscurité.\n   Je suis fatig§é comme un chien noir.\n Je serais enchanté de me voir endorir\n  sous le frôlement de tes doig¥s sacrés.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                                             Écrit  par  Anderson  le  03  mars  2023.",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\ma_cherie_revision_3_J2.tex",
+    "bytes": 2858,
+    "sha256": "dcfdf27cf537aa57f8bb9d666d461ddbd417005a2f5f85dacbcac75f24dec632",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\mes_nuits_revision_3_B3.pdf",
+    "bytes": 2063368,
+    "sha256": "f38692516e36823c4156fc58c174bf5c0b3cb4d4e866f0983a40ad447f5696da",
+    "pages": 1,
+    "opening": "        Mes  nuits\n\n\n\n\n\n\n             Il est déjà 2h du matin,\n          je reste cloué dans mon lit,\n            me battre contre l’ennui\n                et je m’embrouille.\n            Je sens l’ennui me gagner\n              et le vide m’entourer.\nAlors je me résous à prendre mon téléphone\n        pour t’écrire ces quelques mots,\n      pardonne-moi s’ils sont ennuyeux.\n            J’aimerais bien te trouver\n           les bras pour me plaindre,\n            et le ventre pour pleurer.\n                  J’aimerais bien\n        ne pas avoir le besoin physique\n                d’un regard de toi,\n             d’un mot de ta bouche\n          et d’un baiser de tes lèvres.\n          Mais c’est loin d’être le cas.\n            Je vis constamment avec\n      l’envie irrésistible d’être à tes côtés\n            et de me laisser emporter\n          par la vague de tes caprices,\n           l’afflux de ton imagination\n         et les flots de tes caresses …\n               Désolé mon amour,\n         je dois t’ennuyer avec tout ça.\n    Peut-être que le seul but de ce poème\nétait de t’informer mon grand besoin de toi,\n    de te dire que seule, seule ta présence\n     m’aurait apporté l’énergie nécessaire\n             pour animer mes nuits,\n               tel un phare solitaire\n              sur une côte désolée,\n                éclairant le chemin\n         de mon âme dans l’obscurité.\n\n\n\n\n\n\n\n\n\n\n\n\n                                                      Écrit par Anderson le 04 mai 2024.",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\mes_nuits_revision_3_B3.tex",
+    "bytes": 3885,
+    "sha256": "b225b4d561a5f01edf5d8bcfce98e51d9e944da0f4f964bb70d98d09ee63ad38",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\on_me_l_a_interdit_revision_3_E4.pdf",
+    "bytes": 2003991,
+    "sha256": "3c59512dd11232a9e8b51a69bbd527326988fd0fc72de023cc4613650621cadd",
+    "pages": 1,
+    "opening": "                               On  me  l'a  interdit\n\n\n\n\n\n\n\nJ’aurais pu t’écrire un, deux, trois matins,\nne serait-ce que pour prendre de tes nouvelles,\nsavoir si t’avais bien dormi,\nsi ta nuit avait été plus légère que d’habitude\nou moins lourde qu'avant.\nJ’aurais pu t’écrire un soir\navant que tu sois allée au lit coucher\npour te souhaiter bonne nuit,\nte dire ne t’en fais pas,\nque je vais essayer\nd’être là pour toi,\nd’être là avec toi,\npeut-être derrière ta porte\ncar y entrer je n'aurais pas osé,\nmais j'aurais veillé que personne\nne vienne troubler ton sommeil.\nJ’aurais pu t’écrire un midi\nsi une fois tu avais partagé mes instants\net effleuré mes pensées\nentre deux trois lignes de codes.\nMais je ne peux pas Mimi,\non me l’a interdit.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                                                         Écrit par Anderson le 22 août 2026 à 4h30 du matin.",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\poésie\\on_me_l_a_interdit_revision_3_E4.tex",
+    "bytes": 3405,
+    "sha256": "cb9fd375c192462b752a6469d63e429a34b53490a582b8a66ce0bafad50c263e",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Original poem layout/text; full or excerpt use preserved",
+    "version": "Date from signed original"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Saint-Germain-en-Laye\\2026-27\\Conférence-de-Méthode-Micro\\docs_to_read_micro_St-Germain.zip",
+    "bytes": 7521056,
+    "sha256": "fadeb38cf5ebf65da1b6a6325f4131267e0379d9091813ddcb2508e8ea4eb4a2",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\Saint-Germain-en-Laye\\2026-27\\Conférence-de-Méthode-Micro\\seance1_microeconomie_st-Germain.pdf",
+    "bytes": 349358,
+    "sha256": "9efbfca26f8ae74f5d4cdb3bba4d02332d1231c91f589aaed04cd97f411be784",
+    "pages": 61,
+    "opening": "                                      Séance 1\n                                      Préliminaires\n                                      Consommateurs, producteurs et efficacité des marchés\n\n\n\n                                      Anderson VIL\n                                      vladerinson@gmail.com\nMicroéconomie                         Laboratoire THEMA\nConférence de méthode                 CY Cergy Paris Université\n1ère année                            Sciences Po Saint-Germain-en-Laye\n\n                                      Année universitaire 2026–2027",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Teaching source / associated code, notebook, data or supplied test record",
+    "version": "2026/2027 course confirmed by author; embedded historical document dates retained"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\TDs Analyse donnees.odt",
+    "bytes": 6703,
+    "sha256": "d53c5253e46e1e2f719fac2efc0c6e1eebca05852778f384152b39542aa07c8d",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Governance, earlier decision, supporting document or media source",
+    "version": "Retained existing source"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\v1.png",
+    "bytes": 420777,
+    "sha256": "9a0b1bb6bc7b85102eb9b2c215e20609e352a02c1533e009798b21c8c6d5120d",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Home viewport / marked composition reference",
+    "version": "Supplied undated screenshot; zoom unavailable"
+  },
+  {
+    "path": "C:\\dev\\andersonvil-academic-os-sources\\v2.png",
+    "bytes": 394955,
+    "sha256": "ac2c8e1be34ec70f407743ec346bde36e832e1cdfe1b17ce3a913b595feae65a",
+    "version_basis": "Document title/content; filesystem modification dates are not a selection criterion.",
+    "role": "Home viewport / marked composition reference",
+    "version": "Supplied undated screenshot; zoom unavailable"
+  }
+]

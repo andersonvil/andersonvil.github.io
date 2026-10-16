@@ -1,0 +1,32 @@
+[
+  {
+    "h1": "Observed choices, latent economic quantities",
+    "height": 2064,
+    "noindex": "noindex, nofollow, noarchive",
+    "requestedWidth": 1280,
+    "route": "/research/",
+    "scrollWidth": 1265,
+    "theme": "light",
+    "width": 1280
+  },
+  {
+    "h1": "Code that travels with its context",
+    "height": 2900,
+    "noindex": "noindex, nofollow, noarchive",
+    "requestedWidth": 768,
+    "route": "/code-data/",
+    "scrollWidth": 753,
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "h1": "Anderson Vil",
+    "height": 6795,
+    "noindex": "noindex, nofollow, noarchive",
+    "requestedWidth": 360,
+    "route": "/",
+    "scrollWidth": 345,
+    "theme": "light",
+    "width": 360
+  }
+]

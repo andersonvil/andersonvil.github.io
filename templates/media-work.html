@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import "macros/context-back.html" as context_back %}
+{% block title %}{{ page.title }} | Beyond Economics{% endblock title %}
+{% block content %}
+{% set beyond = load_data(path="data/beyond_economics.toml") %}
+{% for media in beyond.audios %}{% if media.id == page.extra.media_id %}
+<div class="shell detail-navigation">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/beyond-economics/">Beyond Economics</a><span>/</span><span>{{ media.title }}</span></nav></div>
+<article class="beyond-reading media-page shell"><header><p class="eyebrow">Conversations</p><h1>{{ media.title }}</h1><p class="lede">{{ media.description }}</p><p class="byline">{{ media.language }} recording</p></header>
+<figure class="audio-feature"><img src="{{ media.poster }}" width="960" height="540" alt="Anderson Vil in {{ media.title }}"><figcaption><audio controls preload="metadata" aria-label="{{ media.title }} — French recording"><source src="{{ media.audio }}" type="audio/mp4">Your browser does not support the audio element. <a href="{{ media.audio }}">Open the audio file</a>.</audio></figcaption></figure>
+<footer class="article-footer">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}</footer></article>
+{% endif %}{% endfor %}
+{% endblock content %}

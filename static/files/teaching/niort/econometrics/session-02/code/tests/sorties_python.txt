@@ -1,0 +1,168 @@
+========== [ech-quatre] Quatre échantillons, quatre droites
+pente sur les 856 : 14.32
+pentes des 4 échantillons : [13.44 14.87 15.99 13.96]
+
+========== [ech-distrib] Mille échantillons, la distribution des pentes
+moyenne et écart-type des 1 000 pentes : 14.38 3.19
+plus petite et plus grande pente : 5.29 24.66
+
+========== [va] Un étudiant tiré au hasard
+loi de X : [615, 241] étudiants sur 856
+P(X = 1) : 0.2815 | P(X = 0) : 0.7185
+chaque note a la probabilité 1/856 : 0.00117
+
+========== [esp-prop] Calculer avec l'espérance
+E(Y) : 72.6
+E(0,2 Y) : 14.52 | 0,2 E(Y) : 14.52
+E(Y - mu) : 0.0
+E(Y^2) : 5450.1 | [E(Y)]^2 : 5270.7
+
+========== [variance] Variance et écart-type
+Var(X) = p(1 - p) : 0.2023 | E(X^2) - p^2 : 0.2023
+Var(Y) : 179.37  (division par N = 856) | écart-type : 13.39
+E(Y^2) - [E(Y)]^2 : 179.37
+Var(0,2 Y) = 0,04 Var(Y) : 7.175 7.175
+
+========== [lgn] La moyenne empirique se rapproche de l'espérance
+moyenne après 10, 100, 2 000 tirages : [69.81 71.85 72.66]
+E(Y) : 72.6
+
+========== [cov-pop] Covariance et corrélation dans la population
+Cov(X, Y) : -0.967
+autre écriture, E[(X - E X)(Y - E Y)] : -0.967
+Corr(X, Y) : -0.161
+
+========== [independance] Covariance nulle sans indépendance
+E(X), E(Y), E(XY) : 0.0 0.6667 0.0 | Cov(X, Y) : 0.0
+P(X = 0 et Y = 1) : 0 | P(X = 0) P(Y = 1) : 0.2222
+
+========== [cond-cov] Covariance nulle, espérance conditionnelle non nulle
+E(u) : 0.0 | Cov(x, u) = E(xu) - E(x)E(u) : 0.0
+E(u | x) pour x = -1, 0, 1 : [ 0.3333 -0.6667  0.3333]
+
+========== [var-moyenne] La variance d'une moyenne
+écart-type théorique de la moyenne, sigma / racine(50) : 1.894
+écart-type des 5 000 moyennes simulées : 1.897
+moyenne des 5 000 moyennes : 72.62 | E(Y) : 72.6
+
+========== [esp-cond] Espérance conditionnelle
+E(Y|X=0), E(Y|X=1) : [73.95, 69.17] | P(X=1) : 0.2815
+         mean  size
+colgpa             
+1.625   58.26    12
+1.875   63.44    43
+2.125   61.66    63
+2.375   65.03   123
+2.625   69.51   130
+2.875   73.61   156
+3.125   76.29   124
+3.375   80.58   101
+3.625   84.96    70
+3.875   88.20    27
+
+========== [iterees] La loi des espérances itérées
+(1 - p) E(Y|X=0) + p E(Y|X=1) : 72.6
+E(Y) : 72.6 | moyenne simple des deux : 71.56
+Cov(X, Y) = p(1 - p)[E(Y|X=1) - E(Y|X=0)] : -0.967
+
+========== [var-cond] Variance conditionnelle
+         mean    std  size
+colgpa                    
+Q1      63.05  14.58   214
+Q2      69.07  10.08   214
+Q3      75.53  10.49   215
+Q4      82.78   8.81   213
+bornes des quarts : [Interval(0.874, 2.446, closed='right'), Interval(2.446, 2.813, closed='right'), Interval(2.813, 3.207, closed='right'), Interval(3.207, 4.0, closed='right')]
+
+========== [rls1] Moyennes par classe et droite des MCO
+         mean  size  droite
+colgpa                     
+1.625   58.26    12   55.57
+1.875   63.44    43   59.15
+2.125   61.66    63   62.73
+2.375   65.03   123   66.31
+2.625   69.51   130   69.88
+2.875   73.61   156   73.46
+3.125   76.29   124   77.04
+3.375   80.58   101   80.62
+3.625   84.96    70   84.20
+3.875   88.20    27   87.78
+
+========== [rls3] Variation de x dans l'échantillon
+count    856.000
+mean       2.815
+std        0.537
+min        0.875
+25%        2.446
+50%        2.813
+75%        3.207
+max        4.000
+Name: colgpa, dtype: float64
+nombre de valeurs différentes : 612
+
+========== [equilibre] Comparer les groupes sur ce qui est observé
+     colgpa  mothcoll  actmth
+w15                          
+0      2.86      0.66   23.15
+1      2.70      0.54   23.37
+        educ    age  re75
+train                    
+0      10.09  25.05  1.27
+1      10.35  25.82  1.53
+
+========== [rls5] Résidus et dispersion selon colgpa
+écart-type des résidus par quart de colgpa :
+colgpa
+Q1    14.34
+Q2     9.86
+Q3    10.47
+Q4     8.36
+dtype: float64
+
+========== [jouet-bruit] Exemple à la main, l'estimation est la vérité plus du bruit
+erreurs : [-1  0 -1  0 -3] | poids : [-0.1  -0.05  0.    0.05  0.1 ]
+b1 : 0.8
+avec d'autres erreurs (1, -1, 2, 0, 1), b1 : 1.05
+
+========== [jouet-b0] Exemple à la main, la constante
+moyenne des erreurs : -1.0 | b1 - 1 : -0.2
+b0 = 6 + moyenne(u) - (b1 - 1) x moyen : 6.2
+
+========== [mc-sansbiais] Simulation, l'absence de biais
+moyenne des pentes : 14.006 | écart-type : 2.622
+écart-type théorique 11 / racine(SCT_x) : 2.606
+
+========== [mc-biais] Simulation, un biais quand RLS.4 échoue
+n = 50 : moyenne 18.006  écart-type 2.622
+n = 500 : moyenne 17.995  écart-type 0.815
+
+========== [mc-variance] Simulation, ce qui rend la pente précise
+référence                   théorique 2.606 | simulé 2.622
+n = 200                     théorique 1.303 | simulé 1.294
+x deux fois moins dispersé  théorique 5.213 | simulé 5.218
+sigma = 5,5                 théorique 1.303 | simulé 1.302
+
+========== [eventail] Pourquoi la dispersion de x aide
+écarts-types théoriques : 0.184 0.737
+
+========== [mc-hetero] Simulation, quand RLS.5 échoue
+moyenne des variances de u : 121.0
+moyenne des pentes : 13.995 | écart-type simulé : 3.579
+vrai écart-type, racine(somme w_i^2 s_i^2) : 3.559
+formule usuelle, racine(moyenne des s_i^2 / SCT_x) : 2.607
+
+========== [mc-sigma] Simulation, estimer la variance de l'erreur
+moyenne de SCR / (n - 2) : 120.85
+moyenne de SCR / n : 116.01
+vraie variance sigma^2 : 121 | 121 x 48 / 50 : 116.16
+
+========== [mc-se] Simulation, l'erreur-type
+moyenne des erreurs-types : 2.591 | écart-type des pentes : 2.622
+écart-type théorique 11 / racine(SCT_x) : 2.606
+
+========== [erreur-type] D'où viennent les erreurs-types de la table
+SCR : 103036.6 | sigma chapeau : 10.984 | SCT_x : 246.43
+se(b1) = sigma chapeau / racine(SCT_x) : 0.6997
+moyenne des x au carré : 8.21
+se(b0) : 2.0049
+logiciel : [2.005, 0.7] | sigma chapeau : 10.984

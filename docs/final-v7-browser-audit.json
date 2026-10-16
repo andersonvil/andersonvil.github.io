@@ -1,0 +1,1488 @@
+{
+  "checks": [
+    {
+      "route": "/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Anderson Vil",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/research/",
+      "backHome": true,
+      "errors": 0,
+      "h1": "Measuring latent economic quantities from observed choices",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/",
+      "backHome": true,
+      "errors": 0,
+      "h1": "Courses and teaching materials",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/code-data/",
+      "backHome": true,
+      "errors": 0,
+      "h1": "Teaching code, notebooks, and data",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/insights/",
+      "backHome": true,
+      "errors": 0,
+      "h1": "Notes on economic methods and teaching",
+      "scrollWidth": 1440,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/",
+      "backHome": true,
+      "errors": 0,
+      "h1": "Poetry and conversations",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/contact/",
+      "backHome": true,
+      "errors": 0,
+      "h1": "Start a conversation",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "The Household Demand for Leisure, the Price of Time and the Full Cost of Children: A Structural Model and Evidence from the PSID",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Children Costs in a One-Adult Household: Empirical Evidence from the UK",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "How to Incorporate Children into Labor Supply Equations? An Equivalence-Scale Approach",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Qu’est-ce qu’un modèle ?1",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/insights/homogeneity/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Imposing and Testing Zero-Degree Homogeneity in Demand1",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/practical-readme/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Utiliser les supports, les données et les programmes",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/code-data/homogeneity-readme/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Homogeneity — Practical README",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-l3/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Econometrics — L3",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Econometrics — L3",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/microeconomics-iii-niort/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Microeconomics III — L3",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/microeconomics-l1/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Microeconomics — L1",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-m1/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Econometrics — M1",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-m2/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Econometrics — M2 & PhD",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Data Analysis with Python — L3",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Calligraphie de bonheur",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Ma chérie",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/mes-nuits/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Mes nuits",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/on-me-l-a-interdit/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "On me l’a interdit",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/on-reading-preferences/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Suggested Books",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/if-i-had-24-hours-left/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "If I Had 24 Hours Left",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/echoes-of-childhood/",
+      "backHome": false,
+      "errors": 0,
+      "h1": "Echoes of Childhood",
+      "scrollWidth": 1425,
+      "theme": "dark",
+      "width": 1440
+    },
+    {
+      "route": "/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/research/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/code-data/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/insights/",
+      "errors": 0,
+      "scrollWidth": 1440,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/contact/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/insights/homogeneity/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/practical-readme/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/code-data/homogeneity-readme/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-l3/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/microeconomics-iii-niort/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/microeconomics-l1/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-m1/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/econometrics-m2/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/mes-nuits/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/on-me-l-a-interdit/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/on-reading-preferences/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/if-i-had-24-hours-left/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/beyond-economics/echoes-of-childhood/",
+      "errors": 0,
+      "scrollWidth": 1425,
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "route": "/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/research/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/code-data/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/insights/",
+      "errors": 0,
+      "scrollWidth": 768,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/contact/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/insights/homogeneity/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/practical-readme/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/code-data/homogeneity-readme/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-l3/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/microeconomics-iii-niort/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/microeconomics-l1/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-m1/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-m2/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/mes-nuits/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/on-me-l-a-interdit/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/on-reading-preferences/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/if-i-had-24-hours-left/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/echoes-of-childhood/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "route": "/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/code-data/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/insights/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/contact/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/insights/homogeneity/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/practical-readme/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/code-data/homogeneity-readme/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-l3/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/microeconomics-iii-niort/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/microeconomics-l1/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-m1/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-m2/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/mes-nuits/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/on-me-l-a-interdit/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/on-reading-preferences/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/if-i-had-24-hours-left/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/echoes-of-childhood/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/research/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/code-data/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/insights/",
+      "errors": 0,
+      "scrollWidth": 768,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/contact/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/insights/homogeneity/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/practical-readme/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/code-data/homogeneity-readme/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-l3/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/microeconomics-iii-niort/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/microeconomics-l1/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-m1/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/econometrics-m2/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/mes-nuits/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/on-me-l-a-interdit/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/on-reading-preferences/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/if-i-had-24-hours-left/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/beyond-economics/echoes-of-childhood/",
+      "errors": 0,
+      "scrollWidth": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "route": "/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/code-data/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/insights/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/contact/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/insights/homogeneity/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/practical-readme/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/code-data/homogeneity-readme/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-l3/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/microeconomics-iii-niort/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/microeconomics-l1/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-m1/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/econometrics-m2/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/mes-nuits/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/on-me-l-a-interdit/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/on-reading-preferences/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/if-i-had-24-hours-left/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/beyond-economics/echoes-of-childhood/",
+      "errors": 0,
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/sources/#pdf-page-13",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/sources/#pdf-page-11",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/sources/#pdf-page-16",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/route-inexistante-verification/",
+      "errors": 0,
+      "h1": "The page you requested is not here.",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/sources/#pdf-page-13",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/sources/#pdf-page-11",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/sources/#pdf-page-16",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/route-inexistante-verification/",
+      "errors": 0,
+      "h1": "The page you requested is not here.",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/sources/#pdf-page-13",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/sources/#pdf-page-11",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/sources/#pdf-page-16",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/route-inexistante-verification/",
+      "errors": 0,
+      "h1": "The page you requested is not here.",
+      "scrollWidth": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/sources/#pdf-page-13",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/sources/#pdf-page-11",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/sources/#pdf-page-16",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/route-inexistante-verification/",
+      "errors": 0,
+      "h1": "The page you requested is not here.",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/sources/#pdf-page-13",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/sources/#pdf-page-11",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/sources/#pdf-page-16",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/route-inexistante-verification/",
+      "errors": 0,
+      "h1": "The page you requested is not here.",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/household-demand-leisure/sources/#pdf-page-13",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/sources/#pdf-page-11",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/research/children-labor-supply-equations/sources/#pdf-page-16",
+      "errors": 0,
+      "h1": "Tables, figures and equations",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "route": "/route-inexistante-verification/",
+      "errors": 0,
+      "h1": "The page you requested is not here.",
+      "scrollWidth": 375,
+      "theme": "light",
+      "width": 390
+    }
+  ],
+  "abstractControls": [
+    {
+      "slug": "household-demand-leisure",
+      "opened": "Hide Abstract",
+      "closed": "View Abstract"
+    },
+    {
+      "slug": "children-costs-one-adult-household",
+      "opened": "Hide Abstract",
+      "closed": "View Abstract"
+    },
+    {
+      "slug": "children-labor-supply-equations",
+      "opened": "Hide Abstract",
+      "closed": "View Abstract"
+    }
+  ],
+  "anchors": [
+    {
+      "route": "http://127.0.0.1:1117/research/household-demand-leisure/#findings",
+      "headerBottom": 107.859375,
+      "y": 159.046875
+    },
+    {
+      "route": "http://127.0.0.1:1117/insights/homogeneity/#section-5",
+      "headerBottom": 107.859375,
+      "y": 144.0625
+    },
+    {
+      "route": "http://127.0.0.1:1117/insights/homogeneity/#equation-23",
+      "headerBottom": 107.859375,
+      "y": 143.515625
+    }
+  ],
+  "interactions": {
+    "singleLocalDisclosure": true,
+    "keyboard": true,
+    "mobileMenuAndEscape": true,
+    "copyEmail": true,
+    "audioPlayPause": true,
+    "noAutoplay": true,
+    "immersiveOpenAndEscape": true,
+    "footnoteReturn": true,
+    "uniformDesktopCards": true
+  },
+  "pdfViewer": {
+    "nativeInAppPdf": "blank in the tested browser",
+    "fallback": "45 physical manuscript pages rendered in HTML; links and anchors verified"
+  },
+  "browserErrors": [],
+  "screenshots": [
+    "equation-details-desktop-dark.png",
+    "home-desktop-light.png",
+    "home-pathways-desktop-light.png",
+    "homogeneity-mobile-dark.png",
+    "homogeneity-simulation-light.png",
+    "jmp-findings-light.png",
+    "labor-findings-light.png",
+    "teaching-tablet-dark.png"
+  ]
+}

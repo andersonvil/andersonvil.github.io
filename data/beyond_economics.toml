@@ -1,0 +1,146 @@
+publicationStatus = "author-rights-confirmed"
+
+[[poems]]
+id = "calligraphie-de-bonheur"
+title = "Calligraphie de bonheur"
+url = "/beyond-economics/calligraphie-de-bonheur/"
+date = "19 October 2023"
+year = 2023
+language = "French"
+reading_minutes = 1
+access = "full"
+real = true
+provisional = false
+synthetic = false
+source_file = "poésie/calligraphie_de_bonheur_revision_3_03.pdf"
+tex_source = "poésie/calligraphie_de_bonheur_revision_3_03.tex"
+background = "/img/poetry/calligraphie-de-bonheur.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Author ownership and reuse rights confirmed in the final revision prompt."
+original_font = "Segoe Script"
+selected_font = "literary-serif"
+authorized_lines = 9
+signature_line = "Anderson, 19/10/2023"
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
+sample_lines = ["Mon visage arbore toujours le sourire,", "est-ce une toile délicate qui dissimule ma tristesse,", "une mélodie silencieuse dans l’orchestre de mes émotions ?"]
+
+[[poems]]
+id = "ma-cherie"
+title = "Ma chérie"
+url = "/beyond-economics/ma-cherie/"
+date = "3 March 2023"
+year = 2023
+language = "French"
+reading_minutes = 1
+access = "first-stanza"
+real = true
+provisional = false
+synthetic = false
+source_file = "poésie/ma_cherie_revision_3_J2.pdf"
+tex_source = "poésie/ma_cherie_revision_3_J2.tex"
+background = "/img/poetry/ma-cherie.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Author ownership and reuse rights confirmed in the final revision prompt."
+original_font = "Gabriola"
+selected_font = "literary-serif"
+authorized_lines = 7
+signature_line = "Écrit par Anderson le 03 mars 2023."
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
+sample_lines = ["Je t’écris au fond de mon lit,", "entouré de ton esprit qui m’habite.", "Les lumières sont éteintes,"]
+
+[[poems]]
+id = "mes-nuits"
+title = "Mes nuits"
+url = "/beyond-economics/mes-nuits/"
+date = "4 May 2024"
+year = 2024
+language = "French"
+reading_minutes = 1
+access = "first-stanza"
+real = true
+provisional = false
+synthetic = false
+source_file = "poésie/mes_nuits_revision_3_B3.pdf"
+tex_source = "poésie/mes_nuits_revision_3_B3.tex"
+background = "/img/poetry/mes-nuits.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Author ownership and reuse rights confirmed in the final revision prompt."
+original_font = "Garamond"
+selected_font = "literary-serif"
+authorized_lines = 6
+signature_line = "Écrit par Anderson le 04 mai 2024."
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
+sample_lines = ["Il est déjà 2h du matin,", "je reste cloué dans mon lit,", "me battre contre l’ennui"]
+
+[[poems]]
+id = "on-me-l-a-interdit"
+title = "On me l’a interdit"
+url = "/beyond-economics/on-me-l-a-interdit/"
+date = "22 August 2026"
+year = 2026
+language = "French"
+reading_minutes = 1
+access = "first-stanza"
+real = true
+provisional = false
+synthetic = false
+source_file = "poésie/on_me_l_a_interdit_revision_3_E4.pdf"
+tex_source = "poésie/on_me_l_a_interdit_revision_3_E4.tex"
+background = "/img/poetry/on-me-l-a-interdit.webp"
+background_source = "Extracted from the embedded background image in the supplied PDF; no poem text is rasterized."
+background_rights = "Author ownership and reuse rights confirmed in the final revision prompt."
+original_font = "Perpetua"
+selected_font = "literary-serif"
+authorized_lines = 5
+signature_line = "Écrit par Anderson le 22 août 2026 à 4h30 du matin."
+signature_source_note = "The supplied original signs ‘Anderson’, not ‘Anderson Vil’; the page byline retains the canonical full name."
+sample_lines = ["J’aurais pu t’écrire un, deux, trois matins,", "ne serait-ce que pour prendre de tes nouvelles,", "savoir si t’avais bien dormi,"]
+
+[media]
+id = "on-reading-preferences"
+title = "Suggested Books"
+url = "/beyond-economics/on-reading-preferences/"
+language = "French"
+duration = "5:08"
+source_file = "podcast/SugBook2.mp4"
+source_format = "MP4 (H.264 video, AAC audio)"
+source_resolution = "1920 × 1080"
+source_bytes = 25967518
+source_bitrate = "676 kb/s"
+audio = "/files/media/on-reading-preferences.m4a"
+audio_format = "M4A (AAC, 48 kHz, stereo)"
+audio_bytes = 9289323
+audio_bitrate = "242 kb/s"
+poster = "/img/podcast-reading-preferences-poster.jpg"
+transcript_status = "Transcript pending review"
+real = true
+provisional = false
+synthetic = false
+publicationStatus = "author-rights-confirmed"
+
+[[audios]]
+id = "on-reading-preferences"
+title = "Suggested Books"
+url = "/beyond-economics/on-reading-preferences/"
+description = "A French-language excerpt about three books that connect philosophy, love, rupture, exile, and money."
+audio = "/files/media/on-reading-preferences.m4a"
+poster = "/img/podcast-reading-preferences-poster.jpg"
+language = "French"
+
+[[audios]]
+id = "if-i-had-24-hours-left"
+title = "If I Had 24 Hours Left"
+url = "/beyond-economics/if-i-had-24-hours-left/"
+description = "Three things I would choose to do if I had only twenty-four hours left."
+audio = "/files/media/if-i-had-24-hours-left.m4a"
+poster = "/img/if-i-had-24-hours-left-poster.jpg"
+language = "French"
+
+[[audios]]
+id = "echoes-of-childhood"
+title = "Echoes of Childhood"
+url = "/beyond-economics/echoes-of-childhood/"
+description = "Childhood memories that have stayed with me."
+audio = "/files/media/echoes-of-childhood.m4a"
+poster = "/img/echoes-of-childhood-poster.jpg"
+language = "French"

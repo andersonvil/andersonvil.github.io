@@ -1,0 +1,377 @@
+{
+  "targets": [
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table 1",
+      "physical_page": 25,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table 2",
+      "physical_page": 26,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table 4",
+      "physical_page": 34,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table 5",
+      "physical_page": 38,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table 6",
+      "physical_page": 40,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table A.1",
+      "physical_page": 53,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table A.2",
+      "physical_page": 54,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Table A.3",
+      "physical_page": 55,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Proposition 1",
+      "physical_page": 10,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Proposition 2",
+      "physical_page": 13,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Proposition 3",
+      "physical_page": 14,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Corollary 4",
+      "physical_page": 15,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Proposition 5",
+      "physical_page": 19,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Proposition 6",
+      "physical_page": 22,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "Assumption A.1",
+      "physical_page": 14,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "A.1",
+      "physical_page": 14,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "A.2",
+      "physical_page": 16,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "A.2′",
+      "physical_page": 17,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "label": "A.3",
+      "physical_page": 19,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "9",
+      "physical_page": 29,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "10",
+      "physical_page": 29,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "11",
+      "physical_page": 29,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "12",
+      "physical_page": 29,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "13",
+      "physical_page": 29,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "14",
+      "physical_page": 30,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "15",
+      "physical_page": 30,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "16",
+      "physical_page": 30,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "17",
+      "physical_page": 31,
+      "found_in_page": true
+    },
+    {
+      "paper": "household-demand-leisure",
+      "equation": "18",
+      "physical_page": 31,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 1",
+      "physical_page": 12,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 2",
+      "physical_page": 14,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 3",
+      "physical_page": 16,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 4",
+      "physical_page": 18,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 5",
+      "physical_page": 19,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 12",
+      "physical_page": 36,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Table 13",
+      "physical_page": 37,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Figure 1",
+      "physical_page": 17,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Figure 8",
+      "physical_page": 39,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "label": "Proposition 1",
+      "physical_page": 8,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equation": "14",
+      "physical_page": 11,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equation": "15",
+      "physical_page": 11,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equation": "16",
+      "physical_page": 11,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equation": "17",
+      "physical_page": 11,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equation": "18",
+      "physical_page": 11,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "equation": "19",
+      "physical_page": 13,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Table 1",
+      "physical_page": 14,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Table 2",
+      "physical_page": 20,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Table 3",
+      "physical_page": 21,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Table 4",
+      "physical_page": 23,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Table 5",
+      "physical_page": 24,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Proposition",
+      "physical_page": 8,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "label": "Assumption L",
+      "physical_page": 8,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "16",
+      "physical_page": 15,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "17",
+      "physical_page": 15,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "18",
+      "physical_page": 16,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "19",
+      "physical_page": 16,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "20",
+      "physical_page": 16,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "21",
+      "physical_page": 16,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "22",
+      "physical_page": 17,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "23",
+      "physical_page": 17,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "24",
+      "physical_page": 17,
+      "found_in_page": true
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "equation": "25",
+      "physical_page": 18,
+      "found_in_page": true
+    }
+  ],
+  "failures": []
+}

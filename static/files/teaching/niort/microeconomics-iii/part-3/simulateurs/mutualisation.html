@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mutualisation des risques</title>
+<meta name="description" content="Simulation de la loi des grands nombres derrière l'assurance. Microéconomie III, Partie III, séance VI.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  :root {
+    --bg: #f2f3ef; --surface: #ffffff; --surface-2: #e9ebe5;
+    --ink: #1b1f23; --ink-muted: #5b6570; --ink-faint: #8a939c; --line: #d7dad2;
+    --accent-a: #2e6f6b; --accent-a-soft: #dceeec; --accent-b: #a8475f; --accent-b-soft: #f6e3e7;
+    --good: #2f7d46; --good-soft: #e1f1e5; --bad: #b23b3b; --bad-soft: #fbe7e7;
+    --font-display: 'Source Serif 4', Georgia, serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+      --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+      --accent-a: #55b3ad; --accent-a-soft: #1c3634; --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+      --good: #4cae6d; --good-soft: #1c3323; --bad: #e07373; --bad-soft: #3a2222;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151a; --surface: #1a1e24; --surface-2: #20252c;
+    --ink: #e8eaed; --ink-muted: #9aa4af; --ink-faint: #6b7480; --line: #2b3038;
+    --accent-a: #55b3ad; --accent-a-soft: #1c3634; --accent-b: #e08ca0; --accent-b-soft: #3a2229;
+    --good: #4cae6d; --good-soft: #1c3323; --bad: #e07373; --bad-soft: #3a2222;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); padding: 28px 16px 48px; line-height: 1.5; margin: 0; }
+  .wrap { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+  header h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(24px, 5vw, 32px); margin: 0 0 6px; text-wrap: balance; }
+  header p { color: var(--ink-muted); margin: 0; max-width: 62ch; font-size: 15px; }
+  code { font-family: var(--font-mono); background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h2 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin: 0 0 14px; }
+  .spec-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 9px; font-size: 14px; color: var(--ink-muted); }
+  .spec-list li::marker { color: var(--ink-faint); }
+  .spec-list strong { color: var(--ink); }
+  .sliders { display: flex; flex-direction: column; gap: 16px; }
+  .slider-row { display: flex; flex-direction: column; gap: 6px; }
+  .slider-row .label-line { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; gap: 10px; }
+  .slider-row .label-line .who { font-weight: 600; }
+  .slider-row .label-line .val { font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-muted); font-size: 13px; white-space: nowrap; }
+  input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 3px; background: var(--surface-2); outline: none; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--accent-a); border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line); cursor: pointer; }
+  input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--accent-a); border: 2px solid var(--surface); cursor: pointer; }
+  .controls-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; }
+  select, button { font-family: var(--font-body); font-size: 14px; border-radius: 9px; border: 1px solid var(--line); padding: 9px 13px; background: var(--surface-2); color: var(--ink); }
+  button { cursor: pointer; font-weight: 600; transition: transform .1s ease; }
+  button:active { transform: scale(.97); }
+  button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  button.primary:disabled { opacity: .5; cursor: default; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .presets button { background: transparent; font-weight: 500; font-size: 13px; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } }
+  .stat { border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .stat.a { background: var(--accent-a-soft); }
+  .stat.b { background: var(--accent-b-soft); }
+  .stat .who { font-size: 13px; font-weight: 600; }
+  .stat.a .who { color: var(--accent-a); }
+  .stat.b .who { color: var(--accent-b); }
+  .stat .big { font-family: var(--font-mono); font-size: 24px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat .sub { font-size: 12.5px; color: var(--ink-muted); font-family: var(--font-mono); }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart-caption { font-size: 12.5px; color: var(--ink-muted); margin-top: 8px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-muted); margin-top: 6px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12.5px; }
+  th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--ink-muted); font-weight: 500; font-family: var(--font-body); font-size: 11.5px; text-transform: uppercase; letter-spacing: .03em; }
+  .log-scroll { max-height: 280px; overflow-y: auto; border-radius: 10px; }
+  .note { font-size: 13.5px; color: var(--ink-muted); background: var(--surface-2); border-radius: 10px; padding: 12px 14px; margin-top: 14px; }
+  .note strong { color: var(--ink); }
+  .note.ok { background: var(--good-soft); } .note.ok strong { color: var(--good); }
+  .note.warn { background: var(--bad-soft); } .note.warn strong { color: var(--bad); }
+  .hi { color: var(--good); font-weight: 600; } .lo { color: var(--bad); }
+  /* Signature du cours, identique sur tous les documents */
+  body { padding-bottom: 64px; }
+  .signature { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--bg); color: #A8A8A8;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px;
+    padding: 5px 0; margin: 0 16px; border-top: 0.5px solid #DBDBDB; font-family: var(--font-body); font-size: 11px; }
+  .signature span:nth-child(2) { text-align: center; }
+  .signature span:last-child { text-align: right; }
+  @media (max-width: 520px) { .signature { font-size: 10.5px; gap: 6px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>La mutualisation et la loi des grands nombres</h1>
+    <p>N conducteurs comme Inès partagent le coût de leurs sinistres. Simulez des années entières et regardez le coût par assuré se resserrer autour de sa moyenne quand N grandit. La valeur théorique affichée est celle du cours, <code>1 920 / √N</code> pour Inès.</p>
+  </header>
+
+  <div class="card">
+    <h2>Ce que fait ce simulateur</h2>
+    <ul class="spec-list">
+      <li><strong>Les assurés.</strong> N personnes identiques. Chacune subit un sinistre de montant <code>L</code> avec probabilité <code>π</code>, indépendamment des autres. Par défaut, celles d'Inès, <code>π = 0,1</code> et <code>L = 6 400</code> euros.</li>
+      <li><strong>La mutualisation.</strong> Chaque année, le coût total des sinistres est partagé également. Le coût par assuré vaut <code>L × (nombre de sinistres) / N</code>.</li>
+      <li><strong>Le tirage.</strong> Pour chaque assuré et chaque année, le navigateur appelle <code>Math.random()</code>. Rien n'est précalculé, chaque lancement donne d'autres années.</li>
+      <li><strong>Les valeurs théoriques.</strong> Moyenne <code>π L</code>, écart-type <code>L √(π(1 − π)) / √N</code>, et probabilité exacte que le coût dépasse un seuil, calculée avec la loi binomiale. Pour Inès, 640 euros, <code>1 920 / √N</code>, et les probabilités du tableau du cours.</li>
+      <li><strong>Ce qui est affiché.</strong> L'histogramme du coût par assuré, sa moyenne, son écart-type et la fréquence des années coûteuses, comparés à la théorie, puis le détail des dernières années.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Réglages</h2>
+    <div class="sliders">
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Nombre d'assurés N</span><span class="val" id="nVal"></span></div>
+        <input type="range" id="nSlider" min="0" max="4" value="2" step="1">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Probabilité de sinistre π</span><span class="val" id="piVal"></span></div>
+        <input type="range" id="piSlider" min="1" max="30" value="10" step="1">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Montant d'un sinistre L</span><span class="val" id="lVal"></span></div>
+        <input type="range" id="lSlider" min="1000" max="20000" value="6400" step="200">
+      </div>
+      <div class="slider-row">
+        <div class="label-line"><span class="who">Seuil de coût jugé élevé</span><span class="val" id="sVal"></span></div>
+        <input type="range" id="sSlider" min="100" max="3000" value="800" step="50">
+      </div>
+    </div>
+    <div class="controls-row">
+      <select id="yearsSelect">
+        <option value="500">500 années</option>
+        <option value="2000" selected>2 000 années</option>
+        <option value="5000">5 000 années</option>
+      </select>
+      <button class="primary" id="runBtn">Lancer la simulation</button>
+      <button id="resetBtn">Réinitialiser</button>
+    </div>
+    <div class="presets">
+      <button data-n="0" data-pi="10" data-l="6400" data-s="800">Inès seule, N = 1</button>
+      <button data-n="1" data-pi="10" data-l="6400" data-s="800">Une petite mutuelle, N = 10</button>
+      <button data-n="3" data-pi="10" data-l="6400" data-s="800">Un assureur régional, N = 1 000</button>
+      <button data-n="3" data-pi="1" data-l="10000" data-s="200">L'exemple de Varian, π = 0,01 et L = 10 000</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Résultat de la simulation</h2>
+    <div class="stats">
+      <div class="stat a">
+        <span class="who">Coût moyen par assuré</span>
+        <span class="big" id="empMean">—</span>
+        <span class="sub" id="theoMean">théorie —</span>
+      </div>
+      <div class="stat b">
+        <span class="who">Écart-type du coût par assuré</span>
+        <span class="big" id="empSd">—</span>
+        <span class="sub" id="theoSd">théorie —</span>
+      </div>
+      <div class="stat a">
+        <span class="who">Fréquence des années au-dessus du seuil</span>
+        <span class="big" id="empTail">—</span>
+        <span class="sub" id="theoTail">théorie —</span>
+      </div>
+      <div class="stat b">
+        <span class="who">Année la plus coûteuse</span>
+        <span class="big" id="empMax">—</span>
+        <span class="sub" id="empMin">année la moins coûteuse —</span>
+      </div>
+    </div>
+    <div style="margin-top:20px">
+      <svg id="hist" viewBox="0 0 680 240" preserveAspectRatio="xMidYMid meet" aria-label="Histogramme du coût par assuré"></svg>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--accent-a)"></span>coût par assuré, années simulées</span>
+        <span><span class="swatch" style="background:var(--accent-b)"></span>moyenne théorique π L</span>
+        <span><span class="swatch" style="background:var(--ink-faint)"></span>seuil</span>
+      </div>
+      <p class="chart-caption">L'axe horizontal va de 0 à L, le coût maximal possible. Quand N grandit, l'histogramme se resserre autour de la moyenne, qui, elle, ne bouge pas.</p>
+    </div>
+    <div class="note" id="verdict">Lancez une simulation.</div>
+  </div>
+
+  <div class="card">
+    <h2>Carnet des dernières années</h2>
+    <div class="log-scroll">
+      <table>
+        <thead><tr><th>Année</th><th>Sinistres</th><th>Coût total</th><th>Coût par assuré</th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="signature"><span>Anderson VIL, Dr en Économie</span><span>Microéconomie III</span><span>Année universitaire 2026-2027</span></footer>
+<script>
+(function () {
+  const NS = [1, 10, 100, 1000, 10000];
+  const $ = id => document.getElementById(id);
+  const nb = (x, d = 0) => x.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  const N = () => NS[$('nSlider').value], PI = () => $('piSlider').value / 100, L = () => +$('lSlider').value, S = () => +$('sSlider').value;
+
+  function lgamma(z) {                       // logarithme de la fonction gamma (Lanczos)
+    const g = 7, c = [0.99999999999980993, 676.5203681218851, -1259.1392167224028, 771.32342877765313,
+      -176.61502916214059, 12.507343278686905, -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7];
+    if (z < 0.5) return Math.log(Math.PI / Math.sin(Math.PI * z)) - lgamma(1 - z);
+    z -= 1; let x = c[0]; for (let i = 1; i < g + 2; i++) x += c[i] / (z + i);
+    const t = z + g + 0.5; return 0.5 * Math.log(2 * Math.PI) + (z + 0.5) * Math.log(t) - t + Math.log(x);
+  }
+  function queueBinomiale(n, p, k) {          // P(S > k), S de loi binomiale (n, p)
+    let tot = 0;
+    for (let j = Math.floor(k) + 1; j <= n; j++) {
+      tot += Math.exp(lgamma(n + 1) - lgamma(j + 1) - lgamma(n - j + 1) + j * Math.log(p) + (n - j) * Math.log(1 - p));
+    }
+    return Math.min(1, tot);
+  }
+  function theorie() {
+    const n = N(), p = PI(), l = L();
+    return { m: p * l, sd: l * Math.sqrt(p * (1 - p)) / Math.sqrt(n), tail: queueBinomiale(n, p, S() * n / l) };
+  }
+  function labels() {
+    $('nVal').textContent = 'N = ' + nb(N());
+    $('piVal').textContent = 'π = ' + nb(PI(), 2);
+    $('lVal').textContent = 'L = ' + nb(L()) + ' €';
+    $('sVal').textContent = nb(S()) + ' €';
+    const t = theorie();
+    $('theoMean').textContent = 'théorie ' + nb(t.m, 1) + ' €';
+    $('theoSd').textContent = 'théorie ' + nb(t.sd, 1) + ' €';
+    $('theoTail').textContent = 'théorie ' + nb(t.tail, 4);
+  }
+  ['nSlider', 'piSlider', 'lSlider', 'sSlider'].forEach(id => $(id).addEventListener('input', labels));
+
+  function drawHist(couts) {
+    const W = 680, H = 240, Lp = 48, R = 14, T = 12, B = 30, iw = W - Lp - R, ih = H - T - B, l = L(), K = 60;
+    const bins = new Array(K).fill(0);
+    couts.forEach(c => { bins[Math.min(K - 1, Math.floor(c / l * K))]++; });
+    const fmax = Math.max(...bins) / couts.length;
+    const x = v => Lp + v / l * iw, y = f => T + (1 - f / fmax) * ih;
+    let s = '';
+    for (let k = 0; k < K; k++) {
+      const f = bins[k] / couts.length; if (!f) continue;
+      s += `<rect x="${x(k * l / K) + 0.5}" y="${y(f)}" width="${iw / K - 1}" height="${y(0) - y(f)}" fill="var(--accent-a)" opacity="0.85"/>`;
+    }
+    s += `<line x1="${Lp}" y1="${y(0)}" x2="${W - R}" y2="${y(0)}" stroke="var(--line)"/>`;
+    const m = PI() * l;
+    s += `<line x1="${x(m)}" y1="${T}" x2="${x(m)}" y2="${y(0)}" stroke="var(--accent-b)" stroke-width="2" stroke-dasharray="5,4"/>`;
+    if (S() <= l) s += `<line x1="${x(S())}" y1="${T}" x2="${x(S())}" y2="${y(0)}" stroke="var(--ink-faint)" stroke-width="1.5" stroke-dasharray="2,3"/>`;
+    for (let i = 0; i <= 4; i++) {
+      const v = l * i / 4;
+      s += `<text x="${x(v)}" y="${H - 10}" text-anchor="middle" font-size="11" font-family="var(--font-mono)" fill="var(--ink-faint)">${nb(v)}</text>`;
+    }
+    $('hist').innerHTML = s;
+  }
+
+  let enCours = false;
+  function run() {
+    if (enCours) return; enCours = true;
+    const btn = $('runBtn'); btn.disabled = true; btn.textContent = 'Simulation en cours…';
+    const n = N(), p = PI(), l = L(), seuil = S(), annees = parseInt($('yearsSelect').value, 10);
+    const couts = [], log = []; let a = 0;
+    const parTranche = Math.max(1, Math.floor(400000 / n));
+    function tranche() {
+      const fin = Math.min(annees, a + parTranche);
+      for (; a < fin; a++) {
+        let k = 0;
+        for (let i = 0; i < n; i++) if (Math.random() < p) k++;
+        const c = l * k / n; couts.push(c);
+        if (a >= annees - 15) log.push({ a: a + 1, k, tot: l * k, c });
+      }
+      if (a < annees) { requestAnimationFrame(tranche); return; }
+      const m = couts.reduce((s, c) => s + c, 0) / annees;
+      const sd = Math.sqrt(couts.reduce((s, c) => s + (c - m) * (c - m), 0) / annees);
+      const tail = couts.filter(c => c > seuil).length / annees;
+      const t = theorie();
+      $('empMean').textContent = nb(m, 1) + ' €'; $('empSd').textContent = nb(sd, 1) + ' €';
+      $('empTail').textContent = nb(tail, 4);
+      $('empMax').textContent = nb(Math.max(...couts), 0) + ' €';
+      $('empMin').textContent = 'année la moins coûteuse ' + nb(Math.min(...couts), 0) + ' €';
+      drawHist(couts);
+      $('logBody').innerHTML = log.map(r => `<tr><td>${r.a}</td><td>${r.k}</td><td>${nb(r.tot)} €</td><td>${nb(r.c, 1)} €</td></tr>`).join('');
+      const v = $('verdict');
+      if (n === 1) {
+        v.className = 'note warn';
+        v.innerHTML = `<strong>Seule, Inès porte tout le risque.</strong> Son coût vaut 0 ou ${nb(l)} euros. Moyenne simulée ${nb(m, 1)}, théorie ${nb(t.m, 1)}. Écart-type simulé ${nb(sd, 1)}, théorie ${nb(t.sd, 1)}.`;
+      } else if (t.sd / t.m < 0.15) {
+        v.className = 'note ok';
+        v.innerHTML = `<strong>Le coût par assuré est devenu prévisible.</strong> Avec ${nb(n)} assurés, il s'écarte rarement de ${nb(t.m)} euros. Écart-type simulé ${nb(sd, 1)}, théorie ${nb(t.sd, 1)}. Une prime proche de la perte espérée suffit, c'est l'équité actuarielle.`;
+      } else {
+        v.className = 'note';
+        v.innerHTML = `<strong>La mutualisation réduit le risque, sans l'annuler encore.</strong> Écart-type simulé ${nb(sd, 1)}, théorie ${nb(t.sd, 1)}, contre ${nb(l * Math.sqrt(p * (1 - p)), 0)} pour un assuré seul. Augmentez N pour voir l'histogramme se resserrer.`;
+      }
+      btn.disabled = false; btn.textContent = 'Lancer la simulation'; enCours = false;
+    }
+    requestAnimationFrame(tranche);
+  }
+  $('runBtn').addEventListener('click', run);
+  $('resetBtn').addEventListener('click', () => {
+    $('nSlider').value = 2; $('piSlider').value = 10; $('lSlider').value = 6400; $('sSlider').value = 800; labels();
+    ['empMean', 'empSd', 'empTail', 'empMax'].forEach(id => $(id).textContent = '—');
+    $('empMin').textContent = 'année la moins coûteuse —';
+    $('hist').innerHTML = ''; $('logBody').innerHTML = '';
+    $('verdict').className = 'note'; $('verdict').textContent = 'Lancez une simulation.';
+  });
+  document.querySelectorAll('.presets button').forEach(b => b.addEventListener('click', () => {
+    $('nSlider').value = b.dataset.n; $('piSlider').value = b.dataset.pi; $('lSlider').value = b.dataset.l; $('sSlider').value = b.dataset.s;
+    labels(); run();
+  }));
+  labels();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+========== [ex1] Exercice 1, une loi jointe à la main
+somme des probabilités : 1.0 | loi de x : [0.3 0.4 0.3] | loi de u : [0.25 0.5  0.25]
+E(x) : 2.0 | Var(x) : 2.4 | E(u) : 0.0
+E(u | x) : [-0.3333  0.      0.3333] | espérances itérées : 0.0
+Cov(x, u) : 0.4
+E(y | x) = 8 + x + E(u | x) : [ 7.6667 10.     12.3333]
+pente de E(y | x) : 1.1667 | 1 + Cov(x,u)/Var(x) : 1.1667
+Var(u | x) : [1.8889 2.     1.8889]
+loi jointe indépendante : [[0.075, 0.15, 0.075], [0.1, 0.2, 0.1], [0.075, 0.15, 0.075]] | E(u | x) : [0. 0. 0.]
+
+========== [ex1-simul] Exercice 1, la pente des MCO sur des échantillons tirés
+moyenne des 5 000 pentes : 1.1663 | vraie pente 1, 1 + 1/6 = 1.1667
+
+========== [ex2] Exercice 2, la pente des extrêmes
+pente des extrêmes : 0.75 | pente des MCO : 0.8
+Var pente des extrêmes / sigma^2 : 0.03125 | Var MCO / sigma^2 : 0.025
+SCT_x : 40.0  >= (x_n - x_1)^2 / 2 : 32.0
+moyennes : 0.9968 0.9966
+variances : 0.0319 0.0254 | théoriques 1/32 et 1/40
+
+========== [ex3] Exercice 3, table de régression, NBASAL
+wage ~ points [287.101, 111.33] [92.137, 7.817] R2 0.432 sigma 755.07 p [0.002, 0.0]
+points ~ exper [8.528, 0.329] [0.641, 0.104] R2 0.036 sigma 5.8 p [0.0, 0.0018]
+wage ~ exper [807.932, 120.317] [100.847, 16.42] R2 0.167 sigma 913.96 p [0.0, 0.0]
+écart-type des résidus par quart de points : [567.0, 762.0, 839.0, 814.0]
+SCT_points : 9331.2  s_points : 5.901
+prévisions pour 10 et 20 points : [1400.4 2513.7]
+
+========== [ex5-depart] Exercice 5, charger les données HTV
+              wage         educ         abil
+count  1230.000000  1230.000000  1230.000000
+mean     13.288134    13.037398     1.796596
+std       9.081947     2.354346     2.184406
+min       1.023529     6.000000    -5.631463
+25%       7.942430    12.000000     0.566200
+50%      11.542903    12.000000     2.149759
+75%      16.025640    15.000000     3.461465
+max      91.309219    20.000000     6.263742
+
+========== [ex5-mco] Exercice 5, MCO, sigma chapeau et erreur-type
+[-4.8574, 1.3918] [1.3601, 0.1027] R2 0.1302 n 1230
+SCR : 88173.8 | sigma chapeau : 8.4737 | SCT_educ : 6812.28
+se(b1) = sigma chapeau / racine(SCT) : 0.1027
+
+========== [ex5-residus] Exercice 5, résidus et dispersion
+               std  size
+educ                    
+12 ou moins   6.33   698
+13 ou 14      6.37   160
+15 ou plus   12.03   372
+
+========== [ex5-simul] Exercice 5, la population des 1 230 hommes
+moyenne des pentes : 1.406 | pente sur les 1 230 : 1.392
+écart-type des pentes : 0.497 | moyenne des erreurs-types : 0.353
+
+========== [ex5-abil] Exercice 5, l'aptitude, un facteur de u observé ici
+corrélation educ-abil : 0.594
+corrélation wage-abil : 0.282
+educ
+False    1.11
+True     3.38
+Name: abil, dtype: float64

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andersonvil.github.io/sitemap.xml

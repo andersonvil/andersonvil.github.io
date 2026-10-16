@@ -1,0 +1,354 @@
+p.  9  [Exemple alternatif          ] -> alt-petrole                  p.114  « Exemple alternatif, une action de biotechnologie »
+p. 10  [Code                        ] -> code-petrole-py              p.141  « Code Python, espérance, l’exemple du pétrole »
+p. 12  [Code                        ] -> code-emplois-py              p.143  « Code Python, deux emplois d’été, variance et écart-type »
+p. 12  [Exemple alternatif          ] -> alt-emplois                  p.115  « Exemple alternatif, deux emplois étudiants »
+p. 13  [Code                        ] -> code-fig-uniformes-py        p.145  « Code Python, deux distributions uniformes »
+p. 14  [Code                        ] -> code-fil-loterie-py          p.147  « Code Python, fil rouge, espérance et écart-type »
+p. 15  [Code                        ] -> code-fil-loterie-py          p.147  « Code Python, fil rouge, espérance et écart-type »
+p. 16  [Code                        ] -> code-emplois-mod-py          p.149  « Code Python, emploi 1 augmenté de 100 dollars »
+p. 17  [Code                        ] -> code-amende-py               p.151  « Code Python, stationnement en double file, amende espér »
+p. 17  [Exemple alternatif          ] -> alt-amende                   p.116  « Exemple alternatif, la fraude dans les transports »
+p. 22  [Code                        ] -> code-ticket-py               p.153  « Code Python, le billet de loterie, consommation conting »
+p. 22  [Exemple alternatif          ] -> alt-ticket                   p.117  « Exemple alternatif, un jeu à gratter »
+p. 23  [Code                        ] -> code-plan-contingent-py      p.155  « Code Python, le plan de la consommation contingente »
+p. 27  [Code                        ] -> code-eu-fil-py               p.157  « Code Python, utilité espérée, fil rouge et exemple de l »
+p. 28  [Code                        ] -> code-courbes-eu-py           p.159  « Code Python, courbes d’indifférence de l’utilité espéré »
+p. 30  [Code                        ] -> code-affine-py               p.161  « Code Python, transformations affines et non affines »
+p. 34  [Code                        ] -> code-avous-py                p.163  « Code Python, racine ou logarithme »
+p. 39  [Code                        ] -> code-emploi-risque-py        p.165  « Code Python, un emploi sûr ou un emploi risqué »
+p. 40  [Code                        ] -> code-attitudes-pr-py         p.167  « Code Python, trois attitudes face au risque »
+p. 40  [Exemple alternatif          ] -> alt-attitudes                p.118  « Exemple alternatif, le pari de Varian »
+p. 43  [Code                        ] -> code-prime-pr-py             p.169  « Code Python, prime de risque, deux emplois risqués »
+p. 43  [Exemple alternatif          ] -> alt-prime-pr                 p.119  « Exemple alternatif, un CDD ou une mission en indépendan »
+p. 44  [Code                        ] -> code-prime-fil-py            p.171  « Code Python, équivalent certain et prime de risque d’In »
+p. 45  [Code                        ] -> code-trois-agents-py         p.173  « Code Python, trois attitudes sur la loterie d’Inès »
+p. 46  [Code                        ] -> code-decomposition-py        p.175  « Code Python, prime maximale pour une assurance complète »
+p. 47  [Code                        ] -> code-courbes-mv-py           p.177  « Code Python, courbes d’indifférence espérance et écart- »
+p. 51  [Code                        ] -> code-climatiseurs-py         p.179  « Code Python, diversifier ses ventes »
+p. 51  [Exemple alternatif          ] -> alt-divers                   p.120  « Exemple alternatif, lunettes de soleil et imperméables »
+p. 54  [Code                        ] -> code-correlation-py          p.181  « Code Python, diversification et corrélation »
+p. 55  [Code                        ] -> code-cambriolage-py          p.183  « Code Python, la décision de s’assurer »
+p. 55  [Exemple alternatif          ] -> alt-cambriolage              p.121  « Exemple alternatif, l’assurance selon Varian »
+p. 56  [Code                        ] -> code-assurance-equitable-py  p.185  « Code Python, prime équitable, assurance complète »
+p. 57  [Code                        ] -> code-assurance-chargee-py    p.187  « Code Python, prime chargée, assurance partielle »
+p. 60  [Code                        ] -> code-mutualisation-py        p.189  « Code Python, coût moyen par assuré, loi exacte »
+p. 62  [Code                        ] -> code-titre-py                p.191  « Code Python, assurance de titre, enchère d’un acheteur  »
+p. 62  [Exemple alternatif          ] -> alt-titre                    p.122  « Exemple alternatif, un scooter d’occasion »
+p. 63  [Code                        ] -> code-costumes-py             p.193  « Code Python, valeur de l’information »
+p. 63  [Exemple alternatif          ] -> alt-info                     p.123  « Exemple alternatif, le glacier de la plage »
+p. 69  [Code                        ] -> code-rendements-py           p.195  « Code Python, rendement nominal et réel »
+p. 69  [Exemple alternatif          ] -> alt-rendements               p.124  « Exemple alternatif, trois placements »
+p. 70  [Code                        ] -> code-table58-py              p.197  « Code Python, risque et rendement, 1926 à 2010 »
+p. 71  [Code                        ] -> code-premier-euro-py         p.199  « Code Python, combien investir dans l’actif risqué »
+p. 73  [Code                        ] -> code-portefeuille-pr-py      p.201  « Code Python, rendement et risque du portefeuille »
+p. 74  [Code                        ] -> code-droite-budget-py        p.203  « Code Python, la droite budgétaire risque et rendement »
+p. 74  [Exemple alternatif          ] -> alt-portefeuille             p.125  « Exemple alternatif, livret et fonds indiciel »
+p. 76  [Code                        ] -> code-mv-simple-py            p.205  « Code Python, part optimale de l’actif risqué »
+p. 77  [Code                        ] -> code-deux-investisseurs-py   p.207  « Code Python, deux investisseurs, deux portefeuilles »
+p. 79  [Code                        ] -> code-res-portefeuille-py     p.209  « Code Python, probabilité d’une forte perte annuelle »
+p. 80  [Code                        ] -> code-actifs-xy-py            p.211  « Code Python, choisir l’actif risqué à combiner »
+p. 85  [Code                        ] -> code-actifs-ab-py            p.213  « Code Python, deux actifs corrélés négativement »
+p. 85  [Exemple alternatif          ] -> alt-ab                       p.126  « Exemple alternatif, vélos et cinéma à Nantes »
+p. 87  [Code                        ] -> code-beta-py                 p.215  « Code Python, calculer un bêta »
+p. 89  [Code                        ] -> code-droite-marche-py        p.217  « Code Python, la droite de marché »
+p. 90  [Code                        ] -> code-ajustement-py           p.219  « Code Python, comment le prix s’ajuste »
+p. 91  [Code                        ] -> code-fonds-py                p.221  « Code Python, fonds gérés et fonds indiciel »
+p. 91  [Exemple alternatif          ] -> alt-fonds                    p.127  « Exemple alternatif, un fonds géré face à un fonds indic »
+p. 98  [Exemple alternatif          ] -> alt-bulle                    p.128  « Exemple alternatif, le studio d’une ville moyenne »
+p. 99  [Exemple alternatif          ] -> alt-cascade                  p.129  « Exemple alternatif, deux bouchons lyonnais »
+p.100  [Code                        ] -> code-formule-cascade-py      p.223  « Code Python, probabilité d’une cascade erronée »
+p.102  [Code                        ] -> code-cascade-py              p.225  « Code Python, cascades informationnelles »
+p.103  [Exemple alternatif          ] -> alt-reference                p.130  « Exemple alternatif, des places de concert »
+p.104  [Exemple alternatif          ] -> alt-pertes                   p.131  « Exemple alternatif, vendre à perte »
+p.105  [Code                        ] -> code-pelles-py               p.227  « Code Python, demande de pelles à neige et équité »
+p.105  [Exemple alternatif          ] -> alt-equite                   p.132  « Exemple alternatif, les parapluies de la gare »
+p.106  [Exemple alternatif          ] -> alt-ancrage                  p.133  « Exemple alternatif, une cagnotte en ligne »
+p.107  [Exemple alternatif          ] -> alt-taxi                     p.134  « Exemple alternatif, un chauffeur de VTC »
+p.114  [Retour                      ] -> f-proba                      p.9  « D’où viennent les probabilités ? »
+p.114  [Code                        ] -> code-alt-petrole-py          p.229  « Code Python, exemple alternatif, action de biotechnolog »
+p.115  [Retour                      ] -> f-variance                   p.12  « Variance et écart-type »
+p.115  [Code                        ] -> code-alt-emplois-py          p.231  « Code Python, exemple alternatif, deux emplois étudiants »
+p.116  [Retour                      ] -> f-amende                     p.17  « Application, dissuader le stationnement en double file »
+p.116  [Code                        ] -> code-alt-amende-py           p.233  « Code Python, exemple alternatif, fraude dans les transp »
+p.117  [Retour                      ] -> f-ticket                     p.22  « Acheter un billet de loterie »
+p.117  [Code                        ] -> code-alt-ticket-py           p.235  « Code Python, exemple alternatif, jeu à gratter »
+p.118  [Retour                      ] -> f-attitudes                  p.40  « Trois attitudes face au risque »
+p.118  [Code                        ] -> code-alt-attitudes-py        p.237  « Code Python, exemple alternatif, le pari de Varian »
+p.119  [Retour                      ] -> f-prime-pr                   p.43  « La prime de risque sur le graphique »
+p.119  [Code                        ] -> code-alt-prime-pr-py         p.239  « Code Python, exemple alternatif, CDD ou indépendant »
+p.120  [Retour                      ] -> f-divers                     p.51  « Diversifier »
+p.120  [Code                        ] -> code-alt-divers-py           p.241  « Code Python, exemple alternatif, lunettes et imperméabl »
+p.121  [Retour                      ] -> f-cambriolage                p.55  « S’assurer »
+p.121  [Code                        ] -> code-alt-cambriolage-py      p.243  « Code Python, exemple alternatif, l’assurance selon Vari »
+p.122  [Retour                      ] -> f-titre                      p.62  « Application, l’assurance de titre de propriété »
+p.122  [Code                        ] -> code-alt-titre-py            p.245  « Code Python, exemple alternatif, scooter d’occasion »
+p.123  [Retour                      ] -> f-info                       p.63  « La valeur de l’information »
+p.123  [Code                        ] -> code-alt-info-py             p.247  « Code Python, exemple alternatif, le glacier »
+p.124  [Retour                      ] -> f-rendements                 p.69  « Le rendement d’un actif »
+p.124  [Code                        ] -> code-alt-rendements-py       p.249  « Code Python, exemple alternatif, trois placements »
+p.125  [Retour                      ] -> f-droite-budget              p.74  « La droite budgétaire risque et rendement »
+p.125  [Code                        ] -> code-alt-portefeuille-py     p.251  « Code Python, exemple alternatif, livret et fonds indici »
+p.126  [Retour                      ] -> f-ab                         p.85  « Le risque d’un actif dépend des autres »
+p.126  [Code                        ] -> code-alt-ab-py               p.253  « Code Python, exemple alternatif, vélos et cinéma »
+p.127  [Retour                      ] -> f-fonds                      p.91  « Fonds gérés et fonds indiciel »
+p.127  [Code                        ] -> code-alt-fonds-py            p.255  « Code Python, exemple alternatif, fonds géré et fonds in »
+p.128  [Retour                      ] -> f-bulle-immo                 p.98  « La bulle immobilière américaine »
+p.128  [Code                        ] -> code-alt-bulle-py            p.257  « Code Python, exemple alternatif, rendement locatif »
+p.129  [Retour                      ] -> f-cascade                    p.99  « Les cascades informationnelles »
+p.129  [Code                        ] -> code-alt-cascade-py          p.259  « Code Python, exemple alternatif, deux bouchons lyonnais »
+p.130  [Retour                      ] -> f-reference                  p.103  « Le point de référence »
+p.131  [Retour                      ] -> f-pertes                     p.104  « Aversion aux pertes et cadrage »
+p.132  [Retour                      ] -> f-equite-pelles              p.105  « L’équité »
+p.133  [Retour                      ] -> f-ancrage                    p.106  « Ancrage et règles empiriques »
+p.134  [Retour                      ] -> f-taxi                       p.107  « Les chauffeurs de taxi new-yorkais »
+p.134  [Code                        ] -> code-alt-taxi-py             p.261  « Code Python, exemple alternatif, chauffeur de VTC »
+p.141  [R                           ] -> code-petrole-r               p.142  « Code R, espérance, l’exemple du pétrole »
+p.141  [Retour                      ] -> f-esperance                  p.10  « L’espérance »
+p.142  [Python                      ] -> code-petrole-py              p.141  « Code Python, espérance, l’exemple du pétrole »
+p.142  [Retour                      ] -> f-esperance                  p.10  « L’espérance »
+p.143  [R                           ] -> code-emplois-r               p.144  « Code R, deux emplois d’été, variance et écart-type »
+p.143  [Retour                      ] -> f-variance                   p.12  « Variance et écart-type »
+p.144  [Python                      ] -> code-emplois-py              p.143  « Code Python, deux emplois d’été, variance et écart-type »
+p.144  [Retour                      ] -> f-variance                   p.12  « Variance et écart-type »
+p.145  [R                           ] -> code-fig-uniformes-r         p.146  « Code R, deux distributions uniformes »
+p.145  [Retour                      ] -> f-uniformes                  p.13  « Plus de deux issues »
+p.146  [Python                      ] -> code-fig-uniformes-py        p.145  « Code Python, deux distributions uniformes »
+p.146  [Retour                      ] -> f-uniformes                  p.13  « Plus de deux issues »
+p.147  [R                           ] -> code-fil-loterie-r           p.148  « Code R, fil rouge, espérance et écart-type »
+p.147  [Retour                      ] -> f-fil-mesures                p.14  « Le fil rouge en chiffres »
+p.148  [Python                      ] -> code-fil-loterie-py          p.147  « Code Python, fil rouge, espérance et écart-type »
+p.148  [Retour                      ] -> f-fil-mesures                p.14  « Le fil rouge en chiffres »
+p.149  [R                           ] -> code-emplois-mod-r           p.150  « Code R, emploi 1 augmenté de 100 dollars »
+p.149  [Retour                      ] -> f-decider                    p.16  « L’espérance et l’écart-type suffisent-ils pour choisir  »
+p.150  [Python                      ] -> code-emplois-mod-py          p.149  « Code Python, emploi 1 augmenté de 100 dollars »
+p.150  [Retour                      ] -> f-decider                    p.16  « L’espérance et l’écart-type suffisent-ils pour choisir  »
+p.151  [R                           ] -> code-amende-r                p.152  « Code R, stationnement en double file, amende espérée »
+p.151  [Retour                      ] -> f-amende                     p.17  « Application, dissuader le stationnement en double file »
+p.152  [Python                      ] -> code-amende-py               p.151  « Code Python, stationnement en double file, amende espér »
+p.152  [Retour                      ] -> f-amende                     p.17  « Application, dissuader le stationnement en double file »
+p.153  [R                           ] -> code-ticket-r                p.154  « Code R, le billet de loterie, consommation contingente »
+p.153  [Retour                      ] -> f-ticket                     p.22  « Acheter un billet de loterie »
+p.154  [Python                      ] -> code-ticket-py               p.153  « Code Python, le billet de loterie, consommation conting »
+p.154  [Retour                      ] -> f-ticket                     p.22  « Acheter un billet de loterie »
+p.155  [R                           ] -> code-plan-contingent-r       p.156  « Code R, le plan de la consommation contingente »
+p.155  [Retour                      ] -> f-plan                       p.23  « Le graphique de la consommation contingente »
+p.156  [Python                      ] -> code-plan-contingent-py      p.155  « Code Python, le plan de la consommation contingente »
+p.156  [Retour                      ] -> f-plan                       p.23  « Le graphique de la consommation contingente »
+p.157  [R                           ] -> code-eu-fil-r                p.158  « Code R, utilité espérée, fil rouge et exemple de la Par »
+p.157  [Retour                      ] -> f-eu-calc                    p.27  « L’utilité espérée d’Inès »
+p.158  [Python                      ] -> code-eu-fil-py               p.157  « Code Python, utilité espérée, fil rouge et exemple de l »
+p.158  [Retour                      ] -> f-eu-calc                    p.27  « L’utilité espérée d’Inès »
+p.159  [R                           ] -> code-courbes-eu-r            p.160  « Code R, courbes d’indifférence de l’utilité espérée »
+p.159  [Retour                      ] -> f-courbes-eu                 p.28  « Courbes d’indifférence et TMS »
+p.160  [Python                      ] -> code-courbes-eu-py           p.159  « Code Python, courbes d’indifférence de l’utilité espéré »
+p.160  [Retour                      ] -> f-courbes-eu                 p.28  « Courbes d’indifférence et TMS »
+p.161  [R                           ] -> code-affine-r                p.162  « Code R, transformations affines et non affines »
+p.161  [Retour                      ] -> f-affine                     p.30  « Ordinale ou cardinale ? »
+p.162  [Python                      ] -> code-affine-py               p.161  « Code Python, transformations affines et non affines »
+p.162  [Retour                      ] -> f-affine                     p.30  « Ordinale ou cardinale ? »
+p.163  [R                           ] -> code-avous-r                 p.164  « Code R, racine ou logarithme »
+p.163  [Retour                      ] -> f-avous-rep                  p.34  « Réponse »
+p.164  [Python                      ] -> code-avous-py                p.163  « Code Python, racine ou logarithme »
+p.164  [Retour                      ] -> f-avous-rep                  p.34  « Réponse »
+p.165  [R                           ] -> code-emploi-risque-r         p.166  « Code R, un emploi sûr ou un emploi risqué »
+p.165  [Retour                      ] -> f-emploi-risque              p.39  « Un emploi sûr ou un emploi risqué ? »
+p.166  [Python                      ] -> code-emploi-risque-py        p.165  « Code Python, un emploi sûr ou un emploi risqué »
+p.166  [Retour                      ] -> f-emploi-risque              p.39  « Un emploi sûr ou un emploi risqué ? »
+p.167  [R                           ] -> code-attitudes-pr-r          p.168  « Code R, trois attitudes face au risque »
+p.167  [Retour                      ] -> f-attitudes                  p.40  « Trois attitudes face au risque »
+p.168  [Python                      ] -> code-attitudes-pr-py         p.167  « Code Python, trois attitudes face au risque »
+p.168  [Retour                      ] -> f-attitudes                  p.40  « Trois attitudes face au risque »
+p.169  [R                           ] -> code-prime-pr-r              p.170  « Code R, prime de risque, deux emplois risqués »
+p.169  [Retour                      ] -> f-prime-pr                   p.43  « La prime de risque sur le graphique »
+p.170  [Python                      ] -> code-prime-pr-py             p.169  « Code Python, prime de risque, deux emplois risqués »
+p.170  [Retour                      ] -> f-prime-pr                   p.43  « La prime de risque sur le graphique »
+p.171  [R                           ] -> code-prime-fil-r             p.172  « Code R, équivalent certain et prime de risque d’Inès »
+p.171  [Retour                      ] -> f-prime-fil                  p.44  « La prime de risque d’Inès »
+p.172  [Python                      ] -> code-prime-fil-py            p.171  « Code Python, équivalent certain et prime de risque d’In »
+p.172  [Retour                      ] -> f-prime-fil                  p.44  « La prime de risque d’Inès »
+p.173  [R                           ] -> code-trois-agents-r          p.174  « Code R, trois attitudes sur la loterie d’Inès »
+p.173  [Retour                      ] -> f-trois-agents               p.45  « Trois Inès »
+p.174  [Python                      ] -> code-trois-agents-py         p.173  « Code Python, trois attitudes sur la loterie d’Inès »
+p.174  [Retour                      ] -> f-trois-agents               p.45  « Trois Inès »
+p.175  [R                           ] -> code-decomposition-r         p.176  « Code R, prime maximale pour une assurance complète »
+p.175  [Retour                      ] -> f-decomposition              p.46  « Ce que paierait Inès pour une assurance complète »
+p.176  [Python                      ] -> code-decomposition-py        p.175  « Code Python, prime maximale pour une assurance complète »
+p.176  [Retour                      ] -> f-decomposition              p.46  « Ce que paierait Inès pour une assurance complète »
+p.177  [R                           ] -> code-courbes-mv-r            p.178  « Code R, courbes d’indifférence espérance et écart-type »
+p.177  [Retour                      ] -> f-courbes-mv                 p.47  « Aversion au risque et courbes d’indifférence »
+p.178  [Python                      ] -> code-courbes-mv-py           p.177  « Code Python, courbes d’indifférence espérance et écart- »
+p.178  [Retour                      ] -> f-courbes-mv                 p.47  « Aversion au risque et courbes d’indifférence »
+p.179  [R                           ] -> code-climatiseurs-r          p.180  « Code R, diversifier ses ventes »
+p.179  [Retour                      ] -> f-divers                     p.51  « Diversifier »
+p.180  [Python                      ] -> code-climatiseurs-py         p.179  « Code Python, diversifier ses ventes »
+p.180  [Retour                      ] -> f-divers                     p.51  « Diversifier »
+p.181  [R                           ] -> code-correlation-r           p.182  « Code R, diversification et corrélation »
+p.181  [Retour                      ] -> f-correlation                p.54  « Écart-type du revenu (dollars) »
+p.182  [Python                      ] -> code-correlation-py          p.181  « Code Python, diversification et corrélation »
+p.182  [Retour                      ] -> f-correlation                p.54  « Écart-type du revenu (dollars) »
+p.183  [R                           ] -> code-cambriolage-r           p.184  « Code R, la décision de s’assurer »
+p.183  [Retour                      ] -> f-cambriolage                p.55  « S’assurer »
+p.184  [Python                      ] -> code-cambriolage-py          p.183  « Code Python, la décision de s’assurer »
+p.184  [Retour                      ] -> f-cambriolage                p.55  « S’assurer »
+p.185  [R                           ] -> code-assurance-equitable-r   p.186  « Code R, prime équitable, assurance complète »
+p.185  [Retour                      ] -> f-assurance-fil              p.56  « Inès face à une prime équitable »
+p.186  [Python                      ] -> code-assurance-equitable-py  p.185  « Code Python, prime équitable, assurance complète »
+p.186  [Retour                      ] -> f-assurance-fil              p.56  « Inès face à une prime équitable »
+p.187  [R                           ] -> code-assurance-chargee-r     p.188  « Code R, prime chargée, assurance partielle »
+p.187  [Retour                      ] -> f-chargee                    p.57  « Quand la prime est chargée »
+p.188  [Python                      ] -> code-assurance-chargee-py    p.187  « Code Python, prime chargée, assurance partielle »
+p.188  [Retour                      ] -> f-chargee                    p.57  « Quand la prime est chargée »
+p.189  [R                           ] -> code-mutualisation-r         p.190  « Code R, coût moyen par assuré, loi exacte »
+p.189  [Retour                      ] -> f-mutualisation              p.60  « Ce que montre le simulateur »
+p.190  [Python                      ] -> code-mutualisation-py        p.189  « Code Python, coût moyen par assuré, loi exacte »
+p.190  [Retour                      ] -> f-mutualisation              p.60  « Ce que montre le simulateur »
+p.191  [R                           ] -> code-titre-r                 p.192  « Code R, assurance de titre, enchère d’un acheteur neutr »
+p.191  [Retour                      ] -> f-titre                      p.62  « Application, l’assurance de titre de propriété »
+p.192  [Python                      ] -> code-titre-py                p.191  « Code Python, assurance de titre, enchère d’un acheteur  »
+p.192  [Retour                      ] -> f-titre                      p.62  « Application, l’assurance de titre de propriété »
+p.193  [R                           ] -> code-costumes-r              p.194  « Code R, valeur de l’information »
+p.193  [Retour                      ] -> f-info                       p.63  « La valeur de l’information »
+p.194  [Python                      ] -> code-costumes-py             p.193  « Code Python, valeur de l’information »
+p.194  [Retour                      ] -> f-info                       p.63  « La valeur de l’information »
+p.195  [R                           ] -> code-rendements-r            p.196  « Code R, rendement nominal et réel »
+p.195  [Retour                      ] -> f-rendements                 p.69  « Le rendement d’un actif »
+p.196  [Python                      ] -> code-rendements-py           p.195  « Code Python, rendement nominal et réel »
+p.196  [Retour                      ] -> f-rendements                 p.69  « Le rendement d’un actif »
+p.197  [R                           ] -> code-table58-r               p.198  « Code R, risque et rendement, 1926 à 2010 »
+p.197  [Retour                      ] -> f-table58                    p.70  « Rendement et risque, 1926 à 2010 »
+p.198  [Python                      ] -> code-table58-py              p.197  « Code Python, risque et rendement, 1926 à 2010 »
+p.198  [Retour                      ] -> f-table58                    p.70  « Rendement et risque, 1926 à 2010 »
+p.199  [R                           ] -> code-premier-euro-r          p.200  « Code R, combien investir dans l’actif risqué »
+p.199  [Retour                      ] -> f-premier-euro               p.71  « Le premier euro placé »
+p.200  [Python                      ] -> code-premier-euro-py         p.199  « Code Python, combien investir dans l’actif risqué »
+p.200  [Retour                      ] -> f-premier-euro               p.71  « Le premier euro placé »
+p.201  [R                           ] -> code-portefeuille-pr-r       p.202  « Code R, rendement et risque du portefeuille »
+p.201  [Retour                      ] -> f-portefeuille               p.73  « Un portefeuille à deux actifs »
+p.202  [Python                      ] -> code-portefeuille-pr-py      p.201  « Code Python, rendement et risque du portefeuille »
+p.202  [Retour                      ] -> f-portefeuille               p.73  « Un portefeuille à deux actifs »
+p.203  [R                           ] -> code-droite-budget-r         p.204  « Code R, la droite budgétaire risque et rendement »
+p.203  [Retour                      ] -> f-droite-budget              p.74  « La droite budgétaire risque et rendement »
+p.204  [Python                      ] -> code-droite-budget-py        p.203  « Code Python, la droite budgétaire risque et rendement »
+p.204  [Retour                      ] -> f-droite-budget              p.74  « La droite budgétaire risque et rendement »
+p.205  [R                           ] -> code-mv-simple-r             p.206  « Code R, part optimale de l’actif risqué »
+p.205  [Retour                      ] -> f-mv-simple                  p.76  « Une utilité moyenne-variance simple »
+p.206  [Python                      ] -> code-mv-simple-py            p.205  « Code Python, part optimale de l’actif risqué »
+p.206  [Retour                      ] -> f-mv-simple                  p.76  « Une utilité moyenne-variance simple »
+p.207  [R                           ] -> code-deux-investisseurs-r    p.208  « Code R, deux investisseurs, deux portefeuilles »
+p.207  [Retour                      ] -> f-deux-investisseurs         p.77  « Deux investisseurs »
+p.208  [Python                      ] -> code-deux-investisseurs-py   p.207  « Code Python, deux investisseurs, deux portefeuilles »
+p.208  [Retour                      ] -> f-deux-investisseurs         p.77  « Deux investisseurs »
+p.209  [R                           ] -> code-res-portefeuille-r      p.210  « Code R, probabilité d’une forte perte annuelle »
+p.209  [Retour                      ] -> f-res-portefeuille           p.79  « Ce que montre le simulateur »
+p.210  [Python                      ] -> code-res-portefeuille-py     p.209  « Code Python, probabilité d’une forte perte annuelle »
+p.210  [Retour                      ] -> f-res-portefeuille           p.79  « Ce que montre le simulateur »
+p.211  [R                           ] -> code-actifs-xy-r             p.212  « Code R, choisir l’actif risqué à combiner »
+p.211  [Retour                      ] -> f-actifs-xy                  p.80  « Quel actif risqué combiner avec l’actif sûr ? »
+p.212  [Python                      ] -> code-actifs-xy-py            p.211  « Code Python, choisir l’actif risqué à combiner »
+p.212  [Retour                      ] -> f-actifs-xy                  p.80  « Quel actif risqué combiner avec l’actif sûr ? »
+p.213  [R                           ] -> code-actifs-ab-r             p.214  « Code R, deux actifs corrélés négativement »
+p.213  [Retour                      ] -> f-ab                         p.85  « Le risque d’un actif dépend des autres »
+p.214  [Python                      ] -> code-actifs-ab-py            p.213  « Code Python, deux actifs corrélés négativement »
+p.214  [Retour                      ] -> f-ab                         p.85  « Le risque d’un actif dépend des autres »
+p.215  [R                           ] -> code-beta-r                  p.216  « Code R, calculer un bêta »
+p.215  [Retour                      ] -> f-beta                       p.87  « Calculer un bêta »
+p.216  [Python                      ] -> code-beta-py                 p.215  « Code Python, calculer un bêta »
+p.216  [Retour                      ] -> f-beta                       p.87  « Calculer un bêta »
+p.217  [R                           ] -> code-droite-marche-r         p.218  « Code R, la droite de marché »
+p.217  [Retour                      ] -> f-droite-marche              p.89  « La droite de marché »
+p.218  [Python                      ] -> code-droite-marche-py        p.217  « Code Python, la droite de marché »
+p.218  [Retour                      ] -> f-droite-marche              p.89  « La droite de marché »
+p.219  [R                           ] -> code-ajustement-r            p.220  « Code R, comment le prix s’ajuste »
+p.219  [Retour                      ] -> f-ajustement                 p.90  « Comment les rendements s’ajustent »
+p.220  [Python                      ] -> code-ajustement-py           p.219  « Code Python, comment le prix s’ajuste »
+p.220  [Retour                      ] -> f-ajustement                 p.90  « Comment les rendements s’ajustent »
+p.221  [R                           ] -> code-fonds-r                 p.222  « Code R, fonds gérés et fonds indiciel »
+p.221  [Retour                      ] -> f-fonds                      p.91  « Fonds gérés et fonds indiciel »
+p.222  [Python                      ] -> code-fonds-py                p.221  « Code Python, fonds gérés et fonds indiciel »
+p.222  [Retour                      ] -> f-fonds                      p.91  « Fonds gérés et fonds indiciel »
+p.223  [R                           ] -> code-formule-cascade-r       p.224  « Code R, probabilité d’une cascade erronée »
+p.223  [Retour                      ] -> f-modele-cascade             p.100  « Un modèle simple »
+p.224  [Python                      ] -> code-formule-cascade-py      p.223  « Code Python, probabilité d’une cascade erronée »
+p.224  [Retour                      ] -> f-modele-cascade             p.100  « Un modèle simple »
+p.225  [R                           ] -> code-cascade-r               p.226  « Code R, cascades informationnelles »
+p.225  [Retour                      ] -> f-res-cascade                p.102  « Proba. de cascade erronée »
+p.226  [Python                      ] -> code-cascade-py              p.225  « Code Python, cascades informationnelles »
+p.226  [Retour                      ] -> f-res-cascade                p.102  « Proba. de cascade erronée »
+p.227  [R                           ] -> code-pelles-r                p.228  « Code R, demande de pelles à neige et équité »
+p.227  [Retour                      ] -> f-equite-pelles              p.105  « L’équité »
+p.228  [Python                      ] -> code-pelles-py               p.227  « Code Python, demande de pelles à neige et équité »
+p.228  [Retour                      ] -> f-equite-pelles              p.105  « L’équité »
+p.229  [R                           ] -> code-alt-petrole-r           p.230  « Code R, exemple alternatif, action de biotechnologie »
+p.229  [Retour                      ] -> alt-petrole                  p.114  « Exemple alternatif, une action de biotechnologie »
+p.230  [Python                      ] -> code-alt-petrole-py          p.229  « Code Python, exemple alternatif, action de biotechnolog »
+p.230  [Retour                      ] -> alt-petrole                  p.114  « Exemple alternatif, une action de biotechnologie »
+p.231  [R                           ] -> code-alt-emplois-r           p.232  « Code R, exemple alternatif, deux emplois étudiants »
+p.231  [Retour                      ] -> alt-emplois                  p.115  « Exemple alternatif, deux emplois étudiants »
+p.232  [Python                      ] -> code-alt-emplois-py          p.231  « Code Python, exemple alternatif, deux emplois étudiants »
+p.232  [Retour                      ] -> alt-emplois                  p.115  « Exemple alternatif, deux emplois étudiants »
+p.233  [R                           ] -> code-alt-amende-r            p.234  « Code R, exemple alternatif, fraude dans les transports »
+p.233  [Retour                      ] -> alt-amende                   p.116  « Exemple alternatif, la fraude dans les transports »
+p.234  [Python                      ] -> code-alt-amende-py           p.233  « Code Python, exemple alternatif, fraude dans les transp »
+p.234  [Retour                      ] -> alt-amende                   p.116  « Exemple alternatif, la fraude dans les transports »
+p.235  [R                           ] -> code-alt-ticket-r            p.236  « Code R, exemple alternatif, jeu à gratter »
+p.235  [Retour                      ] -> alt-ticket                   p.117  « Exemple alternatif, un jeu à gratter »
+p.236  [Python                      ] -> code-alt-ticket-py           p.235  « Code Python, exemple alternatif, jeu à gratter »
+p.236  [Retour                      ] -> alt-ticket                   p.117  « Exemple alternatif, un jeu à gratter »
+p.237  [R                           ] -> code-alt-attitudes-r         p.238  « Code R, exemple alternatif, le pari de Varian »
+p.237  [Retour                      ] -> alt-attitudes                p.118  « Exemple alternatif, le pari de Varian »
+p.238  [Python                      ] -> code-alt-attitudes-py        p.237  « Code Python, exemple alternatif, le pari de Varian »
+p.238  [Retour                      ] -> alt-attitudes                p.118  « Exemple alternatif, le pari de Varian »
+p.239  [R                           ] -> code-alt-prime-pr-r          p.240  « Code R, exemple alternatif, CDD ou indépendant »
+p.239  [Retour                      ] -> alt-prime-pr                 p.119  « Exemple alternatif, un CDD ou une mission en indépendan »
+p.240  [Python                      ] -> code-alt-prime-pr-py         p.239  « Code Python, exemple alternatif, CDD ou indépendant »
+p.240  [Retour                      ] -> alt-prime-pr                 p.119  « Exemple alternatif, un CDD ou une mission en indépendan »
+p.241  [R                           ] -> code-alt-divers-r            p.242  « Code R, exemple alternatif, lunettes et imperméables »
+p.241  [Retour                      ] -> alt-divers                   p.120  « Exemple alternatif, lunettes de soleil et imperméables »
+p.242  [Python                      ] -> code-alt-divers-py           p.241  « Code Python, exemple alternatif, lunettes et imperméabl »
+p.242  [Retour                      ] -> alt-divers                   p.120  « Exemple alternatif, lunettes de soleil et imperméables »
+p.243  [R                           ] -> code-alt-cambriolage-r       p.244  « Code R, exemple alternatif, l’assurance selon Varian »
+p.243  [Retour                      ] -> alt-cambriolage              p.121  « Exemple alternatif, l’assurance selon Varian »
+p.244  [Python                      ] -> code-alt-cambriolage-py      p.243  « Code Python, exemple alternatif, l’assurance selon Vari »
+p.244  [Retour                      ] -> alt-cambriolage              p.121  « Exemple alternatif, l’assurance selon Varian »
+p.245  [R                           ] -> code-alt-titre-r             p.246  « Code R, exemple alternatif, scooter d’occasion »
+p.245  [Retour                      ] -> alt-titre                    p.122  « Exemple alternatif, un scooter d’occasion »
+p.246  [Python                      ] -> code-alt-titre-py            p.245  « Code Python, exemple alternatif, scooter d’occasion »
+p.246  [Retour                      ] -> alt-titre                    p.122  « Exemple alternatif, un scooter d’occasion »
+p.247  [R                           ] -> code-alt-info-r              p.248  « Code R, exemple alternatif, le glacier »
+p.247  [Retour                      ] -> alt-info                     p.123  « Exemple alternatif, le glacier de la plage »
+p.248  [Python                      ] -> code-alt-info-py             p.247  « Code Python, exemple alternatif, le glacier »
+p.248  [Retour                      ] -> alt-info                     p.123  « Exemple alternatif, le glacier de la plage »
+p.249  [R                           ] -> code-alt-rendements-r        p.250  « Code R, exemple alternatif, trois placements »
+p.249  [Retour                      ] -> alt-rendements               p.124  « Exemple alternatif, trois placements »
+p.250  [Python                      ] -> code-alt-rendements-py       p.249  « Code Python, exemple alternatif, trois placements »
+p.250  [Retour                      ] -> alt-rendements               p.124  « Exemple alternatif, trois placements »
+p.251  [R                           ] -> code-alt-portefeuille-r      p.252  « Code R, exemple alternatif, livret et fonds indiciel »
+p.251  [Retour                      ] -> alt-portefeuille             p.125  « Exemple alternatif, livret et fonds indiciel »
+p.252  [Python                      ] -> code-alt-portefeuille-py     p.251  « Code Python, exemple alternatif, livret et fonds indici »
+p.252  [Retour                      ] -> alt-portefeuille             p.125  « Exemple alternatif, livret et fonds indiciel »
+p.253  [R                           ] -> code-alt-ab-r                p.254  « Code R, exemple alternatif, vélos et cinéma »
+p.253  [Retour                      ] -> alt-ab                       p.126  « Exemple alternatif, vélos et cinéma à Nantes »
+p.254  [Python                      ] -> code-alt-ab-py               p.253  « Code Python, exemple alternatif, vélos et cinéma »
+p.254  [Retour                      ] -> alt-ab                       p.126  « Exemple alternatif, vélos et cinéma à Nantes »
+p.255  [R                           ] -> code-alt-fonds-r             p.256  « Code R, exemple alternatif, fonds géré et fonds indicie »
+p.255  [Retour                      ] -> alt-fonds                    p.127  « Exemple alternatif, un fonds géré face à un fonds indic »
+p.256  [Python                      ] -> code-alt-fonds-py            p.255  « Code Python, exemple alternatif, fonds géré et fonds in »
+p.256  [Retour                      ] -> alt-fonds                    p.127  « Exemple alternatif, un fonds géré face à un fonds indic »
+p.257  [R                           ] -> code-alt-bulle-r             p.258  « Code R, exemple alternatif, rendement locatif »
+p.257  [Retour                      ] -> alt-bulle                    p.128  « Exemple alternatif, le studio d’une ville moyenne »
+p.258  [Python                      ] -> code-alt-bulle-py            p.257  « Code Python, exemple alternatif, rendement locatif »
+p.258  [Retour                      ] -> alt-bulle                    p.128  « Exemple alternatif, le studio d’une ville moyenne »
+p.259  [R                           ] -> code-alt-cascade-r           p.260  « Code R, exemple alternatif, deux bouchons lyonnais »
+p.259  [Retour                      ] -> alt-cascade                  p.129  « Exemple alternatif, deux bouchons lyonnais »
+p.260  [Python                      ] -> code-alt-cascade-py          p.259  « Code Python, exemple alternatif, deux bouchons lyonnais »
+p.260  [Retour                      ] -> alt-cascade                  p.129  « Exemple alternatif, deux bouchons lyonnais »
+p.261  [R                           ] -> code-alt-taxi-r              p.262  « Code R, exemple alternatif, chauffeur de VTC »
+p.261  [Retour                      ] -> alt-taxi                     p.134  « Exemple alternatif, un chauffeur de VTC »
+p.262  [Python                      ] -> code-alt-taxi-py             p.261  « Code Python, exemple alternatif, chauffeur de VTC »
+p.262  [Retour                      ] -> alt-taxi                     p.134  « Exemple alternatif, un chauffeur de VTC »
+p. 53  lien externe simulateurs/diversification-correlation.html  fichier présent
+p. 59  lien externe simulateurs/mutualisation.html  fichier présent
+p. 78  lien externe simulateurs/choix-portefeuille.html  fichier présent
+p.101  lien externe simulateurs/cascade-informationnelle.html  fichier présent
+
+348 liens internes, 4 liens vers les simulateurs, 0 problème(s)

@@ -1,0 +1,39 @@
+[[redirects]]
+from = "/cv/cv.pdf"
+to = "/files/demo/anderson-vil-cv-preview.pdf"
+kind = "preview redirect"
+
+[[redirects]]
+from = "/publications/"
+to = "/research/"
+kind = "permanent at publication"
+
+[[redirects]]
+from = "/publications/paper1/"
+to = "/research/children-costs-one-adult-household/"
+kind = "permanent at publication"
+
+[[redirects]]
+from = "/publications/paper2/"
+to = "/research/children-labor-supply-equations/"
+kind = "permanent at publication"
+
+[[redirects]]
+from = "/publications/paper3/"
+to = "/research/household-demand-leisure/"
+kind = "permanent at publication"
+
+[[redirects]]
+from = "/contacts/"
+to = "/contact/"
+kind = "permanent at publication"
+
+[[redirects]]
+from = "/contacts_fr/"
+to = "/contact/"
+kind = "permanent at publication"
+
+[[redirects]]
+from = "/fr/"
+to = "/"
+kind = "permanent at publication"

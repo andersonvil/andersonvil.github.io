@@ -1,0 +1,96 @@
+Rendered 486 formulas in three papers and the French note with local KaTeX.
+Building site...
+Checking all internal links with anchors.
+> Successfully checked 0 internal link(s) with anchors.
+-> Creating 48 pages (3 orphan) and 7 sections
+Done in 2.4s.
+
+Preview build completed: public-preview
+SITE VALIDATION: PASS (58 HTML files checked)
+READING TIME: household-averages = 3 min (569 words at 220 wpm)
+READING TIME TEST: PASS
+SOURCE COPY VALIDATION: PASS (29 byte-identical source copies, 0 checkpoint-pinned copy; restricted PDFs absent)
+Synthetic demonstration content � not for publication
+Group A: market work=32.0 hours; care=18.0 hours
+Group B: market work=40.0 hours; care=9.0 hours
+Group A: market work=32.0 hours; care=18.0 hours
+Group B: market work=40.0 hours; care=9.0 hours
+NOTEBOOK EXECUTION: PASS
+PRODUCTION CHECK: BLOCKED
+ - Blocked marker 'placeholder\s*[:=]\s*true' in content\preview-synthetic\insights\what-household-averages-can-hide.md
+ - Blocked marker 'placeholder\s*[:=]\s*true' in content\preview-synthetic\preview-index.md
+ - Blocked marker 'placeholder\s*[:=]\s*true' in content\preview-synthetic\talks.md
+ - Blocked marker 'placeholder\s*[:=]\s*true' in content\preview-synthetic\teaching\applied-economics-lab.md
+ - Blocked marker 'placeholder\s*[:=]\s*true' in data\preview_synthetic.toml
+ - Blocked marker 'placeholder\s*[:=]\s*true' in public-preview-final\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'placeholder\s*[:=]\s*true' in scripts\build-demo-pdfs.py
+ - Blocked marker 'placeholder\s*[:=]\s*true' in static\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in content\preview-synthetic\insights\what-household-averages-can-hide.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in content\preview-synthetic\preview-index.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in content\preview-synthetic\talks.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in content\preview-synthetic\teaching\applied-economics-lab.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in data\academic.toml
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in data\preview_inventory.toml
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in data\preview_synthetic.toml
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in data\research_resources.toml
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in data\research_visuals.toml
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in data\teaching_resources.toml
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in docs\phase-4b-provisional-content-v3-report.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in public-preview-final\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in scripts\build-demo-pdfs.py
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in scripts\revise-final-v5.py
+ - Blocked marker 'publicationStatus\s*[:=]\s*["']?blocked' in static\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in data\preview_synthetic.toml
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in public-preview-final\files\demo\synthetic-household-project\analyze_demo.py
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in public-preview-final\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in public-preview-final\files\demo\synthetic-household-project\synthetic_households.json
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in public-preview-final\talks\index.html
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in scripts\build-demo-pdfs.py
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in static\files\demo\synthetic-household-project\analyze_demo.py
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in static\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in static\files\demo\synthetic-household-project\synthetic_households.json
+ - Blocked marker 'Synthetic demonstration content\s*[—-]\s*not for publication' in templates\talks.html
+ - Blocked marker 'synthetic\s*[:=]\s*true' in content\preview-synthetic\insights\what-household-averages-can-hide.md
+ - Blocked marker 'synthetic\s*[:=]\s*true' in content\preview-synthetic\preview-index.md
+ - Blocked marker 'synthetic\s*[:=]\s*true' in content\preview-synthetic\talks.md
+ - Blocked marker 'synthetic\s*[:=]\s*true' in content\preview-synthetic\teaching\applied-economics-lab.md
+ - Blocked marker 'synthetic\s*[:=]\s*true' in data\preview_synthetic.toml
+ - Blocked marker 'synthetic\s*[:=]\s*true' in public-preview-final\files\demo\synthetic-household-project\README.md
+ - Blocked marker 'synthetic\s*[:=]\s*true' in scripts\build-demo-pdfs.py
+ - Blocked marker 'synthetic\s*[:=]\s*true' in static\files\demo\synthetic-household-project\README.md
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\econometrics\session-01\code\covariance_interactive.html: <button data-cas="A">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\econometrics\session-01\code\covariance_interactive.html: <button data-cas="B">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\econometrics\session-01\code\covariance_interactive.html: <button data-cas="C">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button class="primary" id="runBtn">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="book">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="finiteTft">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="grimInfinite">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="unraveling">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button id="btnFini" class="active">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button id="btnInfini">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button class="primary" id="runBtn">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button data-p="100" data-q="70">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button data-p="50" data-q="50">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button data-p="50" data-q="70">
+ - Button without a recognized functional destination in public-preview-final\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button id="resetBtn">
+ - Button without a recognized functional destination in static\files\teaching\niort\econometrics\session-01\code\covariance_interactive.html: <button data-cas="A">
+ - Button without a recognized functional destination in static\files\teaching\niort\econometrics\session-01\code\covariance_interactive.html: <button data-cas="B">
+ - Button without a recognized functional destination in static\files\teaching\niort\econometrics\session-01\code\covariance_interactive.html: <button data-cas="C">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button class="primary" id="runBtn">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="book">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="finiteTft">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="grimInfinite">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button data-preset="unraveling">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button id="btnFini" class="active">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\jeux-repetes-simulateur.html: <button id="btnInfini">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button class="primary" id="runBtn">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button data-p="100" data-q="70">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button data-p="50" data-q="50">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button data-p="50" data-q="70">
+ - Button without a recognized functional destination in static\files\teaching\niort\microeconomics-iii\pile-ou-face-simulateur.html: <button id="resetBtn">
+ - Preview-only directory remains: content\preview-synthetic
+ - Preview-only directory remains: static\files\demo
+ - The preview inventory still contains open entries.
+NEGATIVE PRODUCTION TEST: PASS (preview repository was blocked)
+PRODUCTION CHECK: PASS
+POSITIVE PRODUCTION TEST: PASS (clean fixture was accepted)

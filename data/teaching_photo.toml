@@ -1,0 +1,12 @@
+title = "Teaching in practice"
+avif = "/img/teaching/teaching-in-practice.avif"
+webp = "/img/teaching/teaching-in-practice.webp"
+fallback = "/img/teaching/teaching-in-practice.jpg"
+width = 1600
+height = 1066
+alt = "Anderson Vil speaking into a handheld microphone during a teaching or presentation session."
+caption = "Student training in Stata, 2021."
+source_file = "05-media-links/photo4.jpg"
+processing = "Non-generative white-balance, exposure, contrast, saturation, and web-format optimization only; full 3:2 frame retained."
+rightsStatus = "blocked"
+rightsNote = "Source-supplied photograph; photographer credit and publication permission are not documented, so production remains blocked."

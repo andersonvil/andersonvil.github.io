@@ -1,0 +1,128 @@
+[
+  {
+    "name": "after-home-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": 1
+  },
+  {
+    "name": "after-research-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-teaching-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-beyond-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-jmp-header-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-jmp-identification-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-poem-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-audio-lab-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "after-research-lab-1440-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-home-375.png",
+    "viewport": 375,
+    "scrollWidth": 375,
+    "titleLines": 1
+  },
+  {
+    "name": "responsive-jmp-375.png",
+    "viewport": 375,
+    "scrollWidth": 375,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-poem-375.png",
+    "viewport": 375,
+    "scrollWidth": 375,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-home-768.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "titleLines": 1
+  },
+  {
+    "name": "responsive-jmp-768.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-poem-768.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-home-1024.png",
+    "viewport": 1024,
+    "scrollWidth": 1024,
+    "titleLines": 1
+  },
+  {
+    "name": "responsive-jmp-1024.png",
+    "viewport": 1024,
+    "scrollWidth": 1024,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-poem-1024.png",
+    "viewport": 1024,
+    "scrollWidth": 1024,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-home-1920.png",
+    "viewport": 1920,
+    "scrollWidth": 1920,
+    "titleLines": 1
+  },
+  {
+    "name": "responsive-jmp-1920.png",
+    "viewport": 1920,
+    "scrollWidth": 1920,
+    "titleLines": null
+  },
+  {
+    "name": "responsive-poem-1920.png",
+    "viewport": 1920,
+    "scrollWidth": 1920,
+    "titleLines": null
+  }
+]

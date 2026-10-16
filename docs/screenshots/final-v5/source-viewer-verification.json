@@ -1,0 +1,277 @@
+{
+  "pages": [
+    {
+      "id": "household-demand-leisure",
+      "page": 17,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 24,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 25,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 26,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 29,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 30,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 31,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 32,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 34,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 38,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 39,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 40,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 53,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 54,
+      "status": 200
+    },
+    {
+      "id": "household-demand-leisure",
+      "page": 55,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 10,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 11,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 12,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 13,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 14,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 16,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 17,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 18,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 19,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 36,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 37,
+      "status": 200
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "page": 39,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 14,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 15,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 16,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 17,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 18,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 20,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 21,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 23,
+      "status": 200
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "page": 24,
+      "status": 200
+    }
+  ],
+  "pdf": [
+    {
+      "id": "household-demand-leisure",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "status": 200,
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "status": 200,
+      "contentType": "application/pdf"
+    }
+  ],
+  "overflow": [
+    {
+      "id": "household-demand-leisure",
+      "index": 0,
+      "scrollable": true
+    },
+    {
+      "id": "household-demand-leisure",
+      "index": 1,
+      "scrollable": true
+    },
+    {
+      "id": "household-demand-leisure",
+      "index": 4,
+      "scrollable": true
+    },
+    {
+      "id": "household-demand-leisure",
+      "index": 5,
+      "scrollable": true
+    },
+    {
+      "id": "household-demand-leisure",
+      "index": 6,
+      "scrollable": true
+    },
+    {
+      "id": "household-demand-leisure",
+      "index": 7,
+      "scrollable": true
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "index": 2,
+      "scrollable": true
+    },
+    {
+      "id": "children-costs-one-adult-household",
+      "index": 5,
+      "scrollable": true
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "index": 0,
+      "scrollable": true
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "index": 1,
+      "scrollable": true
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "index": 2,
+      "scrollable": true
+    },
+    {
+      "id": "children-labor-supply-equations",
+      "index": 3,
+      "scrollable": true
+    }
+  ],
+  "identification": {
+    "text": "IDENTIFICATION\n\nPrices from substitution with paid care and children's consumption from full-leisure Engel curves\n\nStep 1: the price of parental time (Propositions 2–3, Corollary 4).\n\nInterior regime (\n𝑚\n∗\n>\n0\nm\n∗\n>0). The wage responses of \n(\n𝑚\n∗\n,\n𝑡\n𝑊\n∗\n,\n𝑡\n𝐻\n∗\n)\n(m\n∗\n,t\nW\n∗\n\t​\n\n,t\nH\n∗\n\t​\n\n) identify the gradient of \n𝑔\ng⁠. At the optimum, the shadow price equals the marginal rate of technical substitution between a parental hour and purchased care, \n𝜃\n𝐼\n𝑤\n𝐼\n=\n−\n∂\n𝑔\n/\n∂\n𝑡\n𝐼\nθ\nI\n\t​\n\nw\nI\n\t​\n\n=−∂g/∂t\nI\n\t​\n\n⁠.\nCorner regime (\n𝑚\n∗\n=\n0\nm\n∗\n=0). Only the ratio \n𝜃\n𝑊\n𝑤\n𝑊\n/\n𝜃\n𝐻\n𝑤\n𝐻\nθ\nW\n\t​\n\nw\nW\n\t​\n\n/θ\nH\n\t​\n\nw\nH\n\t​\n\n is identified.\nResolving the corner. Under A.1, \n𝜃\n𝐼\nθ\nI\n\t​\n\n depends only on own childcare time, so it extends to the corner by continuity and the corner multiplier is identified.\nTestable implication. Childcare choices do not depend on non-labor income.\nStep 1: identification of the time cost of children. Original EEA slide 10, August 17, 2026.\nOpen larger figure\n\nThe slide uses \n𝜔\n𝐼\nω\nI\n\t​\n\n for the wage \n𝑤\n𝐼\nw\nI\n\t​\n\n⁠, and \n𝑐\n𝑇\n,\n𝑐\n𝑀\nc\nT\n\t​\n\n,c\nM\n\t​\n\n for \n𝑒\n𝑇\n,\n𝑒\n𝑀\ne\nT\n\t​\n\n,e\nM\n\t​\n\n⁠.\n\nStep 2: the monetary cost (Proposition 6).\n\nTwo assumptions make the full-leisure demand \n𝐿\n𝐼\n=\n𝐹\n𝐼\n(\n𝑤\n𝐻\n,\n𝑤\n𝑊\n,\n𝑌\n𝑅\n)\nL\nI\n\t​\n\n=F\nI\n\t​\n\n(w\nH\n\t​\n\n,w\nW\n\t​\n\n,Y\nR\n\t​\n\n) the same for parents and non-parents:\n\nA.2: children leave each spouse’s trade-off between full leisure and own consumption unchanged.\nA.3: children affect the sharing rule only through remaining full income \n𝑌\n𝑅\nY\nR\n\t​\n\n⁠.\n\n𝐹\n𝐼\nF\nI\n\t​\n\n is therefore estimated on childless couples and inverted for parents:\n\n𝑒\n𝑀\n  \n=\n  \n𝑌\n−\n𝑒\n𝑇\n−\n𝐹\n𝐼\n−\n1\n ⁣\n(\n𝑤\n𝐻\n,\n𝑤\n𝑊\n,\n𝐿\n𝐼\n)\n.\ne\nM\n\t​\n\n=Y−e\nT\n\t​\n\n−F\nI\n−1\n\t​\n\n(w\nH\n\t​\n\n,w\nW\n\t​\n\n,L\nI\n\t​\n\n).\nSymbols, units, and indices\n\nThis requires only local invertibility of one spouse’s Engel curve. It is robust to unmodelled interactions such as altruism, public goods or home production, provided children affect behavior only through \n𝑌\n𝑅\nY\nR\n\t​\n\n⁠. Under the weaker Similarity Across Types condition (A.2′), identification rests instead on the curvature of \n∂\n𝐹\n𝐼\n/\n∂\n𝑌\n𝑅\n∂F\nI\n\t​\n\n/∂Y\nR\n\t​\n\n⁠.\n\nStep 2: identification of the monetary cost of children. Original EEA slide 11, August 17, 2026.\nOpen larger figure\n\nThe slide uses \n𝜔\n𝐼\nω\nI\n\t​\n\n for the wage \n𝑤\n𝐼\nw\nI\n\t​\n\n⁠, and \n𝑐\n𝑇\n,\n𝑐\n𝑀\nc\nT\n\t​\n\n,c\nM\n\t​\n\n for \n𝑒\n𝑇\n,\n𝑒\n𝑀\ne\nT\n\t​\n\n,e\nM\n\t​\n\n⁠. The utility-profit terms \n𝜋\n𝐻\n,\n𝜋\n𝑊\nπ\nH\n\t​\n\n,π\nW\n\t​\n\n in this general-model diagram are zero under the linear process-benefit specification used for estimation.",
+    "figureCount": 2,
+    "figureWidths": [
+      760,
+      760
+    ]
+  },
+  "immersive": {
+    "open": true,
+    "arrows": true,
+    "escape": true
+  },
+  "emailFont": "18px"
+}

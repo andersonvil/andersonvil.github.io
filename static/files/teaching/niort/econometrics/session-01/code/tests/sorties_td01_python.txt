@@ -1,0 +1,84 @@
+========== [ex1] exercice 1, calculs à la main
+moyennes : 5.0 10.0
+sommes : -42.0 28.0 70.0
+s2_x, s2_y, s_xy : 5.6 14.0 -8.4
+r : -0.9487
+b0, b1 : 17.5 -1.5
+valeurs prédites : [14.5 13.  11.5  8.5  7.   5.5]
+résidus : [-0.5 -1.   1.5  0.5  1.  -1.5]
+somme des résidus : 0.0  somme x*résidus : 0.0
+SCT, SCE, SCR : 70.0 63.0 7.0  R2 : 0.9
+prévisions à 5 et 15 euros : 10.0 -5.0
+prix en centimes, b0 et b1 : 17.5 -0.015
+
+========== [ex2] exercice 2, les deux droites de régression
+pente de y sur x : -1.5  pente de x sur y : -0.6
+produit des pentes : 0.9  r au carré : 0.9
+pente de la seconde droite dans le plan (x, y) : -1.6667
+
+========== [ex3] exercice 3, table de régression
+{'Intercept': 22.7299, 'attend': 0.1209} {'Intercept': 0.8769, 'attend': 0.0328} n = 680 R2 = 0.0196
+{'Intercept': 17.7067, 'priGPA': 3.164} {'Intercept': 0.8169, 'priGPA': 0.309} n = 680 R2 = 0.1339
+{'Intercept': 15.0806, 'priGPA': 4.2781} {'Intercept': 0.9192, 'priGPA': 0.3477} n = 680 R2 = 0.1825
+min et max de attend : 2 32
+note prédite pour 32 et 16 séances : [26.5988, 24.6644]
+séances prédites pour priGPA = 3 : 27.9149
+présence en % : {'Intercept': 22.7299, 'atndrte': 0.0387} R2 = 0.0196
+
+========== [ex4] exercice 4, résultats potentiels
+effets individuels : [3 2 3 2 1 2 1 2]  effet moyen : 2.0
+effet moyen chez les participants : 2.5
+écart observé : -2.5  =  2.5 + -5.0
+écart avec ce tirage : 2.0
+
+========== [ex4-tirages] exercice 4, les 70 tirages possibles
+nombre de tirages : 70  moyenne des écarts : 2.0
+plus petit et plus grand écart : -2.5 6.5
+
+========== [ex5-depart] exercice 5, charger les données
+         country  alcohol  deaths  heart      liver
+0      Australia      2.5     785    211  15.300000
+1        Austria      3.9     863    167  45.599998
+2       Belg/Lux      2.9     883    131  20.700001
+3         Canada      2.4     793    191  16.400000
+4        Denmark      2.9     971    220  23.900000
+5        Finland      0.8     970    297  19.000000
+6         France      9.1     751     71  37.900002
+7        Iceland      0.8     743    211  11.200000
+8        Ireland      0.7    1000    300   6.500000
+9         Israel      0.6     834    183  13.700000
+10         Italy      7.9     775    107  42.200001
+11         Japan      1.5     680     36  23.200001
+12   Netherlands      1.8     773    167   9.200000
+13   New Zealand      1.9     916    266   7.700000
+14        Norway      0.8     806    227  12.200000
+15         Spain      6.5     724     86  36.400002
+16        Sweden      1.6     743    207  11.200000
+17   Switzerland      5.8     693    115  20.299999
+18            UK      1.3     941    285  10.300000
+19            US      1.2     926    199  22.100000
+20  West Germany      2.7     861    172  36.700001
+
+========== [ex5-mco] exercice 5, statistiques et MCO
+       alcohol    heart
+count   21.000   21.000
+mean     2.838  183.286
+std      2.458   73.159
+min      0.600   36.000
+25%      1.200  131.000
+50%      1.900  191.000
+75%      2.900  220.000
+max      9.100  300.000
+covariance : -118.9314
+corrélation : -0.6613
+{'Intercept': 239.1467, 'alcohol': -19.6826} R2 = 0.4374 n = 21
+   country  alcohol  heart   prevu  residu
+6   France      9.1     71   60.04   10.96
+11   Japan      1.5     36  209.62 -173.62
+somme des résidus : 0.0
+SCT, SCE, SCR : 107044.29 46817.51 60226.77
+liver ~ alcohol {'Intercept': 10.8548, 'alcohol': 3.5864} R2 = 0.5435
+deaths ~ alcohol {'Intercept': 876.205, 'alcohol': -16.2635} R2 = 0.1716
+
+========== [ex5-figure] exercice 5, nuage de points et droite
+

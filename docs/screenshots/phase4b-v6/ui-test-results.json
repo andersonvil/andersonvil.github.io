@@ -1,0 +1,176 @@
+{
+  "poems": [
+    {
+      "slug": "calligraphie-de-bonheur",
+      "playing": {
+        "track": "Great Aunt Henrietta",
+        "currentTime": 0.003691,
+        "duration": 269.789252,
+        "readyState": 4,
+        "paused": false
+      },
+      "pausedAt": 0.009759,
+      "resumedAndAdjusted": {
+        "currentTime": 0.307404,
+        "duration": 269.789252,
+        "progressValue": "0.3",
+        "progressMax": "269.789252",
+        "volume": 0.25,
+        "paused": false,
+        "label": "Pause music",
+        "status": "Playing Great Aunt Henrietta."
+      }
+    },
+    {
+      "slug": "ma-cherie",
+      "playing": {
+        "track": "Castle in the cloud",
+        "currentTime": 0.015201,
+        "duration": 150.254943,
+        "readyState": 4,
+        "paused": false
+      },
+      "pausedAt": 0.018734,
+      "resumedAndAdjusted": {
+        "currentTime": 0.33063,
+        "duration": 150.254943,
+        "progressValue": "0.3",
+        "progressMax": "150.254943",
+        "volume": 0.25,
+        "paused": false,
+        "label": "Pause music",
+        "status": "Playing Castle in the cloud."
+      }
+    },
+    {
+      "slug": "mes-nuits",
+      "playing": {
+        "track": "Night Sun",
+        "currentTime": 0.015345,
+        "duration": 169.451474,
+        "readyState": 4,
+        "paused": false
+      },
+      "pausedAt": 0.027223,
+      "resumedAndAdjusted": {
+        "currentTime": 0.313571,
+        "duration": 169.451474,
+        "progressValue": "0.3",
+        "progressMax": "169.451474",
+        "volume": 0.25,
+        "paused": false,
+        "label": "Pause music",
+        "status": "Playing Night Sun."
+      }
+    },
+    {
+      "slug": "on-me-l-a-interdit",
+      "playing": {
+        "track": "Lost in the city",
+        "currentTime": 0.012753,
+        "duration": 188.504308,
+        "readyState": 4,
+        "paused": false
+      },
+      "pausedAt": 0.026347,
+      "resumedAndAdjusted": {
+        "currentTime": 0.310181,
+        "duration": 188.504308,
+        "progressValue": "0.3",
+        "progressMax": "188.504308",
+        "volume": 0.25,
+        "paused": false,
+        "label": "Pause music",
+        "status": "Playing Lost in the city."
+      }
+    }
+  ],
+  "scrollspy": [
+    {
+      "slug": "household-demand-leisure",
+      "initial": "Question",
+      "methods": "Methods and data",
+      "findings": "Findings and limits"
+    },
+    {
+      "slug": "children-costs-one-adult-household",
+      "initial": "Question",
+      "methods": "Methods and data",
+      "findings": "Findings and limits"
+    },
+    {
+      "slug": "children-labor-supply-equations",
+      "initial": "Question",
+      "methods": "Methods and data",
+      "findings": "Findings and limits"
+    }
+  ],
+  "context": {
+    "researchFromContact": true,
+    "paperBackResearch": true,
+    "paperBackContactCount": 0,
+    "returnedBackContact": true,
+    "menuClearsOrigin": true,
+    "unsafeOriginIgnored": true
+  },
+  "labSingleTrack": {
+    "count": 4,
+    "state": [
+      {
+        "paused": true,
+        "currentTime": 0.043216
+      },
+      {
+        "paused": false,
+        "currentTime": 0.088958
+      },
+      {
+        "paused": true,
+        "currentTime": 0
+      },
+      {
+        "paused": true,
+        "currentTime": 0
+      }
+    ]
+  },
+  "keyboard": {
+    "focusedLabel": "Methods and data",
+    "enterActivated": true,
+    "currentSection": "Methods and data"
+  },
+  "accessibility": {
+    "playButton": true,
+    "progressSlider": true,
+    "volumeSlider": true,
+    "playerRegion": true
+  },
+  "theme": {
+    "before": "light",
+    "after": "dark",
+    "nextLabel": "Switch to light theme"
+  },
+  "responsive": [
+    {
+      "route": "/teaching/",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "route": "/beyond-economics/ma-cherie/",
+      "width": 375,
+      "scrollWidth": 375
+    }
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "macros/context-back.html" as context_back %}
+{% block title %}{{ page.title }} | Beyond Economics{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block content %}
+{% set preview = load_data(path="data/preview_synthetic.toml") %}
+<div class="shell detail-navigation">{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}<div class="breadcrumb"><a href="/beyond-economics/">Beyond Economics</a><span aria-hidden="true">/</span><span>{{ page.title }}</span></div></div>
+<article class="beyond-reading shell" data-synthetic="true" data-publication-status="blocked">
+  <header><p class="preview-label">{{ config.extra.preview_label }}</p><p class="eyebrow">{{ page.extra.category }}</p><h1>{{ page.title }}</h1>{% for work in preview.beyond_economics %}{% if work.id == page.extra.work_id %}<p class="lede">{{ work.summary }}</p><p class="byline">By {{ work.author }} · {{ work.language }} · {{ work.date }} · {{ work.reading_minutes }} min read</p>{% endif %}{% endfor %}</header>
+  <div class="prose creative-prose">{{ page.content | safe }}</div>
+  <footer class="article-footer"><p><strong>Preview status:</strong> this neutral fixture is not a work by Anderson Vil and cannot enter a production build.</p>{{ context_back::bar(label="Beyond Economics", url="/beyond-economics/") }}</footer>
+</article>
+{% endblock content %}

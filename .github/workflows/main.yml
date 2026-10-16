@@ -1,19 +1,57 @@
-# On every push this script is executed
-on: push
 name: Build and deploy GH Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: publish-gh-pages
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: build_and_deploy
-        uses: shalzz/zola-deploy-action@master
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run editorial
+      - name: Check production configuration
+        shell: pwsh
+        run: ./scripts/check-production.ps1
+      - name: Build with Zola 0.19.2
+        uses: shalzz/zola-deploy-action@960304368c31a93d6991d64ae962df0786b905f1
         env:
-          # Target branch
-          PAGES_BRANCH: gh-pages
-          # Provide personal access token
-          #TOKEN: ${{ secrets.TOKEN }}
-          # Or if publishing to the same repo, use the automatic token
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_ONLY: 'true'
+      - name: Check built public files
+        run: python scripts/audit-production.py --build-dir public
+      - name: Record source commit
+        run: echo "$GITHUB_SHA" > public/deployment-commit.txt
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: .pages
+      - name: Publish built files preserving branch history
+        shell: pwsh
+        run: |
+          $target = (Resolve-Path -LiteralPath '.pages').Path
+          $expected = Join-Path $env:GITHUB_WORKSPACE '.pages'
+          if ($target -ne $expected) { throw 'Unexpected publication directory' }
+          Get-ChildItem -LiteralPath $target -Force | Where-Object Name -ne '.git' | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Recurse -Force }
+          Get-ChildItem -LiteralPath 'public' -Force | Copy-Item -Destination $target -Recurse -Force
+          New-Item -ItemType File -Path (Join-Path $target '.nojekyll') -Force | Out-Null
+          git -C $target config user.name 'github-actions[bot]'
+          git -C $target config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C $target add --all
+          git -C $target commit -m "Deploy source $env:GITHUB_SHA"
+          if ($LASTEXITCODE -ne 0) { throw 'Publication commit failed' }
+          git -C $target push origin HEAD:gh-pages
+          if ($LASTEXITCODE -ne 0) { throw 'Publication push failed' }
+      - name: Request legacy GitHub Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

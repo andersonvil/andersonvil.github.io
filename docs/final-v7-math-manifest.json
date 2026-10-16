@@ -1,0 +1,3120 @@
+{
+  "engine": "KaTeX 0.16.22",
+  "formulas": [
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I = 1"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_W = 0.44"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "w_I \\;=\\; \\underbrace{\\theta_I\\, w_I}_{\\text{productive: substitutes for paid care}} \\;+\\; \\underbrace{(1-\\theta_I)\\, w_I}_{\\text{process benefit}} ."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(1-\\theta_I)w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "e_T \\;=\\; \\min_{t_W,\\,t_H}\\; \\theta_W w_W\\, t_W + \\theta_H w_H\\, t_H + g(t_W, t_H, n),"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g(t_W,t_H,n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}L_I&=l_I+(1-\\theta_I)t_I,\\\\ e_T&=\\theta_Hw_Ht_H+\\theta_Ww_Wt_W+m,\\\\ e_M&=c_K,\\\\ e&=e_M+e_T.\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I,t_I,L_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I \\in \\{W, H\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "U_I(l_I, t_I, c_I, c_K, n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g(t_W, t_H, n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m \\ge g(t_W, t_H, n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m \\ge 0"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M = c_K"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T + e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\varphi_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I = l_I + (1-\\theta_I)\\,t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "e_M \\;=\\; Y - e_T - F_I^{-1}\\!\\left(w_H, w_W, L_I\\right)."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_H,w_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "F_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "F_I^{-1}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m^* > 0"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(m^*, t_W^*, t_H^*)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I w_I = -\\partial g/\\partial t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m^* = 0"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_W w_W / \\theta_H w_H"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\omega_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_T,c_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T,e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I = F_I(w_H, w_W, Y_R)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "F_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\partial F_I / \\partial Y_R"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\omega_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "c_T,c_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T,e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\pi_H,\\pi_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "e_T = \\alpha^* + \\textstyle\\sum_I \\beta_I^* w_I^* + 2\\sum_I \\gamma_I \\sqrt{w_I^*} + 2\\gamma_{WH}\\sqrt{w_W^* w_H^*}."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^*=\\theta_Iw_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha^*,\\beta_I^*,\\gamma_I,\\gamma_{WH}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nt_H&=\\beta_H z^{T,H}+\\frac{\\gamma_H}{\\sqrt{\\theta_H w_H}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_W w_W}{\\theta_H w_H}}+v_H,\\\\[.4em]\nt_W&=\\beta_W z^{T,W}+\\frac{\\gamma_W}{\\sqrt{\\theta_W w_W}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_H w_H}{\\theta_W w_W}}+v_W,\\\\[.4em]\nm^*&=\\alpha z^T+\\gamma_W\\sqrt{\\theta_W w_W}+\\gamma_H\\sqrt{\\theta_H w_H}+u,\\\\\nm&=\\begin{cases}m^*,&m^*\\ge0,\\\\0,&m^*<0.\\end{cases}\n\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "H,W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "t_H,t_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m^*"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "m"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta_I,\\gamma_I,\\gamma_{WH}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "z^{T,I},z^T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "(u,v_W,v_H)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nL_H&=a_Hz^{L,H}+b_Hw_H+c_Hw_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_Wz^{L,W}+b_Ww_W+c_Ww_H+d_WY_R+e_WY_R^2+\\varepsilon_W.\n\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I=l_I+(1-\\hat{\\theta}_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_H,w_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "z^{L,I}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nL_H&=a_H(n)z^{L,H}+b_H(n)w_H+c_H(n)w_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_W(n)z^{L,W}+b_W(n)w_W+c_W(n)w_H+d_WY_R+e_WY_R^2+\\varepsilon_W,\\\\[.4em]\na_I(n)&=a_I+a'_I\\delta(n),\\quad b_I(n)=b_I+b'_I\\delta(n),\\\\\nc_I(n)&=c_I+c'_I\\delta(n),\\quad\\delta(n)=\\mathbf{1}\\{n>0\\},\\\\[.4em]\nY_R&=Y-e_T-e_M,\\\\\ne_M&=\\log\\!\\left(1+\\exp(\\kappa_0+\\kappa_Hw_H+\\kappa_Ww_W+\\kappa_YY)\\right)\\sqrt n.\n\\end{aligned}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R=Y-e_T-e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "a_I,b_I,c_I,d_I,e_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "z^{L,I}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\varepsilon_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\mathbf{1}\\{n>0\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\kappa_0,\\kappa_H,\\kappa_W,\\kappa_Y"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\sqrt n"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\delta(n)"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "w_I^* = \\theta_I w_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\theta_W, \\theta_H"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "L_I = l_I + (1-\\hat{\\theta}_I)t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "Y_R = Y - e_M - e_T"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "e_M = \\log\\!\\big(1+\\exp(\\kappa_0 + \\kappa_H w_H + \\kappa_W w_W + \\kappa_Y Y)\\big)\\sqrt{n}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": true,
+      "tex": "t_I^{adj} = t_I^{psid} - k_I \\tanh\\!\\left(t_I^{psid}/k_I\\right)."
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "I\\in\\{H,W\\}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "t_I^{psid}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "t_I^{adj}"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "k_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\tanh"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "l_I = 168 - h_I - t_I"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_W"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_H"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_I < 1"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_W = 0.66"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_H = 0.18"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\gamma}_{WH} = -3.26"
+    },
+    {
+      "paper": "household-demand-leisure",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}_I"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\frac{\\omega}{\\varphi} \\;=\\; g\\!\\left(\\frac{p}{\\pi},\\; \\frac{\\varphi\\, y}{\\pi}\\right),"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "1-\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "g"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "1-\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p=0.034"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p=0.011"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\omega = \\alpha z^{\\omega} + \\beta \\ln p + \\gamma \\ln y + \\eta (\\ln y)^2 + \\epsilon ."
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z^\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha,\\beta,\\gamma,\\eta"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\epsilon"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\frac{\\omega_i}{\\varphi_i}=\\alpha_i z_i^\\omega+\\beta_i\\ln\\!\\frac{p_i}{\\pi_i}+\\gamma_i\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}+\\eta_i\\left(\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}\\right)^2+\\epsilon_i."
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\\varphi_i&=\\frac{\\exp(\\psi_i)}{1+\\exp(\\psi_i)},\\\\\\psi_i&=(z_i^\\varphi)'\\theta_z+\\theta_y\\ln y_i+\\theta_p\\ln p_i+\\boldsymbol n_i'\\theta_n,\\\\\\varphi_i^{\\mathrm{alt}}&=\\frac{\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}{1+\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}\\,n^{-\\rho}.\\end{aligned}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\psi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\boldsymbol n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\widetilde n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\theta_z,\\theta_y,\\theta_p,\\theta_n"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\pi_i(p,y,n)=\\kappa_i\\ln(y_i)\\sqrt{n_i}."
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "n_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\kappa_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\\omega_i&=\\alpha_i z_i^\\omega+\\beta_i\\ln p_i+\\gamma_i\\ln y_i+\\eta_i(\\ln y_i)^2+D_iA_i+\\epsilon_i,\\\\A_i&=\\beta_i\\ln\\!\\frac1{\\pi_i}+\\ln\\!\\frac{\\varphi_i}{\\pi_i}\\left[\\gamma_i+\\eta_i\\ln\\!\\frac{y_i^2\\varphi_i}{\\pi_i}\\right]-\\omega_i\\frac{1-\\varphi_i}{\\varphi_i}.\\end{aligned}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "i\\in\\{f,m\\}"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\pi_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "z_i^\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\alpha_i,\\beta_i,\\gamma_i,\\eta_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\epsilon_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "D_i=1"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "A_i"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\omega/\\varphi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "p/\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\varphi y/\\pi"
+    },
+    {
+      "paper": "children-costs-one-adult-household",
+      "displayMode": false,
+      "tex": "\\sqrt{n}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "h(y,w,n) \\;=\\; F\\big(w,\\; y - e_t(w,n) - e_m(y,w,n)\\big) \\;-\\; t(w,n), \\qquad h(y,w,0) \\;=\\; F(w,y)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t,e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F(w,y)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n=0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "k"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "T_c(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "f(t,n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\lambda(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u_c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u_f"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "k"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "c"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u_f(h+t,c)+\\lambda(n)u_c(m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "f(t,n) + k \\ge T_c(n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t(w,n) = \\min_{t,k}\\,(tw + k)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m(y,w,n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2 < 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "h(y,w,n) \\;=\\; F\\big(w,\\; y - a(n) - b_t(n)\\,w - b_m(n)\\,y\\big) \\;-\\; b_t(n), \\qquad a = a_t + a_m ."
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_1,F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a_t,a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m = a_m(w,n) + b_m(w,n)\\,y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "0 < b_m < 1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\partial h / \\partial y = F'_2 \\cdot (1 - b_m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e = e_t + e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "(w,n)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w\\,t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e - w\\,t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "(e_t, e_m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "t = b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t = a_t + b_t w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_m = a_m + b_m y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_1 - \\alpha_2 b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_2(1-b_m)"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_1 > 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "F'_2 < 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n&(16)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2 y + \\alpha_3 w^2 + \\alpha_4 y^2 + \\alpha_5 y w + u\\\\\n&(17)\\quad e_t(w,n) = (a_t + b_t w)\\,\\delta(n)\\\\\n&(18)\\quad e_m(y,n) = (a_m + b_m y)\\,\\delta(n)\\\\\n&(19)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2\\big[y - a\\,\\delta(n) - b_t\\,\\delta(n)\\,w\\\\\n&\\qquad{}- b_m\\,\\delta(n)\\,y\\big] - b_t\\,\\delta(n) + u \\quad \\text{(linear baseline)}\\\\\n&(21)\\quad \\alpha_1^*(n) = \\alpha_1 - \\alpha_2 b_t\\,\\delta(n), \\qquad \\alpha_2^*(n) = \\alpha_2\\big(1 - b_m\\,\\delta(n)\\big)\\\\\n&(22)\\quad w = \\beta_w z^w + \\sigma_\\nu \\nu \\\\\n&(23)\\quad y = \\beta_y z^y + \\sigma_\\mu \\mu\n\\end{aligned}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\sqrt n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(0)=0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(1)=1"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "e_t,e_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a_t,a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_0,\\ldots,\\alpha_5"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\beta_w,\\beta_y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\sigma_\\nu,\\sigma_\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu,\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nq&=y-a\\delta(n)-b_t\\delta(n)w-b_m\\delta(n)y,\\\\\nh_0(w)&=\\alpha_0 z^h+\\alpha_1w+\\alpha_2q+\\alpha_3w^2+\\alpha_4q^2+\\alpha_5qw-b_t\\delta(n),\\\\\nw_0&=\\beta_w z^w,\\qquad w=w_0+\\sigma_\\nu\\nu,\\\\\ny&=\\beta_y z^y+\\sigma_\\mu\\mu,\\\\\nu&=\\rho_\\mu\\widehat\\mu+\\rho_\\nu\\nu+\\sigma_\\epsilon\\epsilon,\\\\\nh&=\\begin{cases}\nh_0(w)+\\rho_\\mu\\widehat\\mu+\\rho_\\nu(w-w_0)/\\sigma_\\nu+\\sigma_\\epsilon\\epsilon,&\\text{if this expression is positive},\\\\\n0,&\\text{otherwise}.\n\\end{cases}\n\\end{aligned}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n)=\\sqrt n"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "a=a_t+a_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_t"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "b_m"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\alpha_0,\\ldots,\\alpha_5"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^h"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^w"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "z^y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\beta_w,\\beta_y"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "w_0,h_0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\sigma_\\nu,\\sigma_\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu,\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\widehat\\mu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "u"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\rho_\\mu,\\rho_\\nu"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\sigma_\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\nu,\\epsilon"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\delta(n) = \\sqrt{n}"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "h = 0"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "q"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\hat{b}_t = 0.497"
+    },
+    {
+      "paper": "children-labor-supply-equations",
+      "displayMode": false,
+      "tex": "\\hat{b}_m = 0.089"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": true,
+      "tex": "b \\longrightarrow \\beta + \\gamma\\delta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\beta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\gamma"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\beta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\delta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\gamma"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\delta"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\gamma"
+    },
+    {
+      "paper": "note-modele",
+      "displayMode": false,
+      "tex": "\\delta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\log q_1=\\beta_0+\\sum_{j=1}^{J}\\beta_j\\log p_j+\\beta_{J+1}\\log Y+u . \\qquad \\htmlId{equation-1}{(1)}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nB(\\lambda p,\\lambda Y)&=\\{x\\ge0:\\ (\\lambda p)\\cdot x\\le \\lambda Y\\} \\\\\n&=\\{x\\ge0:\\ \\lambda\\,(p\\cdot x)\\le \\lambda Y\\} \\\\\n&=\\{x\\ge0:\\ p\\cdot x\\le Y\\}\\qquad\\text{(divide by }\\lambda>0) \\\\\n&=B(p,Y), \\\\\nx(\\lambda p,\\lambda Y)&=\\arg\\max_{x\\in B(\\lambda p,\\lambda Y)}U(x)=\\arg\\max_{x\\in B(p,Y)}U(x)=x(p,Y). && \\htmlId{equation-2}{(2)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\mathcal L&=\\sum_{j=1}^J\\alpha_j\\log x_j-\\mu\\Big(\\sum_{j=1}^Jp_jx_j-Y\\Big) && \\htmlId{equation-3}{(3)} \\\\\n\\frac{\\partial\\mathcal L}{\\partial x_j}&=\\frac{\\alpha_j}{x_j}-\\mu p_j=0,\\qquad j=1,\\dots,J && \\htmlId{equation-4}{(4)} \\\\\n\\frac{\\partial\\mathcal L}{\\partial \\mu}&=0\\ \\Longleftrightarrow\\ \\sum_{j=1}^Jp_jx_j=Y && \\htmlId{equation-5}{(5)} \\\\\n\\text{from (4):}\\quad p_jx_j&=\\frac{\\alpha_j}{\\mu},\\qquad j=1,\\dots,J && \\htmlId{equation-6}{(6)} \\\\\n\\text{sum (6) over } j:\\quad \\sum_{j=1}^Jp_jx_j&=\\frac1\\mu\\sum_{j=1}^J\\alpha_j=\\frac1\\mu \\\\\n\\text{use (5):}\\quad Y&=\\frac1\\mu\\quad\\Longrightarrow\\quad \\mu=\\frac1Y \\\\\n\\text{put }\\mu=1/Y\\text{ in (6), }j=1:\\quad p_1x_1&=\\alpha_1Y \\\\\nx_1&=\\frac{\\alpha_1Y}{p_1} && \\htmlId{equation-7}{(7)} \\\\\n\\log x_1&=\\log\\alpha_1-\\log p_1+\\log Y. && \\htmlId{equation-8}{(8)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "x_1(\\lambda p,\\lambda Y)=\\frac{\\alpha_1\\,\\lambda Y}{\\lambda p_1}=\\frac{\\alpha_1Y}{p_1}=x_1(p,Y)."
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\frac{\\partial\\mathcal L}{\\partial x_j}&=\\frac{\\alpha_j}{x_j-\\gamma_j}-\\mu p_j=0,\\qquad j=1,\\dots,J && \\htmlId{equation-9}{(9)} \\\\\n\\text{from (9):}\\quad p_jx_j&=p_j\\gamma_j+\\frac{\\alpha_j}{\\mu},\\qquad j=1,\\dots,J && \\htmlId{equation-10}{(10)} \\\\\n\\text{sum (10) over } j\\text{, use (5) and }\\textstyle\\sum_j\\alpha_j=1:\\quad Y&=\\sum_{j=1}^Jp_j\\gamma_j+\\frac1\\mu \\\\\n\\frac1\\mu&=Y-\\sum_{j=1}^Jp_j\\gamma_j && \\htmlId{equation-11}{(11)} \\\\\n\\text{put (11) in (10), }j=1:\\quad p_1x_1&=p_1\\gamma_1+\\alpha_1\\Big(Y-\\sum_{j=1}^Jp_j\\gamma_j\\Big) \\\\\nx_1&=\\gamma_1+\\frac{\\alpha_1}{p_1}\\Big(Y-\\sum_{j=1}^Jp_j\\gamma_j\\Big). && \\htmlId{equation-12}{(12)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\nx_1(\\lambda p,\\lambda Y)&=\\gamma_1+\\frac{\\alpha_1}{\\lambda p_1}\\Big(\\lambda Y-\\sum_{j=1}^J\\lambda p_j\\gamma_j\\Big)\n=\\gamma_1+\\frac{\\lambda\\,\\alpha_1}{\\lambda\\,p_1}\\Big(Y-\\sum_{j=1}^Jp_j\\gamma_j\\Big)=x_1(p,Y).\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\frac{\\partial x_1}{\\partial Y}=\\frac{\\alpha_1}{p_1}\n\\quad&\\Longrightarrow\\quad \\eta_1=\\frac{Y}{x_1}\\frac{\\partial x_1}{\\partial Y}=\\frac{\\alpha_1Y}{p_1x_1} \\\\\n\\frac{\\partial x_1}{\\partial p_j}=-\\frac{\\alpha_1\\gamma_j}{p_1}\\ (j\\ne1)\n\\quad&\\Longrightarrow\\quad \\varepsilon_{1j}=\\frac{p_j}{x_1}\\frac{\\partial x_1}{\\partial p_j}=-\\frac{\\alpha_1\\gamma_jp_j}{p_1x_1} \\\\\n\\frac{\\partial x_1}{\\partial p_1}=-\\frac{\\alpha_1}{p_1^2}\\Big(Y-\\sum_{j}p_j\\gamma_j\\Big)-\\frac{\\alpha_1\\gamma_1}{p_1}=-\\frac{x_1-\\gamma_1+\\alpha_1\\gamma_1}{p_1}\n\\quad&\\Longrightarrow\\quad \\varepsilon_{11}=-1+\\frac{(1-\\alpha_1)\\gamma_1}{x_1}. && \\htmlId{equation-13}{(13)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\np_1x_1\\Big(\\sum_{j=1}^J\\varepsilon_{1j}+\\eta_1\\Big)\n&=\\big[-p_1x_1+(1-\\alpha_1)p_1\\gamma_1\\big]-\\alpha_1\\sum_{j\\ne1}p_j\\gamma_j+\\alpha_1Y \\\\\n&=-p_1x_1+p_1\\gamma_1+\\alpha_1\\Big(Y-\\sum_{j=1}^Jp_j\\gamma_j\\Big) \\\\\n&=-p_1x_1+p_1x_1=0\\qquad\\text{by (12).}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\ng(\\lambda)&=x_1(p,Y)\\ \\text{ for all }\\lambda>0\\ \\text{ by (2)}\\quad\\Longrightarrow\\quad g'(\\lambda)=0 \\\\\ng'(\\lambda)&=\\sum_{j=1}^Jp_j\\,\\frac{\\partial x_1}{\\partial p_j}(\\lambda p,\\lambda Y)+Y\\,\\frac{\\partial x_1}{\\partial Y}(\\lambda p,\\lambda Y)\\qquad\\text{(chain rule)} \\\\\n\\text{at }\\lambda=1:\\quad 0&=\\sum_{j=1}^Jp_j\\,\\frac{\\partial x_1}{\\partial p_j}+Y\\,\\frac{\\partial x_1}{\\partial Y} \\\\\n\\text{divide by }x_1:\\quad 0&=\\sum_{j=1}^J\\varepsilon_{1j}+\\eta_1. && \\htmlId{equation-14}{(14)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\log q_1(\\lambda p,\\lambda Y)&=\\beta_0+\\sum_{j=1}^J\\beta_j\\log(\\lambda p_j)+\\beta_{J+1}\\log(\\lambda Y)+u \\\\\n&=\\beta_0+\\sum_{j=1}^J\\beta_j(\\log\\lambda+\\log p_j)+\\beta_{J+1}(\\log\\lambda+\\log Y)+u \\\\\n&=\\underbrace{\\beta_0+\\sum_{j=1}^J\\beta_j\\log p_j+\\beta_{J+1}\\log Y+u}_{\\log q_1(p,Y)}+\\Big(\\sum_{j=1}^J\\beta_j+\\beta_{J+1}\\Big)\\log\\lambda \\\\\n&=\\log q_1(p,Y)+\\theta\\log\\lambda. && \\htmlId{equation-15}{(15)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\text{homogeneity of degree zero}\\quad\\Longleftrightarrow\\quad \\sum_{j=1}^J\\beta_j+\\beta_{J+1}=0. \\qquad \\htmlId{equation-16}{(16)}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\sum_{j=1}^{J-1}\\beta_j+\\beta_J+\\beta_{J+1}&=0 \\\\\n\\beta_J&=-\\Big(\\sum_{j=1}^{J-1}\\beta_j+\\beta_{J+1}\\Big). && \\htmlId{equation-17}{(17)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\log q_1&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log p_j+\\beta_J\\log p_J+\\beta_{J+1}\\log Y+u \\\\\n&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log p_j-\\Big(\\sum_{j=1}^{J-1}\\beta_j+\\beta_{J+1}\\Big)\\log p_J+\\beta_{J+1}\\log Y+u \\\\\n&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log p_j-\\sum_{j=1}^{J-1}\\beta_j\\log p_J-\\beta_{J+1}\\log p_J+\\beta_{J+1}\\log Y+u \\\\\n&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\,(\\log p_j-\\log p_J)+\\beta_{J+1}\\,(\\log Y-\\log p_J)+u \\\\\n\\log q_1&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log\\frac{p_j}{p_J}+\\beta_{J+1}\\log\\frac{Y}{p_J}+u. && \\htmlId{equation-18}{(18)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\hat{\\beta}_J&=-\\Big(\\sum_{j=1}^{J-1}\\hat{\\beta}_j+\\hat{\\beta}_{J+1}\\Big)=a'\\hat{b}_R \\\\\n\\widehat{\\operatorname{Var}}(\\hat{\\beta}_J)&=a'\\hat{V}_Ra=\\sum_{j\\in S}\\widehat{\\operatorname{Var}}(\\hat{\\beta}_j)+2\\sum_{j,k\\in S,\\ j<k}\\widehat{\\operatorname{Cov}}(\\hat{\\beta}_j,\\hat{\\beta}_k). && \\htmlId{equation-19}{(19)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\text{FOC of } (y-X\\beta)'(y-X\\beta)+2\\nu\\,c'\\beta:\\quad -2X'(y-X\\hat{\\beta}_R)+2\\nu c&=0 \\\\\nX'X\\hat{\\beta}_R&=X'y-\\nu c \\\\\n\\hat{\\beta}_R&=\\hat{\\beta}_U-\\nu h \\\\\n\\text{impose } c'\\hat{\\beta}_R=0:\\quad 0=\\hat{\\theta}-\\nu m\\quad&\\Longrightarrow\\quad \\nu=\\hat{\\theta}/m \\\\\n\\hat{\\beta}_R&=\\hat{\\beta}_U-\\frac{\\hat{\\theta}}{m}\\,h. && \\htmlId{equation-20}{(20)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\hat{\\beta}_{1,R}&=\\hat{\\beta}_{1,U}+\\delta\\,\\hat{\\theta},\\qquad\n\\delta\\equiv-\\frac{h_1}{m}=-\\frac{{\\operatorname{Cov}}(\\hat{\\beta}_{1,U},\\hat{\\theta})}{{\\operatorname{Var}}(\\hat{\\theta})} && \\htmlId{equation-21}{(21)} \\\\\nE(\\hat{\\beta}_{1,R})&=\\beta_1+\\delta\\,\\theta && \\htmlId{equation-22}{(22)} \\\\\n{\\operatorname{Var}}(\\hat{\\beta}_{1,R})&={\\operatorname{Var}}(\\hat{\\beta}_{1,U})+\\delta^2{\\operatorname{Var}}(\\hat{\\theta})+2\\delta\\,{\\operatorname{Cov}}(\\hat{\\beta}_{1,U},\\hat{\\theta}) \\\\\n&={\\operatorname{Var}}(\\hat{\\beta}_{1,U})+\\frac{{\\operatorname{Cov}}(\\hat{\\beta}_{1,U},\\hat{\\theta})^2}{{\\operatorname{Var}}(\\hat{\\theta})}-2\\,\\frac{{\\operatorname{Cov}}(\\hat{\\beta}_{1,U},\\hat{\\theta})^2}{{\\operatorname{Var}}(\\hat{\\theta})} \\\\\n&=(1-\\rho^2)\\,{\\operatorname{Var}}(\\hat{\\beta}_{1,U}),\\qquad \\rho\\equiv\\operatorname{corr}(\\hat{\\beta}_{1,U},\\hat{\\theta}). && \\htmlId{equation-23}{(23)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\hat{\\theta}&=c'\\hat{\\beta}_U=\\sum_{j=1}^J\\hat{\\beta}_j+\\hat{\\beta}_{J+1} \\\\\n{\\operatorname{se}}(\\hat{\\theta})^2&=c'\\hat{V}_Uc=s^2m=\\sum_{j=1}^{J+1}\\widehat{\\operatorname{Var}}(\\hat{\\beta}_j)+2\\sum_{1\\le j<k\\le J+1}\\widehat{\\operatorname{Cov}}(\\hat{\\beta}_j,\\hat{\\beta}_k) \\\\\nt&=\\frac{\\hat{\\theta}}{{\\operatorname{se}}(\\hat{\\theta})}\\ \\sim\\ t_{n-K}\\quad\\text{under }H_0\\text{ (normal errors).} && \\htmlId{equation-24}{(24)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\log q_1&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log p_j+\\beta_J\\log p_J+\\beta_{J+1}\\log Y+u \\\\\n&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\Big(\\log\\frac{p_j}{p_J}+\\log p_J\\Big)+\\beta_J\\log p_J+\\beta_{J+1}\\Big(\\log\\frac{Y}{p_J}+\\log p_J\\Big)+u \\\\\n&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log\\frac{p_j}{p_J}+\\beta_{J+1}\\log\\frac{Y}{p_J}+\\Big(\\sum_{j=1}^{J-1}\\beta_j+\\beta_J+\\beta_{J+1}\\Big)\\log p_J+u \\\\\n\\log q_1&=\\beta_0+\\sum_{j=1}^{J-1}\\beta_j\\log\\frac{p_j}{p_J}+\\beta_{J+1}\\log\\frac{Y}{p_J}+\\theta\\log p_J+u. && \\htmlId{equation-25}{(25)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": true,
+      "tex": "\\begin{aligned}\n\\mathrm{SSR}_R&=e_U'e_U+2\\frac{\\hat{\\theta}}{m}h'X'e_U+\\frac{\\hat{\\theta}^2}{m^2}h'X'Xh\n=\\mathrm{SSR}_U+\\frac{\\hat{\\theta}^2}{m} && \\htmlId{equation-26}{(26)} \\\\\nF&=\\frac{(\\mathrm{SSR}_R-\\mathrm{SSR}_U)/1}{\\mathrm{SSR}_U/(n-K)}=\\frac{\\hat{\\theta}^2/m}{s^2}=\\frac{\\hat{\\theta}^2}{{\\operatorname{se}}(\\hat{\\theta})^2}=t^2\\ \\sim\\ F(1,n-K)\\ \\text{ under }H_0. && \\htmlId{equation-27}{(27)}\n\\end{aligned}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "x"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p\\cdot x\\le 2000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "2p\\cdot x\\le 4000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "Y"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda>0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "q_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda^{\\theta}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta\\equiv\\sum_{j=1}^J\\beta_j+\\beta_{J+1}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0.1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "2^{0.1}-1=7.2\\%"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "x(p,Y)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U(x)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "B(p,Y)=\\{x\\ge0:\\ p\\cdot x\\le Y\\}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "u"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda>0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U(x)=\\sum_j\\alpha_j\\log x_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\alpha_j>0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\sum_j\\alpha_j=1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_0=\\log\\alpha_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_1=-1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_j=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "j=2,\\dots,J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_{J+1}=1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=-1+0+1=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U(x)=\\sum_j\\alpha_j\\log(x_j-\\gamma_j)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\alpha_j>0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\sum_j\\alpha_j=1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "x_j>\\gamma_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "Y>\\sum_jp_j\\gamma_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log(x_j-\\gamma_j)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log x_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\partial\\mathcal L/\\partial\\mu=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\gamma_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\alpha_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "(\\alpha_1/p_1)(Y-\\sum_jp_j\\gamma_j)=x_1-\\gamma_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\gamma_j\\ne0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\gamma_j>0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\eta_1\\ne1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\gamma=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p_1x_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "J=3"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\alpha=(0.3,0.3,0.4)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\gamma=(2,3,1)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p=(2,1,1.5)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "Y=20"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "x_1=3.725"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\varepsilon_{11}=-0.624"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\varepsilon_{12}=-0.121"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\varepsilon_{13}=-0.060"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\eta_1=0.805"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "(p,Y)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "g(\\lambda)=x_1(\\lambda p,\\lambda Y)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\varepsilon_{1j}=\\partial\\log q_1/\\partial\\log p_j=\\beta_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\eta_1=\\beta_{J+1}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "u"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "E(\\log q_1\\mid p,Y)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "U=0.4\\log x_1+0.6\\log x_2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p=(40,25)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "Y=2000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "(p,Y)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "(2p,2Y)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "x^*"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "x^*"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda p_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "Y"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda Y"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta\\log\\lambda=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda>0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda=2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log\\lambda\\ne0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\lambda"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "J+1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "J-1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "K=J+2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "1+(J-1)+1=J+1=K-1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "Y"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{b}_R=(\\hat{\\beta}_0,\\hat{\\beta}_1,\\dots,\\hat{\\beta}_{J-1},\\hat{\\beta}_{J+1})'"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{V}_R"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "a=(0,-1,\\dots,-1)'"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "S=\\{1,\\dots,J-1,J+1\\}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "6\\times 10^{-15}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "y=X\\beta+u"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta=(\\beta_0,\\dots,\\beta_{J+1})'"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "c'\\beta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "c=(0,1,\\dots,1)'"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_U=(X'X)^{-1}X'y"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}=c'\\hat{\\beta}_U"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "h=(X'X)^{-1}c"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "m=c'(X'X)^{-1}c"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "(y-X\\beta)'(y-X\\beta)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "c'\\beta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{Var}(\\hat{\\beta}_U)=\\sigma^2(X'X)^{-1}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{Cov}(\\hat{\\beta}_U,\\hat{\\theta})=\\mathrm{Var}(\\hat{\\beta}_U)\\,c=\\sigma^2h"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{Var}(\\hat{\\theta})=\\sigma^2m"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "h"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "h_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "X"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\rho^2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\delta\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "(1,\\dots,1)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\rho"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\delta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "j<J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log(p_j/p_J)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0:\\ \\sum_{j=1}^J\\beta_j+\\beta_{J+1}=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_1:\\ \\sum_{j=1}^J\\beta_j+\\beta_{J+1}\\ne0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "s^2=\\mathrm{SSR}_U/(n-K)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{V}_U=s^2(X'X)^{-1}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_j=\\log(p_j/p_J)+\\log p_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log Y=\\log(Y/p_J)+\\log p_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_0,\\dots,\\beta_{J-1},\\beta_{J+1}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log q_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{se}(\\hat{\\theta})"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F=t^2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "e_U=y-X\\hat{\\beta}_U"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "X'e_U=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "y-X\\hat{\\beta}_R=e_U+(\\hat{\\theta}/m)Xh"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "h'X'Xh=c'(X'X)^{-1}c=m"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "W=n(\\mathrm{SSR}_R-\\mathrm{SSR}_U)/\\mathrm{SSR}_U"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "LR=n\\log(\\mathrm{SSR}_R/\\mathrm{SSR}_U)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\chi^2_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "W\\ge LR"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}\\pm t_{n-K,0.975}\\,\\mathrm{se}(\\hat{\\theta})"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "J=3"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "50"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\times"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "10"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "n=500"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_{jrt}=\\pi_t+\\mu_{jr}+\\epsilon_{jrt}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\pi_t\\sim N(0,0.2^2)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mu_{jr}\\sim N(0,0.15^2)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\epsilon_{jrt}\\sim N(0,0.05^2)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log Y_{rt}=\\log 2000+\\pi_t+\\omega_{rt}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\omega_{rt}\\sim N(0,0.3^2)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "u\\sim N(0,0.2^2)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta=(-0.6,\\,0.2,\\,0.1,\\,0.3)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.4"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0.1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "u"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_3"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_3"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\beta_4"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log Y"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=\\sum_j\\beta_j+\\beta_4"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}-\\hat{\\beta}_1-\\hat{\\beta}_2-\\hat{\\beta}_4"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_3"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.050"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.048"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_3"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.048"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.045"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\rho}=0.25"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "t^2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "2\\times 10^{-13}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p=0.51"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p=0.17"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "[-0.030,0.165]"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0.1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "2{,}000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F(1,495)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p=0.53"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "5.0\\%"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.5"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0.1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.60"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "n=500"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.98"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "n=2{,}000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0:\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0.1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{se}(\\hat{\\theta})"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "t^2"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "p"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "t"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\chi^2_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "2{,}000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "H_0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F(1,495)"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "n=500"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "2{,}000"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{corr}(\\log p_1,\\log p_2)=0.97"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{corr}=0.00"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_1"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.059"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.049"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.83"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.83"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "1.00"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "-0.029"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "-0.031"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "-0.031"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "-0.031"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "-0.6"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\mathrm{se}(\\hat{\\theta})"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.106"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "0.011"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta=0"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\log p_J"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\beta}_j"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\hat{\\theta}"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "F"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    },
+    {
+      "paper": "homogeneity",
+      "displayMode": false,
+      "tex": "\\theta"
+    }
+  ]
+}

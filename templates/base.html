@@ -1,57 +1,83 @@
-{% import 'macros/head.html' as macros_head -%}
-{% import 'macros/nav.html' as macros_nav -%}
-{% import 'macros/macros.html' as macros -%}
-{% import 'macros/icons.html' as icons -%}
-{% import 'macros/blog.html' as blog -%}
-{% import 'macros/publication.html' as publication -%}
-
-<!DOCTYPE html>
-<html lang="{{ lang | default(value=config.default_language)}}">
-
+{% import "macros/site-icons.html" as icons %}
+{% set academic = load_data(path="data/academic.toml") %}
+{% set nav_path = current_path | default(value="/404.html") %}
+<!doctype html>
+<html lang="en">
 <head>
-  {% set favicon = resize_image(path=config.extra.favicon, format="png", width=32, height=32) %}
-  <link rel="shortcut icon" href="{{ favicon.url }}" type="image/png">
-  <link rel="icon" href="{{ favicon.url }}" type="image/png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta charset="utf-8">
-
-  <!-- Custom header for users, includes custom css or js here -->
-  {% block user_head -%}
-  {% endblock user_head -%}
-
-  <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
-
-  {% block head -%}
-    {% block css -%}
-      {{ macros_head::stylesheet() }}
-    {% endblock css -%}
-
-    {% block title -%}
-      {% set section = load_data(path=current_path ~ "_index.md", metadata_only=true, required = false)  -%}
-    {% endblock title -%}
-  {% endblock head -%}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="{% if nav_path == '/404.html' %}noindex, follow{% else %}index, follow{% endif %}">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+  <link rel="canonical" href="{{ config.base_url }}{{ nav_path }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Anderson Vil">
+  <meta property="og:title" content="{% if page is defined %}{{ page.title }}{% elif section is defined %}{{ section.title }}{% else %}{{ config.title }}{% endif %}">
+  <meta property="og:description" content="{% if page is defined and page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}">
+  <meta property="og:url" content="{{ config.base_url }}{{ nav_path }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('av-theme');
+        const theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch (_) { document.documentElement.dataset.theme = 'dark'; document.documentElement.style.colorScheme = 'dark'; }
+    })();
+  </script>
+  <link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="/styles/site.css">
+  <script defer src="/js/site.js"></script>
+  {% block head %}{% endblock head %}
 </head>
+<body class="{% block body_class %}{% endblock body_class %}">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  {% if config.extra.site_mode == "preview" %}<aside class="preview-ribbon" aria-label="Preview status">
+    <span class="preview-dot" aria-hidden="true"></span>
+    <strong>Private preview</strong>
 
-<body class="bg-white">
-  <!-- Top nav bar -->
-  {% block nav -%}
-    {{ macros_nav::nav(website_title=config.title) }}
-  {% endblock nav -%}
-  <!-- Container -->
-  {% block content -%}
-  {% endblock content -%}
-  <!-- <div class="sticky bottom-0 px-3">
-    <a href="#page-top">Back to top of page</a>
-  </div> -->
-  {% block footer -%}
-  <footer class="bg-white">
-    <div class="bg-white text-gray-400 container max-w-4xl mx-auto my-8 px-4">
-    © {{ config.title }}. Built with <a class="underline" target="_blank" href="https://getzola.org">zola</a>.
+  </aside>{% endif %}
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Anderson Vil home">
+        <span class="wordmark-mark" aria-hidden="true">{% include "macros/monogram.html" %}</span>
+        <span>Anderson Vil</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        {% for item in config.extra.menu %}
+          <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — PDF"{% endif %}>{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+          <span class="theme-icon theme-icon-sun">{{ icons::icon(name="sun") }}</span>
+          <span class="theme-icon theme-icon-moon">{{ icons::icon(name="moon") }}</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
+          {% for item in config.extra.menu %}
+            <a href="{{ item.url }}"{% if not item.document and ((item.section == "home" and nav_path == "/") or (item.section != "home" and nav_path is starting_with(item.url))) %} class="nav-active" aria-current="page"{% endif %}{% if item.document %} aria-label="CV — PDF"{% endif %}>{{ item.name }}</a>
+          {% endfor %}
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    {% block content %}{% endblock content %}
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Anderson Vil</p>
+        <p>Household Economics · Labor Economics · Applied Microeconometrics</p>
+      </div>
+      <div class="footer-links" aria-label="Professional profiles">
+        <a href="mailto:{{ academic.identity.email }}">{{ icons::icon(name="email") }}<span>Email</span></a>
+        {% for profile in academic.profiles %}<a href="{{ profile.url }}" rel="me">{{ icons::icon(name=profile.name | lower) }}<span>{{ profile.name }}</span></a>{% endfor %}
+      </div>
     </div>
   </footer>
-  {% endblock footer -%}
 </body>
-
 </html>

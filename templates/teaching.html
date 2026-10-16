@@ -1,34 +1,30 @@
 {% extends "base.html" %}
-
-{% block nav %}
-  {{ macros_nav::nav(website_title=config.title, menu_items=config.extra.menu_items, active_item=section.title) }}
-{% endblock nav %}
-
+{% import "macros/contextual-return.html" as contextual_return %}
+{% block title %}Teaching | Anderson Vil{% endblock title %}
+{% block description %}Provisional teaching resources in econometrics and microeconomics for Anderson Vil.{% endblock description %}
 {% block content %}
-<div class="container max-w-3xl mx-auto px-4">
-  <div class="font-sans py-8">
-    <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>
-  </div>
+{% set teaching = load_data(path="data/teaching_resources.toml") %}
+{% set teaching_photo = load_data(path="data/teaching_photo.toml") %}
+{{ contextual_return::host() }}
+<header class="page-hero shell"><p class="eyebrow">Teaching</p><h1>Conceptual clarity, quantitative practice</h1><p class="lede">{{ academic.teaching.positioning }}</p><p class="preview-label">Real teaching material · provisional private preview · publication blocked</p></header>
 
-  <article class="prose prose-indigo prose max-w-3xl">
-    {{ section.content | safe }}
-  </article>
+<section class="shell teaching-approach" aria-labelledby="approach-title"><div class="section-heading"><p class="eyebrow">Teaching approach</p><h2 id="approach-title">Three principles that structure a class</h2></div><div class="principle-grid"><article><span>01</span><h3>Clarify the core idea</h3><p>Each session begins with one durable objective and uses short formative checks to make understanding visible.</p></article><article><span>02</span><h3>Explain why before how</h3><p>Methods become transferable when students can state the assumptions, intuition, and consequences of failure.</p></article><article><span>03</span><h3>Interpret evidence responsibly</h3><p>Exercises connect formal tools to real questions while separating description, identification, and policy judgment.</p></article></div></section>
 
-  {% for publication_type in section.extra.publications_types -%}
-    <div class ="prose py-4">
-      <h2 class=""> {{publication_type.title}} </h2>
-    </div>
+<section class="soft-section teaching-practice" aria-labelledby="teaching-practice-title"><div class="shell teaching-practice-grid"><div><p class="eyebrow">In the room</p><h2 id="teaching-practice-title">{{ teaching_photo.title }}</h2><p>Teaching brings explanation, questions, and quantitative reasoning into the same conversation. This source-supplied image is included provisionally while its publication rights and credit are confirmed.</p><p class="status-note">{{ teaching_photo.caption }}</p><p class="preview-label compact">Photograph rights pending · production blocked</p></div><figure><picture><source srcset="{{ teaching_photo.avif }}" type="image/avif"><source srcset="{{ teaching_photo.webp }}" type="image/webp"><img src="{{ teaching_photo.fallback }}" alt="{{ teaching_photo.alt }}" width="{{ teaching_photo.width }}" height="{{ teaching_photo.height }}" loading="lazy" decoding="async"></picture><figcaption>Full 3:2 frame retained; non-generative color correction only.</figcaption></figure></div></section>
 
-    <ul>
-    {% for page in section.pages  -%}
-      {% if page.extra.type == publication_type.type -%}
-      <li class="pb-3">
-        {% set bibpath = page.path ~ "bib" -%}
-        {{ publication::summary(page=page) }}
-      </li>
-      {% endif  -%}
-    {% endfor -%}
-    </ul>
-  {% endfor -%}
-</div>
+<section class="shell teaching-materials" aria-labelledby="materials-title">
+  <div class="section-heading split-heading"><div><p class="eyebrow">Teaching materials</p><h2 id="materials-title">Resources by institution</h2></div><p>Three institutional groups remain distinct. Course role, level, year, language, and provisional rights status are visible before opening a resource.</p></div>
+  {% set cy_order = ["econometrics-m2", "econometrics-m1", "econometrics-l3"] %}
+  <section class="institution-group" aria-labelledby="institution-cy"><p class="institution-count">3 courses · provisional private resources</p><h3 id="institution-cy">CY Cergy Paris Université</h3><div class="teaching-groups">{% for id in cy_order %}{% for group in teaching.groups %}{% if group.id == id %}
+    <article class="teaching-group" data-real="true" data-provisional="true"><div><p class="teaching-role">{{ group.role }}</p><h4><a href="{{ group.url }}">{{ group.title }}</a></h4><p class="meta">{{ group.level }} · {{ group.academic_year }} · {{ group.language_label }}</p><p>{{ group.summary }}</p><p class="resource-tags"><span>{{ group.resource_type }}</span><span>{{ group.resources | length }} file{% if group.resources | length != 1 %}s{% endif %}</span><span>Publication blocked</span></p></div><a class="button secondary" href="{{ group.url }}">View resources</a></article>
+  {% endif %}{% endfor %}{% endfor %}</div></section>
+  {% for institution in ["sciences-po", "uco-niort"] %}{% for group in teaching.groups %}{% if group.institution_id == institution %}
+  <section class="institution-group" aria-labelledby="institution-{{ institution }}"><p class="institution-count">1 course · provisional private resources</p><h3 id="institution-{{ institution }}">{{ group.institution }}</h3>{% if group.institutionalWordingToConfirm %}<p class="status-note warning"><strong>Institutional wording to confirm:</strong> the supplied slides print {{ group.source_institution }}. UCO Niort is the current provisional grouping and remains blocked.</p>{% endif %}<div class="teaching-groups"><article class="teaching-group" data-real="true" data-provisional="true"><div><p class="teaching-role">{{ group.role }}</p><h4><a href="{{ group.url }}">{{ group.title }}</a></h4><p class="meta">{{ group.level }} · {{ group.academic_year }} · {{ group.language_label }}</p><p>{{ group.summary }}</p><p class="resource-tags"><span>{{ group.resource_type }}</span><span>{{ group.resources | length }} file{% if group.resources | length != 1 %}s{% endif %}</span><span>Publication blocked</span></p></div><a class="button secondary" href="{{ group.url }}">View resources</a></article></div></section>
+  {% endif %}{% endfor %}{% endfor %}
+</section>
+
+<section class="soft-section teaching-experience"><div class="shell"><div class="section-heading"><p class="eyebrow">Academic-year evidence</p><h2>Confirmed where the document confirms it</h2></div><div class="experience-list">{% for group in teaching.groups %}<article><div><p class="meta">{{ group.title }}</p><h3>{{ group.academic_year }}</h3></div><p>{{ group.year_note }}</p></article>{% endfor %}</div></div></section>
+
+<section class="soft-section teaching-code"><div class="shell split-heading"><div><p class="eyebrow">Teaching code and notebooks</p><h2>Context before download</h2></div><div><p>The separate Code & Data area remains a clearly labelled synthetic fixture for testing executable notebooks; the real teaching sources supplied here are PDFs.</p>{{ contextual_return::cta(label="Explore Code & Data", destination="/code-data/", origin="teaching") }}</div></div></section>
+<section class="shell teaching-contact"><div><p class="eyebrow">Teaching enquiries</p><h2>Discuss courses, materials, or quantitative teaching</h2></div><a class="button primary" href="mailto:{{ academic.identity.email }}">Email Anderson Vil</a></section>
 {% endblock content %}

@@ -1,0 +1,129 @@
+publicationStatus = "blocked"
+selectionStatus = "One reversible provisional selection is displayed per paper; all three original site-drawn alternatives remain available in the private design lab."
+provenance = "Original inline SVG studies created for the private Phase 4B preview; no external image, logo, stock asset, or identifiable child is used."
+
+[[papers]]
+id = "household-demand-leisure"
+researchQuestionVisual = "candidate-2"
+selectedCandidate = 2
+recommendation = "Human context is displayed provisionally because the day structure makes one hour of parental care legible at once as productive care, lived parental time, and a substitute for purchased care."
+[[papers.candidates]]
+number = 1
+category = "Evidence-led"
+label = "Verified PSID study groups"
+intent = "Ground the model in the verified 2019 PSID couple sample without presenting the sample composition as a result."
+method = "Original proportional sample-composition graphic."
+factual_source = "Supplied manuscript: 362 childless couples and 463 couples with children in the 2019 PSID."
+provenance = "Original site SVG; counts transcribed from the supplied manuscript."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "Two groups represent 362 childless couples and 463 couples with children in the 2019 PSID."
+advantages = "Concrete, verified evidence context."
+limits = "The sample does not by itself explain the value of parental time."
+[[papers.candidates]]
+number = 2
+category = "Human context"
+label = "One hour, three economic roles"
+intent = "Place a parent and child inside a day, with one care hour simultaneously connected to productive care, lived time, and purchased-care substitution."
+method = "Original non-identifiable editorial scene with a day strip and three explicit interpretations of the same hour."
+factual_source = "Parental care, leisure-like experience, and substitution with purchased childcare are the mechanisms stated in the supplied manuscript."
+provenance = "Original site SVG; no external image or identifiable person."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A parent and child share one care hour that also produces childcare and can substitute for purchased care."
+advantages = "Human-scale and specific to the paper's central valuation problem."
+limits = "Conceptual scene, not an empirical estimate."
+[[papers.candidates]]
+number = 3
+category = "Editorial concept"
+label = "The triple identity of care time"
+intent = "Show one observed hour branching into production, parental experience, and market substitution."
+method = "Original conceptual illustration; not an econometric result or identification slide."
+factual_source = "Three roles of parental childcare time stated in the supplied manuscript."
+provenance = "Original site SVG; no external asset."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "One hour of parental childcare branches into productive care, lived parental time, and a substitute for paid care."
+advantages = "Mechanism-specific and immediately scannable."
+limits = "More diagrammatic than the selected human-context direction."
+
+[[papers]]
+id = "children-costs-one-adult-household"
+researchQuestionVisual = "candidate-3"
+selectedCandidate = 3
+recommendation = "Editorial concept is displayed provisionally because it states the measurement problem directly: a household total does not reveal adult, child, and shared-resource components."
+[[papers.candidates]]
+number = 1
+category = "Evidence-led"
+label = "UK expenditure survey sequence"
+intent = "Anchor the paper in the harmonized British household expenditure surveys used from 1978 to 2022."
+method = "Original editorial timeline; dates and survey families come from the paper metadata."
+factual_source = "Supplied manuscript and documented FES, EFS, and LCF data-access record."
+provenance = "Original site SVG; facts transcribed from approved research metadata."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "Timeline from 1978 to 2022 connecting FES, EFS, and LCF household expenditure surveys."
+advantages = "Specific to the evidence base and entirely factual."
+limits = "The resource-sharing mechanism is secondary."
+[[papers.candidates]]
+number = 2
+category = "Human context"
+label = "Resources inside one household"
+intent = "Show one adult and a child sharing a neutral household setting while individual resources remain unobserved."
+method = "Original non-identifiable editorial illustration without a sentimental or deprivation narrative."
+factual_source = "One-adult household and individual-resource setting stated in the supplied manuscript."
+provenance = "Original site SVG; no external image or identifiable person."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "One adult and one child are shown within a household total whose individual resource shares are not directly observed."
+advantages = "Makes the lived unit of analysis concrete without stereotyping."
+limits = "Needs the question text to make the measurement problem explicit."
+[[papers.candidates]]
+number = 3
+category = "Editorial concept"
+label = "Observed total, latent shares"
+intent = "Show why one observed household total cannot reveal the resources available to the adult and child."
+method = "Original conceptual illustration; not an empirical result."
+factual_source = "Observed household expenditure and latent individual resource shares are stated in the supplied manuscript."
+provenance = "Original site SVG; no external asset."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "One observed household total contains latent adult, child, and shared-resource components."
+advantages = "Specific to the paper's measurement problem."
+limits = "Conceptual decomposition, not an estimated allocation."
+
+[[papers]]
+id = "children-labor-supply-equations"
+researchQuestionVisual = "candidate-3"
+selectedCandidate = 3
+recommendation = "Editorial concept is displayed provisionally because the separate monetary and time paths make the paper's double transmission into labor supply intuitive without implying a coefficient."
+[[papers.candidates]]
+number = 1
+category = "Evidence-led"
+label = "Verified 2019 PSID study groups"
+intent = "Ground the application in the verified comparison between childless single women and single mothers."
+method = "Original proportional sample-composition graphic."
+factual_source = "Supplied manuscript: 987 childless single women and 283 single mothers in the 2019 PSID."
+provenance = "Original site SVG; counts transcribed from the supplied manuscript."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "Two groups represent 987 childless single women and 283 single mothers in the 2019 PSID."
+advantages = "Concrete and tied to the study population."
+limits = "Sample composition is not a labor-supply result."
+[[papers.candidates]]
+number = 2
+category = "Human context"
+label = "A workday with two constraints"
+intent = "Show a parent's workday being shaped separately by spending needs and childcare time."
+method = "Original non-identifiable editorial scene with a timetable and household budget."
+factual_source = "Monetary and time costs of children are the two mechanisms stated in the supplied manuscript."
+provenance = "Original site SVG; no external image or identifiable person."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "A parent considers paid work while a budget path and a childcare-time path constrain the day."
+advantages = "Human and mechanism-led without dramatization."
+limits = "Conceptual scene, not a behavioral estimate."
+[[papers.candidates]]
+number = 3
+category = "Editorial concept"
+label = "Two channels into labor supply"
+intent = "Separate the monetary and time channels before showing how both enter labor-supply choices."
+method = "Original conceptual illustration; no coefficient or empirical result is shown."
+factual_source = "Distinct monetary-cost and time-cost channels stated in the supplied manuscript."
+provenance = "Original site SVG; no external asset."
+rights = "Original site artwork; provisional, publication blocked."
+alt = "Children affect labor supply through two distinct paths: a monetary channel and a time channel."
+advantages = "Makes the double transmission immediately legible."
+limits = "Diagrammatic and not a substitute for the model."

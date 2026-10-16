@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulation de Monte-Carlo</title>
+<style>
+  :root { --bleu:#1F4E79; --orange:#C0502B; --gris:#6E6E6E; --fond:#ffffff; --texte:#222; --clair:#EEF2F7; }
+  body { margin:0; background:var(--fond); color:var(--texte); font:16px/1.45 Helvetica, Arial, sans-serif; }
+  main { max-width:980px; margin:0 auto; padding:16px; }
+  h1 { color:var(--bleu); font-size:1.3rem; margin:0 0 .3rem; }
+  p { margin:.3rem 0 .8rem; }
+  .graphes { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:700px){ .graphes { grid-template-columns:1fr; } }
+  svg { width:100%; height:auto; background:#fff; border:1px solid #ddd; }
+  .reglages { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:8px 16px; margin:12px 0; }
+  label { display:block; font-size:.9rem; color:var(--gris); }
+  select { font:inherit; width:100%; padding:3px; }
+  .valeurs { background:var(--clair); padding:10px 14px; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:4px 16px; }
+  .grand { font-weight:bold; color:var(--orange); }
+  button { font:inherit; margin:4px 6px 4px 0; padding:4px 10px; border:1px solid var(--bleu); background:#fff; color:var(--bleu); cursor:pointer; }
+  button:hover { background:var(--clair); }
+  .note { color:var(--gris); font-size:.9rem; }
+  .axe { stroke:#999; stroke-width:1; }
+  .etiq { fill:var(--gris); font-size:12px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Tirer des échantillons, voir la distribution de la pente</h1>
+<p>La vraie droite est y = 32 + 14 x. Les x sont les moyennes universitaires des 50 premiers étudiants d'ECONMATH, fixées d'un échantillon à l'autre. Chaque tirage produit de nouvelles erreurs, donc un nouvel échantillon et une nouvelle pente des MCO.</p>
+
+<div class="reglages">
+  <div><label for="rep">Taille de l'échantillon</label>
+    <select id="rep"><option value="1">n = 50</option><option value="4">n = 200, x répétés 4 fois</option><option value="10">n = 500, x répétés 10 fois</option></select></div>
+  <div><label for="disp">Dispersion de x</label>
+    <select id="disp"><option value="1">celle des données</option><option value="0.5">deux fois moins dispersé</option></select></div>
+  <div><label for="sig">Écart-type des erreurs σ</label>
+    <select id="sig"><option value="11">σ = 11</option><option value="5.5">σ = 5,5</option></select></div>
+  <div><label for="hyp">Hypothèses</label>
+    <select id="hyp"><option value="ok">RLS.1 à RLS.5 vraies</option><option value="rls4">RLS.4 fausse, E(u | x) = 4 (x − 2,8)</option><option value="rls5">RLS.5 fausse, sd(u | x) = 3 + 14 |x − 2,8|</option></select></div>
+</div>
+
+<p><button id="un">Tirer 1 échantillon</button><button id="mille">Tirer 1 000 échantillons</button><button id="zero">Recommencer</button></p>
+
+<div class="graphes">
+  <svg id="nuage" viewBox="0 0 460 300" aria-label="Dernier échantillon tiré"></svg>
+  <svg id="histo" viewBox="0 0 460 300" aria-label="Distribution des pentes estimées"></svg>
+</div>
+
+<div class="valeurs">
+  <div>Échantillons tirés <span id="nb" class="grand"></span></div>
+  <div>Dernière pente <span id="der"></span>, erreur-type <span id="derse"></span></div>
+  <div>Moyenne des pentes <span id="moy" class="grand"></span></div>
+  <div>Écart-type des pentes <span id="et" class="grand"></span></div>
+  <div>Écart-type théorique <span id="th"></span></div>
+  <div>Formule usuelle σ/√SCT<sub>x</sub> <span id="us"></span></div>
+  <div>Moyenne des erreurs-types <span id="mse"></span></div>
+</div>
+<p class="note">À gauche, le dernier échantillon, la vraie droite en orange et la droite des MCO en bleu. À droite, l'histogramme des pentes tirées, la vraie pente 14 en orange. Le générateur part de la graine 2026 à chaque recommencement. Sous RLS.5 fausse, l'écart-type théorique est √(Σ w<sub>i</sub>² σ<sub>i</sub>²) et la formule usuelle se trompe.</p>
+</main>
+<script>
+const X50 = [3.4909,2.1000,3.0851,2.6805,3.7454,3.0555,2.1666,3.2544,3.1298,2.2424,2.8666,2.9363,3.6607,1.6511,2.7405,3.3898,1.8604,3.0952,2.5078,3.6931,2.4890,2.8026,2.8600,1.9693,2.6272,1.9500,3.9892,3.2680,3.0925,3.3600,3.4824,2.0750,3.7651,2.8245,3.0743,2.5281,2.1126,3.1046,2.1323,2.7635,1.7222,2.0283,2.4303,2.3145,3.7867,3.0922,2.1171,2.5727,2.5000,2.5833];
+const NS = "http://www.w3.org/2000/svg";
+const $ = id => document.getElementById(id);
+const fmt = (v, d) => isFinite(v) ? v.toFixed(d).replace(".", ",") : "–";
+
+// générateur pseudo-aléatoire à graine (mulberry32) et loi normale (Box-Muller)
+let etat = 2026;
+function unif() { etat |= 0; etat = etat + 0x6D2B79F5 | 0; let t = Math.imul(etat ^ etat >>> 15, 1 | etat);
+  t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }
+function normale() { let u = 0; while (u === 0) u = unif(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * unif()); }
+
+let plan, pentes, ses, dernier;
+function preparer() {
+  const rep = +$("rep").value, k = +$("disp").value, sigma = +$("sig").value, hyp = $("hyp").value;
+  const m50 = X50.reduce((a, b) => a + b) / 50;
+  const x = []; for (let r = 0; r < rep; r++) for (const v of X50) x.push(m50 + k * (v - m50));
+  const n = x.length, mx = x.reduce((a, b) => a + b) / n;
+  const sct = x.reduce((a, v) => a + (v - mx) ** 2, 0);
+  const w = x.map(v => (v - mx) / sct);
+  const sd = x.map(v => hyp === "rls5" ? (sigma / 11) * (3 + 14 * Math.abs(v - 2.8)) : sigma);
+  const moyu = x.map(v => hyp === "rls4" ? 4 * (v - 2.8) : 0);
+  const sig2 = sd.reduce((a, s) => a + s * s, 0) / n;           // moyenne des variances
+  plan = { x, n, mx, sct, w, sd, moyu,
+           th: Math.sqrt(w.reduce((a, wi, i) => a + wi * wi * sd[i] * sd[i], 0)),
+           us: Math.sqrt(sig2 / sct) };
+  etat = 2026; pentes = []; ses = []; dernier = null; dessiner();
+}
+function tirer() {
+  const { x, n, mx, sct, sd, moyu } = plan;
+  const y = x.map((v, i) => 32 + 14 * v + moyu[i] + sd[i] * normale());
+  const my = y.reduce((a, b) => a + b) / n;
+  const b1 = x.reduce((a, v, i) => a + (v - mx) * (y[i] - my), 0) / sct, b0 = my - b1 * mx;
+  const scr = y.reduce((a, v, i) => a + (v - b0 - b1 * x[i]) ** 2, 0);
+  const se = Math.sqrt(scr / (n - 2) / sct);
+  pentes.push(b1); ses.push(se); dernier = { y, b0, b1, se };
+}
+function el(nom, att, parent) { const e = document.createElementNS(NS, nom);
+  for (const k in att) e.setAttribute(k, att[k]); parent.appendChild(e); return e; }
+function texte(s, att, parent) { el("text", att, parent).textContent = s; }
+
+function dessiner() {
+  // nuage
+  const sv = $("nuage"); sv.innerHTML = "";
+  const G = { g: 45, d: 445, h: 15, b: 265 }, X0 = 1, X1 = 4.2, Y0 = 20, Y1 = 130;
+  const px = v => G.g + (v - X0) / (X1 - X0) * (G.d - G.g), py = v => G.b - (v - Y0) / (Y1 - Y0) * (G.b - G.h);
+  el("line", { x1: G.g, y1: G.b, x2: G.d, y2: G.b, class: "axe" }, sv);
+  el("line", { x1: G.g, y1: G.h, x2: G.g, y2: G.b, class: "axe" }, sv);
+  for (const v of [1, 2, 3, 4]) texte(String(v), { x: px(v), y: G.b + 16, "text-anchor": "middle", class: "etiq" }, sv);
+  for (const v of [40, 80, 120]) texte(String(v), { x: G.g - 6, y: py(v) + 4, "text-anchor": "end", class: "etiq" }, sv);
+  texte("x", { x: G.d, y: G.b + 30, "text-anchor": "end", class: "etiq" }, sv);
+  if (dernier) plan.x.forEach((v, i) => el("circle", { cx: px(v), cy: py(Math.min(Y1, Math.max(Y0, dernier.y[i]))), r: 3, fill: "#1F4E79", "fill-opacity": .35 }, sv));
+  el("line", { x1: px(X0), y1: py(32 + 14 * X0), x2: px(X1), y2: py(32 + 14 * X1), stroke: "#C0502B", "stroke-width": 2 }, sv);
+  if (dernier) el("line", { x1: px(X0), y1: py(dernier.b0 + dernier.b1 * X0), x2: px(X1), y2: py(dernier.b0 + dernier.b1 * X1), stroke: "#1F4E79", "stroke-width": 2, "stroke-dasharray": "6 4" }, sv);
+  if (!dernier) texte("Tirez un échantillon", { x: 245, y: 140, "text-anchor": "middle", class: "etiq" }, sv);
+
+  // histogramme des pentes, de 0 à 30
+  const sh = $("histo"); sh.innerHTML = "";
+  const H = { g: 20, d: 445, h: 15, b: 265 }, A = 0, B = 30, nb = 60, larg = (B - A) / nb;
+  const qx = v => H.g + (v - A) / (B - A) * (H.d - H.g);
+  const c = new Array(nb).fill(0); for (const b of pentes) { const j = Math.floor((b - A) / larg); if (j >= 0 && j < nb) c[j]++; }
+  const cmax = Math.max(1, ...c);
+  c.forEach((v, j) => { if (v) el("rect", { x: qx(A + j * larg) + .5, y: H.b - v / cmax * (H.b - H.h), width: (H.d - H.g) / nb - 1, height: v / cmax * (H.b - H.h), fill: "#1F4E79", "fill-opacity": .75 }, sh); });
+  el("line", { x1: H.g, y1: H.b, x2: H.d, y2: H.b, class: "axe" }, sh);
+  for (const v of [0, 5, 10, 14, 20, 25, 30]) texte(String(v), { x: qx(v), y: H.b + 16, "text-anchor": "middle", class: "etiq" }, sh);
+  el("line", { x1: qx(14), y1: H.h, x2: qx(14), y2: H.b, stroke: "#C0502B", "stroke-width": 2 }, sh);
+  texte("pente estimée", { x: H.d, y: H.b + 30, "text-anchor": "end", class: "etiq" }, sh);
+
+  // valeurs
+  const N = pentes.length, moy = N ? pentes.reduce((a, b) => a + b) / N : NaN;
+  const et = N > 1 ? Math.sqrt(pentes.reduce((a, b) => a + (b - moy) ** 2, 0) / (N - 1)) : NaN;
+  $("nb").textContent = N.toLocaleString("fr-FR");
+  $("der").textContent = dernier ? fmt(dernier.b1, 2) : "–"; $("derse").textContent = dernier ? fmt(dernier.se, 2) : "–";
+  $("moy").textContent = fmt(moy, 3); $("et").textContent = fmt(et, 3);
+  $("th").textContent = fmt(plan.th, 3); $("us").textContent = fmt(plan.us, 3);
+  $("mse").textContent = N ? fmt(ses.reduce((a, b) => a + b) / N, 3) : "–";
+}
+$("un").onclick = () => { tirer(); dessiner(); };
+$("mille").onclick = () => { for (let i = 0; i < 1000; i++) tirer(); dessiner(); };
+$("zero").onclick = preparer;
+for (const id of ["rep", "disp", "sig", "hyp"]) $(id).onchange = preparer;
+preparer();
+</script>
+</body>
+</html>

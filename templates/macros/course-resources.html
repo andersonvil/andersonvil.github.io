@@ -1,0 +1,11 @@
+{% macro list(group, collapsed=false) %}
+{% for part in group.parts %}
+{% if collapsed %}<details class="resource-part"><summary>{{ part }}</summary>{% else %}<section class="resource-part"><h3>{{ part }}</h3>{% endif %}
+<div class="resource-file-list">
+{% for resource in group.resources %}{% if resource.part == part %}
+<article><div><h4>{{ resource.label }}</h4><p class="meta">{{ resource.format | default(value="PDF") }}{% if resource.pages %} · {{ resource.pages }} pages{% endif %}{% if resource.bytes %} · {{ resource.bytes | filesizeformat }}{% endif %}</p></div><a class="button secondary" href="{{ resource.file }}">{% if resource.label == "Practical README" %}Practical README{% else %}Open resource{% endif %}</a></article>
+{% endif %}{% endfor %}
+</div>
+{% if collapsed %}</details>{% else %}</section>{% endif %}
+{% endfor %}
+{% endmacro list %}

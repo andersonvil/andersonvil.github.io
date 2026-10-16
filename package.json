@@ -1,0 +1,6 @@
+{
+  "name": "anderson-vil-academic-preview",
+  "private": true,
+  "scripts": { "editorial": "node scripts/build-editorial.js" },
+  "devDependencies": { "katex": "0.16.22" }
+}

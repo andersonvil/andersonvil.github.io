@@ -1,0 +1,38 @@
+{
+  "cobb_douglas": {
+    "x1": "Y*alpha1/p1",
+    "mu": "1/Y",
+    "hd0": true,
+    "elasticities": [
+      "-1",
+      "0",
+      "0"
+    ],
+    "eta": "1"
+  },
+  "stone_geary": {
+    "x1": "alpha1*(Y - gamma1*p1 - gamma2*p2 - gamma3*p3)/p1 + gamma1",
+    "hd0": true,
+    "euler_sum": "0",
+    "point": {
+      "alpha1": "3/10",
+      "alpha2": "3/10",
+      "gamma1": "2",
+      "gamma2": "3",
+      "gamma3": "1",
+      "p1": "2",
+      "p2": "1",
+      "p3": "3/2",
+      "Y": "20"
+    },
+    "x1_at_point": 3.725,
+    "eps_at_point": [
+      -0.6241610738255033,
+      -0.12080536912751678,
+      -0.06040268456375839
+    ],
+    "eta_at_point": 0.8053691275167785,
+    "sum_at_point_exact": "0"
+  },
+  "money_illusion_pct": 7.177346253629313
+}

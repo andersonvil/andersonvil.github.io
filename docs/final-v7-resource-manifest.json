@@ -1,0 +1,901 @@
+{
+  "files": [
+    {
+      "source": "CY-Cergy-Paris-Université\\2026-27\\data\\Dataset.zip",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset.zip",
+      "sha256": "c707ffa6f41a1d503af1fde164ba903ef6feca4e3858f57759e1e8e6f4509f8d",
+      "bytes": 1962448
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2017-18.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2017-18.pdf",
+      "sha256": "e1a9015bea358004fa271c003f398579482571e84e595d3ff0d5e2c856ab5d99",
+      "bytes": 565106
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2018-19.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2018-19.pdf",
+      "sha256": "949fef6e585e7db2cf784ad73c6447f1ea8fa0f1774b43e4cd5ceaf7156bbfbd",
+      "bytes": 130976
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2019-20.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2019-20.pdf",
+      "sha256": "67a484ca92c91b17b03aa78cd7c5bf1e1466d668730cb73d6ee0d4dd472b5bdb",
+      "bytes": 113149
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2021-22.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2021-22.pdf",
+      "sha256": "f241dcdb1b38866fac510e09b9f967c58cb79e09beecd1e2562ffb97b68d516b",
+      "bytes": 110824
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2022-23.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2022-23.pdf",
+      "sha256": "670be864bd182949c72d92e36a324baaeedc4ae55b347dfec30e4a5ef6d920a3",
+      "bytes": 131204
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2022-23Rep.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2022-23Rep.pdf",
+      "sha256": "43d1dc120c6efd684677e8a98f41c4d39e54d65035afd1a7b9a4146101cd33e8",
+      "bytes": 12226656
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2023-24.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2023-24.pdf",
+      "sha256": "b314bc40e5935c0fe4951013e542927b73e433d61584b9f05aba61c8c0afd72c",
+      "bytes": 133639
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2024-25.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2024-25.pdf",
+      "sha256": "e32348530fdac708f4e211244ff9f87cdc8c4f7604f349654ec52a78c13d13bc",
+      "bytes": 147474
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\Previous-Exams\\Previous-CC\\L3-Econometrics\\CC2024-25Rep.pdf",
+      "url": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2024-25Rep.pdf",
+      "sha256": "afea33cf0c687db2638ce593b797786208ec494f48edf4e96aa76d174ae2bc46",
+      "bytes": 161077
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\generer_annexes.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/generer_annexes.py",
+      "sha256": "29845caf12ac48c4122e48be10d82c2509300e24d96c70bd6874e011fc7a8b60",
+      "bytes": 8621
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\generer_dta.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/generer_dta.py",
+      "sha256": "1334e4dc5808476445dc452dd9d37e39a76a7e93bc0158d6779ddf7074722c09",
+      "bytes": 1490
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\seance01.do",
+      "url": "/files/teaching/niort/econometrics/session-01/code/seance01.do",
+      "sha256": "ef7353738e4b690bcf7f674dfae06b4d038f26c4b01e72d7cab58da62dce9867",
+      "bytes": 11817
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\seance01.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/seance01.py",
+      "sha256": "eb10f7ae8e1d570fb407576899dd0715a81e668b1df20d4b49610905bca8a016",
+      "bytes": 19582
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\seance01.R",
+      "url": "/files/teaching/niort/econometrics/session-01/code/seance01.R",
+      "sha256": "952a9358f0d0e282982867bd5e46a8a0098ad8808d574c52c938a950a95d8143",
+      "bytes": 14304
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\seance01_python.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-01/code/seance01_python.ipynb",
+      "sha256": "d0f6dfc31e2629ff1f6a215688a4ac93ca53d60bb648b180638486ee390fe8e8",
+      "bytes": 27952
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\seance01_R.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-01/code/seance01_R.ipynb",
+      "sha256": "addb1d43c3ec2f91fbd3ac737065d66780e23b3145211b941bf5744a1293a1e6",
+      "bytes": 21268
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\td01.do",
+      "url": "/files/teaching/niort/econometrics/session-01/code/td01.do",
+      "sha256": "f1a1e5dbe79185a3c9d1540dbb195dd104d69df4f7563eda6857026b36bc4e0e",
+      "bytes": 4759
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\td01.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/td01.py",
+      "sha256": "5a4026853008a6f8bbb87cb73f74496dc860181260101247c65a4bbf9e779cb4",
+      "bytes": 7200
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\td01.R",
+      "url": "/files/teaching/niort/econometrics/session-01/code/td01.R",
+      "sha256": "75d3babdb6c785858ddd94017d274147443fb39e9dde7199fcacd6d6966c3d59",
+      "bytes": 5644
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\td01_python.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-01/code/td01_python.ipynb",
+      "sha256": "969e72227fe2c1c9fafe858fb296ab12b05dedd4cc5b3a2c3ca60c6d6beba67a",
+      "bytes": 10187
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\td01_R.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-01/code/td01_R.ipynb",
+      "sha256": "f62e534ca170d9cfdf6c6eeb3f89d6c8016e4eaee75a2c467a83158d3a548f2e",
+      "bytes": 8093
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\extraire_article.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/extraire_article.py",
+      "sha256": "9b168534ca16ec8fe79ebedda1c4c7012c60fb2fd2f3c5194d5983ee5132cca9",
+      "bytes": 3263
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\extraire_pdf.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/extraire_pdf.py",
+      "sha256": "aecdff55b436106b7c84609b3dedc7b11c0d1cb00ac504961d0c5f48e69b48c1",
+      "bytes": 3460
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\liens_verifies.txt",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/liens_verifies.txt",
+      "sha256": "cfb0bb49b0068b97e19139bee6f801c8d34169b1b4a0444c27b787bf66a79439",
+      "bytes": 31010
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\rapport_tests.md",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/rapport_tests.md",
+      "sha256": "5219faa2dd72562854ba690f71b79e3258ddcd337ee85b3cb0c88fd04e73e49d",
+      "bytes": 6880
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\sorties_python.txt",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/sorties_python.txt",
+      "sha256": "b90b129f850877e0a63f8bb03b26c54617216fcd126f92ed87c37886dd0237ec",
+      "bytes": 5320
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\sorties_R.txt",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/sorties_R.txt",
+      "sha256": "0606156a4845966397ef942ac96c699c43525522fcc953d4133d1e57899e90da",
+      "bytes": 3976
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\sorties_td01_python.txt",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/sorties_td01_python.txt",
+      "sha256": "d88d7b46703915f21ecf3c2376cc60add16b071f7e66e2c80c995954f4e9fe65",
+      "bytes": 3548
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\sorties_td01_R.txt",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/sorties_td01_R.txt",
+      "sha256": "5436f5594a7e72f7790900a83f8a1d996e1f4902412cbb568232a779efd09ddf",
+      "bytes": 2758
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\tester_blocs.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/tester_blocs.py",
+      "sha256": "aacb18dac55193bc2789b0e6454d38899d85c8ac2a4bb372a29a0f99e4cea543",
+      "bytes": 2788
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\verif_polycopie.txt",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/verif_polycopie.txt",
+      "sha256": "eccceb88e9c36c4b7a325b170e82ef49af8890fc2f904b05eac1eb226e3f7e06",
+      "bytes": 2471
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\verifier_liens.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/verifier_liens.py",
+      "sha256": "084a4a8e261b5d4381b21613d732ce6a391351b7e767e99dbd114f8641a21be1",
+      "bytes": 1902
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\code\\tests\\verifier_polycopie.py",
+      "url": "/files/teaching/niort/econometrics/session-01/code/tests/verifier_polycopie.py",
+      "sha256": "2a3475f8ecef8d90d94d416f6a60c1846b81758a337fad217a121ed82f86b904",
+      "bytes": 3069
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\attend.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/attend.dta",
+      "sha256": "794d7518a6b02cf949a3418438871ac65c4872dcda325a34778a2665712d7f60",
+      "bytes": 45825
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\cps78_85.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/cps78_85.dta",
+      "sha256": "9b4e973ad60aec7fd434020468f6986fabc545679deec2178fa8bfcdb5ae7e46",
+      "bytes": 72477
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\econmath.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/econmath.dta",
+      "sha256": "e54c801410ddbddb8f03b27665ad1b9cb8fda44b1ae2677cf5850f7f7fce43e9",
+      "bytes": 89099
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\jtrain2.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/jtrain2.dta",
+      "sha256": "0944aaff822e9b5d6baba6b4996a0244e450a5fe2362fad1cf913b40feca44e6",
+      "bytes": 48397
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\phillips.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/phillips.dta",
+      "sha256": "91cec06f3ece316e214714684c7bdee7df433ce45bf29e9f6c4a8e48f39e0d86",
+      "bytes": 4421
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\wagepan.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/wagepan.dta",
+      "sha256": "d3eede3d84d9754d2a94d4e7db8a03099408ac2df7b143105b5fb7092c42f848",
+      "bytes": 793672
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\donnees\\wine.dta",
+      "url": "/files/teaching/niort/econometrics/session-01/donnees/wine.dta",
+      "sha256": "27d48e59bdc570fd1b00463e4279fa4ea345c22036709494ef1180519b681a43",
+      "bytes": 1867
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\simulateur\\covariance_interactive.html",
+      "url": "/files/teaching/niort/econometrics/session-01/simulateur/covariance_interactive.html",
+      "sha256": "3518e6859dcdb6a5cc1873ba398b3f06b90e464dc5084b170dc3b58b7e13b55b",
+      "bytes": 7133
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\support\\seance01.pdf",
+      "url": "/files/teaching/niort/econometrics/session-01/support/seance01.pdf",
+      "sha256": "811d30b8b435b0a21b0f4d47ddee39be341e688f3c088590d1cf540a622d522b",
+      "bytes": 1120586
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance01\\seance01\\td\\serie01.pdf",
+      "url": "/files/teaching/niort/econometrics/session-01/td/serie01.pdf",
+      "sha256": "d4bb261ad64d17061d6a0a70323edb6d8f62723c205f8df0591c817a8e0d3797",
+      "bytes": 253690
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\generer_annexes.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/generer_annexes.py",
+      "sha256": "5e51c5dfdee18518fb097983f4be779da40387fb993964ec5ead506d9b478664",
+      "bytes": 9106
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\generer_dta.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/generer_dta.py",
+      "sha256": "f902d72ca558e2fa3b5391d1b929e502cc089efd4d0a21570377589967ab7885",
+      "bytes": 1507
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\seance02.do",
+      "url": "/files/teaching/niort/econometrics/session-02/code/seance02.do",
+      "sha256": "a4d355dd642db779593110d0c86a8e91df96b0ac29ea9ef7be2017e064b7074d",
+      "bytes": 18843
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\seance02.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/seance02.py",
+      "sha256": "95b5a7f7ddf193d85809466540af9c3fb7cab49bad3c61d1d01db5f7715ff869",
+      "bytes": 25802
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\seance02.R",
+      "url": "/files/teaching/niort/econometrics/session-02/code/seance02.R",
+      "sha256": "b77eb862d7a69a3f8d48ed3c73c6f167a78cb956898b7c149617683ff50164d8",
+      "bytes": 18801
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\seance02_python.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-02/code/seance02_python.ipynb",
+      "sha256": "a2fb998aa8429fab7398b45a3dec646b83d659ed07d02461b79fae9101463636",
+      "bytes": 35386
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\seance02_R.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-02/code/seance02_R.ipynb",
+      "sha256": "e33d74068a6fdbcb91847320b1703b2bc7ddf7d4cef5090a91b73d9bc5c0a45b",
+      "bytes": 26723
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\td02.do",
+      "url": "/files/teaching/niort/econometrics/session-02/code/td02.do",
+      "sha256": "75be57f143bd0ba6bce669e048fbfce1f1e438a9ac44889b07daa73d695ac551",
+      "bytes": 5549
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\td02.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/td02.py",
+      "sha256": "e976f34689092aa6eff23f6730f97d9cccaccbb2f30fc6d23f4196187bac6fa7",
+      "bytes": 8376
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\td02.R",
+      "url": "/files/teaching/niort/econometrics/session-02/code/td02.R",
+      "sha256": "437e829668cc7547ba6740be32028acf96caa52d14d25da0d6cb9917371dbe43",
+      "bytes": 6168
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\td02_python.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-02/code/td02_python.ipynb",
+      "sha256": "988e4e023db682ec78ef581bdfa111e64f6a7a1218fe287c6dc3df1dbb62a62d",
+      "bytes": 11502
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\td02_R.ipynb",
+      "url": "/files/teaching/niort/econometrics/session-02/code/td02_R.ipynb",
+      "sha256": "69520bb362432fdf6c70ab28bb4be00763da5fdadfb3b7545096c919bafb4221",
+      "bytes": 8813
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\audit_valeurs.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/audit_valeurs.py",
+      "sha256": "a3eff1bafc3449c3c664d778ae3f6ef98072b3176d25a399831daa650ff984e7",
+      "bytes": 1569
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\audit_valeurs.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/audit_valeurs.txt",
+      "sha256": "650c23745c0c8844800405933841840af5e4497b82ef2c32b12b5a6111d46e48",
+      "bytes": 769
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\comparaisons\\corrige.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/comparaisons/corrige.txt",
+      "sha256": "b44f3edf2559f9e13565125e271e796e631d909f7f7ad4dfc9572f763e5b9c97",
+      "bytes": 1284
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\comparaisons\\polycopie.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/comparaisons/polycopie.txt",
+      "sha256": "cb362db2397d71ae27539e75c380ecb421751291cd030bc37a271ec28a777a08",
+      "bytes": 3864
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\comparaisons\\serie.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/comparaisons/serie.txt",
+      "sha256": "bf158d7b11dd4c28cc406c43b27aabf320332c38765f80b116e15103f211f9cf",
+      "bytes": 108
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\comparaisons\\support.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/comparaisons/support.txt",
+      "sha256": "13da6e11f38cdd70b91af063f54b1a09c6118cd48fa088c85afd9dab225bd3d4",
+      "bytes": 4020
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\comparer_py_r.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/comparer_py_r.py",
+      "sha256": "45d88638b3ebdc9ef313532bf6a1af70981bde0d34eb7a441b239921ec6ec5fe",
+      "bytes": 941
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\controler_liens.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/controler_liens.py",
+      "sha256": "eb902d5f0cb295ae955d07cc42e34a19186f5e6b551b14108f159b72c5372dfe",
+      "bytes": 2555
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\extraire_article.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/extraire_article.py",
+      "sha256": "9b168534ca16ec8fe79ebedda1c4c7012c60fb2fd2f3c5194d5983ee5132cca9",
+      "bytes": 3263
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\extraire_pdf.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/extraire_pdf.py",
+      "sha256": "292285e6f4a17b31e6660e2330ae50054bb7f4e51713c4b27c8b48cc6bbe0ce0",
+      "bytes": 3460
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\liens_verifies.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/liens_verifies.txt",
+      "sha256": "609aa8bfeab97a4e513565adb40ccbebc857eddc4c8915dcdb2356608e6fe853",
+      "bytes": 36070
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\rapport_tests.md",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/rapport_tests.md",
+      "sha256": "3bf2135f88d8f7fbb8f3badaeb2896d9309d72c95497fbb9aa26e0908e06557b",
+      "bytes": 11801
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\rassembler_sorties.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/rassembler_sorties.py",
+      "sha256": "32baa38b41703a57915c576608fd3ce2b3db81219b834732a62ab70fd7aa6694",
+      "bytes": 740
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\sorties_python.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/sorties_python.txt",
+      "sha256": "c53089d06f5e6aa42d74dddd5c33a095132cf4a9138db951fc92bc765386c72e",
+      "bytes": 5712
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\sorties_R.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/sorties_R.txt",
+      "sha256": "9a7ddd287d8fc518cd440722089ca853d29334f4a24e9aab9d5b49282c475879",
+      "bytes": 4277
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\sorties_td02_python.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/sorties_td02_python.txt",
+      "sha256": "4c677ddba9ea8f9d60dd9257703e3238b49fb1140283668167851beb1b1c4f71",
+      "bytes": 2712
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\sorties_td02_R.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/sorties_td02_R.txt",
+      "sha256": "61e7dcc1660e6ce8d31085f8c9391d0398beeb0012699209d6e9ea472155fdda",
+      "bytes": 2706
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\tester_blocs.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/tester_blocs.py",
+      "sha256": "e093ceacf8b3876fe523c5d3dcddffea50d4443c343745ffd86af27197a8219f",
+      "bytes": 2815
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\verif_valeurs.txt",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/verif_valeurs.txt",
+      "sha256": "0a6f367e64d4a7393ea06a5db740b905bf3cd1001884bbbdc82219e229d3efce",
+      "bytes": 2933
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\verifier_liens.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/verifier_liens.py",
+      "sha256": "fe18eba6ec98994ea5d970cea9d06074c5855bbd33062d7c405157f96e183138",
+      "bytes": 1902
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\code\\tests\\verifier_valeurs.py",
+      "url": "/files/teaching/niort/econometrics/session-02/code/tests/verifier_valeurs.py",
+      "sha256": "042914f7b571501f546a6ccabda8211566f596113632260c943f63cf9919bee2",
+      "bytes": 3691
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\attend.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/attend.dta",
+      "sha256": "c8c69d514780759e0f9ca8df685997475550c886f623ad18aafa9e4c4afc0bad",
+      "bytes": 45825
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\cps78_85.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/cps78_85.dta",
+      "sha256": "cda3e1da8d520f7896f7d7aef856dac279824c68e73953447965cb650847abe3",
+      "bytes": 72477
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\econmath.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/econmath.dta",
+      "sha256": "47ef7e9c38e6b59ba503325a2e35cfc27b1ac0bb6ed9c288501fc0d52f84dba2",
+      "bytes": 89099
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\htv.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/htv.dta",
+      "sha256": "deee8d5c63113a239d936428c833f53c26453e9e3ea552d16ae62910e3fc6151",
+      "bytes": 147373
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\jtrain2.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/jtrain2.dta",
+      "sha256": "c59b1555ac60043f44519abac258f1c19894efb6661218d7fd92dbcab03c23dd",
+      "bytes": 48397
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\nbasal.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/nbasal.dta",
+      "sha256": "284df569607b6dca84ef36e4b46c38d312baead9653d012cc15d5698eb1ceaec",
+      "bytes": 35698
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\phillips.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/phillips.dta",
+      "sha256": "516009f391c8e5c2146c61f90d63a5d66d8525b6ba223fbe1d6f9db2531493bc",
+      "bytes": 4421
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\wagepan.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/wagepan.dta",
+      "sha256": "e647e96f3a1e4b4dfc2cb9fbe3edf594e6efdbe0b9676bf5ca8677b415fa1c04",
+      "bytes": 793672
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\donnees\\wine.dta",
+      "url": "/files/teaching/niort/econometrics/session-02/donnees/wine.dta",
+      "sha256": "8f52ecbcda344fd64ace62a4e339f36c8fbbe7d03a36b929934286880472ee48",
+      "bytes": 1867
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\simulateur\\simulation_interactive.html",
+      "url": "/files/teaching/niort/econometrics/session-02/simulateur/simulation_interactive.html",
+      "sha256": "d23e0892c56f297844096d5802e2a13242ccf7291bf278656da4662f605c7aa9",
+      "bytes": 9866
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\support\\seance02.pdf",
+      "url": "/files/teaching/niort/econometrics/session-02/support/seance02.pdf",
+      "sha256": "7b545426f1291de62529227fd94b4149302e9a13d2e41127ae0216e888c90696",
+      "bytes": 1195819
+    },
+    {
+      "source": "Niort\\2026-27\\Econométrie\\seance02\\seance02\\td\\serie02.pdf",
+      "url": "/files/teaching/niort/econometrics/session-02/td/serie02.pdf",
+      "sha256": "ac0dc25ce6009424b91e3b6c086ce0ec8e92a34cc7f2a7e75a01bc9f881fd82c",
+      "bytes": 260647
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\generer_annexes.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/generer_annexes.py",
+      "sha256": "15ae8d84dfaa89219f19fd07721355994cbfbb84e6552cad1542e2602e7d4872",
+      "bytes": 3514
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\partie3.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.py",
+      "sha256": "70c0461533e22ab22314a15294e0ff08da32bba1854c729222969fa8ad67f655",
+      "bytes": 40051
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\partie3.R",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.R",
+      "sha256": "e312745dff8a948f36741b18e3619a81b46c22592bdf59e3f2068ddc3e0bed31",
+      "bytes": 35220
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\comparer.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/comparer.py",
+      "sha256": "b407f16d4df8d150b768d5e769d0e957e8d0eff5a6134b1ac3bec770059e726e",
+      "bytes": 836
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\controler_retours.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/controler_retours.py",
+      "sha256": "4fc226eebecc858dd0e28be5166fff5fa4c5eb2565b55607235627c723babfe4",
+      "bytes": 1247
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\debordements.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/debordements.py",
+      "sha256": "d4cd980e11626dda5dbc40c8239c5e2713addd542c0b97fbc917d97bbc30adfe",
+      "bytes": 1023
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\executer_blocs.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/executer_blocs.py",
+      "sha256": "2ec8cf059c79372d7a0e585c4ee079e928a4824bc2240394beb76ac72e3f7a49",
+      "bytes": 1776
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\extraire_code_pdf.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/extraire_code_pdf.py",
+      "sha256": "53c4bf9afeae3b92fbe7ceb98f75eff6d0aac9959e20b55fd8e52cb0439678b0",
+      "bytes": 2032
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\liens_verifies.txt",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/liens_verifies.txt",
+      "sha256": "49c55267eb1f4eb0e85ee480fd4c9a8319c9e18fa0e2233ec3d180c6a1bc16bd",
+      "bytes": 44021
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\tester_simulateurs.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/tester_simulateurs.py",
+      "sha256": "d40c46c8dce9412d58ff000f05db16e54a8726cf9410834b8ef80ca593aaf8ca",
+      "bytes": 2456
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\code\\tests\\verifier_liens.py",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/code/tests/verifier_liens.py",
+      "sha256": "28ac8a6516915eedf5bbb220b866262de0b01021ae6d111dd09a0aff84da4089",
+      "bytes": 3817
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\simulateurs\\cascade-informationnelle.html",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/cascade-informationnelle.html",
+      "sha256": "5fd8b63c0b5facb55c61fe6e4ed0ac1413e63f53873ebcb7338f0eca464cf70e",
+      "bytes": 17895
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\simulateurs\\choix-portefeuille.html",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/choix-portefeuille.html",
+      "sha256": "2eed527257f8bf0079c28c8fcba275ead4ff66cb4b37556dbe5caadefced3cdb",
+      "bytes": 21233
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\simulateurs\\diversification-correlation.html",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/diversification-correlation.html",
+      "sha256": "cb3b0d274cdb69d58973f8dca0a4eec431af1225c09629c6546ba04fe5998be3",
+      "bytes": 19927
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\simulateurs\\mutualisation.html",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/mutualisation.html",
+      "sha256": "750349c3f92ed19f0517f6c1763f7a1eccb649d15c9c12027897002ff6d7ea12",
+      "bytes": 19868
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\support\\partie3.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/support/partie3.pdf",
+      "sha256": "7ebb95a072177ac71e4b1ea788300c92b6bd74a20832fb0819571a059d9cd58a",
+      "bytes": 1179048
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\td\\serie05.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/td/serie05.pdf",
+      "sha256": "6fec724a415cbbc0743152752275565508c19c5ba70414d2938ff80c0ce8eb20",
+      "bytes": 213798
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\td\\serie06.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/td/serie06.pdf",
+      "sha256": "6e7da0500247ba301b5ae850405bdab4d04072b66cf6b268d395487cfa6f9b05",
+      "bytes": 176454
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\td\\serie07.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/td/serie07.pdf",
+      "sha256": "1a4271e733569875960dd37dbcd8fb801c587369a1b06e685f6352ea9c5ca231",
+      "bytes": 138477
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\td\\serie08.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/td/serie08.pdf",
+      "sha256": "2c45180413569f94348bf95dfe363ac869523e467addef795cb8155272678c11",
+      "bytes": 140494
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\td\\supplement_pr.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_pr.pdf",
+      "sha256": "9ed6976a4ad8ae09c7758122cf13c291b4c611e134d92c7cf773ae4cbefeb5b4",
+      "bytes": 123744
+    },
+    {
+      "source": "Niort\\2026-27\\Microéconomie III\\partie3\\td\\supplement_varian.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_varian.pdf",
+      "sha256": "8d46cf8a3f9fc75889d64a5f2a332656d32bc7cd0781b6f3fca330f005355c9c",
+      "bytes": 95995
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #4\\td04-notes-td.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-notes-td.pdf",
+      "sha256": "c798212d1131a752d80ccc5c3607c8da295b8e0128475d0ce5a70657cdc370da",
+      "bytes": 49098
+    },
+    {
+      "source": "CY-Cergy-Paris-Université\\2026-27\\L3-Data Analysis\\TD #5\\index.html",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05/index.html",
+      "sha256": "b91cb651b07901c39e513cc9a686577ffd8cdbb1537fa6c1c344eafca9143200",
+      "bytes": 29098
+    },
+    {
+      "source": "Saint-Germain-en-Laye\\2026-27\\Conférence-de-Méthode-Micro\\docs_to_read_micro_St-Germain.zip",
+      "url": "/files/teaching/sciences-po-saint-germain/microeconomics-l1/readings.zip",
+      "sha256": "fadeb38cf5ebf65da1b6a6325f4131267e0379d9091813ddcb2508e8ea4eb4a2",
+      "bytes": 7521056
+    },
+    {
+      "source": "03-research\\homogeneity\\python\\check_derivations.py",
+      "url": "/files/code/homogeneity/python/check_derivations.py",
+      "sha256": "411c9607fb623e1aac9512c31f4cef727ff23bdaff4bb724249183c6cfe1fe3f",
+      "bytes": 4890
+    },
+    {
+      "source": "03-research\\homogeneity\\python\\requirements.txt",
+      "url": "/files/code/homogeneity/python/requirements.txt",
+      "sha256": "1838076596d590fd3505c6ec546297b37fddbdff4def4aea02701cc40298fbd8",
+      "bytes": 94
+    },
+    {
+      "source": "03-research\\homogeneity\\python\\simulate_and_test.py",
+      "url": "/files/code/homogeneity/python/simulate_and_test.py",
+      "sha256": "e4f7217c78e3c6c5627d4f2bc56807819a53af849dd08f557bb024f720210a91",
+      "bytes": 27376
+    },
+    {
+      "source": "03-research\\homogeneity\\python\\utility_figure.py",
+      "url": "/files/code/homogeneity/python/utility_figure.py",
+      "sha256": "a6846fafb749fc1882335d02f58f0233b2016006aaf1f3003f65f2a20805760a",
+      "bytes": 4096
+    },
+    {
+      "source": "03-research\\homogeneity\\python\\verify_note.py",
+      "url": "/files/code/homogeneity/python/verify_note.py",
+      "sha256": "92869a05e6b74845ecd609741f36f319ea2be3d97bf3816d4695dd9699c4f8b9",
+      "bytes": 7046
+    },
+    {
+      "source": "03-research\\homogeneity\\R\\simulate_and_test.R",
+      "url": "/files/code/homogeneity/R/simulate_and_test.R",
+      "sha256": "a6b17d17eed52af3eeb242fba91e5b69238c6f2ea58b8c3640598d814ee547f4",
+      "bytes": 12472
+    },
+    {
+      "source": "03-research\\homogeneity\\R\\utility_figure.R",
+      "url": "/files/code/homogeneity/R/utility_figure.R",
+      "sha256": "d5226cbf5b5f1f0c18d8902f9d022addd340a00a8661a5c2cd0a14ce8f75b7cb",
+      "bytes": 3574
+    },
+    {
+      "source": "03-research\\homogeneity\\data\\sim_data.csv",
+      "url": "/files/code/homogeneity/data/sim_data.csv",
+      "sha256": "9976f977497342880916094e0acac0389c52131b2f5f89a268ffaa1a2bab9071",
+      "bytes": 72464
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\crosscheck_R_vs_Python.csv",
+      "url": "/files/code/homogeneity/output/crosscheck_R_vs_Python.csv",
+      "sha256": "fe1a71568ebfdb78d4c317a1288021cdbcc882e56badc9bc047d7b010a0b961e",
+      "bytes": 3283
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\derivations.json",
+      "url": "/files/code/homogeneity/output/derivations.json",
+      "sha256": "70cc2b77709a4d0bafabe78ba270edb1840d2f97a32b9b5a3b6632dcaed14f59",
+      "bytes": 750
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\figures_R\\fig1_utility_R.pdf",
+      "url": "/files/code/homogeneity/output/figures_R/fig1_utility_R.pdf",
+      "sha256": "8a2505744834e4ab9bd0970e0b4018b69db9f31b78e04347c45311bd02d7aa57",
+      "bytes": 42095
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\figures_R\\fig1_utility_R.png",
+      "url": "/files/code/homogeneity/output/figures_R/fig1_utility_R.png",
+      "sha256": "6e539d9e5a725c6615aee4708f6fc4bd8b45fffc2a666733270a1ac0f1b2a820",
+      "bytes": 145871
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\figures_R\\fig2_size_R.png",
+      "url": "/files/code/homogeneity/output/figures_R/fig2_size_R.png",
+      "sha256": "623bda69a02298962838c895d48169ee6e3e6d2edbf3f5d4eb20c901ed67ff52",
+      "bytes": 30865
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\figures_R\\fig3_power_R.png",
+      "url": "/files/code/homogeneity/output/figures_R/fig3_power_R.png",
+      "sha256": "327d9e1067c5149b6590e7593fcc4d5f3bf27fff619d4bc059b7f285e692ca11",
+      "bytes": 44827
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\figures_R\\fig4_restricted_vs_unrestricted_R.png",
+      "url": "/files/code/homogeneity/output/figures_R/fig4_restricted_vs_unrestricted_R.png",
+      "sha256": "e2b15f8f0e70ca711d5ed019a96fee2e55ed0103fa5423a2042a8ad60790bb26",
+      "bytes": 68621
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\log_python.txt",
+      "url": "/files/code/homogeneity/output/log_python.txt",
+      "sha256": "92dee72fe163d6b1ca9b48939bd9b89b5619b5697bcd7bff627c553ed07a25a5",
+      "bytes": 1692
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\log_R.txt",
+      "url": "/files/code/homogeneity/output/log_R.txt",
+      "sha256": "69df32dbab3cc14dff425e06279dba280350288cb1ba913ca3864f4aee3b79d4",
+      "bytes": 1975
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\macros_sim.json",
+      "url": "/files/code/homogeneity/output/macros_sim.json",
+      "sha256": "9102ebbd134ce5d6e618fd55d70a6c1be47222ea6185e5827fe34963b0c95725",
+      "bytes": 1569
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\macros_sim.tex",
+      "url": "/files/code/homogeneity/output/macros_sim.tex",
+      "sha256": "165b4ce857a1df027f8fb1293e9e7746d35059015b83d70fbc6acc1a490c8123",
+      "bytes": 2099
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\macros_theory.json",
+      "url": "/files/code/homogeneity/output/macros_theory.json",
+      "sha256": "11712e29536d513c8d729422e09a48991e3259500b1246068a8b83ec64d62fcb",
+      "bytes": 150
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\macros_theory.tex",
+      "url": "/files/code/homogeneity/output/macros_theory.tex",
+      "sha256": "05e949ae35a9ccf5676e8655e83a9c6d0375917df66ec1fd2d4d01ec2583110a",
+      "bytes": 248
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\python_estimates.csv",
+      "url": "/files/code/homogeneity/output/python_estimates.csv",
+      "sha256": "8a7acc51bed3fe1c9a1ab3998b823be12ffa5c9eb1d6b8727112821a65060629",
+      "bytes": 1692
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\python_mc.csv",
+      "url": "/files/code/homogeneity/output/python_mc.csv",
+      "sha256": "6285ab86e41663add12df71ee4a7c019e849adfb30b33b94fe8954935063fef3",
+      "bytes": 312
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\results.json",
+      "url": "/files/code/homogeneity/output/results.json",
+      "sha256": "0f5c5aa75583b4e1a0fde24edf285fbe2e493037b2c3e957eadb7c39ddd052ef",
+      "bytes": 6271
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\table1.md",
+      "url": "/files/code/homogeneity/output/table1.md",
+      "sha256": "379991c40483ae3413473f129b135ecc38d669adb16e5c2c936419c0a267e02e",
+      "bytes": 703
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\table1.tex",
+      "url": "/files/code/homogeneity/output/table1.tex",
+      "sha256": "e3a4f36cedb31189958f791bfc5402a7bd440fceabf355c7293c297d9e75a2c9",
+      "bytes": 782
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\table2.md",
+      "url": "/files/code/homogeneity/output/table2.md",
+      "sha256": "e7b5bfbf73c45faa6ed681e33c74065357598c54d7930bdfc5682906e128ab57",
+      "bytes": 398
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\table2.tex",
+      "url": "/files/code/homogeneity/output/table2.tex",
+      "sha256": "bb7292836dd268a6113cb316520160999d817798bcf1e922deb7cedf9d3d82b4",
+      "bytes": 450
+    },
+    {
+      "source": "03-research\\homogeneity\\output\\verification.txt",
+      "url": "/files/code/homogeneity/output/verification.txt",
+      "sha256": "ddaefb5584f3d6260ed4b17f898edff927beef65bfc9982162c3f302aac22e51",
+      "bytes": 20
+    },
+    {
+      "source": "03-research\\homogeneity\\README.md",
+      "url": "/files/code/homogeneity/README.md",
+      "sha256": "942a26fd45f6ebfb307df4f9525bdf70fceccbc9efc20dcfd012d60f9d18881e",
+      "bytes": 3483
+    },
+    {
+      "source": "03-research\\homogeneity\\note\\figures\\fig1_utility.png",
+      "url": "/img/insights/homogeneity/fig1_utility.png",
+      "sha256": "782e4011130a68b3c78c64b9fc6dcc2fc99ac56799fbb8f194cf3235d0071ecf",
+      "bytes": 226096
+    },
+    {
+      "source": "03-research\\homogeneity\\note\\figures\\fig2_size.png",
+      "url": "/img/insights/homogeneity/fig2_size.png",
+      "sha256": "54cf62f91c066feb88a8d07325cc9e422ada5f35b381c3e2069e7e0776f27e92",
+      "bytes": 46914
+    },
+    {
+      "source": "03-research\\homogeneity\\note\\figures\\fig3_power.png",
+      "url": "/img/insights/homogeneity/fig3_power.png",
+      "sha256": "fd6dc9c3d4571ffbb701b6ee85974037544013b31d3d12447cebcf375dad2a41",
+      "bytes": 60025
+    },
+    {
+      "source": "03-research\\homogeneity\\note\\figures\\fig4_restricted_vs_unrestricted.png",
+      "url": "/img/insights/homogeneity/fig4_restricted_vs_unrestricted.png",
+      "sha256": "ea74d94aee4857dbcfeb444a4d27542483c23d5818ecc343821a807fe3b480af",
+      "bytes": 145870
+    }
+  ],
+  "courses": {
+    "econometrics-l3": 82,
+    "econometrics-m1": 1,
+    "econometrics-m2": 1,
+    "microeconomics-l1": 2,
+    "microeconomics-iii-niort": 20,
+    "econometrics-niort": 49,
+    "data-analysis-l3": 20
+  }
+}

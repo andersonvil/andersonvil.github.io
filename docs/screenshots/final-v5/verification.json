@@ -1,0 +1,3208 @@
+{
+  "responsive": [
+    {
+      "route": "/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 1908,
+      "theme": "light",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 1440,
+      "theme": "light",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 768,
+      "theme": "light",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 390,
+      "theme": "light",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 360,
+      "theme": "light",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 1908,
+      "theme": "dark",
+      "scrollWidth": 1908,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 1440,
+      "theme": "dark",
+      "scrollWidth": 1440,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 768,
+      "theme": "dark",
+      "scrollWidth": 768,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 390,
+      "theme": "dark",
+      "scrollWidth": 390,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/code-data/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/contact/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/talks/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/quest-ce-quun-modele/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/insights/what-household-averages-can-hide/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/data-analysis-l3/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/teaching/econometrics-niort/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    },
+    {
+      "route": "/404.html",
+      "width": 360,
+      "theme": "dark",
+      "scrollWidth": 360,
+      "bodySize": "16px",
+      "rawMath": 0
+    }
+  ],
+  "home": [
+    {
+      "width": 1908,
+      "theme": "light",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 466.234375,
+      "jmpTop": 563.234375,
+      "actionsBottom": 817.734375,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 294,
+          "y": 1660.1875,
+          "width": 648
+        },
+        {
+          "label": "Teaching",
+          "x": 966,
+          "y": 1660.1875,
+          "width": 648
+        },
+        {
+          "label": "Code & Data",
+          "x": 294,
+          "y": 1835.09375,
+          "width": 648
+        },
+        {
+          "label": "Insights",
+          "x": 966,
+          "y": 1835.09375,
+          "width": 648
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 294,
+          "y": 1983.125,
+          "width": 648
+        },
+        {
+          "label": "Contact",
+          "x": 966,
+          "y": 1983.125,
+          "width": 648
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ],
+      "withoutRibbonActionsBottom": 785.734375
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 466.234375,
+      "jmpTop": 563.234375,
+      "actionsBottom": 817.734375,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 60,
+          "y": 1643.59375,
+          "width": 648
+        },
+        {
+          "label": "Teaching",
+          "x": 732,
+          "y": 1643.59375,
+          "width": 648
+        },
+        {
+          "label": "Code & Data",
+          "x": 60,
+          "y": 1816.375,
+          "width": 648
+        },
+        {
+          "label": "Insights",
+          "x": 732,
+          "y": 1816.375,
+          "width": 648
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 60,
+          "y": 1963.34375,
+          "width": 648
+        },
+        {
+          "label": "Contact",
+          "x": 732,
+          "y": 1963.34375,
+          "width": 648
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 843.90625,
+      "jmpTop": 940.90625,
+      "actionsBottom": 1337.859375,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 16,
+          "y": 2132.546875,
+          "width": 356
+        },
+        {
+          "label": "Teaching",
+          "x": 396,
+          "y": 2132.546875,
+          "width": 356
+        },
+        {
+          "label": "Code & Data",
+          "x": 16,
+          "y": 2298.484375,
+          "width": 356
+        },
+        {
+          "label": "Insights",
+          "x": 396,
+          "y": 2298.484375,
+          "width": 356
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 16,
+          "y": 2464.421875,
+          "width": 356
+        },
+        {
+          "label": "Contact",
+          "x": 396,
+          "y": 2464.421875,
+          "width": 356
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 1443.53125,
+      "jmpTop": 1536.53125,
+      "actionsBottom": 2133.578125,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 10,
+          "y": 3018.546875,
+          "width": 370
+        },
+        {
+          "label": "Teaching",
+          "x": 10,
+          "y": 3176.484375,
+          "width": 370
+        },
+        {
+          "label": "Code & Data",
+          "x": 10,
+          "y": 3312.03125,
+          "width": 370
+        },
+        {
+          "label": "Insights",
+          "x": 10,
+          "y": 3469.96875,
+          "width": 370
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 10,
+          "y": 3605.515625,
+          "width": 370
+        },
+        {
+          "label": "Contact",
+          "x": 10,
+          "y": 3741.0625,
+          "width": 370
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "theme": "light",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 1469.125,
+      "jmpTop": 1562.125,
+      "actionsBottom": 2212.078125,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 10,
+          "y": 3115.53125,
+          "width": 340
+        },
+        {
+          "label": "Teaching",
+          "x": 10,
+          "y": 3273.46875,
+          "width": 340
+        },
+        {
+          "label": "Code & Data",
+          "x": 10,
+          "y": 3409.015625,
+          "width": 340
+        },
+        {
+          "label": "Insights",
+          "x": 10,
+          "y": 3566.953125,
+          "width": 340
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 10,
+          "y": 3702.5,
+          "width": 340
+        },
+        {
+          "label": "Contact",
+          "x": 10,
+          "y": 3838.046875,
+          "width": 340
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 1908,
+      "theme": "dark",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 466.234375,
+      "jmpTop": 563.234375,
+      "actionsBottom": 817.734375,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 294,
+          "y": 1660.1875,
+          "width": 648
+        },
+        {
+          "label": "Teaching",
+          "x": 966,
+          "y": 1660.1875,
+          "width": 648
+        },
+        {
+          "label": "Code & Data",
+          "x": 294,
+          "y": 1835.09375,
+          "width": 648
+        },
+        {
+          "label": "Insights",
+          "x": 966,
+          "y": 1835.09375,
+          "width": 648
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 294,
+          "y": 1983.125,
+          "width": 648
+        },
+        {
+          "label": "Contact",
+          "x": 966,
+          "y": 1983.125,
+          "width": 648
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ],
+      "withoutRibbonActionsBottom": 785.734375
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 466.234375,
+      "jmpTop": 563.234375,
+      "actionsBottom": 817.734375,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 60,
+          "y": 1643.59375,
+          "width": 648
+        },
+        {
+          "label": "Teaching",
+          "x": 732,
+          "y": 1643.59375,
+          "width": 648
+        },
+        {
+          "label": "Code & Data",
+          "x": 60,
+          "y": 1816.375,
+          "width": 648
+        },
+        {
+          "label": "Insights",
+          "x": 732,
+          "y": 1816.375,
+          "width": 648
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 60,
+          "y": 1963.34375,
+          "width": 648
+        },
+        {
+          "label": "Contact",
+          "x": 732,
+          "y": 1963.34375,
+          "width": 648
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 843.90625,
+      "jmpTop": 940.90625,
+      "actionsBottom": 1337.859375,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 16,
+          "y": 2132.546875,
+          "width": 356
+        },
+        {
+          "label": "Teaching",
+          "x": 396,
+          "y": 2132.546875,
+          "width": 356
+        },
+        {
+          "label": "Code & Data",
+          "x": 16,
+          "y": 2298.484375,
+          "width": 356
+        },
+        {
+          "label": "Insights",
+          "x": 396,
+          "y": 2298.484375,
+          "width": 356
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 16,
+          "y": 2464.421875,
+          "width": 356
+        },
+        {
+          "label": "Contact",
+          "x": 396,
+          "y": 2464.421875,
+          "width": 356
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 1443.53125,
+      "jmpTop": 1536.53125,
+      "actionsBottom": 2133.578125,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 10,
+          "y": 3018.546875,
+          "width": 370
+        },
+        {
+          "label": "Teaching",
+          "x": 10,
+          "y": 3176.484375,
+          "width": 370
+        },
+        {
+          "label": "Code & Data",
+          "x": 10,
+          "y": 3312.03125,
+          "width": 370
+        },
+        {
+          "label": "Insights",
+          "x": 10,
+          "y": 3469.96875,
+          "width": 370
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 10,
+          "y": 3605.515625,
+          "width": 370
+        },
+        {
+          "label": "Contact",
+          "x": 10,
+          "y": 3741.0625,
+          "width": 370
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "theme": "dark",
+      "scale": 1,
+      "dpr": 1,
+      "hero": 1469.125,
+      "jmpTop": 1562.125,
+      "actionsBottom": 2212.078125,
+      "labels": [
+        {
+          "label": "Research",
+          "x": 10,
+          "y": 3115.53125,
+          "width": 340
+        },
+        {
+          "label": "Teaching",
+          "x": 10,
+          "y": 3273.46875,
+          "width": 340
+        },
+        {
+          "label": "Code & Data",
+          "x": 10,
+          "y": 3409.015625,
+          "width": 340
+        },
+        {
+          "label": "Insights",
+          "x": 10,
+          "y": 3566.953125,
+          "width": 340
+        },
+        {
+          "label": "Beyond Economics",
+          "x": 10,
+          "y": 3702.5,
+          "width": 340
+        },
+        {
+          "label": "Contact",
+          "x": 10,
+          "y": 3838.046875,
+          "width": 340
+        }
+      ],
+      "bio": [
+        {
+          "text": "I am a household and labor economist, a Research Fellow at CY Cergy Paris Université (THEMA), and a Lecturer in Economics at Université Catholique de l’Ouest. I received my PhD in Economics from CY Cergy Paris Université in 2024, under the supervision of Olivier Donni.",
+          "align": "justify",
+          "font": "16.64px"
+        },
+        {
+          "text": "My research examines how households allocate money and time, and how children reshape consumption, labor supply, leisure, and the distribution of resources within households. I develop and estimate structural models using applied microeconometric methods, expenditure data, and time-use data to recover economic quantities that household surveys do not directly reveal.",
+          "align": "justify",
+          "font": "16.64px"
+        }
+      ]
+    }
+  ],
+  "math": [
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-01.png",
+      "tex": "w_I \\;=\\; \\underbrace{\\theta_I\\, w_I}_{\\text{productive: substitutes for paid care}} \\;+\\; \\underbrace{(1-\\theta_I)\\, w_I}_{\\text{process benefit}} .",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-02.png",
+      "tex": "e_T \\;=\\; \\min_{t_W,\\,t_H}\\; \\theta_W w_W\\, t_W + \\theta_H w_H\\, t_H + g(t_W, t_H, n),",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-03.png",
+      "tex": "\\begin{aligned}L_I&=l_I+(1-\\theta_I)t_I,\\\\ e_T&=\\theta_Hw_Ht_H+\\theta_Ww_Wt_W+m,\\\\ e_M&=c_K,\\\\ e&=e_M+e_T.\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-04.png",
+      "tex": "e_M \\;=\\; Y - e_T - F_I^{-1}\\!\\left(w_H, w_W, L_I\\right).",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-05.png",
+      "tex": "e_T = \\alpha^* + \\textstyle\\sum_I \\beta_I^* w_I^* + 2\\sum_I \\gamma_I \\sqrt{w_I^*} + 2\\gamma_{WH}\\sqrt{w_W^* w_H^*}.",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-06.png",
+      "tex": "\\begin{aligned}\nt_H&=\\beta_H z^{T,H}+\\frac{\\gamma_H}{\\sqrt{\\theta_H w_H}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_W w_W}{\\theta_H w_H}}+v_H,\\\\[.4em]\nt_W&=\\beta_W z^{T,W}+\\frac{\\gamma_W}{\\sqrt{\\theta_W w_W}}+\\gamma_{WH}\\sqrt{\\frac{\\theta_H w_H}{\\theta_W w_W}}+v_W,\\\\[.4em]\nm^*&=\\alpha z^T+\\gamma_W\\sqrt{\\theta_W w_W}+\\gamma_H\\sqrt{\\theta_H w_H}+u,\\\\\nm&=\\begin{cases}m^*,&m^*\\ge0,\\\\0,&m^*<0.\\end{cases}\n\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-07.png",
+      "tex": "\\begin{aligned}\nL_H&=a_Hz^{L,H}+b_Hw_H+c_Hw_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_Wz^{L,W}+b_Ww_W+c_Ww_H+d_WY_R+e_WY_R^2+\\varepsilon_W.\n\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-08.png",
+      "tex": "\\begin{aligned}\nL_H&=a_H(n)z^{L,H}+b_H(n)w_H+c_H(n)w_W+d_HY_R+e_HY_R^2+\\varepsilon_H,\\\\\nL_W&=a_W(n)z^{L,W}+b_W(n)w_W+c_W(n)w_H+d_WY_R+e_WY_R^2+\\varepsilon_W,\\\\[.4em]\na_I(n)&=a_I+a'_I\\delta(n),\\quad b_I(n)=b_I+b'_I\\delta(n),\\\\\nc_I(n)&=c_I+c'_I\\delta(n),\\quad\\delta(n)=\\mathbf{1}\\{n>0\\},\\\\[.4em]\nY_R&=Y-e_T-e_M,\\\\\ne_M&=\\log\\!\\left(1+\\exp(\\kappa_0+\\kappa_Hw_H+\\kappa_Ww_W+\\kappa_YY)\\right)\\sqrt n.\n\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "file": "math-household-demand-leisure-09.png",
+      "tex": "t_I^{adj} = t_I^{psid} - k_I \\tanh\\!\\left(t_I^{psid}/k_I\\right).",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "file": "math-children-costs-one-adult-household-01.png",
+      "tex": "\\frac{\\omega}{\\varphi} \\;=\\; g\\!\\left(\\frac{p}{\\pi},\\; \\frac{\\varphi\\, y}{\\pi}\\right),",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "file": "math-children-costs-one-adult-household-02.png",
+      "tex": "\\omega = \\alpha z^{\\omega} + \\beta \\ln p + \\gamma \\ln y + \\eta (\\ln y)^2 + \\epsilon .",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "file": "math-children-costs-one-adult-household-03.png",
+      "tex": "\\frac{\\omega_i}{\\varphi_i}=\\alpha_i z_i^\\omega+\\beta_i\\ln\\!\\frac{p_i}{\\pi_i}+\\gamma_i\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}+\\eta_i\\left(\\ln\\!\\frac{\\varphi_i y_i}{\\pi_i}\\right)^2+\\epsilon_i.",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "file": "math-children-costs-one-adult-household-04.png",
+      "tex": "\\begin{aligned}\\varphi_i&=\\frac{\\exp(\\psi_i)}{1+\\exp(\\psi_i)},\\\\\\psi_i&=(z_i^\\varphi)'\\theta_z+\\theta_y\\ln y_i+\\theta_p\\ln p_i+\\boldsymbol n_i'\\theta_n,\\\\\\varphi_i^{\\mathrm{alt}}&=\\frac{\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}{1+\\exp(\\psi_i(y,p,z^\\varphi,\\widetilde n))}\\,n^{-\\rho}.\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "file": "math-children-costs-one-adult-household-05.png",
+      "tex": "\\pi_i(p,y,n)=\\kappa_i\\ln(y_i)\\sqrt{n_i}.",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-costs-one-adult-household/",
+      "file": "math-children-costs-one-adult-household-06.png",
+      "tex": "\\begin{aligned}\\omega_i&=\\alpha_i z_i^\\omega+\\beta_i\\ln p_i+\\gamma_i\\ln y_i+\\eta_i(\\ln y_i)^2+D_iA_i+\\epsilon_i,\\\\A_i&=\\beta_i\\ln\\!\\frac1{\\pi_i}+\\ln\\!\\frac{\\varphi_i}{\\pi_i}\\left[\\gamma_i+\\eta_i\\ln\\!\\frac{y_i^2\\varphi_i}{\\pi_i}\\right]-\\omega_i\\frac{1-\\varphi_i}{\\varphi_i}.\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "file": "math-children-labor-supply-equations-01.png",
+      "tex": "h(y,w,n) \\;=\\; F\\big(w,\\; y - e_t(w,n) - e_m(y,w,n)\\big) \\;-\\; t(w,n), \\qquad h(y,w,0) \\;=\\; F(w,y)",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "file": "math-children-labor-supply-equations-02.png",
+      "tex": "h(y,w,n) \\;=\\; F\\big(w,\\; y - a(n) - b_t(n)\\,w - b_m(n)\\,y\\big) \\;-\\; b_t(n), \\qquad a = a_t + a_m .",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "file": "math-children-labor-supply-equations-03.png",
+      "tex": "\\begin{aligned}\n&(16)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2 y + \\alpha_3 w^2 + \\alpha_4 y^2 + \\alpha_5 y w + u\\\\\n&(17)\\quad e_t(w,n) = (a_t + b_t w)\\,\\delta(n)\\\\\n&(18)\\quad e_m(y,n) = (a_m + b_m y)\\,\\delta(n)\\\\\n&(19)\\quad h = \\alpha_0 z^h + \\alpha_1 w + \\alpha_2\\big[y - a\\,\\delta(n) - b_t\\,\\delta(n)\\,w\\\\\n&\\qquad{}- b_m\\,\\delta(n)\\,y\\big] - b_t\\,\\delta(n) + u \\quad \\text{(linear baseline)}\\\\\n&(21)\\quad \\alpha_1^*(n) = \\alpha_1 - \\alpha_2 b_t\\,\\delta(n), \\qquad \\alpha_2^*(n) = \\alpha_2\\big(1 - b_m\\,\\delta(n)\\big)\\\\\n&(22)\\quad w = \\beta_w z^w + \\sigma_\\nu \\nu \\\\\n&(23)\\quad y = \\beta_y z^y + \\sigma_\\mu \\mu\n\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    },
+    {
+      "route": "/research/children-labor-supply-equations/",
+      "file": "math-children-labor-supply-equations-04.png",
+      "tex": "\\begin{aligned}\nq&=y-a\\delta(n)-b_t\\delta(n)w-b_m\\delta(n)y,\\\\\nh_0(w)&=\\alpha_0 z^h+\\alpha_1w+\\alpha_2q+\\alpha_3w^2+\\alpha_4q^2+\\alpha_5qw-b_t\\delta(n),\\\\\nw_0&=\\beta_w z^w,\\qquad w=w_0+\\sigma_\\nu\\nu,\\\\\ny&=\\beta_y z^y+\\sigma_\\mu\\mu,\\\\\nu&=\\rho_\\mu\\widehat\\mu+\\rho_\\nu\\nu+\\sigma_\\epsilon\\epsilon,\\\\\nh&=\\begin{cases}\nh_0(w)+\\rho_\\mu\\widehat\\mu+\\rho_\\nu(w-w_0)/\\sigma_\\nu+\\sigma_\\epsilon\\epsilon,&\\text{if this expression is positive},\\\\\n0,&\\text{otherwise}.\n\\end{cases}\n\\end{aligned}",
+      "width": 756,
+      "scroll": 756,
+      "mathml": true,
+      "nextDisclosure": true
+    }
+  ],
+  "interactions": {
+    "defaultDark": "dark",
+    "savedTheme": true,
+    "/research/household-demand-leisure/": {
+      "keyboardSymbols": true,
+      "citation": true,
+      "limits": "LIMITS",
+      "activeToc": 1
+    },
+    "/research/children-costs-one-adult-household/": {
+      "keyboardSymbols": true,
+      "citation": true,
+      "limits": "LIMITS",
+      "activeToc": 1
+    },
+    "/research/children-labor-supply-equations/": {
+      "keyboardSymbols": true,
+      "citation": true,
+      "limits": "LIMITS",
+      "activeToc": 1
+    },
+    "emailFont": "18px",
+    "mobileMenu": true,
+    "audio": true,
+    "methodsRedirect": true,
+    "skipLink": {
+      "visible": true,
+      "outline": "3px"
+    }
+  },
+  "errors": [],
+  "hover": [
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "after": "rgb(10, 105, 101)|rgb(237, 242, 241)|rgb(10, 105, 101)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgba(0, 0, 0, 0)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Research"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(199, 210, 212)|auto",
+      "after": "rgb(118, 50, 25)|rgb(237, 242, 241)|rgb(156, 72, 41)|auto",
+      "text": ""
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgb(16, 42, 67)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(118, 50, 25)|rgba(0, 0, 0, 0)|auto",
+      "text": "Job Market Paper provisional PDF"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.button secondary..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgb(255, 255, 255)|rgb(156, 72, 41)|auto",
+      "text": "CV provisional PDF"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "View research"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A..band.",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "The Household Demand for Leisure, the Price of Time and the "
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "BUTTON.abstract-toggle light-control.band.",
+      "changed": true,
+      "before": "rgb(140, 221, 213)|rgba(0, 0, 0, 0)|rgb(140, 221, 213)|auto",
+      "after": "rgb(140, 221, 213)|rgba(0, 0, 0, 0)|rgb(156, 72, 41)|auto",
+      "text": "View abstract"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.button light.band.",
+      "changed": true,
+      "before": "rgb(7, 24, 39)|rgb(247, 251, 252)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(7, 24, 39)|rgb(255, 212, 193)|rgb(255, 212, 193)|auto",
+      "text": "View paper details"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A.button ghost-light.band.",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|color(srgb 0.968627 0.984314 0.988235 / 0.55)|auto",
+      "after": "rgb(255, 212, 193)|rgb(23, 60, 76)|rgb(255, 212, 193)|auto",
+      "text": "Download paper"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "BUTTON.abstract-toggle..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(156, 72, 41)|auto",
+      "text": "View abstract"
+    },
+    {
+      "route": "/",
+      "theme": "light",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgba(0, 0, 0, 0)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "after": "rgb(10, 105, 101)|rgb(237, 242, 241)|rgb(10, 105, 101)|auto",
+      "text": "Research"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(199, 210, 212)|auto",
+      "after": "rgb(118, 50, 25)|rgb(237, 242, 241)|rgb(156, 72, 41)|auto",
+      "text": ""
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgb(16, 42, 67)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(118, 50, 25)|rgba(0, 0, 0, 0)|auto",
+      "text": "Go to papers"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "BUTTON.abstract-toggle..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(156, 72, 41)|auto",
+      "text": "View abstract"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "View paper details"
+    },
+    {
+      "route": "/research/",
+      "theme": "light",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgba(0, 0, 0, 0)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "after": "rgb(10, 105, 101)|rgb(237, 242, 241)|rgb(10, 105, 101)|auto",
+      "text": "Teaching"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(199, 210, 212)|auto",
+      "after": "rgb(118, 50, 25)|rgb(237, 242, 241)|rgb(156, 72, 41)|auto",
+      "text": ""
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A.button secondary..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgb(255, 255, 255)|rgb(156, 72, 41)|auto",
+      "text": "View resources"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Explore Code & Data"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgb(16, 42, 67)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(118, 50, 25)|rgba(0, 0, 0, 0)|auto",
+      "text": "Email Anderson Vil"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "light",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgba(0, 0, 0, 0)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "after": "rgb(10, 105, 101)|rgb(237, 242, 241)|rgb(10, 105, 101)|auto",
+      "text": "Contact"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(199, 210, 212)|auto",
+      "after": "rgb(118, 50, 25)|rgb(237, 242, 241)|rgb(156, 72, 41)|auto",
+      "text": ""
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "A.email-address..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "vladerinson@gmail.com"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "BUTTON.button secondary copy-email..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgb(255, 255, 255)|rgb(156, 72, 41)|auto",
+      "text": "Copy email address"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgb(16, 42, 67)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(118, 50, 25)|rgba(0, 0, 0, 0)|auto",
+      "text": "Request a meeting"
+    },
+    {
+      "route": "/contact/",
+      "theme": "light",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgba(0, 0, 0, 0)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "after": "rgb(10, 105, 101)|rgb(237, 242, 241)|rgb(10, 105, 101)|auto",
+      "text": "Research"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(199, 210, 212)|auto",
+      "after": "rgb(118, 50, 25)|rgb(237, 242, 241)|rgb(156, 72, 41)|auto",
+      "text": ""
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgb(16, 42, 67)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(118, 50, 25)|rgba(0, 0, 0, 0)|auto",
+      "text": "Download paper"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A.button secondary..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgb(255, 255, 255)|rgb(156, 72, 41)|auto",
+      "text": "Download slides"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "BUTTON.button secondary copy-citation..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgb(255, 255, 255)|rgb(156, 72, 41)|auto",
+      "text": "Copy citation"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "SUMMARY...",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(156, 72, 41)|auto",
+      "text": "Abstract"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A.table-source-link..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Table 1 — childcare hours (h/week) and expenditure ($/week) "
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Official provider site"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "light",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(10, 32, 49)|rgba(0, 0, 0, 0)|rgb(10, 32, 49)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgba(0, 0, 0, 0)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(118, 50, 25)|auto",
+      "after": "rgb(10, 105, 101)|rgb(237, 242, 241)|rgb(10, 105, 101)|auto",
+      "text": "Beyond Economics"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(199, 210, 212)|auto",
+      "after": "rgb(118, 50, 25)|rgb(237, 242, 241)|rgb(156, 72, 41)|auto",
+      "text": ""
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "BUTTON.button primary immersive-open..",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgb(16, 42, 67)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(118, 50, 25)|rgb(156, 72, 41)|auto",
+      "text": "Enter immersive reading"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "BUTTON.button secondary audio-play-toggle..",
+      "changed": true,
+      "before": "rgb(23, 48, 68)|rgb(255, 255, 255)|rgb(23, 48, 68)|auto",
+      "after": "rgb(118, 50, 25)|rgb(255, 255, 255)|rgb(156, 72, 41)|auto",
+      "text": "Play music"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "INPUT.audio-progress..",
+      "changed": true,
+      "before": "rgb(255, 255, 255)|rgb(59, 59, 59)|rgb(255, 255, 255)|rgb(10, 105, 101)",
+      "after": "rgb(255, 255, 255)|rgb(237, 242, 241)|rgb(255, 255, 255)|rgb(156, 72, 41)",
+      "text": ""
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "INPUT.audio-volume..",
+      "changed": true,
+      "before": "rgb(255, 255, 255)|rgb(59, 59, 59)|rgb(255, 255, 255)|rgb(10, 105, 101)",
+      "after": "rgb(255, 255, 255)|rgb(237, 242, 241)|rgb(255, 255, 255)|rgb(156, 72, 41)",
+      "text": ""
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "SUMMARY...",
+      "changed": true,
+      "before": "rgb(10, 105, 101)|rgba(0, 0, 0, 0)|rgb(10, 105, 101)|auto",
+      "after": "rgb(118, 50, 25)|rgba(0, 0, 0, 0)|rgb(156, 72, 41)|auto",
+      "text": "About the music"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "light",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(247, 251, 252)|rgba(0, 0, 0, 0)|rgb(247, 251, 252)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "after": "rgb(113, 200, 192)|rgb(24, 42, 52)|rgb(113, 200, 192)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgba(0, 0, 0, 0)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Research"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(57, 80, 91)|auto",
+      "after": "rgb(255, 176, 142)|rgb(24, 42, 52)|rgb(238, 152, 118)|auto",
+      "text": ""
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgb(21, 45, 61)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(255, 176, 142)|rgba(0, 0, 0, 0)|auto",
+      "text": "Job Market Paper provisional PDF"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.button secondary..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgb(18, 32, 42)|rgb(238, 152, 118)|auto",
+      "text": "CV provisional PDF"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "View research"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A..band.",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "The Household Demand for Leisure, the Price of Time and the "
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "BUTTON.abstract-toggle light-control.band.",
+      "changed": true,
+      "before": "rgb(140, 221, 213)|rgba(0, 0, 0, 0)|rgb(140, 221, 213)|auto",
+      "after": "rgb(140, 221, 213)|rgba(0, 0, 0, 0)|rgb(238, 152, 118)|auto",
+      "text": "View abstract"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.button light.band.",
+      "changed": true,
+      "before": "rgb(7, 20, 29)|rgb(239, 247, 248)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(7, 24, 39)|rgb(255, 212, 193)|rgb(255, 212, 193)|auto",
+      "text": "View paper details"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A.button ghost-light.band.",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|color(srgb 0.937255 0.968627 0.972549 / 0.55)|auto",
+      "after": "rgb(255, 212, 193)|rgb(23, 60, 76)|rgb(255, 212, 193)|auto",
+      "text": "Download paper"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "BUTTON.abstract-toggle..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(238, 152, 118)|auto",
+      "text": "View abstract"
+    },
+    {
+      "route": "/",
+      "theme": "dark",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgba(0, 0, 0, 0)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "after": "rgb(113, 200, 192)|rgb(24, 42, 52)|rgb(113, 200, 192)|auto",
+      "text": "Research"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(57, 80, 91)|auto",
+      "after": "rgb(255, 176, 142)|rgb(24, 42, 52)|rgb(238, 152, 118)|auto",
+      "text": ""
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgb(21, 45, 61)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(255, 176, 142)|rgba(0, 0, 0, 0)|auto",
+      "text": "Go to papers"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "BUTTON.abstract-toggle..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(238, 152, 118)|auto",
+      "text": "View abstract"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "View paper details"
+    },
+    {
+      "route": "/research/",
+      "theme": "dark",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgba(0, 0, 0, 0)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "after": "rgb(113, 200, 192)|rgb(24, 42, 52)|rgb(113, 200, 192)|auto",
+      "text": "Teaching"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(57, 80, 91)|auto",
+      "after": "rgb(255, 176, 142)|rgb(24, 42, 52)|rgb(238, 152, 118)|auto",
+      "text": ""
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A.button secondary..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgb(18, 32, 42)|rgb(238, 152, 118)|auto",
+      "text": "View resources"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Explore Code & Data"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgb(21, 45, 61)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(255, 176, 142)|rgba(0, 0, 0, 0)|auto",
+      "text": "Email Anderson Vil"
+    },
+    {
+      "route": "/teaching/",
+      "theme": "dark",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgba(0, 0, 0, 0)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "after": "rgb(113, 200, 192)|rgb(24, 42, 52)|rgb(113, 200, 192)|auto",
+      "text": "Contact"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(57, 80, 91)|auto",
+      "after": "rgb(255, 176, 142)|rgb(24, 42, 52)|rgb(238, 152, 118)|auto",
+      "text": ""
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "A.email-address..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "vladerinson@gmail.com"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "BUTTON.button secondary copy-email..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgb(18, 32, 42)|rgb(238, 152, 118)|auto",
+      "text": "Copy email address"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgb(21, 45, 61)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(255, 176, 142)|rgba(0, 0, 0, 0)|auto",
+      "text": "Request a meeting"
+    },
+    {
+      "route": "/contact/",
+      "theme": "dark",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgba(0, 0, 0, 0)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "after": "rgb(113, 200, 192)|rgb(24, 42, 52)|rgb(113, 200, 192)|auto",
+      "text": "Research"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(57, 80, 91)|auto",
+      "after": "rgb(255, 176, 142)|rgb(24, 42, 52)|rgb(238, 152, 118)|auto",
+      "text": ""
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A.button primary..",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgb(21, 45, 61)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(255, 176, 142)|rgba(0, 0, 0, 0)|auto",
+      "text": "Download paper"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A.button secondary..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgb(18, 32, 42)|rgb(238, 152, 118)|auto",
+      "text": "Download slides"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "BUTTON.button secondary copy-citation..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgb(18, 32, 42)|rgb(238, 152, 118)|auto",
+      "text": "Copy citation"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "SUMMARY...",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(238, 152, 118)|auto",
+      "text": "Abstract"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A.table-source-link..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Table 1 — childcare hours (h/week) and expenditure ($/week) "
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A.text-link..",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Official provider site"
+    },
+    {
+      "route": "/research/household-demand-leisure/",
+      "theme": "dark",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "A.wordmark..",
+      "changed": true,
+      "before": "rgb(247, 250, 251)|rgba(0, 0, 0, 0)|rgb(247, 250, 251)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Anderson Vil"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "A...",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgba(0, 0, 0, 0)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Home"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "A.nav-active..",
+      "changed": true,
+      "before": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "after": "rgb(113, 200, 192)|rgb(24, 42, 52)|rgb(113, 200, 192)|auto",
+      "text": "Beyond Economics"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "BUTTON.theme-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(57, 80, 91)|auto",
+      "after": "rgb(255, 176, 142)|rgb(24, 42, 52)|rgb(238, 152, 118)|auto",
+      "text": ""
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "BUTTON.button primary immersive-open..",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgb(21, 45, 61)|rgba(0, 0, 0, 0)|auto",
+      "after": "rgb(255, 255, 255)|rgb(255, 176, 142)|rgb(238, 152, 118)|auto",
+      "text": "Enter immersive reading"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "BUTTON.button secondary audio-play-toggle..",
+      "changed": true,
+      "before": "rgb(228, 236, 239)|rgb(18, 32, 42)|rgb(228, 236, 239)|auto",
+      "after": "rgb(255, 176, 142)|rgb(18, 32, 42)|rgb(238, 152, 118)|auto",
+      "text": "Play music"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "INPUT.audio-progress..",
+      "changed": true,
+      "before": "rgb(255, 255, 255)|rgb(59, 59, 59)|rgb(255, 255, 255)|rgb(113, 200, 192)",
+      "after": "rgb(255, 255, 255)|rgb(24, 42, 52)|rgb(255, 255, 255)|rgb(238, 152, 118)",
+      "text": ""
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "INPUT.audio-volume..",
+      "changed": true,
+      "before": "rgb(255, 255, 255)|rgb(59, 59, 59)|rgb(255, 255, 255)|rgb(113, 200, 192)",
+      "after": "rgb(255, 255, 255)|rgb(24, 42, 52)|rgb(255, 255, 255)|rgb(238, 152, 118)",
+      "text": ""
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "SUMMARY...",
+      "changed": true,
+      "before": "rgb(113, 200, 192)|rgba(0, 0, 0, 0)|rgb(113, 200, 192)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(238, 152, 118)|auto",
+      "text": "About the music"
+    },
+    {
+      "route": "/beyond-economics/calligraphie-de-bonheur/",
+      "theme": "dark",
+      "type": "A...footer",
+      "changed": true,
+      "before": "rgb(239, 247, 248)|rgba(0, 0, 0, 0)|rgb(239, 247, 248)|auto",
+      "after": "rgb(255, 176, 142)|rgba(0, 0, 0, 0)|rgb(255, 176, 142)|auto",
+      "text": "Email"
+    }
+  ]
+}

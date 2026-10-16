@@ -1,0 +1,56 @@
+[
+  {
+    "file": "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\seance01_python.ipynb",
+    "cells": 47,
+    "code_cells": 23,
+    "student_placeholders": 0
+  },
+  {
+    "file": "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\seance01_R.ipynb",
+    "cells": 47,
+    "code_cells": 23,
+    "student_placeholders": 0
+  },
+  {
+    "file": "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\td01_python.ipynb",
+    "cells": 17,
+    "code_cells": 8,
+    "student_placeholders": 0
+  },
+  {
+    "file": "static\\files\\teaching\\niort\\econometrics\\session-01\\notebooks\\td01_R.ipynb",
+    "cells": 17,
+    "code_cells": 8,
+    "student_placeholders": 0
+  },
+  {
+    "file": "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-01\\td01-indice-prix.ipynb",
+    "cells": 16,
+    "code_cells": 6,
+    "student_placeholders": 3
+  },
+  {
+    "file": "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-02\\td02-chomage.ipynb",
+    "cells": 25,
+    "code_cells": 9,
+    "student_placeholders": 6
+  },
+  {
+    "file": "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-03\\td03-nettoyage.ipynb",
+    "cells": 29,
+    "code_cells": 12,
+    "student_placeholders": 5
+  },
+  {
+    "file": "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-04\\td04-fusion.ipynb",
+    "cells": 25,
+    "code_cells": 8,
+    "student_placeholders": 7
+  },
+  {
+    "file": "static\\files\\teaching\\cy-cergy\\l3-data-analysis\\td-05\\td05-distribution.ipynb",
+    "cells": 27,
+    "code_cells": 10,
+    "student_placeholders": 7
+  }
+]
