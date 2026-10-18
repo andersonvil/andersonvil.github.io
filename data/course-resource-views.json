@@ -1,0 +1,3920 @@
+{
+  "groups": [
+    {
+      "id": "econometrics-l3",
+      "cards": [
+        {
+          "title": "Chapter I — Introduction and simple regression",
+          "primary": [
+            {
+              "label": "Chapter I — Introduction and simple regression",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-01.pdf",
+              "pages": 3,
+              "bytes": 95934,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": "Chapter exercises"
+        },
+        {
+          "title": "Chapter II — Simple regression applications",
+          "primary": [
+            {
+              "label": "Chapter II — Simple regression applications",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-02.pdf",
+              "pages": 5,
+              "bytes": 122888,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "Chapter III — Probability and random variables",
+          "primary": [
+            {
+              "label": "Chapter III — Probability and random variables",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-03.pdf",
+              "pages": 5,
+              "bytes": 114462,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "Chapter IV — Inference in simple regression",
+          "primary": [
+            {
+              "label": "Chapter IV — Inference in simple regression",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-04.pdf",
+              "pages": 4,
+              "bytes": 109925,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "Chapter V — Estimator properties",
+          "primary": [
+            {
+              "label": "Chapter V — Estimator properties",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-05.pdf",
+              "pages": 3,
+              "bytes": 114257,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "Chapter VI — Multiple regression applications",
+          "primary": [
+            {
+              "label": "Chapter VI — Multiple regression applications",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-06.pdf",
+              "pages": 4,
+              "bytes": 102740,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "Chapter VII — Hypothesis tests and specification",
+          "primary": [
+            {
+              "label": "Chapter VII — Hypothesis tests and specification",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-07.pdf",
+              "pages": 5,
+              "bytes": 109695,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "Chapter VIII — Functional form and model comparison",
+          "primary": [
+            {
+              "label": "Chapter VIII — Functional form and model comparison",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-08.pdf",
+              "pages": 6,
+              "bytes": 93486,
+              "part": "Chapter exercises"
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "CC 2024-25",
+          "primary": [
+            {
+              "label": "CC 2024-25 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2024-25.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 147474
+            },
+            {
+              "label": "CC 2024-25 — Answer key",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2024-25Rep.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 161077
+            }
+          ],
+          "sections": [],
+          "heading": "Previous continuous assessments (CC)"
+        },
+        {
+          "title": "CC 2023-24",
+          "primary": [
+            {
+              "label": "CC 2023-24 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2023-24.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 133639
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "CC 2022-23",
+          "primary": [
+            {
+              "label": "CC 2022-23 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2022-23.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 131204
+            },
+            {
+              "label": "CC 2022-23 — Answer key",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2022-23Rep.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 12226656
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "CC 2021-22",
+          "primary": [
+            {
+              "label": "CC 2021-22 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2021-22.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 110824
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "CC 2019-20",
+          "primary": [
+            {
+              "label": "CC 2019-20 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2019-20.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 113149
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "CC 2018-19",
+          "primary": [
+            {
+              "label": "CC 2018-19 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2018-19.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 130976
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        },
+        {
+          "title": "CC 2017-18",
+          "primary": [
+            {
+              "label": "CC 2017-18 — Question paper",
+              "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2017-18.pdf",
+              "part": "Previous continuous assessments (CC)",
+              "format": "PDF",
+              "bytes": 565106
+            }
+          ],
+          "sections": [],
+          "heading": ""
+        }
+      ],
+      "technical": [
+        {
+          "title": "Chapter exercises",
+          "sections": [
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Chapter I — Introduction and simple regression",
+                  "resources": [
+                    {
+                      "label": "Chapter I — Introduction and simple regression",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-01.pdf",
+                      "pages": 3,
+                      "bytes": 95934,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter II — Simple regression applications",
+                  "resources": [
+                    {
+                      "label": "Chapter II — Simple regression applications",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-02.pdf",
+                      "pages": 5,
+                      "bytes": 122888,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter III — Probability and random variables",
+                  "resources": [
+                    {
+                      "label": "Chapter III — Probability and random variables",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-03.pdf",
+                      "pages": 5,
+                      "bytes": 114462,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter IV — Inference in simple regression",
+                  "resources": [
+                    {
+                      "label": "Chapter IV — Inference in simple regression",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-04.pdf",
+                      "pages": 4,
+                      "bytes": 109925,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter V — Estimator properties",
+                  "resources": [
+                    {
+                      "label": "Chapter V — Estimator properties",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-05.pdf",
+                      "pages": 3,
+                      "bytes": 114257,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter VI — Multiple regression applications",
+                  "resources": [
+                    {
+                      "label": "Chapter VI — Multiple regression applications",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-06.pdf",
+                      "pages": 4,
+                      "bytes": 102740,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter VII — Hypothesis tests and specification",
+                  "resources": [
+                    {
+                      "label": "Chapter VII — Hypothesis tests and specification",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-07.pdf",
+                      "pages": 5,
+                      "bytes": 109695,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                },
+                {
+                  "title": "Chapter VIII — Functional form and model comparison",
+                  "resources": [
+                    {
+                      "label": "Chapter VIII — Functional form and model comparison",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/exercises-08.pdf",
+                      "pages": 6,
+                      "bytes": 93486,
+                      "part": "Chapter exercises"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Previous continuous assessments (CC)",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "CC 2017-18 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2017-18 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2017-18.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 565106
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2018-19 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2018-19 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2018-19.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 130976
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2019-20 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2019-20 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2019-20.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 113149
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2021-22 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2021-22 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2021-22.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 110824
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2022-23 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2022-23 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2022-23.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 131204
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2022-23 — Answer key",
+                  "resources": [
+                    {
+                      "label": "CC 2022-23 — Answer key",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2022-23Rep.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 12226656
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2023-24 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2023-24 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2023-24.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 133639
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2024-25 — Question paper",
+                  "resources": [
+                    {
+                      "label": "CC 2024-25 — Question paper",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2024-25.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 147474
+                    }
+                  ]
+                },
+                {
+                  "title": "CC 2024-25 — Answer key",
+                  "resources": [
+                    {
+                      "label": "CC 2024-25 — Answer key",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2024-25Rep.pdf",
+                      "part": "Previous continuous assessments (CC)",
+                      "format": "PDF",
+                      "bytes": 161077
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Teaching datasets",
+          "sections": [
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "BWGHT",
+                  "resources": [
+                    {
+                      "label": "BWGHT — bwght.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/BWGHT/bwght.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 80115
+                    },
+                    {
+                      "label": "BWGHT — BWGHT.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/BWGHT/BWGHT.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 917
+                    },
+                    {
+                      "label": "BWGHT — BWGHT.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/BWGHT/BWGHT.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 206812
+                    },
+                    {
+                      "label": "BWGHT — bwght.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/BWGHT/bwght.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 327680
+                    },
+                    {
+                      "label": "BWGHT — bwght.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/BWGHT/bwght.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 225280
+                    }
+                  ]
+                },
+                {
+                  "title": "CAMPUS",
+                  "resources": [
+                    {
+                      "label": "CAMPUS — campus.des",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/CAMPUS/campus.des",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 452
+                    },
+                    {
+                      "label": "CAMPUS — campus.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/CAMPUS/campus.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 7663
+                    },
+                    {
+                      "label": "CAMPUS — campus.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/CAMPUS/campus.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 22528
+                    }
+                  ]
+                },
+                {
+                  "title": "CEOSAL1",
+                  "resources": [
+                    {
+                      "label": "CEOSAL1 — CEOSAL1.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/CEOSAL1/CEOSAL1.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 827
+                    },
+                    {
+                      "label": "CEOSAL1 — CEOSAL1.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/CEOSAL1/CEOSAL1.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 28006
+                    },
+                    {
+                      "label": "CEOSAL1 — ceosal1.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/CEOSAL1/ceosal1.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 53760
+                    }
+                  ]
+                },
+                {
+                  "title": "GPA1",
+                  "resources": [
+                    {
+                      "label": "GPA1 — GPA1.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA1/GPA1.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1837
+                    },
+                    {
+                      "label": "GPA1 — GPA1.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA1/GPA1.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 45261
+                    },
+                    {
+                      "label": "GPA1 — gpa1.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA1/gpa1.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 40960
+                    }
+                  ]
+                },
+                {
+                  "title": "GPA2",
+                  "resources": [
+                    {
+                      "label": "GPA2 — gpa2.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA2/gpa2.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 215310
+                    },
+                    {
+                      "label": "GPA2 — GPA2.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA2/GPA2.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 769
+                    },
+                    {
+                      "label": "GPA2 — gpa2.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA2/gpa2.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 566769
+                    },
+                    {
+                      "label": "GPA2 — gpa2.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA2/gpa2.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 524288
+                    },
+                    {
+                      "label": "GPA2 — gpa2.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/GPA2/gpa2.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 643584
+                    }
+                  ]
+                },
+                {
+                  "title": "HPRICE1",
+                  "resources": [
+                    {
+                      "label": "HPRICE1 — hprice1.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE1/hprice1.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 5339
+                    },
+                    {
+                      "label": "HPRICE1 — HPRICE1.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE1/HPRICE1.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 641
+                    },
+                    {
+                      "label": "HPRICE1 — hprice1.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE1/hprice1.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 9856
+                    },
+                    {
+                      "label": "HPRICE1 — hprice1.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE1/hprice1.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 131072
+                    },
+                    {
+                      "label": "HPRICE1 — hprice1.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE1/hprice1.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 24064
+                    }
+                  ]
+                },
+                {
+                  "title": "HPRICE2",
+                  "resources": [
+                    {
+                      "label": "HPRICE2 — hprice2.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE2/hprice2.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 36009
+                    },
+                    {
+                      "label": "HPRICE2 — HPRICE2.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE2/HPRICE2.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 831
+                    },
+                    {
+                      "label": "HPRICE2 — HPRICE2.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE2/HPRICE2.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 67804
+                    },
+                    {
+                      "label": "HPRICE2 — hprice2.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE2/hprice2.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 131072
+                    },
+                    {
+                      "label": "HPRICE2 — hprice2.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HPRICE2/hprice2.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 91136
+                    }
+                  ]
+                },
+                {
+                  "title": "HTV",
+                  "resources": [
+                    {
+                      "label": "HTV — htv.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HTV/htv.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 110734
+                    },
+                    {
+                      "label": "HTV — htv.des",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HTV/htv.des",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1666
+                    },
+                    {
+                      "label": "HTV — htv.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HTV/htv.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 313650
+                    },
+                    {
+                      "label": "HTV — htv.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HTV/htv.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 327680
+                    },
+                    {
+                      "label": "HTV — htv.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/HTV/htv.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 327168
+                    }
+                  ]
+                },
+                {
+                  "title": "JTRAIN",
+                  "resources": [
+                    {
+                      "label": "JTRAIN — JTRAIN.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/JTRAIN/JTRAIN.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1862
+                    },
+                    {
+                      "label": "JTRAIN — JTRAIN.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/JTRAIN/JTRAIN.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 156372
+                    },
+                    {
+                      "label": "JTRAIN — jtrain.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/JTRAIN/jtrain.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 199680
+                    }
+                  ]
+                },
+                {
+                  "title": "MEAP93",
+                  "resources": [
+                    {
+                      "label": "MEAP93 — meap01.des",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/MEAP93/meap01.des",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 772
+                    },
+                    {
+                      "label": "MEAP93 — meap01.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/MEAP93/meap01.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 224229
+                    },
+                    {
+                      "label": "MEAP93 — meap01.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/MEAP93/meap01.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 279552
+                    },
+                    {
+                      "label": "MEAP93 — MEAP93.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/MEAP93/MEAP93.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1094
+                    },
+                    {
+                      "label": "MEAP93 — MEAP93.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/MEAP93/MEAP93.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 77112
+                    },
+                    {
+                      "label": "MEAP93 — meap93.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/MEAP93/meap93.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 96256
+                    }
+                  ]
+                },
+                {
+                  "title": "NBASAL",
+                  "resources": [
+                    {
+                      "label": "NBASAL — nbasal.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/NBASAL/nbasal.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 16964
+                    },
+                    {
+                      "label": "NBASAL — nbasal.des",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/NBASAL/nbasal.des",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1472
+                    },
+                    {
+                      "label": "NBASAL — nbasal.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/NBASAL/nbasal.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 65636
+                    },
+                    {
+                      "label": "NBASAL — nbasal.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/NBASAL/nbasal.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 131072
+                    },
+                    {
+                      "label": "NBASAL — nbasal.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/NBASAL/nbasal.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 56320
+                    }
+                  ]
+                },
+                {
+                  "title": "RDCHEM",
+                  "resources": [
+                    {
+                      "label": "RDCHEM — rdchem.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RDCHEM/rdchem.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 1677
+                    },
+                    {
+                      "label": "RDCHEM — RDCHEM.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RDCHEM/RDCHEM.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 509
+                    },
+                    {
+                      "label": "RDCHEM — RDCHEM.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RDCHEM/RDCHEM.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 2576
+                    },
+                    {
+                      "label": "RDCHEM — rdchem.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RDCHEM/rdchem.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 131072
+                    },
+                    {
+                      "label": "RDCHEM — rdchem.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RDCHEM/rdchem.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 14848
+                    }
+                  ]
+                },
+                {
+                  "title": "RENTAL",
+                  "resources": [
+                    {
+                      "label": "RENTAL — rental.csv",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RENTAL/rental.csv",
+                      "part": "Teaching datasets",
+                      "format": "CSV",
+                      "bytes": 18734
+                    },
+                    {
+                      "label": "RENTAL — RENTAL.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RENTAL/RENTAL.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1377
+                    },
+                    {
+                      "label": "RENTAL — RENTAL.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RENTAL/RENTAL.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 32640
+                    },
+                    {
+                      "label": "RENTAL — rental.sas7bdat",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RENTAL/rental.sas7bdat",
+                      "part": "Teaching datasets",
+                      "format": "SAS7BDAT",
+                      "bytes": 131072
+                    },
+                    {
+                      "label": "RENTAL — rental.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/RENTAL/rental.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 53760
+                    }
+                  ]
+                },
+                {
+                  "title": "TWOYEAR",
+                  "resources": [
+                    {
+                      "label": "TWOYEAR — twoyear.des",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/TWOYEAR/twoyear.des",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1673
+                    },
+                    {
+                      "label": "TWOYEAR — twoyear.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/TWOYEAR/twoyear.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 1609594
+                    },
+                    {
+                      "label": "TWOYEAR — twoyear.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/TWOYEAR/twoyear.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 1475072
+                    }
+                  ]
+                },
+                {
+                  "title": "WAGE1",
+                  "resources": [
+                    {
+                      "label": "WAGE1 — WAGE1.DES",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/WAGE1/WAGE1.DES",
+                      "part": "Teaching datasets",
+                      "format": "DES",
+                      "bytes": 1579
+                    },
+                    {
+                      "label": "WAGE1 — WAGE1.raw",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/WAGE1/WAGE1.raw",
+                      "part": "Teaching datasets",
+                      "format": "RAW",
+                      "bytes": 128870
+                    },
+                    {
+                      "label": "WAGE1 — wage1.xls",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset/WAGE1/wage1.xls",
+                      "part": "Teaching datasets",
+                      "format": "XLS",
+                      "bytes": 183296
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Teaching dataset collection — original formats and dictionaries",
+                  "resources": [
+                    {
+                      "label": "Teaching dataset collection — original formats and dictionaries",
+                      "file": "/files/teaching/cy-cergy/l3-econometrics/data/Dataset.zip",
+                      "part": "Teaching datasets",
+                      "format": "ZIP",
+                      "bytes": 1962448
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": [
+        {
+          "title": "BWGHT",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/BWGHT.zip",
+          "bytes": 109225
+        },
+        {
+          "title": "CAMPUS",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/CAMPUS.zip",
+          "bytes": 8011
+        },
+        {
+          "title": "CEOSAL1",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/CEOSAL1.zip",
+          "bytes": 24281
+        },
+        {
+          "title": "GPA1",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/GPA1.zip",
+          "bytes": 7612
+        },
+        {
+          "title": "GPA2",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/GPA2.zip",
+          "bytes": 503793
+        },
+        {
+          "title": "HPRICE1",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HPRICE1.zip",
+          "bytes": 17808
+        },
+        {
+          "title": "HPRICE2",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HPRICE2.zip",
+          "bytes": 63732
+        },
+        {
+          "title": "HTV",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HTV.zip",
+          "bytes": 216805
+        },
+        {
+          "title": "JTRAIN",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/JTRAIN.zip",
+          "bytes": 89304
+        },
+        {
+          "title": "MEAP93",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/MEAP93.zip",
+          "bytes": 259266
+        },
+        {
+          "title": "NBASAL",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/NBASAL.zip",
+          "bytes": 37452
+        },
+        {
+          "title": "RDCHEM",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/RDCHEM.zip",
+          "bytes": 7573
+        },
+        {
+          "title": "RENTAL",
+          "formats": "CSV · DES · RAW · SAS7BDAT · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/RENTAL.zip",
+          "bytes": 57538
+        },
+        {
+          "title": "TWOYEAR",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/TWOYEAR.zip",
+          "bytes": 507574
+        },
+        {
+          "title": "WAGE1",
+          "formats": "DES · RAW · XLS",
+          "file": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/WAGE1.zip",
+          "bytes": 51456
+        }
+      ]
+    },
+    {
+      "id": "econometrics-m1",
+      "cards": [
+        {
+          "title": "Course materials",
+          "primary": [
+            {
+              "label": "Econometrics exercises",
+              "file": "/files/teaching/cy-cergy/m1-econometrics/econometrics-exercises.pdf",
+              "pages": 17,
+              "bytes": 150015,
+              "part": "Course materials"
+            }
+          ],
+          "sections": []
+        }
+      ],
+      "technical": [
+        {
+          "title": "Course materials",
+          "sections": [
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Econometrics exercises",
+                  "resources": [
+                    {
+                      "label": "Econometrics exercises",
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/econometrics-exercises.pdf",
+                      "pages": 17,
+                      "bytes": 150015,
+                      "part": "Course materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": []
+    },
+    {
+      "id": "econometrics-m2",
+      "cards": [
+        {
+          "title": "Course materials",
+          "primary": [
+            {
+              "label": "Advanced econometrics exercises",
+              "file": "/files/teaching/cy-cergy/m2-econometrics/econometrics-exercises.pdf",
+              "pages": 19,
+              "bytes": 162634,
+              "part": "Course materials"
+            }
+          ],
+          "sections": []
+        }
+      ],
+      "technical": [
+        {
+          "title": "Course materials",
+          "sections": [
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Advanced econometrics exercises",
+                  "resources": [
+                    {
+                      "label": "Advanced econometrics exercises",
+                      "file": "/files/teaching/cy-cergy/m2-econometrics/econometrics-exercises.pdf",
+                      "pages": 19,
+                      "bytes": 162634,
+                      "part": "Course materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": []
+    },
+    {
+      "id": "microeconomics-l1",
+      "cards": [
+        {
+          "title": "Session 1 — Consumers, producers, and market efficiency",
+          "primary": [
+            {
+              "label": "Session 1 — Consumers, producers, and market efficiency",
+              "file": "/files/teaching/sciences-po-saint-germain/microeconomics-l1/session-01.pdf",
+              "pages": 61,
+              "bytes": 349358,
+              "part": "Course materials"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "Session 1 — Accompanying readings",
+                  "resources": [
+                    {
+                      "label": "Session 1 — Accompanying readings",
+                      "file": "/files/teaching/sciences-po-saint-germain/microeconomics-l1/readings.zip",
+                      "part": "Course materials",
+                      "format": "ZIP",
+                      "bytes": 7521056
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "technical": [
+        {
+          "title": "Course materials",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Session 1 — Consumers, producers, and market efficiency",
+                  "resources": [
+                    {
+                      "label": "Session 1 — Consumers, producers, and market efficiency",
+                      "file": "/files/teaching/sciences-po-saint-germain/microeconomics-l1/session-01.pdf",
+                      "pages": 61,
+                      "bytes": 349358,
+                      "part": "Course materials"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "Session 1 — Accompanying readings",
+                  "resources": [
+                    {
+                      "label": "Session 1 — Accompanying readings",
+                      "file": "/files/teaching/sciences-po-saint-germain/microeconomics-l1/readings.zip",
+                      "part": "Course materials",
+                      "format": "ZIP",
+                      "bytes": 7521056
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": []
+    },
+    {
+      "id": "microeconomics-iii-niort",
+      "cards": [
+        {
+          "title": "Part I — Foundations",
+          "primary": [
+            {
+              "label": "Séance 1 — Introduction générale",
+              "file": "/files/teaching/niort/microeconomics-iii/session-01.pdf",
+              "pages": 59,
+              "bytes": 533669,
+              "part": "Part I — Foundations"
+            }
+          ],
+          "sections": []
+        },
+        {
+          "title": "Part II — Strategic decisions and games",
+          "primary": [
+            {
+              "label": "Séances II à IV — Théorie des jeux : décisions stratégiques et équilibre de Nash",
+              "file": "/files/teaching/niort/microeconomics-iii/sessions-02-04.pdf",
+              "pages": 109,
+              "bytes": 637333,
+              "part": "Part II — Strategic decisions and games"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Simulateur — Jeux répétés",
+                  "resources": [
+                    {
+                      "label": "Simulateur — Jeux répétés",
+                      "file": "/files/teaching/niort/microeconomics-iii/jeux-repetes-simulateur.html",
+                      "format": "Interactive HTML",
+                      "bytes": 27722,
+                      "part": "Part II — Strategic decisions and games"
+                    }
+                  ]
+                },
+                {
+                  "title": "Simulateur — Pile ou face",
+                  "resources": [
+                    {
+                      "label": "Simulateur — Pile ou face",
+                      "file": "/files/teaching/niort/microeconomics-iii/pile-ou-face-simulateur.html",
+                      "format": "Interactive HTML",
+                      "bytes": 19382,
+                      "part": "Part II — Strategic decisions and games"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Part III — Risk and information",
+          "primary": [
+            {
+              "label": "Part III — Course support (sessions V–VIII)",
+              "file": "/files/teaching/niort/microeconomics-iii/part-3/support/partie3.pdf",
+              "part": "Part III — Risk and information",
+              "format": "PDF",
+              "bytes": 1179048
+            },
+            {
+              "label": "Exercise series 5",
+              "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie05.pdf",
+              "part": "Part III — Risk and information",
+              "format": "PDF",
+              "bytes": 213798
+            },
+            {
+              "label": "Exercise series 6",
+              "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie06.pdf",
+              "part": "Part III — Risk and information",
+              "format": "PDF",
+              "bytes": 176454
+            },
+            {
+              "label": "Exercise series 7",
+              "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie07.pdf",
+              "part": "Part III — Risk and information",
+              "format": "PDF",
+              "bytes": 138477
+            },
+            {
+              "label": "Exercise series 8",
+              "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie08.pdf",
+              "part": "Part III — Risk and information",
+              "format": "PDF",
+              "bytes": 140494
+            }
+          ],
+          "sections": [
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "Supplement — Pindyck & Rubinfeld",
+                  "resources": [
+                    {
+                      "label": "Supplement — Pindyck & Rubinfeld",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_pr.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 123744
+                    }
+                  ]
+                },
+                {
+                  "title": "Supplement — Varian",
+                  "resources": [
+                    {
+                      "label": "Supplement — Varian",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_varian.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 95995
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Code",
+              "kind": "code",
+              "rows": [
+                {
+                  "title": "Annex-generation utility",
+                  "resources": [
+                    {
+                      "label": "Annex-generation utility",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/code/generer_annexes.py",
+                      "part": "Part III — Risk and information",
+                      "format": "Python",
+                      "bytes": 3514
+                    }
+                  ]
+                },
+                {
+                  "title": "Course figures and calculations",
+                  "resources": [
+                    {
+                      "label": "Course figures and calculations — Python",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.py",
+                      "part": "Part III — Risk and information",
+                      "format": "Python",
+                      "bytes": 40051
+                    },
+                    {
+                      "label": "Course figures and calculations — R",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.R",
+                      "part": "Part III — Risk and information",
+                      "format": "R",
+                      "bytes": 35220
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Information cascade simulator",
+                  "resources": [
+                    {
+                      "label": "Information cascade simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/cascade-informationnelle.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 17895
+                    }
+                  ]
+                },
+                {
+                  "title": "Portfolio choice simulator",
+                  "resources": [
+                    {
+                      "label": "Portfolio choice simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/choix-portefeuille.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 21233
+                    }
+                  ]
+                },
+                {
+                  "title": "Diversification and correlation simulator",
+                  "resources": [
+                    {
+                      "label": "Diversification and correlation simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/diversification-correlation.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 19927
+                    }
+                  ]
+                },
+                {
+                  "title": "Risk pooling simulator",
+                  "resources": [
+                    {
+                      "label": "Risk pooling simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/mutualisation.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 19868
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Practical instructions",
+              "kind": "instructions",
+              "rows": [
+                {
+                  "title": "Practical README",
+                  "resources": [
+                    {
+                      "label": "Practical README",
+                      "file": "/teaching/practical-readme/#microeconomics",
+                      "format": "HTML",
+                      "part": "Part III — Risk and information"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3.zip",
+                      "format": "ZIP",
+                      "bytes": 1806456,
+                      "part": "Part III — Risk and information"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "technical": [
+        {
+          "title": "Part I — Foundations",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Séance 1 — Introduction générale",
+                  "resources": [
+                    {
+                      "label": "Séance 1 — Introduction générale",
+                      "file": "/files/teaching/niort/microeconomics-iii/session-01.pdf",
+                      "pages": 59,
+                      "bytes": 533669,
+                      "part": "Part I — Foundations"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Part II — Strategic decisions and games",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Séances II à IV — Théorie des jeux : décisions stratégiques et équilibre de Nash",
+                  "resources": [
+                    {
+                      "label": "Séances II à IV — Théorie des jeux : décisions stratégiques et équilibre de Nash",
+                      "file": "/files/teaching/niort/microeconomics-iii/sessions-02-04.pdf",
+                      "pages": 109,
+                      "bytes": 637333,
+                      "part": "Part II — Strategic decisions and games"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Simulateur — Jeux répétés",
+                  "resources": [
+                    {
+                      "label": "Simulateur — Jeux répétés",
+                      "file": "/files/teaching/niort/microeconomics-iii/jeux-repetes-simulateur.html",
+                      "format": "Interactive HTML",
+                      "bytes": 27722,
+                      "part": "Part II — Strategic decisions and games"
+                    }
+                  ]
+                },
+                {
+                  "title": "Simulateur — Pile ou face",
+                  "resources": [
+                    {
+                      "label": "Simulateur — Pile ou face",
+                      "file": "/files/teaching/niort/microeconomics-iii/pile-ou-face-simulateur.html",
+                      "format": "Interactive HTML",
+                      "bytes": 19382,
+                      "part": "Part II — Strategic decisions and games"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Part III — Risk and information",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Part III — Course support (sessions V–VIII)",
+                  "resources": [
+                    {
+                      "label": "Part III — Course support (sessions V–VIII)",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/support/partie3.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 1179048
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Exercise series 5",
+                  "resources": [
+                    {
+                      "label": "Exercise series 5",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie05.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 213798
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercise series 6",
+                  "resources": [
+                    {
+                      "label": "Exercise series 6",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie06.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 176454
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercise series 7",
+                  "resources": [
+                    {
+                      "label": "Exercise series 7",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie07.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 138477
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercise series 8",
+                  "resources": [
+                    {
+                      "label": "Exercise series 8",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/serie08.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 140494
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "Supplement — Pindyck & Rubinfeld",
+                  "resources": [
+                    {
+                      "label": "Supplement — Pindyck & Rubinfeld",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_pr.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 123744
+                    }
+                  ]
+                },
+                {
+                  "title": "Supplement — Varian",
+                  "resources": [
+                    {
+                      "label": "Supplement — Varian",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_varian.pdf",
+                      "part": "Part III — Risk and information",
+                      "format": "PDF",
+                      "bytes": 95995
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Code",
+              "kind": "code",
+              "rows": [
+                {
+                  "title": "Annex-generation utility",
+                  "resources": [
+                    {
+                      "label": "Annex-generation utility",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/code/generer_annexes.py",
+                      "part": "Part III — Risk and information",
+                      "format": "Python",
+                      "bytes": 3514
+                    }
+                  ]
+                },
+                {
+                  "title": "Course figures and calculations",
+                  "resources": [
+                    {
+                      "label": "Course figures and calculations — Python",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.py",
+                      "part": "Part III — Risk and information",
+                      "format": "Python",
+                      "bytes": 40051
+                    },
+                    {
+                      "label": "Course figures and calculations — R",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.R",
+                      "part": "Part III — Risk and information",
+                      "format": "R",
+                      "bytes": 35220
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Information cascade simulator",
+                  "resources": [
+                    {
+                      "label": "Information cascade simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/cascade-informationnelle.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 17895
+                    }
+                  ]
+                },
+                {
+                  "title": "Portfolio choice simulator",
+                  "resources": [
+                    {
+                      "label": "Portfolio choice simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/choix-portefeuille.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 21233
+                    }
+                  ]
+                },
+                {
+                  "title": "Diversification and correlation simulator",
+                  "resources": [
+                    {
+                      "label": "Diversification and correlation simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/diversification-correlation.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 19927
+                    }
+                  ]
+                },
+                {
+                  "title": "Risk pooling simulator",
+                  "resources": [
+                    {
+                      "label": "Risk pooling simulator",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3/simulateurs/mutualisation.html",
+                      "part": "Part III — Risk and information",
+                      "format": "Interactive HTML",
+                      "bytes": 19868
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Practical instructions",
+              "kind": "instructions",
+              "rows": [
+                {
+                  "title": "Practical README",
+                  "resources": [
+                    {
+                      "label": "Practical README",
+                      "file": "/teaching/practical-readme/#microeconomics",
+                      "format": "HTML",
+                      "part": "Part III — Risk and information"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/niort/microeconomics-iii/part-3.zip",
+                      "format": "ZIP",
+                      "bytes": 1806456,
+                      "part": "Part III — Risk and information"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": []
+    },
+    {
+      "id": "econometrics-niort",
+      "cards": [
+        {
+          "title": "Practical instructions",
+          "primary": [],
+          "sections": [
+            {
+              "title": "Practical instructions",
+              "kind": "instructions",
+              "rows": [
+                {
+                  "title": "Practical README",
+                  "resources": [
+                    {
+                      "label": "Practical README",
+                      "file": "/teaching/practical-readme/",
+                      "format": "HTML",
+                      "part": "Practical instructions"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Session 1 — Covariance, correlation and regression",
+          "primary": [
+            {
+              "label": "Course support",
+              "file": "/files/teaching/niort/econometrics/session-01/support/seance01.pdf",
+              "part": "Session 1 — Covariance, correlation and regression",
+              "format": "PDF",
+              "bytes": 1120586
+            },
+            {
+              "label": "Exercise sheet",
+              "file": "/files/teaching/niort/econometrics/session-01/td/serie01.pdf",
+              "part": "Session 1 — Covariance, correlation and regression",
+              "format": "PDF",
+              "bytes": 253690
+            }
+          ],
+          "sections": [
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01_python.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 27952
+                    },
+                    {
+                      "label": "Course — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01_R.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 21268
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01_python.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 10187
+                    },
+                    {
+                      "label": "Exercises — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01_R.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 8093
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Code",
+              "kind": "code",
+              "rows": [
+                {
+                  "title": "Annex-generation utility",
+                  "resources": [
+                    {
+                      "label": "Annex-generation utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/generer_annexes.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 8621
+                    }
+                  ]
+                },
+                {
+                  "title": "Data export utility",
+                  "resources": [
+                    {
+                      "label": "Data export utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/generer_dta.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 1490
+                    }
+                  ]
+                },
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — do",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01.do",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata",
+                      "bytes": 11817
+                    },
+                    {
+                      "label": "Course — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 19582
+                    },
+                    {
+                      "label": "Course — R",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01.R",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "R",
+                      "bytes": 14304
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — do",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01.do",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata",
+                      "bytes": 4759
+                    },
+                    {
+                      "label": "Exercises — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 7200
+                    },
+                    {
+                      "label": "Exercises — R",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01.R",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "R",
+                      "bytes": 5644
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "Dataset — attend",
+                  "resources": [
+                    {
+                      "label": "Dataset — attend",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/attend.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 45825
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — cps78_85",
+                  "resources": [
+                    {
+                      "label": "Dataset — cps78_85",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/cps78_85.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 72477
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — econmath",
+                  "resources": [
+                    {
+                      "label": "Dataset — econmath",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/econmath.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 89099
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — jtrain2",
+                  "resources": [
+                    {
+                      "label": "Dataset — jtrain2",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/jtrain2.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 48397
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — phillips",
+                  "resources": [
+                    {
+                      "label": "Dataset — phillips",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/phillips.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 4421
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wagepan",
+                  "resources": [
+                    {
+                      "label": "Dataset — wagepan",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/wagepan.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 793672
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wine",
+                  "resources": [
+                    {
+                      "label": "Dataset — wine",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/wine.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 1867
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Interactive covariance simulator",
+                  "resources": [
+                    {
+                      "label": "Interactive covariance simulator",
+                      "file": "/files/teaching/niort/econometrics/session-01/simulateur/covariance_interactive.html",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Interactive HTML",
+                      "bytes": 7133
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/niort/econometrics/session-01.zip",
+                      "format": "ZIP",
+                      "bytes": 1286918,
+                      "part": "Session 1 — Covariance, correlation and regression"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Session 2 — Sampling, probability and inference",
+          "primary": [
+            {
+              "label": "Course support",
+              "file": "/files/teaching/niort/econometrics/session-02/support/seance02.pdf",
+              "part": "Session 2 — Sampling, probability and inference",
+              "format": "PDF",
+              "bytes": 1195819
+            },
+            {
+              "label": "Exercise sheet",
+              "file": "/files/teaching/niort/econometrics/session-02/td/serie02.pdf",
+              "part": "Session 2 — Sampling, probability and inference",
+              "format": "PDF",
+              "bytes": 260647
+            }
+          ],
+          "sections": [
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02_python.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 35386
+                    },
+                    {
+                      "label": "Course — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02_R.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 26723
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02_python.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 11502
+                    },
+                    {
+                      "label": "Exercises — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02_R.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 8813
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Code",
+              "kind": "code",
+              "rows": [
+                {
+                  "title": "Annex-generation utility",
+                  "resources": [
+                    {
+                      "label": "Annex-generation utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/generer_annexes.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 9106
+                    }
+                  ]
+                },
+                {
+                  "title": "Data export utility",
+                  "resources": [
+                    {
+                      "label": "Data export utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/generer_dta.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 1507
+                    }
+                  ]
+                },
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — do",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02.do",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata",
+                      "bytes": 18843
+                    },
+                    {
+                      "label": "Course — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 25802
+                    },
+                    {
+                      "label": "Course — R",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02.R",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "R",
+                      "bytes": 18801
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — do",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02.do",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata",
+                      "bytes": 5549
+                    },
+                    {
+                      "label": "Exercises — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 8376
+                    },
+                    {
+                      "label": "Exercises — R",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02.R",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "R",
+                      "bytes": 6168
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "Dataset — attend",
+                  "resources": [
+                    {
+                      "label": "Dataset — attend",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/attend.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 45825
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — cps78_85",
+                  "resources": [
+                    {
+                      "label": "Dataset — cps78_85",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/cps78_85.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 72477
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — econmath",
+                  "resources": [
+                    {
+                      "label": "Dataset — econmath",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/econmath.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 89099
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — htv",
+                  "resources": [
+                    {
+                      "label": "Dataset — htv",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/htv.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 147373
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — jtrain2",
+                  "resources": [
+                    {
+                      "label": "Dataset — jtrain2",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/jtrain2.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 48397
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — nbasal",
+                  "resources": [
+                    {
+                      "label": "Dataset — nbasal",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/nbasal.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 35698
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — phillips",
+                  "resources": [
+                    {
+                      "label": "Dataset — phillips",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/phillips.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 4421
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wagepan",
+                  "resources": [
+                    {
+                      "label": "Dataset — wagepan",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/wagepan.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 793672
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wine",
+                  "resources": [
+                    {
+                      "label": "Dataset — wine",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/wine.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 1867
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Interactive sampling simulator",
+                  "resources": [
+                    {
+                      "label": "Interactive sampling simulator",
+                      "file": "/files/teaching/niort/econometrics/session-02/simulateur/simulation_interactive.html",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Interactive HTML",
+                      "bytes": 9866
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/niort/econometrics/session-02.zip",
+                      "format": "ZIP",
+                      "bytes": 1416061,
+                      "part": "Session 2 — Sampling, probability and inference"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "technical": [
+        {
+          "title": "Practical instructions",
+          "sections": [
+            {
+              "title": "Practical instructions",
+              "kind": "instructions",
+              "rows": [
+                {
+                  "title": "Practical README",
+                  "resources": [
+                    {
+                      "label": "Practical README",
+                      "file": "/teaching/practical-readme/",
+                      "format": "HTML",
+                      "part": "Practical instructions"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Session 1 — Covariance, correlation and regression",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Course support",
+                  "resources": [
+                    {
+                      "label": "Course support",
+                      "file": "/files/teaching/niort/econometrics/session-01/support/seance01.pdf",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "PDF",
+                      "bytes": 1120586
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Exercise sheet",
+                  "resources": [
+                    {
+                      "label": "Exercise sheet",
+                      "file": "/files/teaching/niort/econometrics/session-01/td/serie01.pdf",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "PDF",
+                      "bytes": 253690
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01_python.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 27952
+                    },
+                    {
+                      "label": "Course — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01_R.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 21268
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01_python.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 10187
+                    },
+                    {
+                      "label": "Exercises — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01_R.ipynb",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Jupyter notebook",
+                      "bytes": 8093
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Code",
+              "kind": "code",
+              "rows": [
+                {
+                  "title": "Annex-generation utility",
+                  "resources": [
+                    {
+                      "label": "Annex-generation utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/generer_annexes.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 8621
+                    }
+                  ]
+                },
+                {
+                  "title": "Data export utility",
+                  "resources": [
+                    {
+                      "label": "Data export utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/generer_dta.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 1490
+                    }
+                  ]
+                },
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — do",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01.do",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata",
+                      "bytes": 11817
+                    },
+                    {
+                      "label": "Course — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 19582
+                    },
+                    {
+                      "label": "Course — R",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/seance01.R",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "R",
+                      "bytes": 14304
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — do",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01.do",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata",
+                      "bytes": 4759
+                    },
+                    {
+                      "label": "Exercises — py",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01.py",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Python",
+                      "bytes": 7200
+                    },
+                    {
+                      "label": "Exercises — R",
+                      "file": "/files/teaching/niort/econometrics/session-01/code/td01.R",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "R",
+                      "bytes": 5644
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "Dataset — attend",
+                  "resources": [
+                    {
+                      "label": "Dataset — attend",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/attend.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 45825
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — cps78_85",
+                  "resources": [
+                    {
+                      "label": "Dataset — cps78_85",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/cps78_85.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 72477
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — econmath",
+                  "resources": [
+                    {
+                      "label": "Dataset — econmath",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/econmath.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 89099
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — jtrain2",
+                  "resources": [
+                    {
+                      "label": "Dataset — jtrain2",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/jtrain2.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 48397
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — phillips",
+                  "resources": [
+                    {
+                      "label": "Dataset — phillips",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/phillips.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 4421
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wagepan",
+                  "resources": [
+                    {
+                      "label": "Dataset — wagepan",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/wagepan.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 793672
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wine",
+                  "resources": [
+                    {
+                      "label": "Dataset — wine",
+                      "file": "/files/teaching/niort/econometrics/session-01/donnees/wine.dta",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Stata data",
+                      "bytes": 1867
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Interactive covariance simulator",
+                  "resources": [
+                    {
+                      "label": "Interactive covariance simulator",
+                      "file": "/files/teaching/niort/econometrics/session-01/simulateur/covariance_interactive.html",
+                      "part": "Session 1 — Covariance, correlation and regression",
+                      "format": "Interactive HTML",
+                      "bytes": 7133
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/niort/econometrics/session-01.zip",
+                      "format": "ZIP",
+                      "bytes": 1286918,
+                      "part": "Session 1 — Covariance, correlation and regression"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Session 2 — Sampling, probability and inference",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Course support",
+                  "resources": [
+                    {
+                      "label": "Course support",
+                      "file": "/files/teaching/niort/econometrics/session-02/support/seance02.pdf",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "PDF",
+                      "bytes": 1195819
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Exercise sheet",
+                  "resources": [
+                    {
+                      "label": "Exercise sheet",
+                      "file": "/files/teaching/niort/econometrics/session-02/td/serie02.pdf",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "PDF",
+                      "bytes": 260647
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02_python.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 35386
+                    },
+                    {
+                      "label": "Course — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02_R.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 26723
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — Python notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02_python.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 11502
+                    },
+                    {
+                      "label": "Exercises — R notebook",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02_R.ipynb",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Jupyter notebook",
+                      "bytes": 8813
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Code",
+              "kind": "code",
+              "rows": [
+                {
+                  "title": "Annex-generation utility",
+                  "resources": [
+                    {
+                      "label": "Annex-generation utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/generer_annexes.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 9106
+                    }
+                  ]
+                },
+                {
+                  "title": "Data export utility",
+                  "resources": [
+                    {
+                      "label": "Data export utility — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/generer_dta.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 1507
+                    }
+                  ]
+                },
+                {
+                  "title": "Course",
+                  "resources": [
+                    {
+                      "label": "Course — do",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02.do",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata",
+                      "bytes": 18843
+                    },
+                    {
+                      "label": "Course — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 25802
+                    },
+                    {
+                      "label": "Course — R",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/seance02.R",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "R",
+                      "bytes": 18801
+                    }
+                  ]
+                },
+                {
+                  "title": "Exercises",
+                  "resources": [
+                    {
+                      "label": "Exercises — do",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02.do",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata",
+                      "bytes": 5549
+                    },
+                    {
+                      "label": "Exercises — py",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02.py",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Python",
+                      "bytes": 8376
+                    },
+                    {
+                      "label": "Exercises — R",
+                      "file": "/files/teaching/niort/econometrics/session-02/code/td02.R",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "R",
+                      "bytes": 6168
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "Dataset — attend",
+                  "resources": [
+                    {
+                      "label": "Dataset — attend",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/attend.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 45825
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — cps78_85",
+                  "resources": [
+                    {
+                      "label": "Dataset — cps78_85",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/cps78_85.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 72477
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — econmath",
+                  "resources": [
+                    {
+                      "label": "Dataset — econmath",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/econmath.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 89099
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — htv",
+                  "resources": [
+                    {
+                      "label": "Dataset — htv",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/htv.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 147373
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — jtrain2",
+                  "resources": [
+                    {
+                      "label": "Dataset — jtrain2",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/jtrain2.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 48397
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — nbasal",
+                  "resources": [
+                    {
+                      "label": "Dataset — nbasal",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/nbasal.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 35698
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — phillips",
+                  "resources": [
+                    {
+                      "label": "Dataset — phillips",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/phillips.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 4421
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wagepan",
+                  "resources": [
+                    {
+                      "label": "Dataset — wagepan",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/wagepan.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 793672
+                    }
+                  ]
+                },
+                {
+                  "title": "Dataset — wine",
+                  "resources": [
+                    {
+                      "label": "Dataset — wine",
+                      "file": "/files/teaching/niort/econometrics/session-02/donnees/wine.dta",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Stata data",
+                      "bytes": 1867
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Simulators",
+              "kind": "simulators",
+              "rows": [
+                {
+                  "title": "Interactive sampling simulator",
+                  "resources": [
+                    {
+                      "label": "Interactive sampling simulator",
+                      "file": "/files/teaching/niort/econometrics/session-02/simulateur/simulation_interactive.html",
+                      "part": "Session 2 — Sampling, probability and inference",
+                      "format": "Interactive HTML",
+                      "bytes": 9866
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/niort/econometrics/session-02.zip",
+                      "format": "ZIP",
+                      "bytes": 1416061,
+                      "part": "Session 2 — Sampling, probability and inference"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": []
+    },
+    {
+      "id": "data-analysis-l3",
+      "cards": [
+        {
+          "title": "TD01",
+          "primary": [
+            {
+              "label": "TD01 — Price indices: instructions",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
+              "format": "PDF",
+              "pages": 2,
+              "bytes": 100840,
+              "part": "TD01"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD01 — Price indices: notebook",
+                  "resources": [
+                    {
+                      "label": "TD01 — Price indices: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-indice-prix.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 7918,
+                      "part": "TD01"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-01.zip",
+                      "format": "ZIP",
+                      "bytes": 86255,
+                      "part": "TD01"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD02",
+          "primary": [
+            {
+              "label": "TD02 — Presentation slides",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02_presentation.pdf",
+              "part": "TD02",
+              "format": "PDF",
+              "bytes": 2794216
+            },
+            {
+              "label": "TD02 — Unemployment: instructions",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-enonce.pdf",
+              "format": "PDF",
+              "pages": 1,
+              "bytes": 58736,
+              "part": "TD02"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD02 — Unemployment: notebook",
+                  "resources": [
+                    {
+                      "label": "TD02 — Unemployment: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-chomage.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 9262,
+                      "part": "TD02"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02.zip",
+                      "format": "ZIP",
+                      "bytes": 2576125,
+                      "part": "TD02"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD03",
+          "primary": [
+            {
+              "label": "TD03 — Presentation slides",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03_presentation.pdf",
+              "part": "TD03",
+              "format": "PDF",
+              "bytes": 1911202
+            },
+            {
+              "label": "TD03 — Wage data: instructions",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-enonce.pdf",
+              "format": "PDF",
+              "pages": 1,
+              "bytes": 49359,
+              "part": "TD03"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: dictionary",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: dictionary",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-dictionnaire.pdf",
+                      "format": "PDF",
+                      "pages": 4,
+                      "bytes": 97899,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: notebook",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-nettoyage.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 8873,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: CSV",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: CSV",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-salaires.csv",
+                      "format": "CSV",
+                      "bytes": 395328,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03.zip",
+                      "format": "ZIP",
+                      "bytes": 1999083,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD04",
+          "primary": [
+            {
+              "label": "TD04 — Presentation slides",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04_presentation.pdf",
+              "format": "PDF",
+              "bytes": 1050671,
+              "part": "TD04"
+            },
+            {
+              "label": "TD04 — Dataset merges: instructions",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-enonce.pdf",
+              "format": "PDF",
+              "bytes": 52774,
+              "part": "TD04"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "Additional course notes",
+                  "resources": [
+                    {
+                      "label": "Additional course notes",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-notes-td.pdf",
+                      "part": "TD04",
+                      "format": "PDF",
+                      "bytes": 49098
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD04 — Dataset merges: notebook",
+                  "resources": [
+                    {
+                      "label": "TD04 — Dataset merges: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-fusion.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 6933,
+                      "part": "TD04"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04.zip",
+                      "format": "ZIP",
+                      "bytes": 993709,
+                      "part": "TD04"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD05",
+          "primary": [
+            {
+              "label": "TD05 — Presentation slides",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05_presentation.pdf",
+              "part": "TD05",
+              "format": "PDF",
+              "bytes": 1380725
+            },
+            {
+              "label": "TD05 — Income distributions: instructions",
+              "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-enonce.pdf",
+              "format": "PDF",
+              "bytes": 58393,
+              "part": "TD05"
+            }
+          ],
+          "sections": [
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD05 — Income distributions: notebook",
+                  "resources": [
+                    {
+                      "label": "TD05 — Income distributions: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-distribution.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 6865,
+                      "part": "TD05"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "cm03-salaires.csv",
+                  "resources": [
+                    {
+                      "label": "cm03-salaires.csv",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/cm03-salaires.csv",
+                      "part": "TD05",
+                      "format": "CSV",
+                      "bytes": 395328
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Practical instructions",
+              "kind": "instructions",
+              "rows": [
+                {
+                  "title": "Session instructions — HTML",
+                  "resources": [
+                    {
+                      "label": "Session instructions — HTML",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/index.html",
+                      "part": "TD05",
+                      "format": "Interactive HTML",
+                      "bytes": 29098
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05.zip",
+                      "format": "ZIP",
+                      "bytes": 1409789,
+                      "part": "TD05"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "technical": [
+        {
+          "title": "TD01",
+          "sections": [
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "TD01 — Price indices: instructions",
+                  "resources": [
+                    {
+                      "label": "TD01 — Price indices: instructions",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
+                      "format": "PDF",
+                      "pages": 2,
+                      "bytes": 100840,
+                      "part": "TD01"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD01 — Price indices: notebook",
+                  "resources": [
+                    {
+                      "label": "TD01 — Price indices: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-indice-prix.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 7918,
+                      "part": "TD01"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-01.zip",
+                      "format": "ZIP",
+                      "bytes": 86255,
+                      "part": "TD01"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD02",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "TD02 — Presentation slides",
+                  "resources": [
+                    {
+                      "label": "TD02 — Presentation slides",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02_presentation.pdf",
+                      "part": "TD02",
+                      "format": "PDF",
+                      "bytes": 2794216
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "TD02 — Unemployment: instructions",
+                  "resources": [
+                    {
+                      "label": "TD02 — Unemployment: instructions",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-enonce.pdf",
+                      "format": "PDF",
+                      "pages": 1,
+                      "bytes": 58736,
+                      "part": "TD02"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD02 — Unemployment: notebook",
+                  "resources": [
+                    {
+                      "label": "TD02 — Unemployment: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-chomage.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 9262,
+                      "part": "TD02"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-02.zip",
+                      "format": "ZIP",
+                      "bytes": 2576125,
+                      "part": "TD02"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD03",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "TD03 — Presentation slides",
+                  "resources": [
+                    {
+                      "label": "TD03 — Presentation slides",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03_presentation.pdf",
+                      "part": "TD03",
+                      "format": "PDF",
+                      "bytes": 1911202
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: instructions",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: instructions",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-enonce.pdf",
+                      "format": "PDF",
+                      "pages": 1,
+                      "bytes": 49359,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: dictionary",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: dictionary",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-dictionnaire.pdf",
+                      "format": "PDF",
+                      "pages": 4,
+                      "bytes": 97899,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: notebook",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-nettoyage.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 8873,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "TD03 — Wage data: CSV",
+                  "resources": [
+                    {
+                      "label": "TD03 — Wage data: CSV",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-salaires.csv",
+                      "format": "CSV",
+                      "bytes": 395328,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-03.zip",
+                      "format": "ZIP",
+                      "bytes": 1999083,
+                      "part": "TD03"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD04",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "TD04 — Presentation slides",
+                  "resources": [
+                    {
+                      "label": "TD04 — Presentation slides",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04_presentation.pdf",
+                      "format": "PDF",
+                      "bytes": 1050671,
+                      "part": "TD04"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "TD04 — Dataset merges: instructions",
+                  "resources": [
+                    {
+                      "label": "TD04 — Dataset merges: instructions",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-enonce.pdf",
+                      "format": "PDF",
+                      "bytes": 52774,
+                      "part": "TD04"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Supplements & readings",
+              "kind": "readings",
+              "rows": [
+                {
+                  "title": "Additional course notes",
+                  "resources": [
+                    {
+                      "label": "Additional course notes",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-notes-td.pdf",
+                      "part": "TD04",
+                      "format": "PDF",
+                      "bytes": 49098
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD04 — Dataset merges: notebook",
+                  "resources": [
+                    {
+                      "label": "TD04 — Dataset merges: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-fusion.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 6933,
+                      "part": "TD04"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-04.zip",
+                      "format": "ZIP",
+                      "bytes": 993709,
+                      "part": "TD04"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "TD05",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "TD05 — Presentation slides",
+                  "resources": [
+                    {
+                      "label": "TD05 — Presentation slides",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05_presentation.pdf",
+                      "part": "TD05",
+                      "format": "PDF",
+                      "bytes": 1380725
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "TD05 — Income distributions: instructions",
+                  "resources": [
+                    {
+                      "label": "TD05 — Income distributions: instructions",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-enonce.pdf",
+                      "format": "PDF",
+                      "bytes": 58393,
+                      "part": "TD05"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Notebooks",
+              "kind": "notebooks",
+              "rows": [
+                {
+                  "title": "TD05 — Income distributions: notebook",
+                  "resources": [
+                    {
+                      "label": "TD05 — Income distributions: notebook",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-distribution.ipynb",
+                      "format": "Jupyter notebook",
+                      "bytes": 6865,
+                      "part": "TD05"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Data",
+              "kind": "data",
+              "rows": [
+                {
+                  "title": "cm03-salaires.csv",
+                  "resources": [
+                    {
+                      "label": "cm03-salaires.csv",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/cm03-salaires.csv",
+                      "part": "TD05",
+                      "format": "CSV",
+                      "bytes": 395328
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Practical instructions",
+              "kind": "instructions",
+              "rows": [
+                {
+                  "title": "Session instructions — HTML",
+                  "resources": [
+                    {
+                      "label": "Session instructions — HTML",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05/index.html",
+                      "part": "TD05",
+                      "format": "Interactive HTML",
+                      "bytes": 29098
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Complete folder — supports, code, data and supporting checks",
+                  "resources": [
+                    {
+                      "label": "Complete folder — supports, code, data and supporting checks",
+                      "file": "/files/teaching/cy-cergy/l3-data-analysis/td-05.zip",
+                      "format": "ZIP",
+                      "bytes": 1409789,
+                      "part": "TD05"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "datasets": []
+    }
+  ]
+}

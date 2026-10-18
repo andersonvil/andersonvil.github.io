@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-18",
+  "branch": "codex/teaching-resources-cv-editorial",
+  "base_commit": "688aaf2390ace65e438b1a9bc358b481a5bd01f9",
+  "publication": "Local preview only; no push, merge, workflow dispatch or deployment",
+  "static": {
+    "result": "PASS",
+    "inventoried_source_files": 185,
+    "synchronized_copies": 20,
+    "verified_archives": 20,
+    "archive_members": 83,
+    "preserved_resource_urls": 175,
+    "cv_access_points": 76,
+    "unchanged_courses": [
+      "econometrics-m1",
+      "econometrics-m2"
+    ],
+    "protected_editorial_content": true
+  },
+  "browser": {
+    "result": "PASS",
+    "page_checks": 80,
+    "download_byte_checks": 193,
+    "keyboard_checks": 56,
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "widths": [
+      1440,
+      768,
+      390,
+      360
+    ],
+    "javascript_errors": []
+  },
+  "pdf": {
+    "result": "PASS",
+    "documents": 47,
+    "image_only": 1
+  },
+  "production_audit": {
+    "html": 64,
+    "links_and_assets": 1873,
+    "sitemap_urls": 52,
+    "result": "PASS"
+  },
+  "source_copy_check": {
+    "byte_identical_pairs": 29,
+    "result": "PASS"
+  }
+}

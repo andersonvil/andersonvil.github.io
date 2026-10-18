@@ -736,6 +736,55 @@ details.resource-part > summary { cursor:pointer; font-size:1.1rem; font-weight:
 .media-section .media-preview { margin-block:1.5rem 2.5rem; }
 .media-preview img, .audio-feature img { object-fit:contain; height:auto; }
 .audio-feature { max-width:850px; }
+/* Teaching follows the lesson; Code & Data keeps a technical catalogue. */
+.editorial-status { color:var(--muted); font-size:.88rem; line-height:1.5; margin:.2rem 0 .8rem; }
+.jmp-band .editorial-status { color:inherit; opacity:.9; }
+.article-page .learning-resources { max-width:1100px; }
+.learning-cards { display:grid; gap:.8rem; align-items:start; }
+.learning-data-analysis-l3 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.learning-econometrics-l3 .learning-card { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:.6rem 1rem; padding:.65rem 1rem; }
+.learning-econometrics-l3 .learning-card h3 { font-size:.95rem; margin:0; }
+.learning-econometrics-l3 .learning-primary { display:flex; flex-wrap:wrap; gap:.4rem; }
+.learning-econometrics-l3 .learning-primary a { font-size:.85rem; }
+.article-page .learning-card { max-width:none; }
+.article-page .learning-card { margin:0; padding:1rem 1.2rem; border:1px solid var(--line); border-radius:.5rem; background:var(--surface); min-width:0; }
+.article-page .learning-card h3 { font:650 1.06rem/1.45 var(--sans); margin:0 0 .55rem; }
+.article-page .learning-section-title { margin:1.5rem 0 .4rem; font-size:1.2rem; }
+.learning-primary { margin:0; padding:0; list-style:none; display:grid; gap:.4rem; }
+.learning-primary a { display:flex; gap:.8rem; align-items:baseline; padding:.45rem .6rem; border-radius:.25rem; background:var(--surface-alt); text-decoration:none; }
+.learning-primary a > span:first-child { flex:1; font-weight:600; }
+.learning-primary small { color:var(--muted); font-size:.78rem; white-space:nowrap; }
+.learning-primary a:hover { background:var(--canvas); box-shadow:inset 3px 0 var(--teal); }
+.learning-extras { margin:.75rem 0 0; border-top:1px solid var(--line); padding-top:.5rem; }
+.learning-extras > summary { cursor:pointer; color:var(--teal); font-size:.9rem; font-weight:600; padding:.25rem 0; }
+.article-page .resource-category, .resource-category { max-width:none; margin:1rem 0 .4rem; padding:0; }
+.resource-category h4 { font:650 .85rem/1.4 var(--sans); color:var(--muted); margin:0 0 .45rem; }
+.resource-clusters { list-style:none; padding:0; margin:0; }
+.resource-clusters li { display:flex; align-items:baseline; justify-content:space-between; gap:.6rem 1.4rem; padding:.45rem 0; border-bottom:1px solid var(--line); }
+.resource-clusters li:last-child { border:0; }
+.resource-cluster-title { font-size:.9rem; overflow-wrap:anywhere; }
+.resource-variants { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:.3rem 1rem; font-size:.84rem; min-width:0; }
+.resource-variants a { overflow-wrap:anywhere; }
+.dataset-collection { display:flex; gap:1rem; justify-content:space-between; align-items:center; margin:.8rem 0; padding:.9rem 1rem; border:1px solid var(--line); background:var(--surface-alt); border-radius:.4rem; }
+.dataset-collection h4, .dataset-grid h4 { font:650 1rem/1.4 var(--sans); margin:0; }
+.dataset-collection p { font-size:.85rem; margin:.2rem 0 0; color:var(--muted); }
+.dataset-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.65rem; }
+.dataset-grid article { padding:.9rem 1rem; border:1px solid var(--line); border-radius:.4rem; background:var(--surface); min-width:0; }
+.dataset-grid .meta { font-size:.75rem; margin:.35rem 0; overflow-wrap:anywhere; }
+.dataset-grid a { font-size:.85rem; }
+.technical-part { border-bottom:1px solid var(--line); padding-bottom:.5rem; }
+@media (max-width:720px) {
+  .learning-data-analysis-l3 { grid-template-columns:1fr; }
+  .learning-econometrics-l3 .learning-card { grid-template-columns:1fr; }
+  .article-page .learning-card { padding:.8rem; }
+  .learning-primary a { flex-wrap:wrap; gap:.25rem .5rem; }
+  .learning-primary a > span:first-child { flex-basis:100%; }
+  .resource-clusters li { flex-direction:column; gap:.2rem; }
+  .resource-variants { justify-content:flex-start; }
+  .dataset-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .dataset-collection { align-items:flex-start; flex-direction:column; gap:.5rem; }
+}
+@media (max-width:380px) { .dataset-grid { grid-template-columns:1fr; } }
 @media (max-width:720px) {
   .home-pathways { grid-auto-rows:auto; }
   .home-pathways article { grid-template-rows:auto auto auto; }

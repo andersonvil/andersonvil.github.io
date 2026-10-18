@@ -1,0 +1,24 @@
+{% macro sections(sections, hidden_heading="") %}
+{% for section in sections %}<section class="resource-category">{% if section.title != hidden_heading %}<h4>{{ section.title }}</h4>{% endif %}<ul class="resource-clusters">
+{% for row in section.rows %}<li><span class="resource-cluster-title">{{ row.title }}</span><span class="resource-variants">{% for r in row.resources %}<a href="{{ r.file }}">{% if row.resources | length > 1 %}{{ r.format | default(value="PDF") }} · {{ r.file | split(pat="/") | last }}{% else %}{{ r.format | default(value="PDF") }} · Open resource{% endif %}</a>{% endfor %}</span></li>{% endfor %}
+</ul></section>{% endfor %}
+{% endmacro sections %}
+
+{% macro cards(view) %}
+<div class="learning-cards learning-{{ view.id }}">
+{% for card in view.cards %}
+{% if card.heading %}<h3 class="learning-section-title">{{ card.heading }}</h3>{% endif %}
+<section class="learning-card"><h3>{{ card.title }}</h3>
+{% if card.primary | length > 0 %}<ul class="learning-primary">{% for r in card.primary %}<li><a href="{{ r.file }}"><span>{% if view.id == "econometrics-l3" and not card.title is starting_with("CC ") %}Exercise sheet{% elif card.title is starting_with("CC ") %}{{ r.label | split(pat=" — ") | last }}{% else %}{{ r.label }}{% endif %}</span><small>{{ r.format | default(value="PDF") }}{% if r.pages %} · {{ r.pages }} pages{% endif %}</small><span class="resource-arrow" aria-hidden="true">↗</span></a></li>{% endfor %}</ul>{% endif %}
+{% if card.sections | length > 0 %}{% if card.primary | length > 0 %}<details class="learning-extras"><summary>Readings &amp; practical resources</summary>{{ learning::sections(sections=card.sections) }}</details>{% else %}{{ learning::sections(sections=card.sections, hidden_heading=card.title) }}{% endif %}{% endif %}
+</section>{% endfor %}</div>
+{% if view.datasets | length > 0 %}
+<h3 class="learning-section-title">Teaching datasets</h3>
+<div class="dataset-collection"><div><h4>Teaching dataset collection</h4><p>Original formats and dictionaries · ZIP</p></div><a class="text-link" href="/files/teaching/cy-cergy/l3-econometrics/data/Dataset.zip">Open resource</a></div>
+<div class="dataset-grid">{% for dataset in view.datasets %}<article><h4>{{ dataset.title }}</h4><p class="meta">{{ dataset.formats }}</p><a class="text-link" href="{{ dataset.file }}" aria-label="Open resource — {{ dataset.title }} ZIP" download>Open resource</a></article>{% endfor %}</div>
+{% endif %}
+{% endmacro cards %}
+
+{% macro catalogue(view) %}
+{% for part in view.technical %}<details class="resource-part technical-part"><summary>{{ part.title }}</summary>{{ learning::sections(sections=part.sections) }}</details>{% endfor %}
+{% endmacro catalogue %}
