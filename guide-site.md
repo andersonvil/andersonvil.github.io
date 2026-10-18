@@ -18,6 +18,32 @@ Pour une mise à jour : modifier la source indiquée dans ce guide, exécuter `n
 
 Contrôles Chrome reproductibles : définir `CODEX_NODE_MODULES` sur le répertoire de paquets du runtime local, servir `public-production` avec `scripts/serve-preview.py --directory public-production --port 1119`, puis exécuter `node scripts/verify-production.js http://127.0.0.1:1119`. Pour contrôler la version publique : `node scripts/verify-production.js https://andersonvil.github.io COMMIT_SOURCE_COMPLET`. Les rapports et captures sont écrits dans `tmp/publication-qa/`, hors publication.
 
+## Prévisualisation de la mise à jour pédagogique du 18 octobre 2026
+
+La branche dédiée est `codex/teaching-resources-cv-editorial`. **Cette mise à jour attend approbation et autorisation explicite de publication.** Ne pas fusionner/pousser sur `main`, pousser sur `gh-pages` ou lancer le workflow manuellement. Le workflow `.github/workflows/main.yml` publie lors d’un push sur `main` ou de `workflow_dispatch`. Aucun push ni déploiement n’est nécessaire à la prévisualisation locale.
+
+```powershell
+python scripts/sync-teaching-update.py
+powershell -ExecutionPolicy Bypass -File scripts/build-preview.ps1 -OutputDirectory public-preview-update
+python scripts/audit-production.py --build-dir public-preview-update
+python scripts/audit-teaching-update.py --build-dir public-preview-update
+python scripts/serve-preview.py --directory public-preview-update --port 1122
+```
+
+Ouvrir `http://127.0.0.1:1122/teaching/`. Le serveur écoute uniquement en local et ajoute `X-Robots-Tag: noindex, nofollow, noarchive`. La sortie `public-preview-update/` est ignorée par Git. Les builds conservent la configuration publique pour contrôler fidèlement les routes finales ; construire localement ne publie rien.
+
+`data/teaching_resources.toml` reste le catalogue commun des fichiers. `scripts/sync-teaching-update.py` copie les sources approuvées, actualise le catalogue et produit `data/course-resource-views.json`, les regroupements destinés aux deux vues. Exécuter ce script après une modification de classement ou de source, puis reconstruire. `templates/macros/learning-resources.html` présente les fiches pédagogiques dans Teaching et les catégories techniques dans Code & Data. Les cours M1 et M2 & PhD utilisent toujours leur macro d’origine `course-resources.html`.
+
+- Teaching : support, exercices, puis un seul volet de lectures/ressources pratiques. Séances de Niort et parties de Microeconomics III conservées ; support de Part III avant les séries 5 à 8.
+- Econometrics L3 Cergy : chapitres, CC regroupés par année, collection de données, puis 15 fiches de jeux. Les ZIP sous `static/files/teaching/cy-cergy/l3-econometrics/data/bundles/` sont construits par **dossier exact** de `Dataset/`, noms et octets originaux préservés. La collection `Dataset.zip` reste intacte. Les formats individuels restent téléchargeables dans Code & Data.
+- Data Analysis : les dossiers `CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1` à `TD #5` alimentent les mêmes fichiers dans les deux parcours, sans double copie. Les archives de travail `TD #1.zip` à `TD #3.zip`, qui contiennent des corrigés et des sources LaTeX, ne sont pas publiées. Les ZIP étudiants sont reconstruits à partir des dossiers approuvés, sans notebooks corrigés. Présentations TD02/03/05 et données TD05 ajoutées ; supports existants actualisés à la même URL.
+- Sciences Po : support de séance 1 suivi des lectures associées dans le même volet ; archive de lectures conservée.
+- Code & Data : cours et séances/parties gardés, avec catégories supports/exercices/lectures/notebooks/codes/données/simulateurs et variantes d’un programme ou d’un jeu regroupées. README et téléchargements individuels conservés.
+
+`docs/teaching-update-manifest.json` conserve les empreintes des copies et de tous les membres des ZIP générés. `scripts/audit-teaching-update.py` contrôle l’inventaire par rapport à `main`, les sources, les ZIP, les deux parcours, les exceptions M1/M2, le CV et les statuts. `scripts/verify-teaching-update.js` contrôle le navigateur et produit les captures dans `docs/screenshots/teaching-update/` et le rapport dans `tmp/teaching-update-qa/`.
+
+Les statuts confirmés des trois articles sont centralisés dans `data/academic.toml`, clés `papers[].status_label`. Home, Research et les pages individuelles affichent ces mêmes valeurs ; modifier uniquement ces clés. Résumés, abstracts, numéros de working papers et Work in progress restent leurs contenus approuvés.
+
 ## Sauvegarde de l'ancien site et retour arrière
 
 La sauvegarde privée locale complète est **`C:\dev\andersonvil-academic-os-sources\site-backups\2026-10-16-before-publication`**. Elle contient `old-site-gh-pages.zip` (62 fichiers, ressources comprises), `old-source-main.zip`, `recovery.bundle` et `site/`. La copie consultable utilise des chemins locaux pour les liens et ressources du même domaine ; le ZIP conserve les octets originaux. Elle n'est pas servie par le site public.
@@ -62,7 +88,7 @@ Un fichier `content/...md` peut définir seulement la route, le titre et le temp
 | `/teaching/econometrics-l3/` — Econometrics — L3, Cergy | `content/teaching/econometrics-l3.md`, `data/teaching_resources.toml`, groupe `econometrics-l3` | `title`, `summary`, `topics`, `institution`, `role`, `level`, `academic_year`, `language`, `parts`. Chaque `groups.resources` contient `label`, `file`, `format`, `part`, éventuellement `pages` et `bytes`. CC dans `static/files/teaching/cy-cergy/l3-econometrics/previous-cc/`, données dans `.../data/`. Conserver les années historiques des CC et distinguer sujet/corrigé. |
 | `/teaching/econometrics-m1/` — Econometrics — M1 | `content/teaching/econometrics-m1.md`, `data/teaching_resources.toml`, groupe `econometrics-m1` | Mêmes clés ; fichiers dans `static/files/teaching/cy-cergy/m1-econometrics/`. |
 | `/teaching/econometrics-m2/` — Econometrics — M2 & PhD | `content/teaching/econometrics-m2.md`, `data/teaching_resources.toml`, groupe `econometrics-m2` | Mêmes clés ; fichiers dans `static/files/teaching/cy-cergy/m2-econometrics/`. |
-| `/teaching/data-analysis-l3/` — Data Analysis with Python — L3 | `content/teaching/data-analysis-l3.md`, `data/teaching_resources.toml`, groupe `data-analysis-l3` | Mêmes clés ; `part` vaut TD01 à TD05. Fichiers dans `static/files/teaching/cy-cergy/l3-data-analysis/td-01/` à `td-05/`. Les notes de présentation à venir sont dans `templates/teaching-detail.html`. |
+| `/teaching/data-analysis-l3/` — Data Analysis with Python — L3 | `content/teaching/data-analysis-l3.md`, `data/teaching_resources.toml`, groupe `data-analysis-l3` | Mêmes clés ; `part` vaut TD01 à TD05. Fichiers dans `static/files/teaching/cy-cergy/l3-data-analysis/td-01/` à `td-05/`. Les présentations fournies de TD02 à TD05 sont accessibles avant les énoncés ; TD01 ne comporte pas de présentation fournie. |
 | `/teaching/microeconomics-l1/` — Microeconomics — L1 | `content/teaching/microeconomics-l1.md`, `data/teaching_resources.toml`, groupe `microeconomics-l1` | Mêmes clés ; supports et lectures dans `static/files/teaching/sciences-po-saint-germain/microeconomics-l1/`. Garder le niveau détaillé dans `level`. |
 | `/teaching/econometrics-niort/` — Econometrics — L3, UCO | `content/teaching/econometrics-niort.md`, `data/teaching_resources.toml`, groupe `econometrics-niort` | Mêmes clés ; les séances restent dans ce cours. `parts` et `resources[].part` classent les séances 1 et 2. Fichiers dans `static/files/teaching/niort/econometrics/session-01/` et `session-02/`, archives `.zip` voisines. Garder `Lecture & Tutorial` et l'année utile. |
 | `/teaching/microeconomics-iii-niort/` — Microeconomics III — L3 | `content/teaching/microeconomics-iii-niort.md`, `data/teaching_resources.toml`, groupe `microeconomics-iii-niort` | Mêmes clés ; trois parties. Partie III dans `static/files/teaching/niort/microeconomics-iii/part-3/`, anciens supports et simulateurs dans le dossier parent. |
@@ -96,7 +122,7 @@ Un fichier `content/...md` peut définir seulement la route, le titre et le temp
 
 ## Remplacer le CV ou un manuscrit
 
-Le CV servi est **`static/files/cv/anderson-vil-cv-provisional.pdf`** ; son nom historique ne modifie pas son affichage « CV — PDF ». Remplacer ce fichier à l'identique préserve tous les liens. La source d'origine est `C:\dev\andersonvil-academic-os-sources\04-cv-teaching\cv-academic.pdf`. Si vous renommez le fichier, mettre à jour **`config.toml`** (`extra.cv_url` et l'entrée CV du menu) et **`data/academic.toml`** (`documents.cv.url`).
+Le CV servi est **`static/files/cv/anderson-vil-cv-provisional.pdf`** ; son nom historique ne modifie pas son affichage « CV — PDF ». Remplacer ce fichier à l'identique préserve tous les liens. La source d'origine est `C:\dev\andersonvil-academic-os-sources\04-cv-teaching\cv-academic.pdf`. Si vous renommez le fichier, mettre à jour **`config.toml`** (`extra.cv_url` et l'entrée CV du menu) et **`data/academic.toml`** (`documents.cv.url`). La version synchronisée le 18 octobre 2026 est celle générée à 15 h 33 dans ce dossier, et non la copie à la racine des sources. Son SHA-256 est `765d5d593f00e23c4b2c2ac951436584013ae3ff173dd5fab66281847c0c9c16`. `scripts/build-editorial.js` vérifie cette empreinte à chaque build à partir de `docs/teaching-update-manifest.json` ; il ne recopie aucun ancien CV.
 
 Les manuscrits sont `static/files/papers/household-demand-leisure.pdf`, `children-costs-one-adult-household.pdf` et `children-labor-supply-equations.pdf`. Après remplacement : vérifier la date dans `data/academic.toml`, les pages physiques dans le supplément puis régénérer les images avec :
 

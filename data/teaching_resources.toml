@@ -17,7 +17,7 @@ resource_type = "Exercise sheets"
 summary = "Chapter-based exercises, teaching datasets, and previous continuous assessments with supplied answer keys."
 topics = ["Simple regression", "OLS properties", "Probability and sampling", "Inference", "Multiple regression", "Functional form", "Specification"]
 url = "/teaching/econometrics-l3/"
-parts = ["Chapter exercises", "Teaching datasets", "Previous continuous assessments (CC)"]
+parts = ["Chapter exercises", "Previous continuous assessments (CC)", "Teaching datasets"]
 
 [[groups.resources]]
 label = "Chapter I — Introduction and simple regression"
@@ -719,14 +719,14 @@ part = "Part II — Strategic decisions and games"
 label = "Annex-generation utility"
 file = "/files/teaching/niort/microeconomics-iii/part-3/code/generer_annexes.py"
 part = "Part III — Risk and information"
-format = "PY"
+format = "Python"
 bytes = 3514
 
 [[groups.resources]]
 label = "Course figures and calculations — Python"
 file = "/files/teaching/niort/microeconomics-iii/part-3/code/partie3.py"
 part = "Part III — Risk and information"
-format = "PY"
+format = "Python"
 bytes = 40051
 
 [[groups.resources]]
@@ -853,28 +853,28 @@ part = "Practical instructions"
 label = "Annex-generation utility — py"
 file = "/files/teaching/niort/econometrics/session-01/code/generer_annexes.py"
 part = "Session 1 — Covariance, correlation and regression"
-format = "PY"
+format = "Python"
 bytes = 8621
 
 [[groups.resources]]
 label = "Data export utility — py"
 file = "/files/teaching/niort/econometrics/session-01/code/generer_dta.py"
 part = "Session 1 — Covariance, correlation and regression"
-format = "PY"
+format = "Python"
 bytes = 1490
 
 [[groups.resources]]
 label = "Course — do"
 file = "/files/teaching/niort/econometrics/session-01/code/seance01.do"
 part = "Session 1 — Covariance, correlation and regression"
-format = "DO"
+format = "Stata"
 bytes = 11817
 
 [[groups.resources]]
 label = "Course — py"
 file = "/files/teaching/niort/econometrics/session-01/code/seance01.py"
 part = "Session 1 — Covariance, correlation and regression"
-format = "PY"
+format = "Python"
 bytes = 19582
 
 [[groups.resources]]
@@ -902,14 +902,14 @@ bytes = 21268
 label = "Exercises — do"
 file = "/files/teaching/niort/econometrics/session-01/code/td01.do"
 part = "Session 1 — Covariance, correlation and regression"
-format = "DO"
+format = "Stata"
 bytes = 4759
 
 [[groups.resources]]
 label = "Exercises — py"
 file = "/files/teaching/niort/econometrics/session-01/code/td01.py"
 part = "Session 1 — Covariance, correlation and regression"
-format = "PY"
+format = "Python"
 bytes = 7200
 
 [[groups.resources]]
@@ -1014,28 +1014,28 @@ part = "Session 1 — Covariance, correlation and regression"
 label = "Annex-generation utility — py"
 file = "/files/teaching/niort/econometrics/session-02/code/generer_annexes.py"
 part = "Session 2 — Sampling, probability and inference"
-format = "PY"
+format = "Python"
 bytes = 9106
 
 [[groups.resources]]
 label = "Data export utility — py"
 file = "/files/teaching/niort/econometrics/session-02/code/generer_dta.py"
 part = "Session 2 — Sampling, probability and inference"
-format = "PY"
+format = "Python"
 bytes = 1507
 
 [[groups.resources]]
 label = "Course — do"
 file = "/files/teaching/niort/econometrics/session-02/code/seance02.do"
 part = "Session 2 — Sampling, probability and inference"
-format = "DO"
+format = "Stata"
 bytes = 18843
 
 [[groups.resources]]
 label = "Course — py"
 file = "/files/teaching/niort/econometrics/session-02/code/seance02.py"
 part = "Session 2 — Sampling, probability and inference"
-format = "PY"
+format = "Python"
 bytes = 25802
 
 [[groups.resources]]
@@ -1063,14 +1063,14 @@ bytes = 26723
 label = "Exercises — do"
 file = "/files/teaching/niort/econometrics/session-02/code/td02.do"
 part = "Session 2 — Sampling, probability and inference"
-format = "DO"
+format = "Stata"
 bytes = 5549
 
 [[groups.resources]]
 label = "Exercises — py"
 file = "/files/teaching/niort/econometrics/session-02/code/td02.py"
 part = "Session 2 — Sampling, probability and inference"
-format = "PY"
+format = "Python"
 bytes = 8376
 
 [[groups.resources]]
@@ -1307,14 +1307,14 @@ part = "TD01"
 label = "Complete folder — supports, code, data and supporting checks"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-02.zip"
 format = "ZIP"
-bytes = 55625
+bytes = 2576125
 part = "TD02"
 
 [[groups.resources]]
 label = "Complete folder — supports, code, data and supporting checks"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-03.zip"
 format = "ZIP"
-bytes = 256157
+bytes = 1999083
 part = "TD03"
 
 [[groups.resources]]
@@ -1342,5 +1342,33 @@ bytes = 29098
 label = "Complete folder — supports, code, data and supporting checks"
 file = "/files/teaching/cy-cergy/l3-data-analysis/td-05.zip"
 format = "ZIP"
-bytes = 65110
+bytes = 1409789
 part = "TD05"
+
+[[groups.resources]]
+label = "TD02 — Presentation slides"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02_presentation.pdf"
+part = "TD02"
+format = "PDF"
+bytes = 2794216
+
+[[groups.resources]]
+label = "TD03 — Presentation slides"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03_presentation.pdf"
+part = "TD03"
+format = "PDF"
+bytes = 1911202
+
+[[groups.resources]]
+label = "cm03-salaires.csv"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-05/cm03-salaires.csv"
+part = "TD05"
+format = "CSV"
+bytes = 395328
+
+[[groups.resources]]
+label = "TD05 — Presentation slides"
+file = "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05_presentation.pdf"
+part = "TD05"
+format = "PDF"
+bytes = 1380725

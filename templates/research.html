@@ -9,7 +9,7 @@
 <div class="section-heading"><h2 id="working-papers-title">Working papers</h2></div>
 {% for paper in academic.papers %}
   <article class="research-card{% if paper.job_market %} featured{% endif %}">
-    <div class="research-card-top"><div>{% if paper.job_market %}<span class="badge">Job Market Paper</span>{% endif %}<p class="meta">{{ paper.series }} · Version {{ paper.version }}</p></div><span class="status-pill">Working paper</span></div>
+    <div class="research-card-top"><div>{% if paper.job_market %}<span class="badge">Job Market Paper</span>{% endif %}<p class="meta">{{ paper.series }} · Version {{ paper.version }}</p><p class="editorial-status">{{ paper.status_label }}</p></div><span class="status-pill">Working paper</span></div>
     <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
     <p class="byline">{{ paper.author_line }}</p>
     <p class="paper-summary">{{ paper.description }}</p>

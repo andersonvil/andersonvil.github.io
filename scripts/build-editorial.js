@@ -3,6 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const katex = require('katex');
 const root = path.resolve(__dirname, '..');
+// The committed CV is the approved source copy. Reject accidental stale replacements
+// in every local/CI build without needing private source folders on the CI runner.
+const cvManifest = JSON.parse(fs.readFileSync(path.join(root, 'docs/teaching-update-manifest.json'), 'utf8')).cv;
+const cvHash = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'static', cvManifest.url))).digest('hex');
+if (cvHash !== cvManifest.sha256) throw Error('CV differs from the approved source. Run scripts/sync-teaching-update.py after an intentional source update.');
 const source = name => fs.readFileSync(path.join(root, 'docs/editorial-sources', name), 'utf8').replace(/\r\n/g, '\n');
 const supplements = JSON.parse(fs.readFileSync(path.join(root, 'data/editorial-supplements.json'), 'utf8'));
 const equationDetails = JSON.parse(fs.readFileSync(path.join(root, 'data/equation-details.json'), 'utf8'));

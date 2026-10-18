@@ -1,0 +1,294 @@
+{
+  "files": [
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
+      "sha256": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-indice-prix.ipynb",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-indice-prix.ipynb",
+      "sha256": "144b9ee8fcce60823d5d9a8e3f05330fe5282bd129e463af19ad1a37ffaf98f2"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #2/td02-chomage.ipynb",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-chomage.ipynb",
+      "sha256": "979f79073318523180acdc7ce62ce03ee0d1ffa87614ef7a9909a7c81bc6cf6f"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #2/td02-enonce.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02-enonce.pdf",
+      "sha256": "c0ae633b3e7dccb1b922003588ab953c5e47fa49d32038c8de32a693799a3b45"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #2/td02_presentation.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-02/td02_presentation.pdf",
+      "sha256": "ecfbd5e3ffb728f90db7af5bf9ab98a6d35c58caee59862b7b6ce8e4faa0910b"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #3/cm03-dictionnaire.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-dictionnaire.pdf",
+      "sha256": "e4dc2f29f3d453e7ab30d1caf373c2aa6c1bc9dd8e6e46fcda36217598ec06c4"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #3/cm03-salaires.csv",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-03/cm03-salaires.csv",
+      "sha256": "693cff7efd558dd869db5ab3f5f90e4f70ac87745c944f67a8c4d2c94c190580"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #3/td03-enonce.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-enonce.pdf",
+      "sha256": "27f3682500cb2b2954eb09eac5ffc3230c30f535d11d2eadc1d1dfe42ea839d4"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #3/td03-nettoyage.ipynb",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03-nettoyage.ipynb",
+      "sha256": "feed3da335e3d0f6c21b4cfb34cc4851344dbd766a52b8b9aa54a0ba9f89190d"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #3/td03_presentation.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-03/td03_presentation.pdf",
+      "sha256": "12b58a45da6b30acbebb91d188b7df05fae8a4a4df8c679e601e520836a8d4e0"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #4/td04-enonce.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-enonce.pdf",
+      "sha256": "bfaaa67274a98b0fb2d88084d285e71118af3adeed701d19b50cf1c9ca9367b4"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #4/td04-fusion.ipynb",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-fusion.ipynb",
+      "sha256": "00205a0f31cadece58f2be654a2800e4a6f294d49a55e37d57a319711b309524"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #4/td04-notes-td.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04-notes-td.pdf",
+      "sha256": "c798212d1131a752d80ccc5c3607c8da295b8e0128475d0ce5a70657cdc370da"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #4/td04_presentation.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-04/td04_presentation.pdf",
+      "sha256": "21bf6caf8537880c8fc1bfb54fe1fd1d2f1799630400efe525d6adb15c891b80"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #5/cm03-salaires.csv",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05/cm03-salaires.csv",
+      "sha256": "693cff7efd558dd869db5ab3f5f90e4f70ac87745c944f67a8c4d2c94c190580"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #5/index.html",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05/index.html",
+      "sha256": "b91cb651b07901c39e513cc9a686577ffd8cdbb1537fa6c1c344eafca9143200"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #5/td05-distribution.ipynb",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-distribution.ipynb",
+      "sha256": "cb62022275fd927cd434ce6dfdef31b1c1d877a77ccee10011249e0b7ea2d346"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #5/td05-enonce.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05-enonce.pdf",
+      "sha256": "3171404bbf485a51e393bc4564008e9d5306f1c2b5dda1b7049236aca61c407e"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #5/td05_presentation.pdf",
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05/td05_presentation.pdf",
+      "sha256": "4e885150515699ef6a6b998917ed204ec63ed66c2eed32e0a246dc5d2ef9dd2e"
+    },
+    {
+      "source": "04-cv-teaching/cv-academic.pdf",
+      "url": "/files/cv/anderson-vil-cv-provisional.pdf",
+      "sha256": "765d5d593f00e23c4b2c2ac951436584013ae3ff173dd5fab66281847c0c9c16"
+    }
+  ],
+  "archives": [
+    {
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01.zip",
+      "members": {
+        "td01-enonce.pdf": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4",
+        "td01-indice-prix.ipynb": "144b9ee8fcce60823d5d9a8e3f05330fe5282bd129e463af19ad1a37ffaf98f2"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-02.zip",
+      "members": {
+        "td02-chomage.ipynb": "979f79073318523180acdc7ce62ce03ee0d1ffa87614ef7a9909a7c81bc6cf6f",
+        "td02-enonce.pdf": "c0ae633b3e7dccb1b922003588ab953c5e47fa49d32038c8de32a693799a3b45",
+        "td02_presentation.pdf": "ecfbd5e3ffb728f90db7af5bf9ab98a6d35c58caee59862b7b6ce8e4faa0910b"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-03.zip",
+      "members": {
+        "cm03-dictionnaire.pdf": "e4dc2f29f3d453e7ab30d1caf373c2aa6c1bc9dd8e6e46fcda36217598ec06c4",
+        "cm03-salaires.csv": "693cff7efd558dd869db5ab3f5f90e4f70ac87745c944f67a8c4d2c94c190580",
+        "td03-enonce.pdf": "27f3682500cb2b2954eb09eac5ffc3230c30f535d11d2eadc1d1dfe42ea839d4",
+        "td03-nettoyage.ipynb": "feed3da335e3d0f6c21b4cfb34cc4851344dbd766a52b8b9aa54a0ba9f89190d",
+        "td03_presentation.pdf": "12b58a45da6b30acbebb91d188b7df05fae8a4a4df8c679e601e520836a8d4e0"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-04.zip",
+      "members": {
+        "td04-enonce.pdf": "bfaaa67274a98b0fb2d88084d285e71118af3adeed701d19b50cf1c9ca9367b4",
+        "td04-fusion.ipynb": "00205a0f31cadece58f2be654a2800e4a6f294d49a55e37d57a319711b309524",
+        "td04-notes-td.pdf": "c798212d1131a752d80ccc5c3607c8da295b8e0128475d0ce5a70657cdc370da",
+        "td04_presentation.pdf": "21bf6caf8537880c8fc1bfb54fe1fd1d2f1799630400efe525d6adb15c891b80"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-data-analysis/td-05.zip",
+      "members": {
+        "cm03-salaires.csv": "693cff7efd558dd869db5ab3f5f90e4f70ac87745c944f67a8c4d2c94c190580",
+        "index.html": "b91cb651b07901c39e513cc9a686577ffd8cdbb1537fa6c1c344eafca9143200",
+        "td05-distribution.ipynb": "cb62022275fd927cd434ce6dfdef31b1c1d877a77ccee10011249e0b7ea2d346",
+        "td05-enonce.pdf": "3171404bbf485a51e393bc4564008e9d5306f1c2b5dda1b7049236aca61c407e",
+        "td05_presentation.pdf": "4e885150515699ef6a6b998917ed204ec63ed66c2eed32e0a246dc5d2ef9dd2e"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/BWGHT.zip",
+      "members": {
+        "BWGHT.DES": "8bb5f4b113cd2c4eb866d5038254f0c6f33fe877c9a5175ca8c0a25894666706",
+        "BWGHT.raw": "d0b175bd0bc8b12228acbd9c5ef13b57845987cdc2af18239be68acfbcb34111",
+        "bwght.csv": "fd26a908ab907689939ac3a2cc9fa2e4ff13462a2ed5a288c8e120df1e7f1e1d",
+        "bwght.sas7bdat": "0b4e0c753c9a88358a2017d7f2175c6f5d224e1beda074becb518a63adeb2451",
+        "bwght.xls": "4223608c10a2419c092479030c23e7229d2f063fd6b39fc0d5dc8137a75ee028"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/CAMPUS.zip",
+      "members": {
+        "campus.des": "9fc10f867dca7f6b179dfc6a53d512608663c8cb285c4cb15af6b7e581ec577a",
+        "campus.raw": "42c6d7d6cb4da57a656d70db035691a7853b63c01ae693137fbd3356f936e628",
+        "campus.xls": "2a575fc79d4b9530526f5f665a1625b1197d88fa1c4d6fe32cd45610d3a60759"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/CEOSAL1.zip",
+      "members": {
+        "CEOSAL1.DES": "9401c370d622e378d716e0cc51e0563e050d49ba0998dd7ee4a9d08b9492c57b",
+        "CEOSAL1.raw": "e809a92c6dff493d0013d416f0f48e01e0aa106d59deb0d225161301d751551b",
+        "ceosal1.xls": "4a89540fc0806a026cf5b429b642a6a00c4301c92f9a34fa0a7fe44fd4bc51ec"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/GPA1.zip",
+      "members": {
+        "GPA1.DES": "b791c20fcb588dfa182839f0aaac3ff8c5c7b1c0afccf22e149d8247374beab9",
+        "GPA1.raw": "ea5ad9cc7790564aeb8bf21ef142e26aa2f7084d4f2fb717da6730f7203cc9c0",
+        "gpa1.xls": "a0090223acf1e46e8b55afd3de44856c4af2e4bec8fc18b1ea1e5585a6573d0c"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/GPA2.zip",
+      "members": {
+        "GPA2.DES": "b00b8377da9d3c30e60a6a713372fc3027c30c17a9257bc1bc0451cb6fe5814a",
+        "gpa2.csv": "322d6a1ab8b66b2ee591102ce8748b98065b355abd2cf1a8b1f3a1cd3eb453d0",
+        "gpa2.raw": "2ee32f97f28a99d59ebafd8c6a9ea32888c92b951ba80c3b0e3c9161cf40e0f9",
+        "gpa2.sas7bdat": "637bfddfe9daa1bab063bd06175a9e31ec09b99dbff8f6b17bdbb7f3fb3a0b15",
+        "gpa2.xls": "8ea9facd6fc3f432f3a052bc923c0167eee0e837358e0105b79bb8b94e7872dd"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HPRICE1.zip",
+      "members": {
+        "HPRICE1.DES": "3834488240fc941ae6f3ad67f44d1b7a2f011b4fe41f99e0eb01a30d428d7db3",
+        "hprice1.csv": "55e391c38d28135875e65db0106fa8178c7e7b55c189b4b258df6709dafc8f92",
+        "hprice1.raw": "979cfdcd1e12a565652c28f4b36f045092b6bbf6db6d3d7fc55aa6b597fb25a7",
+        "hprice1.sas7bdat": "8c9f87ad20c6201a6e559e99180d4076035a8b40de191297b1dd14bc8214273a",
+        "hprice1.xls": "dff785308f8eddf1d4d4cef85aab84dfa201c3d50b1bf050501bc7a73dc0e526"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HPRICE2.zip",
+      "members": {
+        "HPRICE2.DES": "bb4b021fc49fc4af36fb20bbd35209c099924d73adfd4189f83c953b4a5b2562",
+        "HPRICE2.raw": "871ce43e60b030b9a618095aab0568f14a673471b6e8083997c8d10d150dce23",
+        "hprice2.csv": "8f3de467b11b7e59c97a0480d80d711492dbb56ff841212e7d19280cfce2f93b",
+        "hprice2.sas7bdat": "d759aecb510805948307299bd6fbc0578708a1b8f236bac97e42ddd1c597aeb3",
+        "hprice2.xls": "a453ded79624af25b9c4e0936d84bac23dd65dffb7ba03fa27d63270de7cc0b7"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HTV.zip",
+      "members": {
+        "htv.csv": "8d73a1103d959c9940376e373dd322a847dfa4dcc07e46a5a69a7a667c0ac0ab",
+        "htv.des": "1d8dec36613b6cb82c61d27b93ae3ba8c5dc84a8bef733595b6851a4f109974d",
+        "htv.raw": "d93999e6d3fd99176f236894944521cc5af952f416e901db9e86f6f628185ad5",
+        "htv.sas7bdat": "904c2890c5ce8b23aa3af344696a263045279ba4c931fceb8fde3b1ad738a0fe",
+        "htv.xls": "65fcb7bdd276647edf8a433041b1f8af19bdc2ad9d0e9c755c31a32854b26dd0"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/JTRAIN.zip",
+      "members": {
+        "JTRAIN.DES": "b6f4da4289cebe34c31ee50593e581aba6f76cbef50a96a55ebb45928f0a2a1a",
+        "JTRAIN.raw": "5e70507b5dba34d8d340dd594fcfb9ac3223cd9333f1c8cfe365d5e6ca53e1fc",
+        "jtrain.xls": "64e14a60a5ec7722fc23bf5cfcd90c45422802e7f1dfb44671dbddad7bd91b77"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/MEAP93.zip",
+      "members": {
+        "MEAP93.DES": "82fb74fc1b00cdc9deac1f150d2135d20996a8514e213cb1877281c0f8acf15f",
+        "MEAP93.raw": "9690c60965859dd3a2d179dd0a629128b1d623079fe438505c693b242c6d2f29",
+        "meap01.des": "763145718c7e62aabb85b44b3694b98ee933842d6ca25eea3bcdee27d9275cf2",
+        "meap01.raw": "939b6acb99a613c37998a06f1ed6eaef0c77cc4ce2ac3a40797fcd59a293ad90",
+        "meap01.xls": "f9684e6c3a6122e158974ef33d3883bf85535c4692d532dbe5acc57918746ab2",
+        "meap93.xls": "35fd63d29b711e2dc9b68542e5fc9d5b1f4fac8ee660106979cbfe4b50b35c71"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/NBASAL.zip",
+      "members": {
+        "nbasal.csv": "3da31031a315d7f0220ef14fc92c0f127f0c01991e61fca48526265b69607e21",
+        "nbasal.des": "a94d80c1aa36a79025f31c719b5be712d7fcb140917bc9f884d65c22d8e6904b",
+        "nbasal.raw": "cba9933ec95991c182bee7b632e5744aba13d2681684311e49c614a2a11928ed",
+        "nbasal.sas7bdat": "96b3db7a20b260ea3832c91901c98fbd081bb806ce9ba84ab9760843d41a9af6",
+        "nbasal.xls": "016e453eccdf7f75327cbdb3f5e1c8a3c1d36e01291b49fdb59c4cbfb6ce9b5d"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/RDCHEM.zip",
+      "members": {
+        "RDCHEM.DES": "8c3bde669589db2b9538bed23a20fc18a9c0686376eb29190be07e3c23dae09d",
+        "RDCHEM.raw": "854769520d75c91843da459e3bd0fc7d4618d8f9b39c0223742b579906ace40e",
+        "rdchem.csv": "15f6ccc8ad03c125326c947c4d425e7f2c6c435a9d179893be358f5b853d2ef8",
+        "rdchem.sas7bdat": "ccf9e7f6fcb7fbb399acf5934129416902fe4814906d69d8a3804ac701455793",
+        "rdchem.xls": "68d5e6b106c59414a9fa39a9956e378950fef1fb165fd190ed81bc4fe030056f"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/RENTAL.zip",
+      "members": {
+        "RENTAL.DES": "c4b4ca08fcffecbb9dc9f3298812907ae697d365ec5e53c14118e45e6d063aac",
+        "RENTAL.raw": "c05edd78b78aa72ed30e1e256cb23c2f667a7dbe94c297c8807e4a1b4d0d8165",
+        "rental.csv": "7fd1505efd7c5b646c1d673497b267c40a7f78079caaee2dfdc0b6ed0f15932f",
+        "rental.sas7bdat": "88739af43cd4498e5774878965c3f4ff12197cb132b420bbf027188ccd97e2e2",
+        "rental.xls": "4b0fa9d153beac587b08640a745b5ee5800f8c73724d36824f9de9743c79c304"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/TWOYEAR.zip",
+      "members": {
+        "twoyear.des": "2e290d630935dd39deb2ec5b07c346f846e3c233e235f8b2cc5aea9ad579e0e8",
+        "twoyear.raw": "078cbe056d1f3f0bedfe449100d87381e87574ec4751d17f5d19e2821032c381",
+        "twoyear.xls": "9435806a34f02c17a720dbdd70fca744e668015f105a00c8e65010761e9a91cb"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/WAGE1.zip",
+      "members": {
+        "WAGE1.DES": "50f08f9047fb20fb43694adc353d0251f5c34f6126376e65811b31681b3c3a44",
+        "WAGE1.raw": "96052827edfa96edb71b975651822cc65f4253a0f3b518afde4f236e72e849b1",
+        "wage1.xls": "8d5a584d45ca531b00d05ad08bf078bc40002648a822a7d15e61f4be517e5ba7"
+      }
+    }
+  ],
+  "cv": {
+    "source": "04-cv-teaching/cv-academic.pdf",
+    "url": "/files/cv/anderson-vil-cv-provisional.pdf",
+    "sha256": "765d5d593f00e23c4b2c2ac951436584013ae3ff173dd5fab66281847c0c9c16"
+  }
+}
