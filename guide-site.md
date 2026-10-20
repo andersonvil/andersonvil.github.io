@@ -209,3 +209,11 @@ Les redirections gardent les anciens liens utilisables. Leur cible est dans `[ex
 | `/teaching/statistics-i-undergraduate/` | `content/redirects/teaching-stats.md` | `/teaching/` |
 | `/publications/thesis/` | `content/redirects/thesis.md` | Page retirée, liens vers les rubriques actuelles |
 | `/insights/reading-model-based-estimates/` | `content/redirects/reading-model-based-estimates.md` | `/insights/quest-ce-quun-modele/` |
+
+## Ajout Microeconomics III du 20 octobre 2026
+
+Le PDF source `Niort/2026-27/Microéconomie III/partie2/td/serie01.pdf` est la série 1 de théorie des jeux (6 pages). Il est accessible dans Part II, immédiatement après le support, sous `/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf`.
+
+Le fichier autonome `Niort/2026-27/Microéconomie III/QCM/lab_microeconomie3.html` propose 60 questions, dont 30 sur les jeux et 30 sur le risque, avec corrections et résultats. Il figure après les trois parties dans **Self-assessment — Game theory and risk**, avec un lien direct vers `/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html`. Il ne constitue pas une quatrième partie du cours.
+
+Ces deux ressources sont utilisées dans Teaching et Code & Data. Le PDF est copié sans modification. Le QCM conserve intégralement ses questions, réponses et scripts ; seul un style `quiz-mobile-layout` est ajouté à la copie publique pour autoriser le retour à la ligne d’une longue phrase de la question `la10` sur mobile. La source originale reste intacte. `scripts/sync-teaching-update.py` assure leur copie et leur regroupement ; `kind = "self_assessment"` rend le QCM directement accessible dans sa fiche et le classe sous Self-assessment dans le catalogue technique. L’empreinte des copies figure dans `docs/teaching-update-manifest.json`.

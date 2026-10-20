@@ -1,6 +1,18 @@
 {
   "files": [
     {
+      "source": "Niort/2026-27/Microéconomie III/partie2/td/serie01.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf",
+      "sha256": "e9c4a176ff30ab8ffc18f93016583cea1efa06df41292f3d8d2942bbc810da24"
+    },
+    {
+      "source": "Niort/2026-27/Microéconomie III/QCM/lab_microeconomie3.html",
+      "url": "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html",
+      "sha256": "5e875f9f4eea6bb4e6e5d9a29086cbe4ab324f79d5e9a73b089fcdc5cf339596",
+      "source_sha256": "27bfac5a52fdfef68afa31ac5bdb231d52bf88bf05d342e76257767f21e9ad5d",
+      "adaptation": "Mobile wrapping in question text only; source document unchanged"
+    },
+    {
       "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
       "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
       "sha256": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4"

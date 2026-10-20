@@ -28,6 +28,34 @@ def bundle(files, target):
             members[name] = digest(p)
     archives.append(dict(url='/' + target.relative_to(STATIC).as_posix(), members=members))
 
+# Microeconomics III: the exercise sheet belongs to Part II; the mixed quiz
+# spans game theory and risk and therefore has its own self-assessment section.
+micro = groups['microeconomics-iii-niort']
+practice_part = 'Self-assessment — Game theory and risk'
+if practice_part not in micro['parts']:
+    micro['parts'].append(practice_part)
+micro_source = SOURCE / 'Niort/2026-27/Microéconomie III'
+for relative, url, label, part, fmt, category in [
+    ('partie2/td/serie01.pdf', '/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf', 'Exercise series 1 — Game theory and competitive strategies', micro['parts'][1], 'PDF', 'exercises'),
+    ('QCM/lab_microeconomie3.html', '/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html', 'Online practice quiz (QCM) — Game theory and risk', practice_part, 'Interactive HTML', 'self_assessment'),
+]:
+    source = micro_source / relative
+    copy(source, STATIC / url.lstrip('/'))
+    if category == 'self_assessment':
+        # The supplied la10 question wraps a long sentence in a no-wrap math span.
+        # Preserve the original source; change only mobile wrapping in the public copy.
+        target = STATIC / url.lstrip('/')
+        mobile_style = '<style id="quiz-mobile-layout">@media(max-width:520px){.qtext .m{white-space:normal}}</style>'
+        target.write_text(source.read_text(encoding='utf-8').replace('</head>', mobile_style + '</head>', 1), encoding='utf-8')
+        copies[-1].update(source_sha256=copies[-1]['sha256'], sha256=digest(target), adaptation='Mobile wrapping in question text only; source document unchanged')
+    resource = next((r for r in micro['resources'] if r['file'] == url), None)
+    if resource is None:
+        resource = dict(file=url)
+        micro['resources'].append(resource)
+    resource.update(label=label, part=part, format=fmt, kind=category, bytes=(STATIC / url.lstrip('/')).stat().st_size)
+    if fmt == 'PDF':
+        resource['pages'] = 6
+
 g = groups['data-analysis-l3']
 sessions = SOURCE / 'CY-Cergy-Paris-Université/2026-27/L3-Data Analysis'
 for n, folder in enumerate(sorted(sessions.glob('TD #*')), 1):
@@ -71,6 +99,8 @@ for folder in sorted(dataset_root.iterdir()):
     datasets.append(dict(title=folder.name, formats=' · '.join(sorted({p.suffix[1:].upper() for _, p in files})), file='/' + target.relative_to(STATIC).as_posix(), bytes=target.stat().st_size))
 
 def kind(r):
+    if r.get('kind'):
+        return r['kind']
     p = r['file'].lower()
     label = r['label'].lower()
     if 'readme' in label:
@@ -101,7 +131,7 @@ def cluster(r):
         return {'seance01':'Course', 'seance02':'Course', 'td01':'Exercises', 'td02':'Exercises', 'partie3':'Course figures and calculations', 'generer_annexes':'Annex-generation utility', 'generer_dta':'Data export utility'}.get(name, r['label'])
     return r['label']
 
-labels = dict(support='Course supports', exercises='Exercise sheets', readings='Supplements & readings', notebooks='Notebooks', code='Code', data='Data', simulators='Simulators', instructions='Practical instructions', bundles='Complete downloads')
+labels = dict(support='Course supports', exercises='Exercise sheets', self_assessment='Self-assessment', readings='Supplements & readings', notebooks='Notebooks', code='Code', data='Data', simulators='Simulators', instructions='Practical instructions', bundles='Complete downloads')
 order = list(labels)
 
 def technical_sections(resources):
@@ -134,9 +164,9 @@ for g in teaching['groups']:
                     years.setdefault(re.search(r'\d{4}-\d{2}', r['label'])[0], []).append(r)
                 cards.extend(dict(title='CC ' + year, primary=items, sections=[], heading=part if i == 0 else '') for i, (year, items) in enumerate(sorted(years.items(), reverse=True)))
             continue
-        primary = [r for r in rs if kind(r) in ('support', 'exercises')]
+        primary = [r for r in rs if kind(r) in ('support', 'exercises', 'self_assessment')]
         primary.sort(key=lambda r: (kind(r) != 'support', r['file']))
-        extra = [r for r in rs if kind(r) not in ('support', 'exercises')]
+        extra = [r for r in rs if kind(r) not in ('support', 'exercises', 'self_assessment')]
         title = 'Session 1 — Consumers, producers, and market efficiency' if g['id'] == 'microeconomics-l1' else part
         cards.append(dict(title=title, primary=primary, sections=technical_sections(extra)))
     views.append(dict(id=g['id'], cards=cards, technical=technical, datasets=datasets if g['id'] == 'econometrics-l3' else []))

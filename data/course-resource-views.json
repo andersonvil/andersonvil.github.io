@@ -1295,6 +1295,15 @@
               "pages": 109,
               "bytes": 637333,
               "part": "Part II — Strategic decisions and games"
+            },
+            {
+              "file": "/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf",
+              "label": "Exercise series 1 — Game theory and competitive strategies",
+              "part": "Part II — Strategic decisions and games",
+              "format": "PDF",
+              "kind": "exercises",
+              "bytes": 391906,
+              "pages": 6
             }
           ],
           "sections": [
@@ -1527,6 +1536,20 @@
               ]
             }
           ]
+        },
+        {
+          "title": "Self-assessment — Game theory and risk",
+          "primary": [
+            {
+              "file": "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html",
+              "label": "Online practice quiz (QCM) — Game theory and risk",
+              "part": "Self-assessment — Game theory and risk",
+              "format": "Interactive HTML",
+              "kind": "self_assessment",
+              "bytes": 133219
+            }
+          ],
+          "sections": []
         }
       ],
       "technical": [
@@ -1569,6 +1592,26 @@
                       "pages": 109,
                       "bytes": 637333,
                       "part": "Part II — Strategic decisions and games"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Exercise sheets",
+              "kind": "exercises",
+              "rows": [
+                {
+                  "title": "Exercise series 1 — Game theory and competitive strategies",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf",
+                      "label": "Exercise series 1 — Game theory and competitive strategies",
+                      "part": "Part II — Strategic decisions and games",
+                      "format": "PDF",
+                      "kind": "exercises",
+                      "bytes": 391906,
+                      "pages": 6
                     }
                   ]
                 }
@@ -1832,6 +1875,30 @@
                       "format": "ZIP",
                       "bytes": 1806456,
                       "part": "Part III — Risk and information"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Self-assessment — Game theory and risk",
+          "sections": [
+            {
+              "title": "Self-assessment",
+              "kind": "self_assessment",
+              "rows": [
+                {
+                  "title": "Online practice quiz (QCM) — Game theory and risk",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html",
+                      "label": "Online practice quiz (QCM) — Game theory and risk",
+                      "part": "Self-assessment — Game theory and risk",
+                      "format": "Interactive HTML",
+                      "kind": "self_assessment",
+                      "bytes": 133219
                     }
                   ]
                 }

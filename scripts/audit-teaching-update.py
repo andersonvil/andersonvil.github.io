@@ -21,7 +21,7 @@ sha = lambda b: hashlib.sha256(b).hexdigest()
 page = lambda url: BeautifulSoup((BUILD / url.strip('/') / 'index.html').read_text(encoding='utf-8'), 'html.parser')
 
 for c in manifest['files']:
-    assert sha((SOURCE / c['source']).read_bytes()) == c['sha256']
+    assert sha((SOURCE / c['source']).read_bytes()) == c.get('source_sha256', c['sha256'])
     assert sha((BUILD / c['url'].lstrip('/')).read_bytes()) == c['sha256']
 
 # Full inventory of the three teaching source trees, including supplied test files.
@@ -40,6 +40,12 @@ for folder in ('CY-Cergy-Paris-Université', 'Saint-Germain-en-Laye', 'Niort'):
         if not matches:
             if re.fullmatch(r'TD #[123]\.zip', source.name):
                 reason = 'Instructor working archive; student files are synchronized from the approved TD folder, corrected notebooks excluded'
+            elif source.name == 'lab_microeconomie3.html':
+                target = BUILD / 'files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html'
+                published = target.read_text(encoding='utf-8')
+                assert re.sub(r'<style id="quiz-mobile-layout">.*?</style>', '', published, flags=re.S) == source.read_text(encoding='utf-8')
+                matches = ['/' + target.relative_to(BUILD).as_posix()]
+                reason = 'Source preserved, with only a mobile question-text wrapping stylesheet added to the public copy'
             else:
                 assert source.name in ('jeux-repetes-simulateur.html', 'pile-ou-face-simulateur.html'), relative
                 target = BUILD / 'files/teaching/niort/microeconomics-iii' / source.name
@@ -100,8 +106,14 @@ for a in cy.select('.dataset-grid a'):
 
 for card in page('/teaching/econometrics-niort/').select('.learning-card')[1:]:
     assert [a.span.text for a in card.select('.learning-primary a')] == ['Course support', 'Exercise sheet']
-part3 = page('/teaching/microeconomics-iii-niort/').select('.learning-card')[-1]
+micro_cards = page('/teaching/microeconomics-iii-niort/').select('.learning-card')
+part3 = next(card for card in micro_cards if card.h3.text == 'Part III — Risk and information')
 assert [Path(a['href']).name for a in part3.select('.learning-primary a')] == ['partie3.pdf', 'serie05.pdf', 'serie06.pdf', 'serie07.pdf', 'serie08.pdf']
+part2 = next(card for card in micro_cards if card.h3.text == 'Part II — Strategic decisions and games')
+assert [Path(a['href']).name for a in part2.select('.learning-primary a')] == ['sessions-02-04.pdf', 'serie01.pdf']
+practice = micro_cards[-1]
+assert practice.h3.text == 'Self-assessment — Game theory and risk'
+assert Path(practice.select_one('.learning-primary a')['href']).name == 'lab_microeconomie3.html'
 tds = page('/teaching/data-analysis-l3/').select('.learning-card')
 assert [c.h3.text for c in tds] == [f'TD{n:02}' for n in range(1, 6)]
 for n in range(2, 6):

@@ -1162,6 +1162,13 @@
     "note": "Byte-identical public copy"
   },
   {
+    "source": "Niort/2026-27/Microéconomie III/partie2/td/serie01.pdf",
+    "urls": [
+      "/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
     "source": "Niort/2026-27/Microéconomie III/partie3/code/generer_annexes.py",
     "urls": [
       "/files/teaching/niort/microeconomics-iii/part-3/code/generer_annexes.py"
@@ -1314,5 +1321,12 @@
       "/files/teaching/niort/microeconomics-iii/part-3/td/supplement_varian.pdf"
     ],
     "note": "Byte-identical public copy"
+  },
+  {
+    "source": "Niort/2026-27/Microéconomie III/QCM/lab_microeconomie3.html",
+    "urls": [
+      "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html"
+    ],
+    "note": "Source preserved, with only a mobile question-text wrapping stylesheet added to the public copy"
   }
 ]
