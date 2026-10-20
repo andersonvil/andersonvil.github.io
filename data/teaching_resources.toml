@@ -685,7 +685,7 @@ resource_type = "Course slides"
 summary = "Microeconomic foundations, strategic decisions and Nash equilibrium, followed by risk, insurance, portfolio choice and private information, with exercises, Python/R programs and interactive simulators."
 topics = ["Competitive model and strategic decisions", "Decision-making under risk", "Private information", "Consumer, producer, and market foundations", "Normal-form games", "Dominant and dominated strategies", "Pure and mixed Nash equilibrium", "Maximin and repeated games", "Game trees and backward induction"]
 url = "/teaching/microeconomics-iii-niort/"
-parts = ["Part I — Foundations", "Part II — Strategic decisions and games", "Part III — Risk and information"]
+parts = ["Part I — Foundations", "Part II — Strategic decisions and games", "Part III — Risk and information", "Self-assessment — Game theory and risk"]
 
 [[groups.resources]]
 label = "Séance 1 — Introduction générale"
@@ -825,6 +825,23 @@ label = "Practical README"
 file = "/teaching/practical-readme/#microeconomics"
 format = "HTML"
 part = "Part III — Risk and information"
+
+[[groups.resources]]
+file = "/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf"
+label = "Exercise series 1 — Game theory and competitive strategies"
+part = "Part II — Strategic decisions and games"
+format = "PDF"
+kind = "exercises"
+bytes = 391906
+pages = 6
+
+[[groups.resources]]
+file = "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html"
+label = "Online practice quiz (QCM) — Game theory and risk"
+part = "Self-assessment — Game theory and risk"
+format = "Interactive HTML"
+kind = "self_assessment"
+bytes = 133219
 
 [[groups]]
 id = "econometrics-niort"
