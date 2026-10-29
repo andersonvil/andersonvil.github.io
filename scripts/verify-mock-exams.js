@@ -7,7 +7,7 @@ const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'docs/teaching-update-manifest.json')));
 const files = manifest.files.filter(f => /Mock-Exams/.test(f.source));
 const archives = manifest.archives.filter(a => /qcm\.zip|mock-exams\.zip/.test(a.url));
-const routes = ['/teaching/econometrics-niort/', '/teaching/microeconomics-iii-niort/', '/teaching/econometrics-m1/', '/code-data/'];
+const routes = ['/teaching/', '/teaching/econometrics-niort/', '/teaching/microeconomics-iii-niort/', '/teaching/econometrics-m1/', '/teaching/econometrics-m2/', '/code-data/'];
 const dir = path.join(root, 'tmp/mock-exams-qa', base.startsWith('https:') ? 'public' : 'local');
 fs.mkdirSync(dir, { recursive: true });
 const report = { base, pages: [], downloads: [], quizzes: [], errors: [] };
@@ -27,11 +27,16 @@ const assert = (v, m) => { if (!v) throw Error(m); };
       await page.goto(base + route);
       const hrefs = await page.locator('main a[href]').evaluateAll(es => es.map(e => e.getAttribute('href')));
       const expected = [...files, ...archives].filter(f => route === '/code-data/' ||
+        route === '/teaching/' && !f.url.endsWith('.zip') ||
         route.includes('econometrics-niort') && f.url.includes('/niort/econometrics/') ||
         route.includes('microeconomics-iii-niort') && f.url.includes('/microeconomics-iii/') ||
+        route.includes('econometrics-m2') && f.url.endsWith('/Mock2_solutions_v1.pdf') ||
         route.includes('econometrics-m1') && f.url.includes('/m1-econometrics/'));
-      for (const f of expected) assert(hrefs.filter(h => h === f.url).length === 1, route + ' missing/duplicate ' + f.url);
-      assert(!hrefs.some(h => /m2-econometrics\/mock/.test(h)), 'Misclassified M1 PDF');
+      for (const f of expected) {
+        const count = ['/teaching/', '/code-data/'].includes(route) && f.url.endsWith('/Mock2_solutions_v1.pdf') ? 2 : 1;
+        assert(hrefs.filter(h => h === f.url).length === count, route + ' missing/duplicate ' + f.url);
+      }
+      if (/econometrics-m[12]\/$/.test(route)) assert(await page.locator('.learning-card').count() >= 2, 'Missing mock-exam cards');
       report.pages.push({ route, verifiedResourceLinks: expected.length });
     }
     for (const f of [...files, ...archives]) {

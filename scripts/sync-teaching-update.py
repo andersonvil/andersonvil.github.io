@@ -56,8 +56,7 @@ for relative, url, label, part, fmt, category in [
     if fmt == 'PDF':
         resource['pages'] = 6
 
-# Mock-exam inputs are explicit: the M2-folder PDF is byte-identical to the
-# M1 Mock 2 solutions and its title page identifies Master 1. Publish it once.
+# Preserve a single public copy of the PDF shared by the M1 and M2 folders.
 niort = groups['econometrics-niort']
 part = 'Self-assessment — Sessions 1 and 2'
 if part not in niort['parts']:
@@ -89,7 +88,18 @@ for number in (2, 3):
         if resource is None:
             resource = dict(file=url)
             m1['resources'].append(resource)
-        resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', pages=pages, bytes=target.stat().st_size)
+        resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', kind='mock_exams', pages=pages, bytes=target.stat().st_size)
+
+m2 = groups['econometrics-m2']
+part = 'Mock exam 2'
+if part not in m2['parts']:
+    m2['parts'].append(part)
+shared = next(r for r in m1['resources'] if r['file'].endswith('/Mock2_solutions_v1.pdf'))
+resource = next((r for r in m2['resources'] if r['file'] == shared['file']), None)
+if resource is None:
+    m2['resources'].append(dict(shared))
+else:
+    resource.update(shared)
 
 # Archives use the same public bytes as the individual downloads.
 for group, part, url, files, label in [
@@ -184,7 +194,7 @@ def cluster(r):
         return {'seance01':'Course', 'seance02':'Course', 'td01':'Exercises', 'td02':'Exercises', 'partie3':'Course figures and calculations', 'generer_annexes':'Annex-generation utility', 'generer_dta':'Data export utility'}.get(name, r['label'])
     return r['label']
 
-labels = dict(support='Course supports', exercises='Exercise sheets', self_assessment='Self-assessment', readings='Supplements & readings', notebooks='Notebooks', code='Code', data='Data', simulators='Simulators', instructions='Practical instructions', bundles='Complete downloads')
+labels = dict(support='Course supports', exercises='Exercise sheets', self_assessment='Self-assessment', mock_exams='Mock exams', readings='Supplements & readings', notebooks='Notebooks', code='Code', data='Data', simulators='Simulators', instructions='Practical instructions', bundles='Complete downloads')
 order = list(labels)
 
 def technical_sections(resources):
@@ -217,9 +227,9 @@ for g in teaching['groups']:
                     years.setdefault(re.search(r'\d{4}-\d{2}', r['label'])[0], []).append(r)
                 cards.extend(dict(title='CC ' + year, primary=items, sections=[], heading=part if i == 0 else '') for i, (year, items) in enumerate(sorted(years.items(), reverse=True)))
             continue
-        primary = [r for r in rs if kind(r) in ('support', 'exercises', 'self_assessment')]
-        primary.sort(key=lambda r: (kind(r) != 'support', r['file']))
-        extra = [r for r in rs if kind(r) not in ('support', 'exercises', 'self_assessment')]
+        primary = [r for r in rs if kind(r) in ('support', 'exercises', 'self_assessment', 'mock_exams')]
+        primary.sort(key=lambda r: (kind(r) != 'support', kind(r) == 'mock_exams' and 'Solutions' in r['label'], r['file']))
+        extra = [r for r in rs if kind(r) not in ('support', 'exercises', 'self_assessment', 'mock_exams')]
         title = 'Session 1 — Consumers, producers, and market efficiency' if g['id'] == 'microeconomics-l1' else part
         cards.append(dict(title=title, primary=primary, sections=technical_sections(extra)))
     views.append(dict(id=g['id'], cards=cards, technical=technical, datasets=datasets if g['id'] == 'econometrics-l3' else []))

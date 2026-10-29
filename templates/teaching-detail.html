@@ -23,12 +23,10 @@
     <div><dt>Language</dt><dd>{{ group.language }}{% if group.language == "French" %} · <strong>French-language material</strong>{% endif %}</dd></div>
   </dl>
   <section><h2>Topics documented in the material</h2><ul>{% for topic in group.topics %}<li>{{ topic }}</li>{% endfor %}</ul></section>
-  <section{% if group.id != "econometrics-m1" and group.id != "econometrics-m2" %} class="learning-resources"{% endif %}>
+  <section class="learning-resources">
     <h2>Resources</h2>
-    {% if group.id == "econometrics-m1" or group.id == "econometrics-m2" %}{{ resources::list(group=group) }}{% else %}
     {% set views = load_data(path="data/course-resource-views.json") %}
     {% for view in views.groups %}{% if view.id == group.id %}{{ learning::cards(view=view) }}{% endif %}{% endfor %}
-    {% endif %}
   </section>
   <footer class="article-footer">{{ context_back::bar(label="Teaching", url="/teaching/") }}</footer>
 </article>

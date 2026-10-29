@@ -623,6 +623,7 @@ part = "Mock exam 2"
 format = "PDF"
 pages = 7
 bytes = 341685
+kind = "mock_exams"
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
@@ -631,6 +632,7 @@ part = "Mock exam 2"
 format = "PDF"
 pages = 5
 bytes = 151391
+kind = "mock_exams"
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf"
@@ -639,6 +641,7 @@ part = "Mock exam 3"
 format = "PDF"
 pages = 7
 bytes = 381297
+kind = "mock_exams"
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf"
@@ -647,6 +650,7 @@ part = "Mock exam 3"
 format = "PDF"
 pages = 5
 bytes = 154076
+kind = "mock_exams"
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip"
@@ -670,7 +674,7 @@ resource_type = "Exercise collection"
 summary = "An advanced exercise collection on linear models, inference, instrumental variables, maximum likelihood, and generalized method of moments."
 topics = ["Linear models", "Asymptotic inference", "Instrumental variables", "Maximum likelihood", "GMM"]
 url = "/teaching/econometrics-m2/"
-parts = ["Course materials"]
+parts = ["Course materials", "Mock exam 2"]
 
 [[groups.resources]]
 label = "Advanced econometrics exercises"
@@ -678,6 +682,15 @@ file = "/files/teaching/cy-cergy/m2-econometrics/econometrics-exercises.pdf"
 pages = 19
 bytes = 162634
 part = "Course materials"
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+label = "Mock exam 2 — Solutions"
+part = "Mock exam 2"
+format = "PDF"
+pages = 5
+bytes = 151391
+kind = "mock_exams"
 
 [[groups]]
 id = "microeconomics-l1"

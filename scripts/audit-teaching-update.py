@@ -84,14 +84,7 @@ for group_id, group in groups.items():
     assert {r['file'] for r in group['resources']} <= hrefs, group_id
     course = page(group['url'])
     assert not course.select('details details'), group_id
-    if group_id == 'econometrics-m2':
-        assert group == old_groups[group_id]
-        assert not course.select('.learning-card') and len(course.select('.resource-file-list article')) == 1
-        baseline = ROOT / 'public-production' / group['url'].strip('/') / 'index.html'
-        if baseline.exists():
-            before = BeautifulSoup(baseline.read_text(encoding='utf-8'), 'html.parser')
-            assert str(course.select_one('.resource-part')) == str(before.select_one('.resource-part'))
-    elif group_id != 'econometrics-l3':
+    if group_id != 'econometrics-l3':
         assert {r['file'] for r in group['resources']} <= {a['href'] for a in course.select('a[href]')}
 
 cy = page('/teaching/econometrics-l3/')
@@ -140,7 +133,7 @@ for p in BUILD.rglob('*.html'):
         assert page_cv_links >= 2, p
 assert cv_links > 0
 assert sha((BUILD / manifest['cv']['url'].lstrip('/')).read_bytes()) == manifest['cv']['sha256']
-report = dict(result='PASS', inventoried_source_files=len(inventory), synchronized_copies=len(manifest['files']), verified_archives=len(manifest['archives']), archive_members=archive_members, preserved_resource_urls=preserved, cv_access_points=cv_links, unchanged_courses=['econometrics-m2'], protected_editorial_content=True)
+report = dict(result='PASS', inventoried_source_files=len(inventory), synchronized_copies=len(manifest['files']), verified_archives=len(manifest['archives']), archive_members=archive_members, preserved_resource_urls=preserved, cv_access_points=cv_links, shared_m1_m2_mock_pdf=True, protected_editorial_content=True)
 (ROOT / 'tmp/teaching-update-qa').mkdir(parents=True, exist_ok=True)
 (ROOT / 'tmp/teaching-update-qa/static-report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print(json.dumps(report))

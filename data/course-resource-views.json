@@ -1121,20 +1121,22 @@
           "title": "Mock exam 2",
           "primary": [
             {
-              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
-              "label": "Mock exam 2 — Solutions",
-              "part": "Mock exam 2",
-              "format": "PDF",
-              "pages": 5,
-              "bytes": 151391
-            },
-            {
               "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf",
               "label": "Mock exam 2 — Question paper",
               "part": "Mock exam 2",
               "format": "PDF",
               "pages": 7,
-              "bytes": 341685
+              "bytes": 341685,
+              "kind": "mock_exams"
+            },
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+              "label": "Mock exam 2 — Solutions",
+              "part": "Mock exam 2",
+              "format": "PDF",
+              "pages": 5,
+              "bytes": 151391,
+              "kind": "mock_exams"
             }
           ],
           "sections": []
@@ -1143,20 +1145,22 @@
           "title": "Mock exam 3",
           "primary": [
             {
-              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf",
-              "label": "Mock exam 3 — Solutions",
-              "part": "Mock exam 3",
-              "format": "PDF",
-              "pages": 5,
-              "bytes": 154076
-            },
-            {
               "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf",
               "label": "Mock exam 3 — Question paper",
               "part": "Mock exam 3",
               "format": "PDF",
               "pages": 7,
-              "bytes": 381297
+              "bytes": 381297,
+              "kind": "mock_exams"
+            },
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf",
+              "label": "Mock exam 3 — Solutions",
+              "part": "Mock exam 3",
+              "format": "PDF",
+              "pages": 5,
+              "bytes": 154076,
+              "kind": "mock_exams"
             }
           ],
           "sections": []
@@ -1215,8 +1219,8 @@
           "title": "Mock exam 2",
           "sections": [
             {
-              "title": "Course supports",
-              "kind": "support",
+              "title": "Mock exams",
+              "kind": "mock_exams",
               "rows": [
                 {
                   "title": "Mock exam 2 — Question paper",
@@ -1227,7 +1231,8 @@
                       "part": "Mock exam 2",
                       "format": "PDF",
                       "pages": 7,
-                      "bytes": 341685
+                      "bytes": 341685,
+                      "kind": "mock_exams"
                     }
                   ]
                 },
@@ -1240,7 +1245,8 @@
                       "part": "Mock exam 2",
                       "format": "PDF",
                       "pages": 5,
-                      "bytes": 151391
+                      "bytes": 151391,
+                      "kind": "mock_exams"
                     }
                   ]
                 }
@@ -1252,8 +1258,8 @@
           "title": "Mock exam 3",
           "sections": [
             {
-              "title": "Course supports",
-              "kind": "support",
+              "title": "Mock exams",
+              "kind": "mock_exams",
               "rows": [
                 {
                   "title": "Mock exam 3 — Question paper",
@@ -1264,7 +1270,8 @@
                       "part": "Mock exam 3",
                       "format": "PDF",
                       "pages": 7,
-                      "bytes": 381297
+                      "bytes": 381297,
+                      "kind": "mock_exams"
                     }
                   ]
                 },
@@ -1277,7 +1284,8 @@
                       "part": "Mock exam 3",
                       "format": "PDF",
                       "pages": 5,
-                      "bytes": 154076
+                      "bytes": 154076,
+                      "kind": "mock_exams"
                     }
                   ]
                 }
@@ -1327,6 +1335,21 @@
             }
           ],
           "sections": []
+        },
+        {
+          "title": "Mock exam 2",
+          "primary": [
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+              "label": "Mock exam 2 — Solutions",
+              "part": "Mock exam 2",
+              "format": "PDF",
+              "pages": 5,
+              "bytes": 151391,
+              "kind": "mock_exams"
+            }
+          ],
+          "sections": []
         }
       ],
       "technical": [
@@ -1346,6 +1369,31 @@
                       "pages": 19,
                       "bytes": 162634,
                       "part": "Course materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mock exam 2",
+          "sections": [
+            {
+              "title": "Mock exams",
+              "kind": "mock_exams",
+              "rows": [
+                {
+                  "title": "Mock exam 2 — Solutions",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+                      "label": "Mock exam 2 — Solutions",
+                      "part": "Mock exam 2",
+                      "format": "PDF",
+                      "pages": 5,
+                      "bytes": 151391,
+                      "kind": "mock_exams"
                     }
                   ]
                 }
