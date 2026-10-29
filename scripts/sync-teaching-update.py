@@ -39,11 +39,11 @@ for relative, url, label, part, fmt, category in [
     ('partie2/td/serie01.pdf', '/files/teaching/niort/microeconomics-iii/part-2/td/serie01.pdf', 'Exercise series 1 — Game theory and competitive strategies', micro['parts'][1], 'PDF', 'exercises'),
     ('QCM/lab_microeconomie3.html', '/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html', 'Online practice quiz (QCM) — Game theory and risk', practice_part, 'Interactive HTML', 'self_assessment'),
 ]:
-    source = micro_source / relative
+    source = (SOURCE / 'Niort/Mock-Exams/Microéconomie L3' / relative
+              if category == 'self_assessment' else micro_source / relative)
     copy(source, STATIC / url.lstrip('/'))
     if category == 'self_assessment':
-        # The supplied la10 question wraps a long sentence in a no-wrap math span.
-        # Preserve the original source; change only mobile wrapping in the public copy.
+        # Question la10 includes a long sentence in a no-wrap math span.
         target = STATIC / url.lstrip('/')
         mobile_style = '<style id="quiz-mobile-layout">@media(max-width:520px){.qtext .m{white-space:normal}}</style>'
         target.write_text(source.read_text(encoding='utf-8').replace('</head>', mobile_style + '</head>', 1), encoding='utf-8')
@@ -55,6 +55,59 @@ for relative, url, label, part, fmt, category in [
     resource.update(label=label, part=part, format=fmt, kind=category, bytes=(STATIC / url.lstrip('/')).stat().st_size)
     if fmt == 'PDF':
         resource['pages'] = 6
+
+# Mock-exam inputs are explicit: the M2-folder PDF is byte-identical to the
+# M1 Mock 2 solutions and its title page identifies Master 1. Publish it once.
+niort = groups['econometrics-niort']
+part = 'Self-assessment — Sessions 1 and 2'
+if part not in niort['parts']:
+    niort['parts'].append(part)
+url = '/files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html'
+copy(SOURCE / 'Niort/Mock-Exams/Econométrie/QCM/lab_econometrie_seances1-2.html', STATIC / url.lstrip('/'))
+resource = next((r for r in niort['resources'] if r['file'] == url), None)
+if resource is None:
+    resource = dict(file=url)
+    niort['resources'].append(resource)
+resource.update(label='Online practice quiz (QCM) — Simple regression and OLS properties', part=part,
+                format='Interactive HTML', kind='self_assessment', bytes=(STATIC / url.lstrip('/')).stat().st_size)
+
+m1 = groups['econometrics-m1']
+mock_source = SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1'
+assert digest(mock_source / 'Mock2_solutions_v1.pdf') == digest(SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_solutions_v1.pdf')
+mock_files = []
+for number in (2, 3):
+    part = f'Mock exam {number}'
+    if part not in m1['parts']:
+        m1['parts'].append(part)
+    for suffix, label, pages in [('statement', 'Question paper', 7), ('solutions_v1', 'Solutions', 5)]:
+        filename = f'Mock{number}_{suffix}.pdf'
+        url = '/files/teaching/cy-cergy/m1-econometrics/mock-exams/' + filename
+        target = STATIC / url.lstrip('/')
+        copy(mock_source / filename, target)
+        mock_files.append((filename, target))
+        resource = next((r for r in m1['resources'] if r['file'] == url), None)
+        if resource is None:
+            resource = dict(file=url)
+            m1['resources'].append(resource)
+        resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', pages=pages, bytes=target.stat().st_size)
+
+# Archives use the same public bytes as the individual downloads.
+for group, part, url, files, label in [
+    (micro, practice_part, '/files/teaching/niort/microeconomics-iii/qcm.zip',
+     [('lab_microeconomie3.html', STATIC / 'files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html')], 'Practice quiz — Complete download'),
+    (niort, niort['parts'][-1], '/files/teaching/niort/econometrics/qcm.zip',
+     [('lab_econometrie_seances1-2.html', STATIC / 'files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html')], 'Practice quiz — Complete download'),
+    (m1, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip', mock_files, 'Mock exams 2 and 3 — Question papers and solutions'),
+]:
+    if part not in group['parts']:
+        group['parts'].append(part)
+    target = STATIC / url.lstrip('/')
+    bundle(files, target)
+    resource = next((r for r in group['resources'] if r['file'] == url), None)
+    if resource is None:
+        resource = dict(file=url)
+        group['resources'].append(resource)
+    resource.update(label=label, part=part, format='ZIP', kind='bundles', bytes=target.stat().st_size)
 
 g = groups['data-analysis-l3']
 sessions = SOURCE / 'CY-Cergy-Paris-Université/2026-27/L3-Data Analysis'

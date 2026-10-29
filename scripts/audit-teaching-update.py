@@ -84,7 +84,7 @@ for group_id, group in groups.items():
     assert {r['file'] for r in group['resources']} <= hrefs, group_id
     course = page(group['url'])
     assert not course.select('details details'), group_id
-    if group_id in ('econometrics-m1', 'econometrics-m2'):
+    if group_id == 'econometrics-m2':
         assert group == old_groups[group_id]
         assert not course.select('.learning-card') and len(course.select('.resource-file-list article')) == 1
         baseline = ROOT / 'public-production' / group['url'].strip('/') / 'index.html'
@@ -104,7 +104,7 @@ for a in cy.select('.dataset-grid a'):
     with zipfile.ZipFile(BUILD / a['href'].lstrip('/')) as z:
         assert set(z.namelist()) == {p.relative_to(folder).as_posix() for p in folder.rglob('*') if p.is_file()}
 
-for card in page('/teaching/econometrics-niort/').select('.learning-card')[1:]:
+for card in page('/teaching/econometrics-niort/').select('.learning-card')[1:3]:
     assert [a.span.text for a in card.select('.learning-primary a')] == ['Course support', 'Exercise sheet']
 micro_cards = page('/teaching/microeconomics-iii-niort/').select('.learning-card')
 part3 = next(card for card in micro_cards if card.h3.text == 'Part III — Risk and information')
@@ -140,7 +140,7 @@ for p in BUILD.rglob('*.html'):
         assert page_cv_links >= 2, p
 assert cv_links > 0
 assert sha((BUILD / manifest['cv']['url'].lstrip('/')).read_bytes()) == manifest['cv']['sha256']
-report = dict(result='PASS', inventoried_source_files=len(inventory), synchronized_copies=len(manifest['files']), verified_archives=len(manifest['archives']), archive_members=archive_members, preserved_resource_urls=preserved, cv_access_points=cv_links, unchanged_courses=['econometrics-m1', 'econometrics-m2'], protected_editorial_content=True)
+report = dict(result='PASS', inventoried_source_files=len(inventory), synchronized_copies=len(manifest['files']), verified_archives=len(manifest['archives']), archive_members=archive_members, preserved_resource_urls=preserved, cv_access_points=cv_links, unchanged_courses=['econometrics-m2'], protected_editorial_content=True)
 (ROOT / 'tmp/teaching-update-qa').mkdir(parents=True, exist_ok=True)
 (ROOT / 'tmp/teaching-update-qa/static-report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print(json.dumps(report))

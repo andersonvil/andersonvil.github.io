@@ -1116,6 +1116,75 @@
             }
           ],
           "sections": []
+        },
+        {
+          "title": "Mock exam 2",
+          "primary": [
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+              "label": "Mock exam 2 — Solutions",
+              "part": "Mock exam 2",
+              "format": "PDF",
+              "pages": 5,
+              "bytes": 151391
+            },
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf",
+              "label": "Mock exam 2 — Question paper",
+              "part": "Mock exam 2",
+              "format": "PDF",
+              "pages": 7,
+              "bytes": 341685
+            }
+          ],
+          "sections": []
+        },
+        {
+          "title": "Mock exam 3",
+          "primary": [
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf",
+              "label": "Mock exam 3 — Solutions",
+              "part": "Mock exam 3",
+              "format": "PDF",
+              "pages": 5,
+              "bytes": 154076
+            },
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf",
+              "label": "Mock exam 3 — Question paper",
+              "part": "Mock exam 3",
+              "format": "PDF",
+              "pages": 7,
+              "bytes": 381297
+            }
+          ],
+          "sections": []
+        },
+        {
+          "title": "Mock exams — Complete download",
+          "primary": [],
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Mock exams 2 and 3 — Question papers and solutions",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
+                      "label": "Mock exams 2 and 3 — Question papers and solutions",
+                      "part": "Mock exams — Complete download",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 953846
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "technical": [
@@ -1135,6 +1204,104 @@
                       "pages": 17,
                       "bytes": 150015,
                       "part": "Course materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mock exam 2",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Mock exam 2 — Question paper",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf",
+                      "label": "Mock exam 2 — Question paper",
+                      "part": "Mock exam 2",
+                      "format": "PDF",
+                      "pages": 7,
+                      "bytes": 341685
+                    }
+                  ]
+                },
+                {
+                  "title": "Mock exam 2 — Solutions",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+                      "label": "Mock exam 2 — Solutions",
+                      "part": "Mock exam 2",
+                      "format": "PDF",
+                      "pages": 5,
+                      "bytes": 151391
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mock exam 3",
+          "sections": [
+            {
+              "title": "Course supports",
+              "kind": "support",
+              "rows": [
+                {
+                  "title": "Mock exam 3 — Question paper",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf",
+                      "label": "Mock exam 3 — Question paper",
+                      "part": "Mock exam 3",
+                      "format": "PDF",
+                      "pages": 7,
+                      "bytes": 381297
+                    }
+                  ]
+                },
+                {
+                  "title": "Mock exam 3 — Solutions",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf",
+                      "label": "Mock exam 3 — Solutions",
+                      "part": "Mock exam 3",
+                      "format": "PDF",
+                      "pages": 5,
+                      "bytes": 154076
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mock exams — Complete download",
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Mock exams 2 and 3 — Question papers and solutions",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
+                      "label": "Mock exams 2 and 3 — Question papers and solutions",
+                      "part": "Mock exams — Complete download",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 953846
                     }
                   ]
                 }
@@ -1549,7 +1716,27 @@
               "bytes": 133219
             }
           ],
-          "sections": []
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Practice quiz — Complete download",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/qcm.zip",
+                      "label": "Practice quiz — Complete download",
+                      "part": "Self-assessment — Game theory and risk",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 74124
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "technical": [
@@ -1899,6 +2086,25 @@
                       "format": "Interactive HTML",
                       "kind": "self_assessment",
                       "bytes": 133219
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Practice quiz — Complete download",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/qcm.zip",
+                      "label": "Practice quiz — Complete download",
+                      "part": "Self-assessment — Game theory and risk",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 74124
                     }
                   ]
                 }
@@ -2498,6 +2704,40 @@
                       "format": "ZIP",
                       "bytes": 1416061,
                       "part": "Session 2 — Sampling, probability and inference"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Self-assessment — Sessions 1 and 2",
+          "primary": [
+            {
+              "file": "/files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html",
+              "label": "Online practice quiz (QCM) — Simple regression and OLS properties",
+              "part": "Self-assessment — Sessions 1 and 2",
+              "format": "Interactive HTML",
+              "kind": "self_assessment",
+              "bytes": 953627
+            }
+          ],
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Practice quiz — Complete download",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/qcm.zip",
+                      "label": "Practice quiz — Complete download",
+                      "part": "Self-assessment — Sessions 1 and 2",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 324124
                     }
                   ]
                 }
@@ -3132,6 +3372,49 @@
                       "format": "ZIP",
                       "bytes": 1416061,
                       "part": "Session 2 — Sampling, probability and inference"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Self-assessment — Sessions 1 and 2",
+          "sections": [
+            {
+              "title": "Self-assessment",
+              "kind": "self_assessment",
+              "rows": [
+                {
+                  "title": "Online practice quiz (QCM) — Simple regression and OLS properties",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html",
+                      "label": "Online practice quiz (QCM) — Simple regression and OLS properties",
+                      "part": "Self-assessment — Sessions 1 and 2",
+                      "format": "Interactive HTML",
+                      "kind": "self_assessment",
+                      "bytes": 953627
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Practice quiz — Complete download",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/qcm.zip",
+                      "label": "Practice quiz — Complete download",
+                      "part": "Self-assessment — Sessions 1 and 2",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 324124
                     }
                   ]
                 }

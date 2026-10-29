@@ -607,7 +607,7 @@ resource_type = "Exercise collection"
 summary = "An exercise collection covering regression foundations, matrix formulation, inference, heteroskedasticity, nonlinear least squares, and instrumental variables."
 topics = ["OLS", "Matrix algebra", "Statistical inference", "Heteroskedasticity", "Nonlinear least squares", "Instrumental variables"]
 url = "/teaching/econometrics-m1/"
-parts = ["Course materials"]
+parts = ["Course materials", "Mock exam 2", "Mock exam 3", "Mock exams — Complete download"]
 
 [[groups.resources]]
 label = "Econometrics exercises"
@@ -615,6 +615,46 @@ file = "/files/teaching/cy-cergy/m1-econometrics/econometrics-exercises.pdf"
 pages = 17
 bytes = 150015
 part = "Course materials"
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf"
+label = "Mock exam 2 — Question paper"
+part = "Mock exam 2"
+format = "PDF"
+pages = 7
+bytes = 341685
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+label = "Mock exam 2 — Solutions"
+part = "Mock exam 2"
+format = "PDF"
+pages = 5
+bytes = 151391
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf"
+label = "Mock exam 3 — Question paper"
+part = "Mock exam 3"
+format = "PDF"
+pages = 7
+bytes = 381297
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf"
+label = "Mock exam 3 — Solutions"
+part = "Mock exam 3"
+format = "PDF"
+pages = 5
+bytes = 154076
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip"
+label = "Mock exams 2 and 3 — Question papers and solutions"
+part = "Mock exams — Complete download"
+format = "ZIP"
+kind = "bundles"
+bytes = 953846
 
 [[groups]]
 id = "econometrics-m2"
@@ -843,6 +883,14 @@ format = "Interactive HTML"
 kind = "self_assessment"
 bytes = 133219
 
+[[groups.resources]]
+file = "/files/teaching/niort/microeconomics-iii/qcm.zip"
+label = "Practice quiz — Complete download"
+part = "Self-assessment — Game theory and risk"
+format = "ZIP"
+kind = "bundles"
+bytes = 74124
+
 [[groups]]
 id = "econometrics-niort"
 title = "Econometrics — L3"
@@ -858,7 +906,7 @@ resource_type = "Course, exercises, code, data, and notebooks"
 summary = "Session 1 introduces covariance, correlation, descriptive evidence, and simple regression. Session 2 develops sampling, probability, estimator distributions and inference, with course and exercise code in Python, R and Stata, notebooks, data and interactive simulators."
 topics = ["Covariance and correlation", "Simple regression", "Sampling and probability", "Estimator distributions and inference", "Python, R and Stata", "Notebooks and interactive simulation"]
 url = "/teaching/econometrics-niort/"
-parts = ["Practical instructions", "Session 1 — Covariance, correlation and regression", "Session 2 — Sampling, probability and inference"]
+parts = ["Practical instructions", "Session 1 — Covariance, correlation and regression", "Session 2 — Sampling, probability and inference", "Self-assessment — Sessions 1 and 2"]
 
 [[groups.resources]]
 label = "Practical README"
@@ -1201,6 +1249,22 @@ file = "/files/teaching/niort/econometrics/session-02.zip"
 format = "ZIP"
 bytes = 1416061
 part = "Session 2 — Sampling, probability and inference"
+
+[[groups.resources]]
+file = "/files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html"
+label = "Online practice quiz (QCM) — Simple regression and OLS properties"
+part = "Self-assessment — Sessions 1 and 2"
+format = "Interactive HTML"
+kind = "self_assessment"
+bytes = 953627
+
+[[groups.resources]]
+file = "/files/teaching/niort/econometrics/qcm.zip"
+label = "Practice quiz — Complete download"
+part = "Self-assessment — Sessions 1 and 2"
+format = "ZIP"
+kind = "bundles"
+bytes = 324124
 
 [[groups]]
 id = "data-analysis-l3"

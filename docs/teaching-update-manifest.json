@@ -6,11 +6,36 @@
       "sha256": "e9c4a176ff30ab8ffc18f93016583cea1efa06df41292f3d8d2942bbc810da24"
     },
     {
-      "source": "Niort/2026-27/Microéconomie III/QCM/lab_microeconomie3.html",
+      "source": "Niort/Mock-Exams/Microéconomie L3/QCM/lab_microeconomie3.html",
       "url": "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html",
       "sha256": "5e875f9f4eea6bb4e6e5d9a29086cbe4ab324f79d5e9a73b089fcdc5cf339596",
       "source_sha256": "27bfac5a52fdfef68afa31ac5bdb231d52bf88bf05d342e76257767f21e9ad5d",
       "adaptation": "Mobile wrapping in question text only; source document unchanged"
+    },
+    {
+      "source": "Niort/Mock-Exams/Econométrie/QCM/lab_econometrie_seances1-2.html",
+      "url": "/files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html",
+      "sha256": "a71fe0d9662ce6d6c55b48bbbab126c23dd56cb7970d4dff197a358db909cb98"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock2_statement.pdf",
+      "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf",
+      "sha256": "8edcbaeb6d244c3ba5a4195a9ef4b60c742bc397ea73d8a983080a05fe0abb72"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock2_solutions_v1.pdf",
+      "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+      "sha256": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock3_statement.pdf",
+      "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf",
+      "sha256": "331d468734c04052fc41b17e316b31a56a524d09e4a1dd777ce32956920e5168"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock3_solutions_v1.pdf",
+      "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf",
+      "sha256": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560"
     },
     {
       "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
@@ -114,6 +139,27 @@
     }
   ],
   "archives": [
+    {
+      "url": "/files/teaching/niort/microeconomics-iii/qcm.zip",
+      "members": {
+        "lab_microeconomie3.html": "5e875f9f4eea6bb4e6e5d9a29086cbe4ab324f79d5e9a73b089fcdc5cf339596"
+      }
+    },
+    {
+      "url": "/files/teaching/niort/econometrics/qcm.zip",
+      "members": {
+        "lab_econometrie_seances1-2.html": "a71fe0d9662ce6d6c55b48bbbab126c23dd56cb7970d4dff197a358db909cb98"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
+      "members": {
+        "Mock2_solutions_v1.pdf": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b",
+        "Mock2_statement.pdf": "8edcbaeb6d244c3ba5a4195a9ef4b60c742bc397ea73d8a983080a05fe0abb72",
+        "Mock3_solutions_v1.pdf": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560",
+        "Mock3_statement.pdf": "331d468734c04052fc41b17e316b31a56a524d09e4a1dd777ce32956920e5168"
+      }
+    },
     {
       "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01.zip",
       "members": {

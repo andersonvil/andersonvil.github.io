@@ -227,6 +227,41 @@
     "note": "Byte-identical public copy"
   },
   {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock2_solutions_v1.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock2_statement.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock3_solutions_v1.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_solutions_v1.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock3_statement.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock3_statement.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_solutions_v1.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
     "source": "CY-Cergy-Paris-Université/Previous-Exams/Previous-CC/L3-Econometrics/CC2017-18.pdf",
     "urls": [
       "/files/teaching/cy-cergy/l3-econometrics/previous-cc/CC2017-18.pdf"
@@ -1323,7 +1358,14 @@
     "note": "Byte-identical public copy"
   },
   {
-    "source": "Niort/2026-27/Microéconomie III/QCM/lab_microeconomie3.html",
+    "source": "Niort/Mock-Exams/Econométrie/QCM/lab_econometrie_seances1-2.html",
+    "urls": [
+      "/files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "Niort/Mock-Exams/Microéconomie L3/QCM/lab_microeconomie3.html",
     "urls": [
       "/files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html"
     ],
