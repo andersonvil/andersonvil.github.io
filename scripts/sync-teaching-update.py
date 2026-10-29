@@ -2,6 +2,7 @@
 from pathlib import Path
 from collections import OrderedDict
 import hashlib, json, re, shutil, tomllib, zipfile
+from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / 'andersonvil-academic-os-sources'
@@ -81,7 +82,7 @@ for number in (2, 3):
     part = f'Mock exam {number}'
     if part not in m1['parts']:
         m1['parts'].append(part)
-    for suffix, label, pages in [('statement', 'Question paper', 7), ('solutions_v1', 'Solutions', 5)]:
+    for suffix, label in [('statement', 'Question paper'), ('solutions_v1', 'Solutions')]:
         filename = f'Mock{number}_{suffix}.pdf'
         url = '/files/teaching/cy-cergy/m1-econometrics/mock-exams/' + filename
         target = STATIC / url.lstrip('/')
@@ -91,12 +92,11 @@ for number in (2, 3):
         if resource is None:
             resource = dict(file=url)
             m1['resources'].append(resource)
-        resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', kind='mock_exams', pages=pages, bytes=target.stat().st_size)
+        resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', kind='mock_exams', pages=len(PdfReader(mock_source / filename).pages), bytes=target.stat().st_size)
 
 m2 = groups['econometrics-m2']
 # Refresh this folder as one collection: no stale shared M1 link or obsolete
 # version may survive in M2's catalogue or complete download.
-from pypdf import PdfReader
 m2_source = SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD'
 m2['resources'] = [r for r in m2['resources'] if r.get('kind') != 'mock_exams']
 m2['parts'] = [part for part in m2['parts'] if not part.startswith('Mock exam')]

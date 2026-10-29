@@ -246,3 +246,10 @@ Le dossier `CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD` contient 
 La synchronisation M2 parcourt tous les fichiers du dossier, classe les noms `MockN_statement.pdf` et `MockN_solutions_vN.pdf`, lit le nombre de pages avec `pypdf`, puis remplace la collection M2 dans le catalogue. Elle exige le module Python `pypdf` (disponible dans le runtime fourni avec Codex). Les ZIP dont les membres sont inchangés sont conservés. Teaching, la page M2 et Code & Data utilisent le même catalogue. `verify-mock-exams.js URL [COMMIT_SOURCE] --links-only` contrôle les liens, téléchargements et débordements sur ordinateur et mobile sans refaire les QCM inchangés.
 
 Point de retour privé : `C:\dev\andersonvil-academic-os-sources\site-backups\2026-10-29-before-m2-refresh\recovery.bundle` (vérifié), source `7a33573ce0593c4776dadc989ce1203b2d903fe7`, publication `cf9d4c67276bf0b0227ac7dfe12ce6ab6efb2e6f`. Retour par un commit `git revert` de cette mise à jour puis publication normale sur `main`.
+
+
+### Nouvelle synchronisation M1 et M2 & PhD
+
+Les huit PDF des deux dossiers Mock-Exams sont synchronisés à leurs URL existantes ; les deux ZIP contiennent les octets actuels des fichiers correspondants. Le nombre de pages des PDF M1, comme celui des M2, est désormais lu directement avec `pypdf`. Teaching, les deux fiches de cours et Code & Data conservent leurs liens et leur présentation.
+
+Point de retour privé : `C:\dev\andersonvil-academic-os-sources\site-backups\2026-10-29-before-m1-m2-refresh\recovery.bundle` (vérifié), source `d5624d93b2cc5387786b0b5ba4b4e7c0cdd41da8`, publication `0638c511cb3ee301f6b962fb13c72754179b39bc`. Retour par `git revert` du commit de cette synchronisation et publication normale.

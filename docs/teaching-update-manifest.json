@@ -20,7 +20,7 @@
     {
       "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock2_statement.pdf",
       "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf",
-      "sha256": "8edcbaeb6d244c3ba5a4195a9ef4b60c742bc397ea73d8a983080a05fe0abb72"
+      "sha256": "d18a60d4084ae6d92ebc70a6692d03ad77f20fd61d9db5233fc1b474fb5fbb4a"
     },
     {
       "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1/Mock2_solutions_v1.pdf",
@@ -174,7 +174,7 @@
     {
       "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
       "members": {
-        "Mock2_statement.pdf": "8edcbaeb6d244c3ba5a4195a9ef4b60c742bc397ea73d8a983080a05fe0abb72",
+        "Mock2_statement.pdf": "d18a60d4084ae6d92ebc70a6692d03ad77f20fd61d9db5233fc1b474fb5fbb4a",
         "Mock2_solutions_v1.pdf": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b",
         "Mock3_statement.pdf": "331d468734c04052fc41b17e316b31a56a524d09e4a1dd777ce32956920e5168",
         "Mock3_solutions_v1.pdf": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560"

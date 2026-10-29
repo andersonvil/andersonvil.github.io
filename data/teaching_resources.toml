@@ -622,7 +622,7 @@ label = "Mock exam 2 — Question paper"
 part = "Mock exam 2"
 format = "PDF"
 pages = 7
-bytes = 341685
+bytes = 379138
 kind = "mock_exams"
 
 [[groups.resources]]
@@ -658,7 +658,7 @@ label = "Mock exams 2 and 3 — Question papers and solutions"
 part = "Mock exams — Complete download"
 format = "ZIP"
 kind = "bundles"
-bytes = 953846
+bytes = 955393
 
 [[groups]]
 id = "econometrics-m2"
