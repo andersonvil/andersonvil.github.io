@@ -2,6 +2,7 @@
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { chromium } = require(path.join(process.env.CODEX_NODE_MODULES, 'playwright'));
 const base = process.argv[2] || 'http://127.0.0.1:1125';
+const expectedCommit = process.argv.slice(3).find(arg => !arg.startsWith('--'));
 const root = path.resolve(__dirname, '..');
 const sha = b => crypto.createHash('sha256').update(b).digest('hex');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'docs/teaching-update-manifest.json')));
@@ -18,10 +19,10 @@ const assert = (v, m) => { if (!v) throw Error(m); };
     const context = await browser.newContext();
     const page = await context.newPage();
     page.on('pageerror', e => report.errors.push(e.message));
-    if (process.argv[3]) {
+    if (expectedCommit) {
       const r = await context.request.get(base + '/deployment-commit.txt?t=' + Date.now());
       report.sourceCommit = (await r.text()).trim();
-      assert(report.sourceCommit === process.argv[3], 'Served source commit differs');
+      assert(report.sourceCommit === expectedCommit, 'Served source commit differs');
     }
     for (const route of routes) {
       await page.goto(base + route);
@@ -34,13 +35,19 @@ const assert = (v, m) => { if (!v) throw Error(m); };
         route === '/teaching/' && !f.url.endsWith('.zip') ||
         route.includes('econometrics-niort') && f.url.includes('/niort/econometrics/') ||
         route.includes('microeconomics-iii-niort') && f.url.includes('/microeconomics-iii/') ||
-        route.includes('econometrics-m2') && (f.url.includes('/m2-econometrics/') || f.url.endsWith('/Mock2_solutions_v1.pdf')) ||
+        route.includes('econometrics-m2') && f.url.includes('/m2-econometrics/') ||
         route.includes('econometrics-m1') && f.url.includes('/m1-econometrics/'));
       for (const f of expected) {
-        const count = ['/teaching/', '/code-data/'].includes(route) && f.url.endsWith('/Mock2_solutions_v1.pdf') ? 2 : 1;
-        assert(hrefs.filter(h => h === f.url).length === count, route + ' missing/duplicate ' + f.url);
+        assert(hrefs.filter(h => h === f.url).length === 1, route + ' missing/duplicate ' + f.url);
       }
+      if (route.includes('econometrics-m2')) assert(!hrefs.some(h => h.includes('/m1-econometrics/')), 'Obsolete shared M1 resource in M2');
       if (/econometrics-m[12]\/$/.test(route)) assert(await page.locator('.learning-card').count() >= 2, 'Missing mock-exam cards');
+      for (const width of [1440, 390]) {
+        await page.setViewportSize({ width, height: 900 });
+        assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), route + ' horizontal overflow');
+        if (route === '/teaching/econometrics-m2/') await page.locator('.learning-resources').screenshot({
+          path: path.join(dir, `m2-resources-${width}.png`), style: '.site-header, .detail-navigation { visibility: hidden; }' });
+      }
       report.pages.push({ route, verifiedResourceLinks: expected.length });
     }
     for (const f of [...files, ...archives]) {
@@ -50,7 +57,7 @@ const assert = (v, m) => { if (!v) throw Error(m); };
       assert(sha(body) === sha(fs.readFileSync(path.join(root, 'static', f.url))), 'Download bytes ' + f.url);
       report.downloads.push({ url: f.url, status: response.status(), sha256: sha(body) });
     }
-    for (const width of [1440, 390]) for (const f of files.filter(f => f.url.endsWith('.html'))) {
+    for (const width of [1440, 390]) for (const f of files.filter(f => f.url.endsWith('.html') && !process.argv.includes('--links-only'))) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(base + f.url);
       await page.locator('#go').click();

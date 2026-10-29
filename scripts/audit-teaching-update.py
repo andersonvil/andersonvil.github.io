@@ -72,7 +72,14 @@ for archive in manifest['archives']:
 preserved = 0
 for group_id, old in old_groups.items():
     urls = {r['file'] for r in groups[group_id]['resources']}
-    assert {r['file'] for r in old['resources']} <= urls, group_id
+    previous = {r['file'] for r in old['resources']}
+    if group_id == 'econometrics-m2':
+        shared = '/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf'
+        if shared in previous:
+            previous.remove(shared)
+            assert '/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_solutions_v1.pdf' in urls
+        assert not any('/m1-econometrics/' in url for url in urls)
+    assert previous <= urls, group_id
     preserved += len(old['resources'])
 for name in subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', 'main', 'static/files'], cwd=ROOT).decode().splitlines():
     assert (ROOT / name).is_file(), name
@@ -133,7 +140,7 @@ for p in BUILD.rglob('*.html'):
         assert page_cv_links >= 2, p
 assert cv_links > 0
 assert sha((BUILD / manifest['cv']['url'].lstrip('/')).read_bytes()) == manifest['cv']['sha256']
-report = dict(result='PASS', inventoried_source_files=len(inventory), synchronized_copies=len(manifest['files']), verified_archives=len(manifest['archives']), archive_members=archive_members, preserved_resource_urls=preserved, cv_access_points=cv_links, shared_m1_m2_mock_pdf=True, protected_editorial_content=True)
+report = dict(result='PASS', inventoried_source_files=len(inventory), synchronized_copies=len(manifest['files']), verified_archives=len(manifest['archives']), archive_members=archive_members, preserved_resource_urls=preserved, cv_access_points=cv_links, independent_m2_mock_pdfs=True, protected_editorial_content=True)
 (ROOT / 'tmp/teaching-update-qa').mkdir(parents=True, exist_ok=True)
 (ROOT / 'tmp/teaching-update-qa/static-report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print(json.dumps(report))

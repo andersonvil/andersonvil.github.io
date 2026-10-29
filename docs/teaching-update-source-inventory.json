@@ -257,7 +257,21 @@
   {
     "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_solutions_v1.pdf",
     "urls": [
-      "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+      "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_statement.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_statement.pdf"
+    ],
+    "note": "Byte-identical public copy"
+  },
+  {
+    "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock4_solutions_v1.pdf",
+    "urls": [
+      "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_solutions_v1.pdf"
     ],
     "note": "Byte-identical public copy"
   },

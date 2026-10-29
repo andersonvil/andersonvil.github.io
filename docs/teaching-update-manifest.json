@@ -38,9 +38,24 @@
       "sha256": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560"
     },
     {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_statement.pdf",
+      "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_statement.pdf",
+      "sha256": "91e29223d60fd2d77575976aa6d1c3f6db497a067b3917790445fe87cf53298a"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_solutions_v1.pdf",
+      "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_solutions_v1.pdf",
+      "sha256": "9b39a416cf697c9aff4681597433ea7d421dc088efe84133c38db5da1f59dca6"
+    },
+    {
       "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock4_statement.pdf",
       "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_statement.pdf",
-      "sha256": "567098e691b9e052aa11e067e16f5e78db6cebc823c6145d8a44f3f3c7530a2a"
+      "sha256": "e2307fd39c1c65a3d4876fd534cdd4a6a51d538bfbf4dddde30b6906e447d400"
+    },
+    {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock4_solutions_v1.pdf",
+      "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_solutions_v1.pdf",
+      "sha256": "f97ba377fba5f7f15757fed4bf04eb423a438b138aebbc9a8d191d70309bb007"
     },
     {
       "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
@@ -159,17 +174,19 @@
     {
       "url": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
       "members": {
-        "Mock2_solutions_v1.pdf": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b",
         "Mock2_statement.pdf": "8edcbaeb6d244c3ba5a4195a9ef4b60c742bc397ea73d8a983080a05fe0abb72",
-        "Mock3_solutions_v1.pdf": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560",
-        "Mock3_statement.pdf": "331d468734c04052fc41b17e316b31a56a524d09e4a1dd777ce32956920e5168"
+        "Mock2_solutions_v1.pdf": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b",
+        "Mock3_statement.pdf": "331d468734c04052fc41b17e316b31a56a524d09e4a1dd777ce32956920e5168",
+        "Mock3_solutions_v1.pdf": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560"
       }
     },
     {
       "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip",
       "members": {
-        "Mock2_solutions_v1.pdf": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b",
-        "Mock4_statement.pdf": "567098e691b9e052aa11e067e16f5e78db6cebc823c6145d8a44f3f3c7530a2a"
+        "Mock2_statement.pdf": "91e29223d60fd2d77575976aa6d1c3f6db497a067b3917790445fe87cf53298a",
+        "Mock2_solutions_v1.pdf": "9b39a416cf697c9aff4681597433ea7d421dc088efe84133c38db5da1f59dca6",
+        "Mock4_statement.pdf": "e2307fd39c1c65a3d4876fd534cdd4a6a51d538bfbf4dddde30b6906e447d400",
+        "Mock4_solutions_v1.pdf": "f97ba377fba5f7f15757fed4bf04eb423a438b138aebbc9a8d191d70309bb007"
       }
     },
     {
@@ -219,9 +236,9 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/BWGHT.zip",
       "members": {
+        "bwght.csv": "fd26a908ab907689939ac3a2cc9fa2e4ff13462a2ed5a288c8e120df1e7f1e1d",
         "BWGHT.DES": "8bb5f4b113cd2c4eb866d5038254f0c6f33fe877c9a5175ca8c0a25894666706",
         "BWGHT.raw": "d0b175bd0bc8b12228acbd9c5ef13b57845987cdc2af18239be68acfbcb34111",
-        "bwght.csv": "fd26a908ab907689939ac3a2cc9fa2e4ff13462a2ed5a288c8e120df1e7f1e1d",
         "bwght.sas7bdat": "0b4e0c753c9a88358a2017d7f2175c6f5d224e1beda074becb518a63adeb2451",
         "bwght.xls": "4223608c10a2419c092479030c23e7229d2f063fd6b39fc0d5dc8137a75ee028"
       }
@@ -253,8 +270,8 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/GPA2.zip",
       "members": {
-        "GPA2.DES": "b00b8377da9d3c30e60a6a713372fc3027c30c17a9257bc1bc0451cb6fe5814a",
         "gpa2.csv": "322d6a1ab8b66b2ee591102ce8748b98065b355abd2cf1a8b1f3a1cd3eb453d0",
+        "GPA2.DES": "b00b8377da9d3c30e60a6a713372fc3027c30c17a9257bc1bc0451cb6fe5814a",
         "gpa2.raw": "2ee32f97f28a99d59ebafd8c6a9ea32888c92b951ba80c3b0e3c9161cf40e0f9",
         "gpa2.sas7bdat": "637bfddfe9daa1bab063bd06175a9e31ec09b99dbff8f6b17bdbb7f3fb3a0b15",
         "gpa2.xls": "8ea9facd6fc3f432f3a052bc923c0167eee0e837358e0105b79bb8b94e7872dd"
@@ -263,8 +280,8 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HPRICE1.zip",
       "members": {
-        "HPRICE1.DES": "3834488240fc941ae6f3ad67f44d1b7a2f011b4fe41f99e0eb01a30d428d7db3",
         "hprice1.csv": "55e391c38d28135875e65db0106fa8178c7e7b55c189b4b258df6709dafc8f92",
+        "HPRICE1.DES": "3834488240fc941ae6f3ad67f44d1b7a2f011b4fe41f99e0eb01a30d428d7db3",
         "hprice1.raw": "979cfdcd1e12a565652c28f4b36f045092b6bbf6db6d3d7fc55aa6b597fb25a7",
         "hprice1.sas7bdat": "8c9f87ad20c6201a6e559e99180d4076035a8b40de191297b1dd14bc8214273a",
         "hprice1.xls": "dff785308f8eddf1d4d4cef85aab84dfa201c3d50b1bf050501bc7a73dc0e526"
@@ -273,9 +290,9 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/HPRICE2.zip",
       "members": {
+        "hprice2.csv": "8f3de467b11b7e59c97a0480d80d711492dbb56ff841212e7d19280cfce2f93b",
         "HPRICE2.DES": "bb4b021fc49fc4af36fb20bbd35209c099924d73adfd4189f83c953b4a5b2562",
         "HPRICE2.raw": "871ce43e60b030b9a618095aab0568f14a673471b6e8083997c8d10d150dce23",
-        "hprice2.csv": "8f3de467b11b7e59c97a0480d80d711492dbb56ff841212e7d19280cfce2f93b",
         "hprice2.sas7bdat": "d759aecb510805948307299bd6fbc0578708a1b8f236bac97e42ddd1c597aeb3",
         "hprice2.xls": "a453ded79624af25b9c4e0936d84bac23dd65dffb7ba03fa27d63270de7cc0b7"
       }
@@ -301,11 +318,11 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/MEAP93.zip",
       "members": {
-        "MEAP93.DES": "82fb74fc1b00cdc9deac1f150d2135d20996a8514e213cb1877281c0f8acf15f",
-        "MEAP93.raw": "9690c60965859dd3a2d179dd0a629128b1d623079fe438505c693b242c6d2f29",
         "meap01.des": "763145718c7e62aabb85b44b3694b98ee933842d6ca25eea3bcdee27d9275cf2",
         "meap01.raw": "939b6acb99a613c37998a06f1ed6eaef0c77cc4ce2ac3a40797fcd59a293ad90",
         "meap01.xls": "f9684e6c3a6122e158974ef33d3883bf85535c4692d532dbe5acc57918746ab2",
+        "MEAP93.DES": "82fb74fc1b00cdc9deac1f150d2135d20996a8514e213cb1877281c0f8acf15f",
+        "MEAP93.raw": "9690c60965859dd3a2d179dd0a629128b1d623079fe438505c693b242c6d2f29",
         "meap93.xls": "35fd63d29b711e2dc9b68542e5fc9d5b1f4fac8ee660106979cbfe4b50b35c71"
       }
     },
@@ -322,9 +339,9 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/RDCHEM.zip",
       "members": {
+        "rdchem.csv": "15f6ccc8ad03c125326c947c4d425e7f2c6c435a9d179893be358f5b853d2ef8",
         "RDCHEM.DES": "8c3bde669589db2b9538bed23a20fc18a9c0686376eb29190be07e3c23dae09d",
         "RDCHEM.raw": "854769520d75c91843da459e3bd0fc7d4618d8f9b39c0223742b579906ace40e",
-        "rdchem.csv": "15f6ccc8ad03c125326c947c4d425e7f2c6c435a9d179893be358f5b853d2ef8",
         "rdchem.sas7bdat": "ccf9e7f6fcb7fbb399acf5934129416902fe4814906d69d8a3804ac701455793",
         "rdchem.xls": "68d5e6b106c59414a9fa39a9956e378950fef1fb165fd190ed81bc4fe030056f"
       }
@@ -332,9 +349,9 @@
     {
       "url": "/files/teaching/cy-cergy/l3-econometrics/data/bundles/RENTAL.zip",
       "members": {
+        "rental.csv": "7fd1505efd7c5b646c1d673497b267c40a7f78079caaee2dfdc0b6ed0f15932f",
         "RENTAL.DES": "c4b4ca08fcffecbb9dc9f3298812907ae697d365ec5e53c14118e45e6d063aac",
         "RENTAL.raw": "c05edd78b78aa72ed30e1e256cb23c2f667a7dbe94c297c8807e4a1b4d0d8165",
-        "rental.csv": "7fd1505efd7c5b646c1d673497b267c40a7f78079caaee2dfdc0b6ed0f15932f",
         "rental.sas7bdat": "88739af43cd4498e5774878965c3f4ff12197cb132b420bbf027188ccd97e2e2",
         "rental.xls": "4b0fa9d153beac587b08640a745b5ee5800f8c73724d36824f9de9743c79c304"
       }

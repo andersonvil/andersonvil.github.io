@@ -21,7 +21,12 @@ def copy(src, target):
 
 def bundle(files, target):
     target.parent.mkdir(parents=True, exist_ok=True)
-    members = {}
+    members = {name: digest(p) for name, p in files}
+    if target.exists():
+        with zipfile.ZipFile(target) as z:
+            if set(z.namelist()) == set(members) and all(hashlib.sha256(z.read(name)).hexdigest() == value for name, value in members.items()):
+                archives.append(dict(url='/' + target.relative_to(STATIC).as_posix(), members=members))
+                return
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as z:
         for name, p in sorted(files):
             z.write(p, name)
@@ -56,7 +61,6 @@ for relative, url, label, part, fmt, category in [
     if fmt == 'PDF':
         resource['pages'] = 6
 
-# Preserve a single public copy of the PDF shared by the M1 and M2 folders.
 niort = groups['econometrics-niort']
 part = 'Self-assessment — Sessions 1 and 2'
 if part not in niort['parts']:
@@ -72,7 +76,6 @@ resource.update(label='Online practice quiz (QCM) — Simple regression and OLS 
 
 m1 = groups['econometrics-m1']
 mock_source = SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1'
-assert digest(mock_source / 'Mock2_solutions_v1.pdf') == digest(SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock2_solutions_v1.pdf')
 mock_files = []
 for number in (2, 3):
     part = f'Mock exam {number}'
@@ -91,28 +94,30 @@ for number in (2, 3):
         resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', kind='mock_exams', pages=pages, bytes=target.stat().st_size)
 
 m2 = groups['econometrics-m2']
-part = 'Mock exam 2'
-if part not in m2['parts']:
-    m2['parts'].append(part)
-shared = next(r for r in m1['resources'] if r['file'].endswith('/Mock2_solutions_v1.pdf'))
-resource = next((r for r in m2['resources'] if r['file'] == shared['file']), None)
-if resource is None:
-    m2['resources'].append(dict(shared))
-else:
-    resource.update(shared)
-
-part = 'Mock exam 4'
-if part not in m2['parts']:
-    m2['parts'].append(part)
-url = '/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_statement.pdf'
-target = STATIC / url.lstrip('/')
-copy(SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock4_statement.pdf', target)
-resource = next((r for r in m2['resources'] if r['file'] == url), None)
-if resource is None:
-    resource = dict(file=url)
-    m2['resources'].append(resource)
-resource.update(label='Mock exam 4 — Question paper', part=part, format='PDF', kind='mock_exams', pages=7, bytes=target.stat().st_size)
-m2_files = [('Mock2_solutions_v1.pdf', STATIC / shared['file'].lstrip('/')), ('Mock4_statement.pdf', target)]
+# Refresh this folder as one collection: no stale shared M1 link or obsolete
+# version may survive in M2's catalogue or complete download.
+from pypdf import PdfReader
+m2_source = SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD'
+m2['resources'] = [r for r in m2['resources'] if r.get('kind') != 'mock_exams']
+m2['parts'] = [part for part in m2['parts'] if not part.startswith('Mock exam')]
+m2_files = []
+inputs = []
+for source in sorted(p for p in m2_source.rglob('*') if p.is_file()):
+    match = re.fullmatch(r'Mock(\d+)_(statement|solutions(?:_v\d+)?)\.pdf', source.name)
+    if not match:
+        raise ValueError(f'Unclassified M2 mock-exam document: {source}')
+    inputs.append((int(match[1]), match[2] != 'statement', source))
+for number, solutions, source in sorted(inputs):
+    part = f'Mock exam {number}'
+    if part not in m2['parts']:
+        m2['parts'].append(part)
+    url = '/files/teaching/cy-cergy/m2-econometrics/mock-exams/' + source.name
+    target = STATIC / url.lstrip('/')
+    copy(source, target)
+    m2_files.append((source.name, target))
+    label = 'Solutions' if solutions else 'Question paper'
+    m2['resources'].append(dict(file=url, label=f'Mock exam {number} — {label}', part=part,
+                               format='PDF', kind='mock_exams', pages=len(PdfReader(source).pages), bytes=target.stat().st_size))
 
 # Archives use the same public bytes as the individual downloads.
 for group, part, url, files, label in [

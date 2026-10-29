@@ -223,7 +223,7 @@ Ces deux ressources sont utilisées dans Teaching et Code & Data. Le PDF est cop
 
 Publication explicitement autorisée par le propriétaire. Les QCM proviennent désormais de `Niort/Mock-Exams/Econométrie/QCM` et `Niort/Mock-Exams/Microéconomie L3/QCM`. Le QCM de microéconomie conserve son URL publique. Chaque QCM dispose aussi d'un ZIP autonome construit avec les mêmes octets que le téléchargement individuel.
 
-Les sujets et corrigés des examens blancs 2 et 3 de `CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1` sont classés dans Econometrics — M1, avec des libellés distincts « Question paper » et « Solutions » et un ZIP commun. Le fichier `Econometrics-M2&PhD/Mock2_solutions_v1.pdf` est strictement identique au corrigé M1 (SHA-256 `e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b`) et sa première page indique Master 1. À la demande du propriétaire, le corrigé est accessible dans les deux cours M1 et M2 & PhD, via une seule copie publique. Le titre interne Master 1 du PDF fourni est conservé.
+Les sujets et corrigés des examens blancs 2 et 3 de `CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1` sont classés dans Econometrics — M1, avec des libellés distincts « Question paper » et « Solutions » et un ZIP commun. Lors de la première intégration, le corrigé Mock 2 du dossier M2 était identique au fichier M1 et utilisait un lien partagé. La mise à jour suivante remplace ce lien par le nouveau corrigé propre au M2 ; les PDF M1 restent inchangés.
 
 Le catalogue partagé et les vues sont générés par `python scripts/sync-teaching-update.py`. Après construction, `python scripts/audit-teaching-update.py --build-dir public-production` vérifie les copies, archives et liens. `node scripts/verify-mock-exams.js URL [COMMIT_SOURCE]` vérifie les nouveaux liens dans les deux parcours, les octets des téléchargements, ainsi que le déroulement complet, les corrections et le redémarrage des deux QCM aux largeurs 1440 et 390 pixels. Les rapports et captures sont conservés dans `tmp/mock-exams-qa/`.
 
@@ -232,8 +232,17 @@ Point de retour privé : `C:\dev\andersonvil-academic-os-sources\site-backups\20
 
 ### Accès aux examens blancs depuis Teaching
 
-Les fiches M1 et M2 & PhD présentent les examens blancs comme les fiches Self-assessment de Niort, avec sujets avant corrigés. La page `/teaching/` propose aussi des liens directs vers ces documents et les deux QCM, dans les blocs de cours correspondants. Le corrigé Mock exam 2 commun aux dossiers M1 et M2 & PhD est lié dans les deux cours, sans duplication du fichier. Code & Data utilise le même catalogue et les mêmes regroupements.
+Les fiches M1 et M2 & PhD présentent les examens blancs comme les fiches Self-assessment de Niort, avec sujets avant corrigés. La page `/teaching/` propose aussi des liens directs vers ces documents et les deux QCM, dans les blocs de cours correspondants. Chaque cours utilise désormais ses propres PDF, y compris le nouveau corrigé Mock exam 2 du M2. Code & Data utilise le même catalogue et les mêmes regroupements.
 
 Point de retour avant cette correction : source `55d5de56d1ea9e4ef88a3e9b4851926dff97fb87`, récupérable par Git et conservée dans le bundle privé `site-backups/2026-10-29-before-mock-exams/after-first-publication.bundle`.
 
-Le sujet `Econometrics-M2&PhD/Mock4_statement.pdf` (7 pages) est également intégré au cours M2 & PhD, sous Mock exam 4, avec accès direct depuis Teaching. Son archive M2 contient les deux fichiers disponibles : le sujet Mock 4 et le corrigé Mock 2 fourni dans ce dossier ; ils restent clairement identifiés séparément.
+Le sujet `Econometrics-M2&PhD/Mock4_statement.pdf` (7 pages) est également intégré au cours M2 & PhD, sous Mock exam 4, avec accès direct depuis Teaching. L’archive M2 est reconstruite à partir de tous les fichiers actuels de ce dossier.
+
+
+### Actualisation complète du dossier M2 & PhD
+
+Le dossier `CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD` contient les sujets et corrigés actualisés des Mock exams 2 et 4. Les quatre PDF sont publiés dans `static/files/teaching/cy-cergy/m2-econometrics/mock-exams/`, sans modification de leurs octets. Les sujets ont 7 pages et les corrigés 4 pages. Le PDF Mock 4 existant est remplacé à la même URL ; le corrigé Mock 2 utilise désormais une URL M2 dédiée. Le fichier M1 anciennement partagé reste disponible uniquement dans le cours M1.
+
+La synchronisation M2 parcourt tous les fichiers du dossier, classe les noms `MockN_statement.pdf` et `MockN_solutions_vN.pdf`, lit le nombre de pages avec `pypdf`, puis remplace la collection M2 dans le catalogue. Elle exige le module Python `pypdf` (disponible dans le runtime fourni avec Codex). Les ZIP dont les membres sont inchangés sont conservés. Teaching, la page M2 et Code & Data utilisent le même catalogue. `verify-mock-exams.js URL [COMMIT_SOURCE] --links-only` contrôle les liens, téléchargements et débordements sur ordinateur et mobile sans refaire les QCM inchangés.
+
+Point de retour privé : `C:\dev\andersonvil-academic-os-sources\site-backups\2026-10-29-before-m2-refresh\recovery.bundle` (vérifié), source `7a33573ce0593c4776dadc989ce1203b2d903fe7`, publication `cf9d4c67276bf0b0227ac7dfe12ce6ab6efb2e6f`. Retour par un commit `git revert` de cette mise à jour puis publication normale sur `main`.

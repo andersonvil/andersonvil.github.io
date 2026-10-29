@@ -684,13 +684,30 @@ bytes = 162634
 part = "Course materials"
 
 [[groups.resources]]
-file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_solutions_v1.pdf"
+file = "/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip"
+label = "Mock exams — Available question papers and solutions"
+part = "Mock exams — Complete download"
+format = "ZIP"
+kind = "bundles"
+bytes = 935308
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_statement.pdf"
+label = "Mock exam 2 — Question paper"
+part = "Mock exam 2"
+format = "PDF"
+kind = "mock_exams"
+pages = 7
+bytes = 375667
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock2_solutions_v1.pdf"
 label = "Mock exam 2 — Solutions"
 part = "Mock exam 2"
 format = "PDF"
-pages = 5
-bytes = 151391
 kind = "mock_exams"
+pages = 4
+bytes = 138170
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_statement.pdf"
@@ -699,15 +716,16 @@ part = "Mock exam 4"
 format = "PDF"
 kind = "mock_exams"
 pages = 7
-bytes = 344000
+bytes = 380811
 
 [[groups.resources]]
-file = "/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip"
-label = "Mock exams — Available question papers and solutions"
-part = "Mock exams — Complete download"
-format = "ZIP"
-kind = "bundles"
-bytes = 476332
+file = "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_solutions_v1.pdf"
+label = "Mock exam 4 — Solutions"
+part = "Mock exam 4"
+format = "PDF"
+kind = "mock_exams"
+pages = 4
+bytes = 142396
 
 [[groups]]
 id = "microeconomics-l1"
