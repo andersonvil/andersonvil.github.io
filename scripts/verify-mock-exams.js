@@ -25,12 +25,16 @@ const assert = (v, m) => { if (!v) throw Error(m); };
     }
     for (const route of routes) {
       await page.goto(base + route);
+      if (route === '/teaching/') {
+        assert((await page.locator('.lede').innerText()).includes('Universit\u00e9'), 'Teaching text encoding');
+        assert(!(await page.locator('.teaching-role').allTextContents()).some(t => t.includes('\u00c2')), 'Teaching separator encoding');
+      }
       const hrefs = await page.locator('main a[href]').evaluateAll(es => es.map(e => e.getAttribute('href')));
       const expected = [...files, ...archives].filter(f => route === '/code-data/' ||
         route === '/teaching/' && !f.url.endsWith('.zip') ||
         route.includes('econometrics-niort') && f.url.includes('/niort/econometrics/') ||
         route.includes('microeconomics-iii-niort') && f.url.includes('/microeconomics-iii/') ||
-        route.includes('econometrics-m2') && f.url.endsWith('/Mock2_solutions_v1.pdf') ||
+        route.includes('econometrics-m2') && (f.url.includes('/m2-econometrics/') || f.url.endsWith('/Mock2_solutions_v1.pdf')) ||
         route.includes('econometrics-m1') && f.url.includes('/m1-econometrics/'));
       for (const f of expected) {
         const count = ['/teaching/', '/code-data/'].includes(route) && f.url.endsWith('/Mock2_solutions_v1.pdf') ? 2 : 1;

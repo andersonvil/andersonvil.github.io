@@ -38,6 +38,11 @@
       "sha256": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560"
     },
     {
+      "source": "CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock4_statement.pdf",
+      "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_statement.pdf",
+      "sha256": "567098e691b9e052aa11e067e16f5e78db6cebc823c6145d8a44f3f3c7530a2a"
+    },
+    {
       "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
       "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
       "sha256": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4"
@@ -158,6 +163,13 @@
         "Mock2_statement.pdf": "8edcbaeb6d244c3ba5a4195a9ef4b60c742bc397ea73d8a983080a05fe0abb72",
         "Mock3_solutions_v1.pdf": "3481c44c8254f67c9fdf5b9379ff3d8a0dfbd60e6b64c75c51759680d90be560",
         "Mock3_statement.pdf": "331d468734c04052fc41b17e316b31a56a524d09e4a1dd777ce32956920e5168"
+      }
+    },
+    {
+      "url": "/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip",
+      "members": {
+        "Mock2_solutions_v1.pdf": "e49513fa12272662a105a3e6296153975f4dc7661185feae7533ab102397cb5b",
+        "Mock4_statement.pdf": "567098e691b9e052aa11e067e16f5e78db6cebc823c6145d8a44f3f3c7530a2a"
       }
     },
     {

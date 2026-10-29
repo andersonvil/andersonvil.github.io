@@ -101,6 +101,19 @@ if resource is None:
 else:
     resource.update(shared)
 
+part = 'Mock exam 4'
+if part not in m2['parts']:
+    m2['parts'].append(part)
+url = '/files/teaching/cy-cergy/m2-econometrics/mock-exams/Mock4_statement.pdf'
+target = STATIC / url.lstrip('/')
+copy(SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M2&PhD/Mock4_statement.pdf', target)
+resource = next((r for r in m2['resources'] if r['file'] == url), None)
+if resource is None:
+    resource = dict(file=url)
+    m2['resources'].append(resource)
+resource.update(label='Mock exam 4 — Question paper', part=part, format='PDF', kind='mock_exams', pages=7, bytes=target.stat().st_size)
+m2_files = [('Mock2_solutions_v1.pdf', STATIC / shared['file'].lstrip('/')), ('Mock4_statement.pdf', target)]
+
 # Archives use the same public bytes as the individual downloads.
 for group, part, url, files, label in [
     (micro, practice_part, '/files/teaching/niort/microeconomics-iii/qcm.zip',
@@ -108,6 +121,7 @@ for group, part, url, files, label in [
     (niort, niort['parts'][-1], '/files/teaching/niort/econometrics/qcm.zip',
      [('lab_econometrie_seances1-2.html', STATIC / 'files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html')], 'Practice quiz — Complete download'),
     (m1, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip', mock_files, 'Mock exams 2 and 3 — Question papers and solutions'),
+    (m2, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip', m2_files, 'Mock exams — Available question papers and solutions'),
 ]:
     if part not in group['parts']:
         group['parts'].append(part)
