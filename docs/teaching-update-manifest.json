@@ -58,6 +58,16 @@
       "sha256": "f97ba377fba5f7f15757fed4bf04eb423a438b138aebbc9a8d191d70309bb007"
     },
     {
+      "source": "Niort/Mock-Exams/Microéconomie L3/CC/examen_blanc_1.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/mock-exams/examen_blanc_1.pdf",
+      "sha256": "95cd18edbcd14e239f122bfb58cf306b636238fe68478ea2d8330125ce22cdcd"
+    },
+    {
+      "source": "Niort/Mock-Exams/Microéconomie L3/CC/corrige_blanc_1.pdf",
+      "url": "/files/teaching/niort/microeconomics-iii/mock-exams/corrige_blanc_1.pdf",
+      "sha256": "b091561476e1d8dc281bbb9dea11c21be28b32ebc5612a86b0c1ab871e03bfdd"
+    },
+    {
       "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
       "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
       "sha256": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4"
@@ -163,6 +173,13 @@
       "url": "/files/teaching/niort/microeconomics-iii/qcm.zip",
       "members": {
         "lab_microeconomie3.html": "5e875f9f4eea6bb4e6e5d9a29086cbe4ab324f79d5e9a73b089fcdc5cf339596"
+      }
+    },
+    {
+      "url": "/files/teaching/niort/microeconomics-iii/mock-exams.zip",
+      "members": {
+        "examen_blanc_1.pdf": "95cd18edbcd14e239f122bfb58cf306b636238fe68478ea2d8330125ce22cdcd",
+        "corrige_blanc_1.pdf": "b091561476e1d8dc281bbb9dea11c21be28b32ebc5612a86b0c1ab871e03bfdd"
       }
     },
     {

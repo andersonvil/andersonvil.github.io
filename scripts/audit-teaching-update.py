@@ -111,9 +111,10 @@ part3 = next(card for card in micro_cards if card.h3.text == 'Part III — Risk 
 assert [Path(a['href']).name for a in part3.select('.learning-primary a')] == ['partie3.pdf', 'serie05.pdf', 'serie06.pdf', 'serie07.pdf', 'serie08.pdf']
 part2 = next(card for card in micro_cards if card.h3.text == 'Part II — Strategic decisions and games')
 assert [Path(a['href']).name for a in part2.select('.learning-primary a')] == ['sessions-02-04.pdf', 'serie01.pdf']
-practice = micro_cards[-1]
-assert practice.h3.text == 'Self-assessment — Game theory and risk'
+practice = next(card for card in micro_cards if card.h3.text == 'Self-assessment — Game theory and risk')
 assert Path(practice.select_one('.learning-primary a')['href']).name == 'lab_microeconomie3.html'
+mock_exam = next(card for card in micro_cards if card.h3.text == 'Examen blanc 1')
+assert [Path(a['href']).name for a in mock_exam.select('.learning-primary a')] == ['examen_blanc_1.pdf', 'corrige_blanc_1.pdf']
 tds = page('/teaching/data-analysis-l3/').select('.learning-card')
 assert [c.h3.text for c in tds] == [f'TD{n:02}' for n in range(1, 6)]
 for n in range(2, 6):

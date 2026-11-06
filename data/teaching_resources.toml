@@ -773,7 +773,7 @@ resource_type = "Course slides"
 summary = "Microeconomic foundations, strategic decisions and Nash equilibrium, followed by risk, insurance, portfolio choice and private information, with exercises, Python/R programs and interactive simulators."
 topics = ["Competitive model and strategic decisions", "Decision-making under risk", "Private information", "Consumer, producer, and market foundations", "Normal-form games", "Dominant and dominated strategies", "Pure and mixed Nash equilibrium", "Maximin and repeated games", "Game trees and backward induction"]
 url = "/teaching/microeconomics-iii-niort/"
-parts = ["Part I — Foundations", "Part II — Strategic decisions and games", "Part III — Risk and information", "Self-assessment — Game theory and risk"]
+parts = ["Part I — Foundations", "Part II — Strategic decisions and games", "Part III — Risk and information", "Self-assessment — Game theory and risk", "Examen blanc 1", "Examen blanc — Téléchargement complet"]
 
 [[groups.resources]]
 label = "Séance 1 — Introduction générale"
@@ -938,6 +938,32 @@ part = "Self-assessment — Game theory and risk"
 format = "ZIP"
 kind = "bundles"
 bytes = 74124
+
+[[groups.resources]]
+file = "/files/teaching/niort/microeconomics-iii/mock-exams/examen_blanc_1.pdf"
+label = "Examen blanc 1 — Sujet"
+part = "Examen blanc 1"
+format = "PDF"
+kind = "mock_exams"
+pages = 3
+bytes = 154529
+
+[[groups.resources]]
+file = "/files/teaching/niort/microeconomics-iii/mock-exams/corrige_blanc_1.pdf"
+label = "Examen blanc 1 — Corrigé"
+part = "Examen blanc 1"
+format = "PDF"
+kind = "mock_exams"
+pages = 7
+bytes = 187507
+
+[[groups.resources]]
+file = "/files/teaching/niort/microeconomics-iii/mock-exams.zip"
+label = "Examen blanc 1 — Sujet et corrigé"
+part = "Examen blanc — Téléchargement complet"
+format = "ZIP"
+kind = "bundles"
+bytes = 328508
 
 [[groups]]
 id = "econometrics-niort"

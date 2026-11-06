@@ -1920,6 +1920,55 @@
               ]
             }
           ]
+        },
+        {
+          "title": "Examen blanc 1",
+          "primary": [
+            {
+              "file": "/files/teaching/niort/microeconomics-iii/mock-exams/examen_blanc_1.pdf",
+              "label": "Examen blanc 1 — Sujet",
+              "part": "Examen blanc 1",
+              "format": "PDF",
+              "kind": "mock_exams",
+              "pages": 3,
+              "bytes": 154529
+            },
+            {
+              "file": "/files/teaching/niort/microeconomics-iii/mock-exams/corrige_blanc_1.pdf",
+              "label": "Examen blanc 1 — Corrigé",
+              "part": "Examen blanc 1",
+              "format": "PDF",
+              "kind": "mock_exams",
+              "pages": 7,
+              "bytes": 187507
+            }
+          ],
+          "sections": []
+        },
+        {
+          "title": "Examen blanc — Téléchargement complet",
+          "primary": [],
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Examen blanc 1 — Sujet et corrigé",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/mock-exams.zip",
+                      "label": "Examen blanc 1 — Sujet et corrigé",
+                      "part": "Examen blanc — Téléchargement complet",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 328508
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "technical": [
@@ -2288,6 +2337,69 @@
                       "format": "ZIP",
                       "kind": "bundles",
                       "bytes": 74124
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Examen blanc 1",
+          "sections": [
+            {
+              "title": "Mock exams",
+              "kind": "mock_exams",
+              "rows": [
+                {
+                  "title": "Examen blanc 1 — Sujet",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/mock-exams/examen_blanc_1.pdf",
+                      "label": "Examen blanc 1 — Sujet",
+                      "part": "Examen blanc 1",
+                      "format": "PDF",
+                      "kind": "mock_exams",
+                      "pages": 3,
+                      "bytes": 154529
+                    }
+                  ]
+                },
+                {
+                  "title": "Examen blanc 1 — Corrigé",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/mock-exams/corrige_blanc_1.pdf",
+                      "label": "Examen blanc 1 — Corrigé",
+                      "part": "Examen blanc 1",
+                      "format": "PDF",
+                      "kind": "mock_exams",
+                      "pages": 7,
+                      "bytes": 187507
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Examen blanc — Téléchargement complet",
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Examen blanc 1 — Sujet et corrigé",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/microeconomics-iii/mock-exams.zip",
+                      "label": "Examen blanc 1 — Sujet et corrigé",
+                      "part": "Examen blanc — Téléchargement complet",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 328508
                     }
                   ]
                 }

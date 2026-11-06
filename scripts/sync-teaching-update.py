@@ -119,10 +119,28 @@ for number, solutions, source in sorted(inputs):
     m2['resources'].append(dict(file=url, label=f'Mock exam {number} — {label}', part=part,
                                format='PDF', kind='mock_exams', pages=len(PdfReader(source).pages), bytes=target.stat().st_size))
 
+micro_exam_part = 'Examen blanc 1'
+if micro_exam_part not in micro['parts']:
+    micro['parts'].append(micro_exam_part)
+micro_exam_files = []
+for filename, label in [('examen_blanc_1.pdf', 'Sujet'), ('corrige_blanc_1.pdf', 'Corrigé')]:
+    source = SOURCE / 'Niort/Mock-Exams/Microéconomie L3/CC' / filename
+    url = '/files/teaching/niort/microeconomics-iii/mock-exams/' + filename
+    target = STATIC / url.lstrip('/')
+    copy(source, target)
+    micro_exam_files.append((filename, target))
+    resource = next((r for r in micro['resources'] if r['file'] == url), None)
+    if resource is None:
+        resource = dict(file=url)
+        micro['resources'].append(resource)
+    resource.update(label=f'{micro_exam_part} — {label}', part=micro_exam_part, format='PDF',
+                    kind='mock_exams', pages=len(PdfReader(source).pages), bytes=target.stat().st_size)
+
 # Archives use the same public bytes as the individual downloads.
 for group, part, url, files, label in [
     (micro, practice_part, '/files/teaching/niort/microeconomics-iii/qcm.zip',
      [('lab_microeconomie3.html', STATIC / 'files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html')], 'Practice quiz — Complete download'),
+    (micro, 'Examen blanc — Téléchargement complet', '/files/teaching/niort/microeconomics-iii/mock-exams.zip', micro_exam_files, 'Examen blanc 1 — Sujet et corrigé'),
     (niort, niort['parts'][-1], '/files/teaching/niort/econometrics/qcm.zip',
      [('lab_econometrie_seances1-2.html', STATIC / 'files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html')], 'Practice quiz — Complete download'),
     (m1, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip', mock_files, 'Mock exams 2 and 3 — Question papers and solutions'),
@@ -247,7 +265,7 @@ for g in teaching['groups']:
                 cards.extend(dict(title='CC ' + year, primary=items, sections=[], heading=part if i == 0 else '') for i, (year, items) in enumerate(sorted(years.items(), reverse=True)))
             continue
         primary = [r for r in rs if kind(r) in ('support', 'exercises', 'self_assessment', 'mock_exams')]
-        primary.sort(key=lambda r: (kind(r) != 'support', kind(r) == 'mock_exams' and 'Solutions' in r['label'], r['file']))
+        primary.sort(key=lambda r: (kind(r) != 'support', kind(r) == 'mock_exams' and r['label'].endswith((' — Solutions', ' — Corrigé')), r['file']))
         extra = [r for r in rs if kind(r) not in ('support', 'exercises', 'self_assessment', 'mock_exams')]
         title = 'Session 1 — Consumers, producers, and market efficiency' if g['id'] == 'microeconomics-l1' else part
         cards.append(dict(title=title, primary=primary, sections=technical_sections(extra)))
