@@ -78,11 +78,14 @@ resource.update(label='Online practice quiz (QCM) — Simple regression and OLS 
 m1 = groups['econometrics-m1']
 mock_source = SOURCE / 'CY-Cergy-Paris-Université/Mock-Exams/Econometrics-M1'
 mock_files = []
-for number in (2, 3):
+for number in (1, 2, 3):
     part = f'Mock exam {number}'
     if part not in m1['parts']:
-        m1['parts'].append(part)
-    for suffix, label in [('statement', 'Question paper'), ('solutions_v1', 'Solutions')]:
+        m1['parts'].insert(number, part)
+    variants = [('statement', 'Question paper')]
+    if number != 1:
+        variants.append(('solutions_v1', 'Solutions'))
+    for suffix, label in variants:
         filename = f'Mock{number}_{suffix}.pdf'
         url = '/files/teaching/cy-cergy/m1-econometrics/mock-exams/' + filename
         target = STATIC / url.lstrip('/')
@@ -93,6 +96,7 @@ for number in (2, 3):
             resource = dict(file=url)
             m1['resources'].append(resource)
         resource.update(label=f'Mock exam {number} — {label}', part=part, format='PDF', kind='mock_exams', pages=len(PdfReader(mock_source / filename).pages), bytes=target.stat().st_size)
+m1['resources'].sort(key=lambda resource: m1['parts'].index(resource['part']))
 
 m2 = groups['econometrics-m2']
 # Refresh this folder as one collection: no stale shared M1 link or obsolete
@@ -143,7 +147,7 @@ for group, part, url, files, label in [
     (micro, 'Examen blanc — Téléchargement complet', '/files/teaching/niort/microeconomics-iii/mock-exams.zip', micro_exam_files, 'Examen blanc 1 — Sujet et corrigé'),
     (niort, niort['parts'][-1], '/files/teaching/niort/econometrics/qcm.zip',
      [('lab_econometrie_seances1-2.html', STATIC / 'files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html')], 'Practice quiz — Complete download'),
-    (m1, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip', mock_files, 'Mock exams 2 and 3 — Question papers and solutions'),
+    (m1, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip', mock_files, 'Mock exams 1, 2 and 3 — Question papers and available solutions'),
     (m2, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip', m2_files, 'Mock exams — Available question papers and solutions'),
 ]:
     if part not in group['parts']:

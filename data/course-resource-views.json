@@ -1118,6 +1118,21 @@
           "sections": []
         },
         {
+          "title": "Mock exam 1",
+          "primary": [
+            {
+              "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock1_statement.pdf",
+              "label": "Mock exam 1 — Question paper",
+              "part": "Mock exam 1",
+              "format": "PDF",
+              "kind": "mock_exams",
+              "pages": 7,
+              "bytes": 335085
+            }
+          ],
+          "sections": []
+        },
+        {
           "title": "Mock exam 2",
           "primary": [
             {
@@ -1174,15 +1189,15 @@
               "kind": "bundles",
               "rows": [
                 {
-                  "title": "Mock exams 2 and 3 — Question papers and solutions",
+                  "title": "Mock exams 1, 2 and 3 — Question papers and available solutions",
                   "resources": [
                     {
                       "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
-                      "label": "Mock exams 2 and 3 — Question papers and solutions",
+                      "label": "Mock exams 1, 2 and 3 — Question papers and available solutions",
                       "part": "Mock exams — Complete download",
                       "format": "ZIP",
                       "kind": "bundles",
-                      "bytes": 955393
+                      "bytes": 1284004
                     }
                   ]
                 }
@@ -1208,6 +1223,31 @@
                       "pages": 17,
                       "bytes": 150015,
                       "part": "Course materials"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mock exam 1",
+          "sections": [
+            {
+              "title": "Mock exams",
+              "kind": "mock_exams",
+              "rows": [
+                {
+                  "title": "Mock exam 1 — Question paper",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock1_statement.pdf",
+                      "label": "Mock exam 1 — Question paper",
+                      "part": "Mock exam 1",
+                      "format": "PDF",
+                      "kind": "mock_exams",
+                      "pages": 7,
+                      "bytes": 335085
                     }
                   ]
                 }
@@ -1301,15 +1341,15 @@
               "kind": "bundles",
               "rows": [
                 {
-                  "title": "Mock exams 2 and 3 — Question papers and solutions",
+                  "title": "Mock exams 1, 2 and 3 — Question papers and available solutions",
                   "resources": [
                     {
                       "file": "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip",
-                      "label": "Mock exams 2 and 3 — Question papers and solutions",
+                      "label": "Mock exams 1, 2 and 3 — Question papers and available solutions",
                       "part": "Mock exams — Complete download",
                       "format": "ZIP",
                       "kind": "bundles",
-                      "bytes": 955393
+                      "bytes": 1284004
                     }
                   ]
                 }

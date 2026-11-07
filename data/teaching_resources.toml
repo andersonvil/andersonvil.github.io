@@ -607,7 +607,7 @@ resource_type = "Exercise collection"
 summary = "An exercise collection covering regression foundations, matrix formulation, inference, heteroskedasticity, nonlinear least squares, and instrumental variables."
 topics = ["OLS", "Matrix algebra", "Statistical inference", "Heteroskedasticity", "Nonlinear least squares", "Instrumental variables"]
 url = "/teaching/econometrics-m1/"
-parts = ["Course materials", "Mock exam 2", "Mock exam 3", "Mock exams — Complete download"]
+parts = ["Course materials", "Mock exam 1", "Mock exam 2", "Mock exam 3", "Mock exams — Complete download"]
 
 [[groups.resources]]
 label = "Econometrics exercises"
@@ -615,6 +615,15 @@ file = "/files/teaching/cy-cergy/m1-econometrics/econometrics-exercises.pdf"
 pages = 17
 bytes = 150015
 part = "Course materials"
+
+[[groups.resources]]
+file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock1_statement.pdf"
+label = "Mock exam 1 — Question paper"
+part = "Mock exam 1"
+format = "PDF"
+kind = "mock_exams"
+pages = 7
+bytes = 335085
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf"
@@ -654,11 +663,11 @@ kind = "mock_exams"
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip"
-label = "Mock exams 2 and 3 — Question papers and solutions"
+label = "Mock exams 1, 2 and 3 — Question papers and available solutions"
 part = "Mock exams — Complete download"
 format = "ZIP"
 kind = "bundles"
-bytes = 955393
+bytes = 1284004
 
 [[groups]]
 id = "econometrics-m2"
