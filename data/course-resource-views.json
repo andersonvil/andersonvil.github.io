@@ -1127,7 +1127,7 @@
               "format": "PDF",
               "kind": "mock_exams",
               "pages": 7,
-              "bytes": 335085
+              "bytes": 372027
             }
           ],
           "sections": []
@@ -1197,7 +1197,7 @@
                       "part": "Mock exams — Complete download",
                       "format": "ZIP",
                       "kind": "bundles",
-                      "bytes": 1284004
+                      "bytes": 1285804
                     }
                   ]
                 }
@@ -1247,7 +1247,7 @@
                       "format": "PDF",
                       "kind": "mock_exams",
                       "pages": 7,
-                      "bytes": 335085
+                      "bytes": 372027
                     }
                   ]
                 }
@@ -1349,7 +1349,7 @@
                       "part": "Mock exams — Complete download",
                       "format": "ZIP",
                       "kind": "bundles",
-                      "bytes": 1284004
+                      "bytes": 1285804
                     }
                   ]
                 }

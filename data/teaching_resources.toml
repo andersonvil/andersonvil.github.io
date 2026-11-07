@@ -623,7 +623,7 @@ part = "Mock exam 1"
 format = "PDF"
 kind = "mock_exams"
 pages = 7
-bytes = 335085
+bytes = 372027
 
 [[groups.resources]]
 file = "/files/teaching/cy-cergy/m1-econometrics/mock-exams/Mock2_statement.pdf"
@@ -667,7 +667,7 @@ label = "Mock exams 1, 2 and 3 — Question papers and available solutions"
 part = "Mock exams — Complete download"
 format = "ZIP"
 kind = "bundles"
-bytes = 1284004
+bytes = 1285804
 
 [[groups]]
 id = "econometrics-m2"
