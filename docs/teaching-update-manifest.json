@@ -170,7 +170,7 @@
     {
       "source": "04-cv-teaching/cv-academic.pdf",
       "url": "/files/cv/anderson-vil-cv-provisional.pdf",
-      "sha256": "765d5d593f00e23c4b2c2ac951436584013ae3ff173dd5fab66281847c0c9c16"
+      "sha256": "4d00ce46a62f2037a4db86e03caace7c288a1810e7805a6e417d7638a144a483"
     }
   ],
   "archives": [
@@ -399,6 +399,6 @@
   "cv": {
     "source": "04-cv-teaching/cv-academic.pdf",
     "url": "/files/cv/anderson-vil-cv-provisional.pdf",
-    "sha256": "765d5d593f00e23c4b2c2ac951436584013ae3ff173dd5fab66281847c0c9c16"
+    "sha256": "4d00ce46a62f2037a4db86e03caace7c288a1810e7805a6e417d7638a144a483"
   }
 }
