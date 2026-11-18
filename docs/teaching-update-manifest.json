@@ -73,6 +73,16 @@
       "sha256": "b091561476e1d8dc281bbb9dea11c21be28b32ebc5612a86b0c1ab871e03bfdd"
     },
     {
+      "source": "Niort/Mock-Exams/Econométrie/CC/examen_blanc_1.pdf",
+      "url": "/files/teaching/niort/econometrics/mock-exams/examen_blanc_1.pdf",
+      "sha256": "c74350256772680bd675e8dd797c81d4c5b31e6e0d1c0a4c49c37db35f6bdf52"
+    },
+    {
+      "source": "Niort/Mock-Exams/Econométrie/CC/corrige_blanc_1.pdf",
+      "url": "/files/teaching/niort/econometrics/mock-exams/corrige_blanc_1.pdf",
+      "sha256": "09c21a9cbeaf9e508434264b44f4593243ed1a19b9e4ce2b09c2194de7acb51a"
+    },
+    {
       "source": "CY-Cergy-Paris-Université/2026-27/L3-Data Analysis/TD #1/td01-enonce.pdf",
       "url": "/files/teaching/cy-cergy/l3-data-analysis/td-01/td01-enonce.pdf",
       "sha256": "13b77df1015aaf4a02c4e03e20ac75f1322857385520a68a29b126c77d2914e4"
@@ -191,6 +201,13 @@
       "url": "/files/teaching/niort/econometrics/qcm.zip",
       "members": {
         "lab_econometrie_seances1-2.html": "a71fe0d9662ce6d6c55b48bbbab126c23dd56cb7970d4dff197a358db909cb98"
+      }
+    },
+    {
+      "url": "/files/teaching/niort/econometrics/mock-exams.zip",
+      "members": {
+        "examen_blanc_1.pdf": "c74350256772680bd675e8dd797c81d4c5b31e6e0d1c0a4c49c37db35f6bdf52",
+        "corrige_blanc_1.pdf": "09c21a9cbeaf9e508434264b44f4593243ed1a19b9e4ce2b09c2194de7acb51a"
       }
     },
     {

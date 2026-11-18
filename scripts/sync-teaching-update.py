@@ -140,13 +140,31 @@ for filename, label in [('examen_blanc_1.pdf', 'Sujet'), ('corrige_blanc_1.pdf',
     resource.update(label=f'{micro_exam_part} — {label}', part=micro_exam_part, format='PDF',
                     kind='mock_exams', pages=len(PdfReader(source).pages), bytes=target.stat().st_size)
 
+niort_exam_part = 'Examen blanc 1'
+if niort_exam_part not in niort['parts']:
+    niort['parts'].append(niort_exam_part)
+niort_exam_files = []
+for filename, label in [('examen_blanc_1.pdf', 'Sujet'), ('corrige_blanc_1.pdf', 'Corrigé')]:
+    source = SOURCE / 'Niort/Mock-Exams/Econométrie/CC' / filename
+    url = '/files/teaching/niort/econometrics/mock-exams/' + filename
+    target = STATIC / url.lstrip('/')
+    copy(source, target)
+    niort_exam_files.append((filename, target))
+    resource = next((r for r in niort['resources'] if r['file'] == url), None)
+    if resource is None:
+        resource = dict(file=url)
+        niort['resources'].append(resource)
+    resource.update(label=f'{niort_exam_part} — {label}', part=niort_exam_part, format='PDF',
+                    kind='mock_exams', pages=len(PdfReader(source).pages), bytes=target.stat().st_size)
+
 # Archives use the same public bytes as the individual downloads.
 for group, part, url, files, label in [
     (micro, practice_part, '/files/teaching/niort/microeconomics-iii/qcm.zip',
      [('lab_microeconomie3.html', STATIC / 'files/teaching/niort/microeconomics-iii/qcm/lab_microeconomie3.html')], 'Practice quiz — Complete download'),
     (micro, 'Examen blanc — Téléchargement complet', '/files/teaching/niort/microeconomics-iii/mock-exams.zip', micro_exam_files, 'Examen blanc 1 — Sujet et corrigé'),
-    (niort, niort['parts'][-1], '/files/teaching/niort/econometrics/qcm.zip',
+    (niort, 'Self-assessment — Sessions 1 and 2', '/files/teaching/niort/econometrics/qcm.zip',
      [('lab_econometrie_seances1-2.html', STATIC / 'files/teaching/niort/econometrics/qcm/lab_econometrie_seances1-2.html')], 'Practice quiz — Complete download'),
+    (niort, 'Examen blanc — Téléchargement complet', '/files/teaching/niort/econometrics/mock-exams.zip', niort_exam_files, 'Examen blanc 1 — Sujet et corrigé'),
     (m1, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m1-econometrics/mock-exams.zip', mock_files, 'Mock exams 1, 2 and 3 — Question papers and available solutions'),
     (m2, 'Mock exams — Complete download', '/files/teaching/cy-cergy/m2-econometrics/mock-exams.zip', m2_files, 'Mock exams — Available question papers and solutions'),
 ]:

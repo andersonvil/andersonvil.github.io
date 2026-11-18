@@ -989,7 +989,7 @@ resource_type = "Course, exercises, code, data, and notebooks"
 summary = "Session 1 introduces covariance, correlation, descriptive evidence, and simple regression. Session 2 develops sampling, probability, estimator distributions and inference, with course and exercise code in Python, R and Stata, notebooks, data and interactive simulators."
 topics = ["Covariance and correlation", "Simple regression", "Sampling and probability", "Estimator distributions and inference", "Python, R and Stata", "Notebooks and interactive simulation"]
 url = "/teaching/econometrics-niort/"
-parts = ["Practical instructions", "Session 1 — Covariance, correlation and regression", "Session 2 — Sampling, probability and inference", "Self-assessment — Sessions 1 and 2"]
+parts = ["Practical instructions", "Session 1 — Covariance, correlation and regression", "Session 2 — Sampling, probability and inference", "Self-assessment — Sessions 1 and 2", "Examen blanc 1", "Examen blanc — Téléchargement complet"]
 
 [[groups.resources]]
 label = "Practical README"
@@ -1348,6 +1348,32 @@ part = "Self-assessment — Sessions 1 and 2"
 format = "ZIP"
 kind = "bundles"
 bytes = 324124
+
+[[groups.resources]]
+file = "/files/teaching/niort/econometrics/mock-exams/examen_blanc_1.pdf"
+label = "Examen blanc 1 — Sujet"
+part = "Examen blanc 1"
+format = "PDF"
+kind = "mock_exams"
+pages = 2
+bytes = 131501
+
+[[groups.resources]]
+file = "/files/teaching/niort/econometrics/mock-exams/corrige_blanc_1.pdf"
+label = "Examen blanc 1 — Corrigé"
+part = "Examen blanc 1"
+format = "PDF"
+kind = "mock_exams"
+pages = 4
+bytes = 163216
+
+[[groups.resources]]
+file = "/files/teaching/niort/econometrics/mock-exams.zip"
+label = "Examen blanc 1 — Sujet et corrigé"
+part = "Examen blanc — Téléchargement complet"
+format = "ZIP"
+kind = "bundles"
+bytes = 280137
 
 [[groups]]
 id = "data-analysis-l3"

@@ -3079,6 +3079,55 @@
               ]
             }
           ]
+        },
+        {
+          "title": "Examen blanc 1",
+          "primary": [
+            {
+              "file": "/files/teaching/niort/econometrics/mock-exams/examen_blanc_1.pdf",
+              "label": "Examen blanc 1 — Sujet",
+              "part": "Examen blanc 1",
+              "format": "PDF",
+              "kind": "mock_exams",
+              "pages": 2,
+              "bytes": 131501
+            },
+            {
+              "file": "/files/teaching/niort/econometrics/mock-exams/corrige_blanc_1.pdf",
+              "label": "Examen blanc 1 — Corrigé",
+              "part": "Examen blanc 1",
+              "format": "PDF",
+              "kind": "mock_exams",
+              "pages": 4,
+              "bytes": 163216
+            }
+          ],
+          "sections": []
+        },
+        {
+          "title": "Examen blanc — Téléchargement complet",
+          "primary": [],
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Examen blanc 1 — Sujet et corrigé",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/mock-exams.zip",
+                      "label": "Examen blanc 1 — Sujet et corrigé",
+                      "part": "Examen blanc — Téléchargement complet",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 280137
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "technical": [
@@ -3750,6 +3799,69 @@
                       "format": "ZIP",
                       "kind": "bundles",
                       "bytes": 324124
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Examen blanc 1",
+          "sections": [
+            {
+              "title": "Mock exams",
+              "kind": "mock_exams",
+              "rows": [
+                {
+                  "title": "Examen blanc 1 — Sujet",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/mock-exams/examen_blanc_1.pdf",
+                      "label": "Examen blanc 1 — Sujet",
+                      "part": "Examen blanc 1",
+                      "format": "PDF",
+                      "kind": "mock_exams",
+                      "pages": 2,
+                      "bytes": 131501
+                    }
+                  ]
+                },
+                {
+                  "title": "Examen blanc 1 — Corrigé",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/mock-exams/corrige_blanc_1.pdf",
+                      "label": "Examen blanc 1 — Corrigé",
+                      "part": "Examen blanc 1",
+                      "format": "PDF",
+                      "kind": "mock_exams",
+                      "pages": 4,
+                      "bytes": 163216
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Examen blanc — Téléchargement complet",
+          "sections": [
+            {
+              "title": "Complete downloads",
+              "kind": "bundles",
+              "rows": [
+                {
+                  "title": "Examen blanc 1 — Sujet et corrigé",
+                  "resources": [
+                    {
+                      "file": "/files/teaching/niort/econometrics/mock-exams.zip",
+                      "label": "Examen blanc 1 — Sujet et corrigé",
+                      "part": "Examen blanc — Téléchargement complet",
+                      "format": "ZIP",
+                      "kind": "bundles",
+                      "bytes": 280137
                     }
                   ]
                 }
