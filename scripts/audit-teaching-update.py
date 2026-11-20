@@ -120,7 +120,7 @@ assert [c.h3.text for c in tds] == [f'TD{n:02}' for n in range(1, 6)]
 for n in range(2, 6):
     assert 'presentation.pdf' in tds[n-1].select_one('.learning-primary a')['href']
 
-expected_statuses = ['Revise and resubmit — Journal of the European Economic Association', 'Revise and resubmit — Review of Economics of the Household', 'Submitted — The Economic Journal']
+expected_statuses = ['Revise and resubmit — Journal of the European Economic Association', 'Submitted — Oxford Economic Papers', 'Submitted — Journal of Applied Econometrics']
 for paper, old, status in zip(academic['papers'], original_academic['papers'], expected_statuses):
     assert paper['status_label'] == status
     assert {k: v for k, v in paper.items() if k != 'status_label'} == {k: v for k, v in old.items() if k != 'status_label'}
